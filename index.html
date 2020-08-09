@@ -38,23 +38,25 @@
             </v-col>
           </v-row>
           <v-row justify="center">
-            <v-data-table :headers="headers" :items="libraries"
-              group-by="group" disable-pagination hide-default-footer
-            >
-              <template v-slot:item.title="{ item }">
-                <v-chip :href="item.href" outlined>
-                  <template v-if="item.highlight">
-                    <v-icon left color="indigo">
-                      mdi-alert-circle-outline
-                    </v-icon>
-                  </template>
-                  {{ item.title }}
-                </v-chip>
-              </template>
-              <template v-slot:item.subtitle="{ item }">
-                <span v-html="item.subtitle"></span>
-              </template>
-            </v-data-table>
+            <v-col lg="9">
+              <v-data-table :headers="headers" :items="libraries"
+                group-by="group" disable-pagination hide-default-footer
+              >
+                <template v-slot:item.title="{ item }">
+                  <v-chip :href="item.href" outlined>
+                    <template v-if="item.highlight">
+                      <v-icon left color="indigo">
+                        mdi-alert-circle-outline
+                      </v-icon>
+                    </template>
+                    {{ item.title }}
+                  </v-chip>
+                </template>
+                <template v-slot:item.subtitle="{ item }">
+                  <span v-html="item.subtitle"></span>
+                </template>
+              </v-data-table>
+            </v-col>
           </v-row>
         </v-container>
       </v-main>
