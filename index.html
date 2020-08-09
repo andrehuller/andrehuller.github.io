@@ -10,6 +10,7 @@
   <div id="app">
     <v-app>
       <v-navigation-drawer
+        v-model="drawer"
         clipped
         app
       >
@@ -20,10 +21,10 @@
         color="red"
         dark
       >
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       </v-app-bar>
       <v-main>
-        <v-container class="grey lighten-4">
+        <v-container class="grey lighten-4" fluid>
           <v-row>
             <v-col cols="12" lg="4">
               <v-card>
@@ -37,7 +38,7 @@
             </v-col>
           </v-row>
           <v-row justify="center">
-            <v-col lg="6">
+            <v-col cols="12" lg="12">
               <v-timeline>
                 <v-timeline-item v-for="framework in frameworks" :key="framework.name">
                   <v-card>
@@ -83,6 +84,7 @@
       el: '#app',
       vuetify: new Vuetify(),
       data: () => ({
+        drawer: null,
         headers: [
           { text: 'Nome', value: 'title' },
           { text: 'Descrição', value: 'subtitle'}
