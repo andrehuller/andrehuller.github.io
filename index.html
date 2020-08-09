@@ -8,9 +8,9 @@
 </head>
 <body>
   <div id="app">
-    <v-app>
+    <v-app color="grey lighten-5">
       <v-main>
-        <v-container color="grey lighten-5">
+        <v-container>
           <v-row>
             <v-col cols="12" lg="4">
               <v-card>
@@ -37,6 +37,25 @@
               </v-timeline>
             </v-col>
           </v-row>
+          <v-row justify="center">
+            <v-data-table :headers="headers" :items="libraries"
+              group-by="group" disable-pagination hide-default-footer
+            >
+              <template v-slot:item.title="{ item }">
+                <v-chip :href="item.href" outlined>
+                  <template v-if="item.highlight">
+                    <v-icon left color="indigo">
+                      mdi-alert-circle-outline
+                    </v-icon>
+                  </template>
+                  {{ item.title }}
+                </v-chip>
+              </template>
+              <template v-slot:item.subtitle="{ item }">
+                <span v-html="item.subtitle"></span>
+              </template>
+            </v-data-table>
+          </v-row>
         </v-container>
       </v-main>
     </v-app>
@@ -49,6 +68,20 @@
       el: '#app',
       vuetify: new Vuetify(),
       data: () => ({
+        libraries: [
+          {
+            "title": "ApexCharts.js",
+            "subtitle": "Modern & Interactive Open-source Charts",
+            "href": "https://apexcharts.com/",
+            "group": "Charts"
+          },
+          {
+            "title": "Chart.js",
+            "subtitle": "Simple yet flexible JavaScript charting for designers & developers",
+            "href": "https://www.chartjs.org/",
+            "group": "Charts"
+          }
+        ],
         frameworks: [
           {
             "name": "Vue.js",
