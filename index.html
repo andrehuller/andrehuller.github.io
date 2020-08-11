@@ -169,39 +169,38 @@
       template: `
         <v-container fluid>
           <v-row>
-            <v-col cols="12" lg="4">
+            <v-col cols="12" lg="4"
+              v-for="library in libraries"
+              :key="library.title"
+            >
               <v-card>
                 <v-card-title>
-                  Leaflet
+                  {{ library.title }}
                 </v-card-title>
                 <v-card-text>
-                  <a href="https://leafletjs.com/">https://leafletjs.com/</a>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="4">
-              <v-card>
-                <v-card-title>
-                  OpenLayers
-                </v-card-title>
-                <v-card-text>
-                  <a href="https://openlayers.org/">https://openlayers.org/</a>
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="4">
-              <v-card>
-                <v-card-title>
-                  Unsplash
-                </v-card-title>
-                <v-card-text>
-                  <a href="https://unsplash.com/">https://unsplash.com/</a>
+                  <a :href="library.href">{{ library.href }}</a>
                 </v-card-text>
               </v-card>
             </v-col>
           </v-row>
         </v-container>
-      `
+      `,
+      data: () => ({
+        libraries: [
+          {
+            title: 'Leaflet',
+            href: 'https://leafletjs.com/'
+          },
+          {
+            title: 'OpenLayers',
+            href: 'https://openlayers.org/'
+          },
+          {
+            title: 'Unsplash',
+            href: 'https://unsplash.com/'
+          }
+        ]
+      })
     }
     
     const Libraries2 = {
