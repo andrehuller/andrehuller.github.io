@@ -211,6 +211,12 @@
         <v-container fluid>
           <div id="map" class="mx-10"></div>
         </v-container>
+        <v-navigation-drawer
+          v-model="drawer"
+          right
+          app
+        >
+        </v-navigation-drawer>
       `,
       mounted () {
         this.$nextTick(() => {
@@ -233,6 +239,7 @@
                   {{ library.title }}
                 </v-card-title>
                 <v-card-text>
+                  {{ library.subtitle }}
                   <a :href="library.href">{{ library.href }}</a>
                 </v-card-text>
               </v-card>
@@ -261,6 +268,11 @@
           {
             "title": "Unsplash",
             "href": "https://unsplash.com/"
+          },
+          {
+            "title": "VROOM",
+            "subtitle": "Vehicle Routing Open-source Optimization Machine",
+            "href": "http://vroom-project.org/"
           },
           {
             "title": "Vue",
