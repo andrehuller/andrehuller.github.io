@@ -60,7 +60,7 @@
           </v-list-item>
         </v-list>
         <v-divider></v-divider>
-        <v-list>
+        <v-list dense nav>
           <v-list-item to="/leaflet">
             <v-list-item-icon>
               <v-icon>mdi-map</v-icon>
@@ -215,7 +215,7 @@
         this.$nextTick(() => {
           this.map = L.map('map').setView([-24.618588, -51.316993], 8)
           L.esri.basemapLayer('Topographic').addTo(this.map)
-        }
+        })
       }
     }
     
