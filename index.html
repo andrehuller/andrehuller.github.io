@@ -210,13 +210,13 @@
       template: `
         <v-container fluid>
           <div id="map" class="mx-10"></div>
+
+          <v-navigation-drawer
+            v-model="drawer"
+            right
+          >
+          </v-navigation-drawer>
         </v-container>
-        <v-navigation-drawer
-          v-model="drawer"
-          right
-          app
-        >
-        </v-navigation-drawer>
       `,
       mounted () {
         this.$nextTick(() => {
