@@ -12,6 +12,9 @@
     [v-cloak] {
       display: none;
     }
+    #map {
+      height: 900px;
+    }
   </style>
 </head>
 <body>
@@ -205,9 +208,15 @@
     const Leaflet = {
       template: `
         <v-container fluid>
-          
+          <div id="map"></div>
         </v-container>
-      `
+      `,
+      mounted () {
+        this.$nextTick(() => {
+          this.map = L.map('map').setView([-24.618588, -51.316993], 8)
+          L.esri.basemapLayer('Topographic').addTo(this.map)
+        }
+      }
     }
     
     const Libraries = {
