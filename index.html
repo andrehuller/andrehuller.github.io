@@ -208,7 +208,11 @@
     const Leaflet = {
       template: `
         <v-container fluid>
-          <div id="map"></div>
+          <v-row justify="center">
+            <v-col cols="12" lg="9">
+              <div id="map"></div>
+            </v-col>
+          </v-row>
         </v-container>
       `,
       mounted () {
