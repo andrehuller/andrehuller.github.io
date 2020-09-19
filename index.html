@@ -4,11 +4,13 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-  
   <link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet">
-  
+ 
+  <link rel="icon" href="favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <title>github.io</title>
+  
   <style>
     [v-cloak] {
       display: none;
@@ -286,10 +288,37 @@
               </v-card>
             </v-col>
           </v-row>
+          <v-divider></v-divider>
+          <v-row>
+            <v-col cols="12" lg="4"
+              v-for="resource in resources"
+              :key="resource.title"
+            >
+              <v-card class="fill-height">
+                <v-card-title>
+                  {{ resource.title }}
+                </v-card-title>
+                <v-card-text>
+                  <p>{{ resource.subtitle }}</p>
+                  <a :href="resource.href">{{ resource.href }}</a>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-container>
       `,
       data: () => ({
         libraries: [
+          {
+            "title": "Chart.js",
+            "subtitle": "Simple yet flexible JavaScript charting for designers & developers",
+            "href": "https://www.chartjs.org/"
+          },
+          {
+            "title": "Flutter",
+            "subtitle": "Beautiful native apps in record time",
+            "href": "https://flutter.dev/"
+          },
           {
             "title": "Leaflet",
             "subtitle": "mobile-friendly interactive maps",
@@ -321,11 +350,6 @@
             "href": "https://unsplash.com/"
           },
           {
-            "title": "VROOM",
-            "subtitle": "Vehicle Routing Open-source Optimization Machine",
-            "href": "http://vroom-project.org/"
-          },
-          {
             "title": "Vue",
             "subtitle": "The Progressive JavaScript Framework",
             "href": "https://vuejs.org/"
@@ -334,6 +358,22 @@
             "title": "Vuetify",
             "subtitle": "Material Design Component Framework",
             "href": "https://vuetifyjs.com/en/"
+          }
+        ],
+        resources: [
+          {
+            "title": "Batch geocoder for journalists",
+            "subtitle": "Locations to coordinates at rocket speed",
+            "href": "https://geocode.localfocus.nl/"
+          },
+          {
+            "title": "Openrouteservice",
+            "href": "https://openrouteservice.org/"
+          },
+          {
+            "title": "VROOM",
+            "subtitle": "Vehicle Routing Open-source Optimization Machine",
+            "href": "http://vroom-project.org/"
           }
         ]
       })
