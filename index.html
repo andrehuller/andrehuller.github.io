@@ -4,19 +4,22 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  
   <link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet">
- 
+  <link href="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.72.0/dist/L.Control.Locate.min.css" rel="stylesheet">
+  
   <link rel="icon" href="favicon.ico">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <title>github.io</title>
-  
+
   <style>
     [v-cloak] {
       display: none;
     }
     #map {
-      height: 900px;
+      height: 500px;
       z-index: 0;
     }
   </style>
@@ -156,7 +159,11 @@
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/vue-router@3.4.2/dist/vue-router.min.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.72.0/dist/L.Control.Locate.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/esri-leaflet@2.5.0/dist/esri-leaflet.js"></script>
   
   <script>
@@ -255,20 +262,43 @@
       template: `
         <v-container fluid>
           <div id="map" class="mx-10"></div>
-
-          <v-navigation-drawer
-            right
-          ></v-navigation-drawer>
+          
+          <v-row>
+            <v-col cols="12" lg="4">
+              <v-card outlined href="https://github.com/nguyenning/Leaflet.defaultextent">
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-avatar class="indigo darken-1">
+                      <v-icon dark>mdi-home</v-icon>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title>Leaflet.defaultextent</v-list-item-title>
+                      <v-list-item-subtitle>Default Extent Button</v-list-item-subtitle>
+                    </v-list-item-content>
+                    <v-list-item-action>
+                      <v-icon>mdi-arrow-right</v-icon>
+                    </v-list-item-action>
+                  </v-list-item>
+                </v-list>
+              </v-card>
+            </v-col>
+          </v-row>
         </v-container>
       `,
       mounted () {
         this.$nextTick(() => {
-          this.map = L.map('map').setView([-24.618588, -51.316993], 8)
+          this.map = L.map('map').setView([-24.618588, -51.316993], 7)
+          
+          L.control.defaultExtent()
+            .addTo(this.map);
+          
+          L.control.locate().addTo(this.map);
+          
           L.esri.basemapLayer('Topographic').addTo(this.map)
         })
       }
     }
-    
+
     const Libraries = {
       template: `
         <v-container fluid>
@@ -340,11 +370,6 @@
             "href": "https://openlayers.org/"
           },
           {
-            "title": "Project Euler",
-            "subtitle": "Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.",
-            "href": "https://projecteuler.net/"
-          },
-          {
             "title": "Unsplash",
             "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
             "href": "https://unsplash.com/"
@@ -369,6 +394,11 @@
           {
             "title": "Openrouteservice",
             "href": "https://openrouteservice.org/"
+          },
+          {
+            "title": "Project Euler",
+            "subtitle": "Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.",
+            "href": "https://projecteuler.net/"
           },
           {
             "title": "VROOM",
