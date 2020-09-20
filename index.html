@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
@@ -261,19 +261,22 @@
     const Leaflet = {
       template: `
         <v-container fluid>
-          <div id="map" class="mx-10"></div>
+          <div id="map"></div><!-- class="mx-10" -->
           
           <v-row>
-            <v-col cols="12" lg="4">
-              <v-card outlined href="https://github.com/nguyenning/Leaflet.defaultextent">
+            <v-col cols="12" lg="4"
+              v-for="plugin in plugins"
+              :key="plugin.title"
+            >
+              <v-card outlined :href="plugin.href">
                 <v-list>
                   <v-list-item>
                     <v-list-item-avatar class="indigo darken-1">
-                      <v-icon dark>mdi-home</v-icon>
+                      <v-icon dark>{{ plugin.icon }}</v-icon>
                     </v-list-item-avatar>
                     <v-list-item-content>
-                      <v-list-item-title>Leaflet.defaultextent</v-list-item-title>
-                      <v-list-item-subtitle>Default Extent Button</v-list-item-subtitle>
+                      <v-list-item-title>{{ plugin.title }}</v-list-item-title>
+                      <v-list-item-subtitle>{{ plugin.subtitle }}</v-list-item-subtitle>
                     </v-list-item-content>
                     <v-list-item-action>
                       <v-icon>mdi-arrow-right</v-icon>
@@ -285,6 +288,28 @@
           </v-row>
         </v-container>
       `,
+      data: () => ({
+        plugins: [
+          {
+            "icon": "mdi-home",
+            "title": "Leaflet.defaultextent",
+            "subtitle": "Default Extent Button",
+            "href": "https://github.com/nguyenning/Leaflet.defaultextent"
+          },
+          {
+            "icon": "mdi-crosshairs-gps",
+            "title": "leaflet-locatecontrol",
+            "subtitle": "A customizable locate control",
+            "href": "https://github.com/domoritz/leaflet-locatecontrol/"
+          },
+          {
+            "icon": "mdi-map-marker",
+            "title": "Leaflet.markercluster",
+            "subtitle": "Marker Cluster",
+            "href": "https://github.com/Leaflet/Leaflet.markercluster"
+          }
+        ]
+      }),
       mounted () {
         this.$nextTick(() => {
           this.map = L.map('map').setView([-24.618588, -51.316993], 7)
