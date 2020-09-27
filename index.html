@@ -13,7 +13,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
   <title>github.io</title>
-
+  
   <style>
     [v-cloak] {
       display: none;
@@ -89,6 +89,15 @@
             </v-list-item-content>
           </v-list-item>
           
+          <v-list-item to="/date_picker">
+            <v-list-item-icon>
+              <v-icon>mdi-calendar</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Date Picker</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+          
           <v-list-item to="/list">
             <v-list-item-icon>
               <v-icon>mdi-vuetify</v-icon>
@@ -108,6 +117,17 @@
           </v-list-item>
         </v-list>
 
+        <v-divider></v-divider>
+        <v-list dense nav>
+          <v-list-item to="/people">
+            <v-list-item-icon>
+              <v-icon>mdi-account-group</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>People</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
       </v-navigation-drawer>
 
       <v-app-bar
@@ -163,7 +183,7 @@
       </v-main>
     </v-app>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   
@@ -183,27 +203,27 @@
         <v-container fluid>
           <v-row justify="center">
             <v-col cols="12" lg="9">
-              <v-card>
+              <v-card height="500">
                 <v-img src="assets/cow.jpeg" max-height="500" position="bottom center"></v-img>
               </v-card>
             </v-col>
             <v-col cols="12" lg="9">
-              <v-card>
+              <v-card height="500">
                 <v-img src="assets/chicken.jpeg" max-height="500" position="center center"></v-img>
               </v-card>
             </v-col>
             <v-col cols="12" lg="9">
-              <v-card>
+              <v-card height="500">
                 <v-img src="assets/pig.jpeg" max-height="500" position="center center"></v-img>
               </v-card>
             </v-col>
             <v-col cols="12" lg="9">
-              <v-card>
+              <v-card height="500">
                 <v-img src="assets/sheep.jpeg" max-height="500" position="top -300px center"></v-img>
               </v-card>
             </v-col>
             <v-col cols="12" lg="9">
-              <v-card>
+              <v-card height="500">
                 <v-img src="assets/horse.jpeg" max-height="500" position="center center"></v-img>
               </v-card>
             </v-col>
@@ -318,6 +338,12 @@
             "title": "Leaflet.markercluster",
             "subtitle": "Marker Cluster",
             "href": "https://github.com/Leaflet/Leaflet.markercluster"
+          },
+          {
+            "icon": "mdi-map-marker-plus",
+            "title": "Leaflet-Geoman",
+            "subtitle": "the best geometry editing for Leaflet Maps",
+            "href": "https://geoman.io/leaflet-geoman"
           }
         ]
       }),
@@ -467,6 +493,11 @@
             "href": "https://www.chartjs.org/"
           },
           {
+            "title": "D3.js",
+            "subtitle": "Data-Driven Documents",
+            "href": "https://d3js.org/"
+          },     
+          {
             "title": "Firebase",
             "subtitle": "Firebase is a platform developed by Google for creating mobile and web applications.",
             "href": "https://firebase.google.com/"
@@ -475,6 +506,11 @@
             "title": "Flutter",
             "subtitle": "Beautiful native apps in record time",
             "href": "https://flutter.dev/"
+          },
+          {
+            "title": "kepler.gl",
+            "subtitle": "Make an impact with your location data",
+            "href": "https://kepler.gl/"
           },
           {
             "title": "Leaflet",
@@ -502,6 +538,11 @@
             "href": "https://openlayers.org/"
           },
           {
+            "title": "Standard.js",
+            "subtitle": "JavaScript Standard Style",
+            "href": "https://standardjs.com/"
+          },
+          {
             "title": "Unsplash",
             "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
             "href": "https://unsplash.com/"
@@ -522,6 +563,11 @@
             "title": "Bootstrap",
             "subtitle": "The most popular HTML, CSS, and JS library in the world",
             "href": "https://getbootstrap.com/"
+          },
+          {
+            "title": "DataTables",
+            "subtitle": "Table plug-in for jQuery",
+            "href": "https://datatables.net/"
           },
           {
             "title": "jQuery",
@@ -795,6 +841,18 @@
             "group": "IDE"
           },
           {
+            "title": "Sass",
+            "subtitle": "Syntactically Awesome Style Sheets",
+            "href": "https://sass-lang.com/",
+            "group": "Languages"
+          },
+          {
+            "title": "TypeScript",
+            "subtitle": "Typed JavaScript at Any Scale",
+            "href": "https://www.typescriptlang.org/",
+            "group": "Languages"
+          },
+          {
             "title": "Bootstrap",
             "subtitle": "The most popular HTML, CSS, and JS library in the world",
             "href": "https://getbootstrap.com/",
@@ -913,6 +971,12 @@
             "title": "Rollup",
             "subtitle": "Rollup is a module bundler for JavaScript",
             "href": "https://rollupjs.org/guide/en/",
+            "group": "Tools"
+          },
+          {
+            "title": "Standard.js",
+            "subtitle": "JavaScript Standard Style",
+            "href": "https://standardjs.com/",
             "group": "Tools"
           },
           {
@@ -1103,7 +1167,96 @@
         </v-container>
       `
     }
+    
+    const DatePicker = {
+      template: `
+    		<v-container>
+    		  <v-row justify="center">
+    		    <v-col cols="12" sm="12" md="12" lg="8">
+							<v-card>
+								<v-card-text>
+									<v-menu
+									  ref="startMenu"
+									  v-model="startMenu"
+									  :close-on-content-click="false"
+									  transition="scale-transition"
+									  offset-y full-width max-width="290px" min-width="290px"
+									>
+										<template v-slot:activator="{ on }">
+											<v-text-field v-model="dataInicialFmt"
+											  label="Data Inicial"
+											  prepend-icon="mdi-calendar"
+											  @blur="dataInicial = parseDate(dataInicialFmt)"
+											  v-on="on" clearable
+											></v-text-field><!-- mask="##/##/####" -->
+										</template>
+										<v-date-picker v-model="dataInicial" no-title
+										  @input="startMenu = false"
+										></v-date-picker>
+									</v-menu>
 
+									<v-menu
+									  v-model="endMenu"
+									  :close-on-content-click="false"
+									  transition="scale-transition"
+									  offset-y full-width max-width="290px" min-width="290px">
+										<template v-slot:activator="{ on }">
+											<v-text-field
+											  v-model="dataFinalFmt"
+											  label="Data Final"
+											  prepend-icon="mdi-calendar"
+											  @blur="dataFinal = parseDate(dataFinalFmt)" v-on="on"
+											  clearable
+											></v-text-field>
+										</template>
+										<v-date-picker v-model="dataFinal" no-title
+										  @input="endMenu = false"
+										></v-date-picker>
+									</v-menu>
+								</v-card-text>
+							</v-card>
+						</v-col>
+					</v-row>
+				</v-container>
+				`,
+			data: () => ({
+				startMenu: false,
+	      dataInicial: null,
+	      dataInicialFmt: null,
+
+	      endMenu: false,
+	      dataFinal: null,
+	      dataFinalFmt: null,
+			}),
+			created: function() {
+	      this.dataInicial = new Date().toISOString().substr(0, 10);
+	      this.dataInicialFmt = this.formatDate(this.dataInicial);
+
+	      this.dataFinal = new Date().toISOString().substr(0, 10);
+	      this.dataFinalFmt = this.formatDate(this.dataFinal);
+      },
+      watch: {
+	      dataInicial: function(val) {
+		      this.dataInicialFmt = this.formatDate(this.dataInicial);
+	      },
+	      dataFinal: function(val) {
+		      this.dataFinalFmt = this.formatDate(this.dataFinal);
+	      }
+      },
+      methods: {
+	      formatDate: function(date) {
+		      if (!date) return null
+		      const [year, month, day] = date.split('-')
+		      return `${day}/${month}/${year}`
+	      },
+	      parseDate: function(date) {
+		      if (!date) return null
+		      const [day, month, year] = date.split('/')
+		      return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
+	      }
+      }
+    }
+    
     const List = {
       data: () => ({
         sum: 0
@@ -1201,13 +1354,40 @@
                   <p><kbd>git add .</kbd> staging files</p>
                   <p><kbd>git status</kbd></p>
                   <p><kbd>git commit -m "Update index.html"</kbd></p>
-                  <kbd>git push -u origin master</kbd>
+                  <p><kbd>git push -u origin master</kbd></p>
+                  <v-divider class="pb-4"></v-divider>
+                  <p><kbd>npm run serve</kbd></p>
                 </v-card-text>
               </v-card>
             </v-col>
           </v-row>
         </v-container>
       `
+    }
+    
+    const People = {
+      template: `
+        <v-container>
+          <v-row>
+            <v-col sm="12" md="6" lg="4"
+              v-for="person in people"
+              :key="person.name"
+            >
+              <v-card>
+                <v-card-title>
+                  {{ person.name }}
+                </v-card-title>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
+      `,
+      data: () => ({
+        people: [
+          { name: 'Bill Maher' },
+          { name: 'Jordan Peterson' }
+        ]
+      })
     }
     
     const Login = {
@@ -1252,8 +1432,10 @@
       { path: '/leaflet', component: Leaflet },
       { path: '/unsplash', component: Unsplash },
       { path: '/calendar', component: Calendar },
+      { path: '/date_picker', component: DatePicker },
       { path: '/list', component: List },
       { path: '/git', component: Git },
+      { path: '/people', component: People },
       { path: '/login', component: Login }
     ]
     
