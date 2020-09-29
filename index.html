@@ -89,53 +89,25 @@
         </v-list>
 
         <v-divider></v-divider>
-        <v-list dense nav>
-          <v-list-item to="/calendar">
+        <v-list
+          v-for="component in components"
+          :key="component.title"
+          dense nav
+        >
+          <v-list-item :to="component.route">
             <v-list-item-icon>
-              <v-icon>mdi-calendar</v-icon>
+              <v-icon>
+                {{ component.icon }}
+              </v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Calendar</v-list-item-title
-            </v-list-item-content>
-          </v-list-item>
-          
-          <v-list-item to="/carousel">
-            <v-list-item-icon>
-              <v-icon>mdi-view-carousel</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Carousel</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          
-          <v-list-item to="/date_picker">
-            <v-list-item-icon>
-              <v-icon>mdi-calendar</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Date Picker</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          
-          <v-list-item to="/list">
-            <v-list-item-icon>
-              <v-icon>mdi-format-list-checkbox</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>List</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          
-          <v-list-item to="/tabs">
-            <v-list-item-icon>
-              <v-icon>mdi-vuetify</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Tabs</v-list-item-title>
+              <v-list-item-title>
+                {{ component.title }}
+              </v-list-item-title
             </v-list-item-content>
           </v-list-item>
         </v-list>
-
+        
         <v-divider></v-divider>
         <v-list dense nav>
           <v-list-item to="/git">
@@ -1475,6 +1447,122 @@
       }
     }
     
+    const DataIterator = {
+      template: `
+        <v-container fluid>
+          <v-row>
+            <template v-for="country in countries">
+              <v-col class="mt-2" cols="12">
+                <strong>{{ country }} </strong>
+              </v-col>
+              <v-col cols="12">
+                <v-data-iterator
+                  :items="images(country)"
+                >
+                  <template v-slot:default="props">
+                    <v-row>
+                      <v-col
+                        v-for="item in props.items"
+                        :key="item.title"
+                        cols="12"
+                        sm="12"
+                        md="6"
+                        lg="4"
+                      >
+                        <v-card
+                          class="fill-height d-flex flex-column"
+                        >
+                          <v-img
+                            :src="item.src"
+                            height="335"
+                          ></v-img>
+                          <v-list>
+                            <v-list-item @click="">
+                              <v-list-item-icon>
+                                <v-icon>mdi-map-marker</v-icon>
+                              </v-list-item-icon>
+                              <v-list-item-content>
+                                <v-list-item-title>
+                                  {{ item.title }}
+                                </v-list-item-title>
+                              </v-list-item-content>
+                            </v-list-item>
+                          </v-list>
+                          <v-card-actions>
+                            <a :href="item.href">
+                              {{ item.href }}
+                            </a>
+                          </v-card-actions>
+                        </v-card>
+                      </v-col>
+                    </v-row>
+                  </template>
+                </v-data-iterator>
+              </v-col>
+            </template>
+          </v-row>
+        </v-container>
+      `,
+      data: () => ({
+        countries: ['Chile', 'France', 'Italy', 'Japan', 'Mexico'],
+        items: [
+          {
+            "title": "Easter Island, Chile",
+            "country": "Chile",
+            "src": "assets/thomas-griggs-2Qjk2PfaH3o-unsplash.jpg",
+            "href": "https://unsplash.com/photos/2Qjk2PfaH3o"
+          },
+          {
+            "title": "Arc de Triomphe, Paris, France",
+            "country": "France",
+            "src": "assets/rodrigo-kugnharski-pdWc5wm1STw-unsplash.jpg",
+            "href": "https://unsplash.com/photos/pdWc5wm1STw"
+          },
+          {
+            "title": "Eiffel Tower, Paris, France",
+            "country": "France",
+            "src": "assets/chris-karidis-nnzkZNYWHaU-unsplash.jpg",
+            "href": "https://unsplash.com/photos/nnzkZNYWHaU"
+          },
+          {
+            "title": "Notre Dame, Paris, France",
+            "country": "France",
+            "src": "assets/rita-chou-Qz8vpLWQZ6A-unsplash.jpg",
+            "href": "https://unsplash.com/photos/Qz8vpLWQZ6A"
+          },
+          {
+            "title": "Colosseum, Roma, Italy",
+            "country": "Italy",
+            "src": "assets/henry-paul-on4xM3i9_FE-unsplash.jpg",
+            "href": "https://unsplash.com/photos/on4xM3i9_FE"
+          },
+          {
+            "title": "Trevi Fountain, Roma, Italy",
+            "country": "Italy",
+            "src": "assets/cristina-gottardi-I1Lv2yX67GI-unsplash.jpg",
+            "href": "https://unsplash.com/photos/I1Lv2yX67GI"
+          },
+          {
+            "title": "Chureito Pagoda, Fujiyoshida-shi, Japan",
+            "country": "Japan",
+            "src": "assets/manuel-cosentino-n--CMLApjfI-unsplash.jpg",
+            "href": "https://unsplash.com/photos/n--CMLApjfI"
+          },
+          {
+            "title": "Chichén Itzá, Mexico",
+            "country": "Mexico",
+            "src": "assets/filip-gielda-VPavA7BBxK0-unsplash.jpg",
+            "href": "https://unsplash.com/photos/VPavA7BBxK0"
+          }
+        ]
+      }),
+      methods: {
+        images: function (country) {
+          return this.items.filter(item => item.country.localeCompare(country) === 0)
+        }
+      }
+    }
+    
     const List = {
       data: () => ({
         sum: 0
@@ -1662,7 +1750,7 @@
             "country": "Mexico",
             "src": "assets/filip-gielda-VPavA7BBxK0-unsplash.jpg",
             "href": "https://unsplash.com/photos/VPavA7BBxK0"
-          },
+          }
         ]
       }),
       methods: {
@@ -1762,6 +1850,7 @@
       { path: '/unsplash2', component: Unsplash2 },
       { path: '/calendar', component: Calendar },
       { path: '/carousel', component: Carousel },
+      { path: '/data_iterator', component: DataIterator },
       { path: '/date_picker', component: DatePicker },
       { path: '/list', component: List },
       { path: '/git', component: Git },
@@ -1779,9 +1868,43 @@
       vuetify: new Vuetify(),
       router,
       data: () => ({
-        drawer: null
+        drawer: null,
+        components: [
+          {
+            route: '/calendar',
+            icon: 'mdi-calendar',
+            title: 'Calendar'
+          },
+          {
+            route: '/carousel',
+            icon: 'mdi-view-carousel',
+            title: 'Carousel'
+          },
+          {
+            route: '/data_iterator',
+            icon: 'mdi-vuetify',
+            title: 'Data Iterator'
+          },
+          {
+            route: '/date_picker',
+            icon: 'mdi-calendar',
+            title: 'Date Picker'
+          },
+          {
+            route: '/list',
+            icon: 'mdi-format-list-checkbox',
+            title: 'List'
+          },
+          {
+            route: '/tabs',
+            icon: 'mdi-vuetify',
+            title: 'Tabs'
+          }
+        ]
       })
     })
+
+
   </script>
 </body>
 </html>
