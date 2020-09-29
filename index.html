@@ -135,6 +135,15 @@
               <v-list-item-title>People</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          
+          <v-list-item to="/resources">
+            <v-list-item-icon>
+              <v-icon>mdi-information</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Resources</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </v-list>
       </v-navigation-drawer>
 
@@ -209,6 +218,97 @@
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
   
   <script>
+    const libraries = [
+      {
+        "title": "ApexCharts.js",
+        "subtitle": "Modern & Interactive Open-source Charts",
+        "href": "https://apexcharts.com/",
+        "group": "Charts"
+      },
+      {
+        "title": "axios",
+        "subtitle": "Promise based HTTP client for the browser and node.js",
+        "href": "https://github.com/axios/axios",
+        "group": "Library"
+      },
+      {
+        "title": "Bootstrap",
+        "subtitle": "The most popular HTML, CSS, and JS library in the world",
+        "href": "https://getbootstrap.com/",
+        "group": "Library"
+      },
+      {
+        "title": "Chart.js",
+        "subtitle": "Simple yet flexible JavaScript charting for designers & developers",
+        "href": "https://www.chartjs.org/",
+        "group": "Charts"
+      },
+      {
+        "title": "D3.js",
+        "subtitle": "Data-Driven Documents",
+        "href": "https://d3js.org/",
+        "group": "Data"
+      },
+      {
+        "title": "DataTables",
+        "subtitle": "Table plug-in for jQuery",
+        "href": "https://datatables.net/",
+        "group": "Data"
+      },
+      {
+        "title": "jQuery",
+        "subtitle": "write less, do more.",
+        "href": "https://jquery.com/",
+        "group": "Frameworks"
+      },
+      {
+        "title": "Leaflet",
+        "subtitle": "mobile-friendly interactive maps",
+        "href": "https://leafletjs.com/",
+        "group": "Map"
+      },
+      {
+        "title": "Lodash",
+        "subtitle": "A modern JavaScript utility library delivering modularity, performance & extras",
+        "href": "https://lodash.com/",
+        "group": "Utilities",
+        "highlight": true
+      },
+      {
+        "title": "Moment",
+        "subtitle": "Parse, validate, manipulate, and display dates and times in JavaScript.",
+        "href": "https://momentjs.com/",
+        "group": "Date"
+      },
+      {
+        "title": "OpenLayers",
+        "subtitle": "A high-performance, feature-packed library for all your mapping needs",
+        "href": "https://openlayers.org/",
+        "group": "Map",
+        "highlight": true
+      },
+      {
+        "title": "Standard.js",
+        "subtitle": "JavaScript Standard Style",
+        "href": "https://standardjs.com/",
+        "group": "Formatting"
+      },
+      {
+        "title": "Vue",
+        "subtitle": "The Progressive JavaScript Framework",
+        "href": "https://vuejs.org",
+        "group": "Frameworks",
+        "highlight": true
+      },
+      {
+        "title": "Vuetify",
+        "subtitle": "Material Design Component Framework",
+        "href": "https://vuetifyjs.com/en/",
+        "group": "UI Components",
+        "highlight": true
+      }
+    ]
+
     const locations = [
       {
         "title": "Arc de Triomphe, Paris, France",
@@ -598,7 +698,7 @@
         }
       }
     }
-
+    
     const Libraries = {
       template: `
         <v-container fluid>
@@ -621,65 +721,10 @@
               </v-card>
             </v-col>
           </v-row>
-          <v-divider></v-divider>
-          <v-row>
-            <v-col cols="12" lg="4"
-              v-for="library in deprecated"
-              :key="library.title"
-            >
-              <v-card class="fill-height d-flex flex-column">
-                <v-card-title>
-                  {{ library.title }}
-                </v-card-title>
-                <v-card-text>
-                  {{ library.subtitle }}
-                </v-card-text>
-                <v-spacer></v-spacer>
-                <v-card-actions>
-                  <a :href="library.href">{{ library.href }}</a>
-                </v-card-actions>
-              </v-card>
-            </v-col>
-          </v-row>
-          <v-divider></v-divider>
-          <v-row>
-            <v-col cols="12" lg="4"
-              v-for="resource in resources"
-              :key="resource.title"
-            >
-              <v-card class="fill-height d-flex flex-column">
-                <v-card-title>
-                  {{ resource.title }}
-                </v-card-title>
-                <v-card-text>
-                  {{ resource.subtitle }}
-                </v-card-text>
-                <v-spacer></v-spacer>
-                <v-card-actions>
-                  <a :href="resource.href">{{ resource.href }}</a>
-                </v-card-actions>
-              </v-card>
-            </v-col>
-          </v-row>
         </v-container>
       `,
       data: () => ({
         libraries: [
-          {
-            "title": "axios",
-            "subtitle": "Promise based HTTP client for the browser and node.js",
-            "href": "https://github.com/axios/axios"
-          },
-          {
-            "title": "Chart.js",
-            "subtitle": "Simple yet flexible JavaScript charting for designers & developers",
-            "href": "https://www.chartjs.org/"
-          },
-          {
-            "title": "D3.js",
-            "subtitle": "Data-Driven Documents",
-            "href": "https://d3js.org/"
-          },     
           {
             "title": "Firebase",
             "subtitle": "Firebase is a platform developed by Google for creating mobile and web applications.",
@@ -694,93 +739,12 @@
             "title": "kepler.gl",
             "subtitle": "Make an impact with your location data",
             "href": "https://kepler.gl/"
-          },
-          {
-            "title": "Leaflet",
-            "subtitle": "mobile-friendly interactive maps",
-            "href": "https://leafletjs.com/"
-          },
-          {
-            "title": "Lodash",
-            "subtitle": "A modern JavaScript utility library delivering modularity, performance & extras",
-            "href": "https://lodash.com/"
-          },
-          {
-            "title": "Material Design",
-            "subtitle": "Build beautiful products, faster.",
-            "href": "https://material.io/design"
-          },
-          {
-            "title": "Moment",
-            "subtitle": "Parse, validate, manipulate, and display dates and times in JavaScript.",
-            "href": "https://momentjs.com/"
-          },
-          {
-            "title": "OpenLayers",
-            "subtitle": "A high-performance, feature-packed library for all your mapping needs.",
-            "href": "https://openlayers.org/"
-          },
-          {
-            "title": "Standard.js",
-            "subtitle": "JavaScript Standard Style",
-            "href": "https://standardjs.com/"
-          },
-          {
-            "title": "Unsplash",
-            "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
-            "href": "https://unsplash.com/"
-          },
-          {
-            "title": "Vue",
-            "subtitle": "The Progressive JavaScript Framework",
-            "href": "https://vuejs.org/"
-          },
-          {
-            "title": "Vuetify",
-            "subtitle": "Material Design Component Framework",
-            "href": "https://vuetifyjs.com/en/"
-          }
-        ],
-        deprecated: [
-          {
-            "title": "Bootstrap",
-            "subtitle": "The most popular HTML, CSS, and JS library in the world",
-            "href": "https://getbootstrap.com/"
-          },
-          {
-            "title": "DataTables",
-            "subtitle": "Table plug-in for jQuery",
-            "href": "https://datatables.net/"
-          },
-          {
-            "title": "jQuery",
-            "subtitle": "write less, do more.",
-            "href": "https://jquery.com/"
-          }
-        ],
-        resources: [
-          {
-            "title": "Batch geocoder for journalists",
-            "subtitle": "Locations to coordinates at rocket speed",
-            "href": "https://geocode.localfocus.nl/"
-          },
-          {
-            "title": "Openrouteservice",
-            "subtitle": "Openpoiservice allows you to find places of interest around or within given geographic coordinates.",
-            "href": "https://openrouteservice.org/"
-          },
-          {
-            "title": "Project Euler",
-            "subtitle": "Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.",
-            "href": "https://projecteuler.net/"
-          },
-          {
-            "title": "VROOM",
-            "subtitle": "Vehicle Routing Open-source Optimization Machine",
-            "href": "http://vroom-project.org/"
           }
         ]
-      })
+      }),
+      mounted () {
+        this.libraries = this.libraries.concat(libraries)
+      }
     }
     
     const Libraries2 = {
@@ -816,18 +780,6 @@
         ],
         libraries: [
           {
-            "title": "ApexCharts.js",
-            "subtitle": "Modern & Interactive Open-source Charts",
-            "href": "https://apexcharts.com/",
-            "group": "Charts"
-          },
-          {
-            "title": "Chart.js",
-            "subtitle": "Simple yet flexible JavaScript charting for designers & developers",
-            "href": "https://www.chartjs.org/",
-            "group": "Charts"
-          },
-          {
             "title": "pgAdmin",
             "subtitle": "administration and development platform for PostgreSQL",
             "href": "https://www.pgadmin.org/",
@@ -858,12 +810,6 @@
             "title": "date-fns",
             "subtitle": "Modern JavaScript date utility library",
             "href": "https://date-fns.org/",
-            "group": "Date"
-          },
-          {
-            "title": "Moment.js",
-            "subtitle": "Parse, validate, manipulate, and display dates and times in JavaScript",
-            "href": "https://momentjs.com/",
             "group": "Date"
           },
           {
@@ -938,12 +884,6 @@
             "group": "Frameworks"
           },
           {
-            "title": "jQuery",
-            "subtitle": "write less, do more.",
-            "href": "https://jquery.com/",
-            "group": "Frameworks"
-          },
-          {
             "title": "Knockout",
             "subtitle": "Simplify dynamic JavaScript UIs with the Model-View-View-Model (MVVM) pattern",
             "href": "https://knockoutjs.com/",
@@ -978,13 +918,6 @@
             "subtitle": "Cybernetically enhanced web apps",
             "href": "https://svelte.dev/",
             "group": "Frameworks"
-          },
-          {
-            "title": "Vue",
-            "subtitle": "The Progressive JavaScript Framework",
-            "href": "https://vuejs.org",
-            "group": "Frameworks",
-            "highlight": true
           },
           {
             "title": "Font Awesome",
@@ -1034,25 +967,6 @@
             "subtitle": "Typed JavaScript at Any Scale",
             "href": "https://www.typescriptlang.org/",
             "group": "Languages"
-          },
-          {
-            "title": "Bootstrap",
-            "subtitle": "The most popular HTML, CSS, and JS library in the world",
-            "href": "https://getbootstrap.com/",
-            "group": "Library"
-          },
-          {
-            "title": "Leaflet",
-            "subtitle": "mobile-friendly interactive maps",
-            "href": "https://leafletjs.com/",
-            "group": "Map"
-          },
-          {
-            "title": "OpenLayers",
-            "subtitle": "A high-performance, feature-packed library for all your mapping needs",
-            "href": "https://openlayers.org/",
-            "group": "Map",
-            "highlight": true
           },
           {
             "title": "NativeScript",
@@ -1157,12 +1071,6 @@
             "group": "Tools"
           },
           {
-            "title": "Standard.js",
-            "subtitle": "JavaScript Standard Style",
-            "href": "https://standardjs.com/",
-            "group": "Tools"
-          },
-          {
             "title": "Webpack",
             "subtitle": "Webpack is an open-source JavaScript module bundler",
             "href": "https://webpack.js.org/",
@@ -1260,20 +1168,6 @@
             "group": "UI Components"
           },
           {
-            "title": "Vuetify",
-            "subtitle": "Material Design Component Framework",
-            "href": "https://vuetifyjs.com/en/",
-            "group": "UI Components",
-            "highlight": true
-          },
-          {
-            "title": "Lodash",
-            "subtitle": "A modern JavaScript utility library delivering modularity, performance & extras",
-            "href": "https://lodash.com/",
-            "group": "Utilities",
-            "highlight": true
-          },
-          {
             "title": "Underscore",
             "subtitle": "JavaScript's utility _ belt",
             "href": "https://underscorejs.org/",
@@ -1301,7 +1195,10 @@
             "highlight": true
           }
         ]
-      })
+      }),
+      mounted () {
+        this.libraries = this.libraries.concat(libraries)
+      }
     }
     
     const Calendar = {
@@ -1734,6 +1631,66 @@
       })
     }
     
+    const Resources = {
+      template: `
+        <v-container fluid>
+          <v-row>
+            <v-col cols="12" lg="4"
+              v-for="resource in resources"
+              :key="resource.title"
+            >
+              <v-card class="fill-height d-flex flex-column">
+                <v-card-title>
+                  {{ resource.title }}
+                </v-card-title>
+                <v-card-text>
+                  {{ resource.subtitle }}
+                </v-card-text>
+                <v-spacer></v-spacer>
+                <v-card-actions>
+                  <a :href="resource.href">{{ resource.href }}</a>
+                </v-card-actions>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
+      `,
+      data: () => ({
+        resources: [
+          {
+            "title": "Batch geocoder for journalists",
+            "subtitle": "Locations to coordinates at rocket speed",
+            "href": "https://geocode.localfocus.nl/"
+          },
+          {
+            "title": "Material Design",
+            "subtitle": "Build beautiful products, faster.",
+            "href": "https://material.io/design"
+          },
+          {
+            "title": "Openrouteservice",
+            "subtitle": "Openpoiservice allows you to find places of interest around or within given geographic coordinates.",
+            "href": "https://openrouteservice.org/"
+          },
+          {
+            "title": "Project Euler",
+            "subtitle": "Project Euler exists to encourage, challenge, and develop the skills and enjoyment of anyone with an interest in the fascinating world of mathematics.",
+            "href": "https://projecteuler.net/"
+          },
+          {
+            "title": "Unsplash",
+            "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
+            "href": "https://unsplash.com/"
+          },
+          {
+            "title": "VROOM",
+            "subtitle": "Vehicle Routing Open-source Optimization Machine",
+            "href": "http://vroom-project.org/"
+          }
+        ]
+      })
+    }
+    
     const Login = {
       template: `
         <v-container fluid>
@@ -1782,7 +1739,10 @@
       { path: '/date_picker', component: DatePicker },
       { path: '/list', component: List },
       { path: '/git', component: Git },
+      
       { path: '/people', component: People },
+      { path: '/resources', component: Resources },
+      
       { path: '/tabs', component: Tabs },
       { path: '/login', component: Login }
     ]
