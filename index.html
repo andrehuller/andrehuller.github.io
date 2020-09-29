@@ -119,13 +119,25 @@
           
           <v-list-item to="/list">
             <v-list-item-icon>
-              <v-icon>mdi-vuetify</v-icon>
+              <v-icon>mdi-format-list-checkbox</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
               <v-list-item-title>List</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
           
+          <v-list-item to="/tabs">
+            <v-list-item-icon>
+              <v-icon>mdi-vuetify</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Tabs</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+
+        <v-divider></v-divider>
+        <v-list dense nav>
           <v-list-item to="/git">
             <v-list-item-icon>
               <v-icon>mdi-git</v-icon>
@@ -134,10 +146,7 @@
               <v-list-item-title>Git</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-        </v-list>
-
-        <v-divider></v-divider>
-        <v-list dense nav>
+          
           <v-list-item href="./material-ui.html">
             <v-list-item-icon>
               <v-icon>mdi-material-ui</v-icon>
@@ -216,6 +225,7 @@
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/vue-router@3.4.2/dist/vue-router.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-the-mask@0.11.1/dist/vue-the-mask.min.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/axios@0.20.0/dist/axios.min.js"></script>
   
@@ -271,6 +281,11 @@
       data: () => ({
         images: [
           {
+            "title": "Arc de Triomphe, Paris, France",
+            "src": "assets/rodrigo-kugnharski-pdWc5wm1STw-unsplash.jpg",
+            "href": "https://unsplash.com/photos/pdWc5wm1STw"
+          },
+          {
             "title": "Chichén Itzá, Mexico",
             "src": "assets/filip-gielda-VPavA7BBxK0-unsplash.jpg",
             "href": "https://unsplash.com/photos/VPavA7BBxK0"
@@ -284,6 +299,11 @@
             "title": "Colosseum, Roma, Italy",
             "src": "assets/henry-paul-on4xM3i9_FE-unsplash.jpg",
             "href": "https://unsplash.com/photos/on4xM3i9_FE"
+          },
+          {
+            "title": "Easter Island, Chile",
+            "src": "assets/thomas-griggs-2Qjk2PfaH3o-unsplash.jpg",
+            "href": "https://unsplash.com/photos/2Qjk2PfaH3o"
           },
           {
             "title": "Eiffel Tower, Paris, France",
@@ -301,9 +321,24 @@
             "href": "https://unsplash.com/photos/L4jrg4c7928"
           },
           {
+            "title": "London, United Kingdom",
+            "src": "assets/eva-dang-EXdXLrZXS9Q-unsplash.jpg",
+            "href": "https://unsplash.com/photos/EXdXLrZXS9Q"
+          },
+          {
+            "title": "Louvre, Paris, France",
+            "src": "assets/sasan-hezarkhani--F-C5EeYa-s-unsplash.jpg",
+            "href": "https://unsplash.com/photos/-F-C5EeYa-s"
+          },
+          {
             "title": "Machu Picchu, Peru",
             "src": "assets/willian-justen-de-vasconcellos-4hMET7vYTAQ-unsplash.jpg",
             "href": "https://unsplash.com/photos/4hMET7vYTAQ"
+          },
+          {
+            "title": "Mount Rushmore, South Dakota, United States",
+            "src": "assets/stephen-F0T6QIPDrDc-unsplash.jpg",
+            "href": "https://unsplash.com/photos/F0T6QIPDrDc"
           },
           {
             "title": "Notre Dame, Paris, France",
@@ -324,6 +359,11 @@
             "title": "Porto, Portugal",
             "src": "assets/nick-karvounis-Prb-sjOUBFs-unsplash.jpg",
             "href": "https://unsplash.com/photos/Prb-sjOUBFs"
+          },
+          {
+            "title": "Rio de Janeiro, Brazil",
+            "src": "assets/agustin-diaz-7F65HDP0-E0-unsplash.jpg",
+            "href": "https://unsplash.com/photos/7F65HDP0-E0"
           },
           {
             "title": "Rothenburg ob der Tauber, Germany",
@@ -1385,6 +1425,12 @@
 										  @input="endMenu = false"
 										></v-date-picker>
 									</v-menu>
+									
+									<v-text-field
+									  v-mask="['(##) ####-####', '(##) #####-####']"
+									  prepend-icon="mdi-phone"
+									  clearable
+									></v-text-field>
 								</v-card-text>
 							</v-card>
 						</v-col>
@@ -1516,6 +1562,116 @@
       }
     }
     
+    const Tabs = {
+      template: `
+        <v-container fluid pa-0>
+          <v-tabs grow>
+            <v-tab v-for="country in countries" :key="country">
+              {{ country }}
+            </v-tab>
+            <v-tab-item v-for="country in countries" :key="country">
+              <!--
+                class="grey lighten-3"
+              -->
+              <v-container fluid>
+                <v-row>
+                  <v-col
+                    v-for="image in images(country)"
+                    :key="image.title"
+                    cols="12" sm="12" md="6" lg="4"
+                  >
+                    <v-card
+                      class="fill-height d-flex flex-column"
+                    >
+                      <v-img
+                        :src="image.src"
+                        height="335"
+                      ></v-img>
+                      <v-list>
+                        <v-list-item @click="">
+                          <v-list-item-icon>
+                            <v-icon>mdi-map-marker</v-icon>
+                          </v-list-item-icon>
+                          <v-list-item-content>
+                            <v-list-item-title>
+                              {{ image.title }}
+                            </v-list-item-title>
+                          </v-list-item-content>
+                        </v-list-item>
+                      </v-list>
+                      <v-card-actions>
+                        <a :href="image.href">
+                          {{ image.href }}
+                        </a>
+                      </v-card-actions>
+                    </v-card>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-tab-item>
+          </v-tabs>
+        </v-container>
+      `,
+      data: () => ({
+        countries: ['Chile', 'France', 'Italy', 'Japan', 'Mexico'],
+        items: [
+          {
+            "title": "Easter Island, Chile",
+            "country": "Chile",
+            "src": "assets/thomas-griggs-2Qjk2PfaH3o-unsplash.jpg",
+            "href": "https://unsplash.com/photos/2Qjk2PfaH3o"
+          },
+          {
+            "title": "Arc de Triomphe, Paris, France",
+            "country": "France",
+            "src": "assets/rodrigo-kugnharski-pdWc5wm1STw-unsplash.jpg",
+            "href": "https://unsplash.com/photos/pdWc5wm1STw"
+          },
+          {
+            "title": "Eiffel Tower, Paris, France",
+            "country": "France",
+            "src": "assets/chris-karidis-nnzkZNYWHaU-unsplash.jpg",
+            "href": "https://unsplash.com/photos/nnzkZNYWHaU"
+          },
+          {
+            "title": "Notre Dame, Paris, France",
+            "country": "France",
+            "src": "assets/rita-chou-Qz8vpLWQZ6A-unsplash.jpg",
+            "href": "https://unsplash.com/photos/Qz8vpLWQZ6A"
+          },
+          {
+            "title": "Colosseum, Roma, Italy",
+            "country": "Italy",
+            "src": "assets/henry-paul-on4xM3i9_FE-unsplash.jpg",
+            "href": "https://unsplash.com/photos/on4xM3i9_FE"
+          },
+          {
+            "title": "Trevi Fountain, Roma, Italy",
+            "country": "Italy",
+            "src": "assets/cristina-gottardi-I1Lv2yX67GI-unsplash.jpg",
+            "href": "https://unsplash.com/photos/I1Lv2yX67GI"
+          },
+          {
+            "title": "Chureito Pagoda, Fujiyoshida-shi, Japan",
+            "country": "Japan",
+            "src": "assets/manuel-cosentino-n--CMLApjfI-unsplash.jpg",
+            "href": "https://unsplash.com/photos/n--CMLApjfI"
+          },
+          {
+            "title": "Chichén Itzá, Mexico",
+            "country": "Mexico",
+            "src": "assets/filip-gielda-VPavA7BBxK0-unsplash.jpg",
+            "href": "https://unsplash.com/photos/VPavA7BBxK0"
+          },
+        ]
+      }),
+      methods: {
+        images: function (country) {
+          return this.items.filter(item => item.country.localeCompare(country) === 0)
+        }
+      }
+    }
+    
     const Git = {
       template: `
         <v-container>
@@ -1610,6 +1766,7 @@
       { path: '/list', component: List },
       { path: '/git', component: Git },
       { path: '/people', component: People },
+      { path: '/tabs', component: Tabs },
       { path: '/login', component: Login }
     ]
     
