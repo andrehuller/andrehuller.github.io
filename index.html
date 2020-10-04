@@ -650,7 +650,7 @@
         })
       },
       methods: {
-      	init () {
+        init () {
           var style = function (feature) {
             var colors = {
               4108: '#67001f',
@@ -1276,96 +1276,96 @@
     
     const DatePicker = {
       template: `
-    		<v-container>
-    		  <v-row justify="center">
-    		    <v-col cols="12" sm="12" md="12" lg="8">
-							<v-card>
-								<v-card-text>
-									<v-menu
-									  ref="startMenu"
-									  v-model="startMenu"
-									  :close-on-content-click="false"
-									  transition="scale-transition"
-									  offset-y max-width="290px" min-width="290px"
-									>
-										<template v-slot:activator="{ on }">
-											<v-text-field v-model="dataInicialFmt"
-											  label="Data Inicial"
-											  prepend-icon="mdi-calendar"
-											  @blur="dataInicial = parseDate(dataInicialFmt)"
-											  v-on="on" clearable
-											></v-text-field><!-- mask="##/##/####" -->
-										</template>
-										<v-date-picker v-model="dataInicial" no-title
-										  @input="startMenu = false"
-										></v-date-picker>
-									</v-menu>
+        <v-container>
+          <v-row justify="center">
+            <v-col cols="12" sm="12" md="12" lg="8">
+              <v-card>
+                <v-card-text>
+                  <v-menu
+                    ref="startMenu"
+                    v-model="startMenu"
+                    :close-on-content-click="false"
+                    transition="scale-transition"
+                    offset-y max-width="290px" min-width="290px"
+                  >
+                    <template v-slot:activator="{ on }">
+                      <v-text-field v-model="dataInicialFmt"
+                        label="Data Inicial"
+                        prepend-icon="mdi-calendar"
+                        @blur="dataInicial = parseDate(dataInicialFmt)"
+                        v-on="on" clearable
+                      ></v-text-field><!-- mask="##/##/####" -->
+                    </template>
+                    <v-date-picker v-model="dataInicial" no-title
+                      @input="startMenu = false"
+                    ></v-date-picker>
+                  </v-menu>
 
-									<v-menu
-									  v-model="endMenu"
-									  :close-on-content-click="false"
-									  transition="scale-transition"
-									  offset-y max-width="290px" min-width="290px">
-										<template v-slot:activator="{ on }">
-											<v-text-field
-											  v-model="dataFinalFmt"
-											  label="Data Final"
-											  prepend-icon="mdi-calendar"
-											  @blur="dataFinal = parseDate(dataFinalFmt)" v-on="on"
-											  clearable
-											></v-text-field>
-										</template>
-										<v-date-picker v-model="dataFinal" no-title
-										  @input="endMenu = false"
-										></v-date-picker>
-									</v-menu>
-									
-									<v-text-field
-									  v-mask="['(##) ####-####', '(##) #####-####']"
-									  prepend-icon="mdi-phone"
-									  clearable
-									></v-text-field>
-								</v-card-text>
-							</v-card>
-						</v-col>
-					</v-row>
-				</v-container>
-				`,
-			data: () => ({
-				startMenu: false,
-	      dataInicial: null,
-	      dataInicialFmt: null,
+                  <v-menu
+                    v-model="endMenu"
+                    :close-on-content-click="false"
+                    transition="scale-transition"
+                    offset-y max-width="290px" min-width="290px">
+                    <template v-slot:activator="{ on }">
+                      <v-text-field
+                        v-model="dataFinalFmt"
+                        label="Data Final"
+                        prepend-icon="mdi-calendar"
+                        @blur="dataFinal = parseDate(dataFinalFmt)" v-on="on"
+                        clearable
+                      ></v-text-field>
+                    </template>
+                    <v-date-picker v-model="dataFinal" no-title
+                      @input="endMenu = false"
+                    ></v-date-picker>
+                  </v-menu>
+                  
+                  <v-text-field
+                    v-mask="['(##) ####-####', '(##) #####-####']"
+                    prepend-icon="mdi-phone"
+                    clearable
+                  ></v-text-field>
+                </v-card-text>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
+        `,
+      data: () => ({
+        startMenu: false,
+        dataInicial: null,
+        dataInicialFmt: null,
 
-	      endMenu: false,
-	      dataFinal: null,
-	      dataFinalFmt: null,
-			}),
-			created: function() {
-	      this.dataInicial = new Date().toISOString().substr(0, 10);
-	      this.dataInicialFmt = this.formatDate(this.dataInicial);
+        endMenu: false,
+        dataFinal: null,
+        dataFinalFmt: null,
+      }),
+      created: function() {
+        this.dataInicial = new Date().toISOString().substr(0, 10);
+        this.dataInicialFmt = this.formatDate(this.dataInicial);
 
-	      this.dataFinal = new Date().toISOString().substr(0, 10);
-	      this.dataFinalFmt = this.formatDate(this.dataFinal);
+        this.dataFinal = new Date().toISOString().substr(0, 10);
+        this.dataFinalFmt = this.formatDate(this.dataFinal);
       },
       watch: {
-	      dataInicial: function(val) {
-		      this.dataInicialFmt = this.formatDate(this.dataInicial);
-	      },
-	      dataFinal: function(val) {
-		      this.dataFinalFmt = this.formatDate(this.dataFinal);
-	      }
+        dataInicial: function(val) {
+          this.dataInicialFmt = this.formatDate(this.dataInicial);
+        },
+        dataFinal: function(val) {
+          this.dataFinalFmt = this.formatDate(this.dataFinal);
+        }
       },
       methods: {
-	      formatDate: function(date) {
-		      if (!date) return null
-		      const [year, month, day] = date.split('-')
-		      return `${day}/${month}/${year}`
-	      },
-	      parseDate: function(date) {
-		      if (!date) return null
-		      const [day, month, year] = date.split('/')
-		      return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
-	      }
+        formatDate: function(date) {
+          if (!date) return null
+          const [year, month, day] = date.split('-')
+          return `${day}/${month}/${year}`
+        },
+        parseDate: function(date) {
+          if (!date) return null
+          const [day, month, year] = date.split('/')
+          return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
+        }
       }
     }
     
@@ -1612,23 +1612,23 @@
         items: []
       }),
       created () {
-      	var countries = _.groupBy(locations, 'country')
-      	for (var country in countries) {
-      	  var node = {
-      	    id: _.uniqueId(),
-      	    name: country,
-      	    children: []
-      	  }
-      	  
-      	  this.items.push(node)
-      	  
-      	  for (var i = 0; i < countries[country].length; i++) {
-      	    node.children.push({
-      	      id: _.uniqueId(),
-      	      name: countries[country][i].title
-      	    })
-      	  }
-      	}
+        var countries = _.groupBy(locations, 'country')
+        for (var country in countries) {
+          var node = {
+            id: _.uniqueId(),
+            name: country,
+            children: []
+          }
+          
+          this.items.push(node)
+          
+          for (var i = 0; i < countries[country].length; i++) {
+            node.children.push({
+              id: _.uniqueId(),
+              name: countries[country][i].title
+            })
+          }
+        }
       }
     }
     
@@ -1639,6 +1639,8 @@
             <v-col>
               <v-card>
                 <v-card-text>
+                  <p><kbd>git clone https://github.com/andrehuller/andrehuller.github.io</kbd></p>
+                  <v-divider class="pb-4"></v-divider>
                   <p><kbd>git add .</kbd> staging files</p>
                   <p><kbd>git status</kbd></p>
                   <p><kbd>git commit -m "Update index.html"</kbd></p>
