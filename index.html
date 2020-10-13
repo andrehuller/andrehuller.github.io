@@ -201,7 +201,9 @@
       </v-app-bar>
 
       <v-main>
-        <router-view></router-view>
+        <keep-alive>
+          <router-view></router-view>
+        </keep-alive>
       </v-main>
     </v-app>
   </div>
@@ -225,6 +227,8 @@
   <script src="./src/libraries.js"></script>
   <script src="./src/locations.js"></script>
 
+  <script src="./src/Libraries2.js"></script>
+  
   <script>
     const Unsplash = {
       template: `
@@ -267,40 +271,6 @@
       data: () => ({
         images: locations
       })
-    }
-    
-    const Unsplash2 = {
-      template: `
-        <v-container fluid>
-          <v-row justify="center">
-            <v-col cols="12" lg="9">
-              <v-card height="500">
-                <v-img src="assets/cow.jpeg" max-height="500" position="bottom center"></v-img>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="9">
-              <v-card height="500">
-                <v-img src="assets/chicken.jpeg" max-height="500" position="center center"></v-img>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="9">
-              <v-card height="500">
-                <v-img src="assets/pig.jpeg" max-height="500" position="center center"></v-img>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="9">
-              <v-card height="500">
-                <v-img src="assets/sheep.jpeg" max-height="500" position="top -300px center"></v-img>
-              </v-card>
-            </v-col>
-            <v-col cols="12" lg="9">
-              <v-card height="500">
-                <v-img src="assets/horse.jpeg" max-height="500" position="center center"></v-img>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-container>
-      `
     }
     
     const Frameworks = {
@@ -415,6 +385,12 @@
             "title": "Leaflet-Geoman",
             "subtitle": "the best geometry editing for Leaflet Maps",
             "href": "https://geoman.io/leaflet-geoman"
+          },
+          {
+            "icon": "mdi-map",
+            "title": "leaflet.wms",
+            "subtitle": "Enhanced WMS support for Leaflet",
+            "href": "https://github.com/heigeo/leaflet.wms"
           }
         ]
       }),
@@ -535,460 +511,6 @@
       }
     }
     
-    const Libraries2 = {
-      template: `
-        <v-container fluid>
-          <v-row justify="center">
-            <v-col cols="12" lg="9">
-              <v-data-table :headers="headers" :items="libraries"
-                group-by="group" disable-pagination hide-default-footer
-              >
-                <template v-slot:item.title="{ item }">
-                  <v-chip :href="item.href" outlined>
-                    <template v-if="item.highlight">
-                      <v-icon left color="indigo">
-                        mdi-alert-circle-outline
-                      </v-icon>
-                    </template>
-                    {{ item.title }}
-                  </v-chip>
-                </template>
-                <template v-slot:item.subtitle="{ item }">
-                  <span v-html="item.subtitle"></span>
-                </template>
-              </v-data-table>
-            </v-col>
-          </v-row>
-        </v-container>
-      `,
-      data: () => ({
-        headers: [
-          { text: 'Nome', value: 'title' },
-          { text: 'Descrição', value: 'subtitle'}
-        ],
-        libraries: [
-          {
-            "title": "pgAdmin",
-            "subtitle": "administration and development platform for PostgreSQL",
-            "href": "https://www.pgadmin.org/",
-            "group": "Database",
-            "highlight": true
-          },
-          {
-            "title": "pgRouting",
-            "subtitle": "Open Source Routing Library",
-            "href": "https://pgrouting.org",
-            "group": "Database"
-          },
-          {
-            "title": "PostGIS",
-            "subtitle": "Spatial and Geographic Objects for PostgreSQL",
-            "href": "https://postgis.net/",
-            "group": "Database",
-            "highlight": true
-          },
-          {
-            "title": "PostgreSQL",
-            "subtitle": "The World's Most Advanced Open Source Relational Database",
-            "href": "https://www.postgresql.org",
-            "group": "Database",
-            "highlight": true
-          },
-          {
-            "title": "date-fns",
-            "subtitle": "Modern JavaScript date utility library",
-            "href": "https://date-fns.org/",
-            "group": "Date"
-          },
-          {
-            "title": "apiDoc",
-            "subtitle": "Inline Documentation for RESTful web APIs",
-            "href": "http://apidocjs.com/",
-            "group": "Documentation"
-          },
-          {
-            "title": "JSDoc",
-            "subtitle": "API documentation generator for JavaScript",
-            "href": "https://jsdoc.app/",
-            "group": "Documentation",
-            "highlight": true
-          },
-          {
-            "title": "ol-ext",
-            "subtitle": "Extensions for OpenLayers",
-            "href": "https://viglino.github.io/ol-ext/",
-            "group": "Extensions"
-          },
-          {
-            "title": "OpenJS Foundation",
-            "href": "https://openjsf.org/",
-            "group": "Foundations"
-          },
-          {
-            "title": "The Linux Foundation",
-            "href": "https://www.linuxfoundation.org/",
-            "group": "Foundations"
-          },
-          {
-            "title": "Angular",
-            "subtitle": "One framework. Mobile & desktop.",
-            "href": "https://angular.io/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Backbone.js",
-            "subtitle": "Give your JS App some Backbone with Models, Views, Collections, and Events",
-            "href": "https://backbonejs.org/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Dojo",
-            "subtitle": "A Progressive Framework for Modern Web Apps",
-            "href": "https://dojo.io/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Ember",
-            "subtitle": "A framework for ambitious web developers",
-            "href": "https://emberjs.com/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Foundation",
-            "subtitle": "The most advanced responsive <strong>front-end framework</strong> in the world",
-            "href": "https://foundation.zurb.com/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Framework7",
-            "subtitle": "Full featured framework for building iOS, Android & Desktop apps",
-            "href": "https://framework7.io/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Ionic",
-            "subtitle": "One codebase. Any platform.",
-            "href": "https://ionicframework.com/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Knockout",
-            "subtitle": "Simplify dynamic JavaScript UIs with the Model-View-View-Model (MVVM) pattern",
-            "href": "https://knockoutjs.com/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Meteor",
-            "subtitle": "Meteor is an open source platform for web, mobile, and desktop",
-            "href": "https://www.meteor.com/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Mithril",
-            "subtitle": "Mithril is a modern client-side JavaScript framework for building Single Page Applications",
-            "href": "https://mithril.js.org/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Prototype",
-            "subtitle": "A foundation for ambitious web user interfaces",
-            "href": "http://prototypejs.org/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "React",
-            "subtitle": "A JavaScript library for building user interfaces",
-            "href": "https://reactjs.org/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Svelte",
-            "subtitle": "Cybernetically enhanced web apps",
-            "href": "https://svelte.dev/",
-            "group": "Frameworks"
-          },
-          {
-            "title": "Font Awesome",
-            "subtitle": "the web's most popular icon set and toolkit",
-            "href": "https://fontawesome.com/",
-            "group": "Icons"
-          },
-          {
-            "title": "Ionicons",
-            "subtitle": "Beautifully crafted open source icons",
-            "href": "https://ionicons.com/",
-            "group": "Icons"
-          },
-          {
-            "title": "Material Design Icons",
-            "subtitle": "Community-led Iconography",
-            "href": "https://materialdesignicons.com",
-            "group": "Icons",
-            "highlight": true
-          },
-          {
-            "title": "Material Icons",
-            "subtitle": "Material icons are delightful, beautifully crafted symbols for common actions and items",
-            "href": "https://material.io/resources/icons/?style=baseline",
-            "group": "Icons"
-          },
-          {
-            "title": "Octicons",
-            "subtitle": "Your project. GitHub's icons.",
-            "href": "https://octicons.github.com/",
-            "group": "Icons"
-          },
-          {
-            "title": "WebStorm",
-            "subtitle": "The smartest JavaScript IDE",
-            "href": "https://www.jetbrains.com/webstorm/",
-            "group": "IDE"
-          },
-          {
-            "title": "Sass",
-            "subtitle": "Syntactically Awesome Style Sheets",
-            "href": "https://sass-lang.com/",
-            "group": "Languages"
-          },
-          {
-            "title": "TypeScript",
-            "subtitle": "Typed JavaScript at Any Scale",
-            "href": "https://www.typescriptlang.org/",
-            "group": "Languages"
-          },
-          {
-            "title": "NativeScript",
-            "subtitle": "Create Native iOS and Android Apps with JavaScript",
-            "href": "https://www.nativescript.org/",
-            "group": "Mobile"
-          },
-          {
-            "title": "NativeScript-Vue",
-            "subtitle": "Truly native apps using Vue.js and NativeScript",
-            "href": "https://nativescript-vue.org/",
-            "group": "Mobile"
-          },
-          {
-            "title": "React Native",
-            "subtitle": "Learn once, write anywhere",
-            "href": "https://facebook.github.io/react-native/",
-            "group": "Mobile"
-          },
-          {
-            "title": "Numeral.js",
-            "subtitle": "A javascript library for formatting and manipulating numbers",
-            "href": "http://numeraljs.com/",
-            "group": "Number"
-          },
-          {
-            "title": "Papa Parse",
-            "subtitle": "The powerful, in-browser CSV parser for big boys and girls",
-            "href": "https://www.papaparse.com/",
-            "group": "Parser"
-          },
-          {
-            "title": "GeoServer",
-            "subtitle": "GeoServer is an open source server for sharing geospatial data.",
-            "href": "http://geoserver.org/",
-            "group": "Software",
-            "highlight": true
-          },
-          {
-            "title": "GitLab",
-            "subtitle": "GitLab named a Leader in Cloud-Native CI",
-            "version": "11.11.8",
-            "href": "https://about.gitlab.com/",
-            "group": "Software",
-            "highlight": true
-          },
-          {
-            "title": "Node.js",
-            "subtitle": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine",
-            "href": "https://nodejs.org/en/",
-            "group": "Software",
-            "highlight": true
-          },
-          {
-            "title": "npm",
-            "subtitle": "npm is a package manager for the JavaScript programming language",
-            "href": "https://www.npmjs.com/",
-            "group": "Software",
-            "highlight": true
-          },
-          {
-            "title": "Voca",
-            "subtitle": "The JavaScript string library",
-            "href": "https://vocajs.com/",
-            "group": "String"
-          },
-          {
-            "title": "Handlebars",
-            "subtitle": "Minimal templating on steriods",
-            "href": "https://handlebarsjs.com/",
-            "group": "Template"
-          },
-          {
-            "title": "Mustache",
-            "href": "https://mustache.github.io/",
-            "group": "Template"
-          },
-          {
-            "title": "Babel",
-            "subtitle": "Babel is a JavaScript compiler",
-            "href": "https://babeljs.io/",
-            "group": "Tools",
-            "highlight": true
-          },
-          {
-            "title": "ESLint",
-            "subtitle": "The pluggable linting utility for JavaScript and JSX",
-            "href": "https://eslint.org/",
-            "group": "Tools",
-            "highlight": true
-          },
-          {
-            "title": "RequireJS",
-            "subtitle": "RequireJS is a JavaScript file and module loader",
-            "href": "https://requirejs.org/",
-            "group": "Tools"
-          },
-          {
-            "title": "Rollup",
-            "subtitle": "Rollup is a module bundler for JavaScript",
-            "href": "https://rollupjs.org/guide/en/",
-            "group": "Tools"
-          },
-          {
-            "title": "Webpack",
-            "subtitle": "Webpack is an open-source JavaScript module bundler",
-            "href": "https://webpack.js.org/",
-            "group": "Tools"
-          },
-          {
-            "title": "Angular Material",
-            "subtitle": "Material Design components for Angular",
-            "href": "https://material.angular.io/",
-            "group": "UI Components",
-            "highlight": true
-          },
-          {
-            "title": "Ant Design",
-            "subtitle": "The world's second most popular React UI framework",
-            "href": "https://ant.design/",
-            "group": "UI Components"
-          },
-          {
-            "title": "BootstrapVue",
-            "subtitle": "Quickly integrate Bootstrap v4 components with Vue.js",
-            "href": "https://bootstrap-vue.js.org/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Buefy",
-            "subtitle": "Lightweight UI components for Vue.js based on Bulma",
-            "href": "https://buefy.org/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Element",
-            "subtitle": "A Desktop UI Library",
-            "href": "https://element.eleme.io/#/en-US",
-            "group": "UI Components"
-          },
-          {
-            "title": "Keen-UI",
-            "subtitle": "Keen UI is a lightweight Vue.js UI library with a simple API",
-            "href": "https://josephuspaye.github.io/Keen-UI",
-            "group": "UI Components"
-          },
-          {
-            "title": "Material-UI",
-            "subtitle": "A popular React UI framework",
-            "href": "https://material-ui.com/",
-            "group": "UI Components",
-            "highlight": true
-          },
-          {
-            "title": "Materialize",
-            "subtitle": "A modern responsive front-end framework based on Material Design",
-            "href": "https://materializecss.com/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Muse-UI",
-            "subtitle": "Based on the Vue 2.0 elegant Material Design UI component library",
-            "href": "https://muse-ui.org/#/en-US",
-            "group": "UI Components"
-          },
-          {
-            "title": "PrimeVue",
-            "subtitle": "The Most Complete UI Framework for VUE",
-            "href": "https://primefaces.org/primevue/#/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Quasar",
-            "subtitle": "Build high-performance VueJS user interfaces in record time",
-            "href": "https://quasar.dev/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Semantic UI",
-            "subtitle": "User Interface is the language of the web",
-            "href": "https://semantic-ui.com/",
-            "group": "UI Components"
-          },
-          {
-            "title": "UIkit",
-            "href": "https://getuikit.com/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Vue Material",
-            "subtitle": "Material Design for Vue.js",
-            "href": "https://vuematerial.io/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Vuecidity",
-            "subtitle": "Component Library for Vue.JS",
-            "href": "https://vuecidity.wemakesites.net/",
-            "group": "UI Components"
-          },
-          {
-            "title": "Underscore",
-            "subtitle": "JavaScript's utility _ belt",
-            "href": "https://underscorejs.org/",
-            "group": "Utilities"
-          },
-          {
-            "title": "Vue CLI",
-            "subtitle": "Standard Tooling for Vue.js Development",
-            "href": "https://cli.vuejs.org/",
-            "group": "Vue",
-            "highlight": true
-          },
-          {
-            "title": "Vue Router",
-            "subtitle": "Vue Router is the official router for Vue.js",
-            "href": "https://router.vuejs.org/",
-            "group": "Vue",
-            "highlight": true
-          },
-          {
-            "title": "Vuex",
-            "subtitle": "Vuex is a state management pattern + library for Vue.js applications",
-            "href": "https://vuex.vuejs.org/",
-            "group": "Vue",
-            "highlight": true
-          }
-        ]
-      }),
-      mounted () {
-        this.libraries = this.libraries.concat(libraries)
-      }
-    }
-    
     const Calendar = {
       data: () => ({
         events: [
@@ -1072,14 +594,14 @@
                     offset-y max-width="290px" min-width="290px"
                   >
                     <template v-slot:activator="{ on }">
-                      <v-text-field v-model="dataInicialFmt"
-                        label="Data Inicial"
+                      <v-text-field v-model="startDateFmt"
+                        label="Start date"
                         prepend-icon="mdi-calendar"
-                        @blur="dataInicial = parseDate(dataInicialFmt)"
+                        @blur="startDate = parseDate(startDateFmt)"
                         v-on="on" clearable
                       ></v-text-field><!-- mask="##/##/####" -->
                     </template>
-                    <v-date-picker v-model="dataInicial" no-title
+                    <v-date-picker v-model="startDate" no-title
                       @input="startMenu = false"
                     ></v-date-picker>
                   </v-menu>
@@ -1091,14 +613,14 @@
                     offset-y max-width="290px" min-width="290px">
                     <template v-slot:activator="{ on }">
                       <v-text-field
-                        v-model="dataFinalFmt"
-                        label="Data Final"
+                        v-model="endDateFmt"
+                        label="End date"
                         prepend-icon="mdi-calendar"
-                        @blur="dataFinal = parseDate(dataFinalFmt)" v-on="on"
+                        @blur="endDate = parseDate(endDateFmt)" v-on="on"
                         clearable
                       ></v-text-field>
                     </template>
-                    <v-date-picker v-model="dataFinal" no-title
+                    <v-date-picker v-model="endDate" no-title
                       @input="endMenu = false"
                     ></v-date-picker>
                   </v-menu>
@@ -1116,26 +638,26 @@
         `,
       data: () => ({
         startMenu: false,
-        dataInicial: null,
-        dataInicialFmt: null,
+        startDate: null,
+        startDateFmt: null,
 
         endMenu: false,
-        dataFinal: null,
-        dataFinalFmt: null,
+        endDate: null,
+        endDateFmt: null,
       }),
       created: function() {
-        this.dataInicial = new Date().toISOString().substr(0, 10);
-        this.dataInicialFmt = this.formatDate(this.dataInicial);
+        this.startDate = new Date().toISOString().substr(0, 10);
+        this.startDateFmt = this.formatDate(this.startDate);
 
-        this.dataFinal = new Date().toISOString().substr(0, 10);
-        this.dataFinalFmt = this.formatDate(this.dataFinal);
+        this.endDate = new Date().toISOString().substr(0, 10);
+        this.endDateFmt = this.formatDate(this.endDate);
       },
       watch: {
-        dataInicial: function(val) {
-          this.dataInicialFmt = this.formatDate(this.dataInicial);
+        startDate: function(val) {
+          this.startDateFmt = this.formatDate(this.startDate);
         },
-        dataFinal: function(val) {
-          this.dataFinalFmt = this.formatDate(this.dataFinal);
+        endDate: function(val) {
+          this.endDateFmt = this.formatDate(this.endDate);
         }
       },
       methods: {
@@ -1364,7 +886,7 @@
         items: locations
       }),
       mounted () {
-        this.countries = _.uniq(_.map(this.items, 'country')).sort()
+        this.countries = _.uniq(_.map(this.items, 'country')).sort().slice(0, 6)
       },
       methods: {
         images: function (country) {
@@ -1424,11 +946,26 @@
                 <v-card-text>
                   <p><kbd>git clone https://github.com/andrehuller/andrehuller.github.io</kbd></p>
                   <v-divider class="pb-4"></v-divider>
+
+                  <p><b>Push an existing folder</b></p>
+                  <p><kbd>cd existing_folder</kbd></p>
+                  <p><kbd>git init</kbd></p>
+                  <p><kbd>git remote add origin https://github.com/andrehuller/andrehuller.github.io</kbd></p>
+                  <p><kbd>git add .</kbd></p>
+                  <p><kbd>git commit -m "Initial commit"</kbd></p>
+                  <p><kbd>git push -u origin master</kbd></p>
+                  <v-divider class="pb-4"></v-divider>
+
                   <p><kbd>git add .</kbd> staging files</p>
                   <p><kbd>git status</kbd></p>
                   <p><kbd>git commit -m "Update index.html"</kbd></p>
                   <p><kbd>git push -u origin master</kbd></p>
                   <v-divider class="pb-4"></v-divider>
+
+                  <p><kbd>git tag -a v1.0 -m 'Version 1.0'</kbd></p>
+                  <p><kbd>git push origin v1.0</kbd></p>
+                  <v-divider class="pb-4"></v-divider>
+
                   <p><kbd>npm run serve</kbd></p>
                 </v-card-text>
               </v-card>
@@ -1440,14 +977,17 @@
     
     const People = {
       template: `
-        <v-container>
+        <v-container fluid>
           <v-row>
-            <v-col sm="12" md="6" lg="4"
+            <v-col sm="12" md="6" lg="3"
               v-for="person in people"
               :key="person.name"
             >
               <v-card>
                 <v-card-title>
+                  <v-avatar color="primary" class="white--text mr-3">
+                    {{ person.name.charAt(0) }}
+                  </v-avatar>
                   {{ person.name }}
                 </v-card-title>
               </v-card>
@@ -1457,8 +997,16 @@
       `,
       data: () => ({
         people: [
+          { name: 'Amira Willighagen' },
           { name: 'Bill Maher' },
-          { name: 'Jordan Peterson' }
+          { name: 'Frankie Boyle' },
+          { name: 'George Carlin' },
+          { name: 'Joe Rogan' },
+          { name: 'Jordan Peterson' },
+          { name: 'Marc Maron' },
+          { name: 'Richard Dawkins' },
+          { name: 'Sam Harris' },
+          { name: 'Tim Minchin' }
         ]
       })
     }
@@ -1635,15 +1183,14 @@
         </v-container>
       `
     }
-    
+
     const routes = [
       { path: '/', component: Frameworks },
       { path: '/libraries', component: Libraries },
       { path: '/libraries2', component: Libraries2 },
       { path: '/leaflet', component: Leaflet },
       { path: '/unsplash', component: Unsplash },
-      { path: '/unsplash2', component: Unsplash2 },
-      
+
       { path: '/calendar', component: Calendar },
       { path: '/carousel', component: Carousel },
       { path: '/data_iterator', component: DataIterator },
