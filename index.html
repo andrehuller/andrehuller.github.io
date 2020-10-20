@@ -176,12 +176,30 @@
           clearable flat hide-details solo-inverted
         ></v-text-field>
         <v-spacer></v-spacer>
-        <v-btn icon>
-          <v-icon>mdi-magnify</v-icon>
-        </v-btn>
-        <v-btn icon href="https://github.com/andrehuller/">
-          <v-icon>mdi-github</v-icon>
-        </v-btn>
+        
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn icon v-bind="attrs" v-on="on">
+              <v-icon>mdi-magnify</v-icon>
+            </v-btn>
+          </template>
+          <span>Search</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              icon
+              href="https://github.com/andrehuller/"
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-icon>mdi-github</v-icon>
+            </v-btn>
+          </template>
+          <span>GitHub</span>
+        </v-tooltip>
+        
         
         <v-menu bottom left offset-y>
           <template v-slot:activator="{ on, attrs }">
@@ -1059,6 +1077,14 @@
               <iframe
                 width="560"
                 height="315"
+                src="https://www.youtube-nocookie.com/embed/qOZqGUCrje8"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                width="560"
+                height="315"
                 src="https://www.youtube-nocookie.com/embed/5G8Gwr5JJ6Y"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -1231,13 +1257,13 @@
         projects: [
           {
             title: 'Portal da Cultura',
-            icon: 'mdi-map-marker',
+            icon: 'mdi-drama-masks',
             href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/'
           },
           {
             title: 'Rede de Proteção à Criança e ao Adolescente',
-            icon: 'mdi-map-marker',
+            icon: 'mdi-shield-account-outline',
             href: 'http://geojsapitre.pr.gov.br/sejuf/index.html#/',
             subtitle: 'http://geojsapitre.pr.gov.br/sejuf/index.html#/'
           },
