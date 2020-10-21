@@ -755,7 +755,7 @@
           <v-row>
             <template v-for="country in countries">
               <v-col class="mt-2" cols="12">
-                <strong>{{ country }} </strong>
+                <strong>{{ country }}</strong>
               </v-col>
               <v-col cols="12">
                 <v-data-iterator
@@ -1044,7 +1044,7 @@
                   <p><kbd>git fetch</kbd></p>
                   <p><kbd>git pull</kbd></p>
                   <v-divider class="pb-4"></v-divider>
-
+                  
                   <p><kbd>npm run serve</kbd></p>
                 </v-card-text>
               </v-card>
@@ -1232,6 +1232,34 @@
           </v-row>
           <v-divider></v-divider>
           <v-row>
+            <v-col cols="12">
+              <strong>References</strong>
+            </v-col>
+            <v-col cols="12" lg="4"
+              v-for="reference in references"
+              :key="reference.title"
+            >
+              <v-card outlined :href="reference.href">
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-avatar class="indigo darken-1">
+                      <v-icon dark>{{ reference.icon }}</v-icon>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title>{{ reference.title }}</v-list-item-title>
+                      <v-list-item-subtitle>{{ reference.subtitle }}</v-list-item-subtitle>
+                    </v-list-item-content>
+                    <v-list-item-action>
+                      <v-icon>mdi-arrow-right</v-icon>
+                    </v-list-item-action>
+                  </v-list-item>
+                </v-list>
+              </v-card>
+            </v-col>
+          </v-row>
+          <v-divider></v-divider>
+          
+          <v-row>
             <v-col cols="12" lg="4"
               v-for="prototype in prototypes"
               :key="prototype.title"
@@ -1269,6 +1297,14 @@
             icon: 'mdi-shield-account-outline',
             href: 'http://geojsapitre.pr.gov.br/sejuf/index.html#/',
             subtitle: 'http://geojsapitre.pr.gov.br/sejuf/index.html#/'
+          },
+        ],
+        references: [
+          {
+            title: 'Sistemas de Informação da Cultura - Paraná',
+            icon: 'mdi-drama-masks',
+            href: 'http://www.sic.cultura.pr.gov.br',
+            subtitle: 'www.sic.cultura.pr.gov.br'
           },
           {
             title: 'Infância Segura - Redes de Proteção',
