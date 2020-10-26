@@ -416,16 +416,22 @@
       }),
       mounted () {
         this.$nextTick(() => {
-          this.map = L.map('map').setView([-24.618588, -51.316993], 7)
+          this.map = L.map('map').setView([-24.618588, -51.316993], 7);
           
           L.control.defaultExtent()
             .addTo(this.map);
           
           L.control.locate().addTo(this.map);
           
-          L.esri.basemapLayer('Topographic').addTo(this.map)
-          
-          this.init()
+          this.layers = L.control.layers({
+            'Topographic': L.esri.basemapLayer('Topographic').addTo(this.map),
+            'ImageryClarity': L.esri.basemapLayer('ImageryClarity'),
+            'ImageryFirefly': L.esri.basemapLayer('ImageryFirefly')
+          }, null, {
+            collapsed: false
+          }).addTo(this.map);
+
+          this.init();
         })
       },
       methods: {
@@ -464,12 +470,14 @@
           })
             .then(response => {
               // store.commit('setMesorregiao', response.data.features)
-              L.geoJson(response.data, {
+              var geojson = L.geoJson(response.data, {
                 style: style,
                 onEachFeature: (feature, layer) => {
                   layer.bindPopup(L.Util.template('Nome: {nome_regiao}<br>Código: {cod_regiao}', feature.properties))
                 }
               }).addTo(this.map)
+
+              this.layers.addOverlay(geojson, "Mesorregiões")
             })
             .catch(error => {
               console.log(error)
@@ -1127,6 +1135,7 @@
           { name: 'Amira Willighagen', categories: ['Singer'] },
           { name: 'Bill Burr' },
           { name: 'Bill Maher' },
+          { name: 'Bob Dylan' },
           { name: 'Christopher Hitchens' },
           { name: 'Françoise Hardy' },
           { name: 'Frankie Boyle' },
