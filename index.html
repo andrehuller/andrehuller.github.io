@@ -150,6 +150,14 @@
               <v-list-item-title>Portfolio</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          <v-list-item to="/work">
+            <v-list-item-icon>
+              <v-icon>mdi-account-hard-hat</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>Work</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         <v-list>
       </v-navigation-drawer>
 
@@ -1022,9 +1030,9 @@
     
     const Git = {
       template: `
-        <v-container>
+        <v-container fluid>
           <v-row>
-            <v-col>
+            <v-col lg="6" cols="12">
               <v-card>
                 <v-card-text>
                   <p><kbd>git clone https://github.com/andrehuller/andrehuller.github.io</kbd></p>
@@ -1051,6 +1059,9 @@
                   
                   <p><kbd>git fetch</kbd></p>
                   <p><kbd>git pull</kbd></p>
+                  <v-divider class="pb-4"></v-divider>
+
+                  <p>use <kbd>git restore &lt;file&gt;...</kbd> to discard changes in working directory</p>
                   <v-divider class="pb-4"></v-divider>
                   
                   <p><kbd>npm run serve</kbd></p>
@@ -1220,7 +1231,7 @@
         ]
       })
     }
-    
+
     const Portfolio = {
       template: `
         <v-container fluid>
@@ -1340,6 +1351,51 @@
         ]
       })
     }
+
+    const Work = {
+      template: `
+        <v-container fluid>
+          <v-row>
+            <v-col cols="12" lg="4"
+              v-for="project in projects"
+              :key="project.title"
+            >
+              <v-card outlined :href="project.href" dark>
+                <div class="d-flex flex-no-wrap justify-space-between"
+                  <v-img :src="project.src" width="207" class="ma-4 dark-green"></v-img>
+                </div>
+
+                <v-list>
+                  <v-list-item>
+                    <v-list-item-avatar class="indigo darken-1">
+                      <v-icon dark>{{ project.icon }}</v-icon>
+                    </v-list-item-avatar>
+                    <v-list-item-content>
+                      <v-list-item-title>{{ project.title }}</v-list-item-title>
+                      <v-list-item-subtitle>{{ project.subtitle }}</v-list-item-subtitle>
+                    </v-list-item-content>
+                    <v-list-item-action>
+                      <v-icon>mdi-arrow-right</v-icon>
+                    </v-list-item-action>
+                  </v-list-item>
+                </v-list>
+              </v-card>
+            </v-col>
+          </v-row>
+        </v-container>
+      `,
+      data: () => ({
+        projects: [
+          {
+            title: 'PIÁ',
+            subtitle: 'Paraná Inteligência Artificial',
+            href: 'https://www.pia.pr.gov.br/',
+            icon: 'mdi-map-marker',
+            src: 'assets/pia_logo.png'
+          }
+        ]
+      })
+    }
     
     const Login = {
       template: `
@@ -1397,6 +1453,7 @@
       { path: '/resources', component: Resources },
       
       { path: '/portfolio', component: Portfolio },
+      { path: '/work', component: Work },
       
       { path: '/login', component: Login }
     ]
