@@ -686,11 +686,12 @@
                   >
                     <template v-slot:activator="{ on }">
                       <v-text-field v-model="startDateFmt"
+                        v-mask="'##/##/####'"
                         label="Start date"
                         prepend-icon="mdi-calendar"
                         @blur="startDate = parseDate(startDateFmt)"
                         v-on="on" clearable
-                      ></v-text-field><!-- mask="##/##/####" -->
+                      ></v-text-field>
                     </template>
                     <v-date-picker v-model="startDate" no-title
                       @input="startMenu = false"
@@ -705,6 +706,7 @@
                     <template v-slot:activator="{ on }">
                       <v-text-field
                         v-model="endDateFmt"
+                        v-mask="'##/##/####'"
                         label="End date"
                         prepend-icon="mdi-calendar"
                         @blur="endDate = parseDate(endDateFmt)" v-on="on"
@@ -1360,25 +1362,32 @@
               v-for="project in projects"
               :key="project.title"
             >
-              <v-card outlined :href="project.href" dark>
-                <div class="d-flex flex-no-wrap justify-space-between"
-                  <v-img :src="project.src" width="207" class="ma-4 dark-green"></v-img>
+              <v-card :href="project.href" :dark="project.dark"
+                align="center"
+                class="fill-height d-flex flex-column"
+                outlined
+              >
+                <div class="d-flex flex-no-wrap justify-space-between">
+                  <div>
+                    <v-card-title
+                    
+                      class="headline"
+                      v-text="project.title"
+                    ></v-card-title>
+                    <v-card-subtitle
+                      v-text="project.subtitle"
+                    ></v-card-subtitle>
+                  </div>
+                  <v-avatar class="ma-3" :width="project.width" height="project.height" tile>
+                    <v-img :src="project.src"
+                      :width="project.width"
+                      :height="project.height"
+                      :max-width="project.width"
+                      :max-height="project.height"
+                      class="ma-4 dark-green"
+                    ></v-img>
+                  </v-avatar>
                 </div>
-
-                <v-list>
-                  <v-list-item>
-                    <v-list-item-avatar class="indigo darken-1">
-                      <v-icon dark>{{ project.icon }}</v-icon>
-                    </v-list-item-avatar>
-                    <v-list-item-content>
-                      <v-list-item-title>{{ project.title }}</v-list-item-title>
-                      <v-list-item-subtitle>{{ project.subtitle }}</v-list-item-subtitle>
-                    </v-list-item-content>
-                    <v-list-item-action>
-                      <v-icon>mdi-arrow-right</v-icon>
-                    </v-list-item-action>
-                  </v-list-item>
-                </v-list>
               </v-card>
             </v-col>
           </v-row>
@@ -1390,8 +1399,28 @@
             title: 'PIÁ',
             subtitle: 'Paraná Inteligência Artificial',
             href: 'https://www.pia.pr.gov.br/',
-            icon: 'mdi-map-marker',
-            src: 'assets/pia_logo.png'
+            src: 'assets/pia_logo.png',
+            width: 207,
+            height: 67,
+            dark: true
+          },
+          {
+            title: 'Governo Federal',
+            subtitle: 'gov.br',
+            href: 'https://www.gov.br/pt-br',
+            src: 'https://www.gov.br/++theme++padrao_govbr/img/govbr-logo-large.png',
+            width: 111,
+            height: 40,
+            dark: false
+          },
+          {
+            title: 'Mapa da Cultura',
+            subtitle: 'Mapas.cultura.gov.br',
+            href: 'http://mapas.cultura.gov.br/',
+            src: 'http://mapas.cultura.gov.br/assets/mapas.cultura.gov.br/svg/logo-mapas-culturais-br.svg',
+            width: 70,
+            height: 70,
+            dark: false
           }
         ]
       })
