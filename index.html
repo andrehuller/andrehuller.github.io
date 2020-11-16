@@ -8,7 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.72.0/dist/L.Control.Locate.min.css" rel="stylesheet">
-  <!-- FIXME: Remover CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" rel="stylesheet">
   
   <link rel="icon" href="favicon.ico">
   <meta charset="utf-8">
@@ -147,12 +148,12 @@
               <v-list-item-title>Work</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/education">
+          <v-list-item to="/poi">
             <v-list-item-icon>
-              <v-icon>mdi-school</v-icon>
+              <v-icon>mdi-map-marker</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>Education</v-list-item-title>
+              <v-list-item-title>Points of Interest</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         <v-list>
@@ -244,7 +245,8 @@
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@0.72.0/dist/L.Control.Locate.min.js"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/esri-leaflet@2.5.0/dist/esri-leaflet.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
@@ -252,7 +254,8 @@
   <script src="./src/libraries.js"></script>
   <script src="./src/locations.js"></script>
   
-  <script src="./src/components/Education.js"></script>
+  <script src="./src/components/POI.js"></script>
+  <script src="./src/components/Work.js"></script>
   <script src="./src/Libraries2.js"></script>
   
   <script>
@@ -1352,96 +1355,6 @@
       })
     }
 
-    const Work = {
-      template: `
-        <v-container fluid>
-          <v-row>
-            <v-col cols="12" lg="4"
-              v-for="project in projects"
-              :key="project.title"
-            >
-              <v-card :href="project.href" :dark="project.dark"
-                align="center"
-                class="fill-height d-flex flex-column"
-                outlined
-              >
-                <div class="d-flex flex-no-wrap justify-space-between">
-                  <div>
-                    <v-card-title
-                    
-                      class="headline"
-                      v-text="project.title"
-                    ></v-card-title>
-                    <v-card-subtitle
-                      v-text="project.subtitle"
-                    ></v-card-subtitle>
-                  </div>
-                  <v-avatar class="ma-3" :width="project.width" height="project.height" tile>
-                    <v-img :src="project.src"
-                      :width="project.width"
-                      :height="project.height"
-                      :max-width="project.width"
-                      :max-height="project.height"
-                      class="ma-4 dark-green"
-                    ></v-img>
-                  </v-avatar>
-                </div>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-container>
-      `,
-      data: () => ({
-        projects: [
-          {
-            title: 'PIÁ',
-            subtitle: 'Paraná Inteligência Artificial',
-            href: 'https://www.pia.pr.gov.br/',
-            src: 'assets/pia_logo.png',
-            width: 207,
-            height: 67,
-            dark: true
-          },
-          {
-            title: 'Portal de Mapas',
-            subtitle: 'DER/PR',
-            href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
-            src: 'http://sider.der.pr.gov.br/mapainterativo/tema/derpr/imagens/frTopo-logo.png',
-            width: 186,
-            height: 50,
-            dark: false
-          },
-          {
-            title: 'Governo Federal',
-            subtitle: 'gov.br',
-            href: 'https://www.gov.br/pt-br',
-            src: 'https://www.gov.br/++theme++padrao_govbr/img/govbr-logo-large.png',
-            width: 111,
-            height: 40,
-            dark: false
-          },
-          {
-            title: 'INDE',
-            subtitle: 'Infraestrutura Nacional de Dados Espaciais',
-            href: 'https://www.inde.gov.br/',
-            src: 'https://www.inde.gov.br/img/INDE%20Logo_2.png',
-            width: 170,
-            dark: false
-          },
-          
-          {
-            title: 'Mapa da Cultura',
-            subtitle: 'Mapas.cultura.gov.br',
-            href: 'http://mapas.cultura.gov.br/',
-            src: 'http://mapas.cultura.gov.br/assets/mapas.cultura.gov.br/svg/logo-mapas-culturais-br.svg',
-            width: 70,
-            height: 70,
-            dark: false
-          }
-        ]
-      })
-    }
-    
     const Login = {
       template: `
         <v-container fluid>
@@ -1499,7 +1412,7 @@
       
       { path: '/portfolio', component: Portfolio },
       { path: '/work', component: Work },
-      { path: '/education', component: Education },
+      { path: '/poi', component: POI },
       
       { path: '/login', component: Login }
     ]
