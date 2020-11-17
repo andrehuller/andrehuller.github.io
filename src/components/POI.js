@@ -127,7 +127,7 @@ const POI = {
   }),
   mounted () {
     this.$nextTick(() => {
-      this.map = L.map('poiMap').setView([-24.618588, -51.316993], 7);
+      this.map = L.map('poiMap') // .setView([-24.618588, -51.316993], 7);
       
       L.control.defaultExtent()
         .addTo(this.map);
@@ -166,6 +166,8 @@ const POI = {
         collapsed: false
       }).addTo(this.map)
 
+      var latlngs = []
+
       var markers = L.markerClusterGroup({
         chunkedLoading: true
       })
@@ -175,6 +177,9 @@ const POI = {
         var lon = this.items[i].lon
 
         var icon = icons[this.items[i].mapIcon]
+        if (this.items[i].address.includes('Curitiba')) {
+          latlngs.push([lat, lon])
+        }
 
         var marker = L.marker([lat, lon], {
           icon: icon
@@ -185,6 +190,7 @@ const POI = {
       }
 
       this.map.addLayer(markers)
+      this.map.fitBounds(L.latLngBounds(latlngs))
     })
   },
 }

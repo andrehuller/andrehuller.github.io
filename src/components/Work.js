@@ -1,5 +1,3 @@
-// https://mapmaker.nationalgeographic.org/
-
 const Work = {
   template: `
     <v-container fluid>
@@ -16,7 +14,6 @@ const Work = {
             <div class="d-flex flex-no-wrap justify-space-between">
               <div>
                 <v-card-title
-                
                   class="headline"
                   v-text="project.title"
                 ></v-card-title>
@@ -76,7 +73,14 @@ const Work = {
         width: 170,
         dark: false
       },
-      
+      {
+        title: 'MapMaker Interactive',
+        subtitle: 'National Geographic',
+        href: 'https://mapmaker.nationalgeographic.org/',
+        src: 'https://mapmaker.nationalgeographic.org/images/logos/nglogo-inline-black.min.svg',
+        width: 170,
+        dark: false
+      },
       {
         title: 'Mapa da Cultura',
         subtitle: 'Mapas.cultura.gov.br',
