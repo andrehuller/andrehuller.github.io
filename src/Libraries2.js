@@ -384,6 +384,12 @@ const Libraries2 = {
         "group": "UI Components"
       },
       {
+        "title": "Polythene",
+        "subtitle": "Material Design component library for Mithril and React.",
+        "href": "https://github.com/ArthurClemens/Polythene",
+        "group": "UI Components"
+      },
+      {
         "title": "PrimeVue",
         "subtitle": "The Most Complete UI Framework for VUE",
         "href": "https://primefaces.org/primevue/#/",

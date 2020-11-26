@@ -104,12 +104,31 @@ const POI = {
         mapIcon: 'computers'
       },
       {
+        title: 'ICI - Instituto das Cidades Inteligentes',
+        href: 'https://www.ici.curitiba.org.br/',
+        address: 'Rua São Pedro, 910 - Cabral - Curitiba - PR, 80035-020',
+        lat: -25.413914,
+        lon: -49.250496,
+        icon: 'mdi-desktop-classic',
+        mapIcon: 'computers'
+      },
+      {
         title: 'Sigma Dataserv Informática S.A.',
         href: 'http://www.sigma.com.br/',
         address: 'Tv. Pinheiro, 74-250 - Rebouças, Curitiba - PR, 82590-300',
         phone: '+55 41 3028-7200',
         lat: -25.438491,
         lon: -49.261936,
+        icon: 'mdi-desktop-classic',
+        mapIcon: 'computers'
+      },
+      {
+        title: 'MPS Informática',
+        href: 'https://www.mps.com.br/',
+        address: 'R. Tapajós, 186 - São Francisco, Curitiba - PR, 80510-330',
+        phone: '+55 41 2141-9500',
+        lat: -25.421150,
+        lon: -49.281453,
         icon: 'mdi-desktop-classic',
         mapIcon: 'computers'
       },
@@ -122,6 +141,16 @@ const POI = {
         lon: -48.442223,
         icon: 'mdi-desktop-classic',
         mapIcon: 'computers'
+      },
+      {
+        title: 'Hospital Pilar',
+        href: 'http://www.hospitalpilar.com.br/',
+        address: 'Av. Desembargador Hugo Simas, 322 - Bom Retiro, Curitiba - PR, 80520-250',
+        phone: '+55 41 3072-7272',
+        lat: -25.415551,
+        lon: -49.278964,
+        icon: 'mdi-hospital',
+        mapIcon: 'hospital'
       }
     ]
   }),
@@ -153,10 +182,18 @@ const POI = {
         popupAnchor: [0, -8]
       })
 
+      var hospital = new L.Icon({
+        iconUrl: './assets/hospital-building.png',
+        iconSize: [32, 37],
+        // iconAnchor: [16, 18],
+        popupAnchor: [0, -8]
+      })
+
       var icons = {
         'university': university,
         'office': office,
-        'computers': computers
+        'computers': computers,
+        'hospital': hospital
       }
 
       this.layers = L.control.layers({
