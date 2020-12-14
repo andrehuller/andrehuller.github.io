@@ -104,6 +104,16 @@ const POI = {
         mapIcon: 'computers'
       },
       {
+        title: 'DISYS do Brasil',
+        address: 'R. Heitor Stockler de França, 396 - Centro Cívico, Curitiba - PR, 80030-030',
+        phone: '+554135129700',
+        href: 'https://www.disys.com.br/',
+        lat: -25.420166,
+        lon: -49.268549,
+        icon: 'mdi-desktop-classic',
+        mapIcon: 'computers'
+      },
+      {
         title: 'ICI - Instituto das Cidades Inteligentes',
         href: 'https://www.ici.curitiba.org.br/',
         address: 'Rua São Pedro, 910 - Cabral - Curitiba - PR, 80035-020',
