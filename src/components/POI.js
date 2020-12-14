@@ -11,24 +11,48 @@ const POI = {
           v-for="item in items"
           :key="item.title"
         >
-          <v-card outlined :href="item.href">
+          <v-card outlined>
             <v-list>
-              <v-list-item>
+              <v-list-item three-line>
                 <v-list-item-avatar class="indigo darken-1">
                   <v-icon dark>{{ item.icon }}</v-icon>
                 </v-list-item-avatar>
                 <v-list-item-content>
                   <v-list-item-title>{{ item.title }}</v-list-item-title>
-                  <v-list-item-subtitle>{{ item.subtitle }}</v-list-item-subtitle>
+                  <v-list-item-subtitle>{{ item.address }}</v-list-item-subtitle>
                 </v-list-item-content>
                 <v-list-item-action>
-                  <v-icon>mdi-arrow-right</v-icon>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{on, attrs}">
+                      <v-btn icon
+                        @click="fitExtent(item)"
+                        v-bind="attrs"
+                        v-on="on"
+                      >
+                        <v-icon>mdi-magnify</v-icon>
+                      </v-btn>    
+                    </template>
+                    <span>Zoom To</span>
+                  </v-tooltip>
+                  <v-tooltip bottom>
+                    <template v-slot:activator="{on, attrs}">
+                      <v-btn icon
+                        :href="item.href"
+                        target="_blank"
+                        v-bind="attrs"
+                        v-on="on"
+                      >
+                        <v-icon>mdi-open-in-new</v-icon>
+                      </v-btn>
+                    </template>
+                    <span>Open Website</span>
+                  </v-tooltip>
+
                 </v-list-item-action>
               </v-list-item>
             </v-list>
           </v-card>
         </v-col>
-
       </v-row>
     </v-container>
   `,
@@ -104,6 +128,16 @@ const POI = {
         mapIcon: 'computers'
       },
       {
+        title: 'CINQ Technologies',
+        address: 'Av. Sete de Setembro, 2451 - 4º andar - Rebouças, Curitiba - PR, 80230-010',
+        href: 'https://www.cinqtechnologies.com/',
+        phone: '+1 855-800-2467',
+        lat: -25.436372,
+        lon: -49.262555,
+        icon: 'mdi-desktop-classic',
+        mapIcon: 'computers'
+      },
+      {
         title: 'DISYS do Brasil',
         address: 'R. Heitor Stockler de França, 396 - Centro Cívico, Curitiba - PR, 80030-030',
         phone: '+554135129700',
@@ -119,6 +153,16 @@ const POI = {
         address: 'Rua São Pedro, 910 - Cabral - Curitiba - PR, 80035-020',
         lat: -25.413914,
         lon: -49.250496,
+        icon: 'mdi-desktop-classic',
+        mapIcon: 'computers'
+      },
+      {
+        title: 'Fábrica de Software - Wise Systems',
+        href: 'http://www.wises.com.br/',
+        address: 'Av. Mal. Floriano Peixoto, 2610 - Loja 4 - Parolin, Curitiba - PR, 80220-000',
+        phone: '+55 (41) 3363-2618',
+        lat: -25.452087,
+        lon: -49.261831,
         icon: 'mdi-desktop-classic',
         mapIcon: 'computers'
       },
@@ -146,9 +190,19 @@ const POI = {
         title: 'Softplan Planejamento e Sistemas',
         href: 'https://www.softplan.com.br/',
         address: 'Sapiens Parque - Av. Luiz Boiteux Piazza, 1302 - lote 87/89 - Cachoeira do Bom Jesus, Florianópolis - SC, 88056-000',
-        phone: '+55 48 3027 8000',
+        phone: '+55 (48) 3027-8000',
         lat: -27.431112,
         lon: -48.442223,
+        icon: 'mdi-desktop-classic',
+        mapIcon: 'computers'
+      },
+      {
+        title: 'Visionnaire',
+        href: 'https://www.visionnaire.com.br/',
+        address: 'Parque de Software de Curitiba - R. Eng. Roberto Fischer, 208 - Cidade Industrial De Curitiba, Curitiba - PR, 81250-025',
+        phone: '+55 (41) 3337-1000',
+        lat: -25.469624,
+        lon: -49.347067,
         icon: 'mdi-desktop-classic',
         mapIcon: 'computers'
       },
@@ -231,7 +285,7 @@ const POI = {
         var marker = L.marker([lat, lon], {
           icon: icon
         })
-        
+
         marker.bindPopup(L.Util.template('<b>{title}</b>', this.items[i]))
         markers.addLayer(marker)
       }
@@ -240,4 +294,10 @@ const POI = {
       this.map.fitBounds(L.latLngBounds(latlngs))
     })
   },
+  methods: {
+    fitExtent (item) {
+      var latlng = L.latLng(item.lat, item.lon)
+      this.map.setView(latlng)
+    }
+  }
 }
