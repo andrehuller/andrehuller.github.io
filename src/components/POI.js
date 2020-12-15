@@ -207,6 +207,16 @@ const POI = {
         mapIcon: 'computers'
       },
       {
+        title: 'Secretaria do Desenvolvimento Sustentável e do Turismo',
+        href: 'http://www.sedest.pr.gov.br/',
+        address: 'Rua Desembargador Motta, 3384 - Mercês, Curitiba - PR, 80430-200',
+        phone: '(41) 3304-7700',
+        lat: -25.426238,
+        lon: -49.287105,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
         title: 'Hospital Pilar',
         href: 'http://www.hospitalpilar.com.br/',
         address: 'Av. Desembargador Hugo Simas, 322 - Bom Retiro, Curitiba - PR, 80520-250',
@@ -225,6 +235,12 @@ const POI = {
       L.control.defaultExtent()
         .addTo(this.map);
       
+      var congress = new L.Icon({
+        iconUrl: './assets/congress.png',
+        iconSize: [32, 37],
+        popupAnchor: [0, -8]
+      })
+
       var university = new L.Icon({
         iconUrl: './assets/university.png',
         iconSize: [32, 37],
@@ -235,7 +251,6 @@ const POI = {
       var office = new L.Icon({
         iconUrl: './assets/office-building.png',
         iconSize: [32, 37],
-        // iconAnchor: [16, 18],
         popupAnchor: [0, -8]
       })
 
@@ -254,6 +269,7 @@ const POI = {
       })
 
       var icons = {
+        'congress': congress,
         'university': university,
         'office': office,
         'computers': computers,

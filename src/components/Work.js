@@ -7,7 +7,6 @@ const Work = {
           :key="project.title"
         >
           <v-card
-            :dark="project.dark"
             :href="project.href"
             target="_blank"
             align="center"
@@ -15,8 +14,8 @@ const Work = {
             outlined
           >
             <v-img
-              v-if="project.image"
-              :src="project.image"
+              v-if="project.screenshot"
+              :src="project.screenshot"
               height="265.233"
             ></v-img>
             <div class="d-flex flex-no-wrap justify-space-between">
@@ -47,66 +46,106 @@ const Work = {
   data: () => ({
     projects: [
       {
-        title: 'PIÁ',
-        subtitle: 'Paraná Inteligência Artificial',
-        href: 'https://www.pia.pr.gov.br/',
-        src: 'assets/pia_logo.png',
-        width: 207,
-        height: 67,
-        dark: true
+        title: 'MapMaker Interactive',
+        subtitle: 'National Geographic',
+        href: 'https://mapmaker.nationalgeographic.org/',
+        src: 'https://mapmaker.nationalgeographic.org/images/logos/nglogo-inline-black.min.svg',
+        width: 170,
+        screenshot: 'assets/screenshots/mapmaker.jpg'
       },
       {
-        title: 'Portal de Mapas',
-        subtitle: 'DER/PR',
-        href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
-        src: 'http://sider.der.pr.gov.br/mapainterativo/tema/derpr/imagens/frTopo-logo.png',
-        width: 186,
-        height: 50,
-        dark: false,
-        image: 'assets/screenshots/sider.png'
+        title: 'MapQuest',
+        subtitle: 'https://www.mapquest.com/',
+        href: 'https://www.mapquest.com/',
+        screenshot: 'assets/screenshots/mapquest.png'
       },
       {
         title: 'Governo Federal',
         subtitle: 'gov.br',
         href: 'https://www.gov.br/pt-br',
-        src: 'https://www.gov.br/++theme++padrao_govbr/img/govbr-logo-large.png',
-        width: 111,
-        height: 40,
-        dark: false
+        // src: 'https://www.gov.br/++theme++padrao_govbr/img/govbr-logo-large.png',
+        // width: 111,
+        // height: 40,
+        screenshot: 'assets/screenshots/governo-federal.png'
+      },
+      {
+        title: 'IBGE',
+        subtitle: 'Instituto Brasileiro de Geografia e Estatística',
+        href: 'https://www.ibge.gov.br/',
+        screenshot: 'assets/screenshots/ibge.png',
+      },
+      {
+        title: 'CNEFE',
+        subtitle: 'Cadastro Nacional de Endereços para Fins Estatísticos',
+        href: 'https://censo2010.ibge.gov.br/cnefe/',
+        screenshot: 'assets/screenshots/cnefe.png'
       },
       {
         title: 'INDE',
         subtitle: 'Infraestrutura Nacional de Dados Espaciais',
         href: 'https://www.inde.gov.br/',
         src: 'https://www.inde.gov.br/img/INDE%20Logo_2.png',
-        width: 170,
-        dark: false
+        width: 170
       },
       {
-        title: 'MapMaker Interactive',
-        subtitle: 'National Geographic',
-        href: 'https://mapmaker.nationalgeographic.org/',
-        src: 'https://mapmaker.nationalgeographic.org/images/logos/nglogo-inline-black.min.svg',
-        width: 170,
-        dark: false
+        title: 'Governo do Estado do Paraná',
+        subtitle: 'http://www.parana.pr.gov.br/',
+        href: 'http://www.parana.pr.gov.br/',
+        screenshot: 'assets/screenshots/governo-parana.png'
+      },
+      {
+        title: 'SIMEPAR',
+        href: 'http://www.simepar.br/'
+      },
+      {
+        title: 'Nota Paraná',
+        subtitle: 'http://www.notaparana.pr.gov.br/',
+        href: 'http://www.notaparana.pr.gov.br/',
+        screenshot: 'assets/screenshots/nota-parana.png'
+      },
+      {
+        title: 'PIÁ',
+        subtitle: 'Paraná Inteligência Artificial',
+        href: 'https://www.pia.pr.gov.br/',
+        screenshot: 'assets/screenshots/pia.jpg'
+      },
+      {
+        title: 'Portal da Transparência',
+        subtitle: 'http://www.transparencia.pr.gov.br',
+        href: 'http://www.transparencia.pr.gov.br',
+        screenshot: 'assets/screenshots/portal-transparencia.jpg'
       },
       {
         title: 'Mapa da Cultura',
         subtitle: 'Mapas.cultura.gov.br',
         href: 'http://mapas.cultura.gov.br/',
-        src: 'http://mapas.cultura.gov.br/assets/mapas.cultura.gov.br/svg/logo-mapas-culturais-br.svg',
-        width: 70,
-        height: 70,
-        dark: false,
-        image: 'assets/screenshots/mapa-da-cultura.png'
+        screenshot: 'assets/screenshots/mapa-da-cultura.png'
+      },
+      {
+        title: 'Paraná Interativo',
+        subtitle: 'https://paranainterativo.pr.gov.br/',
+        href: 'https://paranainterativo.pr.gov.br/',
+        screenshot: 'assets/screenshots/parana-interativo.jpg'
+      },
+      {
+        title: 'Portal de Mapas',
+        subtitle: 'DER/PR',
+        href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
+        screenshot: 'assets/screenshots/sider.png'
       },
       {
         title: 'Uso e Cobertura da Terra',
-        subtitle: '2012 - 2016',
+        subtitle: 'SEDEST (2012 - 2016)',
         href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
-        dark: false,
-        image: 'assets/screenshots/uso-cobertura-terra.png'
+        screenshot: 'assets/screenshots/uso-cobertura-terra.png'
+      },
+      {
+        title: 'Portal da Cultura',
+        subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
+        href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
+        screenshot: 'assets/screenshots/geocultura.jpg'
       }
+      
     ]
   })
 }
