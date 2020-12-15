@@ -6,11 +6,19 @@ const Work = {
           v-for="project in projects"
           :key="project.title"
         >
-          <v-card :href="project.href" :dark="project.dark"
+          <v-card
+            :dark="project.dark"
+            :href="project.href"
+            target="_blank"
             align="center"
             class="fill-height d-flex flex-column"
             outlined
           >
+            <v-img
+              v-if="project.image"
+              :src="project.image"
+              height="265.233"
+            ></v-img>
             <div class="d-flex flex-no-wrap justify-space-between">
               <div>
                 <v-card-title
@@ -54,7 +62,8 @@ const Work = {
         src: 'http://sider.der.pr.gov.br/mapainterativo/tema/derpr/imagens/frTopo-logo.png',
         width: 186,
         height: 50,
-        dark: false
+        dark: false,
+        image: 'assets/screenshots/sider.png'
       },
       {
         title: 'Governo Federal',
@@ -88,7 +97,15 @@ const Work = {
         src: 'http://mapas.cultura.gov.br/assets/mapas.cultura.gov.br/svg/logo-mapas-culturais-br.svg',
         width: 70,
         height: 70,
-        dark: false
+        dark: false,
+        image: 'assets/screenshots/mapa-da-cultura.png'
+      },
+      {
+        title: 'Uso e Cobertura da Terra',
+        subtitle: '2012 - 2016',
+        href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
+        dark: false,
+        image: 'assets/screenshots/uso-cobertura-terra.png'
       }
     ]
   })
