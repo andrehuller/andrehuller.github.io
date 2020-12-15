@@ -49,8 +49,6 @@ const Work = {
         title: 'MapMaker Interactive',
         subtitle: 'National Geographic',
         href: 'https://mapmaker.nationalgeographic.org/',
-        src: 'https://mapmaker.nationalgeographic.org/images/logos/nglogo-inline-black.min.svg',
-        width: 170,
         screenshot: 'assets/screenshots/mapmaker.jpg'
       },
       {
@@ -58,6 +56,12 @@ const Work = {
         subtitle: 'https://www.mapquest.com/',
         href: 'https://www.mapquest.com/',
         screenshot: 'assets/screenshots/mapquest.png'
+      },
+      {
+        title: 'OneZoom Tree of Life Explorer',
+        subtitle: 'https://www.onezoom.org/',
+        href: 'https://www.onezoom.org/',
+        screenshot: 'assets/screenshots/onezoom.png'
       },
       {
         title: 'Governo Federal',
@@ -83,9 +87,7 @@ const Work = {
       {
         title: 'INDE',
         subtitle: 'Infraestrutura Nacional de Dados Espaciais',
-        href: 'https://www.inde.gov.br/',
-        src: 'https://www.inde.gov.br/img/INDE%20Logo_2.png',
-        width: 170
+        href: 'https://www.inde.gov.br/'
       },
       {
         title: 'Governo do Estado do Paraná',
@@ -94,14 +96,92 @@ const Work = {
         screenshot: 'assets/screenshots/governo-parana.png'
       },
       {
+        title: 'CEDC',
+        subtitle: 'Coordenadoria Estadual da Defesa Civil',
+        href: 'http://www.defesacivil.pr.gov.br/',
+        screenshot: 'assets/screenshots/defesacivil.jpg'
+      },
+      {
+        title: 'COPEL',
+        subtitle: 'Companhia Paranaense de Energia',
+        href: 'https://www.copel.com/',
+        screenshot: 'assets/screenshots/copel.png'
+      },
+      {
+        title: 'DER',
+        subtitle: 'Departamento de Estradas de Rodagem',
+        href: 'http://www.der.pr.gov.br/',
+        screenshot: 'assets/screenshots/der.png'
+      },
+      {
+        title: 'IPARDES',
+        subtitle: 'Instituto Paranaense de Desenvolvimento Econômico e Social',
+        href: 'http://www.ipardes.pr.gov.br/',
+        screenshot: 'assets/screenshots/ipardes.png'
+      },
+      {
+        title: 'IPEM/PR',
+        subtitle: 'Instituto de Pesos e Medidas do Estado do Paraná',
+        href: 'http://www.ipem.pr.gov.br/',
+        screenshot: 'assets/screenshots/ipem.png'
+      },
+      {
+        title: 'SEAB',
+        subtitle: 'Secretaria da Agricultura e do Abastecimento',
+        href: 'http://www.agricultura.pr.gov.br/',
+        screenshot: 'assets/screenshots/agricultura.jpg'
+      },
+      {
+        title: 'SECC',
+        subtitle: 'Secretaria da Comunicação Social e da Cultura',
+        href: 'http://www.comunicacao.pr.gov.br/',
+        screenshot: 'assets/screenshots/comunicacao.png'
+      },
+      {
+        title: 'SEFA',
+        subtitle: 'Secretaria de Estado da Fazenda',
+        href: 'http://www.fazenda.pr.gov.br/',
+        screenshot: 'assets/screenshots/fazenda.png'
+      },
+      {
+        title: 'SEIL',
+        subtitle: 'Secretaria de Infraestrutura e Logística',
+        href: 'http://www.infraestrutura.pr.gov.br/',
+        screenshot: 'assets/screenshots/infraestrutura.jpg'
+      },
+      {
         title: 'SIMEPAR',
         href: 'http://www.simepar.br/'
+      },
+      {
+        title: 'TRE-PR',
+        subtitle: 'Tribunal Regional Eleitoral do Paraná',
+        href: 'https://www.tre-pr.jus.br/',
+        screenshot: 'assets/screenshots/tre-pr.png'
       },
       {
         title: 'Nota Paraná',
         subtitle: 'http://www.notaparana.pr.gov.br/',
         href: 'http://www.notaparana.pr.gov.br/',
         screenshot: 'assets/screenshots/nota-parana.png'
+      },
+      {
+        title: 'Paraná Turismo',
+        subtitle: 'http://www.turismo.pr.gov.br/',
+        href: 'http://www.turismo.pr.gov.br/',
+        screenshot: 'assets/screenshots/parana-turismo.jpg'
+      },
+      {
+        title: 'Portos do Paraná',
+        subtitle: 'http://www.portosdoparana.pr.gov.br',
+        href: 'http://www.portosdoparana.pr.gov.br/',
+        screenshot: 'assets/screenshots/portosdoparana.png'
+      },
+      {
+        title: 'Viaje Paraná',
+        subtitle: 'http://www.viajeparana.com/',
+        href: 'http://www.viajeparana.com/',
+        screenshot: 'assets/screenshots/viaje-parana.png'
       },
       {
         title: 'PIÁ',
@@ -126,6 +206,12 @@ const Work = {
         subtitle: 'https://paranainterativo.pr.gov.br/',
         href: 'https://paranainterativo.pr.gov.br/',
         screenshot: 'assets/screenshots/parana-interativo.jpg'
+      },
+      {
+        title: 'Consulta Escolas',
+        subtitle: 'http://www.consultaescolas.pr.gov.br/',
+        href: 'http://www.consultaescolas.pr.gov.br/',
+        screenshot: 'assets/screenshots/consulta-escolas.png'
       },
       {
         title: 'Portal de Mapas',
