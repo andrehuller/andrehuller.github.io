@@ -1,7 +1,7 @@
 const Work = {
   template: `
     <v-container fluid pa-0>
-      <v-tabs fixed-tabs>
+      <v-tabs fixed-tabs show-arrows>
         <v-tab
           v-for="(category, i) in categories"
           :key="i"
@@ -99,10 +99,10 @@ const Work = {
             screenshot: 'assets/screenshots/defesacivil.jpg'
           },
           {
-            title: 'SEPL',
-            subtitle: 'Secretaria de Estado do Planejamento e Projetos Estruturantes',
-            href: 'http://www.planejamento.pr.gov.br/',
-            screenshot: 'assets/screenshots/planejamento.png'
+            title: 'SETI',
+            subtitle: 'Superintendência Geral de Ciência, Tecnologia e Ensino Superior',
+            href: 'http://www.seti.pr.gov.br/',
+            screenshot: 'assets/screenshots/seti.png'
           }
         ]
       },
@@ -110,16 +110,16 @@ const Work = {
         name: 'Secretarias de Estado',
         items: [
           {
-            title: 'SEAB',
-            subtitle: 'Secretaria da Agricultura e do Abastecimento',
-            href: 'http://www.agricultura.pr.gov.br/',
-            screenshot: 'assets/screenshots/agricultura.jpg'
-          },
-          {
             title: 'SECC',
             subtitle: 'Secretaria da Comunicação Social e da Cultura',
             href: 'http://www.comunicacao.pr.gov.br/',
             screenshot: 'assets/screenshots/comunicacao.png'
+          },
+          {
+            title: 'SEPL',
+            subtitle: 'Secretaria de Estado do Planejamento e Projetos Estruturantes',
+            href: 'http://www.planejamento.pr.gov.br/',
+            screenshot: 'assets/screenshots/planejamento.png'
           },
           {
             title: 'SEFA',
@@ -127,11 +127,54 @@ const Work = {
             href: 'http://www.fazenda.pr.gov.br/',
             screenshot: 'assets/screenshots/fazenda.png'
           },
+
+          {
+            title: 'SEAB',
+            subtitle: 'Secretaria de Estado da Agricultura e do Abastecimento',
+            href: 'http://www.agricultura.pr.gov.br/',
+            screenshot: 'assets/screenshots/agricultura.jpg'
+          },
+          {
+            title: 'SEDU',
+            subtitle: 'Secretaria de Estado do Desenvolvimento Urbano e de Obras Públicas',
+            href: 'http://www.desenvolvimentourbano.pr.gov.br/',
+            screenshot: 'assets/screenshots/desenvolvimentourbano.png'
+          },
+          {
+            title: 'SEED',
+            subtitle: 'Secretaria de Estado da Educação e do Esporte',
+            href: 'http://www.educacao.pr.gov.br/',
+            screenshot: 'assets/screenshots/educacao.png'
+          },
           {
             title: 'SEIL',
             subtitle: 'Secretaria de Infraestrutura e Logística',
             href: 'http://www.infraestrutura.pr.gov.br/',
             screenshot: 'assets/screenshots/infraestrutura.jpg'
+          },
+          {
+            title: 'SEJUF',
+            subtitle: 'Secretaria de Estado da Justiça, Família e Trabalho',
+            href: 'http://www.justica.pr.gov.br/',
+            screenshot: 'assets/screenshots/justica.png'
+          },
+          {
+            title: 'SEDEST',
+            subtitle: 'Secretaria de Estado do Desenvolvimento Sustentável e do Turismo',
+            href: 'http://www.sedest.pr.gov.br/',
+            screenshot: 'assets/screenshots/sedest.png'
+          },
+          {
+            title: 'SESA',
+            subtitle: 'Secretaria de Estado da Saúde',
+            href: 'https://www.saude.pr.gov.br/',
+            screenshot: 'assets/screenshots/saude.png'
+          },
+          {
+            title: 'SESP',
+            subtitle: 'Secretaria de Estado da Segurança Pública',
+            href: 'http://www.seguranca.pr.gov.br/',
+            screenshot: 'assets/screenshots/seguranca.png'
           }
         ]
       },
@@ -235,6 +278,29 @@ const Work = {
         ]
       },
       {
+        name: 'SERVIÇOS SOCIAIS AUTÔNOMOS',
+        items: [
+          {
+            title: 'PARANÁ PROJETOS',
+            subtitle: 'Serviço Social Autônomo PARANÁ PROJETOS',
+            href: 'http://www.paranaprojetos.pr.gov.br/',
+            screenshot: 'assets/screenshots/paranaprojetos.png'
+          },
+          {
+            title: 'PARANACIDADE',
+            subtitle: 'Serviço Social Autônomo PARANACIDADE',
+            href: 'http://www.paranacidade.org.br/',
+            screenshot: 'assets/screenshots/paranacidade.png'
+          },
+          {
+            title: 'PARANAEDUCAÇÃO',
+            subtitle: 'Serviço Social Autônomo PARANAEDUCAÇÃO',
+            href: 'http://www.paranaeducacao.pr.gov.br/',
+            screenshot: 'assets/screenshots/paranaeducacao.png'
+          }
+        ]
+      },
+      {
         name: 'Outros',
         items: [
           {
@@ -325,6 +391,12 @@ const Work = {
             screenshot: 'assets/screenshots/mapa-de-obras.png'
           },
           {
+            title: 'Mapas',
+            subtitle: 'SEDU',
+            href: 'http://www.desenvolvimentourbano.pr.gov.br/Pagina/Mapas',
+            screenshot: 'assets/screenshots/mapas-sedu.png'
+          },
+          {
             title: 'Paraná Interativo',
             subtitle: 'https://paranainterativo.pr.gov.br/',
             href: 'https://paranainterativo.pr.gov.br/',
@@ -353,6 +425,12 @@ const Work = {
             subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             screenshot: 'assets/screenshots/geocultura.jpg'
+          },
+          {
+            title: 'geoseti',
+            subtitle: 'SETI',
+            href: 'http://www.geoseti.pr.gov.br/geoseti/publico',
+            screenshot: 'assets/screenshots/geoseti.png'
           }
         ]
       }
