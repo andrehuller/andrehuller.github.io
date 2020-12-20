@@ -81,6 +81,12 @@ const Work = {
             screenshot: 'assets/screenshots/pge.png'
           },
           {
+            title: 'SETI',
+            subtitle: 'Superintendência Geral de Ciência, Tecnologia e Ensino Superior',
+            href: 'http://www.seti.pr.gov.br/',
+            screenshot: 'assets/screenshots/seti.png'
+          },
+          {
             title: 'CC',
             subtitle: 'Casa Civil',
             href: 'http://www.casacivil.pr.gov.br',
@@ -99,19 +105,8 @@ const Work = {
             screenshot: 'assets/screenshots/defesacivil.jpg'
           },
           {
-            title: 'SETI',
-            subtitle: 'Superintendência Geral de Ciência, Tecnologia e Ensino Superior',
-            href: 'http://www.seti.pr.gov.br/',
-            screenshot: 'assets/screenshots/seti.png'
-          }
-        ]
-      },
-      {
-        name: 'Secretarias de Estado',
-        items: [
-          {
             title: 'SECC',
-            subtitle: 'Secretaria da Comunicação Social e da Cultura',
+            subtitle: 'Secretaria de Estado da Comunicação Social e da Cultura',
             href: 'http://www.comunicacao.pr.gov.br/',
             screenshot: 'assets/screenshots/comunicacao.png'
           },
@@ -121,6 +116,11 @@ const Work = {
             href: 'http://www.planejamento.pr.gov.br/',
             screenshot: 'assets/screenshots/planejamento.png'
           },
+        ]
+      },
+      {
+        name: 'Secretarias de Estado',
+        items: [
           {
             title: 'SEFA',
             subtitle: 'Secretaria de Estado da Fazenda',
@@ -181,6 +181,30 @@ const Work = {
       {
         name: 'SOCIEDADES DE ECONOMIA MISTA ',
         items: [
+          {
+            title: 'FOMENTO PARANÁ',
+            subtitle: 'Agência de Fomento do Paraná S.A',
+            href: 'http://www.fomento.pr.gov.br/',
+            screenshot: 'assets/screenshots/fomento.png'
+          },
+          {
+            title: 'CEASA',
+            subtitle: 'Centrais de Abastecimento do Paraná S/A',
+            href: 'http://www.ceasa.pr.gov.br/',
+            screenshot: 'assets/screenshots/ceasa.png'
+          },
+          {
+            title: 'COHAPAR',
+            subtitle: 'Companhia de Habitação do Paraná',
+            href: 'http://www.cohapar.pr.gov.br/',
+            screenshot: 'assets/screenshots/cohapar.png'
+          },
+          {
+            title: 'SANEPAR',
+            subtitle: 'Companhia de Saneamento do Paraná',
+            href: 'http://site.sanepar.com.br/',
+            screenshot: 'assets/screenshots/sanepar.png'
+          },
           {
             title: 'CELEPAR',
             subtitle: 'Companhia de Tecnologia da Informação e Comunicação do Paraná',
@@ -414,17 +438,37 @@ const Work = {
             href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
             screenshot: 'assets/screenshots/sider.png'
           },
+
+          {
+            title: 'Rodízio Curitiba e RMC',
+            subtitle: 'SANEPAR',
+            href: 'http://site.sanepar.com.br/mapa-rodizio-abastecimento-curitiba-rmc',
+            screenshot: 'assets/screenshots/mapa-rodizio-abastecimento-curitiba-rmc.png'
+          },
           {
             title: 'Uso e Cobertura da Terra',
             subtitle: 'SEDEST (2012 - 2016)',
             href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
             screenshot: 'assets/screenshots/uso-cobertura-terra.png'
           },
+
           {
             title: 'Portal da Cultura',
             subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             screenshot: 'assets/screenshots/geocultura.jpg'
+          },
+          {
+            title: 'geoder',
+            subtitle: 'http://geojsapitre.pr.gov.br/geoder/#/',
+            href: 'http://geojsapitre.pr.gov.br/geoder/#/',
+            screenshot: 'assets/screenshots/geoder.png'
+          },
+          {
+            title: 'geoidr',
+            subtitle: 'http://geojsapitre.pr.gov.br/geoidr/#/',
+            href: 'http://geojsapitre.pr.gov.br/geoidr/#/',
+            screenshot: 'assets/screenshots/geoidr.png'
           },
           {
             title: 'geoseti',
