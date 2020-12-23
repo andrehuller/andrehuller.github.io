@@ -247,6 +247,12 @@ const Work = {
             screenshot: 'assets/screenshots/ipardes.png'
           },
           {
+            title: 'IDR',
+            subtitle: 'Instituto de Desenvolvimento Rural do Paraná',
+            href: 'http://www.idrparana.pr.gov.br/',
+            screenshot: 'assets/screenshots/IDR-Paraná.png'
+          },
+          {
             title: 'IPEM/PR',
             subtitle: 'Instituto de Pesos e Medidas do Estado do Paraná',
             href: 'http://www.ipem.pr.gov.br',
@@ -281,6 +287,30 @@ const Work = {
             subtitle: 'Universidade Estadual de Ponta Grossa',
             href: 'https://www.uepg.br',
             screenshot: 'assets/screenshots/uepg.jpg'
+          },
+          {
+            title: 'UNICENTRO',
+            subtitle: 'Universidade Estadual do Centro Oeste do Paraná',
+            href: 'https://www3.unicentro.br/',
+            screenshot: 'assets/screenshots/UNICENTRO.png'
+          },
+          {
+            title: 'UENP',
+            subtitle: 'Universidade Estadual do Norte do Paraná',
+            href: 'https://uenp.edu.br/',
+            screenshot: 'assets/screenshots/UENP.png'
+          },
+          {
+            title: 'UNIOESTE',
+            subtitle: 'Universidade Estadual do Oeste do Paraná',
+            href: 'https://www.unioeste.br/portal/',
+            screenshot: 'assets/screenshots/UNIOESTE.jpg'
+          },
+          {
+            title: 'UNESPAR',
+            subtitle: 'Universidade Estadual do Paraná',
+            href: 'http://www.unespar.edu.br/',
+            screenshot: 'assets/screenshots/UNESPAR.png'
           }
         ]
       },
@@ -305,6 +335,18 @@ const Work = {
         name: 'SERVIÇOS SOCIAIS AUTÔNOMOS',
         items: [
           {
+            title: 'Invest Paraná',
+            subtitle: 'Invest Paraná',
+            href: 'http://www.investparana.org.br/',
+            screenshot: 'assets/screenshots/Invest Paraná.png'            
+          },
+          {
+            title: 'PALCOPARANÁ',
+            subtitle: 'Serviço Social Autônomo PALCOPARANÁ',
+            href: 'http://www.teatroguaira.pr.gov.br/',
+            screenshot: 'assets/screenshots/Teatro Guaíra.jpg'
+          },
+          {
             title: 'PARANÁ PROJETOS',
             subtitle: 'Serviço Social Autônomo PARANÁ PROJETOS',
             href: 'http://www.paranaprojetos.pr.gov.br/',
@@ -321,7 +363,18 @@ const Work = {
             subtitle: 'Serviço Social Autônomo PARANAEDUCAÇÃO',
             href: 'http://www.paranaeducacao.pr.gov.br/',
             screenshot: 'assets/screenshots/paranaeducacao.png'
-          }
+          },
+          {
+            title: 'PARANAPREVIDÊNCIA',
+            subtitle: 'Serviço Social Autônomo PARANAPREVIDÊNCIA',
+            href: 'http://www.paranaprevidencia.pr.gov.br/',
+            screenshot: 'assets/screenshots/PARANAPREVIDÊNCIA.png'
+          },
+          {
+            title: 'SIMEPAR',
+            subtitle: 'Sistema Meteorológico do Paraná',
+            href: 'http://www.simepar.br/'
+          },
         ]
       },
       {
@@ -352,6 +405,12 @@ const Work = {
             screenshot: 'assets/screenshots/governo-federal.png'
           },
           {
+            title: 'Coronavírus Brasil',
+            subtitle: 'https://covid.saude.gov.br/',
+            href: 'https://covid.saude.gov.br/',
+            screenshot: 'assets/screenshots/covid-saude.png'
+          },
+          {
             title: 'IBGE',
             subtitle: 'Instituto Brasileiro de Geografia e Estatística',
             href: 'https://www.ibge.gov.br/',
@@ -366,11 +425,8 @@ const Work = {
           {
             title: 'INDE',
             subtitle: 'Infraestrutura Nacional de Dados Espaciais',
-            href: 'https://www.inde.gov.br/'
-          },
-          {
-            title: 'SIMEPAR',
-            href: 'http://www.simepar.br/'
+            href: 'https://www.inde.gov.br/',
+            screenshot: 'assets/screenshots/inde.png'
           },
           {
             title: 'TRE-PR',
@@ -407,6 +463,12 @@ const Work = {
             subtitle: 'Mapas.cultura.gov.br',
             href: 'http://mapas.cultura.gov.br/',
             screenshot: 'assets/screenshots/mapa-da-cultura.png'
+          },
+          {
+            title: 'Flowchart COVID-19',
+            subtitle: 'CEDC',
+            href: 'https://app.powerbi.com/view?r=eyJrIjoiYTY2NmNiOGUtZTA5Ni00NTA0LWIwZTEtOTE3ZWFmMjQ3MTk0IiwidCI6ImZiYWYzMWQzLWU4ZjgtNGE3MC1iNjMzLWJlMzdiNjJmNTQyNSJ9',
+            screenshot: 'assets/screenshots/Flowchart COVID-19.png'
           },
           {
             title: 'Mapa de Obras',
@@ -451,12 +513,17 @@ const Work = {
             href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
             screenshot: 'assets/screenshots/uso-cobertura-terra.png'
           },
-
           {
             title: 'Portal da Cultura',
             subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             screenshot: 'assets/screenshots/geocultura.jpg'
+          },
+          {
+            title: 'geocge',
+            subtitle: 'http://geojsapitre.pr.gov.br/geocge/#/',
+            href: 'http://geojsapitre.pr.gov.br/geocge/#/',
+            screenshot: 'assets/screenshots/geocge.jpg'
           },
           {
             title: 'geoder',
