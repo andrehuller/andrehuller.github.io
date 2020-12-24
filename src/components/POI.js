@@ -206,16 +206,98 @@ const POI = {
         icon: 'mdi-desktop-classic',
         mapIcon: 'computers'
       },
+
       {
-        title: 'Secretaria do Desenvolvimento Sustentável e do Turismo',
-        href: 'http://www.sedest.pr.gov.br/',
-        address: 'Rua Desembargador Motta, 3384 - Mercês, Curitiba - PR, 80430-200',
-        phone: '(41) 3304-7700',
-        lat: -25.426238,
-        lon: -49.287105,
+        title: 'Secretaria de Estado da Fazenda',
+        href: 'http://www.fazenda.pr.gov.br/',
+        address: 'Av. Vicente Machado, 445 - Centro, Curitiba - PR, 80420-010',
+        phone: '+554132358000',
+        lat: -25.435028,
+        lon: -49.280940,
         icon: 'mdi-bank',
         mapIcon: 'congress'
       },
+      {
+        title: 'Secretaria de Estado da Agricultura e do Abastecimento',
+        href: 'http://www.agricultura.pr.gov.br/',
+        address: 'R. dos Funcionários, 1559 - Cabral, Curitiba - PR, 80035-050',
+        phone: '+554133134000',
+        lat: -25.410861,
+        lon: -49.247484,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado do Desenvolvimento Urbano e de Obras Públicas',
+        href: 'http://www.desenvolvimentourbano.pr.gov.br/',
+        address: 'Rua Jacy Loureiro de Campos, s/n - 2º andar - Centro Cívico - 80530-140 - Curitiba - PR',
+        phone: '41 3250-7200',
+        lat: -25.414820,
+        lon: -49.269492,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado da Educação e do Esporte',
+        href: 'http://www.educacao.pr.gov.br/',
+        address: 'Av. Água Verde, 2140 - Vila Izabel - 80240-900 - Curitiba - PR',
+        phone: '41 3340-1500',
+        lat: -25.453883,
+        lon: -49.292544,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado de Infraestrutura e Logística',
+        href: 'http://www.infraestrutura.pr.gov.br/',
+        address: 'Avenida Iguaçu, 420 - Rebouças - 80230-020 - Curitiba - PR',
+        phone: '41 3304-8000',
+        lat: -25.440573,
+        lon: -49.266232,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado da Justiça, Família e Trabalho',
+        href: 'http://www.justica.pr.gov.br/',
+        address: 'Rua Jacy Loureiro de Campos, s/n - Centro Cívico - 80530-915 - Curitiba - PR',
+        phone: '+55 41 3210-2411',
+        lat: -25.414825,
+        lon: -49.269491,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado do Desenvolvimento Sustentável e do Turismo',
+        href: 'http://www.sedest.pr.gov.br/',
+        address: 'Rua Desembargador Motta, 3384 - Mercês, Curitiba - PR, 80430-200',
+        phone: '(41) 3304-7700',
+        lat: -25.426203,
+        lon: -49.287005,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado da Saúde',
+        href: 'https://www.saude.pr.gov.br/',
+        address: 'Rua Piquiri 170 - Rebouças- 80230-140 - Curitiba - PR',
+        phone: '41 3330-4300',
+        lat: -25.443233,
+        lon: -49.261808,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado da Segurança Pública',
+        href: 'http://www.seguranca.pr.gov.br/',
+        address: 'Rua Deputado Mário de Barros, 1290 - Ed. Caetano Munhoz da Rocha - Centro Cívico - 80530-280 - Curitiba - PR',
+        phone: '41 3313-1900',
+        lat: -25.412163,
+        lon: -49.266950,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+
       {
         title: 'Hospital Pilar',
         href: 'http://www.hospitalpilar.com.br/',
@@ -302,7 +384,7 @@ const POI = {
           icon: icon
         })
 
-        marker.bindPopup(L.Util.template('<b>{title}</b>', this.items[i]))
+        marker.bindPopup(L.Util.template('<b>{title}</b><p>{address}</p>', this.items[i]))
         markers.addLayer(marker)
       }
 

@@ -148,7 +148,7 @@ const Work = {
           },
           {
             title: 'SEIL',
-            subtitle: 'Secretaria de Infraestrutura e Logística',
+            subtitle: 'Secretaria de Estado de Infraestrutura e Logística',
             href: 'http://www.infraestrutura.pr.gov.br/',
             screenshot: 'assets/screenshots/infraestrutura.jpg'
           },
@@ -216,6 +216,18 @@ const Work = {
             subtitle: 'Companhia Paranaense de Energia',
             href: 'https://www.copel.com/',
             screenshot: 'assets/screenshots/copel.png'
+          },
+          {
+            title: 'PRSEC',
+            subtitle: 'Companhia Paranaense de Securitização',
+            href: 'http://www.prsec.pr.gov.br/',
+            screenshot: 'assets/screenshots/PRSEC.png'
+          },
+          {
+            title: 'FERROESTE',
+            subtitle: 'Estrada de Ferro Paraná Oeste S.A.',
+            href: 'http://www.ferroeste.pr.gov.br/',
+            screenshot: 'assets/screenshots/FERROESTE.png'
           }
         ]
       },
