@@ -21,38 +21,20 @@ const People = {
       </v-row>
       <v-row>
         <v-col>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/qOZqGUCrje8"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/MzubNgsQsog"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/5G8Gwr5JJ6Y"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/wieRZoJSVtw"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <template
+            v-for="video in videos"
+            :key="video"
+          >
+            <iframe
+              width="560"
+              height="315"
+              :src="video"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            &nbsp;
+          </template>
         </v-col>
       </v-row>
       <v-row>
@@ -95,12 +77,24 @@ const People = {
       { name: 'Joe Rogan' },
       { name: 'Marc Maron' },
       { name: 'Richard Dawkins' },
+      { name: 'Ricky Gervais '},
       { name: 'Sam Harris' },
       { name: 'Tim Minchin' }
     ],
     speakers: [
       { name: 'Alan Watts' },
       { name: 'Jordan Peterson' }
+    ],
+    videos: [
+      'https://www.youtube-nocookie.com/embed/qOZqGUCrje8',
+      'https://www.youtube-nocookie.com/embed/MzubNgsQsog',
+      'https://www.youtube-nocookie.com/embed/5G8Gwr5JJ6Y',
+      'https://www.youtube.com/embed/wvdM_u4NZQw',
+      'https://www.youtube.com/embed/b9GWqfNlWHI',
+      'https://www.youtube.com/embed/wieRZoJSVtw',
+      'https://www.youtube.com/embed/2O-iLk1G_ng',
+      'https://www.youtube.com/embed/-KQGZa773sI',
+      'https://www.youtube.com/embed/GO_rW0Bvy1I'
     ]
   })
 }

@@ -512,7 +512,18 @@ const Work = {
             href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
             screenshot: 'assets/screenshots/sider.png'
           },
-
+          {
+            title: 'Portal GeoMaringá',
+            href: 'http://geoproc.maringa.pr.gov.br:8090/SIGMARINGA/?itemid=d0b136c94c274dc7863b2acd768ec07e',
+            screenshot: 'assets/screenshots/Portal GeoMaringá.jpg'
+          },
+          {
+            title: 'Geoprocessamento Corporativo',
+            subtitle: 'Prefeitura Municipal de Ponta Grossa',
+            href: 'http://geoweb.pontagrossa.pr.gov.br/',
+            screenshot: 'assets/screenshots/Geoprocessamento Corporativo.png'
+          },
+          
           {
             title: 'Rodízio Curitiba e RMC',
             subtitle: 'SANEPAR',

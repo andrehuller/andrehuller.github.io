@@ -1,62 +1,84 @@
 const POI = {
   template: `
-    <v-container fluid>
+    <v-container fluid class="py-0">
       <v-row>
-        <v-col>
+        <v-col class="pa-0">
           <div id="poiMap" style="width: 100%; height: 500px; z-index: 0;"></div>
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" lg="4"
-          v-for="item in items"
-          :key="item.title"
-        >
-          <v-card outlined>
-            <v-list>
-              <v-list-item three-line>
-                <v-list-item-avatar class="indigo darken-1">
-                  <v-icon dark>{{ item.icon }}</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ item.title }}</v-list-item-title>
-                  <v-list-item-subtitle>{{ item.address }}</v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{on, attrs}">
-                      <v-btn icon
-                        @click="fitExtent(item)"
-                        v-bind="attrs"
-                        v-on="on"
-                      >
-                        <v-icon>mdi-magnify</v-icon>
-                      </v-btn>    
-                    </template>
-                    <span>Zoom To</span>
-                  </v-tooltip>
-                  <v-tooltip bottom>
-                    <template v-slot:activator="{on, attrs}">
-                      <v-btn icon
-                        :href="item.href"
-                        target="_blank"
-                        v-bind="attrs"
-                        v-on="on"
-                      >
-                        <v-icon>mdi-open-in-new</v-icon>
-                      </v-btn>
-                    </template>
-                    <span>Open Website</span>
-                  </v-tooltip>
+        <v-tabs grow>
+          <v-tab v-for="category in categories" :key="category">
+            {{ category }}
+          </v-tab>
+          <v-tab-item v-for="category in categories" :key="category">
+            <v-container fluid py-0>
+            <v-row>
+              <v-col cols="12" lg="4"
+                v-for="item in places(category)"
+                :key="item.title"
+              >
+                <v-card outlined>
+                  <v-list>
+                    <v-list-item three-line>
+                      <v-list-item-avatar class="indigo darken-1">
+                        <v-icon dark>{{ item.icon }}</v-icon>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                        <v-list-item-subtitle>{{ item.address }}</v-list-item-subtitle>
+                      </v-list-item-content>
+                      <v-list-item-action>
+                        <v-tooltip bottom>
+                          <template v-slot:activator="{on, attrs}">
+                            <v-btn icon
+                              @click="fitExtent(item)"
+                              v-bind="attrs"
+                              v-on="on"
+                            >
+                              <v-icon>mdi-magnify</v-icon>
+                            </v-btn>    
+                          </template>
+                          <span>Zoom To</span>
+                        </v-tooltip>
+                        <v-tooltip bottom>
+                          <template v-slot:activator="{on, attrs}">
+                            <v-btn icon
+                              :href="item.href"
+                              target="_blank"
+                              v-bind="attrs"
+                              v-on="on"
+                            >
+                              <v-icon>mdi-open-in-new</v-icon>
+                            </v-btn>
+                          </template>
+                          <span>Open Website</span>
+                        </v-tooltip>
+      
+                      </v-list-item-action>
+                    </v-list-item>
+                    <v-list-item one-line>
+                      <v-list-item-avatar>
+                      </v-list-item-avatar>
+                      <v-list-item-content>
+                        <v-list-item-subtitle>
+                          {{ item.phone }}
+                        </v-list-item-subtitle>
+                      </v-list-item-content>
+                    </v-list-item>
+                  </v-list>
+                </v-card>
+              </v-col>
+            </v-row>
+            </v-container>
+          </v-tab-item>
+        </v-tabs>
 
-                </v-list-item-action>
-              </v-list-item>
-            </v-list>
-          </v-card>
-        </v-col>
       </v-row>
     </v-container>
   `,
   data: () => ({
+    categories: [],
     items: [
       {
         title: 'PUCPR',
@@ -90,7 +112,7 @@ const POI = {
         title: 'Faculdade Evangélica do Paraná (FEPAR)',
         href: 'https://www.mackenzie.br/faculdades/curitiba/home/',
         address: 'Rua Padre Anchieta, 2770, Bigorrilho, Curitiba - PR, 80730-000, Brazil',
-        phone: '+55 41 3240 5500',
+        phone: '(41) 3240-5500',
         lat: -25.435292,
         lon: -49.305486,
         icon: 'mdi-school',
@@ -100,7 +122,7 @@ const POI = {
         title: 'Universidade Federal do Paraná (UFPR)',
         href: 'https://www.ufpr.br/portalufpr/',
         address: 'Rua XV de Novembro, 1299, Centro, Curitiba - PR, 80060-000, Brazil',
-        phone: '+55 41 3360 5000',
+        phone: '(41) 3360-5000',
         lat: -25.427144,
         lon: -49.261890,
         icon: 'mdi-school',
@@ -110,7 +132,7 @@ const POI = {
         title: 'Universidade Tecnológica Federal do Paraná (UTFPR)',
         href: 'http://www.utfpr.edu.br/',
         address: 'Av. Sete de Setembro, 3165 - Rebouças, Curitiba - PR, 80230-901',
-        phone: '+55 41 3310 4545',
+        phone: '(41) 3310-4545',
         lat: -25.439137,
         lon: -49.269633,
         icon: 'mdi-school',
@@ -120,7 +142,7 @@ const POI = {
         title: 'CELEPAR',
         subtitle: 'Tecnologia da Informação e Comunicação do Paraná',
         address: 'Rua Mateus Leme, 1561 - Bom Retiro - 80520-174 - Curitiba - PR, Brasil',
-        phone: '+55 41 3200 5000',
+        phone: '(41) 3200-5000',
         href: 'http://www.celepar.pr.gov.br/',
         lat: -25.413639,
         lon: -49.272659,
@@ -140,7 +162,7 @@ const POI = {
       {
         title: 'DISYS do Brasil',
         address: 'R. Heitor Stockler de França, 396 - Centro Cívico, Curitiba - PR, 80030-030',
-        phone: '+554135129700',
+        phone: '(41) 3512-9700',
         href: 'https://www.disys.com.br/',
         lat: -25.420166,
         lon: -49.268549,
@@ -160,7 +182,7 @@ const POI = {
         title: 'Fábrica de Software - Wise Systems',
         href: 'http://www.wises.com.br/',
         address: 'Av. Mal. Floriano Peixoto, 2610 - Loja 4 - Parolin, Curitiba - PR, 80220-000',
-        phone: '+55 (41) 3363-2618',
+        phone: '(41) 3363-2618',
         lat: -25.452087,
         lon: -49.261831,
         icon: 'mdi-desktop-classic',
@@ -170,7 +192,7 @@ const POI = {
         title: 'Sigma Dataserv Informática S.A.',
         href: 'http://www.sigma.com.br/',
         address: 'Tv. Pinheiro, 74-250 - Rebouças, Curitiba - PR, 82590-300',
-        phone: '+55 41 3028-7200',
+        phone: '(41) 3028-7200',
         lat: -25.438491,
         lon: -49.261936,
         icon: 'mdi-desktop-classic',
@@ -208,6 +230,56 @@ const POI = {
       },
 
       {
+        title: 'Governadoria',
+        href: 'http://www.parana.pr.gov.br/',
+        address: 'Praça Nossa Senhora de Salette s/n - Centro Cívico, Curitiba - PR, 80530-909',
+        phone: '+55 (41) 3350-2400',
+        lat: -25.413340,
+        lon: -49.267817,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Coordenadoria Estadual da Defesa Civil (CEDC)',
+        href: 'http://www.defesacivil.pr.gov.br',
+        address: 'Palácio das Araucárias - Rua Jacy Loureiro de Campos, S/N - Setor "C" - Centro Cívico, Curitiba - PR, 80530-140',
+        phone: '+55 (41) 3281-2512',
+        lat: -25.415002,
+        lon: -49.269490,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Controladoria Geral do Estado (CGE)',
+        href: 'http://www.cge.pr.gov.br/',
+        address: 'R. Mateus Leme, 2018 - Centro Cívico, Curitiba - PR, 80530-010',
+        phone: '(41) 3883-4000',
+        lat: -25.409399,
+        lon: -49.271228,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Procuradoria Geral do Estado (PGE)',
+        href: 'http://www.pge.pr.gov.br/',
+        address: 'R. Paula Gomes, 145 - São Francisco, Curitiba - PR, 80510-070',
+        phone: '(41) 3281-6300',
+        lat: -25.425467,
+        lon: -49.271043,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Secretaria de Estado do Planejamento e Projetos Estruturantes (SEPL)',
+        href: 'http://www.planejamento.pr.gov.br',
+        address: 'Rua Jacy Loureiro de Campos, s/n - 4º and - Centro Cívico, Curitiba - PR, 80530-140',
+        phone: '(41) 3313-6800',
+        lat: -25.415070,
+        lon: -49.269606,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
         title: 'Secretaria de Estado da Fazenda',
         href: 'http://www.fazenda.pr.gov.br/',
         address: 'Av. Vicente Machado, 445 - Centro, Curitiba - PR, 80420-010',
@@ -218,7 +290,7 @@ const POI = {
         mapIcon: 'congress'
       },
       {
-        title: 'Secretaria de Estado da Agricultura e do Abastecimento',
+        title: 'Secretaria de Estado da Agricultura e do Abastecimento (SEAB)',
         href: 'http://www.agricultura.pr.gov.br/',
         address: 'R. dos Funcionários, 1559 - Cabral, Curitiba - PR, 80035-050',
         phone: '+554133134000',
@@ -248,7 +320,7 @@ const POI = {
         mapIcon: 'congress'
       },
       {
-        title: 'Secretaria de Estado de Infraestrutura e Logística',
+        title: 'Secretaria de Estado de Infraestrutura e Logística (SEIL)',
         href: 'http://www.infraestrutura.pr.gov.br/',
         address: 'Avenida Iguaçu, 420 - Rebouças - 80230-020 - Curitiba - PR',
         phone: '41 3304-8000',
@@ -258,7 +330,7 @@ const POI = {
         mapIcon: 'congress'
       },
       {
-        title: 'Secretaria de Estado da Justiça, Família e Trabalho',
+        title: 'Secretaria de Estado da Justiça, Família e Trabalho (SEJUF)',
         href: 'http://www.justica.pr.gov.br/',
         address: 'Rua Jacy Loureiro de Campos, s/n - Centro Cívico - 80530-915 - Curitiba - PR',
         phone: '+55 41 3210-2411',
@@ -278,7 +350,7 @@ const POI = {
         mapIcon: 'congress'
       },
       {
-        title: 'Secretaria de Estado da Saúde',
+        title: 'Secretaria de Estado da Saúde (SESA)',
         href: 'https://www.saude.pr.gov.br/',
         address: 'Rua Piquiri 170 - Rebouças- 80230-140 - Curitiba - PR',
         phone: '41 3330-4300',
@@ -288,16 +360,57 @@ const POI = {
         mapIcon: 'congress'
       },
       {
-        title: 'Secretaria de Estado da Segurança Pública',
+        title: 'Secretaria de Estado da Segurança Pública (SESP)',
         href: 'http://www.seguranca.pr.gov.br/',
         address: 'Rua Deputado Mário de Barros, 1290 - Ed. Caetano Munhoz da Rocha - Centro Cívico - 80530-280 - Curitiba - PR',
-        phone: '41 3313-1900',
-        lat: -25.412163,
-        lon: -49.266950,
+        phone: '(41) 3313-1900',
+        lat: -25.412148,
+        lon: -49.266948,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Agência de Defesa Agropecuária do Paraná (ADAPAR)',
+        href: 'http://www.adapar.pr.gov.br/',
+        address: 'Rua dos Funcionários, 1559 - 80035-050 - Curitiba - PR',
+        phone: '(41) 3313-4000',
+        lat: -25.410905,
+        lon: -49.247583,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+      {
+        title: 'Departamento de Estradas de Rodagem (DER)',
+        href: 'https://www.der.pr.gov.br',
+        address: 'Avenida Iguaçu, 420 - Rebouças - Curitiba - PR, 80230-020',
+        phone: '(41) 3304-8000',
+        lat: -25.440557,
+        lon: -49.266232,
         icon: 'mdi-bank',
         mapIcon: 'congress'
       },
 
+      {
+        title: 'Sistema Meteorológico do Paraná (SIMEPAR)',
+        href: 'http://www.simepar.br/',
+        address: 'Centro Politécnico da UFPR - Curitiba - PR, 81531-980, Brasil',
+        phone: '(41) 3320-2000',
+        lat: -25.451870,
+        lon: -49.237037,
+        icon: 'mdi-bank',
+        mapIcon: 'congress'
+      },
+
+      {
+        title: 'Hospital Oswaldo Cruz',
+        href: 'http://www.cht.pr.gov.br/Hospital-Oswaldo-Cruz',
+        address: 'Rua Ubaldino Amaral, 545, Alto da Glória, Curitiba-PR, 80060-190, Brasil',
+        phone: '',
+        lat: -25.425604,
+        lon: -49.259152,
+        icon: 'mdi-hospital',
+        mapIcon: 'hospital'
+      },
       {
         title: 'Hospital Pilar',
         href: 'http://www.hospitalpilar.com.br/',
@@ -312,7 +425,9 @@ const POI = {
   }),
   mounted () {
     this.$nextTick(() => {
-      this.map = L.map('poiMap') // .setView([-24.618588, -51.316993], 7);
+      this.categories = _.uniq(_.map(this.items, 'icon')).sort().slice(0, 6)
+
+      this.map = L.map('poiMap').setView([-24.618588, -51.316993], 7)
       
       L.control.defaultExtent()
         .addTo(this.map);
@@ -388,14 +503,57 @@ const POI = {
         markers.addLayer(marker)
       }
 
+      axios.get('http://geoservertre.pr.gov.br/geoserver/ows', {
+        params: {
+          service: 'wfs',
+          version: '2.0.0',
+          outputFormat: 'application/json',
+          exceptions: 'application/json',
+          request: 'GetFeature',
+          typeNames: 'seed:escola_estadual_pto_p4674',
+          srsName: 'EPSG:4674'
+        }
+      })
+        .then(response => {
+          console.log(response)
+          
+          var geojson = L.geoJson(response.data, {
+            pointToLayer: function (feature, latlng) {
+              return L.marker(latlng)
+            }
+            /*,
+            onEachFeature: (feature, layer) => {
+              var popup = L.Util.template(this.template, feature.properties)
+              layer.bindPopup(popup)
+            }
+            */
+          })
+
+          markers.addLayer(geojson)
+          // this.map.addLayer(this.markers)
+          // this.map.fitBounds(this.geojson.getBounds())
+        })
+        .catch(error => {
+          console.log(error)
+        })
+        .finally(() => {
+          // ..
+          console.log(markers)
+        })
+
       this.map.addLayer(markers)
-      this.map.fitBounds(L.latLngBounds(latlngs))
+      
+      // this.map.fitBounds(L.latLngBounds(latlngs))
     })
   },
   methods: {
     fitExtent (item) {
       var latlng = L.latLng(item.lat, item.lon)
-      this.map.setView(latlng)
+      this.map.setView(latlng, 17)
+    },
+    places: function (category) {
+      return this.items.filter(item => item.icon.localeCompare(category) === 0)
     }
+
   }
 }
