@@ -390,8 +390,43 @@ const Work = {
         ]
       },
       {
+        name: 'CELEPAR',
+        items: [
+          {
+            title: 'Nota Paraná',
+            subtitle: 'http://www.notaparana.pr.gov.br/',
+            href: 'http://www.notaparana.pr.gov.br/',
+            screenshot: 'assets/screenshots/nota-parana.png'
+          },
+          {
+            title: 'PIÁ',
+            subtitle: 'Paraná Inteligência Artificial',
+            href: 'https://www.pia.pr.gov.br/',
+            screenshot: 'assets/screenshots/pia.jpg'
+          },
+          {
+            title: 'Portal da Transparência',
+            subtitle: 'http://www.transparencia.pr.gov.br',
+            href: 'http://www.transparencia.pr.gov.br',
+            screenshot: 'assets/screenshots/portal-transparencia.jpg'
+          },
+          {
+            title: 'Viaje Paraná',
+            subtitle: 'http://www.viajeparana.com/',
+            href: 'http://www.viajeparana.com/',
+            screenshot: 'assets/screenshots/viaje-parana.png'
+          }
+        ]
+      },
+      {
         name: 'Outros',
         items: [
+          {
+            title: 'Here',
+            subtitle: 'https://www.here.com/',
+            href: 'https://www.here.com/',
+            screenshot: 'assets/screenshots/here.jpg'
+          },
           {
             title: 'MapMaker Interactive',
             subtitle: 'National Geographic',
@@ -447,30 +482,6 @@ const Work = {
             screenshot: 'assets/screenshots/tre-pr.png'
           },
           {
-            title: 'Nota Paraná',
-            subtitle: 'http://www.notaparana.pr.gov.br/',
-            href: 'http://www.notaparana.pr.gov.br/',
-            screenshot: 'assets/screenshots/nota-parana.png'
-          },
-          {
-            title: 'Viaje Paraná',
-            subtitle: 'http://www.viajeparana.com/',
-            href: 'http://www.viajeparana.com/',
-            screenshot: 'assets/screenshots/viaje-parana.png'
-          },
-          {
-            title: 'PIÁ',
-            subtitle: 'Paraná Inteligência Artificial',
-            href: 'https://www.pia.pr.gov.br/',
-            screenshot: 'assets/screenshots/pia.jpg'
-          },
-          {
-            title: 'Portal da Transparência',
-            subtitle: 'http://www.transparencia.pr.gov.br',
-            href: 'http://www.transparencia.pr.gov.br',
-            screenshot: 'assets/screenshots/portal-transparencia.jpg'
-          },
-          {
             title: 'Mapa da Cultura',
             subtitle: 'Mapas.cultura.gov.br',
             href: 'http://mapas.cultura.gov.br/',
@@ -513,7 +524,14 @@ const Work = {
             screenshot: 'assets/screenshots/sider.png'
           },
           {
+            title: 'SIGLON',
+            subtitle: 'Sistema de Informação Geográfica de Londrina',
+            href: 'https://geo.londrina.pr.gov.br/portal/apps/webappviewer/index.html?id=5360a454d15146a3bcf4ebdbe8e49e03',
+            screenshot: 'assets/screenshots/SIGLON.png'
+          },
+          {
             title: 'Portal GeoMaringá',
+            subtitle: 'Prefeitura Municipal de Maringá',
             href: 'http://geoproc.maringa.pr.gov.br:8090/SIGMARINGA/?itemid=d0b136c94c274dc7863b2acd768ec07e',
             screenshot: 'assets/screenshots/Portal GeoMaringá.jpg'
           },
@@ -523,7 +541,12 @@ const Work = {
             href: 'http://geoweb.pontagrossa.pr.gov.br/',
             screenshot: 'assets/screenshots/Geoprocessamento Corporativo.png'
           },
-          
+          {
+            title: 'Mapa Solar',
+            subtitle: 'COPEL',
+            href: 'https://solar.copel.com/solar/',
+            screenshot: 'assets/screenshots/Mapa Solar.jpg'
+          },
           {
             title: 'Rodízio Curitiba e RMC',
             subtitle: 'SANEPAR',
@@ -541,6 +564,13 @@ const Work = {
             subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
             screenshot: 'assets/screenshots/geocultura.jpg'
+          },
+          {
+            title: 'GeoNetwork',
+            subtitle: 'CELEPAR',
+            href: 'http://geojsapitre.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
+            prod: 'http://geonetwork.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
+            screenshot: 'assets/screenshots/GeoNetwork.png'
           },
           {
             title: 'geocge',
@@ -561,11 +591,18 @@ const Work = {
             screenshot: 'assets/screenshots/geoidr.png'
           },
           {
+            title: 'geogpi',
+            subtitle: 'SEAP',
+            href: 'http://www.geogpi.pr.gov.br/geogpi/publico',
+            screenshot: 'assets/screenshots/geogpi.png'
+          },
+          {
             title: 'geoseti',
             subtitle: 'SETI',
             href: 'http://www.geoseti.pr.gov.br/geoseti/publico',
             screenshot: 'assets/screenshots/geoseti.png'
           }
+          
         ]
       }
     ]

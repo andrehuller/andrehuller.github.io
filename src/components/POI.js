@@ -427,7 +427,7 @@ const POI = {
     this.$nextTick(() => {
       this.categories = _.uniq(_.map(this.items, 'icon')).sort().slice(0, 6)
 
-      this.map = L.map('poiMap').setView([-24.618588, -51.316993], 7)
+      this.map = L.map('poiMap') //.setView([-24.618588, -51.316993], 7)
       
       L.control.defaultExtent()
         .addTo(this.map);
@@ -476,7 +476,21 @@ const POI = {
       this.layers = L.control.layers({
         'Topographic': L.esri.basemapLayer('Topographic').addTo(this.map),
         'ImageryClarity': L.esri.basemapLayer('ImageryClarity')
-      }, null, {
+      }, {
+        'Municípios do Paraná': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+          layers: 'itcg:municipios_pol_p31982_e50',
+          format: 'image/png',
+          // info_format: 'application/json',
+          transparent: true,
+          // tiled: true,
+          // feature_count: 500
+        }),
+        'Regionais SESA (2008)': L.tileLayer.wms('https://geoserver.pr.gov.br/geoserver/ows', {
+          layers: 'sesa:regional_sesa_site_pol_p29192_a2008',
+          format: 'image/png',
+          transparent: true
+        })
+      }, {
         collapsed: false
       }).addTo(this.map)
 
@@ -503,7 +517,8 @@ const POI = {
         markers.addLayer(marker)
       }
 
-      axios.get('http://geoservertre.pr.gov.br/geoserver/ows', {
+      /*
+      axios.get('https://geoservertre.pr.gov.br/geoserver/ows', {
         params: {
           service: 'wfs',
           version: '2.0.0',
@@ -521,12 +536,11 @@ const POI = {
             pointToLayer: function (feature, latlng) {
               return L.marker(latlng)
             }
-            /*,
-            onEachFeature: (feature, layer) => {
-              var popup = L.Util.template(this.template, feature.properties)
-              layer.bindPopup(popup)
-            }
-            */
+            // ,
+            // onEachFeature: (feature, layer) => {
+            //   var popup = L.Util.template(this.template, feature.properties)
+            //   layer.bindPopup(popup)
+            // }
           })
 
           markers.addLayer(geojson)
@@ -540,10 +554,9 @@ const POI = {
           // ..
           console.log(markers)
         })
-
+      */
       this.map.addLayer(markers)
-      
-      // this.map.fitBounds(L.latLngBounds(latlngs))
+      this.map.fitBounds(L.latLngBounds(latlngs))
     })
   },
   methods: {
