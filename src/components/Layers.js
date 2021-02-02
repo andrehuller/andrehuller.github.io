@@ -31,6 +31,11 @@ const Layers = {
           format: 'image/png',
           transparent: true
         }).addTo(this.map),
+        'Áreas Urbanas': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+          layers: 'sedu_paranacidade:areas_urbanas_pol_p31982',
+          format: 'image/png',
+          transparent: true
+        }),
         'Clínicas': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
           layers: 'sesa:clinica_pto_p4674',
           format: 'image/png',

@@ -1,7 +1,7 @@
 const Work = {
   template: `
     <v-container fluid pa-0>
-      <v-tabs fixed-tabs show-arrows>
+      <v-tabs color="#244EA2" fixed-tabs show-arrows>
         <v-tab
           v-for="(category, i) in categories"
           :key="i"
@@ -601,8 +601,13 @@ const Work = {
             subtitle: 'SETI',
             href: 'http://www.geoseti.pr.gov.br/geoseti/publico',
             screenshot: 'assets/screenshots/geoseti.png'
+          },
+          {
+            title: 'vue-sga',
+            subtitle: 'http://geojsapitre.pr.gov.br/vue-sga/#/',
+            href: 'http://geojsapitre.pr.gov.br/vue-sga/#/',
+            screenshot: 'assets/screenshots/vue-sga.jpg'
           }
-          
         ]
       }
     ]

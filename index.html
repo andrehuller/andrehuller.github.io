@@ -169,9 +169,9 @@
       </v-navigation-drawer>
 
       <v-app-bar
+        color="red"
         app
         clipped-left
-        color="red"
         dark
       >
         <v-app-bar-nav-icon
@@ -184,10 +184,10 @@
           <span class="hidden-sm-and-down">github.io</span>
         </v-toolbar-title>
         <v-text-field
+          color="#244EA2"
           prepend-inner-icon="mdi-magnify"
           label="Search"
           class="hidden-sm-and-down"
-          color="red"
           clearable flat hide-details solo-inverted
         ></v-text-field>
         <v-spacer></v-spacer>
@@ -217,7 +217,7 @@
         
         <v-menu bottom left offset-y>
           <template v-slot:activator="{ on, attrs }">
-            <v-btn dark icon v-bind="attrs" v-on="on">
+            <v-btn icon v-bind="attrs" v-on="on">
               <v-icon>mdi-dots-vertical</v-icon>
             </v-btn>
           </template>
