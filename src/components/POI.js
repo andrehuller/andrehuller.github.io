@@ -18,7 +18,7 @@ const POI = {
                 v-for="item in places(category)"
                 :key="item.title"
               >
-                <v-card outlined>
+                <v-card tile outlined>
                   <v-list>
                     <v-list-item three-line>
                       <v-list-item-avatar class="indigo darken-1">
@@ -228,7 +228,6 @@ const POI = {
         icon: 'mdi-desktop-classic',
         mapIcon: 'computers'
       },
-
       {
         title: 'Governadoria',
         href: 'http://www.parana.pr.gov.br/',
@@ -400,7 +399,6 @@ const POI = {
         icon: 'mdi-bank',
         mapIcon: 'congress'
       },
-
       {
         title: 'Hospital Oswaldo Cruz',
         href: 'http://www.cht.pr.gov.br/Hospital-Oswaldo-Cruz',
@@ -567,6 +565,5 @@ const POI = {
     places: function (category) {
       return this.items.filter(item => item.icon.localeCompare(category) === 0)
     }
-
   }
 }

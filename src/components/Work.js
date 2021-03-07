@@ -18,27 +18,31 @@ const Work = {
                 lg="4"
               >
                 <v-card
-                  :href="project.href"
-                  target="_blank"
-                  align="center"
                   class="fill-height d-flex flex-column"
                   outlined
                 >
-                  <v-img
-                    v-if="project.screenshot"
-                    :src="project.screenshot"
-                    height="265.233"
-                  ></v-img>
+                  <a :href="project.href" target="_blank">
+                    <v-img
+                      v-if="project.screenshot"
+                      :src="project.screenshot"
+                      height="265.233"
+                    ></v-img>
+                  </a>
+                  <v-card-title
+                    class="headline"
+                    v-text="project.title"
+                  ></v-card-title>
+                  <v-card-subtitle
+                    v-text="project.subtitle"
+                  ></v-card-subtitle>
+                  <v-card-actions>
+                    <v-spacer></v-spacer>
+                    <v-btn fab small outlined :href="project.homolog" v-if="project.homolog">
+                      H
+                    </v-btn>
+                  </v-card-actions>
+                  <!--
                   <div class="d-flex flex-no-wrap justify-space-between">
-                    <div>
-                      <v-card-title
-                        class="headline"
-                        v-text="project.title"
-                      ></v-card-title>
-                      <v-card-subtitle
-                        v-text="project.subtitle"
-                      ></v-card-subtitle>
-                    </div>
                     <v-avatar class="ma-3" :width="project.width" height="project.height" tile>
                       <v-img :src="project.src"
                         :width="project.width"
@@ -49,6 +53,7 @@ const Work = {
                       ></v-img>
                     </v-avatar>
                   </div>
+                  -->
                 </v-card>
               </v-col>
             </v-row>
@@ -580,9 +585,10 @@ const Work = {
           },
           {
             title: 'geoder',
-            subtitle: 'http://geojsapitre.pr.gov.br/geoder/#/',
-            href: 'http://geojsapitre.pr.gov.br/geoder/#/',
-            screenshot: 'assets/screenshots/geoder.png'
+            subtitle: 'DER/PR',
+            href: 'http://www.portalgeo.pr.gov.br/geoder/#/',
+            screenshot: 'assets/screenshots/geoder.png',
+            homolog: 'http://geojsapitre.pr.gov.br/geoder/#/'
           },
           {
             title: 'geoidr',
@@ -595,6 +601,12 @@ const Work = {
             subtitle: 'SEAP',
             href: 'http://www.geogpi.pr.gov.br/geogpi/publico',
             screenshot: 'assets/screenshots/geogpi.png'
+          },
+          {
+            title: 'geosga',
+            subtitle: 'http://www.geodc.pr.gov.br/geosga',
+            href: 'http://www.geodc.pr.gov.br/geosga',
+            screenshot: 'assets/screenshots/geosga.png'
           },
           {
             title: 'geoseti',

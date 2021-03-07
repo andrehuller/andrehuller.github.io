@@ -4,7 +4,11 @@ const Frameworks = {
       <v-row justify="center">
         <v-col cols="12" lg="6">
           <v-timeline>
-            <v-timeline-item v-for="framework in frameworks" :key="framework.name">
+            <v-timeline-item
+              v-for="framework in frameworks"
+              :key="framework.name"
+              color="#244EA2"
+            >
               <v-card>
                 <v-card-title>{{ framework.name }}</v-card-title>
                 <v-card-text v-if="framework.release">

@@ -18,6 +18,7 @@ const Layers = {
       // info_format: 'application/json',
       // tiled: true,
       // feature_count: 500
+      const GEOSERVER = 'https://geoservertre.pr.gov.br/geoserver/ows'
 
       this.layers = L.control.layers({
         'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -26,53 +27,77 @@ const Layers = {
         'Topographic': L.esri.basemapLayer('Topographic'),
         'ImageryClarity': L.esri.basemapLayer('ImageryClarity')
       }, {
-        'Municípios do Paraná': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+        'Municípios do Paraná': L.tileLayer.wms(GEOSERVER, {
           layers: 'itcg:municipios_pol_p31982_e50',
           format: 'image/png',
           transparent: true
         }).addTo(this.map),
-        'Áreas Urbanas': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+        'Áreas Urbanas': L.tileLayer.wms(GEOSERVER, {
           layers: 'sedu_paranacidade:areas_urbanas_pol_p31982',
           format: 'image/png',
           transparent: true
         }),
-        'Clínicas': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+        // SEIL/DER
+        'Rodovias (2014)': L.tileLayer.wms(GEOSERVER, {
+          layers: 'seil_der:rodovias_trechos_lin_p29192_a2014',
+          format: 'image/png',
+          transparent: true
+        }),
+        // SEMA/ÁguasParaná
+        'Principais Massas d\'Água (2011)': L.tileLayer.wms(GEOSERVER, {
+          layers: 'sema_aguasparana:hidrografia_pol_p31982_e50_a2011_v002',
+          format: 'image/png',
+          transparent: true
+        }),
+        // SEMA/IAP
+        'Ecossistemas': L.tileLayer.wms(GEOSERVER, {
+          layers: 'sema_iap:ecossistemas_pol_p29192',
+          format: 'image/png',
+          transparent: true
+        }),
+        'Regiões Bioclimáticas (2020)': L.tileLayer.wms(GEOSERVER, {
+          layers: 'sema_iap:regioes_bioclimaticas_pol_p31982',
+          format: 'image/png',
+          transparent: true
+        }),
+        // SESA
+        'Clínicas': L.tileLayer.wms(GEOSERVER, {
           layers: 'sesa:clinica_pto_p4674',
           format: 'image/png',
           transparent: true
         }),
-        'Hospitais': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+        'Hospitais': L.tileLayer.wms(GEOSERVER, {
           layers: 'sesa:hospital_pto_p4674',
           format: 'image/png',
           transparent: true
         }),
-        'Laboratórios': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+        'Laboratórios': L.tileLayer.wms(GEOSERVER, {
           layers: 'sesa:laboratorio_pto_p4674',
           format: 'image/png',
           transparent: true
         }),
-        'Regionais SESA (2008)': L.tileLayer.wms('https://geoserver.pr.gov.br/geoserver/ows', {
+        'Regionais SESA (2008)': L.tileLayer.wms(GEOSERVER, {
           layers: 'sesa:regional_sesa_site_pol_p29192_a2008',
           format: 'image/png',
           transparent: true
         }),
 
-        'Balsas': L.tileLayer.wms('https://geoserver.pr.gov.br/geoserver/ows', {
+        'Balsas': L.tileLayer.wms(GEOSERVER, {
           layers: 'seil_der:balsa_pto_p29192',
           format: 'image/png',
           transparent: true
         }),
-        'Portos': L.tileLayer.wms('https://geoserver.pr.gov.br/geoserver/ows', {
+        'Portos': L.tileLayer.wms(GEOSERVER, {
           layers: 'seil_der:portos_pto_p29192',
           format: 'image/png',
           transparent: true
         }),
-        'Aeroportos': L.tileLayer.wms('https://geoserver.pr.gov.br/geoserver/ows', {
+        'Aeroportos': L.tileLayer.wms(GEOSERVER, {
           layers: 'seil_der:aerodromos_pto_p29192_a2006',
           format: 'image/png',
           transparent: true
         }),
-        'Ferrovias': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
+        'Ferrovias': L.tileLayer.wms(GEOSERVER, {
           layers: 'seil_der:ferrovias_lin_p31982',
           format: 'image/png',
           transparent: true

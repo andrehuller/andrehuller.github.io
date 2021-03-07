@@ -35,7 +35,7 @@
         app
       >
         <v-list dense nav>
-          <v-list-item to="/">
+          <v-list-item to="/" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-vuejs</v-icon>
             </v-list-item-icon>
@@ -43,7 +43,7 @@
               <v-list-item-title>Frameworks</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/libraries">
+          <v-list-item to="/libraries" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-vuetify</v-icon>
             </v-list-item-icon>
@@ -51,7 +51,7 @@
               <v-list-item-title>Libraries</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/libraries2">
+          <v-list-item to="/libraries2" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-vuetify</v-icon>
             </v-list-item-icon>
@@ -62,7 +62,7 @@
         </v-list>
         <v-divider></v-divider>
         <v-list dense nav>
-          <v-list-item to="/leaflet">
+          <v-list-item to="/leaflet" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-map</v-icon>
             </v-list-item-icon>
@@ -71,7 +71,7 @@
             </v-list-item-content>
           </v-list-item>
           
-          <v-list-item to="/unsplash">
+          <v-list-item to="/unsplash" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-image</v-icon>
             </v-list-item-icon>
@@ -86,7 +86,9 @@
           <v-list-item
             v-for="component in components"
             :key="component.title"
-            :to="component.route">
+            :to="component.route"
+            color="#25305E"
+          >
             <v-list-item-icon>
               <v-icon>
                 {{ component.icon }}
@@ -102,7 +104,7 @@
         
         <v-divider></v-divider>
         <v-list dense nav>
-          <v-list-item to="/git">
+          <v-list-item to="/git" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-git</v-icon>
             </v-list-item-icon>
@@ -111,7 +113,7 @@
             </v-list-item-content>
           </v-list-item>
           
-          <v-list-item to="/people">
+          <v-list-item to="/people" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-account-group</v-icon>
             </v-list-item-icon>
@@ -120,7 +122,7 @@
             </v-list-item-content>
           </v-list-item>
           
-          <v-list-item to="/resources">
+          <v-list-item to="/resources" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-information</v-icon>
             </v-list-item-icon>
@@ -132,7 +134,7 @@
         
         <v-divider></v-divider>
         <v-list dense nav>
-          <v-list-item to="/portfolio">
+          <v-list-item to="/portfolio" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-view-grid</v-icon>
             </v-list-item-icon>
@@ -140,7 +142,7 @@
               <v-list-item-title>Portfolio</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/work">
+          <v-list-item to="/work" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-account-hard-hat</v-icon>
             </v-list-item-icon>
@@ -148,7 +150,7 @@
               <v-list-item-title>Work</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/poi">
+          <v-list-item to="/poi" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-map-marker</v-icon>
             </v-list-item-icon>
@@ -156,8 +158,7 @@
               <v-list-item-title>Points of Interest</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-
-          <v-list-item to="/layers">
+          <v-list-item to="/layers" color="#25305E">
             <v-list-item-icon>
               <v-icon>mdi-layers</v-icon>
             </v-list-item-icon>
@@ -169,7 +170,7 @@
       </v-navigation-drawer>
 
       <v-app-bar
-        color="red"
+        color="#25305E"
         app
         clipped-left
         dark
@@ -177,21 +178,19 @@
         <v-app-bar-nav-icon
           @click.stop="drawer = !drawer"
         ></v-app-bar-nav-icon>
-        <v-toolbar-title
-          style="width: 300px"
-          class="ml-0 pl-4"
-        >
+        <v-toolbar-title style="width: 300px" class="ml-0 pl-4">
           <span class="hidden-sm-and-down">github.io</span>
         </v-toolbar-title>
+        
         <v-text-field
-          color="#244EA2"
+          color="#40403E"
           prepend-inner-icon="mdi-magnify"
           label="Search"
           class="hidden-sm-and-down"
           clearable flat hide-details solo-inverted
         ></v-text-field>
         <v-spacer></v-spacer>
-        
+
         <v-tooltip bottom>
           <template v-slot:activator="{ on, attrs }">
             <v-btn icon v-bind="attrs" v-on="on">
