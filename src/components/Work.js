@@ -487,12 +487,6 @@ const Work = {
             screenshot: 'assets/screenshots/tre-pr.png'
           },
           {
-            title: 'Mapa da Cultura',
-            subtitle: 'Mapas.cultura.gov.br',
-            href: 'http://mapas.cultura.gov.br/',
-            screenshot: 'assets/screenshots/mapa-da-cultura.png'
-          },
-          {
             title: 'Flowchart COVID-19',
             subtitle: 'CEDC',
             href: 'https://app.powerbi.com/view?r=eyJrIjoiYTY2NmNiOGUtZTA5Ni00NTA0LWIwZTEtOTE3ZWFmMjQ3MTk0IiwidCI6ImZiYWYzMWQzLWU4ZjgtNGE3MC1iNjMzLWJlMzdiNjJmNTQyNSJ9',
@@ -511,22 +505,10 @@ const Work = {
             screenshot: 'assets/screenshots/mapas-sedu.png'
           },
           {
-            title: 'Paraná Interativo',
-            subtitle: 'https://paranainterativo.pr.gov.br/',
-            href: 'https://paranainterativo.pr.gov.br/',
-            screenshot: 'assets/screenshots/parana-interativo.jpg'
-          },
-          {
-            title: 'Consulta Escolas',
-            subtitle: 'http://www.consultaescolas.pr.gov.br/',
-            href: 'http://www.consultaescolas.pr.gov.br/',
-            screenshot: 'assets/screenshots/consulta-escolas.png'
-          },
-          {
-            title: 'Portal de Mapas',
-            subtitle: 'DER/PR',
-            href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
-            screenshot: 'assets/screenshots/sider.png'
+            title: 'Uso e Cobertura da Terra',
+            subtitle: 'SEDEST (2012 - 2016)',
+            href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
+            screenshot: 'assets/screenshots/uso-cobertura-terra.png'
           },
           {
             title: 'SIGLON',
@@ -541,12 +523,6 @@ const Work = {
             screenshot: 'assets/screenshots/Portal GeoMaringá.jpg'
           },
           {
-            title: 'Geoprocessamento Corporativo',
-            subtitle: 'Prefeitura Municipal de Ponta Grossa',
-            href: 'http://geoweb.pontagrossa.pr.gov.br/',
-            screenshot: 'assets/screenshots/Geoprocessamento Corporativo.png'
-          },
-          {
             title: 'Mapa Solar',
             subtitle: 'COPEL',
             href: 'https://solar.copel.com/solar/',
@@ -557,68 +533,6 @@ const Work = {
             subtitle: 'SANEPAR',
             href: 'http://site.sanepar.com.br/mapa-rodizio-abastecimento-curitiba-rmc',
             screenshot: 'assets/screenshots/mapa-rodizio-abastecimento-curitiba-rmc.png'
-          },
-          {
-            title: 'Uso e Cobertura da Terra',
-            subtitle: 'SEDEST (2012 - 2016)',
-            href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
-            screenshot: 'assets/screenshots/uso-cobertura-terra.png'
-          },
-          {
-            title: 'Portal da Cultura',
-            subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
-            href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
-            screenshot: 'assets/screenshots/geocultura.jpg'
-          },
-          {
-            title: 'GeoNetwork',
-            subtitle: 'CELEPAR',
-            href: 'http://geojsapitre.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
-            prod: 'http://geonetwork.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
-            screenshot: 'assets/screenshots/GeoNetwork.png'
-          },
-          {
-            title: 'geocge',
-            subtitle: 'http://geojsapitre.pr.gov.br/geocge/#/',
-            href: 'http://geojsapitre.pr.gov.br/geocge/#/',
-            screenshot: 'assets/screenshots/geocge.jpg'
-          },
-          {
-            title: 'geoder',
-            subtitle: 'DER/PR',
-            href: 'http://www.portalgeo.pr.gov.br/geoder/#/',
-            screenshot: 'assets/screenshots/geoder.png',
-            homolog: 'http://geojsapitre.pr.gov.br/geoder/#/'
-          },
-          {
-            title: 'geoidr',
-            subtitle: 'http://geojsapitre.pr.gov.br/geoidr/#/',
-            href: 'http://geojsapitre.pr.gov.br/geoidr/#/',
-            screenshot: 'assets/screenshots/geoidr.png'
-          },
-          {
-            title: 'geogpi',
-            subtitle: 'SEAP',
-            href: 'http://www.geogpi.pr.gov.br/geogpi/publico',
-            screenshot: 'assets/screenshots/geogpi.png'
-          },
-          {
-            title: 'geosga',
-            subtitle: 'http://www.geodc.pr.gov.br/geosga',
-            href: 'http://www.geodc.pr.gov.br/geosga',
-            screenshot: 'assets/screenshots/geosga.png'
-          },
-          {
-            title: 'geoseti',
-            subtitle: 'SETI',
-            href: 'http://www.geoseti.pr.gov.br/geoseti/publico',
-            screenshot: 'assets/screenshots/geoseti.png'
-          },
-          {
-            title: 'vue-sga',
-            subtitle: 'http://geojsapitre.pr.gov.br/vue-sga/#/',
-            href: 'http://geojsapitre.pr.gov.br/vue-sga/#/',
-            screenshot: 'assets/screenshots/vue-sga.jpg'
           }
         ]
       }
