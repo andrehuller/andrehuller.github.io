@@ -102,10 +102,11 @@ const Work2 = {
           },
           {
             title: 'geoidr',
-            subtitle: 'http://geojsapitre.pr.gov.br/geoidr/#/',
-            href: 'http://geojsapitre.pr.gov.br/geoidr/#/',
+            subtitle: 'IDR/PR',
+            href: 'http://idr.mapas.pr.gov.br',
             screenshot: 'assets/screenshots/geoidr.png',
-            homolog: 'http://geojsapitre.pr.gov.br/geoidr/#/'
+            homolog: 'http://geojsapitre.pr.gov.br/geoidr/#/',
+            prod: 'http://idr.mapas.pr.gov.br'
           },
           {
             title: 'vue-sga',
