@@ -37,10 +37,20 @@ const Work2 = {
                   ></v-card-subtitle>
                   <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn fab small outlined :href="project.homolog" v-if="project.homolog">
+                    <v-btn
+                      v-if="project.homolog"
+                      :href="project.homolog"
+                      target="_blank"
+                      fab small outlined
+                    >
                       H
                     </v-btn>
-                    <v-btn fab small outlined :href="project.prod" v-if="project.prod">
+                    <v-btn
+                      v-if="project.prod"
+                      :href="project.prod"
+                      target="_blank"
+                      fab small outlined
+                    >
                       P
                     </v-btn>
                   </v-card-actions>
@@ -109,11 +119,11 @@ const Work2 = {
             prod: 'http://idr.mapas.pr.gov.br'
           },
           {
-            title: 'vue-sga',
-            subtitle: 'http://geojsapitre.pr.gov.br/vue-sga/#/',
-            href: 'http://geojsapitre.pr.gov.br/vue-sga/#/',
-            screenshot: 'assets/screenshots/vue-sga.jpg',
-            homolog: 'http://geojsapitre.pr.gov.br/vue-sga/#/'
+            title: 'geosga',
+            subtitle: 'IAT/PR',
+            href: 'http://geojsapitre.pr.gov.br/geosga/#',
+            screenshot: 'assets/screenshots/geosga.png',
+            homolog: 'http://geojsapitre.pr.gov.br/geosga/#'
           }
         ]
       },
@@ -136,7 +146,7 @@ const Work2 = {
             title: 'geosga',
             subtitle: 'http://www.geosga.pr.gov.br/geosga',
             href: 'http://www.geosga.pr.gov.br/geosga',
-            screenshot: 'assets/screenshots/geosga.png'
+            screenshot: 'assets/screenshots/geosga(1).png'
           }
         ]
       },
