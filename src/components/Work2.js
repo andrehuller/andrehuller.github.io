@@ -37,22 +37,38 @@ const Work2 = {
                   ></v-card-subtitle>
                   <v-card-actions>
                     <v-spacer></v-spacer>
-                    <v-btn
-                      v-if="project.homolog"
-                      :href="project.homolog"
-                      target="_blank"
-                      fab small outlined
-                    >
-                      H
-                    </v-btn>
-                    <v-btn
-                      v-if="project.prod"
-                      :href="project.prod"
-                      target="_blank"
-                      fab small outlined
-                    >
-                      P
-                    </v-btn>
+                    <v-tooltip bottom>
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn
+                          v-if="project.homolog"
+                          :href="project.homolog"
+                          target="_blank"
+                          fab small outlined
+                          v-bind="attrs"
+                          v-on="on"
+                        >
+                          H
+                        </v-btn>
+                      </template>
+                      <span>Homologação</span>
+                    </v-tooltip>
+                    <v-tooltip bottom>
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-btn
+                          v-if="project.prod"
+                          :href="project.prod"
+                          target="_blank"
+                          fab small outlined
+                          v-bind="attrs"
+                          v-on="on"
+                          class="ml-2"
+                        >
+                          P
+                        </v-btn>
+                      </template>
+                      <span>Produção</span>
+                    </v-tooltip>
+                    
                   </v-card-actions>
                   <!--
                   <div class="d-flex flex-no-wrap justify-space-between">
@@ -82,14 +98,14 @@ const Work2 = {
         items: [
           {
             title: 'geocge',
-            subtitle: 'CGE/PR',
+            subtitle: 'CGE',
             href: 'http://geojsapitre.pr.gov.br/geocge/#/',
             screenshot: 'assets/screenshots/geocge.jpg',
             homolog: 'http://geojsapitre.pr.gov.br/geocge/#/'
           },
           {
             title: 'geocultura',
-            subtitle: 'SECC-PR',
+            subtitle: 'SECC',
             href: 'http://cultura.mapas.pr.gov.br',
             screenshot: 'assets/screenshots/geocultura.jpg',
             homolog: 'http://geojsapitre.pr.gov.br/geocultura/#/',
@@ -97,14 +113,21 @@ const Work2 = {
           },
           {
             title: 'geodc',
-            subtitle: 'CEDC-PR',
+            subtitle: 'CEDC',
             href: 'http://geojsapitre.pr.gov.br/geodc/#/',
             screenshot: 'assets/screenshots/geodc.png',
             homolog: 'http://geojsapitre.pr.gov.br/geodc/#/'
           },
           {
+            title: 'geodc/editor-area-atencao',
+            subtitle: 'CEDC',
+            href: 'http://geojsapitre.pr.gov.br/editor/#/',
+            screenshot: 'assets/screenshots/editor-area-atencao.png',
+            homolog: 'http://geojsapitre.pr.gov.br/editor/#/'
+          },
+          {
             title: 'geoder',
-            subtitle: 'DER/PR',
+            subtitle: 'DER',
             href: 'http://der.mapas.pr.gov.br',
             screenshot: 'assets/screenshots/geoder.png',
             homolog: 'http://geojsapitre.pr.gov.br/geoder/#/',
@@ -112,7 +135,7 @@ const Work2 = {
           },
           {
             title: 'geoidr',
-            subtitle: 'IDR/PR',
+            subtitle: 'IDR',
             href: 'http://idr.mapas.pr.gov.br',
             screenshot: 'assets/screenshots/geoidr.png',
             homolog: 'http://geojsapitre.pr.gov.br/geoidr/#/',
@@ -120,7 +143,7 @@ const Work2 = {
           },
           {
             title: 'geosga',
-            subtitle: 'IAT/PR',
+            subtitle: 'IAT',
             href: 'http://geojsapitre.pr.gov.br/geosga/#',
             screenshot: 'assets/screenshots/geosga.png',
             homolog: 'http://geojsapitre.pr.gov.br/geosga/#'
@@ -131,10 +154,36 @@ const Work2 = {
         name: 'Ext + OpenLayers',
         items: [
           {
+            title: 'geocultura',
+            subtitle: 'SECC',
+            href: 'http://www.geocultura.pr.gov.br/geocultura',
+            screenshot: 'assets/screenshots/geocultura(1).png'
+          },
+          {
+            title: 'geoem',
+            subtitle: 'IAT',
+            href: 'http://www.geoem.pr.gov.br/geoem/publico',
+            screenshot: 'assets/screenshots/geoem.png'
+          },
+          {
             title: 'geogpi',
             subtitle: 'SEAP',
             href: 'http://www.geogpi.pr.gov.br/geogpi/publico',
             screenshot: 'assets/screenshots/geogpi.png'
+          },
+          {
+            title: 'geoobras',
+            subtitle: 'SEIL',
+            href: 'http://www.geoobras.pr.gov.br/geoobras',
+            screenshot: 'assets/screenshots/geoobras.png'
+          },
+          {
+            title: 'geosdsa',
+            subtitle: 'ADAPAR',
+            href: 'http://www.geo.adapar.pr.gov.br/geosdsa',
+            screenshot: 'assets/screenshots/geosdsa.png',
+            homolog: 'http://homologacao.geosdsa.pr.gov.br/geosdsa',
+            prod: 'http://www.geo.adapar.pr.gov.br/geosdsa'
           },
           {
             title: 'geoseti',
@@ -144,7 +193,7 @@ const Work2 = {
           },
           {
             title: 'geosga',
-            subtitle: 'http://www.geosga.pr.gov.br/geosga',
+            subtitle: 'IAT',
             href: 'http://www.geosga.pr.gov.br/geosga',
             screenshot: 'assets/screenshots/geosga(1).png'
           }
@@ -159,6 +208,14 @@ const Work2 = {
             href: 'http://geojsapitre.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
             screenshot: 'assets/screenshots/GeoNetwork.png',
             prod: 'http://geonetwork.pr.gov.br/geonetwork/srv/eng/catalog.search#/home'
+          },
+          {
+            title: 'GeoServer',
+            subtitle: 'CELEPAR',
+            href: 'https://geoserver.pr.gov.br',
+            screenshot: 'assets/screenshots/geoserver.png',
+            homolog: 'http://geoserverhml.eparana.parana',
+            prod: 'https://geoserver.pr.gov.br'
           }
         ]
       },
@@ -172,6 +229,18 @@ const Work2 = {
             screenshot: 'assets/screenshots/consulta-escolas.png'
           },
           {
+            title: 'SIGLON',
+            subtitle: 'Sistema de Informação Geográfica de Londrina',
+            href: 'https://geo.londrina.pr.gov.br/portal/apps/webappviewer/index.html?id=5360a454d15146a3bcf4ebdbe8e49e03',
+            screenshot: 'assets/screenshots/SIGLON.png'
+          },
+          {
+            title: 'Portal GeoMaringá',
+            subtitle: 'Prefeitura Municipal de Maringá',
+            href: 'http://geoproc.maringa.pr.gov.br:8090/SIGMARINGA/?itemid=d0b136c94c274dc7863b2acd768ec07e',
+            screenshot: 'assets/screenshots/Portal GeoMaringá.jpg'
+          },
+          {
             title: 'Geoprocessamento Corporativo',
             subtitle: 'Prefeitura Municipal de Ponta Grossa',
             href: 'http://geoweb.pontagrossa.pr.gov.br/',
@@ -179,9 +248,15 @@ const Work2 = {
           },
           {
             title: 'Mapa da Cultura',
-            subtitle: 'Mapas.cultura.gov.br',
+            subtitle: 'mapas.cultura.gov.br',
             href: 'http://mapas.cultura.gov.br/',
             screenshot: 'assets/screenshots/mapa-da-cultura.png'
+          },
+          {
+            title: 'Mapa Solar',
+            subtitle: 'COPEL',
+            href: 'https://solar.copel.com/solar/',
+            screenshot: 'assets/screenshots/Mapa Solar.jpg'
           },
           {
             title: 'paranainterativo',
@@ -190,10 +265,41 @@ const Work2 = {
             screenshot: 'assets/screenshots/parana-interativo.jpg'
           },
           {
+            title: 'Rodízio Curitiba e RMC',
+            subtitle: 'SANEPAR',
+            href: 'http://site.sanepar.com.br/mapa-rodizio-abastecimento-curitiba-rmc',
+            screenshot: 'assets/screenshots/mapa-rodizio-abastecimento-curitiba-rmc.png'
+          },
+          {
             title: 'sider',
             subtitle: 'DER/PR',
             href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
             screenshot: 'assets/screenshots/sider.png'
+          },
+          {
+            title: 'Uso e Cobertura da Terra',
+            subtitle: 'SEDEST (2012 - 2016)',
+            href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
+            screenshot: 'assets/screenshots/uso-cobertura-terra.png'
+          },
+
+          {
+            title: 'Flowchart COVID-19',
+            subtitle: 'CEDC',
+            href: 'https://app.powerbi.com/view?r=eyJrIjoiYTY2NmNiOGUtZTA5Ni00NTA0LWIwZTEtOTE3ZWFmMjQ3MTk0IiwidCI6ImZiYWYzMWQzLWU4ZjgtNGE3MC1iNjMzLWJlMzdiNjJmNTQyNSJ9',
+            screenshot: 'assets/screenshots/Flowchart COVID-19.png'
+          },
+          {
+            title: 'Mapa de Obras',
+            subtitle: 'PRED',
+            href: 'http://www.paranaedificacoes.pr.gov.br/Pagina/Mapa-de-Obras',
+            screenshot: 'assets/screenshots/mapa-de-obras.png'
+          },
+          {
+            title: 'Mapas',
+            subtitle: 'SEDU',
+            href: 'http://www.desenvolvimentourbano.pr.gov.br/Pagina/Mapas',
+            screenshot: 'assets/screenshots/mapas-sedu.png'
           }
         ]
       }

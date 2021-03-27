@@ -485,54 +485,6 @@ const Work = {
             subtitle: 'Tribunal Regional Eleitoral do Paraná',
             href: 'https://www.tre-pr.jus.br/',
             screenshot: 'assets/screenshots/tre-pr.png'
-          },
-          {
-            title: 'Flowchart COVID-19',
-            subtitle: 'CEDC',
-            href: 'https://app.powerbi.com/view?r=eyJrIjoiYTY2NmNiOGUtZTA5Ni00NTA0LWIwZTEtOTE3ZWFmMjQ3MTk0IiwidCI6ImZiYWYzMWQzLWU4ZjgtNGE3MC1iNjMzLWJlMzdiNjJmNTQyNSJ9',
-            screenshot: 'assets/screenshots/Flowchart COVID-19.png'
-          },
-          {
-            title: 'Mapa de Obras',
-            subtitle: 'PRED',
-            href: 'http://www.paranaedificacoes.pr.gov.br/Pagina/Mapa-de-Obras',
-            screenshot: 'assets/screenshots/mapa-de-obras.png'
-          },
-          {
-            title: 'Mapas',
-            subtitle: 'SEDU',
-            href: 'http://www.desenvolvimentourbano.pr.gov.br/Pagina/Mapas',
-            screenshot: 'assets/screenshots/mapas-sedu.png'
-          },
-          {
-            title: 'Uso e Cobertura da Terra',
-            subtitle: 'SEDEST (2012 - 2016)',
-            href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
-            screenshot: 'assets/screenshots/uso-cobertura-terra.png'
-          },
-          {
-            title: 'SIGLON',
-            subtitle: 'Sistema de Informação Geográfica de Londrina',
-            href: 'https://geo.londrina.pr.gov.br/portal/apps/webappviewer/index.html?id=5360a454d15146a3bcf4ebdbe8e49e03',
-            screenshot: 'assets/screenshots/SIGLON.png'
-          },
-          {
-            title: 'Portal GeoMaringá',
-            subtitle: 'Prefeitura Municipal de Maringá',
-            href: 'http://geoproc.maringa.pr.gov.br:8090/SIGMARINGA/?itemid=d0b136c94c274dc7863b2acd768ec07e',
-            screenshot: 'assets/screenshots/Portal GeoMaringá.jpg'
-          },
-          {
-            title: 'Mapa Solar',
-            subtitle: 'COPEL',
-            href: 'https://solar.copel.com/solar/',
-            screenshot: 'assets/screenshots/Mapa Solar.jpg'
-          },
-          {
-            title: 'Rodízio Curitiba e RMC',
-            subtitle: 'SANEPAR',
-            href: 'http://site.sanepar.com.br/mapa-rodizio-abastecimento-curitiba-rmc',
-            screenshot: 'assets/screenshots/mapa-rodizio-abastecimento-curitiba-rmc.png'
           }
         ]
       }
