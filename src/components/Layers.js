@@ -23,15 +23,17 @@ const Layers = {
       this.layers = L.control.layers({
         'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(this.map),
+        }),
+        'Gray Labels': L.esri.basemapLayer('GrayLabels'),
+        'Imagery': L.esri.basemapLayer('Imagery').addTo(this.map),
         'Topographic': L.esri.basemapLayer('Topographic'),
-        'ImageryClarity': L.esri.basemapLayer('ImageryClarity')
       }, {
+        'ImageryLabels': L.esri.basemapLayer('ImageryLabels').addTo(this.map),
         'Municípios do Paraná': L.tileLayer.wms(GEOSERVER, {
           layers: 'itcg:municipios_pol_p31982_e50',
           format: 'image/png',
           transparent: true
-        }).addTo(this.map),
+        }),
         'Áreas Urbanas': L.tileLayer.wms(GEOSERVER, {
           layers: 'sedu_paranacidade:areas_urbanas_pol_p31982',
           format: 'image/png',

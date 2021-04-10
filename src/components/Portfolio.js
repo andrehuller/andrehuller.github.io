@@ -83,8 +83,8 @@ const Portfolio = {
       {
         title: 'Portal da Cultura',
         icon: 'mdi-drama-masks',
-        href: 'http://www.portalgeo.pr.gov.br/geocultura/#/',
-        subtitle: 'http://www.portalgeo.pr.gov.br/geocultura/#/'
+        href: 'http://cultura.mapas.pr.gov.br',
+        subtitle: 'http://cultura.mapas.pr.gov.br'
       },
       {
         title: 'Rede de Proteção à Criança e ao Adolescente',

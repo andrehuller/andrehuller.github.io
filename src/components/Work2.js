@@ -8,7 +8,10 @@ const Work2 = {
         >
           {{ category.name }}
         </v-tab>
-        <v-tab-item v-for="(category, i) in categories" :key="i">
+        <v-tab-item
+          v-for="(category, i) in categories"
+          :key="i"
+        >
           <v-container fluid>
             <v-row>
               <v-col
@@ -295,11 +298,38 @@ const Work2 = {
             href: 'http://www.paranaedificacoes.pr.gov.br/Pagina/Mapa-de-Obras',
             screenshot: 'assets/screenshots/mapa-de-obras.png'
           },
+
+          {
+            title: 'Mapas Rodoviários',
+            subtitle: 'DER',
+            href: 'http://www.der.pr.gov.br/Pagina/Mapas-Rodoviarios#',
+            screenshot: 'assets/screenshots/Mapas Rodoviários.png'
+          },
+
           {
             title: 'Mapas',
             subtitle: 'SEDU',
             href: 'http://www.desenvolvimentourbano.pr.gov.br/Pagina/Mapas',
             screenshot: 'assets/screenshots/mapas-sedu.png'
+          },
+          {
+            title: 'URS', // Unidades Regionais de Sanidade Agropecuária
+            subtitle: 'ADAPAR',
+            href: 'http://www.adapar.pr.gov.br/Pagina/Unidades-Regionais-de-Sanidade-Agropecuaria-URS',
+            screenshot: 'assets/screenshots/URS.png'
+          },
+
+          {
+            title: 'Operações Portuárias',
+            subtitle: 'Portos do Paraná',
+            href: 'http://www.portosdoparana.pr.gov.br/Operacional',
+            screenshot: 'assets/screenshots/Operações Portuárias.png'
+          },
+          {
+            title: 'SISPEHIS',
+            subtitle: 'COHAPAR',
+            href: 'https://www.sistemas.cohapar.pr.gov.br/PEHISPUBLICO/listaFormMunicipio.php',
+            screenshot: 'assets/screenshots/SISPEHIS.png'
           }
         ]
       }
