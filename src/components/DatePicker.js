@@ -1,3 +1,52 @@
+Vue.component('date-picker', {
+  props: ['label'],
+  data: () => ({
+    date: null,
+    dateFmt: null,
+    menu: false
+  }),
+  template: `
+    <v-menu
+      v-model="menu"
+      :close-on-content-click="false"
+      max-width="290px"
+      min-width="290px"
+      offset-y
+      transition="scale-transition"
+    >
+      <template v-slot:activator="{ on }">
+        <v-text-field
+          v-model="dateFmt"
+          v-mask="'##/##/####'"
+          v-on="on"
+          :label="label"
+          
+          prepend-icon="mdi-calendar"
+          clearable
+          
+        ></v-text-field>
+      </template>
+      <v-date-picker
+        v-model="date"
+        @input="menu = false"
+        no-title
+      ></v-date-picker>
+    </v-menu>
+  `,
+  methods: {
+    formatDate: function (date) {
+      if (!date) return null
+      const [year, month, day] = date.split('-')
+      return `${day}/${month}/${year}`
+    },
+    parseDate: function (date) {
+      if (!date) return null
+      const [day, month, year] = date.split('/')
+      return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
+    }
+  }
+})
+
 const DatePicker = {
   template: `
     <v-container>
@@ -5,6 +54,13 @@ const DatePicker = {
         <v-col cols="12" sm="12" md="12" lg="8">
           <v-card>
             <v-card-text>
+              <date-picker
+                label="Start Date"
+              ></date-picker>
+              <date-picker
+                label="End Date"
+              ></date-picker>
+
               <v-menu
                 ref="startMenu"
                 v-model="startMenu"

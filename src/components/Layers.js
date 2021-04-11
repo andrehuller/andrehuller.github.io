@@ -45,6 +45,11 @@ const Layers = {
           format: 'image/png',
           transparent: true
         }),
+        'Sistema Rodoviário': L.tileLayer.wms(GEOSERVER, {
+          layers: 'seil_der:sistema_rodoviario_lin_p31982',
+          format: 'image/png',
+          transparent: true
+        }),
         // SEMA/ÁguasParaná
         'Principais Massas d\'Água (2011)': L.tileLayer.wms(GEOSERVER, {
           layers: 'sema_aguasparana:hidrografia_pol_p31982_e50_a2011_v002',

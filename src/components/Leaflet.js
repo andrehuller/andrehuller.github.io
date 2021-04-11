@@ -5,7 +5,7 @@ const Leaflet = {
       
       <v-row>
         <v-col cols="12" lg="4"
-          v-for="plugin in plugins"
+          v-for="plugin in sortedPlugins"
           :key="plugin.title"
         >
           <v-card outlined :href="plugin.href">
@@ -31,16 +31,16 @@ const Leaflet = {
   data: () => ({
     plugins: [
       {
+        "icon": "mdi-map",
+        "title": "Leaflet.GestureHandling",
+        "subtitle": "Gesture Handling",
+        "href": "https://github.com/elmarquis/Leaflet.GestureHandling"
+      },
+      {
         "icon": "mdi-home",
         "title": "Leaflet.defaultextent",
         "subtitle": "Default Extent Button",
         "href": "https://github.com/nguyenning/Leaflet.defaultextent"
-      },
-      {
-        "icon": "mdi-crosshairs-gps",
-        "title": "leaflet-locatecontrol",
-        "subtitle": "A customizable locate control",
-        "href": "https://github.com/domoritz/leaflet-locatecontrol/"
       },
       {
         "icon": "mdi-map-marker",
@@ -50,9 +50,15 @@ const Leaflet = {
       },
       {
         "icon": "mdi-map-marker-plus",
-        "title": "Leaflet-Geoman",
+        "title": "leaflet-geoman",
         "subtitle": "the best geometry editing for Leaflet Maps",
         "href": "https://geoman.io/leaflet-geoman"
+      },
+      {
+        "icon": "mdi-crosshairs-gps",
+        "title": "leaflet-locatecontrol",
+        "subtitle": "A customizable locate control",
+        "href": "https://github.com/domoritz/leaflet-locatecontrol/"
       },
       {
         "icon": "mdi-map",
@@ -62,6 +68,11 @@ const Leaflet = {
       }
     ]
   }),
+  computed: {
+    sortedPlugins () {
+      return _.sortBy(this.plugins, 'title')
+    }
+  },
   mounted () {
     this.$nextTick(() => {
       this.map = L.map('map').setView([-24.618588, -51.316993], 7);
