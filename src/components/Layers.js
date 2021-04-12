@@ -18,7 +18,7 @@ const Layers = {
       // info_format: 'application/json',
       // tiled: true,
       // feature_count: 500
-      const GEOSERVER = 'https://geoservertre.pr.gov.br/geoserver/ows'
+      const GEOSERVER = 'https://geoserver.pr.gov.br/geoserver/ows'
 
       this.layers = L.control.layers({
         'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
