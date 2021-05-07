@@ -27,6 +27,7 @@ const Layers = {
         'Gray Labels': L.esri.basemapLayer('GrayLabels'),
         'Imagery': L.esri.basemapLayer('Imagery').addTo(this.map),
         'Topographic': L.esri.basemapLayer('Topographic'),
+        'Empty': L.tileLayer('')
       }, {
         'ImageryLabels': L.esri.basemapLayer('ImageryLabels').addTo(this.map),
         'Municípios do Paraná': L.tileLayer.wms(GEOSERVER, {
@@ -109,7 +110,6 @@ const Layers = {
           format: 'image/png',
           transparent: true
         })
-          
       }, {
         collapsed: false
       }).addTo(this.map)
