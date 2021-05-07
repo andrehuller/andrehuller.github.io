@@ -136,6 +136,12 @@ const Resources = {
         "href": "http://vroom-project.org/",
         "screenshot": "assets/screenshots/VROOM.png"
       },
+
+      {
+        "title": "GeoSolutions",
+        "href": "https://www.geosolutionsgroup.com/",
+        "screenshot": "assets/resources/GeoSolutions.png"
+      },
       {
         "title": "Unsplash",
         "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
