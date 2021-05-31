@@ -1,4 +1,4 @@
-const Libraries2 = {
+const Libraries = {
   template: `
     <v-container fluid>
       <v-row justify="center">

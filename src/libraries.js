@@ -86,5 +86,23 @@ const libraries = [
     "href": "https://vuetifyjs.com/en/",
     "group": "UI Components",
     "highlight": true
+  },
+  {
+    "title": "Firebase",
+    "subtitle": "Firebase is a platform developed by Google for creating mobile and web applications.",
+    "href": "https://firebase.google.com/",
+    "group": "Other"
+  },
+  {
+    "title": "Flutter",
+    "subtitle": "Beautiful native apps in record time",
+    "href": "https://flutter.dev/",
+    "group": "Other"
+  },
+  {
+    "title": "kepler.gl",
+    "subtitle": "Make an impact with your location data",
+    "href": "https://kepler.gl/",
+    "group": "Other"
   }
 ]
