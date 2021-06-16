@@ -6,14 +6,15 @@ const Resources = {
           v-for="resource in resources"
           :key="resource.title"
         >
-          <v-card class="fill-height d-flex flex-column">
+          <v-card class="fill-height d-flex flex-column" outlined>
             <a :href="resource.href" target="_blank">
-                <v-img
-                  v-if="resource.screenshot"
-                  :src="resource.screenshot"
-                  height="265.233"
-                ></v-img>
-              </a>
+              <v-img
+                v-if="resource.screenshot"
+                :src="resource.screenshot"
+                height="265.233"
+                style="border-top-left-radius: 4px; border-top-right-radius: 4px;"
+              ></v-img>
+            </a>
             <v-card-title>
               {{ resource.title }}
             </v-card-title>
@@ -141,6 +142,16 @@ const Resources = {
         "title": "GeoSolutions",
         "href": "https://www.geosolutionsgroup.com/",
         "screenshot": "assets/resources/GeoSolutions.png"
+      },
+      {
+        "title": "GeoNode [Demo]",
+        "href": "https://master.demo.geonode.org/",
+        "screenshot": "assets/resources/GeoNode [demo].png"
+      },
+      {
+        "title": "GeoServer",
+        "href": "http://geoserver.org/",
+        "screenshot": "assets/resources/GeoServer.png"
       },
       {
         "title": "Unsplash",

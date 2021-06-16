@@ -26,6 +26,7 @@ const Work = {
                       v-if="project.screenshot"
                       :src="project.screenshot"
                       height="265.233"
+                      style="border-top-left-radius: 4px; border-top-right-radius: 4px;"
                     ></v-img>
                   </a>
                   <v-card-title

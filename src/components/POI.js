@@ -1,6 +1,6 @@
 const POI = {
   template: `
-    <v-container fluid class="py-0">
+    <v-container fluid>
       <v-row>
         <v-col class="pa-0">
           <div id="poiMap" style="width: 100%; height: 500px; z-index: 0;"></div>
@@ -12,13 +12,13 @@ const POI = {
             {{ category }}
           </v-tab>
           <v-tab-item v-for="category in categories" :key="category">
-            <v-container fluid py-0>
+            <v-container fluid>
             <v-row>
               <v-col cols="12" lg="4"
                 v-for="item in places(category)"
                 :key="item.title"
               >
-                <v-card tile outlined>
+                <v-card outlined>
                   <v-list>
                     <v-list-item three-line>
                       <v-list-item-avatar class="indigo darken-1">

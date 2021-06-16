@@ -9,7 +9,7 @@ const People = {
           v-for="speaker in speakers"
           :key="speaker.name"
         >
-          <v-card class="fill-height d-flex flex-column">
+          <v-card class="fill-height d-flex flex-column" outlined>
             <v-card-title>
               <v-avatar color="primary" class="white--text mr-3">
                 {{ speaker.name.charAt(0) }}
@@ -42,7 +42,7 @@ const People = {
           v-for="person in people"
           :key="person.name"
         >
-          <v-card class="fill-height d-flex flex-column">
+          <v-card class="fill-height d-flex flex-column" outlined>
             <v-card-title>
               <v-avatar color="primary" class="white--text mr-3">
                 {{ person.name.charAt(0) }}

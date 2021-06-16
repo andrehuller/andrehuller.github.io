@@ -24,7 +24,7 @@ const Portfolio = {
           </v-card>
         </v-col>
       </v-row>
-      <v-divider></v-divider>
+      <v-divider class="my-4"></v-divider>
       <v-row>
         <v-col cols="12">
           <strong>References</strong>
@@ -51,7 +51,7 @@ const Portfolio = {
           </v-card>
         </v-col>
       </v-row>
-      <v-divider></v-divider>
+      <v-divider class="my-4"></v-divider>
       
       <v-row>
         <v-col cols="12" lg="4"

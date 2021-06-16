@@ -1,7 +1,7 @@
 const Leaflet = {
   template: `
     <v-container fluid>
-      <div id="map"></div><!-- class="mx-10" -->
+      <div id="map" class="mb-4"></div><!-- class="mx-10" -->
       
       <v-row>
         <v-col cols="12" lg="4"

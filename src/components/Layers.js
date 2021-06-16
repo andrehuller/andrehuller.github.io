@@ -1,6 +1,6 @@
 const Layers = {
   template: `
-    <v-container fluid class="py-0">
+    <v-container fluid>
       <v-row>
         <v-col class="pa-0">
           <div id="map" style="width: 100%; height: calc(100vh - 64px); z-index: 0;"></div>
