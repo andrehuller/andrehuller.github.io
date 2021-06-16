@@ -555,6 +555,39 @@ const POI = {
       */
       this.map.addLayer(markers)
       this.map.fitBounds(L.latLngBounds(latlngs))
+
+      function setSelectedLayers(layers) {
+        // resetSelectedState();
+
+        layers.forEach(layer => {
+            if (layer instanceof L.Marker) {
+              var icon = new L.Icon({
+                className: 'selected',
+                iconUrl: layer.getIcon().options.iconUrl,
+                iconSize: [32, 37],
+                // iconAnchor: [16, 18],
+                popupAnchor: [0, -8]
+              })
+
+              layer.setIcon(icon)
+              
+              // layer.setIcon(new L.Icon.Default({ className: 'selected '}));
+            } else if (layer instanceof L.Path) {
+                layer.setStyle({ color: '#ff4620' });
+            }
+        });
+
+        // lassoResult.innerHTML = layers.length ? `Selected ${layers.length} layers` : '';
+      }
+      
+      L.control.lasso({
+        position: 'topleft'
+      })
+        .addTo(this.map)
+
+      this.map.on('lasso.finished', event => {
+        setSelectedLayers(event.layers)
+      })
     })
   },
   methods: {

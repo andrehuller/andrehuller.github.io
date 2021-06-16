@@ -55,6 +55,12 @@ const Leaflet = {
         "href": "https://geoman.io/leaflet-geoman"
       },
       {
+        "icon": "mdi-lasso",
+        "title": "leaflet-lasso",
+        "subtitle": "Lasso selection plugin for Leaflet",
+        "href": "https://github.com/zakjan/leaflet-lasso"
+      },
+      {
         "icon": "mdi-crosshairs-gps",
         "title": "leaflet-locatecontrol",
         "subtitle": "A customizable locate control",
