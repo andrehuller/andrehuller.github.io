@@ -18,21 +18,22 @@ const Resources = {
             <v-card-title>
               {{ resource.title }}
             </v-card-title>
-            <v-card-text>
-              {{ resource.subtitle }}
-              <p>
+            <v-list dense>
+              <v-list-item>
+                {{ resource.subtitle }}
+              </v-list-item>
+              <v-list-item v-if="resource.install">
                 <kbd v-if="resource.install">
                   {{ resource.install }}
                 </kbd>
-              </p>
-              <p>
-              <v-divider></v-divider>
-              </p>
-              <kbd v-for="command in resource.commands" class="mr-2">
-                {{ command }}
-              </kbd>
-            </v-card-text>
-            <v-spacer></v-spacer>
+              </v-list-item>
+              <v-list-item v-if="!_.isNil(resource.commands)">
+                <kbd v-for="command in resource.commands" class="mr-2">
+                  {{ command }}
+                </kbd>
+              </v-list-item>
+            </v-list>
+            
           </v-card>
         </v-col>
       </v-row>
@@ -42,11 +43,13 @@ const Resources = {
     resources: [
       {
         "title": "Vue",
+        "subtitle": "The Progressive JavaScript Framework",
         "href": "https://vuejs.org/",
         "screenshot": "assets/screenshots/Vue.png"
       },
       {
         "title": "Vue CLI",
+        "subtitle": "Standard Tooling for Vue.js Development",
         "href": "https://cli.vuejs.org/",
         "screenshot": "assets/screenshots/Vue CLI.png",
         "commands": [ "vue create nome_projeto" ]
@@ -85,8 +88,10 @@ const Resources = {
       },
       {
         "title": "Leaflet",
+        "subtitle": "mobile-friendly interactive maps",
         "href": "https://leafletjs.com/",
-        "screenshot": "assets/resources/Leaflet.png"
+        "screenshot": "assets/resources/Leaflet.png",
+        "install": "npm install leaflet"
       },
       {
         "title": "Leaflet Geoman",
@@ -150,6 +155,7 @@ const Resources = {
       },
       {
         "title": "GeoServer",
+        "subtitle": "GeoServer is an open source server for sharing geospatial data.",
         "href": "http://geoserver.org/",
         "screenshot": "assets/resources/GeoServer.png"
       },
@@ -163,7 +169,13 @@ const Resources = {
         "title": "TinyPNG",
         "subtitle": "Smart PNG and JPEG compression",
         "href": "https://tinypng.com/",
-        "screenshot": "assets/screenshots/tinypng.png"
+        "screenshot": "assets/resources/tinypng.png"
+      },
+      {
+        "title": "Airflow",
+        "subtitle": "Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.",
+        "href": "https://airflow.apache.org/",
+        "screenshot": "assets/resources/Airflow.png"
       }
     ]
   })

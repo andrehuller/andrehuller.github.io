@@ -2,63 +2,15 @@ const People = {
   template: `
     <v-container fluid>
       <v-row>
-        <v-col class="mt-2" cols="12">
-          <strong>Speaker</strong>
-        </v-col>
-        <v-col sm="12" md="6" lg="3"
-          v-for="speaker in speakers"
-          :key="speaker.name"
-        >
-          <v-card class="fill-height d-flex flex-column" outlined>
-            <v-card-title>
-              <v-avatar color="primary" class="white--text mr-3">
-                {{ speaker.name.charAt(0) }}
-              </v-avatar>
-              {{ speaker.name }}
-            </v-card-title>
-          </v-card>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col>
-          <template
-            v-for="video in videos"
-            :key="video"
-          >
-            <iframe
-              width="560"
-              height="315"
-              :src="video"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-            &nbsp;
-          </template>
-          
-        </v-col>
-      </v-row>
-      <v-row>
-        <!--
-        <v-col lg="4">
-          <v-card outlined href="https://youtu.be/qOZqGUCrje8">
-            <v-img src="https://i.ytimg.com/vi_webp/qOZqGUCrje8/sddefault.webp"></v-img>
-            <v-card-title>
-              What Happens When You Only Pursue Pleasure
-            </v-card-title>
-            <v-card-subtitle>
-              Alan Watts
-            </v-card-subtitle>
-          </v-card
-        </v-col>
-        -->
         <v-col
-          v-for="video in videos2"
+          v-for="video in videos"
           :key="video.id"
           cols="12" lg="4"
         >
           <v-card outlined :href="'https://youtu.be/' + video.id">
-            <v-img :src="'https://i.ytimg.com/vi_webp/' + video.id + '/sddefault.webp'"></v-img>
+            <v-img :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'" style="background: black;"
+              height="350px"
+            ></v-img>
             <v-card-title>
               {{ video.title }}
             </v-card-title>
@@ -112,19 +64,7 @@ const People = {
       { name: 'Sam Harris' },
       { name: 'Tim Minchin' }
     ],
-    speakers: [
-      { name: 'Alan Watts' },
-      { name: 'Jordan Peterson' }
-    ],
     videos: [
-      'https://www.youtube.com/embed/wvdM_u4NZQw',
-      'https://www.youtube.com/embed/b9GWqfNlWHI',
-      'https://www.youtube.com/embed/wieRZoJSVtw',
-      'https://www.youtube.com/embed/2O-iLk1G_ng',
-      'https://www.youtube.com/embed/-KQGZa773sI',
-      'https://www.youtube.com/embed/GO_rW0Bvy1I'
-    ],
-    videos2: [
       {
         "id": "qOZqGUCrje8",
         "title": "What Happens When You Only Pursue Pleasure",
@@ -139,6 +79,36 @@ const People = {
         "id": "5G8Gwr5JJ6Y",
         "title": "It's NOT OK to be WEAK",
         "subtitle": "Jordan Peterson"
+      },
+      {
+        "id": "wvdM_u4NZQw",
+        "title": "Joe Rogan Experience #692",
+        "subtitle": "Jay Leno"
+      },
+      {
+        "id": "b9GWqfNlWHI",
+        "title": "Joe Rogan Experience #909",
+        "subtitle": "Bill Burr"
+      },
+      {
+        "id": "wieRZoJSVtw",
+        "title": "Joe Rogan Experience #1233",
+        "subtitle": "Brian Cox"
+      },
+      {
+        "id": "2O-iLk1G_ng",
+        "title": "Joe Rogan Experience #1330",
+        "subtitle": "Bernie Sanders"
+      },
+      {
+        "id": "-KQGZa773sI",
+        "title": "Joe Rogan Experience #1413",
+        "subtitle": "Bill Maher"
+      },
+      {
+        "id": "GO_rW0Bvy1I",
+        "title": "Joe Rogan Experience #1491",
+        "subtitle": "Bill Burr"
       }
     ]
   })
