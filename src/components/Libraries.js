@@ -3,28 +3,46 @@ const Libraries = {
     <v-container fluid>
       <v-row justify="center">
         <v-col cols="12" lg="9">
-          <v-data-table :headers="headers" :items="libraries"
-            group-by="group" disable-pagination hide-default-footer
-          >
-            <template v-slot:item.title="{ item }">
-              <v-chip :href="item.href" outlined>
-                <template v-if="item.highlight">
-                  <v-icon left color="indigo">
-                    mdi-alert-circle-outline
-                  </v-icon>
-                </template>
-                {{ item.title }}
-              </v-chip>
-            </template>
-            <template v-slot:item.subtitle="{ item }">
-              <span v-html="item.subtitle"></span>
-            </template>
-          </v-data-table>
+          <v-card>
+            <v-card-title>
+              Libraries
+              <v-spacer></v-spacer>
+              <v-text-field
+                v-model="search"
+                append-icon="mdi-magnify"
+                label="Search"
+                clearable
+                single-line
+                hide-details
+              ></v-text-field>
+            </v-card-title>
+            <v-data-table
+              :headers="headers"
+              :items="libraries"
+              :search="search"
+              group-by="group" disable-pagination hide-default-footer
+            >
+              <template v-slot:item.title="{ item }">
+                <v-chip :href="item.href" outlined>
+                  <template v-if="item.highlight">
+                    <v-icon left color="indigo">
+                      mdi-alert-circle-outline
+                    </v-icon>
+                  </template>
+                  {{ item.title }}
+                </v-chip>
+              </template>
+              <template v-slot:item.subtitle="{ item }">
+                <span v-html="item.subtitle"></span>
+              </template>
+            </v-data-table>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
   `,
   data: () => ({
+    search: null,
     headers: [
       { text: 'Nome', value: 'title' },
       { text: 'Descrição', value: 'subtitle'}

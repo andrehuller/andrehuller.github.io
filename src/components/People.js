@@ -8,8 +8,10 @@ const People = {
           cols="12" lg="4"
         >
           <v-card outlined :href="'https://youtu.be/' + video.id">
-            <v-img :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'" style="background: black;"
+            <v-img
+              :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'"
               height="350px"
+              style="background: black;"
             ></v-img>
             <v-card-title>
               {{ video.title }}

@@ -28,7 +28,7 @@ const Work2 = {
                     <v-img
                       v-if="project.screenshot"
                       :src="project.screenshot"
-                      height="265.233"
+                      height="279.933"
                       style="border-top-left-radius: 4px; border-top-right-radius: 4px;"
                     ></v-img>
                   </a>
@@ -209,9 +209,10 @@ const Work2 = {
           {
             title: 'GeoNetwork',
             subtitle: 'CELEPAR',
-            href: 'http://geojsapitre.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
+            href: 'http://geonetwork.pr.gov.br',
             screenshot: 'assets/screenshots/GeoNetwork.png',
-            prod: 'http://geonetwork.pr.gov.br/geonetwork/srv/eng/catalog.search#/home'
+            homolog: 'http://geojsapitre.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
+            prod: 'http://geonetwork.pr.gov.br'
           },
           {
             title: 'GeoServer',

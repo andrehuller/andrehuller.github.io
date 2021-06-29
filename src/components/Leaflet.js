@@ -1,9 +1,13 @@
 const Leaflet = {
   template: `
     <v-container fluid>
-      <div id="map" class="mb-4"></div><!-- class="mx-10" -->
-      
       <v-row>
+        <v-col lg="12">
+          <v-card outlined>
+            <div id="map">
+          </v-card>
+        </v-col>
+      
         <v-col cols="12" lg="4"
           v-for="plugin in sortedPlugins"
           :key="plugin.title"

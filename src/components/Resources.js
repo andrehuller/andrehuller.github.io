@@ -15,6 +15,7 @@ const Resources = {
                 style="border-top-left-radius: 4px; border-top-right-radius: 4px;"
               ></v-img>
             </a>
+            <v-divider></v-divider>
             <v-card-title>
               {{ resource.title }}
             </v-card-title>
@@ -33,7 +34,6 @@ const Resources = {
                 </kbd>
               </v-list-item>
             </v-list>
-            
           </v-card>
         </v-col>
       </v-row>
@@ -149,15 +149,21 @@ const Resources = {
         "screenshot": "assets/resources/GeoSolutions.png"
       },
       {
-        "title": "GeoNode [Demo]",
-        "href": "https://master.demo.geonode.org/",
-        "screenshot": "assets/resources/GeoNode [demo].png"
-      },
-      {
         "title": "GeoServer",
         "subtitle": "GeoServer is an open source server for sharing geospatial data.",
         "href": "http://geoserver.org/",
         "screenshot": "assets/resources/GeoServer.png"
+      },
+      {
+        "title": "GeoNetwork",
+        "subtitle": "manage spatially referenced resources",
+        "href": "https://www.geonetwork-opensource.org/",
+        "screenshot": "assets/resources/GeoNetwork.png"
+      },
+      {
+        "title": "GeoNode [Demo]",
+        "href": "https://master.demo.geonode.org/",
+        "screenshot": "assets/resources/GeoNode [demo].png"
       },
       {
         "title": "Unsplash",

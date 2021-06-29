@@ -1,8 +1,19 @@
 const libraries = [
   {
+    "title": "amCharts",
+    "subtitle": "JavaScript Charts & Maps",
+    "href": "https://www.amcharts.com/",
+    "group": "Charts"
+  },
+  {
     "title": "ApexCharts.js",
     "subtitle": "Modern & Interactive Open-source Charts",
     "href": "https://apexcharts.com/",
+    "group": "Charts"
+  },
+  {
+    "title": "vue-svg-map",
+    "href": "https://victorcazanave.github.io/vue-svg-map/",
     "group": "Charts"
   },
   {

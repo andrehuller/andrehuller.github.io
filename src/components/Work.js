@@ -25,7 +25,7 @@ const Work = {
                     <v-img
                       v-if="project.screenshot"
                       :src="project.screenshot"
-                      height="265.233"
+                      height="279.933"
                       style="border-top-left-radius: 4px; border-top-right-radius: 4px;"
                     ></v-img>
                   </a>
