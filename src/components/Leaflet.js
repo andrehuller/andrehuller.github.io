@@ -90,15 +90,21 @@ const Leaflet = {
       L.control.defaultExtent()
         .addTo(this.map);
       
-      L.control.locate().addTo(this.map);
+      // L.control.locate().addTo(this.map);
       
       this.layers = L.control.layers({
-        'Topographic': L.esri.basemapLayer('Topographic').addTo(this.map),
+        'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }),
+        'Gray': L.esri.basemapLayer('Gray').addTo(this.map),
+        'Topographic': L.esri.basemapLayer('Topographic'),
         'ImageryClarity': L.esri.basemapLayer('ImageryClarity'),
         'ImageryFirefly': L.esri.basemapLayer('ImageryFirefly')
       }, null, {
         collapsed: false
       }).addTo(this.map);
+
+      L.esri.basemapLayer('GrayLabels').addTo(this.map),
       
       this.init();
     })
@@ -131,12 +137,41 @@ const Leaflet = {
       */
       // itcg:municipios_pol_p31982_e50
       // ipardes:mesorregiao_pol_p4674_a2015
-      var myStyle = {
-        "color": "#0570b0",
-      };
+      function getColor () {
+        switch (Math.floor(Math.random() * 4)) {
+          case 0:
+            return "#bdc9e1"
+          case 1:
+            return '#74a9cf'
+          case 2:
+            return '#2b8cbe'
+          case 3:
+            return '#045a8d'
+        }
+      }
+
+      function style () {
+        return {
+          "fillColor": getColor(),
+          "color": "white",
+          dashArray: '3',
+          weight: 2,
+          fillOpacity: 0.7
+        }
+      }
+
+      var zoomToFeature = (e) => {
+        this.map.fitBounds(e.target.getBounds());
+      }
 
       var geojson = L.geoJson(null, {
-        style: myStyle
+        style: style,
+        onEachFeature: function (feature, layer) {
+          layer.on({
+            'click': zoomToFeature
+          })
+          layer.bindTooltip("tooltip")
+        }
       }).addTo(this.map)
       
       geojson.addData(r297484)
@@ -176,11 +211,126 @@ const Leaflet = {
       geojson.addData(r297518)
       geojson.addData(r297519)
       geojson.addData(r297520)
-
+      geojson.addData(r297521)
+      geojson.addData(r297522)
+      geojson.addData(r297523)
+      geojson.addData(r297524)
+      geojson.addData(r297525)
+      geojson.addData(r297526)
+      geojson.addData(r297527)
+      geojson.addData(r297528)
+      geojson.addData(r297529)
+      geojson.addData(r297530)
+      geojson.addData(r297531)
+      geojson.addData(r297532)
       geojson.addData(r297533)
-
+      geojson.addData(r297534)
+      geojson.addData(r297535)
+      geojson.addData(r297536)
+      geojson.addData(r297537)
+      geojson.addData(r297538)
+      geojson.addData(r297539)
+      geojson.addData(r297540)
+      geojson.addData(r297541)
+      geojson.addData(r297542)
+      geojson.addData(r297543)
+      geojson.addData(r297544)
+      geojson.addData(r297545)
+      geojson.addData(r297546)
+      geojson.addData(r297547)
+      geojson.addData(r297548)
+      geojson.addData(r297549)
+      geojson.addData(r297550)
+      geojson.addData(r297551)
+      geojson.addData(r297552)
+      geojson.addData(r297553)
+      geojson.addData(r297554)
+      geojson.addData(r297555)
+      geojson.addData(r297556)
+      geojson.addData(r297557)
+      geojson.addData(r297558)
+      geojson.addData(r297559)
+      geojson.addData(r297560)
+      geojson.addData(r297561)
+      geojson.addData(r297562)
+      geojson.addData(r297563)
+      geojson.addData(r297564)
+      geojson.addData(r297565)
+      geojson.addData(r297566)
+      geojson.addData(r297567)
+      geojson.addData(r297568)
+      geojson.addData(r297569)
+      geojson.addData(r297570)
+      geojson.addData(r297571)
+      geojson.addData(r297572)
+      geojson.addData(r297573)
+      geojson.addData(r297574)
+      geojson.addData(r297575)
+      geojson.addData(r297576)
+      geojson.addData(r297577)
+      geojson.addData(r297578)
+      geojson.addData(r297579)
+      geojson.addData(r297580)
+      geojson.addData(r297581)
+      geojson.addData(r297582)
+      geojson.addData(r297583)
+      geojson.addData(r297584)
+      geojson.addData(r297585)
+      geojson.addData(r297586)
+      geojson.addData(r297587)
+      geojson.addData(r297588)
+      geojson.addData(r297589)
+      geojson.addData(r297590)
+      geojson.addData(r297591)
+      geojson.addData(r297592)
+      geojson.addData(r297593)
+      geojson.addData(r297594)
+      geojson.addData(r297595)
+      geojson.addData(r297596)
+      geojson.addData(r297597)
+      geojson.addData(r297598)
+      geojson.addData(r297599)
+      geojson.addData(r297600)
+      geojson.addData(r297601)
+      geojson.addData(r297602)
+      geojson.addData(r297603)
+      geojson.addData(r297604)
+      geojson.addData(r297605)
+      geojson.addData(r297606)
+      geojson.addData(r297607)
+      geojson.addData(r297608)
+      geojson.addData(r297609)
       geojson.addData(r297610)
       geojson.addData(r297611)
+      geojson.addData(r297612)
+      geojson.addData(r297613)
+      geojson.addData(r297614)
+      geojson.addData(r297615)
+      geojson.addData(r297616)
+      geojson.addData(r297617)
+      geojson.addData(r297618)
+      geojson.addData(r297619)
+      geojson.addData(r297620)
+      geojson.addData(r297621)
+      geojson.addData(r297622)
+      geojson.addData(r297623)
+      geojson.addData(r297624)
+      geojson.addData(r297625)
+      geojson.addData(r297626)
+      geojson.addData(r297627)
+      geojson.addData(r297628)
+      geojson.addData(r297629)
+      geojson.addData(r297630)
+      geojson.addData(r297631)
+      geojson.addData(r297632)
+      geojson.addData(r297633)
+      geojson.addData(r297634)
+      geojson.addData(r297635)
+      geojson.addData(r297636)
+      geojson.addData(r297637)
+      geojson.addData(r297638)
+      geojson.addData(r297639)
+      // geojson.addData(r297640)
 
       geojson.addData(r297651)
 
@@ -191,6 +341,7 @@ const Leaflet = {
       geojson.addData(r297796)
 
       geojson.addData(r297846)
+      
       
       /*
       axios.get('https://geoserver.pr.gov.br/geoserver/wfs', {
