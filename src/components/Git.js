@@ -23,6 +23,7 @@ const Git = {
               <p><kbd>git push -u origin master</kbd></p>
               <v-divider class="pb-4"></v-divider>
               
+              <p><kbd>npm version 1.0.20</kbd></p>
               <p><kbd>git tag -a v1.0 -m 'Version 1.0'</kbd></p>
               <p><kbd>git push origin v1.0</kbd></p>
               <v-divider class="pb-4"></v-divider>

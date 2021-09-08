@@ -83,14 +83,20 @@ const Portfolio = {
       {
         title: 'Portal da Cultura',
         icon: 'mdi-drama-masks',
-        href: 'http://cultura.mapas.pr.gov.br',
-        subtitle: 'http://cultura.mapas.pr.gov.br'
+        href: 'https://cultura.mapas.pr.gov.br',
+        subtitle: 'https://cultura.mapas.pr.gov.br'
       },
       {
         title: 'Rede de Proteção à Criança e ao Adolescente',
         icon: 'mdi-shield-account-outline',
-        href: 'http://geojsapitre.pr.gov.br/sejuf/index.html#/',
-        subtitle: 'http://geojsapitre.pr.gov.br/sejuf/index.html#/'
+        href: 'https://fortis.mapas.pr.gov.br',
+        subtitle: 'http://fortis.mapas.pr.gov.br'
+      },
+      {
+        title: 'DER/PR',
+        icon: 'mdi-road-variant',
+        href: 'https://der.mapas.pr.gov.br',
+        subtitle: 'http://der.mapas.pr.gov.br'
       },
     ],
     references: [
@@ -105,6 +111,13 @@ const Portfolio = {
         icon: 'mdi-shield-account-outline',
         href: 'http://www.infanciasegura.pr.gov.br/Redes-de-Protecao',
         subtitle: 'http://www.infanciasegura.pr.gov.br/Redes-de-Protecao'
+      },
+      {
+        title: 'Mapas Rodoviários',
+        icon: 'mdi-road-variant',
+        href: 'http://www.der.pr.gov.br/Pagina/Mapas-Rodoviarios#',
+        subtitle: 'http://www.der.pr.gov.br/Pagina/Mapas-Rodoviarios#'
+        // screenshot: 'assets/screenshots/Mapas Rodoviários.png'
       }
     ],
     prototypes: [

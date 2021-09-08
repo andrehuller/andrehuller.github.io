@@ -342,7 +342,7 @@ const Leaflet = {
 
       geojson.addData(r297846)
       
-      
+      console.log(geojson)
       /*
       axios.get('https://geoserver.pr.gov.br/geoserver/wfs', {
         params: {

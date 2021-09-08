@@ -37,6 +37,7 @@ const People = {
             <v-card-text>
               <v-chip
                 v-for="category in person.categories"
+                :key="category"
                 outlined
               >
                 {{ category }}
