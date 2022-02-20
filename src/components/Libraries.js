@@ -2,20 +2,21 @@ const Libraries = {
   template: `
     <v-container fluid>
       <v-row justify="center">
-        <v-col cols="12" lg="9">
-          <v-card>
-            <v-card-title>
+        <v-col cols="12" lg="12">
+          <v-card outlined>
+            <v-card-title class="grey lighten-3">
               Libraries
               <v-spacer></v-spacer>
               <v-text-field
                 v-model="search"
-                append-icon="mdi-magnify"
+                prepend-inner-icon="mdi-magnify"
                 label="Search"
                 clearable
-                single-line
+                flat solo
                 hide-details
               ></v-text-field>
             </v-card-title>
+            <v-divider></v-divider>
             <v-data-table
               :headers="headers"
               :items="libraries"
@@ -44,8 +45,8 @@ const Libraries = {
   data: () => ({
     search: null,
     headers: [
-      { text: 'Nome', value: 'title' },
-      { text: 'Descrição', value: 'subtitle'}
+      { text: 'Nome', value: 'title', width: '25%' },
+      { text: 'Descrição', value: 'subtitle', width: '75%' }
     ],
     libraries: [
       {

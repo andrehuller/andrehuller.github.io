@@ -7,7 +7,7 @@ const Frameworks = {
             <v-timeline-item
               v-for="framework in frameworks"
               :key="framework.name"
-              color="#244EA2"
+              color="#25305E"
             >
               <v-card>
                 <v-card-title>{{ framework.name }}</v-card-title>

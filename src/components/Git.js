@@ -36,6 +36,18 @@ const Git = {
               <v-divider class="pb-4"></v-divider>
               
               <p><kbd>npm run serve</kbd></p>
+              
+              <v-divider class="pb-4"></v-divider>
+            </v-card-text>
+          </v-card>
+        </v-col>
+        <v-col lg="6" cols="12">
+          <v-card outlined>
+            <v-card-text>
+              <p><b>git push using personal access token</b></p>
+              <p><kbd>
+                git push https://&lt;username>:&lt;personal_access_token&gt;@github.com/&lt;username&gt;/&lt;project_name&gt;.git master
+              </kbd></p>
             </v-card-text>
           </v-card>
         </v-col>
