@@ -10,7 +10,6 @@ const Frameworks = {
             >
               <v-card>
                 <v-img
-                  v-if="framework.src"
                   :src="framework.src"
                   height="180px"
                 ></v-img>
@@ -35,7 +34,7 @@ const Frameworks = {
       {
         "name": "React",
         "release": "29/05/2013",
-        "src": "assets/frameworks/react.png"
+        "src": "assets/frameworks/React.png"
       },
       {
         "name": "Ember.js",
