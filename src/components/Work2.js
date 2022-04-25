@@ -194,12 +194,6 @@ const Work2 = {
             subtitle: 'SETI',
             href: 'http://www.geoseti.pr.gov.br/geoseti/publico',
             screenshot: 'assets/screenshots/geoseti.png'
-          },
-          {
-            title: 'geosga',
-            subtitle: 'IAT',
-            href: 'http://www.geosga.pr.gov.br/geosga',
-            screenshot: 'assets/screenshots/geosga(1).png'
           }
         ]
       },

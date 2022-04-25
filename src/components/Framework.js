@@ -28,7 +28,6 @@ const Frameworks = {
     frameworks: [
       {
         "name": "Vue.js",
-        "release": "02/2014",
         "src": "assets/frameworks/vue.png"
       },
       {
@@ -38,32 +37,26 @@ const Frameworks = {
       },
       {
         "name": "Ember.js",
-        "release": "08/12/2011",
         "src": "assets/frameworks/ember.png"
       },
       {
         "name": "AngularJS",
-        "release": "20/10/2010",
         "src": "assets/frameworks/angular.png"
       },
       {
         "name": "Backbone.js",
-        "release": "13/10/2010",
         "src": "assets/frameworks/backbone.png"
       },
       {
         "name": "Knockout.js",
-        "release": "05/07/2010",
         "src": "assets/frameworks/knockout.png"
       },
       {
         "name": "jQuery",
-        "release": "01/2006",
         "src": "assets/frameworks/jquery.png"
       },
       {
         "name": "Prototype",
-        "release": "02/2005",
         "src": "assets/frameworks/prototype.png"
       }
     ]

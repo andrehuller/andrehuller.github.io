@@ -69,44 +69,8 @@ const Layers = {
           transparent: true
         }),
         // SESA
-        'Clínicas': L.tileLayer.wms(GEOSERVER, {
-          layers: 'sesa:clinica_pto_p4674',
-          format: 'image/png',
-          transparent: true
-        }),
-        'Hospitais': L.tileLayer.wms(GEOSERVER, {
-          layers: 'sesa:hospital_pto_p4674',
-          format: 'image/png',
-          transparent: true
-        }),
-        'Laboratórios': L.tileLayer.wms(GEOSERVER, {
-          layers: 'sesa:laboratorio_pto_p4674',
-          format: 'image/png',
-          transparent: true
-        }),
         'Regionais SESA (2008)': L.tileLayer.wms(GEOSERVER, {
           layers: 'sesa:regional_sesa_site_pol_p29192_a2008',
-          format: 'image/png',
-          transparent: true
-        }),
-
-        'Balsas': L.tileLayer.wms(GEOSERVER, {
-          layers: 'seil_der:balsa_pto_p29192',
-          format: 'image/png',
-          transparent: true
-        }),
-        'Portos': L.tileLayer.wms(GEOSERVER, {
-          layers: 'seil_der:portos_pto_p29192',
-          format: 'image/png',
-          transparent: true
-        }),
-        'Aeroportos': L.tileLayer.wms(GEOSERVER, {
-          layers: 'seil_der:aerodromos_pto_p29192_a2006',
-          format: 'image/png',
-          transparent: true
-        }),
-        'Ferrovias': L.tileLayer.wms(GEOSERVER, {
-          layers: 'seil_der:ferrovias_lin_p31982',
           format: 'image/png',
           transparent: true
         })

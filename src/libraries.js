@@ -3,35 +3,6 @@ const categories = [
     "name": "Frameworks",
     "items": [
       {
-        "title": "Angular",
-        "subtitle": "One framework. Mobile & desktop.",
-        "href": "https://angular.io/",
-        "src": "assets/libraries/Angular.png"
-      },
-      {
-        "title": "Dojo",
-        "subtitle": "A Progressive Framework for Modern Web Apps",
-        "href": "https://dojo.io/",
-        "src": "assets/libraries/Dojo.png"
-      },
-      
-      {
-        "title": "Foundation",
-        "subtitle": "The most advanced responsive <strong>front-end framework</strong> in the world",
-        "href": "https://foundation.zurb.com/",
-        "src": "assets/libraries/Foundation.png"
-      },
-
-      {
-        "title": "Framework7",
-        "subtitle": "Full featured framework for building iOS, Android & Desktop apps",
-        "href": "https://framework7.io/",
-        "release": "v3.0.0 Jul 05, 2018",
-        "src": "assets/libraries/Framework7.png"
-      },
-
-
-      {
         "title": "Svelte",
         "subtitle": "Cybernetically enhanced web apps",
         "href": "https://svelte.dev/",
@@ -75,6 +46,20 @@ const categories = [
         "src": "assets/libraries/Ember.png"
       },
       {
+        "title": "Foundation",
+        "subtitle": "The most advanced responsive <strong>front-end framework</strong> in the world",
+        "href": "https://foundation.zurb.com/",
+        "src": "assets/libraries/Foundation.png",
+        "release": "09/2011"
+      },
+      {
+        "title": "Angular",
+        "subtitle": "One framework. Mobile & desktop.",
+        "href": "https://angular.io/",
+        "src": "assets/libraries/Angular.png",
+        "release": "20/10/2010"
+      },
+      {
         "title": "Backbone.js",
         "subtitle": "Give your JS App some Backbone with Models, Views, Collections, and Events",
         "href": "https://backbonejs.org/",
@@ -96,6 +81,13 @@ const categories = [
         "src": "assets/frameworks/jQuery.png"
       },
       {
+        "title": "Dojo",
+        "subtitle": "A Progressive Framework for Modern Web Apps",
+        "href": "https://dojo.io/",
+        "src": "assets/libraries/Dojo.png",
+        "release": "03/2005 ?"
+      },
+      {
         "title": "Prototype",
         "subtitle": "A foundation for ambitious web user interfaces",
         "href": "http://prototypejs.org/",
@@ -103,7 +95,13 @@ const categories = [
         "src": "assets/frameworks/Prototype.png"
       },
 
-
+      {
+        "title": "Framework7",
+        "subtitle": "Full featured framework for building iOS, Android & Desktop apps",
+        "href": "https://framework7.io/",
+        "release": "v3.0.0 Jul 05, 2018",
+        "src": "assets/libraries/Framework7.png"
+      },
       {
         "title": "Mithril",
         "subtitle": "Mithril is a modern client-side JavaScript framework for building Single Page Applications",
@@ -206,21 +204,6 @@ const categories = [
       },
 
       {
-        "title": "date-fns",
-        "subtitle": "Modern JavaScript date utility library",
-        "href": "https://date-fns.org/",
-        "group": "Date",
-        "src": "assets/libraries/date-fns.png"
-      },
-      {
-        "title": "Moment",
-        "subtitle": "Parse, validate, manipulate, and display dates and times in JavaScript.",
-        "href": "https://momentjs.com/",
-        "src": "assets/libraries/Moment.png",
-        "group": "Date"
-      },
-
-      {
         "title": "OpenJS Foundation",
         "href": "https://openjsf.org/",
         "src": "assets/libraries/OpenJS Foundation.png"
@@ -261,6 +244,7 @@ const categories = [
         "title": "PostgreSQL",
         "subtitle": "The World's Most Advanced Open Source Relational Database",
         "href": "https://www.postgresql.org",
+        "src": "assets/libraries/PostgreSQL.png",
         "group": "Database",
         "highlight": true
       },
@@ -269,108 +253,88 @@ const categories = [
         "title": "apiDoc",
         "subtitle": "Inline Documentation for RESTful web APIs",
         "href": "http://apidocjs.com/",
+        "src": "assets/libraries/apiDoc.png",
         "group": "Documentation"
       },
       {
         "title": "JSDoc",
         "subtitle": "API documentation generator for JavaScript",
         "href": "https://jsdoc.app/",
+        "src": "assets/libraries/JSDoc.png",
         "group": "Documentation",
         "highlight": true
       },
-      {
-        "title": "ol-ext",
-        "subtitle": "Extensions for OpenLayers",
-        "href": "https://viglino.github.io/ol-ext/",
-        "group": "Extensions"
-      },
-
 
       {
         "title": "WebStorm",
         "subtitle": "The smartest JavaScript IDE",
         "href": "https://www.jetbrains.com/webstorm/",
+        "src": "assets/libraries/WebStorm.png",
         "group": "IDE"
       },
       {
         "title": "Sass",
         "subtitle": "Syntactically Awesome Style Sheets",
         "href": "https://sass-lang.com/",
+        "src": "assets/libraries/Sass.png",
         "group": "Languages"
       },
       {
         "title": "TypeScript",
         "subtitle": "Typed JavaScript at Any Scale",
         "href": "https://www.typescriptlang.org/",
+        "src": "assets/libraries/TypeScript.png",
         "group": "Languages"
       },
       {
         "title": "NativeScript",
         "subtitle": "Create Native iOS and Android Apps with JavaScript",
         "href": "https://www.nativescript.org/",
+        "src": "assets/libraries/NativeScript.png",
         "group": "Mobile"
       },
       {
         "title": "NativeScript-Vue",
         "subtitle": "Truly native apps using Vue.js and NativeScript",
         "href": "https://nativescript-vue.org/",
+        "src": "assets/libraries/NativeScript-Vue.png",
         "group": "Mobile"
       },
       {
         "title": "React Native",
         "subtitle": "Learn once, write anywhere",
         "href": "https://facebook.github.io/react-native/",
+        "src": "assets/libraries/React Native.png",
         "group": "Mobile"
       },
-      {
-        "title": "Numeral.js",
-        "subtitle": "A javascript library for formatting and manipulating numbers",
-        "href": "http://numeraljs.com/",
-        "group": "Number"
-      },
+
       {
         "title": "Papa Parse",
         "subtitle": "The powerful, in-browser CSV parser for big boys and girls",
         "href": "https://www.papaparse.com/",
+        "src": "assets/libraries/Papa Parse.png",
         "group": "Parser"
-      },
-
-
-
-      {
-        "title": "Voca",
-        "subtitle": "The JavaScript string library",
-        "href": "https://vocajs.com/",
-        "group": "String"
-      },
-      {
-        "title": "Handlebars",
-        "subtitle": "Minimal templating on steriods",
-        "href": "https://handlebarsjs.com/",
-        "group": "Template"
-      },
-      {
-        "title": "Mustache",
-        "href": "https://mustache.github.io/",
-        "group": "Template"
       },
 
       {
         "title": "RequireJS",
         "subtitle": "RequireJS is a JavaScript file and module loader",
         "href": "https://requirejs.org/",
+        "src": "assets/libraries/RequireJS.png",
         "group": "Tools"
       },
       {
         "title": "Rollup",
         "subtitle": "Rollup is a module bundler for JavaScript",
         "href": "https://rollupjs.org/guide/en/",
+        "src": "assets/libraries/Rollup.png",
         "group": "Tools"
       },
       {
         "title": "Webpack",
         "subtitle": "Webpack is an open-source JavaScript module bundler",
         "href": "https://webpack.js.org/",
+        "src": "assets/libraries/webpack.png",
         "group": "Tools"
       },
 
@@ -379,12 +343,14 @@ const categories = [
         "title": "Underscore",
         "subtitle": "JavaScript's utility _ belt",
         "href": "https://underscorejs.org/",
+        "src": "assets/libraries/Underscore.png",
         "group": "Utilities"
       },
       {
         "title": "Vue CLI",
         "subtitle": "Standard Tooling for Vue.js Development",
         "href": "https://cli.vuejs.org/",
+        "src": "assets/libraries/Vue CLI.png",
         "group": "Vue",
         "highlight": true
       },
@@ -400,6 +366,7 @@ const categories = [
         "title": "Vuex",
         "subtitle": "Vuex is a state management pattern + library for Vue.js applications",
         "href": "https://vuex.vuejs.org/",
+        "src": "assets/libraries/Vuex.png",
         "group": "Vue",
         "highlight": true
       },
@@ -407,26 +374,31 @@ const categories = [
       {
         "title": "axios",
         "subtitle": "Promise based HTTP client for the browser and node.js",
-        "href": "https://github.com/axios/axios",
-        "group": "Library"
+        "href": "https://axios-http.com/",
+        "src": "assets/libraries/Axios.png",
+        "group": "Library",
+        "highlight": true
       },
     
       {
         "title": "Firebase",
         "subtitle": "Firebase is a platform developed by Google for creating mobile and web applications.",
         "href": "https://firebase.google.com/",
+        "src": "assets/libraries/Firebase.png",
         "group": "Other"
       },
       {
         "title": "Flutter",
         "subtitle": "Beautiful native apps in record time",
         "href": "https://flutter.dev/",
+        "src": "assets/libraries/Flutter.png",
         "group": "Other"
       },
       {
         "title": "kepler.gl",
         "subtitle": "Make an impact with your location data",
         "href": "https://kepler.gl/",
+        "src": "assets/libraries/kepler.png",
         "group": "Other"
       }
     ]
@@ -474,7 +446,50 @@ const categories = [
       {
         "title": "vue-svg-map",
         "href": "https://victorcazanave.github.io/vue-svg-map/",
+        "src": "assets/libraries/vue-svg-map.png",
         "group": "Charts"
+      },
+
+      {
+        "title": "date-fns",
+        "subtitle": "Modern JavaScript date utility library",
+        "href": "https://date-fns.org/",
+        "group": "Date",
+        "src": "assets/libraries/date-fns.png"
+      },
+      {
+        "title": "Moment",
+        "subtitle": "Parse, validate, manipulate, and display dates and times in JavaScript.",
+        "href": "https://momentjs.com/",
+        "src": "assets/libraries/Moment.png",
+        "group": "Date"
+      },
+      {
+        "title": "Numeral.js",
+        "subtitle": "A javascript library for formatting and manipulating numbers",
+        "href": "http://numeraljs.com/",
+        "src": "assets/libraries/Numeral.png",
+        "group": "Number"
+      },
+      {
+        "title": "Voca",
+        "subtitle": "The JavaScript string library",
+        "href": "https://vocajs.com/",
+        "src": "assets/libraries/Voca.png",
+        "group": "String"
+      },
+      {
+        "title": "Handlebars",
+        "subtitle": "Minimal templating on steriods",
+        "href": "https://handlebarsjs.com/",
+        "src": "assets/libraries/Handlebars.png",
+        "group": "Template"
+      },
+      {
+        "title": "Mustache",
+        "href": "https://mustache.github.io/",
+        "src": "assets/libraries/Mustache.png",
+        "group": "Template"
       }
     ]
   },
@@ -514,10 +529,37 @@ const categories = [
       {
         "title": "GeoServer",
         "subtitle": "GeoServer is an open source server for sharing geospatial data.",
-        "href": "http://geoserver.org/",
+        "href": "https://geoserver.org",
         "group": "Map",
         "highlight": true,
         "src": "assets/libraries/GeoServer.png"
+      },
+
+      {
+        "title": "ol-ext",
+        "subtitle": "Extensions for OpenLayers",
+        "href": "https://viglino.github.io/ol-ext/",
+        "src": "assets/libraries/ol-ext.png",
+        "group": "Extensions"
+      },
+      {
+        "title": "MapProxy",
+        "subtitle": "MapProxy is an open source proxy for geospatial data.",
+        "href": "https://mapproxy.org/",
+        "src": "assets/libraries/MapProxy.png"
+      },
+      {
+        "title": "MapSVG",
+        "subtitle": "Best WordPress Map Plugin for Vector Image and Google Maps",
+        "href": "https://mapsvg.com/",
+        "src": "assets/libraries/MapSVG.png"
+      },
+
+      {
+        "title": "S2ID",
+        "subtitle": "Sistema Integrado de Informações sobre Desastres",
+        "href": "https://s2id.mi.gov.br/paginas/index.xhtml#",
+        "src": "assets/libraries/S2ID.png"
       }
     ]
   },
@@ -528,7 +570,6 @@ const categories = [
         "title": "Angular Material",
         "subtitle": "Material Design components for Angular",
         "href": "https://material.angular.io/",
-        "group": "UI Components",
         "highlight": true,
         "src": "assets/libraries/Angular Material.png"
       },
@@ -537,7 +578,6 @@ const categories = [
         "title": "Material-UI",
         "subtitle": "A popular React UI framework",
         "href": "https://mui.com/",
-        "group": "UI Components",
         "highlight": true,
         "src": "assets/libraries/MUI.png"
       },
@@ -545,7 +585,6 @@ const categories = [
         "title": "Ant Design",
         "subtitle": "A design system for enterprise-level products. Create an efficient and enjoyable work experience.",
         "href": "https://ant.design/",
-        "group": "UI Components",
         "src": "assets/libraries/Ant Design.png"
       },
     
@@ -565,21 +604,18 @@ const categories = [
         "title": "PrimeVue",
         "subtitle": "The Most Complete UI Framework for VUE",
         "href": "https://primefaces.org/primevue/#/",
-        "group": "UI Components",
         "src": "assets/libraries/PrimeVUE.png"
       },
       {
         "title": "Quasar",
         "subtitle": "Build high-performance VueJS user interfaces in record time",
         "href": "https://quasar.dev/",
-        "group": "UI Components",
         "src": "assets/libraries/Quasar.png"
       },
       {
         "title": "Vuetify",
         "subtitle": "Material Design Component Framework",
         "href": "https://vuetifyjs.com/en/",
-        "group": "UI Components",
         "highlight": true,
         "src": "assets/libraries/Vuetify.png"
       },
@@ -594,26 +630,26 @@ const categories = [
         "title": "Keen-UI",
         "subtitle": "Keen UI is a lightweight Vue.js UI library with a simple API",
         "href": "https://josephuspaye.github.io/Keen-UI",
-        "group": "UI Components"
+        "src": "assets/libraries/Keen-UI.png"
       },
 
       {
         "title": "Materialize",
         "subtitle": "A modern responsive front-end framework based on Material Design",
         "href": "https://materializecss.com/",
-        "group": "UI Components"
+        "src": "assets/libraries/Materialize.png"
       },
       {
         "title": "Muse-UI",
         "subtitle": "Based on the Vue 2.0 elegant Material Design UI component library",
         "href": "https://muse-ui.org/#/en-US",
-        "group": "UI Components"
+        "src": "assets/libraries/Muse-UI.png"
       },
       {
         "title": "Polythene",
         "subtitle": "Material Design component library for Mithril and React.",
         "href": "https://github.com/ArthurClemens/Polythene",
-        "group": "UI Components"
+        "src": "assets/libraries/Polythene.png"
       },
 
 
@@ -626,19 +662,19 @@ const categories = [
       {
         "title": "UIkit",
         "href": "https://getuikit.com/",
-        "group": "UI Components"
+        "src": "assets/libraries/UIkit.png"
       },
       {
         "title": "Vue Material",
         "subtitle": "Material Design for Vue.js",
         "href": "https://vuematerial.io/",
-        "group": "UI Components"
+        "src": "assets/libraries/Vue Material.png"
       },
       {
         "title": "Vuecidity",
         "subtitle": "Component Library for Vue.JS",
         "href": "https://vuecidity.wemakesites.net/",
-        "group": "UI Components"
+        "src": "assets/libraries/Vuecidity.png"
       },
     ]
   }

@@ -35,7 +35,8 @@ const Libraries = {
         <v-tab-item
           v-for="category in categories"
           :key="category.name"
-        >
+          style="background-color: #FAFAFA;"
+        ><!-- overflow-y: auto; max-height: 856px; -->
           <v-container>
             <v-row>
               <v-col cols="12" lg="3"
