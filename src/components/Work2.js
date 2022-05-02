@@ -155,49 +155,6 @@ const Work2 = {
         ]
       },
       {
-        name: 'Ext + OpenLayers',
-        items: [
-          {
-            title: 'geocultura',
-            subtitle: 'SECC',
-            href: 'http://www.geocultura.pr.gov.br/geocultura',
-            screenshot: 'assets/screenshots/geocultura(1).png'
-          },
-          {
-            title: 'geoem',
-            subtitle: 'IAT',
-            href: 'http://www.geoem.pr.gov.br/geoem/publico',
-            screenshot: 'assets/screenshots/geoem.png'
-          },
-          {
-            title: 'geogpi',
-            subtitle: 'SEAP',
-            href: 'http://www.geogpi.pr.gov.br/geogpi/publico',
-            screenshot: 'assets/screenshots/geogpi.png'
-          },
-          {
-            title: 'geoobras',
-            subtitle: 'SEIL',
-            href: 'http://www.geoobras.pr.gov.br/geoobras',
-            screenshot: 'assets/screenshots/geoobras.png'
-          },
-          {
-            title: 'geosdsa',
-            subtitle: 'ADAPAR',
-            href: 'http://www.geo.adapar.pr.gov.br/geosdsa',
-            screenshot: 'assets/screenshots/geosdsa.png',
-            homolog: 'http://homologacao.geosdsa.pr.gov.br/geosdsa',
-            prod: 'http://www.geo.adapar.pr.gov.br/geosdsa'
-          },
-          {
-            title: 'geoseti',
-            subtitle: 'SETI',
-            href: 'http://www.geoseti.pr.gov.br/geoseti/publico',
-            screenshot: 'assets/screenshots/geoseti.png'
-          }
-        ]
-      },
-      {
         name: 'RESOURCES',
         items: [
           {

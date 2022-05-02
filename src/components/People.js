@@ -5,12 +5,12 @@ const People = {
         <v-col
           v-for="video in videos"
           :key="video.id"
-          cols="12" lg="4"
+          cols="12" lg="3"
         >
           <v-card outlined :href="'https://youtu.be/' + video.id">
             <v-img
               :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'"
-              height="350px"
+              height="275px"
               style="background: black;"
             ></v-img>
             <v-card-title>
@@ -22,6 +22,7 @@ const People = {
           </v-card
         </v-col>
       </v-row>
+      <!--
       <v-row>
         <v-col sm="12" md="6" lg="3"
           v-for="person in people"
@@ -42,6 +43,47 @@ const People = {
               >
                 {{ category }}
               </v-chip>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+      -->
+      <v-row>
+        <v-col sm="12" md="6" lg="3"
+          v-for="game in games"
+          :key="game.title"
+        >
+          <v-card>
+            <v-img
+              :src="game.src"
+              height="280px"
+            ></v-img>
+            <v-card-title>
+              {{ game.title }}
+            </v-card-title>
+            <v-card-text>
+              <v-simple-table>
+                <tr>
+                  <td>
+                    Rating:
+                  </td>
+                  <td align="right">
+                    <v-rating
+                      :value="game.rating"
+                    ></v-rating>
+                  </td>
+                </tr>
+                <tr>
+                <td>
+                  Difficulty:
+                </td>
+                <td align="right">
+                  <v-rating
+                    :value="game.difficulty"
+                  ></v-rating>
+                </td>
+              </tr>
+              </v-simple-table>
             </v-card-text>
           </v-card>
         </v-col>
@@ -112,6 +154,20 @@ const People = {
         "id": "GO_rW0Bvy1I",
         "title": "Joe Rogan Experience #1491",
         "subtitle": "Bill Burr"
+      }
+    ],
+    games: [
+      {
+        "title": "Animaniacs",
+        "src": "assets/images/Animaniacs.png",
+        "rating": 4,
+        "difficulty": 4
+      },
+      {
+        "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
+        "src": "assets/images/Maui Mallard in Cold Shadow.jpg",
+        "rating": 4,
+        "difficulty": 3
       }
     ]
   })

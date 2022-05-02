@@ -14,8 +14,6 @@
   <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" rel="stylesheet">
   
-  <link href="https://cdn.jsdelivr.net/npm/vue-svg-map@1.2.0/dist/index.css" rel="stylesheet">
-
   <link rel="icon" href="favicon.ico">
 
   <style>
@@ -29,31 +27,6 @@
     .selected {
       filter: hue-rotate(135deg);
     }
-
-    .svg-map__location--heat0 {
-      fill: #0570b0;
-    }
-    .svg-map__location--heat1 {
-      fill: #74a9cf;
-    }
-    .svg-map__location--heat2 {
-      fill: #bdc9e1;
-    }
-    .svg-map__location--heat3 {
-      fill: #f1eef6;
-    }
-    .svg-map__location:focus {
-      opacity: 0.75;
-    }
-    /*
-    .svg-map__location {
-
-      &:focus,
-      &:hover {
-        opacity: 0.75;
-      }
-    }
-    */
   </style>
 </head>
 <body>
@@ -188,14 +161,6 @@
               <v-list-item-title>Layers</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/svg-maps" color="#25305E">
-            <v-list-item-icon>
-              <v-icon>mdi-layers</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>SVG Maps</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
         <v-list>
       </v-navigation-drawer>
       
@@ -287,8 +252,6 @@
   <script src="https://cdn.jsdelivr.net/npm/esri-leaflet@2.5.0/dist/esri-leaflet.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue-svg-map@1.2.0/dist/index.umd.min.js"></script>
   
   <!--
   <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -296,8 +259,6 @@
 
   <script src="./src/libraries.js"></script>
   <script src="./src/locations.js"></script>
-  
-  <script src="./assets/svg-maps/states.js"></script>
   
   <script src="./src/components/Calendar.js"></script>
   <script src="./src/components/DatePicker.js"></script>
@@ -310,7 +271,6 @@
   <script src="./src/components/POI.js"></script>
   <script src="./src/components/Portfolio.js"></script>
   <script src="./src/components/Resources.js"></script>
-  <script src="./src/components/SvgMaps.js"></script>
   <script src="./src/components/Tabs.js"></script>
   <script src="./src/components/TreeView.js"></script>
   <script src="./src/components/Unsplash.js"></script>
@@ -396,7 +356,6 @@
       { path: '/work', component: Work },
       { path: '/work2', component: Work2 },
       { path: '/poi', component: POI },
-      { path: '/svg-maps', component: SvgMaps },
       
       { path: '/login', component: Login }
     ]

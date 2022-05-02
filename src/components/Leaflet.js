@@ -1,7 +1,10 @@
 const Leaflet = {
   template: `
     <v-container fluid>
-      <v-row>     
+      <v-row>
+        <div id="map" style="width: 100%; height: 500px; z-index: 0;"></div>
+      </v-row>
+      <v-row>
         <v-col cols="12" lg="4"
           v-for="plugin in sortedPlugins"
           :key="plugin.title"
@@ -76,5 +79,16 @@ const Leaflet = {
     sortedPlugins () {
       return _.sortBy(this.plugins, 'title')
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      this.map = L.map('map').setView([-24.618588, -51.316993], 7) // FIXME
+
+      this.layers = L.control.layers({
+        'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(this.map)
+      }).addTo(this.map)
+    })
   }
 }
