@@ -473,7 +473,7 @@ const POI = {
 
       this.layers = L.control.layers({
         'Topographic': L.esri.basemapLayer('Topographic').addTo(this.map),
-        'ImageryClarity': L.esri.basemapLayer('ImageryClarity')
+        'Imagery': L.esri.basemapLayer('Imagery'),
       }, {
         'Municípios do Paraná': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
           layers: 'itcg:municipios_pol_p31982_e50',

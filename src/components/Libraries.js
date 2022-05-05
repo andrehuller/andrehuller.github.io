@@ -43,7 +43,7 @@ const Libraries = {
                 v-for="library in category.items"
                 :key="library.title"
               >
-                <v-card class="fill-height d-flex flex-column">          
+                <v-card class="fill-height d-flex flex-column">
                   <a :href="library.href" target="_blank">
                     <v-img
                       :src="library.src"

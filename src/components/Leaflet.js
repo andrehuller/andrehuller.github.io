@@ -86,8 +86,10 @@ const Leaflet = {
 
       this.layers = L.control.layers({
         'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(this.map)
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        }).addTo(this.map),
+        'Imagery': L.esri.basemapLayer('Imagery'),
+        'Topographic': L.esri.basemapLayer('Topographic'),
       }).addTo(this.map)
     })
   }

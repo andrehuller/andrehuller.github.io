@@ -7,11 +7,14 @@ const People = {
           :key="video.id"
           cols="12" lg="3"
         >
-          <v-card outlined :href="'https://youtu.be/' + video.id">
+          <v-card
+            :href="'https://youtu.be/' + video.id"
+            class="fill-height d-flex flex-column"
+          >
             <v-img
               :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'"
-              height="275px"
-              style="background: black;"
+              height="255px"
+              style="background: black; max-height: 255px;"
             ></v-img>
             <v-card-title>
               {{ video.title }}
@@ -158,16 +161,22 @@ const People = {
     ],
     games: [
       {
+        "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
+        "src": "assets/images/Maui Mallard in Cold Shadow.jpg",
+        "rating": 4,
+        "difficulty": 3
+      },
+      {
         "title": "Animaniacs",
         "src": "assets/images/Animaniacs.png",
         "rating": 4,
         "difficulty": 4
       },
       {
-        "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
-        "src": "assets/images/Maui Mallard in Cold Shadow.jpg",
-        "rating": 4,
-        "difficulty": 3
+        "title": "The Lion King", // Played in Normal
+        "src": "assets/images/The Lion King.jpg",
+        "rating": 2,
+        "difficulty": 4
       }
     ]
   })
