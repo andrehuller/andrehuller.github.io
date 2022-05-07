@@ -293,13 +293,7 @@ const categories = [
         "src": "assets/libraries/NativeScript.png",
         "group": "Mobile"
       },
-      {
-        "title": "NativeScript-Vue",
-        "subtitle": "Truly native apps using Vue.js and NativeScript",
-        "href": "https://nativescript-vue.org/",
-        "src": "assets/libraries/NativeScript-Vue.png",
-        "group": "Mobile"
-      },
+
       {
         "title": "React Native",
         "subtitle": "Learn once, write anywhere",
@@ -347,14 +341,6 @@ const categories = [
         "group": "Utilities"
       },
       {
-        "title": "Vue CLI",
-        "subtitle": "Standard Tooling for Vue.js Development",
-        "href": "https://cli.vuejs.org/",
-        "src": "assets/libraries/Vue CLI.png",
-        "group": "Vue",
-        "highlight": true
-      },
-      {
         "title": "Vue Router",
         "subtitle": "Vue Router is the official router for Vue.js",
         "href": "https://router.vuejs.org/",
@@ -362,15 +348,6 @@ const categories = [
         "group": "Vue",
         "highlight": true
       },
-      {
-        "title": "Vuex",
-        "subtitle": "Vuex is a state management pattern + library for Vue.js applications",
-        "href": "https://vuex.vuejs.org/",
-        "src": "assets/libraries/Vuex.png",
-        "group": "Vue",
-        "highlight": true
-      },
-
       {
         "title": "axios",
         "subtitle": "Promise based HTTP client for the browser and node.js",
@@ -587,25 +564,6 @@ const categories = [
         "href": "https://ant.design/",
         "src": "assets/libraries/Ant Design.png"
       },
-    
-      {
-        "title": "BootstrapVue",
-        "subtitle": "Quickly integrate Bootstrap v4 components with Vue.js",
-        "href": "https://bootstrap-vue.org/",
-        "src": "assets/libraries/BootstrapVue.png"
-      },
-      {
-        "title": "Buefy",
-        "subtitle": "Lightweight UI components for Vue.js based on Bulma",
-        "href": "https://buefy.org/",
-        "src": "assets/libraries/Buefy.png"
-      },
-      {
-        "title": "PrimeVue",
-        "subtitle": "The Most Complete UI Framework for VUE",
-        "href": "https://primefaces.org/primevue/#/",
-        "src": "assets/libraries/PrimeVUE.png"
-      },
       {
         "title": "Quasar",
         "subtitle": "Build high-performance VueJS user interfaces in record time",
@@ -652,7 +610,6 @@ const categories = [
         "src": "assets/libraries/Polythene.png"
       },
 
-
       {
         "title": "Semantic UI",
         "subtitle": "User Interface is the language of the web",
@@ -663,6 +620,52 @@ const categories = [
         "title": "UIkit",
         "href": "https://getuikit.com/",
         "src": "assets/libraries/UIkit.png"
+      }
+    ]
+  },
+  {
+    name: "VUE",
+    items: [
+      {
+        "title": "Vue CLI",
+        "subtitle": "Standard Tooling for Vue.js Development",
+        "href": "https://cli.vuejs.org/",
+        "src": "assets/libraries/Vue CLI.png",
+        "group": "Vue",
+        "highlight": true
+      },
+      {
+        "title": "Vuex",
+        "subtitle": "Vuex is a state management pattern + library for Vue.js applications",
+        "href": "https://vuex.vuejs.org/",
+        "src": "assets/libraries/Vuex.png",
+        "group": "Vue",
+        "highlight": true
+      },
+      {
+        "title": "NativeScript-Vue",
+        "subtitle": "Truly native apps using Vue.js and NativeScript",
+        "href": "https://nativescript-vue.org/",
+        "src": "assets/libraries/NativeScript-Vue.png",
+        "group": "Mobile"
+      },
+      {
+        "title": "BootstrapVue",
+        "subtitle": "Quickly integrate Bootstrap v4 components with Vue.js",
+        "href": "https://bootstrap-vue.org/",
+        "src": "assets/libraries/BootstrapVue.png"
+      },
+      {
+        "title": "Buefy",
+        "subtitle": "Lightweight UI components for Vue.js based on Bulma",
+        "href": "https://buefy.org/",
+        "src": "assets/libraries/Buefy.png"
+      },
+      {
+        "title": "PrimeVue",
+        "subtitle": "The Most Complete UI Framework for VUE",
+        "href": "https://primefaces.org/primevue/#/",
+        "src": "assets/libraries/PrimeVUE.png"
       },
       {
         "title": "Vue Material",
@@ -675,7 +678,7 @@ const categories = [
         "subtitle": "Component Library for Vue.JS",
         "href": "https://vuecidity.wemakesites.net/",
         "src": "assets/libraries/Vuecidity.png"
-      },
+      }
     ]
   }
 ]

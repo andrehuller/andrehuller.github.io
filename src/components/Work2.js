@@ -155,27 +155,6 @@ const Work2 = {
         ]
       },
       {
-        name: 'RESOURCES',
-        items: [
-          {
-            title: 'GeoNetwork',
-            subtitle: 'CELEPAR',
-            href: 'http://geonetwork.pr.gov.br',
-            screenshot: 'assets/screenshots/GeoNetwork.png',
-            homolog: 'http://geojsapitre.pr.gov.br/geonetwork/srv/eng/catalog.search#/home',
-            prod: 'http://geonetwork.pr.gov.br'
-          },
-          {
-            title: 'GeoServer',
-            subtitle: 'CELEPAR',
-            href: 'https://geoserver.pr.gov.br',
-            screenshot: 'assets/screenshots/geoserver.png',
-            homolog: 'http://geoserverhml.eparana.parana',
-            prod: 'https://geoserver.pr.gov.br'
-          }
-        ]
-      },
-      {
         name: 'THIRD PARTY',
         items: [
           {

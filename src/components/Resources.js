@@ -48,43 +48,10 @@ const Resources = {
         "screenshot": "assets/screenshots/Vue.png"
       },
       {
-        "title": "Vue CLI",
-        "subtitle": "Standard Tooling for Vue.js Development",
-        "href": "https://cli.vuejs.org/",
-        "screenshot": "assets/screenshots/Vue CLI.png",
-        "commands": [ "vue create nome_projeto" ]
-      },
-      {
-        "title": "Vuex",
-        "subtitle": "Vuex is a state management pattern + library for Vue.js applications.",
-        "href": "https://vuex.vuejs.org/",
-        "screenshot": "assets/resources/Vuex.png"
-      },
-      {
-        "title": "Vue Router",
-        "subtitle": "Vue Router is the official router for Vue.js.",
-        "href": "https://router.vuejs.org/",
-        "screenshot": "assets/resources/Vue Router.png"
-      },
-      {
-        "title": "Vuetify",
-        "subtitle": "Material Design Framework",
-        "href": "https://vuetifyjs.com/en/",
-        "screenshot": "assets/resources/Vuetify.png"
-      },
-      {
         "title": "Material Design",
         "subtitle": "Build beautiful products, faster.",
         "href": "https://material.io/",
         "screenshot": "assets/screenshots/material.png"
-      },
-      {
-        "title": "Lodash",
-        "subtitle": "A modern JavaScript utility library delivering modularity, performance & extras.",
-        "href": "https://lodash.com/",
-        "screenshot": "assets/screenshots/Lodash.png",
-        "install": "npm install lodash",
-        "commands": [ "isArray", "isEmpty" ]
       },
       {
         "title": "Leaflet",

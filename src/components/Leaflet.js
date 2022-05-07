@@ -80,6 +80,11 @@ const Leaflet = {
       return _.sortBy(this.plugins, 'title')
     }
   },
+  beforeRouteEnter (to, from, next) {
+    next(vm => {
+      vm.onResize()
+    })
+  },
   mounted () {
     this.$nextTick(() => {
       this.map = L.map('map').setView([-24.618588, -51.316993], 7) // FIXME
@@ -91,6 +96,24 @@ const Leaflet = {
         'Imagery': L.esri.basemapLayer('Imagery'),
         'Topographic': L.esri.basemapLayer('Topographic'),
       }).addTo(this.map)
+
+      L.control.defaultExtent()
+        .addTo(this.map)
+
+      this.map.pm.addControls({
+        position: 'topleft',
+        drawCircleMarker: false,
+        rotateMode: false
+      });
+      
+      this.map.pm.setLang('pt_br');
     })
+  },
+  methods: {
+    onResize () {
+      if (this.map) {
+        this.map.invalidateSize()
+      }
+    }
   }
 }

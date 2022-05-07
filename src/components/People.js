@@ -5,7 +5,7 @@ const People = {
         <v-col
           v-for="video in videos"
           :key="video.id"
-          cols="12" lg="3"
+          cols="12" lg="4"
         >
           <v-card
             :href="'https://youtu.be/' + video.id"
@@ -13,8 +13,7 @@ const People = {
           >
             <v-img
               :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'"
-              height="255px"
-              style="background: black; max-height: 255px;"
+              style="background: black;"
             ></v-img>
             <v-card-title>
               {{ video.title }}
