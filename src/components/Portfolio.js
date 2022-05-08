@@ -97,7 +97,47 @@ const Portfolio = {
         icon: 'mdi-road-variant',
         href: 'https://der.mapas.pr.gov.br',
         subtitle: 'http://der.mapas.pr.gov.br'
+      }
+      /*
+      {
+        title: 'geocultura',
+        subtitle: 'SECC',
+        href: 'http://cultura.mapas.pr.gov.br',
+        screenshot: 'assets/screenshots/geocultura.jpg',
+        homolog: 'http://geojsapitre.pr.gov.br/geocultura/#/',
+        prod: 'http://cultura.mapas.pr.gov.br'
       },
+      {
+        title: 'geodc',
+        subtitle: 'CEDC',
+        href: 'http://geojsapitre.pr.gov.br/geodc/#/',
+        screenshot: 'assets/screenshots/geodc.png',
+        homolog: 'http://geojsapitre.pr.gov.br/geodc/#/'
+      },
+      {
+        title: 'geodc/editor-area-atencao',
+        subtitle: 'CEDC',
+        href: 'http://geojsapitre.pr.gov.br/editor/#/',
+        screenshot: 'assets/screenshots/editor-area-atencao.png',
+        homolog: 'http://geojsapitre.pr.gov.br/editor/#/'
+      },
+      {
+        title: 'geoder',
+        subtitle: 'DER',
+        href: 'http://der.mapas.pr.gov.br',
+        screenshot: 'assets/screenshots/geoder.png',
+        homolog: 'http://geojsapitre.pr.gov.br/geoder/#/',
+        prod: 'http://der.mapas.pr.gov.br'
+      },
+      {
+        title: 'geoidr',
+        subtitle: 'IDR',
+        href: 'http://idr.mapas.pr.gov.br',
+        screenshot: 'assets/screenshots/geoidr.png',
+        homolog: 'http://geojsapitre.pr.gov.br/geoidr/#/',
+        prod: 'http://idr.mapas.pr.gov.br'
+      }
+      */
     ],
     references: [
       {

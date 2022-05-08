@@ -517,6 +517,7 @@ const categories = [
         "group": "Database",
         "src": "assets/libraries/pgRouting.png"
       },
+
       {
         "title": "GeoServer",
         "subtitle": "GeoServer is an open source server for sharing geospatial data.",
@@ -524,6 +525,17 @@ const categories = [
         "group": "Map",
         "highlight": true,
         "src": "assets/libraries/GeoServer.png"
+      },
+      {
+        "title": "GeoNetwork",
+        "subtitle": "manage spatially referenced resources",
+        "href": "https://www.geonetwork-opensource.org/",
+        "src": "assets/libraries/GeoNetwork.png"
+      },
+      {
+        "title": "GeoNode [Demo]",
+        "href": "https://master.demo.geonode.org/",
+        "src": "assets/libraries/GeoNode [demo].png"
       },
 
       {
@@ -539,6 +551,21 @@ const categories = [
         "href": "https://mapproxy.org/",
         "src": "assets/libraries/MapProxy.png"
       },
+
+      {
+        "title": "Batch geocoder for journalists",
+        "subtitle": "Locations to coordinates at rocket speed",
+        "href": "https://geocode.localfocus.nl/",
+        "src": "assets/libraries/geocode.localfocus.png"
+      },
+
+      {
+        "title": "Openrouteservice",
+        "subtitle": "Openpoiservice allows you to find places of interest around or within given geographic coordinates.",
+        "href": "https://openrouteservice.org/",
+        "src": "assets/libraries/openrouteservice.png"
+      },
+
       {
         "title": "MapSVG",
         "subtitle": "Best WordPress Map Plugin for Vector Image and Google Maps",

@@ -486,6 +486,112 @@ const Work = {
             subtitle: 'Tribunal Regional Eleitoral do Paraná',
             href: 'https://www.tre-pr.jus.br/',
             screenshot: 'assets/screenshots/tre-pr.png'
+          },
+          {
+            title: 'consultaescolas',
+            subtitle: 'http://www.consultaescolas.pr.gov.br/',
+            href: 'http://www.consultaescolas.pr.gov.br/',
+            screenshot: 'assets/screenshots/consulta-escolas.png'
+          },
+          {
+            title: 'SIGLON',
+            subtitle: 'Sistema de Informação Geográfica de Londrina',
+            href: 'https://geo.londrina.pr.gov.br/portal/apps/webappviewer/index.html?id=5360a454d15146a3bcf4ebdbe8e49e03',
+            screenshot: 'assets/screenshots/SIGLON.png'
+          },
+          {
+            title: 'Portal GeoMaringá',
+            subtitle: 'Prefeitura Municipal de Maringá',
+            href: 'http://geoproc.maringa.pr.gov.br:8090/SIGMARINGA/?itemid=d0b136c94c274dc7863b2acd768ec07e',
+            screenshot: 'assets/screenshots/Portal GeoMaringá.jpg'
+          },
+          {
+            title: 'Geoprocessamento Corporativo',
+            subtitle: 'Prefeitura Municipal de Ponta Grossa',
+            href: 'http://geoweb.pontagrossa.pr.gov.br/',
+            screenshot: 'assets/screenshots/Geoprocessamento Corporativo.png'
+          },
+          {
+            title: 'Mapa da Cultura',
+            subtitle: 'mapas.cultura.gov.br',
+            href: 'http://mapas.cultura.gov.br/',
+            screenshot: 'assets/screenshots/mapa-da-cultura.png'
+          },
+          {
+            title: 'Mapa Solar',
+            subtitle: 'COPEL',
+            href: 'https://solar.copel.com/solar/',
+            screenshot: 'assets/screenshots/Mapa Solar.jpg'
+          },
+          {
+            title: 'paranainterativo',
+            subtitle: 'https://paranainterativo.pr.gov.br/',
+            href: 'https://paranainterativo.pr.gov.br/',
+            screenshot: 'assets/screenshots/parana-interativo.jpg'
+          },
+          {
+            title: 'Rodízio Curitiba e RMC',
+            subtitle: 'SANEPAR',
+            href: 'http://site.sanepar.com.br/mapa-rodizio-abastecimento-curitiba-rmc',
+            screenshot: 'assets/screenshots/mapa-rodizio-abastecimento-curitiba-rmc.png'
+          },
+          {
+            title: 'sider',
+            subtitle: 'DER/PR',
+            href: 'http://sider.der.pr.gov.br/mapainterativo/webgis/map#',
+            screenshot: 'assets/screenshots/sider.png'
+          },
+          {
+            title: 'Uso e Cobertura da Terra',
+            subtitle: 'SEDEST (2012 - 2016)',
+            href: 'https://geo.iat.pr.gov.br/portal/apps/opsdashboard/index.html#/0f98b800a957463fb4dec673cb336331',
+            screenshot: 'assets/screenshots/uso-cobertura-terra.png'
+          },
+
+          {
+            title: 'Flowchart COVID-19',
+            subtitle: 'CEDC',
+            href: 'https://app.powerbi.com/view?r=eyJrIjoiYTY2NmNiOGUtZTA5Ni00NTA0LWIwZTEtOTE3ZWFmMjQ3MTk0IiwidCI6ImZiYWYzMWQzLWU4ZjgtNGE3MC1iNjMzLWJlMzdiNjJmNTQyNSJ9',
+            screenshot: 'assets/screenshots/Flowchart COVID-19.png'
+          },
+          {
+            title: 'Mapa de Obras',
+            subtitle: 'PRED',
+            href: 'http://www.paranaedificacoes.pr.gov.br/Pagina/Mapa-de-Obras',
+            screenshot: 'assets/screenshots/mapa-de-obras.png'
+          },
+
+          {
+            title: 'Mapas Rodoviários',
+            subtitle: 'DER',
+            href: 'http://www.der.pr.gov.br/Pagina/Mapas-Rodoviarios#',
+            screenshot: 'assets/screenshots/Mapas Rodoviários.png'
+          },
+
+          {
+            title: 'Mapas',
+            subtitle: 'SEDU',
+            href: 'http://www.desenvolvimentourbano.pr.gov.br/Pagina/Mapas',
+            screenshot: 'assets/screenshots/mapas-sedu.png'
+          },
+          {
+            title: 'URS', // Unidades Regionais de Sanidade Agropecuária
+            subtitle: 'ADAPAR',
+            href: 'http://www.adapar.pr.gov.br/Pagina/Unidades-Regionais-de-Sanidade-Agropecuaria-URS',
+            screenshot: 'assets/screenshots/URS.png'
+          },
+
+          {
+            title: 'Operações Portuárias',
+            subtitle: 'Portos do Paraná',
+            href: 'http://www.portosdoparana.pr.gov.br/Operacional',
+            screenshot: 'assets/screenshots/Operações Portuárias.png'
+          },
+          {
+            title: 'SISPEHIS',
+            subtitle: 'COHAPAR',
+            href: 'https://www.sistemas.cohapar.pr.gov.br/PEHISPUBLICO/listaFormMunicipio.php',
+            screenshot: 'assets/screenshots/SISPEHIS.png'
           }
         ]
       }

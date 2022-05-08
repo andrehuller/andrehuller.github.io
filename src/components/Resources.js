@@ -73,19 +73,7 @@ const Resources = {
         "href": "https://www.pelias.io/",
         "screenshot": "assets/resources/Pelias Geocoder.png"
       },
-      {
-        "title": "Batch geocoder for journalists",
-        "subtitle": "Locations to coordinates at rocket speed",
-        "href": "https://geocode.localfocus.nl/",
-        "screenshot": "assets/screenshots/geocode.localfocus.png"
-      },
 
-      {
-        "title": "Openrouteservice",
-        "subtitle": "Openpoiservice allows you to find places of interest around or within given geographic coordinates.",
-        "href": "https://openrouteservice.org/",
-        "screenshot": "assets/screenshots/openrouteservice.png"
-      },
       {
         "title": "VROOM",
         "subtitle": "Vehicle Routing Open-source Optimization Machine",
@@ -98,23 +86,7 @@ const Resources = {
         "href": "https://www.geosolutionsgroup.com/",
         "screenshot": "assets/resources/GeoSolutions.png"
       },
-      {
-        "title": "GeoServer",
-        "subtitle": "GeoServer is an open source server for sharing geospatial data.",
-        "href": "http://geoserver.org/",
-        "screenshot": "assets/resources/GeoServer.png"
-      },
-      {
-        "title": "GeoNetwork",
-        "subtitle": "manage spatially referenced resources",
-        "href": "https://www.geonetwork-opensource.org/",
-        "screenshot": "assets/resources/GeoNetwork.png"
-      },
-      {
-        "title": "GeoNode [Demo]",
-        "href": "https://master.demo.geonode.org/",
-        "screenshot": "assets/resources/GeoNode [demo].png"
-      },
+
       {
         "title": "Unsplash",
         "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
