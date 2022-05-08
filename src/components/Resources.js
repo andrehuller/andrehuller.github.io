@@ -53,25 +53,8 @@ const Resources = {
         "href": "https://material.io/",
         "screenshot": "assets/screenshots/material.png"
       },
-      {
-        "title": "Leaflet",
-        "subtitle": "mobile-friendly interactive maps",
-        "href": "https://leafletjs.com/",
-        "screenshot": "assets/resources/Leaflet.png",
-        "install": "npm install leaflet"
-      },
-      {
-        "title": "Leaflet Geoman",
-        "subtitle": "Geometry editing tools.",
-        "href": "https://geoman.io/leaflet-geoman",
-        "screenshot": "assets/resources/Leaflet-Geoman.png",
-        "install": "npm i @geoman-io/leaflet-geoman-free"
-      },
-      {
-        "title": "Leaflet markercluster",
-        "href": "http://leaflet.github.io/Leaflet.markercluster/",
-        "screenshot": "assets/resources/Leaflet markercluster.png"
-      },
+
+
       {
         "title": "ColorBrewer",
         "subtitle": "Color Advice for Maps",

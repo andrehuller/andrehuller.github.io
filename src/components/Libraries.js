@@ -55,9 +55,7 @@ const Libraries = {
                   <v-card-title>
                     {{ library.title }}
                     <v-spacer></v-spacer>
-                    <v-avatar v-if="library.highlight">
-                      <v-icon color="indigo">mdi-alert-circle-outline</v-icon>
-                    </v-avatar>
+                    <v-icon v-if="library.highlight" color="indigo">mdi-alert-circle-outline</v-icon>
                   </v-card-title>
                   <v-card-text>
                     {{ library.subtitle }}

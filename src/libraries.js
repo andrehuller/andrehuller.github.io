@@ -482,6 +482,20 @@ const categories = [
         "highlight": true
       },
       {
+        "title": "Leaflet Geoman",
+        "subtitle": "Geometry editing tools.",
+        "href": "https://geoman.io/leaflet-geoman",
+        "src": "assets/libraries/Leaflet-Geoman.png",
+        "install": "npm i @geoman-io/leaflet-geoman-free",
+        "highlight": true
+      },
+      {
+        "title": "Leaflet markercluster",
+        "href": "http://leaflet.github.io/Leaflet.markercluster/",
+        "src": "assets/libraries/Leaflet markercluster.png",
+        "highlight": true
+      },
+      {
         "title": "OpenLayers",
         "subtitle": "A high-performance, feature-packed library for all your mapping needs",
         "href": "https://openlayers.org/",

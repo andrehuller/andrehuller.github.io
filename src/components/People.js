@@ -72,6 +72,8 @@ const People = {
                   <td align="right">
                     <v-rating
                       :value="game.rating"
+                      half-increments
+                      readonly
                     ></v-rating>
                   </td>
                 </tr>
@@ -82,6 +84,8 @@ const People = {
                 <td align="right">
                   <v-rating
                     :value="game.difficulty"
+                    half-increments
+                    readonly
                   ></v-rating>
                 </td>
               </tr>
@@ -159,6 +163,12 @@ const People = {
       }
     ],
     games: [
+      {
+        "title": "Donkey Kong Country", // Prefer (U) version
+        "src": "assets/images/Donkey Kong Country.jpg",
+        "rating": 4.5,
+        "difficulty": 3
+      },
       {
         "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
         "src": "assets/images/Maui Mallard in Cold Shadow.jpg",

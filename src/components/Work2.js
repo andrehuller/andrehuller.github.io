@@ -101,13 +101,6 @@ const Work2 = {
         name: 'Vue + Leaflet',
         items: [
           {
-            title: 'geocge',
-            subtitle: 'CGE',
-            href: 'http://geojsapitre.pr.gov.br/geocge/#/',
-            screenshot: 'assets/screenshots/geocge.jpg',
-            homolog: 'http://geojsapitre.pr.gov.br/geocge/#/'
-          },
-          {
             title: 'geocultura',
             subtitle: 'SECC',
             href: 'http://cultura.mapas.pr.gov.br',
