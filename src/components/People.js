@@ -182,6 +182,12 @@ const People = {
         "difficulty": 4
       },
       {
+        "title": "The Mask", // Really Tough Bosses
+        "src": "assets/images/The Mask.jpg",
+        "rating": 3,
+        "difficulty": 3.5
+      },
+      {
         "title": "The Lion King", // Played in Normal
         "src": "assets/images/The Lion King.jpg",
         "rating": 2,

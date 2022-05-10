@@ -370,13 +370,6 @@ const categories = [
         "href": "https://flutter.dev/",
         "src": "assets/libraries/Flutter.png",
         "group": "Other"
-      },
-      {
-        "title": "kepler.gl",
-        "subtitle": "Make an impact with your location data",
-        "href": "https://kepler.gl/",
-        "src": "assets/libraries/kepler.png",
-        "group": "Other"
       }
     ]
   },
@@ -502,6 +495,33 @@ const categories = [
         "group": "Map",
         "src": "assets/libraries/OpenLayers.png"
       },
+
+      {
+        "title": "ColorBrewer",
+        "subtitle": "Color Advice for Maps",
+        "href": "https://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3",
+        "src": "assets/libraries/ColorBrewer.png"
+      },
+      {
+        "title": "Map Icons",
+        "href": "https://mapicons.mapsmarker.com/",
+        "src": "assets/libraries/Map Icons.png"
+      },
+
+      {
+        "title": "Pelias",
+        "subtitle": "A modular, open-source search engine for our world.",
+        "href": "https://www.pelias.io/",
+        "src": "assets/libraries/Pelias Geocoder.png"
+      },
+
+      {
+        "title": "VROOM",
+        "subtitle": "Vehicle Routing Open-source Optimization Machine",
+        "href": "http://vroom-project.org/",
+        "src": "assets/libraries/VROOM.png"
+      },
+
       {
         "title": "PostGIS",
         "subtitle": "Spatial and Geographic Objects for PostgreSQL",
@@ -719,6 +739,48 @@ const categories = [
         "subtitle": "Component Library for Vue.JS",
         "href": "https://vuecidity.wemakesites.net/",
         "src": "assets/libraries/Vuecidity.png"
+      }
+    ]
+  },
+  {
+    "name": "Companies",
+    "items": [
+      {
+        "title": "Airflow",
+        "subtitle": "Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.",
+        "href": "https://airflow.apache.org/",
+        "src": "assets/resources/Airflow.png"
+      },
+      {
+        "title": "GeoSolutions",
+        "href": "https://www.geosolutionsgroup.com/",
+        "src": "assets/resources/GeoSolutions.png"
+      },
+      {
+        "title": "kepler.gl",
+        "subtitle": "Make an impact with your location data",
+        "href": "https://kepler.gl/",
+        "src": "assets/libraries/kepler.png",
+        "group": "Other"
+      },
+
+      {
+        "title": "Material Design",
+        "subtitle": "Build beautiful products, faster.",
+        "href": "https://material.io/",
+        "src": "assets/screenshots/material.png"
+      },
+      {
+        "title": "TinyPNG",
+        "subtitle": "Smart PNG and JPEG compression",
+        "href": "https://tinypng.com/",
+        "src": "assets/resources/tinypng.png"
+      },
+      {
+        "title": "Unsplash",
+        "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
+        "href": "https://unsplash.com/",
+        "src": "assets/screenshots/unsplash.png"
       }
     ]
   }
