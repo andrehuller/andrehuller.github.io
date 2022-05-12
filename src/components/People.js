@@ -164,10 +164,16 @@ const People = {
     ],
     games: [
       {
-        "title": "Donkey Kong Country", // Prefer (U) version
+        "title": "Donkey Kong Country",
         "src": "assets/images/Donkey Kong Country.jpg",
         "rating": 4.5,
         "difficulty": 3
+      },
+      {
+        "title": "Super Ghouls 'n Ghosts",
+        "src": "assets/images/Super Ghouls 'n Ghosts.jpg",
+        "rating": 4.5,
+        "difficulty": 4
       },
       {
         "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
