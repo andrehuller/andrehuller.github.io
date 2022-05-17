@@ -1,4 +1,4 @@
-const People = {
+const YouTube = {
   template: `
     <v-container fluid>
       <v-row>
@@ -9,19 +9,26 @@ const People = {
         >
           <v-card
             :href="'https://youtu.be/' + video.id"
+            target="_blank"
             class="fill-height d-flex flex-column"
           >
             <v-img
               :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'"
-              style="background: black;"
+              style="background: black"
             ></v-img>
-            <v-card-title>
-              {{ video.title }}
-            </v-card-title>
-            <v-card-subtitle>
-              {{ video.subtitle }}
-            </v-card-subtitle>
-          </v-card
+            <v-list>
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title>
+                    {{ video.title }}
+                  </v-list-item-title>
+                  <v-list-item-subtitle>
+                    {{ video.subtitle }}
+                  </v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
+          </v-card>
         </v-col>
       </v-row>
       <!--
@@ -50,50 +57,6 @@ const People = {
         </v-col>
       </v-row>
       -->
-      <v-row>
-        <v-col sm="12" md="6" lg="3"
-          v-for="game in games"
-          :key="game.title"
-        >
-          <v-card>
-            <v-img
-              :src="game.src"
-              height="280px"
-            ></v-img>
-            <v-card-title>
-              {{ game.title }}
-            </v-card-title>
-            <v-card-text>
-              <v-simple-table>
-                <tr>
-                  <td>
-                    Rating:
-                  </td>
-                  <td align="right">
-                    <v-rating
-                      :value="game.rating"
-                      half-increments
-                      readonly
-                    ></v-rating>
-                  </td>
-                </tr>
-                <tr>
-                <td>
-                  Difficulty:
-                </td>
-                <td align="right">
-                  <v-rating
-                    :value="game.difficulty"
-                    half-increments
-                    readonly
-                  ></v-rating>
-                </td>
-              </tr>
-              </v-simple-table>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
     </v-container>
   `,
   data: () => ({
@@ -160,44 +123,11 @@ const People = {
         "id": "GO_rW0Bvy1I",
         "title": "Joe Rogan Experience #1491",
         "subtitle": "Bill Burr"
-      }
-    ],
-    games: [
-      {
-        "title": "Donkey Kong Country",
-        "src": "assets/images/Donkey Kong Country.jpg",
-        "rating": 4.5,
-        "difficulty": 3
       },
       {
-        "title": "Super Ghouls 'n Ghosts",
-        "src": "assets/images/Super Ghouls 'n Ghosts.jpg",
-        "rating": 4.5,
-        "difficulty": 4
-      },
-      {
-        "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
-        "src": "assets/images/Maui Mallard in Cold Shadow.jpg",
-        "rating": 4,
-        "difficulty": 3
-      },
-      {
-        "title": "Animaniacs",
-        "src": "assets/images/Animaniacs.png",
-        "rating": 4,
-        "difficulty": 4
-      },
-      {
-        "title": "The Mask", // Really Tough Bosses
-        "src": "assets/images/The Mask.jpg",
-        "rating": 3,
-        "difficulty": 3.5
-      },
-      {
-        "title": "The Lion King", // Played in Normal
-        "src": "assets/images/The Lion King.jpg",
-        "rating": 2,
-        "difficulty": 4
+        "id": "6SfPf-_OavY",
+        "title": "IF",
+        "subtitle": "Rudyard Kipling"
       }
     ]
   })

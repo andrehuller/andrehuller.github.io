@@ -104,13 +104,22 @@
               <v-list-item-title>Git</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          
-          <v-list-item to="/people" color="#25305E">
+
+          <v-list-item to="/games" color="#25305E">
             <v-list-item-icon>
-              <v-icon>mdi-account-group</v-icon>
+              <v-icon>mdi-gamepad</v-icon>
             </v-list-item-icon>
             <v-list-item-content>
-              <v-list-item-title>People</v-list-item-title>
+              <v-list-item-title>Games</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+
+          <v-list-item to="/youtube" color="#25305E">
+            <v-list-item-icon>
+              <v-icon>mdi-youtube</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
+              <v-list-item-title>YouTube</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
         </v-list>
@@ -248,13 +257,15 @@
   <script src="./src/components/Leaflet.js"></script>
   <script src="./src/components/Libraries.js"></script>
   <script src="./src/components/List.js"></script>
-  <script src="./src/components/People.js"></script>
   <script src="./src/components/POI.js"></script>
   <script src="./src/components/Portfolio.js"></script>
   <script src="./src/components/Tabs.js"></script>
   <script src="./src/components/TreeView.js"></script>
   <script src="./src/components/Unsplash.js"></script>
   <script src="./src/components/Work.js"></script>
+
+  <script src="./src/components/Games.js"></script>
+  <script src="./src/components/YouTube.js"></script>
 
   <script>
     const Carousel = {
@@ -327,11 +338,13 @@
       
       { path: '/git', component: Git },
       
-      { path: '/people', component: People },
       
       { path: '/portfolio', component: Portfolio },
       { path: '/work', component: Work },
       { path: '/poi', component: POI },
+
+      { path: '/games', component: Games },
+      { path: '/youtube', component: YouTube },
       
       { path: '/login', component: Login }
     ]
