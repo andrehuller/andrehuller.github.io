@@ -82,7 +82,7 @@ const Games = {
         "difficulty": 3
       },
       {
-        "title": "Donkey Kong Country 2", // Diddy's Kong Quest
+        "title": "Donkey Kong Country 2", // Diddy's Kong Quest - Bonus Content: The Lost World
         "src": "assets/images/Donkey Kong Country 2: Diddy's Kong Quest.png",
         "rating": 4.5,
         "difficulty": 3.5
@@ -90,6 +90,12 @@ const Games = {
       {
         "title": "Super Ghouls 'n Ghosts",
         "src": "assets/images/Super Ghouls 'n Ghosts.jpg",
+        "rating": 4.5,
+        "difficulty": 4
+      },
+      {
+        "title": "Hagane",
+        "src": "assets/images/Hagane.jpg",
         "rating": 4.5,
         "difficulty": 4
       },
