@@ -43,7 +43,7 @@
         app
       >
         <v-list dense nav>
-          <v-list-item to="/" color="#25305E">
+          <v-list-item to="/">
             <v-list-item-icon>
               <v-icon>mdi-vuetify</v-icon>
             </v-list-item-icon>
@@ -54,7 +54,7 @@
         </v-list>
         <v-divider></v-divider>
         <v-list dense nav>
-          <v-list-item to="/leaflet" color="#25305E">
+          <v-list-item to="/leaflet">
             <v-list-item-icon>
               <v-icon>mdi-map</v-icon>
             </v-list-item-icon>
@@ -63,7 +63,7 @@
             </v-list-item-content>
           </v-list-item>
           
-          <v-list-item to="/unsplash" color="#25305E">
+          <v-list-item to="/unsplash">
             <v-list-item-icon>
               <v-icon>mdi-image</v-icon>
             </v-list-item-icon>
@@ -79,7 +79,6 @@
             v-for="component in components"
             :key="component.title"
             :to="component.route"
-            color="#25305E"
           >
             <v-list-item-icon>
               <v-icon>
@@ -96,7 +95,7 @@
         
         <v-divider></v-divider>
         <v-list dense nav>
-          <v-list-item to="/git" color="#25305E">
+          <v-list-item to="/git">
             <v-list-item-icon>
               <v-icon>mdi-git</v-icon>
             </v-list-item-icon>
@@ -105,7 +104,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/games" color="#25305E">
+          <v-list-item to="/games">
             <v-list-item-icon>
               <v-icon>mdi-gamepad</v-icon>
             </v-list-item-icon>
@@ -114,7 +113,7 @@
             </v-list-item-content>
           </v-list-item>
 
-          <v-list-item to="/youtube" color="#25305E">
+          <v-list-item to="/youtube">
             <v-list-item-icon>
               <v-icon>mdi-youtube</v-icon>
             </v-list-item-icon>
@@ -126,7 +125,7 @@
         
         <v-divider></v-divider>
         <v-list dense nav>
-          <v-list-item to="/portfolio" color="#25305E">
+          <v-list-item to="/portfolio">
             <v-list-item-icon>
               <v-icon>mdi-view-grid</v-icon>
             </v-list-item-icon>
@@ -134,7 +133,7 @@
               <v-list-item-title>Portfolio</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/work" color="#25305E">
+          <v-list-item to="/work">
             <v-list-item-icon>
               <v-icon>mdi-account-hard-hat</v-icon>
             </v-list-item-icon>
@@ -142,7 +141,7 @@
               <v-list-item-title>Work</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <v-list-item to="/poi" color="#25305E">
+          <v-list-item to="/poi">
             <v-list-item-icon>
               <v-icon>mdi-map-marker</v-icon>
             </v-list-item-icon>
@@ -154,11 +153,11 @@
       </v-navigation-drawer>
       
       <v-app-bar
-        color="#25305E"
         app
         clipped-left
+        color="#25305E"
         dark
-      >
+      ><!--  -->
         <v-app-bar-nav-icon
           @click.stop="drawer = !drawer"
         ></v-app-bar-nav-icon>
@@ -166,6 +165,7 @@
           <span class="hidden-sm-and-down">github.io</span>
         </v-toolbar-title>
         
+        <!--
         <v-text-field
           color="#40403E"
           prepend-inner-icon="mdi-magnify"
@@ -173,6 +173,7 @@
           class="hidden-sm-and-down"
           clearable flat hide-details solo-inverted
         ></v-text-field>
+        -->
         <v-spacer></v-spacer>
 
         <v-tooltip bottom>

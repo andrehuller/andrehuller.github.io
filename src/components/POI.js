@@ -482,11 +482,6 @@ const POI = {
           transparent: true,
           // tiled: true,
           // feature_count: 500
-        }),
-        'Regionais SESA (2008)': L.tileLayer.wms('https://geoserver.pr.gov.br/geoserver/ows', {
-          layers: 'sesa:regional_sesa_site_pol_p29192_a2008',
-          format: 'image/png',
-          transparent: true
         })
       }, {
         collapsed: false
