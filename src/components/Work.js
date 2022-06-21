@@ -428,30 +428,6 @@ const Work = {
         name: 'Outros',
         items: [
           {
-            title: 'Here',
-            subtitle: 'https://www.here.com/',
-            href: 'https://www.here.com/',
-            screenshot: 'assets/screenshots/here.jpg'
-          },
-          {
-            title: 'MapMaker Interactive',
-            subtitle: 'National Geographic',
-            href: 'https://mapmaker.nationalgeographic.org/',
-            screenshot: 'assets/screenshots/mapmaker.jpg'
-          },
-          {
-            title: 'MapQuest',
-            subtitle: 'https://www.mapquest.com/',
-            href: 'https://www.mapquest.com/',
-            screenshot: 'assets/screenshots/mapquest.png'
-          },
-          {
-            title: 'OneZoom Tree of Life Explorer',
-            subtitle: 'https://www.onezoom.org/',
-            href: 'https://www.onezoom.org/',
-            screenshot: 'assets/screenshots/onezoom.png'
-          },
-          {
             title: 'Governo Federal',
             subtitle: 'gov.br',
             href: 'https://www.gov.br/pt-br',

@@ -475,13 +475,25 @@ const POI = {
         'Topographic': L.esri.basemapLayer('Topographic').addTo(this.map),
         'Imagery': L.esri.basemapLayer('Imagery'),
       }, {
-        'Municípios do Paraná': L.tileLayer.wms('https://geoservertre.pr.gov.br/geoserver/ows', {
-          layers: 'itcg:municipios_pol_p31982_e50',
+        'GRUMP v1: Mean Geographic Unit Area': L.tileLayer.wms('https://sedac.ciesin.columbia.edu/geoserver/ows', {
+          layers: 'grump-v1:grump-v1-land-geographic-unit-area',
           format: 'image/png',
-          // info_format: 'application/json',
-          transparent: true,
-          // tiled: true,
-          // feature_count: 500
+          transparent: true
+        }),
+        'Terrestrial Biomes from WWF': L.tileLayer.wms('https://sedac.ciesin.columbia.edu/geoserver/ows', {
+          layers: 'other:wwf-terrestrial-biomes',
+          format: 'image/png',
+          transparent: true
+        }),
+        'EPI 2010: Air Pollution Effects on Human Health': L.tileLayer.wms('https://sedac.ciesin.columbia.edu/geoserver/ows', {
+          layers: 'epi:epi-environmental-performance-index-2010_air-pollution-effects-on-human-health',
+          format: 'image/png',
+          transparent: true
+        }),
+        'Wildareas: Last of the Wild v2': L.tileLayer.wms('https://sedac.ciesin.columbia.edu/geoserver/ows', {
+          layers: 'wildareas-v2:wildareas-v2-last-of-the-wild-geographic',
+          format: 'image/png',
+          transparent: true
         })
       }, {
         collapsed: false
@@ -509,45 +521,7 @@ const POI = {
         marker.bindPopup(L.Util.template('<b>{title}</b><p>{address}</p>', this.items[i]))
         markers.addLayer(marker)
       }
-
-      /*
-      axios.get('https://geoservertre.pr.gov.br/geoserver/ows', {
-        params: {
-          service: 'wfs',
-          version: '2.0.0',
-          outputFormat: 'application/json',
-          exceptions: 'application/json',
-          request: 'GetFeature',
-          typeNames: 'seed:escola_estadual_pto_p4674',
-          srsName: 'EPSG:4674'
-        }
-      })
-        .then(response => {
-          console.log(response)
-          
-          var geojson = L.geoJson(response.data, {
-            pointToLayer: function (feature, latlng) {
-              return L.marker(latlng)
-            }
-            // ,
-            // onEachFeature: (feature, layer) => {
-            //   var popup = L.Util.template(this.template, feature.properties)
-            //   layer.bindPopup(popup)
-            // }
-          })
-
-          markers.addLayer(geojson)
-          // this.map.addLayer(this.markers)
-          // this.map.fitBounds(this.geojson.getBounds())
-        })
-        .catch(error => {
-          console.log(error)
-        })
-        .finally(() => {
-          // ..
-          console.log(markers)
-        })
-      */
+      
       this.map.addLayer(markers)
       this.map.fitBounds(L.latLngBounds(latlngs))
 

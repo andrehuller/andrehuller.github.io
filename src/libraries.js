@@ -489,6 +489,12 @@ const categories = [
         "highlight": true
       },
       {
+        "title": "Turf.js",
+        "subtitle": "Advanced geospatial analysis for browsers and Node.js",
+        "href": "https://turfjs.org/",
+        "src": "assets/libraries/Turf.png"
+      },
+      {
         "title": "OpenLayers",
         "subtitle": "A high-performance, feature-packed library for all your mapping needs",
         "href": "https://openlayers.org/",
@@ -747,7 +753,7 @@ const categories = [
     "items": [
       {
         "title": "Airflow",
-        "subtitle": "Airflow is a platform created by the community to programmatically author, schedule and monitor workflows.",
+        "subtitle": "Programmatically author, schedule and monitor workflows.",
         "href": "https://airflow.apache.org/",
         "src": "assets/resources/Airflow.png"
       },
@@ -757,18 +763,41 @@ const categories = [
         "src": "assets/resources/GeoSolutions.png"
       },
       {
+        "title": "Here",
+        "subtitle": "https://www.here.com/",
+        "href": "https://www.here.com/",
+        "src": "assets/screenshots/here.jpg"
+      },
+      {
         "title": "kepler.gl",
         "subtitle": "Make an impact with your location data",
         "href": "https://kepler.gl/",
         "src": "assets/libraries/kepler.png",
         "group": "Other"
       },
-
+      {
+        "title": "MapMaker Interactive",
+        "subtitle": "National Geographic",
+        "href": "https://mapmaker.nationalgeographic.org/",
+        "src": "assets/screenshots/mapmaker.jpg"
+      },
+      {
+        "title": "MapQuest",
+        "subtitle": "https://www.mapquest.com/",
+        "href": "https://www.mapquest.com/",
+        "src": "assets/screenshots/mapquest.png"
+      },
       {
         "title": "Material Design",
         "subtitle": "Build beautiful products, faster.",
         "href": "https://material.io/",
         "src": "assets/screenshots/material.png"
+      },
+      {
+        "title": "OneZoom Tree of Life Explorer",
+        "subtitle": "https://www.onezoom.org/",
+        "href": "https://www.onezoom.org/",
+        "src": "assets/screenshots/onezoom.png"
       },
       {
         "title": "TinyPNG",
@@ -781,6 +810,11 @@ const categories = [
         "subtitle": "The internet’s source of freely-usable images. Powered by creators everywhere.",
         "href": "https://unsplash.com/",
         "src": "assets/screenshots/unsplash.png"
+      },
+      {
+        "title": "ZDoom",
+        "href": "https://www.zdoom.org",
+        "src": "assets/screenshots/ZDoom.png"
       }
     ]
   }

@@ -37,9 +37,9 @@ const Libraries = {
           :key="category.name"
           style="background-color: #FAFAFA;"
         ><!-- overflow-y: auto; max-height: 856px; -->
-          <v-container>
+          <v-container fluid>
             <v-row>
-              <v-col cols="12" lg="3"
+              <v-col sm="12" md="6" lg="3"
                 v-for="library in category.items"
                 :key="library.title"
               >
