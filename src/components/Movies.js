@@ -32,6 +32,7 @@ const Movies = {
                     prepend-inner-icon="mdi-magnify"
                   ></v-autocomplete>
                 </v-col>
+                <!--
                 <v-col lg="4">
                   <v-select
                     clearable
@@ -39,6 +40,7 @@ const Movies = {
                     hide-details
                   ></v-select>
                 </v-col>
+                -->
               </v-row>
             </v-container>
           </v-toolbar>

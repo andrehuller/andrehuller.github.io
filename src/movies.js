@@ -144,6 +144,11 @@ const movies = [
     "director": "Orson Welles",
     "year": 1948
   },
+  {
+    "title": "The Treasure of the Sierra Madre",
+    "director": "John Huston",
+    "year": 1948
+  },
 
   {
     "title": "In a Lonely Place",
@@ -252,6 +257,12 @@ const movies = [
     "title": "12 Angry Men",
     "director": "Sidney Lumet",
     "year": 1957
+  },
+  {
+    "title": "An Affair to Remember",
+    "director": "Leo McCarey",
+    "year": 1957,
+    "rating": 8
   },
   {
     "title": "The Seventh Seal",
@@ -940,6 +951,16 @@ const movies = [
     "year": 2000
   },
   {
+    "title": "In the Mood for Love",
+    "director": "Wong Kar-wai",
+    "year": 2000
+  },
+  {
+    "title": "Memento",
+    "director": "Christopher Nolan",
+    "year": 2000
+  },
+  {
     "title": "Requiem for a Dream",
     "director": "Darren Aronofsky",
     "year": 2000
@@ -980,10 +1001,20 @@ const movies = [
     "director": "Wes Anderson",
     "year": 2001
   },
+  {
+    "title": "Y tu mamá también",
+    "director": "Alfonso Cuarón",
+    "year": 2001
+  },
 
   {
     "title": "City of God",
     "director": "Fernando Meirelles & Kátia Lund",
+    "year": 2002
+  },
+  {
+    "title": "Punch-Drunk Love",
+    "director": "Paul Thomas Anderson",
     "year": 2002
   },
   {
@@ -995,6 +1026,11 @@ const movies = [
   {
     "title": "Dogville",
     "director": "Lars von Trier",
+    "year": 2003
+  },
+  {
+    "title": "Elephant",
+    "director": "Gus Van Sant",
     "year": 2003
   },
   {
@@ -1023,6 +1059,11 @@ const movies = [
     "director": "Michel Gondry",
     "year": 2004
   },
+  {
+    "title": "Million Dollar Baby",
+    "director": "Clint Eastwood",
+    "year": 2004
+  },
 
   {
     "title": "A History of Violence",
@@ -1031,6 +1072,11 @@ const movies = [
   },
 
   {
+    "title": "Children of Men",
+    "director": "Alfonso Cuarón",
+    "year": 2006
+  },
+  {
     "title": "Inland Empire",
     "director": "David Lynch",
     "year": 2006
@@ -1038,6 +1084,11 @@ const movies = [
   {
     "title": "Pan's Labyrinth",
     "director": "Guillermo del Toro",
+    "year": 2006
+  },
+  {
+    "title": "The Lives of Others",
+    "director": "Florian Henckel von Donnersmarck",
     "year": 2006
   },
 
@@ -1050,6 +1101,32 @@ const movies = [
     "title": "There Will Be Blood",
     "director": "Paul Thomas Anderson",
     "year": 2007
+  },
+  {
+    "title": "Zodiac",
+    "director": "David Fincher",
+    "year": 2007
+  },
+
+  {
+    "title": "Let the Right One In",
+    "director": "Tomas Alfredson",
+    "year": 2008
+  },
+  {
+    "title": "Synecdoche, New York",
+    "director": "Charlie Kaufman",
+    "year": 2008
+  },
+  {
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "year": 2008
+  },
+  {
+    "title": "The Hurt Locker",
+    "director": "Kathryn Bigelow",
+    "year": 2008
   },
 
   {
@@ -1070,14 +1147,41 @@ const movies = [
   },
 
   {
+    "title": "A Separation",
+    "director": "Asghar Farhadi",
+    "year": 2011
+  },
+  {
     "title": "Melancholia",
     "director": "Lars von Trier",
     "year": 2011
   },
 
   {
+    "title": "Blue is the Warmest Colour",
+    "director": "Abdellatif Kechiche",
+    "year": 2013
+  },
+  {
+    "title": "Inside Llewyn Davis",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 2013
+  },
+
+  {
     "title": "Boyhood",
     "director": "Richard Linklater",
     "year": 2014
+  },
+
+  {
+    "title": "Once Upon a Time... in Hollywood",
+    "director": "Quentin Tarantino",
+    "year": 2019
+  },
+  {
+    "title": "Parasite",
+    "director": "Bong Joon-ho",
+    "year": 2019
   }
 ]
