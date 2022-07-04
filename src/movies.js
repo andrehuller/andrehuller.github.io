@@ -24,9 +24,15 @@ const movies = [
     "director": "Buster Keaton",
     "year": 1926
   },
+
   {
     "title": "Metropolis",
     "director": "Fritz Lang",
+    "year": 1927
+  },
+  {
+    "title": "Sunrise",
+    "director": "F.W. Murnau",
     "year": 1927
   },
 
@@ -75,11 +81,22 @@ const movies = [
   },
 
   {
+    "title": "The Rules of the Game",
+    "director": "Jean Renoir",
+    "year": 1939
+  },
+
+  {
     "title": "Rebecca",
     "director": "Alfred Hitchcock",
     "year": 1940
   },
 
+  {
+    "title": "Citizen Kane",
+    "director": "Orson Welles",
+    "year": 1941
+  },
   {
     "title": "How Green Was My Valley",
     "director": "John Ford",
@@ -230,10 +247,20 @@ const movies = [
     "director": "Henri-Georges Clouzot",
     "year": 1953
   },
+  {
+    "title": "Tokyo Story",
+    "director": "Yasujiro Ozu",
+    "year": 1953
+  },
 
   {
     "title": "Sansho the Bailiff",
     "director": "Kenji Mizoguchi",
+    "year": 1954
+  },
+  {
+    "title": "Seven Samurai",
+    "director": "Akira Kurosawa",
     "year": 1954
   },
 
@@ -245,6 +272,11 @@ const movies = [
   {
     "title": "Invasion of the Body Snatchers",
     "director": "Don Siegel",
+    "year": 1956
+  },
+  {
+    "title": "The Searchers",
+    "director": "John Ford",
     "year": 1956
   },
   {
@@ -288,6 +320,11 @@ const movies = [
   {
     "title": "Touch of Evil",
     "director": "Orson Welles",
+    "year": 1958
+  },
+  {
+    "title": "Vertigo",
+    "director": "Alfred Hitchcock",
     "year": 1958
   },
 
@@ -476,6 +513,11 @@ const movies = [
   },
 
   {
+    "title": "2001: A Space Odyssey",
+    "director": "Stanley Kubrick",
+    "year": 1968
+  },
+  {
     "title": "Hour of the Wolf",
     "director": "Ingmar Bergman",
     "year": 1968
@@ -524,6 +566,12 @@ const movies = [
     "year": 1971
   },
   
+  {
+    "title": "The Godfather",
+    "director": "Francis Ford Coppola",
+    "year": 1972
+  },
+
   {
     "title": "Amarcord",
     "director": "Federico Fellini",
@@ -630,6 +678,11 @@ const movies = [
     "year": 1978
   },
 
+  {
+    "title": "Apocalypse Now",
+    "director": "Francis Ford Coppola",
+    "year": 1979
+  },
   {
     "title": "Monty Python's Life of Brian",
     "director": "Terry Jones",

@@ -3,12 +3,14 @@ const Movies = {
     <v-container fluid>
       <v-data-iterator
         :items="filteredItems"
-        :items-per-page="40"
+        :items-per-page="20"
         :search="search"
       >
         <template v-slot:header>
           <v-toolbar
+            color="#25305E"
             class="mb-3"
+            dark
           >
             <v-container fluid>
               <v-row>
