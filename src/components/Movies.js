@@ -5,6 +5,7 @@ const Movies = {
         :items="filteredItems"
         :items-per-page="20"
         :search="search"
+        :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
       >
         <template v-slot:header>
           <v-toolbar
@@ -24,6 +25,7 @@ const Movies = {
                     label="Search"
                   ></v-text-field>
                 </v-col>
+                <!--
                 <v-col lg="4">
                   <v-autocomplete
                     label="Director"
@@ -34,6 +36,7 @@ const Movies = {
                     prepend-inner-icon="mdi-magnify"
                   ></v-autocomplete>
                 </v-col>
+                -->
                 <!--
                 <v-col lg="4">
                   <v-select
@@ -54,7 +57,7 @@ const Movies = {
               :key="item.title"
               cols="12" sm="12" md="6" lg="3"
             >
-              <v-card>
+              <v-card class="fill-height d-flex flex-column">
                 <v-img
                   :src="'assets/images/' + item.title + '.jpg'"
                   height="198px"
@@ -64,7 +67,8 @@ const Movies = {
                 </v-card-title>
                 <v-card-subtitle>
                   {{ item.director }} / {{ item.year }}
-                </v-card-subtitle>                
+                </v-card-subtitle>
+                <v-spacer></v-spacer>
               </v-card>
             </v-col>
           </v-row>

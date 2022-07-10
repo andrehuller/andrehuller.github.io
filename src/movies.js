@@ -9,11 +9,18 @@ const movies = [
     "director": "Charles Chaplin",
     "year": 1921
   },
+
+  {
+    "title": "Battleship Potemkin",
+    "director": "Sergei Eisenstein",
+    "year": 1925
+  },
   {
     "title": "The Gold Rush",
     "director": "Charles Chaplin",
     "year": 1925
   },
+
   {
     "title": "Faust",
     "director": "F.W. Murnau",
@@ -34,6 +41,29 @@ const movies = [
     "title": "Sunrise",
     "director": "F.W. Murnau",
     "year": 1927
+  },
+
+  {
+    "title": "The Passion of Joan of Arc",
+    "director": "Carl Theodor Dreyer",
+    "year": 1928
+  },
+
+  {
+    "title": "Man with a Movie Camera",
+    "director": "Dziga Vertov",
+    "year": 1929
+  },
+
+  {
+    "title": "City Lights",
+    "director": "Charles Chaplin",
+    "year": 1931
+  },
+  {
+    "title": "M",
+    "director": "Fritz Lang",
+    "year": 1931
   },
 
   {
@@ -62,6 +92,18 @@ const movies = [
     "title": "Top Hat",
     "director": "Mark Sandrich",
     "year": 1935
+  },
+
+  {
+    "title": "Modern Times",
+    "director": "Charles Chaplin",
+    "year": 1936
+  },
+
+  {
+    "title": "La Grande illusion",
+    "director": "Jean Renoir",
+    "year": 1937
   },
 
   {
@@ -110,6 +152,11 @@ const movies = [
     "year": 1942
   },
   {
+    "title": "The Magnificent Ambersons",
+    "director": "Orson Welles",
+    "year": 1942
+  },
+  {
     "title": "To Be or Not to Be",
     "director": "Ernst Lubitsch",
     "year": 1942
@@ -134,6 +181,11 @@ const movies = [
   },
 
   {
+    "title": "Les Enfants du paradis",
+    "director": "Marcel Carné",
+    "year": 1945
+  },
+  {
     "title": "Mildred Pierce",
     "director": "Michael Curtiz",
     "year": 1945
@@ -157,6 +209,11 @@ const movies = [
   },
 
   {
+    "title": "Bicycle Thieves",
+    "director": "Vittorio De Sica",
+    "year": 1948
+  },
+  {
     "title": "The Lady from Shanghai",
     "director": "Orson Welles",
     "year": 1948
@@ -165,6 +222,17 @@ const movies = [
     "title": "The Treasure of the Sierra Madre",
     "director": "John Huston",
     "year": 1948
+  },
+
+  {
+    "title": "Late Spring",
+    "director": "Yasujiro Ozu",
+    "year": 1949
+  },
+  {
+    "title": "The Third Man",
+    "director": "Carol Reed",
+    "year": 1949
   },
 
   {
@@ -231,7 +299,12 @@ const movies = [
     "director": "Charles Chaplin",
     "year": 1952
   },
-
+  {
+    "title": "Singin' in the Rain",
+    "director": "Stanley Donen",
+    "year": 1952
+  },
+  
   {
     "title": "I Vitelloni",
     "director": "Federico Fellini",
@@ -254,6 +327,16 @@ const movies = [
   },
 
   {
+    "title": "La Strada",
+    "director": "Federico Fellini",
+    "year": 1954
+  },
+  {
+    "title": "Rear Window",
+    "director": "Alfred Hitchcock",
+    "year": 1954
+  },
+  {
     "title": "Sansho the Bailiff",
     "director": "Kenji Mizoguchi",
     "year": 1954
@@ -262,6 +345,22 @@ const movies = [
     "title": "Seven Samurai",
     "director": "Akira Kurosawa",
     "year": 1954
+  },
+  {
+    "title": "Voyage in Italy",
+    "director": "Roberto Rossellini",
+    "year": 1954
+  },
+
+  {
+    "title": "Ordet",
+    "director": "Carl Theodor Dreyer",
+    "year": 1955
+  },
+  {
+    "title": "The Night of the Hunter",
+    "director": "Charles Laughton",
+    "year": 1955
   },
 
   {
@@ -334,8 +433,18 @@ const movies = [
     "year": 1959
   },
   {
+    "title": "North by Northwest",
+    "director": "Alfred Hitchcock",
+    "year": 1959
+  },
+  {
     "title": "Pickpocket",
     "director": "Robert Bresson",
+    "year": 1959
+  },
+  {
+    "title": "Rio Bravo",
+    "director": "Howard Hawks",
     "year": 1959
   },
   {
@@ -343,7 +452,7 @@ const movies = [
     "director": "Billy Wilder",
     "year": 1959
   },
-
+  
   {
     "title": "Breathless",
     "director": "Jean-Luc Godard",
@@ -382,6 +491,11 @@ const movies = [
   {
     "title": "Spartacus",
     "director": "Stanley Kubrick",
+    "year": 1960
+  },
+  {
+    "title": "The Apartment",
+    "director": "Billy Wilder",
     "year": 1960
   },
 
@@ -433,8 +547,18 @@ const movies = [
     "year": 1963
   },
   {
+    "title": "Contempt",
+    "director": "Jean-Luc Godard",
+    "year": 1963
+  },
+  {
     "title": "High and Low",
     "director": "Akira Kurosawa",
+    "year": 1963
+  },
+  {
+    "title": "The Leopard",
+    "director": "Luchino Visconti",
     "year": 1963
   },
   {
@@ -446,6 +570,11 @@ const movies = [
   {
     "title": "Band of Outsiders",
     "director": "Jean-Luc Godard",
+    "year": 1964
+  },
+  {
+    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "director": "Stanley Kubrick",
     "year": 1964
   },
   {
@@ -466,6 +595,11 @@ const movies = [
   
   {
     "title": "Alphaville",
+    "director": "Jean-Luc Godard",
+    "year": 1965
+  },
+  {
+    "title": "Pierrot le fou",
     "director": "Jean-Luc Godard",
     "year": 1965
   },
@@ -501,6 +635,11 @@ const movies = [
     "year": 1966
   },
   {
+    "title": "The Battle of Algiers",
+    "director": "Gillo Pontecorvo",
+    "year": 1966
+  },
+  {
     "title": "Who's Afraid of Virginia Woolf?",
     "director": "Mike Nichols",
     "year": 1966
@@ -531,6 +670,11 @@ const movies = [
   {
     "title": "Butch Cassidy and the Sundance Kid",
     "director": "George Roy Hill",
+    "year": 1969
+  },
+  {
+    "title": "The Wild Bunch",
+    "director": "Sam Peckinpah",
     "year": 1969
   },
 
@@ -598,6 +742,11 @@ const movies = [
     "year": 1973
   },
 
+  {
+    "title": "Chinatown",
+    "director": "Roman Polanski",
+    "year": 1974
+  },
   {
     "title": "The Godfather Part II",
     "director": "Francis Ford Coppola",
@@ -688,6 +837,11 @@ const movies = [
     "director": "Terry Jones",
     "year": 1979
   },
+  {
+    "title": "Stalker",
+    "director": "Andrei Tarkovsky",
+    "year": 1979
+  },
 
   {
     "title": "Kagemusha",
@@ -719,6 +873,11 @@ const movies = [
   {
     "title": "Blade Runner",
     "director": "Ridley Scott",
+    "year": 1982
+  },
+  {
+    "title": "Fanny and Alexander",
+    "director": "Ingmar Bergman",
     "year": 1982
   },
 
