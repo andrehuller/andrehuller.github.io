@@ -423,35 +423,6 @@ const Work = {
             screenshot: 'assets/screenshots/viaje-parana.png'
           }
         ]
-      },
-      {
-        name: 'Outros',
-        items: [
-          {
-            title: 'IBGE',
-            subtitle: 'Instituto Brasileiro de Geografia e Estatística',
-            href: 'https://www.ibge.gov.br/',
-            screenshot: 'assets/screenshots/ibge.png',
-          },
-          {
-            title: 'INDE',
-            subtitle: 'Infraestrutura Nacional de Dados Espaciais',
-            href: 'https://www.inde.gov.br/',
-            screenshot: 'assets/screenshots/inde.png'
-          },
-          {
-            title: 'TRE-PR',
-            subtitle: 'Tribunal Regional Eleitoral do Paraná',
-            href: 'https://www.tre-pr.jus.br/',
-            screenshot: 'assets/screenshots/tre-pr.png'
-          },
-          {
-            title: 'Mapa da Cultura',
-            subtitle: 'mapas.cultura.gov.br',
-            href: 'http://mapas.cultura.gov.br/',
-            screenshot: 'assets/screenshots/mapa-da-cultura.png'
-          }
-        ]
       }
     ]
   })

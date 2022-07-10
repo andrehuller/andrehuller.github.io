@@ -3,15 +3,13 @@ const Movies = {
     <v-container fluid>
       <v-data-iterator
         :items="filteredItems"
-        :items-per-page="20"
+        :items-per-page="40"
         :search="search"
         :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
       >
         <template v-slot:header>
           <v-toolbar
-            color="#25305E"
             class="mb-3"
-            dark
           >
             <v-container fluid>
               <v-row>
@@ -58,6 +56,7 @@ const Movies = {
               cols="12" sm="12" md="6" lg="3"
             >
               <v-card class="fill-height d-flex flex-column">
+              <!-- :color="item.rating == 10 ? '#dacfa1' : item.rating == 9 ? '#bcbec0' : '#967444'" -->
                 <v-img
                   :src="'assets/images/' + item.title + '.jpg'"
                   height="198px"
@@ -89,9 +88,9 @@ const Movies = {
       if (this.directors.indexOf(this.items[i].director) < 0) {
         this.directors.push(this.items[i].director)
       }
-      // if (!this.items[i].rating) {
+      if (this.items[i].rating != '?') {
         this.filteredItems.push(this.items[i])
-      // }
+      }
     }
 
     this.directors = this.directors.sort()

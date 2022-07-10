@@ -2,85 +2,110 @@ const movies = [
   {
     "title": "The Birth of a Nation",
     "director": "D.W. Griffith",
-    "year": 1915
+    "year": 1915,
+    "rating": "?"
+  },
+  {
+    "title": "Intolerance",
+    "director": "D.W. Griffith",
+    "year": 1916
   },
   {
     "title": "The Kid",
     "director": "Charles Chaplin",
-    "year": 1921
+    "year": 1921,
+    "rating": 9
+  },
+  {
+    "title": "Nosferatu",
+    "director": "F.W. Murnau",
+    "year": 1922
   },
 
   {
     "title": "Battleship Potemkin",
     "director": "Sergei Eisenstein",
-    "year": 1925
+    "year": 1925,
+    "rating": 10
   },
   {
     "title": "The Gold Rush",
     "director": "Charles Chaplin",
-    "year": 1925
+    "year": 1925,
+    "rating": 10
   },
 
   {
     "title": "Faust",
     "director": "F.W. Murnau",
-    "year": 1926
+    "year": 1926,
+    "rating": 9
   },
   {
     "title": "The General",
     "director": "Buster Keaton",
-    "year": 1926
+    "year": 1926,
+    "rating": 9
   },
 
   {
     "title": "Metropolis",
     "director": "Fritz Lang",
-    "year": 1927
+    "year": 1927,
+    "rating": 10
   },
   {
     "title": "Sunrise",
     "director": "F.W. Murnau",
-    "year": 1927
+    "year": 1927,
+    "rating": 9
   },
 
   {
     "title": "The Passion of Joan of Arc",
     "director": "Carl Theodor Dreyer",
-    "year": 1928
+    "year": 1928,
+    "rating": "?"
   },
 
   {
     "title": "Man with a Movie Camera",
     "director": "Dziga Vertov",
-    "year": 1929
+    "year": 1929,
+    "rating": "?"
   },
 
   {
     "title": "City Lights",
     "director": "Charles Chaplin",
-    "year": 1931
+    "year": 1931,
+    "rating": 8
   },
   {
     "title": "M",
     "director": "Fritz Lang",
-    "year": 1931
+    "year": 1931,
+    "rating": 10
   },
 
   {
     "title": "I Was Born, But…",
     "director": "Yasujiro Ozu",
-    "year": 1932
+    "year": 1932,
+    "rating": 10
   },
 
   {
     "title": "It Happened One Night",
     "director": "Frank Capra",
-    "year": 1934
+    "year": 1934,
+    "rating": 9
   },
   {
     "title": "The Scarlet Empress",
     "director": "Josef von Sternberg",
-    "year": 1934
+    "year": 1934,
+    "rating": 10
   },
 
   {
@@ -123,8 +148,18 @@ const movies = [
   },
 
   {
+    "title": "Gone with the Wind",
+    "director": "Victor Fleming",
+    "year": 1939
+  },
+  {
     "title": "The Rules of the Game",
     "director": "Jean Renoir",
+    "year": 1939
+  },
+  {
+    "title": "The Wizard of Oz",
+    "director": "Victor Fleming",
     "year": 1939
   },
 
@@ -142,7 +177,8 @@ const movies = [
   {
     "title": "How Green Was My Valley",
     "director": "John Ford",
-    "year": 1941
+    "year": 1941,
+    "rating": "?"
   },
 
 
@@ -197,6 +233,11 @@ const movies = [
     "year": 1946
   },
   {
+    "title": "It's a Wonderful Life",
+    "director": "Frank Capra",
+    "year": 1946
+  },
+  {
     "title": "The Big Sleep",
     "director": "Howard Hawks",
     "year": 1946
@@ -211,6 +252,11 @@ const movies = [
   {
     "title": "Bicycle Thieves",
     "director": "Vittorio De Sica",
+    "year": 1948
+  },
+  {
+    "title": "Letter from an Unknown Woman",
+    "director": "Max Ophüls",
     "year": 1948
   },
   {
@@ -295,6 +341,11 @@ const movies = [
   },
 
   {
+    "title": "Ikiru",
+    "director": "Akira Kurosawa",
+    "year": 1952
+  },
+  {
     "title": "Limelight",
     "director": "Charles Chaplin",
     "year": 1952
@@ -308,6 +359,11 @@ const movies = [
   {
     "title": "I Vitelloni",
     "director": "Federico Fellini",
+    "year": 1953
+  },
+  {
+    "title": "Madame de...",
+    "director": "Max Ophüls",
     "year": 1953
   },
   {
@@ -433,6 +489,11 @@ const movies = [
     "year": 1959
   },
   {
+    "title": "Hiroshima mon amour",
+    "director": "Alain Resnais",
+    "year": 1959
+  },
+  {
     "title": "North by Northwest",
     "director": "Alfred Hitchcock",
     "year": 1959
@@ -500,6 +561,11 @@ const movies = [
   },
 
   {
+    "title": "Last Year at Marienbad",
+    "director": "Alain Resnais",
+    "year": 1961
+  },
+  {
     "title": "The Innocents",
     "director": "Jack Clayton",
     "year": 1961
@@ -526,6 +592,17 @@ const movies = [
     "year": 1962
   },
   {
+    "title": "Jules et Jim",
+    "director": "François Truffaut",
+    "year": 1962,
+    "rating": "?"
+  },
+  {
+    "title": "La Jetée",
+    "director": "Chris Marker",
+    "year": 1962
+  },
+  {
     "title": "Lawrence of Arabia",
     "director": "David Lean",
     "year": 1962
@@ -533,6 +610,16 @@ const movies = [
   {
     "title": "Lolita",
     "director": "Stanley Kubrick",
+    "year": 1962
+  },
+  {
+    "title": "L'Eclisse",
+    "director": "Michelangelo Antonioni",
+    "year": 1962
+  },
+  {
+    "title": "The Man Who Shot Liberty Valance",
+    "director": "John Ford",
     "year": 1962
   },
   {
@@ -679,6 +766,11 @@ const movies = [
   },
 
   {
+    "title": "The Conformist",
+    "director": "Bernardo Bertolucci",
+    "year": 1970
+  },
+  {
     "title": "The Private Life of Sherlock Holmes",
     "director": "Billy Wilder",
     "year": 1970
@@ -697,7 +789,8 @@ const movies = [
   {
     "title": "Harold and Maude",
     "director": "Hal Ashby",
-    "year": 1971
+    "year": 1971,
+    "rating": "?"
   },
   {
     "title": "The Last Picture Show",
@@ -710,6 +803,11 @@ const movies = [
     "year": 1971
   },
   
+  {
+    "title": "Aguirre: The Wrath of God",
+    "director": "Werner Herzog",
+    "year": 1972
+  },
   {
     "title": "The Godfather",
     "director": "Francis Ford Coppola",
@@ -741,7 +839,17 @@ const movies = [
     "director": "Robert Altman",
     "year": 1973
   },
+  {
+    "title": "The Spirit of the Beehive",
+    "director": "Victor Erice",
+    "year": 1973
+  },
 
+  {
+    "title": "A Woman Under the Influence",
+    "director": "John Cassavetes",
+    "year": 1974
+  },
   {
     "title": "Chinatown",
     "director": "Roman Polanski",
@@ -769,8 +877,23 @@ const movies = [
     "year": 1975
   },
   {
+    "title": "Jaws",
+    "director": "Steven Spielberg",
+    "year": 1975
+  },
+  {
     "title": "Monty Python and the Holy Grail",
     "director": "Terry Gilliam",
+    "year": 1975
+  },
+  {
+    "title": "Nashville",
+    "director": "Robert Altman",
+    "year": 1975
+  },
+  {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "director": "Milos Forman",
     "year": 1975
   },
   {
@@ -811,6 +934,11 @@ const movies = [
     "year": 1977
   },
   {
+    "title": "Star Wars",
+    "director": "George Lucas",
+    "year": 1977
+  },
+  {
     "title": "Suspiria",
     "director": "Dario Argento",
     "year": 1977
@@ -827,6 +955,11 @@ const movies = [
     "year": 1978
   },
 
+  {
+    "title": "Alien",
+    "director": "Ridley Scott",
+    "year": 1979
+  },
   {
     "title": "Apocalypse Now",
     "director": "Francis Ford Coppola",
@@ -863,6 +996,11 @@ const movies = [
     "director": "Irvin Kershner",
     "year": 1980
   },
+  {
+    "title": "The Shining",
+    "director": "Stanley Kubrick",
+    "year": 1980
+  },
 
   {
     "title": "Blow Out",
@@ -876,11 +1014,21 @@ const movies = [
     "year": 1982
   },
   {
+    "title": "E.T. The Extra-Terrestrial",
+    "director": "Steven Spielberg",
+    "year": 1982
+  },
+  {
     "title": "Fanny and Alexander",
     "director": "Ingmar Bergman",
     "year": 1982
   },
 
+  {
+    "title": "Sans soleil",
+    "director": "Chris Marker",
+    "year": 1983
+  },
   {
     "title": "Scarface",
     "director": "Brian De Palma",
@@ -897,6 +1045,11 @@ const movies = [
     "year": 1983
   },
 
+  {
+    "title": "Once Upon a Time in America",
+    "director": "Sergio Leone",
+    "year": 1984
+  },
   {
     "title": "The Terminator",
     "director": "James Cameron",
@@ -917,6 +1070,11 @@ const movies = [
   {
     "title": "Aliens",
     "director": "James Cameron",
+    "year": 1986
+  },
+  {
+    "title": "Blue Velvet",
+    "director": "David Lynch",
     "year": 1986
   },
   {
@@ -989,6 +1147,11 @@ const movies = [
     "year": 1989
   },
 
+  {
+    "title": "Close-Up",
+    "director": "Abbas Kiarostami",
+    "year": 1990
+  },
   {
     "title": "Edward Scissorhands",
     "director": "Tim Burton",
