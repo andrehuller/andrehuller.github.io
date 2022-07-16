@@ -25,13 +25,15 @@ const movies = [
   {
     "title": "Nosferatu",
     "director": "F.W. Murnau",
-    "year": 1922
+    "year": 1922,
+    "rating": 8
   },
 
   {
     "title": "The Last Laugh",
     "director": "F.W. Murnau",
-    "year": 1924
+    "year": 1924,
+    "rating": 10
   },
   {
     "title": "Sherlock Jr.",
@@ -115,6 +117,12 @@ const movies = [
     "year": 1931,
     "rating": 10
   },
+  {
+    "title": "Tabu",
+    "director": "F.W. Murnau",
+    "year": 1931,
+    "rating": 10
+  },
 
   {
     "title": "I Was Born, But…",
@@ -172,6 +180,11 @@ const movies = [
   {
     "title": "La Grande illusion",
     "director": "Jean Renoir",
+    "year": 1937
+  },
+  {
+    "title": "Snow White and the Seven Dwarfs",
+    "director": "David Hand",
     "year": 1937
   },
 
@@ -249,6 +262,16 @@ const movies = [
     "director": "Alfred Hitchcock",
     "year": 1940
   },
+  {
+    "title": "The Philadelphia Story",
+    "director": "George Cukor",
+    "year": 1940
+  },
+  {
+    "title": "The Shop Around the Corner",
+    "director": "Ernst Lubitsch",
+    "year": 1940
+  },
 
   {
     "title": "Citizen Kane",
@@ -265,6 +288,17 @@ const movies = [
     "title": "The Lady Eve",
     "director": "Preston Sturges",
     "year": 1941
+  },
+  {
+    "title": "The Maltese Falcon",
+    "director": "John Huston",
+    "year": 1941
+  },
+  {
+    "title": "Sullivan's Travels",
+    "director": "Preston Sturges",
+    "year": 1941,
+    "rating": 5
   },
 
 
@@ -285,6 +319,11 @@ const movies = [
   },
 
   {
+    "title": "Day of Wrath",
+    "director": "Carl Theodor Dreyer",
+    "year": 1943
+  },
+  {
     "title": "Shadow of a Doubt",
     "director": "Alfred Hitchcock",
     "year": 1943
@@ -293,6 +332,11 @@ const movies = [
   {
     "title": "Double Indemnity",
     "director": "Billy Wilder",
+    "year": 1944
+  },
+  {
+    "title": "Ivan the Terrible, Part 1",
+    "director": "Sergei Eisenstein",
     "year": 1944
   },
   {
@@ -305,6 +349,11 @@ const movies = [
     "director": "Howard Hawks",
     "year": 1944,
     "rating": 9
+  },
+  {
+    "title": "Meet Me in St. Louis",
+    "director": "Vincente Minnelli",
+    "year": 1944
   },
 
   {
@@ -540,6 +589,11 @@ const movies = [
     "year": 1953
   },
   {
+    "title": "Bride of Frankenstein",
+    "director": "James Whale",
+    "year": 1935
+  },
+  {
     "title": "I Vitelloni",
     "director": "Federico Fellini",
     "year": 1953
@@ -560,6 +614,11 @@ const movies = [
     "year": 1953
   },
 
+  {
+    "title": "Johnny Guitar",
+    "director": "Nicholas Ray",
+    "year": 1954
+  },
   {
     "title": "La Strada",
     "director": "Federico Fellini",
@@ -592,18 +651,24 @@ const movies = [
   },
 
   {
-    "title": "Ordet",
-    "director": "Carl Theodor Dreyer",
+    "title": "Kiss Me Deadly",
+    "director": "Robert Aldrich",
     "year": 1955
   },
   {
     "title": "Night and Fog",
     "director": "Alain Resnais",
-    "year": 1955
+    "year": 1955,
+    "rating": "?"
   },
   {
     "title": "The Night of the Hunter",
     "director": "Charles Laughton",
+    "year": 1955
+  },
+  {
+    "title": "Ordet",
+    "director": "Carl Theodor Dreyer",
     "year": 1955
   },
 
@@ -955,6 +1020,11 @@ const movies = [
     "year": 1966
   },
   {
+    "title": "Daisies",
+    "director": "Vera Chytilová",
+    "year": 1966
+  },
+  {
     "title": "The Good, the Bad and the Ugly",
     "director": "Sergio Leone",
     "year": 1966
@@ -965,9 +1035,15 @@ const movies = [
     "year": 1966
   },
   {
+    "title": "Two or Three Things I Know About Her",
+    "director": "Jean-Luc Godard",
+    "year": 1966
+  },
+  {
     "title": "The Battle of Algiers",
     "director": "Gillo Pontecorvo",
-    "year": 1966
+    "year": 1966,
+    "rating": "?"
   },
   {
     "title": "Who's Afraid of Virginia Woolf?",
@@ -979,6 +1055,11 @@ const movies = [
   {
     "title": "Belle de jour",
     "director": "Luis Buñuel",
+    "year": 1967
+  },
+  {
+    "title": "Bonnie and Clyde",
+    "director": "Arthur Penn",
     "year": 1967
   },
   {
@@ -1036,6 +1117,11 @@ const movies = [
   {
     "title": "Kes",
     "director": "Ken Loach",
+    "year": 1969
+  },
+  {
+    "title": "My Night at Maud's",
+    "director": "Eric Rohmer",
     "year": 1969
   },
   {
@@ -1136,6 +1222,11 @@ const movies = [
   {
     "title": "The Exorcist",
     "director": "William Friedkin",
+    "year": 1973
+  },
+  {
+    "title": "F for Fake",
+    "director": "Orson Welles",
     "year": 1973
   },
   {
@@ -1283,6 +1374,11 @@ const movies = [
     "year": 1977
   },
   {
+    "title": "Eraserhead",
+    "director": "David Lynch",
+    "year": 1977
+  },
+  {
     "title": "Star Wars",
     "director": "George Lucas",
     "year": 1977
@@ -1374,7 +1470,8 @@ const movies = [
   {
     "title": "Raiders of the Lost Ark",
     "director": "Steven Spielberg",
-    "year": 1981
+    "year": 1981,
+    "rating": 8
   },
 
   {
@@ -1390,6 +1487,11 @@ const movies = [
   {
     "title": "Fanny and Alexander",
     "director": "Ingmar Bergman",
+    "year": 1982
+  },
+  {
+    "title": "The Thing",
+    "director": "John Carpenter",
     "year": 1982
   },
 
@@ -1427,6 +1529,11 @@ const movies = [
   {
     "title": "The Terminator",
     "director": "James Cameron",
+    "year": 1984
+  },
+  {
+    "title": "This is Spinal Tap",
+    "director": "Rob Reiner",
     "year": 1984
   },
 
@@ -1520,6 +1627,11 @@ const movies = [
     "image": "whereisthefriendshome"
   },
 
+  {
+    "title": "Cinema Paradiso",
+    "director": "Giuseppe Tornatore",
+    "year": 1988
+  },
   {
     "title": "Dead Ringers",
     "director": "David Cronenberg",
@@ -1685,6 +1797,11 @@ const movies = [
     "director": "David Fincher",
     "year": 1995
   },
+  {
+    "title": "Underground",
+    "director": "Emir Kusturica",
+    "year": 1995
+  },
   
 
   {
@@ -1753,6 +1870,16 @@ const movies = [
   {
     "title": "Fight Club",
     "director": "David Fincher",
+    "year": 1999
+  },
+  {
+    "title": "Magnolia",
+    "director": "Paul Thomas Anderson",
+    "year": 1999
+  },
+  {
+    "title": "The Matrix",
+    "director": "Lana Wachowski & Lilly Wachowski",
     "year": 1999
   },
   {
