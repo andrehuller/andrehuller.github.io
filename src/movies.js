@@ -12,6 +12,11 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "The Cabinet of Dr. Caligari",
+    "director": "Robert Wiene",
+    "year": 1920
+  },
+  {
     "title": "The Kid",
     "director": "Charles Chaplin",
     "year": 1921,
@@ -23,6 +28,11 @@ const movies = [
     "year": 1922
   },
 
+  {
+    "title": "The Last Laugh",
+    "director": "F.W. Murnau",
+    "year": 1924
+  },
   {
     "title": "Sherlock Jr.",
     "director": "Buster Keaton",
@@ -123,6 +133,11 @@ const movies = [
     "director": "Leo McCarey",
     "year": 1933
   },
+  {
+    "title": "King Kong",
+    "director": "Merian C. Cooper & Ernest B. Schoedsack",
+    "year": 1933
+  },
 
   {
     "title": "It Happened One Night",
@@ -187,6 +202,11 @@ const movies = [
     "year": 1939
   },
   {
+    "title": "Only Angels Have Wings",
+    "director": "Howard Hawks",
+    "year": 1939
+  },
+  {
     "title": "The Rules of the Game",
     "director": "Jean Renoir",
     "year": 1939
@@ -209,6 +229,16 @@ const movies = [
     "rating": 8
   },
 
+  {
+    "title": "The Grapes of Wrath",
+    "director": "John Ford",
+    "year": 1940
+  },
+  {
+    "title": "The Great Dictator",
+    "director": "Charles Chaplin",
+    "year": 1940
+  },
   {
     "title": "His Girl Friday",
     "director": "Howard Hawks",
@@ -261,6 +291,11 @@ const movies = [
   },
 
   {
+    "title": "Double Indemnity",
+    "director": "Billy Wilder",
+    "year": 1944
+  },
+  {
     "title": "Laura",
     "director": "Otto Preminger",
     "year": 1944
@@ -300,14 +335,25 @@ const movies = [
     "year": 1946
   },
   {
+    "title": "The Best Years of Our Lives",
+    "director": "William Wyler",
+    "year": 1946
+  },
+  {
     "title": "It's a Wonderful Life",
     "director": "Frank Capra",
     "year": 1946
   },
   {
+    "title": "Ivan the Terrible, Part 2",
+    "director": "Sergei Eisenstein",
+    "year": 1946
+  },
+  {
     "title": "My Darling Clementine",
     "director": "John Ford",
-    "year": 1946
+    "year": 1946,
+    "rating": "?"
   },
   {
     "title": "Notorious",
@@ -321,8 +367,18 @@ const movies = [
   },
 
   {
+    "title": "Black Narcissus",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1947
+  },
+  {
     "title": "Monsieur Verdoux",
     "director": "Charles Chaplin",
+    "year": 1947
+  },
+  {
+    "title": "Out of the Past",
+    "director": "Jacques Tourneur",
     "year": 1947
   },
 
@@ -342,11 +398,26 @@ const movies = [
     "year": 1948
   },
   {
+    "title": "Red River",
+    "director": "Howard Hawks",
+    "year": 1948
+  },
+  {
+    "title": "The Red Shoes",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1948
+  },
+  {
     "title": "The Treasure of the Sierra Madre",
     "director": "John Huston",
     "year": 1948
   },
 
+  {
+    "title": "Kind Hearts and Coronets",
+    "director": "Robert Hamer",
+    "year": 1949
+  },
   {
     "title": "Late Spring",
     "director": "Yasujiro Ozu",
@@ -422,6 +493,11 @@ const movies = [
     "year": 1951
   },
   {
+    "title": "The River",
+    "director": "Jean Renoir",
+    "year": 1951
+  },
+  {
     "title": "Strangers on a Train",
     "director": "Alfred Hitchcock",
     "year": 1951
@@ -438,11 +514,31 @@ const movies = [
     "year": 1952
   },
   {
+    "title": "The Quiet Man",
+    "director": "John Ford",
+    "year": 1952
+  },
+  {
     "title": "Singin' in the Rain",
     "director": "Stanley Donen",
     "year": 1952
   },
+  {
+    "title": "Umberto D.",
+    "director": "Vittorio De Sica",
+    "year": 1952
+  },
   
+  {
+    "title": "The Band Wagon",
+    "director": "Vincente Minnelli",
+    "year": 1953
+  },
+  {
+    "title": "The Big Heat",
+    "director": "Fritz Lang",
+    "year": 1953
+  },
   {
     "title": "I Vitelloni",
     "director": "Federico Fellini",
@@ -451,11 +547,6 @@ const movies = [
   {
     "title": "Madame de...",
     "director": "Max Ophüls",
-    "year": 1953
-  },
-  {
-    "title": "The Big Heat",
-    "director": "Fritz Lang",
     "year": 1953
   },
   {
@@ -472,6 +563,11 @@ const movies = [
   {
     "title": "La Strada",
     "director": "Federico Fellini",
+    "year": 1954
+  },
+  {
+    "title": "On the Waterfront",
+    "director": "Elia Kazan",
     "year": 1954
   },
   {
@@ -498,6 +594,11 @@ const movies = [
   {
     "title": "Ordet",
     "director": "Carl Theodor Dreyer",
+    "year": 1955
+  },
+  {
+    "title": "Night and Fog",
+    "director": "Alain Resnais",
     "year": 1955
   },
   {
@@ -539,8 +640,23 @@ const movies = [
     "rating": 8
   },
   {
+    "title": "Nights of Cabiria",
+    "director": "Federico Fellini",
+    "year": 1957
+  },
+  {
+    "title": "Paths of Glory",
+    "director": "Stanley Kubrick",
+    "year": 1957
+  },
+  {
     "title": "The Seventh Seal",
     "director": "Ingmar Bergman",
+    "year": 1957
+  },
+  {
+    "title": "Sweet Smell of Success",
+    "director": "Alexander Mackendrick",
     "year": 1957
   },
   {
@@ -578,6 +694,11 @@ const movies = [
   {
     "title": "Hiroshima mon amour",
     "director": "Alain Resnais",
+    "year": 1959
+  },
+  {
+    "title": "Imitation of Life",
+    "director": "Douglas Sirk",
     "year": 1959
   },
   {
@@ -637,6 +758,11 @@ const movies = [
     "year": 1960
   },
   {
+    "title": "Rocco and His Brothers",
+    "director": "Luchino Visconti",
+    "year": 1960
+  },
+  {
     "title": "Spartacus",
     "director": "Stanley Kubrick",
     "year": 1960
@@ -647,6 +773,11 @@ const movies = [
     "year": 1960
   },
 
+  {
+    "title": "La Notte",
+    "director": "Michelangelo Antonioni",
+    "year": 1961
+  },
   {
     "title": "Last Year at Marienbad",
     "director": "Alain Resnais",
@@ -673,6 +804,11 @@ const movies = [
     "year": 1961
   },
 
+  {
+    "title": "The Exterminating Angel",
+    "director": "Luis Buñuel",
+    "year": 1962
+  },
   {
     "title": "Ivan's Childhood",
     "director": "Andrei Tarkovsky",
@@ -726,6 +862,11 @@ const movies = [
     "year": 1963
   },
   {
+    "title": "The Birds",
+    "director": "Alfred Hitchcock",
+    "year": 1963
+  },
+  {
     "title": "Contempt",
     "director": "Jean-Luc Godard",
     "year": 1963
@@ -749,6 +890,11 @@ const movies = [
   {
     "title": "Band of Outsiders",
     "director": "Jean-Luc Godard",
+    "year": 1964
+  },
+  {
+    "title": "Black God, White Devil",
+    "director": "Glauber Rocha",
     "year": 1964
   },
   {
@@ -831,6 +977,26 @@ const movies = [
   },
 
   {
+    "title": "Belle de jour",
+    "director": "Luis Buñuel",
+    "year": 1967
+  },
+  {
+    "title": "The Graduate",
+    "director": "Mike Nichols",
+    "year": 1967
+  },
+  {
+    "title": "Le Samouraï",
+    "director": "Jean-Pierre Melville",
+    "year": 1967
+  },
+  {
+    "title": "Mouchette",
+    "director": "Robert Bresson",
+    "year": 1967
+  },
+  {
     "title": "Week-End",
     "director": "Jean-Luc Godard",
     "year": 1967
@@ -847,6 +1013,11 @@ const movies = [
     "year": 1968
   },
   {
+    "title": "Night of the Living Dead",
+    "director": "George A. Romero",
+    "year": 1968
+  },
+  {
     "title": "Once Upon a Time in the West",
     "director": "Sergio Leone",
     "year": 1968
@@ -860,6 +1031,11 @@ const movies = [
   {
     "title": "Butch Cassidy and the Sundance Kid",
     "director": "George Roy Hill",
+    "year": 1969
+  },
+  {
+    "title": "Kes",
+    "director": "Ken Loach",
     "year": 1969
   },
   {
@@ -890,6 +1066,11 @@ const movies = [
     "year": 1971
   },
   {
+    "title": "Death in Venice",
+    "director": "Luchino Visconti",
+    "year": 1971
+  },
+  {
     "title": "Harold and Maude",
     "director": "Hal Ashby",
     "year": 1971,
@@ -898,6 +1079,11 @@ const movies = [
   {
     "title": "The Last Picture Show",
     "director": "Peter Bogdanovich",
+    "year": 1971
+  },
+  {
+    "title": "McCabe & Mrs. Miller",
+    "director": "Robert Altman",
     "year": 1971
   },
   {
@@ -912,8 +1098,23 @@ const movies = [
     "year": 1972
   },
   {
+    "title": "Cries and Whispers",
+    "director": "Ingmar Bergman",
+    "year": 1972
+  },
+  {
+    "title": "The Discreet Charm of the Bourgeoisie",
+    "director": "Luis Buñuel",
+    "year": 1972
+  },
+  {
     "title": "The Godfather",
     "director": "Francis Ford Coppola",
+    "year": 1972
+  },
+  {
+    "title": "Solaris",
+    "director": "Andrei Tarkovsky",
     "year": 1972
   },
 
@@ -930,6 +1131,11 @@ const movies = [
   {
     "title": "Don't Look Now",
     "director": "Nicolas Roeg",
+    "year": 1973
+  },
+  {
+    "title": "The Exorcist",
+    "director": "William Friedkin",
     "year": 1973
   },
   {
@@ -974,8 +1180,18 @@ const movies = [
     "year": 1974
   },
   {
+    "title": "The Conversation",
+    "director": "Francis Ford Coppola",
+    "year": 1974
+  },
+  {
     "title": "The Godfather Part II",
     "director": "Francis Ford Coppola",
+    "year": 1974
+  },
+  {
+    "title": "The Texas Chainsaw Massacre",
+    "director": "Tobe Hooper",
     "year": 1974
   },
 
@@ -1029,6 +1245,11 @@ const movies = [
     "director": "Michelangelo Antonioni",
     "year": 1975
   },
+  {
+    "title": "Salò, or the 120 Days of Sodom",
+    "director": "Pier Paolo Pasolini",
+    "year": 1975
+  },
 
   {
     "title": "Carrie",
@@ -1057,6 +1278,11 @@ const movies = [
     "year": 1977
   },
   {
+    "title": "Close Encounters of the Third Kind",
+    "director": "Steven Spielberg",
+    "year": 1977
+  },
+  {
     "title": "Star Wars",
     "director": "George Lucas",
     "year": 1977
@@ -1070,6 +1296,16 @@ const movies = [
   {
     "title": "Dawn of the Dead",
     "director": "George A. Romero",
+    "year": 1978
+  },
+  {
+    "title": "Days of Heaven",
+    "director": "Terrence Malick",
+    "year": 1978
+  },
+  {
+    "title": "The Deer Hunter",
+    "director": "Michael Cimino",
     "year": 1978
   },
   {
@@ -1135,6 +1371,11 @@ const movies = [
     "director": "Brian De Palma",
     "year": 1981
   },
+  {
+    "title": "Raiders of the Lost Ark",
+    "director": "Steven Spielberg",
+    "year": 1981
+  },
 
   {
     "title": "Blade Runner",
@@ -1179,6 +1420,11 @@ const movies = [
     "year": 1984
   },
   {
+    "title": "Paris, Texas",
+    "director": "Wim Wenders",
+    "year": 1984
+  },
+  {
     "title": "The Terminator",
     "director": "James Cameron",
     "year": 1984
@@ -1190,6 +1436,11 @@ const movies = [
     "year": 1985
   },
   {
+    "title": "Brazil",
+    "director": "Terry Gilliam",
+    "year": 1985
+  },
+  {
     "title": "Come and See",
     "director": "Elem Klimov",
     "year": 1985
@@ -1197,6 +1448,11 @@ const movies = [
   {
     "title": "The Purple Rose of Cairo",
     "director": "Woody Allen",
+    "year": 1985
+  },
+  {
+    "title": "Ran",
+    "director": "Akira Kurosawa",
     "year": 1985
   },
 
@@ -1229,6 +1485,11 @@ const movies = [
   {
     "title": "Au revoir les enfants",
     "director": "Louis Malle",
+    "year": 1987
+  },
+  {
+    "title": "Wings of Desire",
+    "director": "Wim Wenders",
     "year": 1987
   },
 
@@ -1334,6 +1595,11 @@ const movies = [
     "director": "Quentin Tarantino",
     "year": 1992
   },
+  {
+    "title": "Unforgiven",
+    "director": "Clint Eastwood",
+    "year": 1992
+  },
 
   {
     "title": "Carlito's Way",
@@ -1346,11 +1612,26 @@ const movies = [
     "year": 1993
   },
   {
+    "title": "Groundhog Day",
+    "director": "Harold Ramis",
+    "year": 1993
+  },
+  {
+    "title": "Schindler's List",
+    "director": "Steven Spielberg",
+    "year": 1993
+  },
+  {
     "title": "Three Colours: Blue",
     "director": "Krzysztof Kieslowski",
     "year": 1993
   },
 
+  {
+    "title": "Chungking Express",
+    "director": "Wong Kar-wai",
+    "year": 1994
+  },
   {
     "title": "Crumb",
     "director": "Terry Zwigoff",
@@ -1407,6 +1688,11 @@ const movies = [
   
 
   {
+    "title": "Fargo",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1996
+  },
+  {
     "title": "Trainspotting",
     "director": "Danny Boyle",
     "year": 1996
@@ -1434,6 +1720,11 @@ const movies = [
   },
 
   {
+    "title": "The Big Lebowski",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1998
+  },
+  {
     "title": "Festen",
     "director": "Thomas Vinterberg",
     "year": 1998
@@ -1441,6 +1732,11 @@ const movies = [
   {
     "title": "Rushmore",
     "director": "Wes Anderson",
+    "year": 1998
+  },
+  {
+    "title": "The Thin Red Line",
+    "director": "Terrence Malick",
     "year": 1998
   },
 
@@ -1584,10 +1880,20 @@ const movies = [
     "director": "Clint Eastwood",
     "year": 2004
   },
+  {
+    "title": "Tropical Malady",
+    "director": "Apichatpong Weerasethakul",
+    "year": 2004
+  },
 
   {
     "title": "A History of Violence",
     "director": "David Cronenberg",
+    "year": 2005
+  },
+  {
+    "title": "Caché",
+    "director": "Michael Haneke",
     "year": 2005
   },
 
