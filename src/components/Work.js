@@ -381,46 +381,6 @@ const Work = {
             subtitle: 'Serviço Social Autônomo PARANAEDUCAÇÃO',
             href: 'http://www.paranaeducacao.pr.gov.br/',
             screenshot: 'assets/screenshots/paranaeducacao.png'
-          },
-          {
-            title: 'PARANAPREVIDÊNCIA',
-            subtitle: 'Serviço Social Autônomo PARANAPREVIDÊNCIA',
-            href: 'http://www.paranaprevidencia.pr.gov.br/',
-            screenshot: 'assets/screenshots/PARANAPREVIDÊNCIA.png'
-          },
-          {
-            title: 'SIMEPAR',
-            subtitle: 'Sistema Meteorológico do Paraná',
-            href: 'http://www.simepar.br/'
-          },
-        ]
-      },
-      {
-        name: 'CELEPAR',
-        items: [
-          {
-            title: 'Nota Paraná',
-            subtitle: 'http://www.notaparana.pr.gov.br/',
-            href: 'http://www.notaparana.pr.gov.br/',
-            screenshot: 'assets/screenshots/nota-parana.png'
-          },
-          {
-            title: 'PIÁ',
-            subtitle: 'Paraná Inteligência Artificial',
-            href: 'https://www.pia.pr.gov.br/',
-            screenshot: 'assets/screenshots/pia.jpg'
-          },
-          {
-            title: 'Portal da Transparência',
-            subtitle: 'http://www.transparencia.pr.gov.br',
-            href: 'http://www.transparencia.pr.gov.br',
-            screenshot: 'assets/screenshots/portal-transparencia.jpg'
-          },
-          {
-            title: 'Viaje Paraná',
-            subtitle: 'http://www.viajeparana.com/',
-            href: 'http://www.viajeparana.com/',
-            screenshot: 'assets/screenshots/viaje-parana.png'
           }
         ]
       }

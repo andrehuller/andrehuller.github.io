@@ -8,7 +8,8 @@ const movies = [
   {
     "title": "Intolerance",
     "director": "D.W. Griffith",
-    "year": 1916
+    "year": 1916,
+    "rating": "?"
   },
   {
     "title": "The Kid",
@@ -20,6 +21,12 @@ const movies = [
     "title": "Nosferatu",
     "director": "F.W. Murnau",
     "year": 1922
+  },
+
+  {
+    "title": "Sherlock Jr.",
+    "director": "Buster Keaton",
+    "year": 1924
   },
 
   {
@@ -67,12 +74,23 @@ const movies = [
     "year": 1928,
     "rating": "?"
   },
+  {
+    "title": "Un Chien andalou",
+    "director": "Luis Buñuel",
+    "year": 1928
+  },
 
   {
     "title": "Man with a Movie Camera",
     "director": "Dziga Vertov",
     "year": 1929,
     "rating": "?"
+  },
+
+  {
+    "title": "L'Âge d'or",
+    "director": "Luis Buñuel",
+    "year": 1930
   },
 
   {
@@ -93,6 +111,17 @@ const movies = [
     "director": "Yasujiro Ozu",
     "year": 1932,
     "rating": 10
+  },
+  {
+    "title": "Trouble in Paradise",
+    "director": "Ernst Lubitsch",
+    "year": 1932
+  },
+
+  {
+    "title": "Duck Soup",
+    "director": "Leo McCarey",
+    "year": 1933
   },
 
   {
@@ -142,6 +171,11 @@ const movies = [
     "year": 1938
   },
   {
+    "title": "Bringing Up Baby",
+    "director": "Howard Hawks",
+    "year": 1938
+  },
+  {
     "title": "The Lady Vanishes",
     "director": "Alfred Hitchcock",
     "year": 1938
@@ -158,11 +192,28 @@ const movies = [
     "year": 1939
   },
   {
-    "title": "The Wizard of Oz",
-    "director": "Victor Fleming",
+    "title": "Stagecoach",
+    "director": "John Ford",
     "year": 1939
   },
+  {
+    "title": "The Story of the Last Chrysanthemums",
+    "director": "Kenji Mizoguchi",
+    "year": 1939,
+    "rating": 8
+  },
+  {
+    "title": "The Wizard of Oz",
+    "director": "Victor Fleming",
+    "year": 1939,
+    "rating": 8
+  },
 
+  {
+    "title": "His Girl Friday",
+    "director": "Howard Hawks",
+    "year": 1940
+  },
   {
     "title": "Rebecca",
     "director": "Alfred Hitchcock",
@@ -179,6 +230,11 @@ const movies = [
     "director": "John Ford",
     "year": 1941,
     "rating": "?"
+  },
+  {
+    "title": "The Lady Eve",
+    "director": "Preston Sturges",
+    "year": 1941
   },
 
 
@@ -217,6 +273,11 @@ const movies = [
   },
 
   {
+    "title": "Brief Encounter",
+    "director": "David Lean",
+    "year": 1945
+  },
+  {
     "title": "Les Enfants du paradis",
     "director": "Marcel Carné",
     "year": 1945
@@ -225,6 +286,12 @@ const movies = [
     "title": "Mildred Pierce",
     "director": "Michael Curtiz",
     "year": 1945
+  },
+  {
+    "title": "Rome, Open City",
+    "director": "Roberto Rossellini",
+    "year": 1945,
+    "image": "romeopencity"
   },
 
   {
@@ -235,6 +302,16 @@ const movies = [
   {
     "title": "It's a Wonderful Life",
     "director": "Frank Capra",
+    "year": 1946
+  },
+  {
+    "title": "My Darling Clementine",
+    "director": "John Ford",
+    "year": 1946
+  },
+  {
+    "title": "Notorious",
+    "director": "Alfred Hitchcock",
     "year": 1946
   },
   {
@@ -282,8 +359,18 @@ const movies = [
   },
 
   {
+    "title": "All About Eve",
+    "director": "Joseph L. Mankiewicz",
+    "year": 1950
+  },
+  {
     "title": "In a Lonely Place",
     "director": "Nicholas Ray",
+    "year": 1950
+  },
+  {
+    "title": "Los Olvidados",
+    "director": "Luis Buñuel",
     "year": 1950
   },
   {
@@ -623,6 +710,11 @@ const movies = [
     "year": 1962
   },
   {
+    "title": "Vivre sa vie",
+    "director": "Jean-Luc Godard",
+    "year": 1962
+  },
+  {
     "title": "Winter Light",
     "director": "Ingmar Bergman",
     "year": 1962
@@ -717,6 +809,11 @@ const movies = [
     "year": 1966
   },
   {
+    "title": "The Good, the Bad and the Ugly",
+    "director": "Sergio Leone",
+    "year": 1966
+  },
+  {
     "title": "Persona",
     "director": "Ingmar Bergman",
     "year": 1966
@@ -729,7 +826,8 @@ const movies = [
   {
     "title": "Who's Afraid of Virginia Woolf?",
     "director": "Mike Nichols",
-    "year": 1966
+    "year": 1966,
+    "image": "whosafraidofvirginiawoolf"
   },
 
   {
@@ -751,6 +849,11 @@ const movies = [
   {
     "title": "Once Upon a Time in the West",
     "director": "Sergio Leone",
+    "year": 1968
+  },
+  {
+    "title": "Rosemary's Baby",
+    "director": "Roman Polanski",
     "year": 1968
   },
 
@@ -820,6 +923,16 @@ const movies = [
     "year": 1973
   },
   {
+    "title": "Badlands",
+    "director": "Terrence Malick",
+    "year": 1973
+  },
+  {
+    "title": "Don't Look Now",
+    "director": "Nicolas Roeg",
+    "year": 1973
+  },
+  {
     "title": "Mean Streets",
     "director": "Martin Scorsese",
     "year": 1973
@@ -848,6 +961,11 @@ const movies = [
   {
     "title": "A Woman Under the Influence",
     "director": "John Cassavetes",
+    "year": 1974
+  },
+  {
+    "title": "Ali: Fear Eats the Soul",
+    "director": "Rainer Werner Fassbinder",
     "year": 1974
   },
   {
@@ -882,6 +1000,16 @@ const movies = [
     "year": 1975
   },
   {
+    "title": "The Man Who Would Be King",
+    "director": "John Huston",
+    "year": 1975
+  },
+  {
+    "title": "The Mirror",
+    "director": "Andrei Tarkovsky",
+    "year": 1975
+  },
+  {
     "title": "Monty Python and the Holy Grail",
     "director": "Terry Gilliam",
     "year": 1975
@@ -897,13 +1025,8 @@ const movies = [
     "year": 1975
   },
   {
-    "title": "The Man Who Would Be King",
-    "director": "John Huston",
-    "year": 1975
-  },
-  {
-    "title": "The Mirror",
-    "director": "Andrei Tarkovsky",
+    "title": "The Passenger",
+    "director": "Michelangelo Antonioni",
     "year": 1975
   },
 
@@ -963,6 +1086,11 @@ const movies = [
   {
     "title": "Apocalypse Now",
     "director": "Francis Ford Coppola",
+    "year": 1979
+  },
+  {
+    "title": "Manhattan",
+    "director": "Woody Allen",
     "year": 1979
   },
   {
@@ -1062,6 +1190,11 @@ const movies = [
     "year": 1985
   },
   {
+    "title": "Come and See",
+    "director": "Elem Klimov",
+    "year": 1985
+  },
+  {
     "title": "The Purple Rose of Cairo",
     "director": "Woody Allen",
     "year": 1985
@@ -1122,7 +1255,8 @@ const movies = [
   {
     "title": "Where is the Friend's Home?",
     "director": "Abbas Kiarostami",
-    "year": 1987
+    "year": 1987,
+    "image": "whereisthefriendshome"
   },
 
   {
@@ -1146,6 +1280,11 @@ const movies = [
     "director": "Woody Allen",
     "year": 1989
   },
+  {
+    "title": "Do the Right Thing",
+    "director": "Spike Lee",
+    "year": 1989
+  },
 
   {
     "title": "Close-Up",
@@ -1164,6 +1303,11 @@ const movies = [
   },
 
   {
+    "title": "A Brighter Summer Day",
+    "director": "Edward Yang",
+    "year": 1991
+  },
+  {
     "title": "Barton Fink",
     "director": "Joel Coen & Ethan Coen",
     "year": 1991
@@ -1171,7 +1315,8 @@ const movies = [
   {
     "title": "Raise the Red Lantern",
     "director": "Zhang Yimou",
-    "year": 1991
+    "year": 1991,
+    "rating": 8
   },
   {
     "title": "The Silence of the Lambs",

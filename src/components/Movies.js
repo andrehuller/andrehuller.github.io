@@ -58,7 +58,7 @@ const Movies = {
               <v-card class="fill-height d-flex flex-column">
               <!-- :color="item.rating == 10 ? '#dacfa1' : item.rating == 9 ? '#bcbec0' : '#967444'" -->
                 <v-img
-                  :src="'assets/images/' + item.title + '.jpg'"
+                  :src="imageSrc(item)"
                   height="198px"
                 ></v-img>
                 <v-card-title>
@@ -88,11 +88,20 @@ const Movies = {
       if (this.directors.indexOf(this.items[i].director) < 0) {
         this.directors.push(this.items[i].director)
       }
-      if (this.items[i].rating != '?') {
+
+      if ("?".localeCompare(this.items[i].rating) != 0 && this.items[i].rating != 8 && this.items[i].rating != 7) {
         this.filteredItems.push(this.items[i])
       }
     }
 
     this.directors = this.directors.sort()
+  },
+  methods: {
+    imageSrc: function (item) {
+      if (item.image) {
+        return 'assets/images/' + item.image + '.jpg'
+      }
+      return 'assets/images/' + item.title + '.jpg'
+    }
   }
 }

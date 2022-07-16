@@ -23,7 +23,7 @@ const Chartjs = {
     var data = []
     for (var i = 0; i < keys.length; i++) {
       var value = groupedBy[keys[i]].length
-      if (value > 1) {
+      if (value > 2) {
         labels.push(keys[i])
         data.push(value)
       }
@@ -39,8 +39,9 @@ const Chartjs = {
         datasets: [
           {
             label: "# movies",
-            backgroundColor: 'rgba(255, 99, 132, 0.2)',
-            borderColor: 'rgb(255, 99, 132)',
+            // backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            backgroundColor: '#f87979',
+            // borderColor: 'rgb(255, 99, 132)',
             borderWidth: 1,
             data: data
           }

@@ -227,117 +227,6 @@ const POI = {
         lon: -49.347067,
         icon: 'mdi-desktop-classic',
         mapIcon: 'computers'
-      },
-      {
-        title: 'Governadoria',
-        href: 'http://www.parana.pr.gov.br/',
-        address: 'Praça Nossa Senhora de Salette s/n - Centro Cívico, Curitiba - PR, 80530-909',
-        phone: '+55 (41) 3350-2400',
-        lat: -25.413340,
-        lon: -49.267817,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Coordenadoria Estadual da Defesa Civil (CEDC)',
-        href: 'http://www.defesacivil.pr.gov.br',
-        address: 'Palácio das Araucárias - Rua Jacy Loureiro de Campos, S/N - Setor "C" - Centro Cívico, Curitiba - PR, 80530-140',
-        phone: '+55 (41) 3281-2512',
-        lat: -25.415002,
-        lon: -49.269490,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Controladoria Geral do Estado (CGE)',
-        href: 'http://www.cge.pr.gov.br/',
-        address: 'R. Mateus Leme, 2018 - Centro Cívico, Curitiba - PR, 80530-010',
-        phone: '(41) 3883-4000',
-        lat: -25.409399,
-        lon: -49.271228,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Procuradoria Geral do Estado (PGE)',
-        href: 'http://www.pge.pr.gov.br/',
-        address: 'R. Paula Gomes, 145 - São Francisco, Curitiba - PR, 80510-070',
-        phone: '(41) 3281-6300',
-        lat: -25.425467,
-        lon: -49.271043,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Secretaria de Estado do Planejamento e Projetos Estruturantes (SEPL)',
-        href: 'http://www.planejamento.pr.gov.br',
-        address: 'Rua Jacy Loureiro de Campos, s/n - 4º and - Centro Cívico, Curitiba - PR, 80530-140',
-        phone: '(41) 3313-6800',
-        lat: -25.415070,
-        lon: -49.269606,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Secretaria de Estado da Fazenda',
-        href: 'http://www.fazenda.pr.gov.br/',
-        address: 'Av. Vicente Machado, 445 - Centro, Curitiba - PR, 80420-010',
-        phone: '+554132358000',
-        lat: -25.435028,
-        lon: -49.280940,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Secretaria de Estado da Agricultura e do Abastecimento (SEAB)',
-        href: 'http://www.agricultura.pr.gov.br/',
-        address: 'R. dos Funcionários, 1559 - Cabral, Curitiba - PR, 80035-050',
-        phone: '+554133134000',
-        lat: -25.410861,
-        lon: -49.247484,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Secretaria de Estado do Desenvolvimento Urbano e de Obras Públicas',
-        href: 'http://www.desenvolvimentourbano.pr.gov.br/',
-        address: 'Rua Jacy Loureiro de Campos, s/n - 2º andar - Centro Cívico - 80530-140 - Curitiba - PR',
-        phone: '41 3250-7200',
-        lat: -25.414820,
-        lon: -49.269492,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-      {
-        title: 'Secretaria de Estado da Educação e do Esporte',
-        href: 'http://www.educacao.pr.gov.br/',
-        address: 'Av. Água Verde, 2140 - Vila Izabel - 80240-900 - Curitiba - PR',
-        phone: '41 3340-1500',
-        lat: -25.453883,
-        lon: -49.292544,
-        icon: 'mdi-bank',
-        mapIcon: 'congress'
-      },
-
-      {
-        title: 'Hospital Oswaldo Cruz',
-        href: 'http://www.cht.pr.gov.br/Hospital-Oswaldo-Cruz',
-        address: 'Rua Ubaldino Amaral, 545, Alto da Glória, Curitiba-PR, 80060-190, Brasil',
-        phone: '',
-        lat: -25.425604,
-        lon: -49.259152,
-        icon: 'mdi-hospital',
-        mapIcon: 'hospital'
-      },
-      {
-        title: 'Hospital Pilar',
-        href: 'http://www.hospitalpilar.com.br/',
-        address: 'Av. Desembargador Hugo Simas, 322 - Bom Retiro, Curitiba - PR, 80520-250',
-        phone: '+55 41 3072-7272',
-        lat: -25.415551,
-        lon: -49.278964,
-        icon: 'mdi-hospital',
-        mapIcon: 'hospital'
       }
     ]
   }),
@@ -349,12 +238,6 @@ const POI = {
       
       L.control.defaultExtent()
         .addTo(this.map);
-      
-      var congress = new L.Icon({
-        iconUrl: './assets/congress.png',
-        iconSize: [32, 37],
-        popupAnchor: [0, -8]
-      })
 
       var university = new L.Icon({
         iconUrl: './assets/university.png',
@@ -363,12 +246,6 @@ const POI = {
         popupAnchor: [0, -8]
       });
 
-      var office = new L.Icon({
-        iconUrl: './assets/office-building.png',
-        iconSize: [32, 37],
-        popupAnchor: [0, -8]
-      })
-
       var computers = new L.Icon({
         iconUrl: './assets/computers.png',
         iconSize: [32, 37],
@@ -376,19 +253,9 @@ const POI = {
         popupAnchor: [0, -8]
       })
 
-      var hospital = new L.Icon({
-        iconUrl: './assets/hospital-building.png',
-        iconSize: [32, 37],
-        // iconAnchor: [16, 18],
-        popupAnchor: [0, -8]
-      })
-
       var icons = {
-        'congress': congress,
         'university': university,
-        'office': office,
-        'computers': computers,
-        'hospital': hospital
+        'computers': computers
       }
 
       this.layers = L.control.layers({
