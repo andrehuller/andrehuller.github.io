@@ -37,7 +37,8 @@ const movies = [
     "title": "Our Hospitality",
     "director": "Buster Keaton & John G. Blystone",
     "year": 1923,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -46,6 +47,13 @@ const movies = [
     "year": 1924,
     "country": "Germany",
     "rating": 10
+  },
+  {
+    "title": "The Navigator",
+    "director": "Buster Keaton & Donald Crisp",
+    "year": 1924,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Sherlock Jr.",
@@ -79,7 +87,8 @@ const movies = [
     "title": "Strike",
     "director": "Sergei Eisenstein",
     "year": 1925,
-    "country": "USSR"
+    "country": "USSR",
+    "rating": "?"
   },
 
   {
@@ -113,6 +122,13 @@ const movies = [
   },
 
   {
+    "title": "The Circus",
+    "director": "Charles Chaplin",
+    "year": 1928,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "October",
     "director": "Sergei Eisenstein & Grigori Aleksandrov",
     "year": 1928,
@@ -127,6 +143,12 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "Spione",
+    "director": "Fritz Lang",
+    "year": 1928,
+    "country": "Germany"
+  },
+  {
     "title": "Steamboat Bill, Jr.",
     "director": "Buster Keaton & Charles Reisner",
     "year": 1928,
@@ -137,7 +159,8 @@ const movies = [
     "title": "Un Chien andalou",
     "director": "Luis Buñuel",
     "year": 1928,
-    "country": "France"
+    "country": "France",
+    "rating": "?"
   },
 
   {
@@ -149,10 +172,18 @@ const movies = [
   },
 
   {
+    "title": "All Quiet on the Western Front",
+    "director": "Lewis Milestone",
+    "year": 1930,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "L'Âge d'or",
     "director": "Luis Buñuel",
     "year": 1930,
-    "country": "France"
+    "country": "France",
+    "rating": "?"
   },
   {
     "title": "The Blue Angel",
@@ -194,7 +225,8 @@ const movies = [
     "title": "Boudu Saved from Drowning",
     "director": "Jean Renoir",
     "year": 1932,
-    "country": "France"
+    "country": "France",
+    "rating": "?"
   },
   {
     "title": "I Was Born, But…",
@@ -301,7 +333,8 @@ const movies = [
   {
     "title": "The Adventures of Robin Hood",
     "director": "Michael Curtiz",
-    "year": 1938
+    "year": 1938,
+    "country": "USA"
   },
   {
     "title": "Bringing Up Baby",
@@ -326,13 +359,15 @@ const movies = [
     "title": "Mr. Smith Goes to Washington",
     "director": "Frank Capra",
     "year": "1939",
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Ninotchka",
     "director": "Ernst Lubitsch",
     "year": 1939,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Only Angels Have Wings",
@@ -352,7 +387,8 @@ const movies = [
     "title": "Stagecoach",
     "director": "John Ford",
     "year": 1939,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Story of the Last Chrysanthemums",
@@ -372,7 +408,8 @@ const movies = [
     "title": "Young Mr. Lincoln",
     "director": "John Ford",
     "year": 1939,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -405,7 +442,8 @@ const movies = [
     "title": "Pinocchio",
     "director": "Ben Sharpsteen & Hamilton Luske",
     "year": 1940,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Rebecca",
@@ -432,7 +470,15 @@ const movies = [
     "title": "Citizen Kane",
     "director": "Orson Welles",
     "year": 1941,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Dumbo",
+    "director": "Ben Sharpsteen",
+    "year": 1941,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "How Green Was My Valley",
@@ -512,7 +558,15 @@ const movies = [
     "title": "I Walked with a Zombie",
     "director": "Jacques Tourneur",
     "year": 1943,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Ossessione",
+    "director": "Luchino Visconti",
+    "year": 1943,
+    "country": "Italy",
+    "rating": "?"
   },
   {
     "title": "Shadow of a Doubt",
@@ -562,8 +616,14 @@ const movies = [
   {
     "title": "Detour",
     "director": "Edgar G. Ulmer",
-    "year": "1945",
+    "year": 1945,
     "country": "USA"
+  },
+  {
+    "title": "Les Dames du Bois de Boulogne",
+    "director": "Robert Bresson",
+    "year": 1945,
+    "country": "France"
   },
   {
     "title": "Les Enfants du paradis",
@@ -581,7 +641,8 @@ const movies = [
     "director": "Roberto Rossellini",
     "year": 1945,
     "country": "Italy",
-    "image": "romeopencity"
+    "image": "romeopencity",
+    "rating": "?"
   },
 
   {
@@ -606,7 +667,8 @@ const movies = [
     "title": "It's a Wonderful Life",
     "director": "Frank Capra",
     "year": 1946,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Ivan the Terrible, Part 2",
@@ -638,7 +700,14 @@ const movies = [
     "title": "Black Narcissus",
     "director": "Michael Powell & Emeric Pressburger",
     "year": 1947,
-    "country": "UK"
+    "country": "UK",
+    "rating": "?"
+  },
+  {
+    "title": "The Ghost and Mrs. Muir",
+    "director": "Joseph L. Mankiewicz",
+    "year": 1947,
+    "country": "USA"
   },
   {
     "title": "Monsieur Verdoux",
@@ -660,10 +729,18 @@ const movies = [
     "country": "Italy"
   },
   {
+    "title": "Fort Apache",
+    "director": "John Ford",
+    "year": 1948,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "La Terra trema",
     "director": "Luchino Visconti",
     "year": 1948,
-    "country": "Italy"
+    "country": "Italy",
+    "rating": "?"
   },
   {
     "title": "Letter from an Unknown Woman",
@@ -681,13 +758,21 @@ const movies = [
     "title": "Red River",
     "director": "Howard Hawks",
     "year": 1948,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Red Shoes",
     "director": "Michael Powell & Emeric Pressburger",
     "year": 1948,
     "country": "UK",
+    "rating": "?"
+  },
+  {
+    "title": "They Live by Night",
+    "director": "Nicholas Ray",
+    "year": 1948,
+    "country": "USA",
     "rating": "?"
   },
   {
@@ -719,12 +804,19 @@ const movies = [
     "title": "White Heat",
     "director": "Raoul Walsh",
     "year": 1949,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
     "title": "All About Eve",
     "director": "Joseph L. Mankiewicz",
+    "year": 1950,
+    "country": "USA"
+  },
+  {
+    "title": "Gun Crazy",
+    "director": "Joseph H. Lewis",
     "year": 1950,
     "country": "USA"
   },
@@ -774,6 +866,13 @@ const movies = [
   },
 
   {
+    "title": "A Place in the Sun",
+    "director": "George Stevens",
+    "year": 1951,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "A Streetcar Named Desire",
     "director": "Elia Kazan",
     "year": 1951,
@@ -785,6 +884,20 @@ const movies = [
     "year": 1951
   },
   {
+    "title": "The African Queen",
+    "director": "John Huston",
+    "year": 1951,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "An American in Paris",
+    "director": "Vincente Minnelli",
+    "year": 1951,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "Early Summer",
     "director": "Yasujiro Ozu",
     "year": 1951,
@@ -793,7 +906,8 @@ const movies = [
   {
     "title": "Othello",
     "director": "Orson Welles",
-    "year": 1951
+    "year": 1951,
+    // "country": "Italy-France-Morocco-USA"
   },
   {
     "title": "The River",
@@ -809,6 +923,13 @@ const movies = [
     "country": "USA"
   },
 
+  {
+    "title": "The Bad and the Beautiful",
+    "director": "Vincente Minnelli",
+    "year": 1952,
+    "country": "USA",
+    "rating": "?"
+  },
   {
     "title": "Casque d'or",
     "director": "Jacques Becker",
@@ -898,16 +1019,17 @@ const movies = [
     "country": "France-Italy"
   },
   {
-    "title": "Shane",
-    "director": "George Stevens",
+    "title": "Pickup on South Street",
+    "director": "Samuel Fuller",
     "year": 1953,
     "country": "USA"
   },
   {
-    "title": "The Wages of Fear",
-    "director": "Henri-Georges Clouzot",
+    "title": "Shane",
+    "director": "George Stevens",
     "year": 1953,
-    "country": "France-Italy"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Tokyo Story",
@@ -916,17 +1038,25 @@ const movies = [
     "country": "Japan"
   },
   {
+    "title": "The Wages of Fear",
+    "director": "Henri-Georges Clouzot",
+    "year": 1953,
+    "country": "France-Italy"
+  },
+  {
     "title": "Ugetsu monogatari",
     "director": "Kenji Mizoguchi",
     "year": "1953",
-    "country": "Japan"
+    "country": "Japan",
+    "rating": "?"
   },
 
   {
     "title": "A Star is Born",
     "director": "George Cukor",
     "year": 1954,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Johnny Guitar",
@@ -983,7 +1113,8 @@ const movies = [
     "title": "All That Heaven Allows",
     "director": "Douglas Sirk",
     "year": 1955,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "East of Eden",
@@ -1006,6 +1137,13 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "The Ladykillers",
+    "director": "Alexander Mackendrick",
+    "year": 1955,
+    "country": "UK",
+    "rating": "?"
+  },
+  {
     "title": "Les Diaboliques",
     "director": "Henri-Georges Clouzot",
     "year": 1955,
@@ -1015,7 +1153,8 @@ const movies = [
     "title": "Lola Montès",
     "director": "Max Ophüls",
     "year": 1955,
-    "country": "France-West Germany"
+    "country": "France-West Germany",
+    "rating": "?"
   },
   {
     "title": "Night and Fog",
@@ -1041,6 +1180,18 @@ const movies = [
     "director": "Nicholas Ray",
     "year": 1955,
     "country": "USA"
+  },
+  {
+    "title": "Rififi",
+    "director": "Jules Dassin",
+    "year": 1955,
+    "country": "France"
+  },
+  {
+    "title": "Smiles of a Summer Night",
+    "director": "Ingmar Bergman",
+    "year": 1955,
+    "country": "Sweden"
   },
 
   {
@@ -1097,13 +1248,21 @@ const movies = [
     "title": "The Bridge on the River Kwai",
     "director": "David Lean",
     "year": 1957,
-    "country": "UK"
+    "country": "UK",
+    "rating": "?"
   },
   {
     "title": "Nights of Cabiria",
     "director": "Federico Fellini",
     "year": 1957,
     "country": "Italy-France"
+  },
+  {
+    "title": "Night of the Demon",
+    "director": "Jacques Tourneur",
+    "year": 1957,
+    "country": "UK",
+    "rating": "?"
   },
   {
     "title": "Paths of Glory",
@@ -1164,7 +1323,8 @@ const movies = [
     "title": "Ben-Hur",
     "director": "William Wyler",
     "year": 1959,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Hiroshima mon amour",
@@ -1236,7 +1396,8 @@ const movies = [
   {
     "title": "Le Trou",
     "director": "Jacques Becker",
-    "year": 1960
+    "year": 1960,
+    "country": "France-Italy"
   },
   {
     "title": "Peeping Tom",
@@ -1254,18 +1415,21 @@ const movies = [
     "title": "Rocco and His Brothers",
     "director": "Luchino Visconti",
     "year": 1960,
-    "country": "Italy-France"
+    "country": "Italy-France",
+    "rating": "?"
   },
   {
     "title": "Shoot the Piano Player",
     "director": "François Truffaut",
     "year": 1960,
-    "country": "France"
+    "country": "France",
+    "rating": "?"
   },
   {
     "title": "Spartacus",
     "director": "Stanley Kubrick",
-    "year": 1960
+    "year": 1960,
+    "country": "USA"
   },
   {
     "title": "The Virgin Spring",
@@ -1278,7 +1442,8 @@ const movies = [
     "title": "Breakfast at Tiffany's",
     "director": "Blake Edwards",
     "year": 1961,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Hustler",
@@ -1344,10 +1509,17 @@ const movies = [
     "country": "Mexico"
   },
   {
+    "title": "Harakiri",
+    "director": "Masaki Kobayashi",
+    "year": 1962,
+    "country": "Japan"
+  },
+  {
     "title": "Hatari!",
     "director": "Howard Hawks",
     "year": 1962,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Ivan's Childhood",
@@ -1390,7 +1562,8 @@ const movies = [
     "title": "The Man Who Shot Liberty Valance",
     "director": "John Ford",
     "year": 1962,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Manchurian Candidate",
@@ -1402,7 +1575,8 @@ const movies = [
     "title": "To Kill a Mockingbird",
     "director": "Robert Mulligan",
     "year": 1962,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Vivre sa vie",
@@ -1439,7 +1613,8 @@ const movies = [
     "title": "The Great Escape",
     "director": "John Sturges",
     "year": 1963,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "High and Low",
@@ -1457,7 +1632,8 @@ const movies = [
     "title": "The Leopard",
     "director": "Luchino Visconti",
     "year": 1963,
-    "country": "Italy"
+    "country": "Italy",
+    "rating": "?"
   },
   {
     "title": "The Silence",
@@ -1580,7 +1756,7 @@ const movies = [
     "title": "The Battle of Algiers",
     "director": "Gillo Pontecorvo",
     "year": 1966,
-    // "country": "Italy-Algeria",
+    "country": "Italy-Algeria",
     "rating": "?"
   },
   {
@@ -1601,6 +1777,13 @@ const movies = [
     "director": "Arthur Penn",
     "year": 1967,
     "country": "USA"
+  },
+  {
+    "title": "Cool Hand Luke",
+    "director": "Stuart Rosenberg",
+    "year": 1967,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Graduate",
@@ -1624,7 +1807,8 @@ const movies = [
     "title": "Point Blank",
     "director": "John Boorman",
     "year": 1967,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Week-End",
@@ -1704,7 +1888,8 @@ const movies = [
     "title": "Satyricon",
     "director": "Federico Fellini",
     "year": 1969,
-    "country": "Italy"
+    "country": "Italy",
+    "rating": "?"
   },
   {
     "title": "The Wild Bunch",
@@ -1714,6 +1899,12 @@ const movies = [
     "rating": "?"
   },
 
+  {
+    "title": "Claire's Knee",
+    "director": "Eric Rohmer",
+    "year": 1970,
+    "country": "France"
+  },
   {
     "title": "The Conformist",
     "director": "Bernardo Bertolucci",
@@ -1749,6 +1940,13 @@ const movies = [
     "director": "Luchino Visconti",
     "year": 1971,
     "country": "Italy",
+    "rating": "?"
+  },
+  {
+    "title": "Dirty Harry",
+    "director": "Don Siegel",
+    "year": 1971,
+    "country": "USA",
     "rating": "?"
   },
   {
@@ -1861,19 +2059,22 @@ const movies = [
     "title": "Badlands",
     "director": "Terrence Malick",
     "year": 1973,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Don't Look Now",
     "director": "Nicolas Roeg",
     "year": 1973,
-    "country": "UK"
+    "country": "UK",
+    "rating": "?"
   },
   {
     "title": "The Exorcist",
     "director": "William Friedkin",
     "year": 1973,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "F for Fake",
@@ -1890,7 +2091,8 @@ const movies = [
   {
     "title": "Paper Moon",
     "director": "Peter Bogdanovich",
-    "year": 1973
+    "year": 1973,
+    "country": "USA"
   },
   {
     "title": "Pat Garrett and Billy the Kid",
@@ -1901,7 +2103,8 @@ const movies = [
   {
     "title": "The Holy Mountain",
     "director": "Alejandro Jodorowsky",
-    "year": 1973
+    "year": 1973,
+    "country": "Mexico-USA"
   },
   {
     "title": "The Long Goodbye",
@@ -1913,7 +2116,8 @@ const movies = [
     "title": "The Spirit of the Beehive",
     "director": "Victor Erice",
     "year": 1973,
-    "country": "Spain"
+    "country": "Spain",
+    "rating": "?"
   },
   {
     "title": "The Wicker Man",
@@ -1944,7 +2148,8 @@ const movies = [
     "title": "Bring Me the Head of Alfredo Garcia",
     "director": "Sam Peckinpah",
     "year": 1974,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Chinatown",
@@ -1963,6 +2168,12 @@ const movies = [
     "director": "Francis Ford Coppola",
     "year": 1974,
     "country": "USA"
+  },
+  {
+    "title": "Lancelot du Lac",
+    "director": "Robert Bresson",
+    "year": 1974,
+    "country": "France-Italy"
   },
   {
     "title": "The Phantom of Liberty",
@@ -2000,13 +2211,15 @@ const movies = [
     "title": "Dersu Uzala",
     "director": "Akira Kurosawa",
     "year": 1975,
-    "country": "USSR-Japan"
+    "country": "USSR-Japan",
+    "rating": "?"
   },
   {
     "title": "Dog Day Afternoon",
     "director": "Sidney Lumet",
     "year": 1975,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Jaws",
@@ -2017,7 +2230,8 @@ const movies = [
   {
     "title": "The Man Who Would Be King",
     "director": "John Huston",
-    "year": 1975
+    "year": 1975,
+    "country": "USA"
   },
   {
     "title": "The Mirror",
@@ -2041,7 +2255,8 @@ const movies = [
     "title": "One Flew Over the Cuckoo's Nest",
     "director": "Milos Forman",
     "year": 1975,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Passenger",
@@ -2066,7 +2281,15 @@ const movies = [
     "title": "All the President's Men",
     "director": "Alan J. Pakula",
     "year": 1976,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Assault on Precinct 13",
+    "director": "John Carpenter",
+    "year": 1976,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Carrie",
@@ -2085,13 +2308,15 @@ const movies = [
     "title": "Network",
     "director": "Sidney Lumet",
     "year": 1976,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Rocky",
     "director": "John G. Avildsen",
     "year": "1976",
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Taxi Driver",
@@ -2209,7 +2434,15 @@ const movies = [
     "title": "Airplane!",
     "director": "Jim Abrahams, David Zucker & Jerry Zucker",
     "year": 1980,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "The Blues Brothers",
+    "director": "John Landis",
+    "year": 1980,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Kagemusha",
@@ -2240,19 +2473,29 @@ const movies = [
     "title": "The Shining",
     "director": "Stanley Kubrick",
     "year": 1980,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
+    "title": "An American Werewolf in London",
+    "director": "John Landis",
+    "year": 1981,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "Blow Out",
     "director": "Brian De Palma",
-    "year": 1981
+    "year": 1981,
+    "country": "USA"
   },
   {
     "title": "Mad Max 2",
     "director": "George Miller",
     "year": 1981,
-    "country": "Australia"
+    "country": "Australia",
+    "rating": "?"
   },
   {
     "title": "Possession",
@@ -2309,7 +2552,8 @@ const movies = [
     "title": "Tootsie",
     "director": "Sydney Pollack",
     "year": 1982,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -2341,13 +2585,28 @@ const movies = [
     "title": "Amadeus",
     "director": "Milos Forman",
     "year": 1984,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Blood Simple",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1984,
     "country": "USA"
+  },
+  {
+    "title": "Ghostbusters",
+    "director": "Ivan Reitman",
+    "year": 1984,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Once Upon a Time in America",
     "director": "Sergio Leone",
     "year": 1984,
-    "country": "Italy-USA"
+    "country": "Italy-USA",
+    "rating": "?"
   },
   {
     "title": "Paris, Texas",
@@ -2365,7 +2624,8 @@ const movies = [
     "title": "This is Spinal Tap",
     "director": "Rob Reiner",
     "year": 1984,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -2415,7 +2675,15 @@ const movies = [
     "title": "Down by Law",
     "director": "Jim Jarmusch",
     "year": "1986",
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Ferris Bueller's Day Off",
+    "director": "John Hughes",
+    "year": 1986,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Hannah and Her Sisters",
@@ -2442,10 +2710,18 @@ const movies = [
     "year": 1987
   },
   {
+    "title": "The Princess Bride",
+    "director": "Rob Reiner",
+    "year": 1987,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "Wings of Desire",
     "director": "Wim Wenders",
     "year": 1987,
-    "country": "West Germany-France"
+    "country": "West Germany-France",
+    "rating": "?"
   },
 
   {
@@ -2457,7 +2733,8 @@ const movies = [
   {
     "title": "Full Metal Jacket",
     "director": "Stanley Kubrick",
-    "year": 1987
+    "year": 1987,
+    "rating": "?"
   },
   {
     "title": "Raising Arizona",
@@ -2480,6 +2757,13 @@ const movies = [
   },
 
   {
+    "title": "Akira",
+    "director": "Katsuhiro Otomo",
+    "year": 1988,
+    "country": "Japan",
+    "rating": "?"
+  },
+  {
     "title": "Cinema Paradiso",
     "director": "Giuseppe Tornatore",
     "year": 1988,
@@ -2495,7 +2779,15 @@ const movies = [
     "title": "Die Hard",
     "director": "John McTiernan",
     "year": 1988,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Grave of the Fireflies",
+    "director": "Isao Takahata",
+    "year": 1988,
+    "country": "Japan",
+    "rating": "?"
   },
   {
     "title": "My Neighbor Totoro",
@@ -2519,7 +2811,22 @@ const movies = [
     "title": "Do the Right Thing",
     "director": "Spike Lee",
     "year": 1989,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "The Killer",
+    "director": "John Woo",
+    "year": 1989,
+    "country": "Hong Kong",
+    "rating": "?"
+  },
+  {
+    "title": "When Harry Met Sally...",
+    "director": "Rob Reiner",
+    "year": 1989,
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -2532,18 +2839,33 @@ const movies = [
     "title": "Days of Being Wild",
     "director": "Wong Kar-wai",
     "year": 1990,
-    "country": "Hong Kong"
+    "country": "Hong Kong",
+    "rating": "?"
   },
   {
     "title": "Edward Scissorhands",
     "director": "Tim Burton",
-    "year": 1990
+    "year": 1990,
+    "country": "USA"
   },
   {
     "title": "Goodfellas",
     "director": "Martin Scorsese",
     "year": 1990,
     "country": "USA"
+  },
+  {
+    "title": "Miller's Crossing",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1990,
+    "country": "USA"
+  },
+  {
+    "title": "Wild at Heart",
+    "director": "David Lynch",
+    "year": 1990,
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -2562,7 +2884,8 @@ const movies = [
     "title": "My Own Private Idaho",
     "director": "Gus Van Sant",
     "year": 1991,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Raise the Red Lantern",
@@ -2593,7 +2916,8 @@ const movies = [
   {
     "title": "Thelma & Louise",
     "director": "Ridley Scott",
-    "year": 1991
+    "year": 1991,
+    "country": "USA"
   },
 
   {
@@ -2617,13 +2941,21 @@ const movies = [
   {
     "title": "Dazed and Confused",
     "director": "Richard Linklater",
-    "year": 1993
+    "year": 1993,
+    "country": "USA"
   },
   {
     "title": "Groundhog Day",
     "director": "Harold Ramis",
     "year": 1993,
     "country": "USA"
+  },
+  {
+    "title": "Jurassic Park",
+    "director": "Steven Spielberg",
+    "year": 1993,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Naked",
@@ -2648,7 +2980,8 @@ const movies = [
     "title": "Chungking Express",
     "director": "Wong Kar-wai",
     "year": 1994,
-    "country": "Hong Kong"
+    "country": "Hong Kong",
+    "rating": "?"
   },
   {
     "title": "Crumb",
@@ -2658,13 +2991,21 @@ const movies = [
   {
     "title": "Ed Wood",
     "director": "Tim Burton",
-    "year": 1994
+    "year": 1994,
+    "country": "USA"
   },
   {
     "title": "Forrest Gump",
     "director": "Robert Zemeckis",
     "year": 1994,
     "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Léon",
+    "director": "Luc Besson",
+    "year": 1994,
+    "country": "France",
     "rating": "?"
   },
   {
@@ -2775,6 +3116,12 @@ const movies = [
     "country": "Japan"
   },
   {
+    "title": "L.A. Confidential",
+    "director": "Curtis Hanson",
+    "year": 1997,
+    "country": "USA"
+  },
+  {
     "title": "Lost Highway",
     "director": "David Lynch",
     "year": 1997,
@@ -2788,13 +3135,15 @@ const movies = [
   {
     "title": "Starship Troopers",
     "director": "Paul Verhoeven",
-    "year": 1997
+    "year": 1997,
+    "country": "USA"
   },
   {
     "title": "Titanic",
     "director": "James Cameron",
     "year": 1997,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -2835,6 +3184,13 @@ const movies = [
     "country": "Spain-France"
   },
   {
+    "title": "American Beauty",
+    "director": "Sam Mendes",
+    "year": 1999,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "Eyes Wide Shut",
     "director": "Stanley Kubrick",
     "year": 1999,
@@ -2844,7 +3200,8 @@ const movies = [
     "title": "Fight Club",
     "director": "David Fincher",
     "year": 1999,
-    "country": "USA-Germany"
+    "country": "USA-Germany",
+    "rating": "?"
   },
   {
     "title": "Magnolia",
@@ -2856,7 +3213,8 @@ const movies = [
     "title": "The Matrix",
     "director": "Lana Wachowski & Lilly Wachowski",
     "year": 1999,
-    "country": "USA-Australia"
+    "country": "USA-Australia",
+    "rating": "?"
   },
   {
     "title": "Rosetta",
@@ -2871,10 +3229,23 @@ const movies = [
     "year": 2000
   },
   {
+    "title": "Code Unknown",
+    "director": "Michael Haneke",
+    "year": 2000,
+    "country": "France-Germany-Romania"
+  },
+  {
     "title": "Crouching Tiger, Hidden Dragon",
     "director": "Ang Lee",
     "year": 2000,
-    // "country": "Taiwan-Hong Kong-USA-China"
+    // "country": "Taiwan-Hong Kong-USA-China",
+    "rating": "?"
+  },
+  {
+    "title": "Dancer in the Dark",
+    "director": "Lars von Trier",
+    "year": 2000,
+    // "country": "Denmark-France-Sweden-Italy-Germany-Norway-Netherlands-Iceland-Finland-UK-USA"
   },
   {
     "title": "In the Mood for Love",
@@ -2891,7 +3262,8 @@ const movies = [
   {
     "title": "Requiem for a Dream",
     "director": "Darren Aronofsky",
-    "year": 2000
+    "year": 2000,
+    "country": "USA"
   },
   {
     "title": "Yi yi",
@@ -2911,6 +3283,19 @@ const movies = [
     "director": "Jean-Pierre Jeunet",
     "year": 2001,
     "country": "France-Germany"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "director": "Peter Jackson",
+    "year": 2001,
+    "country": "USA-New Zealand"
+  },
+  {
+    "title": "Moulin Rouge!",
+    "director": "Baz Luhrmann",
+    "year": 2001,
+    "country": "USA-Australia",
+    "rating": "?"
   },
   {
     "title": "Mulholland Dr.",
@@ -2933,7 +3318,8 @@ const movies = [
     "title": "The Royal Tenenbaums",
     "director": "Wes Anderson",
     "year": 2001,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Y tu mamá también",
@@ -3017,7 +3403,8 @@ const movies = [
   {
     "title": "Million Dollar Baby",
     "director": "Clint Eastwood",
-    "year": 2004
+    "year": 2004,
+    "country": "USA"
   },
   {
     "title": "Tropical Malady",
@@ -3050,6 +3437,12 @@ const movies = [
     "director": "Alfonso Cuarón",
     "year": 2006,
     "country": "USA-UK"
+  },
+  {
+    "title": "The Host",
+    "director": "Bong Joon-ho",
+    "year": 2006,
+    "country": "South Korea-Japan"
   },
   {
     "title": "Inland Empire",
@@ -3087,14 +3480,23 @@ const movies = [
     "title": "Zodiac",
     "director": "David Fincher",
     "year": 2007,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
+  {
+    "title": "Hunger",
+    "director": "Steve McQueen",
+    "year": 2008,
+    "country": "UK-Ireland",
+    "rating": "?"
+  },
   {
     "title": "Let the Right One In",
     "director": "Tomas Alfredson",
     "year": 2008,
-    "country": "Sweden-Norway"
+    "country": "Sweden-Norway",
+    "rating": "?"
   },
   {
     "title": "Synecdoche, New York",
@@ -3106,24 +3508,35 @@ const movies = [
     "title": "The Dark Knight",
     "director": "Christopher Nolan",
     "year": 2008,
-    "country": "USA-UK"
+    "country": "USA-UK",
+    "rating": "?"
   },
   {
     "title": "The Hurt Locker",
     "director": "Kathryn Bigelow",
-    "year": 2008
+    "year": 2008,
+    "rating": "?"
   },
   {
     "title": "WALL-E",
     "director": "Andrew Stanton",
     "year": 2008,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
+    "title": "Avatar",
+    "director": "James Cameron",
+    "year": 2009,
+    "country": "USA-UK",
+    "rating": "?"
+  },
+  {
     "title": "Inglourious Basterds",
     "director": "Quentin Tarantino",
-    "year": 2009
+    "year": 2009,
+    "country": "USA-Germany"
   },
   {
     "title": "The White Ribbon",
@@ -3132,6 +3545,12 @@ const movies = [
     // "country": "Germany-Austria-France-Italy"
   },
 
+  {
+    "title": "Certified Copy",
+    "director": "Abbas Kiarostami",
+    "year": 2010,
+    "country": "France-Italy-Belgium-Iran"
+  },
   {
     "title": "The Social Network",
     "director": "David Fincher",

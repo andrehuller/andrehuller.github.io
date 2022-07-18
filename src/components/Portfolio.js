@@ -51,31 +51,7 @@ const Portfolio = {
           </v-card>
         </v-col>
       </v-row>
-      <v-divider class="my-4"></v-divider>
-      
-      <v-row>
-        <v-col cols="12" lg="4"
-          v-for="prototype in prototypes"
-          :key="prototype.title"
-        >
-          <v-card outlined :href="prototype.href">
-            <v-list>
-              <v-list-item>
-                <v-list-item-avatar class="indigo darken-1">
-                  <v-icon dark>{{ prototype.icon }}</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ prototype.title }}</v-list-item-title>
-                  <v-list-item-subtitle>{{ prototype.subtitle }}</v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action>
-                  <v-icon>mdi-arrow-right</v-icon>
-                </v-list-item-action>
-              </v-list-item>
-            </v-list>
-          </v-card>
-        </v-col>
-      </v-row>
+
     </v-container>
   `,
   data: () => ({
@@ -99,14 +75,6 @@ const Portfolio = {
         subtitle: 'http://der.mapas.pr.gov.br'
       }
       /*
-      {
-        title: 'geocultura',
-        subtitle: 'SECC',
-        href: 'http://cultura.mapas.pr.gov.br',
-        screenshot: 'assets/screenshots/geocultura.jpg',
-        homolog: 'http://geojsapitre.pr.gov.br/geocultura/#/',
-        prod: 'http://cultura.mapas.pr.gov.br'
-      },
       {
         title: 'geodc',
         subtitle: 'CEDC',
@@ -158,14 +126,6 @@ const Portfolio = {
         href: 'http://www.der.pr.gov.br/Pagina/Mapas-Rodoviarios#',
         subtitle: 'http://www.der.pr.gov.br/Pagina/Mapas-Rodoviarios#'
         // screenshot: 'assets/screenshots/Mapas Rodoviários.png'
-      }
-    ],
-    prototypes: [
-      {
-        title: 'Material-UI',
-        href: './material-ui.html',
-        icon: 'mdi-material-ui',
-        subtitle: 'React + Material-UI'
       }
     ]
   })

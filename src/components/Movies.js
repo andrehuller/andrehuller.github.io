@@ -8,45 +8,40 @@ const Movies = {
         :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
       >
         <template v-slot:header>
-          <v-toolbar
-            class="mb-3"
-          >
-            <v-container fluid>
-              <v-row>
-                <v-col lg="4">
-                  <v-text-field
-                    v-model="search"
-                    clearable
-                    flat solo-inverted
-                    hide-details
-                    prepend-inner-icon="mdi-magnify"
-                    label="Search"
-                  ></v-text-field>
-                </v-col>
-                <!--
-                <v-col lg="4">
-                  <v-autocomplete
-                    label="Director"
-                    :items="directors"
-                    hide-details
-                    clearable
-                    flat solo-inverted
-                    prepend-inner-icon="mdi-magnify"
-                  ></v-autocomplete>
-                </v-col>
-                -->
-                <!--
-                <v-col lg="4">
-                  <v-select
-                    clearable
-                    flat solo-inverted
-                    hide-details
-                  ></v-select>
-                </v-col>
-                -->
-              </v-row>
-            </v-container>
-          </v-toolbar>
+          <v-row>
+            <v-col lg="6">
+              <v-text-field
+                v-model="search"
+                clearable
+                flat solo-inverted
+                hide-details
+                prepend-inner-icon="mdi-magnify"
+                label="Search"
+              ></v-text-field>
+            </v-col>
+            <!--
+            <v-col lg="4">
+              <v-autocomplete
+                label="Director"
+                :items="directors"
+                hide-details
+                clearable
+                flat solo-inverted
+                prepend-inner-icon="mdi-magnify"
+              ></v-autocomplete>
+            </v-col>
+            -->
+            <!--
+            <v-col lg="4">
+              <v-select
+                clearable
+                flat solo-inverted
+                hide-details
+              ></v-select>
+            </v-col>
+            -->
+          </v-row>
+
         </template>
         <template v-slot:default="props">
           <v-row>
@@ -61,9 +56,7 @@ const Movies = {
                   :src="imageSrc(item)"
                   height="198px"
                 ></v-img>
-                <v-card-title>
-                  {{ item.title }}
-                </v-card-title>
+                <v-card-title>{{ item.title }}</v-card-title>
                 <v-card-subtitle>
                   {{ item.director }} / {{ item.year }} / {{ item.country }}
                 </v-card-subtitle>
@@ -89,7 +82,7 @@ const Movies = {
         this.directors.push(this.items[i].director)
       }
 
-      if ("?".localeCompare(this.items[i].rating) != 0 && this.items[i].rating != 8 && this.items[i].rating != 7) {
+      if ("?".localeCompare(this.items[i].rating) != 0 && this.items[i].rating != 8 && this.items[i].rating != 7 && this.items[i].rating != 5) {
         this.filteredItems.push(this.items[i])
       }
     }

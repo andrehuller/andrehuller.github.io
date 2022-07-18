@@ -3,31 +3,51 @@ const Chartjs = {
     <v-container fluid>
       <v-row>
         <v-col cols="12" lg="4">
-          <v-card>
+          <v-card outlined>
             <v-card-title>
               <v-avatar color="#f87979"  class="mr-2">
-                <v-icon dark>mdi-video-vintage</v-icon>
+                <v-icon dark>mdi-filmstrip</v-icon>
               </v-avatar>
               {{ items.length }} films
             </v-card-title>
           </v-card>
         </v-col>
+        <v-col cols="12" lg="4">
+          <v-card outlined>
+            <v-card-title>
+              <v-avatar color="#f87979"  class="mr-2">
+                <v-icon dark>mdi-video-vintage</v-icon>
+              </v-avatar>
+              {{ directors }} directors
+            </v-card-title>
+          </v-card>
+        </v-col>
+        <v-col cols="12" lg="4">
+          <v-card outlined>
+            <v-card-title>
+              <v-avatar color="#f87979"  class="mr-2">
+                <v-icon dark>mdi-earth</v-icon>
+              </v-avatar>
+              {{ countries }} countries
+            </v-card-title>
+          </v-card>
+        </v-col>
         <v-col cols="12" lg="12">
-          <v-card>
+          <v-card outlined>
             <div>
               <canvas id="myChart" height="90px"></canvas>
             </div>
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
-          <v-card>
+          <v-card outlined>
             <div>
               <canvas id="chartYear" height="60px"></canvas>
             </div>
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
-        <v-card>
+        <v-card outlined>
           <div>
             <canvas id="chartCountry" height="80px"></canvas>
           </div>
@@ -35,7 +55,7 @@ const Chartjs = {
       </v-col>
         <!--
         <v-col cols="12" lg="3">
-          <v-card>
+          <v-card outlined>
             <div>
               <canvas id="chartRating" height="240px"></canvas>
             </div>
@@ -47,7 +67,8 @@ const Chartjs = {
   `,
   data: () => ({
     items: [],
-    directors: [],
+    directors: null,
+    countries: null
   }),
   mounted: function() {
     this.items = movies
@@ -66,14 +87,13 @@ const Chartjs = {
       var data = []
       for (var i = 0; i < keys.length; i++) {
         var value = groupedBy[keys[i]].length
-        if (value > 2) {
+        if (value > 3) {
           labels.push(keys[i])
           data.push(value)
         }
       }
       
-      console.log(labels)
-      console.log(data)
+      this.directors = keys.length
   
       const config = {
         type: 'bar',
@@ -208,10 +228,14 @@ const Chartjs = {
         if ("undefined".localeCompare(keys[i]) != 0) {
           var value = groupedBy[keys[i]].length
 
-          labels.push(keys[i])
-          data.push(value)
+          if (value > 1) {
+            labels.push(keys[i])
+            data.push(value)
+          }
         }
       }
+
+      this.countries = keys.length
       
       const config = {
         type: 'bar',
