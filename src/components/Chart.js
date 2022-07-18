@@ -2,6 +2,16 @@ const Chartjs = {
   template: `
     <v-container fluid>
       <v-row>
+        <v-col cols="12" lg="4">
+          <v-card>
+            <v-card-title>
+              <v-avatar color="#f87979"  class="mr-2">
+                <v-icon dark>mdi-video-vintage</v-icon>
+              </v-avatar>
+              {{ items.length }} films
+            </v-card-title>
+          </v-card>
+        </v-col>
         <v-col cols="12" lg="12">
           <v-card>
             <div>
@@ -204,7 +214,7 @@ const Chartjs = {
       }
       
       const config = {
-        type: 'line',
+        type: 'bar',
         data: {
           labels: labels,
           datasets: [
@@ -213,9 +223,9 @@ const Chartjs = {
               data: data,
               backgroundColor: '#f87979',
               borderColor: '#f87979',
-              fill: false,
-              cubicInterpolationMode: 'monotone',
-              tension: 0.4,
+              // fill: false,
+              // cubicInterpolationMode: 'monotone',
+              // tension: 0.4,
 
               // pointStyle: 'circle',
               // pointRadius: 10,
@@ -226,7 +236,7 @@ const Chartjs = {
         options: {
           scales: {
             y: {
-              beginAtZero: true,
+              // beginAtZero: true,
               display: true,
               type: 'logarithmic',
             }
