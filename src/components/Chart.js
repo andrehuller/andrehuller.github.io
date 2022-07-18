@@ -16,6 +16,13 @@ const Chartjs = {
             </div>
           </v-card>
         </v-col>
+        <v-col cols="12" lg="12">
+        <v-card>
+          <div>
+            <canvas id="chartCountry" height="80px"></canvas>
+          </div>
+        </v-card>
+      </v-col>
         <!--
         <v-col cols="12" lg="3">
           <v-card>
@@ -38,6 +45,7 @@ const Chartjs = {
     this.createChartDirector()
     this.createChartYear()
     // this.createChartRating()
+    this.createChartCountry()
   },
   methods: {
     createChartDirector: function () {
@@ -111,8 +119,11 @@ const Chartjs = {
               backgroundColor: '#f87979',
               // borderColor: 'rgb(255, 99, 132)',
               borderColor: '#f87979',
+              // fill: false,
+              // stepped: true
               fill: false,
-              stepped: true
+              cubicInterpolationMode: 'monotone',
+              tension: 0.4
             }
           ]
         },
@@ -176,6 +187,57 @@ const Chartjs = {
         document.getElementById('chartRating'),
         config
       );
-    }
+    },
+    createChartCountry: function () {
+      var groupedBy = _.groupBy(this.items, 'country')
+    
+      var keys = Object.keys(groupedBy).sort()
+      var labels = []
+      var data = []
+      for (var i = 0; i < keys.length; i++) {
+        if ("undefined".localeCompare(keys[i]) != 0) {
+          var value = groupedBy[keys[i]].length
+
+          labels.push(keys[i])
+          data.push(value)
+        }
+      }
+      
+      const config = {
+        type: 'line',
+        data: {
+          labels: labels,
+          datasets: [
+            {
+              label: "Country",
+              data: data,
+              backgroundColor: '#f87979',
+              borderColor: '#f87979',
+              fill: false,
+              cubicInterpolationMode: 'monotone',
+              tension: 0.4,
+
+              // pointStyle: 'circle',
+              // pointRadius: 10,
+              // pointHoverRadius: 10
+            }
+          ]
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              display: true,
+              type: 'logarithmic',
+            }
+          }
+        },
+      };
+  
+      const myChart = new Chart(
+        document.getElementById('chartCountry'),
+        config
+      );
+    },
   }
 }
