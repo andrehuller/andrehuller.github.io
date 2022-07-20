@@ -21,9 +21,10 @@ Vue.component('date-picker', {
           v-on="on"
           :label="label"
           
-          prepend-icon="mdi-calendar"
+          prepend-inner-icon="mdi-calendar"
+          hide-details
           clearable
-          
+          outlined
         ></v-text-field>
       </template>
       <v-date-picker
@@ -51,62 +52,76 @@ const DatePicker = {
   template: `
     <v-container>
       <v-row justify="center">
-        <v-col cols="12" sm="12" md="12" lg="4">
+        <v-col cols="12" sm="12" md="12" lg="8">
           <v-card>
-            <v-card-text>
-              <date-picker
-                label="Start Date"
-              ></date-picker>
-              <date-picker
-                label="End Date"
-              ></date-picker>
-
-              <v-menu
-                ref="startMenu"
-                v-model="startMenu"
-                :close-on-content-click="false"
-                transition="scale-transition"
-                offset-y max-width="290px" min-width="290px"
-              >
-                <template v-slot:activator="{ on }">
-                  <v-text-field v-model="startDateFmt"
-                    v-mask="'##/##/####'"
+            <v-container>
+              <v-row>
+                <v-col cols="12" lg="6">
+                  <date-picker
                     label="Start Date"
-                    prepend-icon="mdi-calendar"
-                    @blur="startDate = parseDate(startDateFmt)"
-                    v-on="on" clearable
-                  ></v-text-field>
-                </template>
-                <v-date-picker v-model="startDate" no-title
-                  @input="startMenu = false"
-                ></v-date-picker>
-              </v-menu>
+                  ></date-picker>
+                </v-col>
+                <v-col cols="12" lg="6">
+                  <date-picker
+                    label="End Date"
+                  ></date-picker>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col cols="12" lg="6">
+                  <v-menu
+                    ref="startMenu"
+                    v-model="startMenu"
+                    :close-on-content-click="false"
+                    transition="scale-transition"
+                    offset-y max-width="290px" min-width="290px"
+                  >
+                    <template v-slot:activator="{ on }">
+                      <v-text-field v-model="startDateFmt"
+                        v-mask="'##/##/####'"
+                        label="Start Date"
+                        prepend-inner-icon="mdi-calendar"
+                        @blur="startDate = parseDate(startDateFmt)"
+                        v-on="on" clearable
+                        hide-details outlined
+                      ></v-text-field>
+                    </template>
+                    <v-date-picker v-model="startDate" no-title
+                      @input="startMenu = false"
+                    ></v-date-picker>
+                  </v-menu>
+                </v-col>
+                <v-col cols="12" lg="6">
+                  <v-menu
+                    v-model="endMenu"
+                    :close-on-content-click="false"
+                    transition="scale-transition"
+                    offset-y max-width="290px" min-width="290px">
+                    <template v-slot:activator="{ on }">
+                      <v-text-field
+                        v-model="endDateFmt"
+                        v-mask="'##/##/####'"
+                        label="End Date"
+                        prepend-inner-icon="mdi-calendar"
+                        @blur="endDate = parseDate(endDateFmt)" v-on="on"
+                        clearable hide-details outlined
+                      ></v-text-field>
+                    </template>
+                    <v-date-picker v-model="endDate" no-title
+                      @input="endMenu = false"
+                    ></v-date-picker>
+                  </v-menu>
+                </v-col>
+              </v-row>
+            </v-container>
 
-              <v-menu
-                v-model="endMenu"
-                :close-on-content-click="false"
-                transition="scale-transition"
-                offset-y max-width="290px" min-width="290px">
-                <template v-slot:activator="{ on }">
-                  <v-text-field
-                    v-model="endDateFmt"
-                    v-mask="'##/##/####'"
-                    label="End date"
-                    prepend-icon="mdi-calendar"
-                    @blur="endDate = parseDate(endDateFmt)" v-on="on"
-                    clearable
-                  ></v-text-field>
-                </template>
-                <v-date-picker v-model="endDate" no-title
-                  @input="endMenu = false"
-                ></v-date-picker>
-              </v-menu>
+            <v-card-text>
 
               <v-text-field
                 v-mask="['(##) ####-####', '(##) #####-####']"
                 label="Phone"
-                prepend-icon="mdi-phone"
-                clearable
+                prepend-inner-icon="mdi-phone"
+                outlined clearable
               ></v-text-field>
 
               <!--
@@ -153,12 +168,6 @@ const DatePicker = {
                 :items="municipios"
                 clearable
               ></v-autocomplete>
-
-              <v-select
-                label="Lista"
-                :items="listas"
-                clearable
-              ></v-select>
 
             </v-card-text>
             <v-card-actions>
@@ -227,7 +236,6 @@ const DatePicker = {
     chamadas: ['001/2022', '001/2021', '001/2020'],
     nucleos: ['APUCARANA', 'CAMPO MOURÃO', 'CASCAVEL'],
     municipios: ['APUCARANA', 'ARAPONGAS', 'BOM SUCESSO'],
-    listas: ['1- Pauta Geral', '2- Pauta CRAS e CREAS com perecíveis', '3- Pauta CRAS e CREAS sem perecíveis'],
     search: null,
     gruposHeaders: [
       { text: 'Descrição', value: 'descricao', width: '70%' },

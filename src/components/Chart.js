@@ -4,32 +4,44 @@ const Chartjs = {
       <v-row>
         <v-col cols="12" lg="4">
           <v-card outlined>
-            <v-card-title>
-              <v-avatar color="#f87979"  class="mr-2">
-                <v-icon dark>mdi-filmstrip</v-icon>
-              </v-avatar>
-              {{ items.length }} films
-            </v-card-title>
+            <v-list>
+              <v-list-item>
+                <v-list-item-avatar color="#f87979">
+                  <v-icon dark>mdi-filmstrip</v-icon>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>{{ items.length }} films</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
           </v-card>
         </v-col>
         <v-col cols="12" lg="4">
           <v-card outlined>
-            <v-card-title>
-              <v-avatar color="#f87979"  class="mr-2">
-                <v-icon dark>mdi-video-vintage</v-icon>
-              </v-avatar>
-              {{ directors }} directors
-            </v-card-title>
+            <v-list>
+              <v-list-item>
+                <v-list-item-avatar color="#f87979">
+                  <v-icon dark>mdi-video-vintage</v-icon>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>{{ directors }} directors</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
           </v-card>
         </v-col>
         <v-col cols="12" lg="4">
           <v-card outlined>
-            <v-card-title>
-              <v-avatar color="#f87979"  class="mr-2">
-                <v-icon dark>mdi-earth</v-icon>
-              </v-avatar>
-              {{ countries }} countries
-            </v-card-title>
+            <v-list>
+              <v-list-item>
+                <v-list-item-avatar color="#f87979">
+                  <v-icon dark>mdi-earth</v-icon>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title>{{ countries }} countries</v-list-item-title>
+                </v-list-item-content>
+              </v-list-item>
+            </v-list>
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
@@ -228,10 +240,10 @@ const Chartjs = {
         if ("undefined".localeCompare(keys[i]) != 0) {
           var value = groupedBy[keys[i]].length
 
-          if (value > 1) {
+          // if (value > 1) {
             labels.push(keys[i])
             data.push(value)
-          }
+          // }
         }
       }
 

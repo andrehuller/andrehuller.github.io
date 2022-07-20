@@ -3,10 +3,11 @@ const Movies = {
     <v-container fluid>
       <v-data-iterator
         :items="filteredItems"
-        :items-per-page="40"
+        :items-per-page="16"
         :search="search"
         :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
       >
+        <!--
         <template v-slot:header>
           <v-row>
             <v-col lg="6">
@@ -41,8 +42,8 @@ const Movies = {
             </v-col>
             -->
           </v-row>
-
         </template>
+        -->
         <template v-slot:default="props">
           <v-row>
             <v-col
@@ -60,6 +61,7 @@ const Movies = {
                 <v-card-subtitle>
                   {{ item.director }} / {{ item.year }} / {{ item.country }}
                 </v-card-subtitle>
+
                 <v-spacer></v-spacer>
               </v-card>
             </v-col>
@@ -71,9 +73,13 @@ const Movies = {
   data: () => ({
     items: [],
     filteredItems: [],
-    directors: [],
-    search: null
+    directors: []
   }),
+  computed: {
+    search () {
+      return this.$store.state.search
+    }
+  },
   mounted: function () {
     this.items = movies
     // this.directors = []

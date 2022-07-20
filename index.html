@@ -166,9 +166,9 @@
       <v-app-bar
         app
         clipped-left
-        color="#25305E"
+        color="red darken-1"
         dark
-      ><!--  -->
+      ><!-- color="#25305E" -->
         <v-app-bar-nav-icon
           @click.stop="drawer = !drawer"
         ></v-app-bar-nav-icon>
@@ -176,15 +176,15 @@
           <span class="hidden-sm-and-down">github.io</span>
         </v-toolbar-title>
         
-        <!--
         <v-text-field
+          v-model="search"
           color="#40403E"
           prepend-inner-icon="mdi-magnify"
           label="Search"
           class="hidden-sm-and-down"
           clearable flat hide-details solo-inverted
         ></v-text-field>
-        -->
+
         <v-spacer></v-spacer>
 
         <v-tooltip bottom>
@@ -239,6 +239,7 @@
   
   <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vuetify@2.6.6/dist/vuetify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuex@3.6.2/dist/vuex.min.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/vue-router@3.4.2/dist/vue-router.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue-the-mask@0.11.1/dist/vue-the-mask.min.js"></script>
@@ -365,9 +366,28 @@
     const router = new VueRouter({
       routes
     })
-    
+
+    Vue.use(Vuex)
+
+    const store = new Vuex.Store({
+      state: {
+        search: null
+      },
+      mutations: {
+        SET_SEARCH (state, search) {
+          state.search = search
+        }
+      },
+      actions: {
+        setSearch({ commit }, newValue) {
+          commit("SET_SEARCH", newValue)
+        }
+      }
+    })
+
     new Vue({
       el: '#app',
+      store: store,
       vuetify: new Vuetify(),
       router,
       data: () => ({
@@ -401,7 +421,17 @@
             title: 'Tree View'
           }
         ]
-      })
+      }),
+      computed: {
+        search: {
+          get () {
+            return store.state.search
+          },
+          set (newValue) {
+            store.dispatch("setSearch", newValue)
+          }
+        }
+      }
     })
   </script>
 </body>
