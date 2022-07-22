@@ -256,6 +256,13 @@ const movies = [
   },
 
   {
+    "title": "Design for Living",
+    "director": "Ernst Lubitsch",
+    "year": 1933,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "Duck Soup",
     "director": "Leo McCarey",
     "year": 1933,
@@ -343,6 +350,13 @@ const movies = [
     "director": "Howard Hawks",
     "year": 1938,
     "country": "USA"
+  },
+  {
+    "title": "Holiday",
+    "director": "George Cukor",
+    "year": 1938,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Lady Vanishes",
@@ -627,7 +641,8 @@ const movies = [
     "title": "Detour",
     "director": "Edgar G. Ulmer",
     "year": 1945,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Les Dames du Bois de Boulogne",
@@ -659,13 +674,21 @@ const movies = [
     "title": "Beauty and the Beast",
     "director": "Jean Cocteau",
     "year": 1946,
-    "country": "France"
+    "country": "France",
+    "rating": "?"
   },
   {
     "title": "The Best Years of Our Lives",
     "director": "William Wyler",
     "year": 1946,
     "country": "US"
+  },
+  {
+    "title": "Gilda",
+    "director": "Charles Vidor",
+    "year": 1946,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Great Expectations",
@@ -717,13 +740,21 @@ const movies = [
     "title": "The Ghost and Mrs. Muir",
     "director": "Joseph L. Mankiewicz",
     "year": 1947,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Monsieur Verdoux",
     "director": "Charles Chaplin",
     "year": 1947,
     "country": "USA"
+  },
+  {
+    "title": "Odd Man Out",
+    "director": "Carol Reed",
+    "year": 1947,
+    "country": "UK",
+    "rating": "?"
   },
   {
     "title": "Out of the Past",
@@ -762,7 +793,8 @@ const movies = [
     "title": "The Lady from Shanghai",
     "director": "Orson Welles",
     "year": 1948,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Red River",
@@ -776,6 +808,13 @@ const movies = [
     "director": "Michael Powell & Emeric Pressburger",
     "year": 1948,
     "country": "UK",
+    "rating": "?"
+  },
+  {
+    "title": "Rope",
+    "director": "Alfred Hitchcock",
+    "year": 1948,
+    "country": "USA",
     "rating": "?"
   },
   {
@@ -835,7 +874,8 @@ const movies = [
     "title": "Gun Crazy",
     "director": "Joseph H. Lewis",
     "year": 1950,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "In a Lonely Place",
@@ -1037,6 +1077,13 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "Gentlemen Prefer Blondes",
+    "director": "Howard Hawks",
+    "year": 1953,
+    "country": "US",
+    "rating": "?"
+  },
+  {
     "title": "I Vitelloni",
     "director": "Federico Fellini",
     "year": 1953,
@@ -1073,6 +1120,12 @@ const movies = [
     "year": 1953,
     "country": "USA",
     "rating": "?"
+  },
+  {
+    "title": "Summer with Monika",
+    "director": "Ingmar Bergman",
+    "year": 1953,
+    "country": "Sweden"
   },
   {
     "title": "Tokyo Story",
@@ -1136,7 +1189,8 @@ const movies = [
     "title": "Senso",
     "director": "Luchino Visconti",
     "year": 1954,
-    "country": "Italy"
+    "country": "Italy",
+    "rating": "?"
   },
   {
     "title": "Seven Samurai",
@@ -1144,6 +1198,12 @@ const movies = [
     "year": 1954,
     "country": "Japan",
     "rating": "?"
+  },
+  {
+    "title": "Touchez pas au Grisbi",
+    "director": "Jacques Becker",
+    "year": 1954,
+    "country": "France"
   },
   {
     "title": "Voyage in Italy",
@@ -1249,6 +1309,12 @@ const movies = [
   },
 
   {
+    "title": "The Ten Commandments",
+    "director": "Cecil B. DeMille",
+    "year": 1956,
+    "country": "USA"
+  },
+  {
     "title": "A Man Escaped",
     "director": "Robert Bresson",
     "year": 1956,
@@ -1258,7 +1324,15 @@ const movies = [
     "title": "Bigger Than Life",
     "director": "Nicholas Ray",
     "year": 1956,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Forbidden Planet",
+    "director": "Fred M. Wilcox",
+    "year": 1956,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Invasion of the Body Snatchers",
@@ -1270,7 +1344,8 @@ const movies = [
     "title": "The Killing",
     "director": "Stanley Kubrick",
     "year": "1956",
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Searchers",
@@ -1602,6 +1677,13 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "Knife in the Water",
+    "director": "Roman Polanski",
+    "year": 1962,
+    "country": "Poland",
+    "rating": "?"
+  },
+  {
     "title": "La Jetée",
     "director": "Chris Marker",
     "year": 1962,
@@ -1617,7 +1699,8 @@ const movies = [
     "title": "Lolita",
     "director": "Stanley Kubrick",
     "year": 1962,
-    "country": "UK"
+    "country": "UK",
+    "rating": "?"
   },
   {
     "title": "L'Eclisse",
@@ -1669,7 +1752,8 @@ const movies = [
     "title": "The Birds",
     "director": "Alfred Hitchcock",
     "year": 1963,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Contempt",
@@ -1691,17 +1775,24 @@ const movies = [
     "country": "Japan"
   },
   {
-    "title": "Shock Corridor",
-    "director": "Samuel Fuller",
-    "year": 1963,
-    "country": "USA"
-  },
-  {
     "title": "The Leopard",
     "director": "Luchino Visconti",
     "year": 1963,
     "country": "Italy",
     "rating": "?"
+  },
+  {
+    "title": "The Nutty Professor",
+    "director": "Jerry Lewis",
+    "year": 1963,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "Shock Corridor",
+    "director": "Samuel Fuller",
+    "year": 1963,
+    "country": "USA"
   },
   {
     "title": "The Silence",
@@ -1782,10 +1873,18 @@ const movies = [
     "country": "UK"
   },
   {
+    "title": "Simon of the Desert",
+    "director": "Luis Buñuel",
+    "year": 1965,
+    "country": "Mexico",
+    "rating": "?"
+  },
+  {
     "title": "The Sound of Music",
     "director": "Robert Wise",
     "year": 1965,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -1810,7 +1909,8 @@ const movies = [
     "title": "Daisies",
     "director": "Vera Chytilová",
     "year": 1966,
-    "country": "Czechoslovakia"
+    "country": "Czechoslovakia",
+    "rating": "?"
   },
   {
     "title": "The Good, the Bad and the Ugly",
@@ -1997,12 +2097,21 @@ const movies = [
     "title": "The Conformist",
     "director": "Bernardo Bertolucci",
     "year": 1970,
-    "country": "Italy-France-West Germany"
+    "country": "Italy-France-West Germany",
+    "rating": "?"
+  },
+  {
+    "title": "M*A*S*H",
+    "director": "Robert Altman",
+    "year": 1970,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Private Life of Sherlock Holmes",
     "director": "Billy Wilder",
     "year": 1970,
+    "country": "USA",
     "rating": "?"
   },
   {
@@ -2014,7 +2123,8 @@ const movies = [
   {
     "title": "Zabriskie Point",
     "director": "Michelangelo Antonioni",
-    "year": 1970
+    "year": 1970,
+    "country": "USA"
   },
 
   {
@@ -2036,6 +2146,12 @@ const movies = [
     "year": 1971,
     "country": "USA",
     "rating": "?"
+  },
+  {
+    "title": "Duel",
+    "director": "Steven Spielberg",
+    "year": 1971,
+    "country": "USA"
   },
   {
     "title": "Harold and Maude",
@@ -2080,25 +2196,29 @@ const movies = [
     "title": "Cabaret",
     "director": "Bob Fosse",
     "year": 1972,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Cries and Whispers",
     "director": "Ingmar Bergman",
     "year": 1972,
-    "country": "Sweden"
+    "country": "Sweden",
+    "rating": "?"
   },
   {
     "title": "Deliverance",
     "director": "John Boorman",
     "year": 1972,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Fat City",
     "director": "John Huston",
     "year": 1972,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Fellini's Roma",
@@ -2123,7 +2243,8 @@ const movies = [
     "title": "Last Tango in Paris",
     "director": "Bernardo Bertolucci",
     "year": 1972,
-    "country": "France-Italy"
+    "country": "France-Italy",
+    "rating": "?"
   },
   {
     "title": "The Marriage of Maria Braun",
@@ -2145,6 +2266,13 @@ const movies = [
     "country": "Italy"
   },
   {
+    "title": "American Graffiti",
+    "director": "George Lucas",
+    "year": 1973,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
     "title": "Badlands",
     "director": "Terrence Malick",
     "year": 1973,
@@ -2159,6 +2287,13 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "Enter the Dragon",
+    "director": "Robert Clouse",
+    "year": 1973,
+    "country": "USA-Hong Kong",
+    "rating": "?"
+  },
+  {
     "title": "The Exorcist",
     "director": "William Friedkin",
     "year": 1973,
@@ -2169,7 +2304,7 @@ const movies = [
     "title": "F for Fake",
     "director": "Orson Welles",
     "year": 1973,
-    // "country": "France-Iran-West Germany"
+    "country": "France-Iran-West Germany"
   },
   {
     "title": "Mean Streets",
@@ -2390,6 +2525,13 @@ const movies = [
     "country": "USA"
   },
   {
+    "title": "Fellini's Casanova",
+    "director": "Federico Fellini",
+    "year": 1976,
+    "country": "Italy",
+    "rating": "?"
+  },
+  {
     "title": "In the Realm of the Senses",
     "director": "Nagisa Oshima",
     "year": 1976,
@@ -2399,6 +2541,13 @@ const movies = [
   {
     "title": "Network",
     "director": "Sidney Lumet",
+    "year": 1976,
+    "country": "USA",
+    "rating": "?"
+  },
+  {
+    "title": "The Outlaw Josey Wales",
+    "director": "Clint Eastwood",
     "year": 1976,
     "country": "USA",
     "rating": "?"
@@ -2594,6 +2743,13 @@ const movies = [
     "country": "USA"
   },
   {
+    "title": "Das Boot",
+    "director": "Wolfgang Petersen",
+    "year": 1981,
+    "country": "West Germany",
+    "rating": "?"
+  },
+  {
     "title": "Excalibur",
     "director": "John Boorman",
     "year": 1981,
@@ -2619,6 +2775,12 @@ const movies = [
     "year": 1981,
     "country": "USA",
     "rating": 8
+  },
+  {
+    "title": "Reds",
+    "director": "Warren Beatty",
+    "year": 1981,
+    "country": "USA"
   },
 
   {
@@ -2798,6 +2960,13 @@ const movies = [
   },
 
   {
+    "title": "A Better Tomorrow",
+    "director": "John Woo",
+    "year": 1986,
+    "country": "Hong Kong",
+    "rating": "?"
+  },
+  {
     "title": "Aliens",
     "director": "James Cameron",
     "year": 1986,
@@ -2824,6 +2993,12 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "The Fly",
+    "director": "David Cronenberg",
+    "year": 1986,
+    "country": "USA"
+  },
+  {
     "title": "Hannah and Her Sisters",
     "director": "Woody Allen",
     "year": 1986,
@@ -2836,10 +3011,11 @@ const movies = [
     "country": "France-Sweden"
   },
   {
-    "title": "The Fly",
-    "director": "David Cronenberg",
+    "title": "Stand by Me",
+    "director": "Rob Reiner",
     "year": 1986,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -2935,10 +3111,23 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "The Last Temptation of Christ",
+    "director": "Martin Scorsese",
+    "year": 1988,
+    "country": "USA"
+  },
+  {
     "title": "My Neighbor Totoro",
     "director": "Hayao Miyazaki",
     "year": 1988,
     "country": "Japan"
+  },
+  {
+    "title": "They Live",
+    "director": "John Carpenter",
+    "year": 1988,
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Women on the Verge of a Nervous Breakdown",
@@ -3066,6 +3255,12 @@ const movies = [
   },
 
   {
+    "title": "Bad Lieutenant",
+    "director": "Abel Ferrara",
+    "year": 1992,
+    "country": "USA"
+  },
+  {
     "title": "Reservoir Dogs",
     "director": "Quentin Tarantino",
     "year": 1992,
@@ -3082,7 +3277,8 @@ const movies = [
   {
     "title": "Carlito's Way",
     "director": "Brian De Palma",
-    "year": 1993
+    "year": 1993,
+    "rating": "?"
   },
   {
     "title": "Dazed and Confused",
@@ -3108,6 +3304,12 @@ const movies = [
     "director": "Mike Leigh",
     "year": 1993,
     "country": "UK"
+  },
+  {
+    "title": "The Nightmare Before Christmas",
+    "director": "Henry Selick",
+    "year": 1993,
+    "country": "USA"
   },
   {
     "title": "Schindler's List",
@@ -3217,7 +3419,8 @@ const movies = [
     "title": "Safe",
     "director": "Todd Haynes",
     "year": 1995,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Se7en",
@@ -3237,7 +3440,14 @@ const movies = [
     "title": "Underground",
     "director": "Emir Kusturica",
     "year": 1995,
-    // "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
+    "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
+    "rating": "?"
+  },
+  {
+    "title": "The Usual Suspects",
+    "director": "Bryan Singer",
+    "year": 1995,
+    "country": "USA",
     "rating": "?"
   },
   
@@ -3271,13 +3481,15 @@ const movies = [
     "title": "Hana-bi",
     "director": "Takeshi Kitano",
     "year": 1997,
-    "country": "Japan"
+    "country": "Japan",
+    "rating": "?"
   },
   {
     "title": "L.A. Confidential",
     "director": "Curtis Hanson",
     "year": 1997,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Lost Highway",
@@ -3389,6 +3601,13 @@ const movies = [
     "year": 1999,
     "country": "Belgium-France"
   },
+  {
+    "title": "The Straight Story",
+    "director": "David Lynch",
+    "year": 1999,
+    "country": "USA-France-UK",
+    "rating": "?"
+  },
 
   {
     "title": "Amores perros",
@@ -3405,14 +3624,14 @@ const movies = [
     "title": "Crouching Tiger, Hidden Dragon",
     "director": "Ang Lee",
     "year": 2000,
-    // "country": "Taiwan-Hong Kong-USA-China",
+    "country": "Taiwan-Hong Kong-USA-China",
     "rating": "?"
   },
   {
     "title": "Dancer in the Dark",
     "director": "Lars von Trier",
     "year": 2000,
-    // "country": "Denmark-France-Sweden-Italy-Germany-Norway-Netherlands-Iceland-Finland-UK-USA",
+    "country": "Denmark-France-Sweden-Italy-Germany-Norway-Netherlands-Iceland-Finland-UK-USA",
     "rating": "?"
   },
   {
@@ -3425,7 +3644,8 @@ const movies = [
     "title": "Memento",
     "director": "Christopher Nolan",
     "year": 2000,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Requiem for a Dream",
@@ -3519,18 +3739,26 @@ const movies = [
     "title": "Dogville",
     "director": "Lars von Trier",
     "year": 2003,
-    // "country": "Denmark-Sweden-France-UK-Germany-Finland-Italy-Netherlands-Norway"
+    "country": "Denmark-Sweden-France-UK-Germany-Finland-Italy-Netherlands-Norway"
   },
   {
     "title": "Elephant",
     "director": "Gus Van Sant",
     "year": 2003,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Kill Bill Vol. 1",
     "director": "Quentin Tarantino",
     "year": 2003
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "director": "Peter Jackson",
+    "year": 2003,
+    "country": "New Zealand-USA",
+    "rating": "?"
   },
   {
     "title": "Lost in Translation",
@@ -3550,6 +3778,19 @@ const movies = [
     "director": "Park Chan-wook",
     "year": 2003,
     "country": "South Korea"
+  },
+  {
+    "title": "Saraband",
+    "director": "Ingmar Bergman",
+    "year": 2003,
+    "country": "Sweden-Denmark-Norway-Italy-Finland-Germany-Austria",
+    "rating": "?"
+  },
+  {
+    "title": "Spring, Summer, Autumn, Winter... and Spring",
+    "director": "Kim Ki-duk",
+    "year": 2003,
+    "country": "South Korea-Germany"
   },
 
   {
@@ -3580,7 +3821,7 @@ const movies = [
     "title": "Tropical Malady",
     "director": "Apichatpong Weerasethakul",
     "year": 2004,
-    // "country": "France-Thailand-Germany-Italy-Switzerland",
+    "country": "France-Thailand-Germany-Italy-Switzerland",
     "rating": "?"
   },
 
@@ -3588,7 +3829,8 @@ const movies = [
     "title": "A History of Violence",
     "director": "David Cronenberg",
     "year": 2005,
-    "country": "USA-Germany"
+    "country": "USA-Germany",
+    "rating": "?"
   },
   {
     "title": "Brokeback Mountain",
@@ -3601,20 +3843,22 @@ const movies = [
     "title": "Caché",
     "director": "Michael Haneke",
     "year": 2005,
-    // "country": "France-Austria-Germany-Italy"
+    "country": "France-Austria-Germany-Italy"
   },
 
   {
     "title": "Children of Men",
     "director": "Alfonso Cuarón",
     "year": 2006,
-    "country": "USA-UK"
+    "country": "USA-UK",
+    "rating": "?"
   },
   {
     "title": "The Host",
     "director": "Bong Joon-ho",
     "year": 2006,
-    "country": "South Korea-Japan"
+    "country": "South Korea-Japan",
+    "rating": "?"
   },
   {
     "title": "Inland Empire",
@@ -3714,7 +3958,7 @@ const movies = [
     "title": "The White Ribbon",
     "director": "Michael Haneke",
     "year": 2009,
-    // "country": "Germany-Austria-France-Italy"
+    "country": "Germany-Austria-France-Italy"
   },
 
   {
@@ -3727,7 +3971,8 @@ const movies = [
     "title": "The Social Network",
     "director": "David Fincher",
     "year": 2010,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {
@@ -3740,7 +3985,7 @@ const movies = [
     "title": "Melancholia",
     "director": "Lars von Trier",
     "year": 2011,
-    // "country": "Denmark-Sweden-France-Germany"
+    "country": "Denmark-Sweden-France-Germany"
   },
   {
     "title": "Once Upon a Time in Anatolia",

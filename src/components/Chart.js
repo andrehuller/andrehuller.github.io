@@ -231,20 +231,28 @@ const Chartjs = {
       );
     },
     createChartCountry: function () {
-      var groupedBy = _.groupBy(this.items, 'country')
-    
-      var keys = Object.keys(groupedBy).sort()
       var labels = []
       var data = []
-      for (var i = 0; i < keys.length; i++) {
-        if ("undefined".localeCompare(keys[i]) != 0) {
-          var value = groupedBy[keys[i]].length
 
-          // if (value > 1) {
-            labels.push(keys[i])
-            data.push(value)
-          // }
+      var countries = {}
+      for (var i = 0; i < this.items.length; i++) {
+        var country = this.items[i].country
+        if (country) {
+          if (country.indexOf("-") == -1) {
+            countries[country] = countries[country] ? countries[country] + 1 : 1
+          } else {
+            var array = country.split("-")
+            for (var j = 0; j < array.length; j++) {
+              var c = array[j]
+              countries[c] = countries[c] ? countries[c] + 1 : 1
+            }
+          }
         }
+      }
+      var keys = Object.keys(countries)
+      for (var i = 0; i < keys.length; i++) {
+        labels.push(keys[i])
+        data.push(countries[keys[i]])
       }
 
       this.countries = keys.length

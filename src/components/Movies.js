@@ -56,6 +56,7 @@ const Movies = {
                 <v-img
                   :src="imageSrc(item)"
                   height="198px"
+                  max-height="198px"
                 ></v-img>
                 <v-card-title>{{ item.title }}</v-card-title>
                 <v-card-subtitle>
@@ -91,6 +92,10 @@ const Movies = {
       if ("?".localeCompare(this.items[i].rating) != 0 && this.items[i].rating != 8 && this.items[i].rating != 7 && this.items[i].rating != 5) {
         this.filteredItems.push(this.items[i])
       }
+      
+      // if (!this.items[i].country) {
+      //   this.filteredItems.push(this.items[i])
+      // }
     }
 
     this.directors = this.directors.sort()
