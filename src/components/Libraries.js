@@ -25,7 +25,7 @@ const Libraries = {
         </v-container> 
       </v-toolbar>
       -->
-      <v-tabs grow>
+      <v-tabs fixed-tabs>
         <v-tab
           v-for="category in categories"
           :key="category.name"

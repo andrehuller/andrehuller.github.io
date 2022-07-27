@@ -5,7 +5,7 @@ const YouTube = {
         <v-col
           v-for="video in videos"
           :key="video.id"
-          cols="12" lg="4"
+          cols="12" lg="3"
         >
           <v-card
             :href="'https://youtu.be/' + video.id"
@@ -14,20 +14,12 @@ const YouTube = {
           >
             <v-img
               :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'"
-              style="background: black"
+              style="background: black;"
+              height="280px"
+              max-height="280px"
             ></v-img>
-            <v-list>
-              <v-list-item>
-                <v-list-item-content>
-                  <v-list-item-title>
-                    {{ video.title }}
-                  </v-list-item-title>
-                  <v-list-item-subtitle>
-                    {{ video.subtitle }}
-                  </v-list-item-subtitle>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
+            <v-card-title>{{ video.subtitle }}</v-card-title>
+            <v-card-subtitle>{{ video.title }}</v-card-subtitle>
           </v-card>
         </v-col>
       </v-row>

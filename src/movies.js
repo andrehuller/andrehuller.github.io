@@ -1067,7 +1067,8 @@ const movies = [
     "title": "Bride of Frankenstein",
     "director": "James Whale",
     "year": 1935,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "El",
@@ -1165,13 +1166,15 @@ const movies = [
     "title": "La Strada",
     "director": "Federico Fellini",
     "year": 1954,
-    "country": "Italy"
+    "country": "Italy",
+    "rating": "?"
   },
   {
     "title": "On the Waterfront",
     "director": "Elia Kazan",
     "year": 1954,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Rear Window",
@@ -1792,7 +1795,8 @@ const movies = [
     "title": "Shock Corridor",
     "director": "Samuel Fuller",
     "year": 1963,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "The Silence",
@@ -1864,13 +1868,15 @@ const movies = [
     "title": "Pierrot le fou",
     "director": "Jean-Luc Godard",
     "year": 1965,
-    "country": "France-Italy"
+    "country": "France-Italy",
+    "rating": "?"
   },
   {
     "title": "Repulsion",
     "director": "Roman Polanski",
     "year": 1965,
-    "country": "UK"
+    "country": "UK",
+    "rating": "?"
   },
   {
     "title": "Simon of the Desert",
@@ -1954,7 +1960,8 @@ const movies = [
     "title": "Bonnie and Clyde",
     "director": "Arthur Penn",
     "year": 1967,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Cool Hand Luke",
@@ -2012,7 +2019,8 @@ const movies = [
     "title": "Night of the Living Dead",
     "director": "George A. Romero",
     "year": 1968,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Once Upon a Time in the West",
@@ -2151,7 +2159,8 @@ const movies = [
     "title": "Duel",
     "director": "Steven Spielberg",
     "year": 1971,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
   {
     "title": "Harold and Maude",
@@ -3553,7 +3562,8 @@ const movies = [
     "title": "The Thin Red Line",
     "director": "Terrence Malick",
     "year": 1998,
-    "country": "USA"
+    "country": "USA",
+    "rating": "?"
   },
 
   {

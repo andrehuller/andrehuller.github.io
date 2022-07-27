@@ -407,13 +407,6 @@ const categories = [
       },
 
       {
-        "title": "amCharts",
-        "subtitle": "JavaScript Charts & Maps",
-        "href": "https://www.amcharts.com/",
-        "group": "Charts"
-      },
-    
-      {
         "title": "vue-svg-map",
         "href": "https://victorcazanave.github.io/vue-svg-map/",
         "src": "assets/libraries/vue-svg-map.png",
@@ -565,20 +558,6 @@ const categories = [
       },
 
       {
-        "title": "ol-ext",
-        "subtitle": "Extensions for OpenLayers",
-        "href": "https://viglino.github.io/ol-ext/",
-        "src": "assets/libraries/ol-ext.png",
-        "group": "Extensions"
-      },
-      {
-        "title": "MapProxy",
-        "subtitle": "MapProxy is an open source proxy for geospatial data.",
-        "href": "https://mapproxy.org/",
-        "src": "assets/libraries/MapProxy.png"
-      },
-
-      {
         "title": "Batch geocoder for journalists",
         "subtitle": "Locations to coordinates at rocket speed",
         "href": "https://geocode.localfocus.nl/",
@@ -590,20 +569,6 @@ const categories = [
         "subtitle": "Openpoiservice allows you to find places of interest around or within given geographic coordinates.",
         "href": "https://openrouteservice.org/",
         "src": "assets/libraries/openrouteservice.png"
-      },
-
-      {
-        "title": "MapSVG",
-        "subtitle": "Best WordPress Map Plugin for Vector Image and Google Maps",
-        "href": "https://mapsvg.com/",
-        "src": "assets/libraries/MapSVG.png"
-      },
-
-      {
-        "title": "S2ID",
-        "subtitle": "Sistema Integrado de Informações sobre Desastres",
-        "href": "https://s2id.mi.gov.br/paginas/index.xhtml#",
-        "src": "assets/libraries/S2ID.png"
       }
     ]
   },
@@ -758,11 +723,6 @@ const categories = [
         "src": "assets/resources/Airflow.png"
       },
       {
-        "title": "GeoSolutions",
-        "href": "https://www.geosolutionsgroup.com/",
-        "src": "assets/resources/GeoSolutions.png"
-      },
-      {
         "title": "Here",
         "subtitle": "https://www.here.com/",
         "href": "https://www.here.com/",
@@ -774,18 +734,6 @@ const categories = [
         "href": "https://kepler.gl/",
         "src": "assets/libraries/kepler.png",
         "group": "Other"
-      },
-      {
-        "title": "MapMaker Interactive",
-        "subtitle": "National Geographic",
-        "href": "https://mapmaker.nationalgeographic.org/",
-        "src": "assets/screenshots/mapmaker.jpg"
-      },
-      {
-        "title": "MapQuest",
-        "subtitle": "https://www.mapquest.com/",
-        "href": "https://www.mapquest.com/",
-        "src": "assets/screenshots/mapquest.png"
       },
       {
         "title": "Material Design",

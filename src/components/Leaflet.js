@@ -2,7 +2,11 @@ const Leaflet = {
   template: `
     <v-container fluid>
       <v-row>
-        <div id="map" style="width: 100%; height: 500px; z-index: 0;"></div>
+        <v-col>
+          <v-card outlined>
+            <div id="map" style="width: 100%; height: 500px; z-index: 0;"></div>
+          </v-card>
+        </v-col>
       </v-row>
       <v-row>
         <v-col cols="12" lg="4"
@@ -87,26 +91,20 @@ const Leaflet = {
   },
   mounted () {
     this.$nextTick(() => {
-      this.map = L.map('map').setView([-24.618588, -51.316993], 7) // FIXME
+      this.map = L.map('map').setView([0, 0], 2) //.setView([-24.618588, -51.316993], 7) // FIXME
 
       this.layers = L.control.layers({
         'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        }).addTo(this.map),
+        }),
         'Imagery': L.esri.basemapLayer('Imagery'),
-        'Topographic': L.esri.basemapLayer('Topographic'),
+        'Topographic': L.esri.basemapLayer('Topographic').addTo(this.map),
       }).addTo(this.map)
 
       L.control.defaultExtent()
         .addTo(this.map)
-
-      this.map.pm.addControls({
-        position: 'topleft',
-        drawCircleMarker: false,
-        rotateMode: false
-      });
       
-      this.map.pm.setLang('pt_br');
+      this.map.gestureHandling.enable()
     })
   },
   methods: {

@@ -11,8 +11,8 @@
   
   <link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@geoman-io/leaflet-geoman-free@2.12.0/dist/leaflet-geoman.css" rel="stylesheet">
-  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.css" type="text/css">
+
   <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" rel="stylesheet">
   
@@ -151,7 +151,7 @@
               <v-list-item-title>Portfolio</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-
+          <!--
           <v-list-item to="/poi">
             <v-list-item-icon>
               <v-icon>mdi-map-marker</v-icon>
@@ -160,6 +160,7 @@
               <v-list-item-title>Points of Interest</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
+          -->
         <v-list>
       </v-navigation-drawer>
       
@@ -248,8 +249,8 @@
   
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@geoman-io/leaflet-geoman-free@2.12.0/dist/leaflet-geoman.min.js"></script>
-  
+  <script src="https://unpkg.com/leaflet-gesture-handling@1.2.2/dist/leaflet-gesture-handling.min.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/leaflet-lasso@2.2.4/dist/leaflet-lasso.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
@@ -272,9 +273,7 @@
   <script src="./src/components/Git.js"></script>
   <script src="./src/components/Leaflet.js"></script>
   <script src="./src/components/Libraries.js"></script>
-  <script src="./src/components/POI.js"></script>
   <script src="./src/components/Portfolio.js"></script>
-  <script src="./src/components/Tabs.js"></script>
   <script src="./src/components/TreeView.js"></script>
   <script src="./src/components/Unsplash.js"></script>
   
@@ -348,13 +347,11 @@
       { path: '/calendar', component: Calendar },
       { path: '/carousel', component: Carousel },
       { path: '/date_picker', component: DatePicker },
-      { path: '/tabs', component: Tabs },
       { path: '/tree_view', component: TreeView },
       
       { path: '/git', component: Git },
       
       { path: '/portfolio', component: Portfolio },
-      { path: '/poi', component: POI },
 
       { path: '/games', component: Games },
       { path: '/movies', component: Movies },
@@ -409,11 +406,6 @@
             route: '/date_picker',
             icon: 'mdi-calendar',
             title: 'Date Picker'
-          },
-          {
-            route: '/tabs',
-            icon: 'mdi-vuetify',
-            title: 'Tabs'
           },
           {
             route: '/tree_view',

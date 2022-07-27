@@ -87,6 +87,12 @@ const Games = {
         "difficulty": 4
       },
       {
+        "title": "Super Street Fighter II - The New Challengers",
+        "src": "Super Street Fighter II - The New Challengers.jpg",
+        "rating": 4.5,
+        "difficulty": 4
+      },
+      {
         "title": "Teenage Mutant Ninja Turtles",
         "subtitle": "Turtles in Time",
         "src": "Turtles in Time.png",
@@ -118,10 +124,22 @@ const Games = {
         "difficulty": 2
       },
       {
+        "title": "Super Mario Kart",
+        "src": "Super Mario Kart.jpg",
+        "rating": 4,
+        "difficulty": 2.5
+      },
+      {
         "title": "Super Castlevania IV",
         "src": "Super Castlevania IV.jpg",
         "rating": 3.5,
         "difficulty": 2.5
+      },
+      {
+        "title": "Mighty Morphin Power Rangers",
+        "src": "Mighty Morphin Power Rangers.jpg",
+        "rating": 3.5,
+        "difficulty": 2
       },
       {
         "title": "The Mask", // Really Tough Bosses
@@ -134,6 +152,12 @@ const Games = {
         "src": "The Lion King.jpg",
         "rating": 2,
         "difficulty": 4
+      },
+      {
+        "title": "Sailor Moon", // Normal - Sailor Mars // Really Tedious Game
+        "src": "Sailor Moon.jpg",
+        "rating": 2,
+        "difficulty": 2
       }
     ]
   })
