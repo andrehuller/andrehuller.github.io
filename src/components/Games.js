@@ -12,9 +12,10 @@ const Games = {
               height="280px"
               max-height="280px"
             ></v-img>
-            <v-card-title>{{ game.title }}</v-card-title>
+            <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">{{ game.title }}</v-card-title>
             <v-card-subtitle>{{ game.subtitle }}</v-card-subtitle>
             <v-spacer></v-spacer>
+            <!--
             <v-card-text class="pt-0">
               <v-simple-table>
                 <tr>
@@ -43,6 +44,7 @@ const Games = {
                 </tr>
               </v-simple-table>
             </v-card-text>
+            -->
           </v-card>
         </v-col>
       </v-row>
@@ -67,18 +69,22 @@ const Games = {
         "difficulty": 3
       },
       {
-        "title": "Donkey Kong Country 2", // Diddy's Kong Quest - Bonus Content: The Lost World
-        "subtitle": "Diddy's Kong Quest",
-        "src": "Donkey Kong Country 2: Diddy's Kong Quest.png",
+        "title": "Donkey Kong Country 2: Diddy's Kong Quest", // Bonus Content: The Lost World
+        "src": "Donkey Kong Country 2: Diddy's Kong Quest.jpg",
         "rating": 4.5,
         "difficulty": 3.5
       },
       {
-        "title": "Donkey Kong Country 3",
-        "subtitle": "Dixie Kong's Double Trouble!",
+        "title": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
         "src": "Donkey Kong Country 3.jpg",
         "rating": 4.5,
         "difficulty": 3
+      },
+      {
+        "title": "Hagane",
+        "src": "Hagane.jpg",
+        "rating": 4.5,
+        "difficulty": 4
       },
       {
         "title": "Super Ghouls 'n Ghosts",
@@ -93,17 +99,16 @@ const Games = {
         "difficulty": 4
       },
       {
-        "title": "Teenage Mutant Ninja Turtles",
-        "subtitle": "Turtles in Time",
+        "title": "Teenage Mutant Ninja Turtles: Turtles in Time",
         "src": "Turtles in Time.png",
         "rating": 4.5,
         "difficulty": 3.5
       },
       {
-        "title": "Hagane",
-        "src": "Hagane.jpg",
+        "title": "Zombies Ate My Neighbors",
+        "src": "Zombies Ate My Neighbors.png",
         "rating": 4.5,
-        "difficulty": 4
+        "difficulty": 2.5
       },
       {
         "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
