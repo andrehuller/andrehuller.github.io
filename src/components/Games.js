@@ -141,16 +141,22 @@ const Games = {
         "difficulty": 2.5
       },
       {
-        "title": "Super Castlevania IV",
-        "src": "Super Castlevania IV.jpg",
-        "rating": 3.5,
-        "difficulty": 2.5
-      },
-      {
         "title": "Mighty Morphin Power Rangers",
         "src": "Mighty Morphin Power Rangers.jpg",
         "rating": 3.5,
         "difficulty": 2
+      },
+      {
+        "title": "Mighty Morphin Power Rangers: The Movie",
+        "src": "Mighty Morphin Power Rangers: The Movie.jpg",
+        "rating": 3.5,
+        "difficulty": 2
+      },
+      {
+        "title": "Super Castlevania IV",
+        "src": "Super Castlevania IV.jpg",
+        "rating": 3.5,
+        "difficulty": 2.5
       },
       {
         "title": "The Mask", // Really Tough Bosses
