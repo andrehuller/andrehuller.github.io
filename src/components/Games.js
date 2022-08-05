@@ -105,12 +105,6 @@ const Games = {
         "difficulty": 3.5
       },
       {
-        "title": "Zombies Ate My Neighbors",
-        "src": "Zombies Ate My Neighbors.png",
-        "rating": 4.5,
-        "difficulty": 2.5
-      },
-      {
         "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
         "src": "Maui Mallard in Cold Shadow.jpg",
         "rating": 4,
@@ -132,6 +126,18 @@ const Games = {
         "title": "Super Mario Kart",
         "src": "Super Mario Kart.jpg",
         "rating": 4,
+        "difficulty": 2.5
+      },
+      {
+        "title": "Zombies Ate My Neighbors",
+        "src": "Zombies Ate My Neighbors.png",
+        "rating": 4,
+        "difficulty": 2.5
+      },
+      {
+        "title": "Aladdin",
+        "src": "Aladdin.jpg",
+        "rating": 3.5,
         "difficulty": 2.5
       },
       {
