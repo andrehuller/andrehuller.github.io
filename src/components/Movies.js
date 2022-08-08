@@ -1,98 +1,84 @@
 const Movies = {
   template: `
-    <v-container fluid>
-      <v-data-iterator
-        :items="filteredItems"
-        :items-per-page="20"
-        :search="search"
-        :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
-        @update:page="$vuetify.goTo(0)"
+    <v-container fluid pa-0>
+      <v-tabs fixed-tabs>
+        <v-tab>
+          Home
+        </v-tab>
+        <v-tab>
+          Trending
+        </v-tab>
+        <v-tab>
+          Subscriptions
+        </v-tab>
+        <v-tab-item
+        v-for="category in categories"
+        :key="category.value"
       >
-        <!--
-        <template v-slot:header>
-          <v-row>
-            <v-col lg="6">
-              <v-text-field
-                v-model="search"
-                clearable
-                flat solo-inverted
-                hide-details
-                prepend-inner-icon="mdi-magnify"
-                label="Search"
-              ></v-text-field>
-            </v-col>
-            <!--
-            <v-col lg="4">
-              <v-autocomplete
-                label="Director"
-                :items="directors"
-                hide-details
-                clearable
-                flat solo-inverted
-                prepend-inner-icon="mdi-magnify"
-              ></v-autocomplete>
-            </v-col>
-            -->
-            <!--
-            <v-col lg="4">
-              <v-select
-                clearable
-                flat solo-inverted
-                hide-details
-              ></v-select>
-            </v-col>
-            -->
-          </v-row>
-        </template>
-        -->
-        <template v-slot:default="props">
-          <v-row>
-            <v-col
-              v-for="item in props.items"
-              :key="item.title"
-              cols="12" sm="12" md="6" lg="3"
-            >
-              <v-card class="fill-height d-flex flex-column">
-              <!-- :color="item.rating == 10 ? '#dacfa1' : item.rating == 9 ? '#bcbec0' : '#967444'" -->
-                <v-img
-                  :src="imageSrc(item)"
-                  height="198px"
-                  max-height="198px"
-                ></v-img>
-                <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">
-                  {{ item.title }}<v-spacer></v-spacer>
-                  <v-menu left offset-y>
-                    <template v-slot:activator="{ on }">
-                      <v-btn icon v-on="on">
-                        <v-icon>mdi-dots-vertical</v-icon>
-                      </v-btn>
-                    </template>
-                    <v-list>
-                      <v-list-item @click="">
-                        <v-list-item-title>Not interested</v-list-item-title>
-                      </v-list-item>
-                      <v-list-item @click="">
-                        <v-list-item-title>Report</v-list-item-title>
-                      </v-list-item>
-                    </v-list>
-                  </v-menu>
-                </v-card-title>
-                <v-card-subtitle>
-                  {{ item.director }} / {{ item.year }} / {{ item.country }}
-                </v-card-subtitle>
+        <v-data-iterator
+          :items="itemsPerCategory(category.value)"
+          :items-per-page="20"
+          :search="search"
+          :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
+          @update:page="$vuetify.goTo(0)"
+        >
+          <template v-slot:default="props">
+            <v-container fluid>
+            <v-row>
+              <v-col
+                v-for="item in props.items"
+                :key="item.title"
+                cols="12" sm="12" md="6" lg="3"
+              >
+                <v-card class="fill-height d-flex flex-column">
+                <!-- :color="item.rating == 10 ? '#dacfa1' : item.rating == 9 ? '#bcbec0' : '#967444'" -->
+                  <v-img
+                    :src="imageSrc(item)"
+                    height="198px"
+                    max-height="198px"
+                  ></v-img>
+                  <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">
+                    {{ item.title }}<v-spacer></v-spacer>
+                    <v-menu left offset-y>
+                      <template v-slot:activator="{ on }">
+                        <v-btn icon v-on="on">
+                          <v-icon>mdi-dots-vertical</v-icon>
+                        </v-btn>
+                      </template>
+                      <v-list>
+                        <v-list-item @click="">
+                          <v-list-item-title>Not interested</v-list-item-title>
+                        </v-list-item>
+                        <v-list-item @click="">
+                          <v-list-item-title>Report</v-list-item-title>
+                        </v-list-item>
+                      </v-list>
+                    </v-menu>
+                  </v-card-title>
+                  <v-card-subtitle>
+                    {{ item.director }} / {{ item.year }} / {{ item.country }}
+                  </v-card-subtitle>
 
-                <v-spacer></v-spacer>
-              </v-card>
-            </v-col>
-          </v-row>
-        </template>
-      </v-data-iterator>
+                  <v-spacer></v-spacer>
+                </v-card>
+              </v-col>
+            </v-row>
+            </v-container>
+          </template>
+        </v-data-iterator>
+      </v-tab-item>
+    </v-tabs>
     </v-container>
   `,
   data: () => ({
     items: [],
     filteredItems: [],
-    directors: []
+    directors: [],
+    categories: [
+      { text: 'Home', value: 1 },
+      { text: 'Trending', value: 2 },
+      { text: 'Subscriptions', value: 3 }
+    ]
   }),
   computed: {
     search () {
@@ -106,14 +92,6 @@ const Movies = {
       if (this.directors.indexOf(this.items[i].director) < 0) {
         this.directors.push(this.items[i].director)
       }
-
-      if ("?".localeCompare(this.items[i].rating) != 0 && this.items[i].rating != 8 && this.items[i].rating != 7 && this.items[i].rating != 5) {
-        this.filteredItems.push(this.items[i])
-      }
-
-      // if (!this.items[i].country) {
-      //   this.filteredItems.push(this.items[i])
-      // }
     }
 
     this.directors = this.directors.sort()
@@ -124,6 +102,16 @@ const Movies = {
         return 'assets/images/' + item.image + '.jpg'
       }
       return 'assets/images/' + item.title + '.jpg'
+    },
+    itemsPerCategory: function (category) {
+      var resultItems = []
+      for (var i = 0; i < this.items.length; i++) {
+ 
+        if ((!this.items[i].category && category == 3) || (category == this.items[i].category)) {
+          resultItems.push(this.items[i])
+        }
+      }     
+      return resultItems;
     }
   }
 }
