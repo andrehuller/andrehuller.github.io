@@ -6,17 +6,20 @@ const Movies = {
           Home
         </v-tab>
         <v-tab>
-          Trending
+          Favorited
+        </v-tab>
+        <v-tab>
+          Liked
         </v-tab>
         <v-tab>
           Subscriptions
         </v-tab>
         <v-tab-item
-        v-for="category in categories"
-        :key="category.value"
+        v-for="tier in tiers"
+        :key="tier.value"
       >
         <v-data-iterator
-          :items="itemsPerCategory(category.value)"
+          :items="itemsPerTier(tier.value)"
           :items-per-page="20"
           :search="search"
           :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
@@ -74,10 +77,11 @@ const Movies = {
     items: [],
     filteredItems: [],
     directors: [],
-    categories: [
+    tiers: [
       { text: 'Home', value: 1 },
       { text: 'Trending', value: 2 },
-      { text: 'Subscriptions', value: 3 }
+      { text: 'Liked', value: 3 },
+      { text: 'Subscriptions', value: 4 }
     ]
   }),
   computed: {
@@ -103,11 +107,11 @@ const Movies = {
       }
       return 'assets/images/' + item.title + '.jpg'
     },
-    itemsPerCategory: function (category) {
+    itemsPerTier: function (tier) {
       var resultItems = []
       for (var i = 0; i < this.items.length; i++) {
  
-        if ((!this.items[i].category && category == 3) || (category == this.items[i].category)) {
+        if ((!this.items[i].tier && tier == 4) || (tier == this.items[i].tier)) {
           resultItems.push(this.items[i])
         }
       }     

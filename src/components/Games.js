@@ -63,6 +63,12 @@ const Games = {
   data: () => ({
     games: [
       {
+        "title": "Super Metroid",
+        "src": "Super Metroid.jpg",
+        "rating": 5,
+        "difficulty": 3
+      },
+      {
         "title": "Donkey Kong Country",
         "src": "Donkey Kong Country.jpg",
         "rating": 4.5,
