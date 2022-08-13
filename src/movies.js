@@ -25,7 +25,8 @@ const movies = [
     "director": "Charles Chaplin",
     "year": 1921,
     "country": "USA",
-    "rating": 9
+    "rating": 9,
+    "tier": 2
   },
   {
     "title": "Nosferatu",
@@ -70,7 +71,8 @@ const movies = [
     "director": "Sergei Eisenstein",
     "year": 1925,
     "country": "USSR",
-    "rating": 10
+    "rating": 10,
+    "tier": 2
   },
   {
     "title": "The Gold Rush",
@@ -108,7 +110,8 @@ const movies = [
     "director": "Buster Keaton",
     "year": 1926,
     "country": "USA",
-    "rating": 9
+    "rating": 9,
+    "tier": 2
   },
 
   {
@@ -206,14 +209,15 @@ const movies = [
     "director": "Charles Chaplin",
     "year": 1931,
     "country": "USA",
-    "rating": 8
+    "rating": 8,
+    "tier": 3
   },
   {
     "title": "Frankenstein",
     "director": "James Whale",
     "year": 1931,
     "country": "USA",
-    "tier": 3
+    "tier": 4
   },
   {
     "title": "M",
@@ -332,7 +336,8 @@ const movies = [
     "title": "Modern Times",
     "director": "Charles Chaplin",
     "year": 1936,
-    "country": "USA"
+    "country": "USA",
+    "tier": 3
   },
 
   {
@@ -340,7 +345,7 @@ const movies = [
     "director": "Jean Renoir",
     "year": 1937,
     "country": "France",
-    "tier": 3
+    "tier": 4
   },
   {
     "title": "Snow White and the Seven Dwarfs",
@@ -389,7 +394,8 @@ const movies = [
     "title": "Gone with the Wind",
     "director": "Victor Fleming",
     "year": 1939,
-    "country": "USA"
+    "country": "USA",
+    "tier": 2
   },
   {
     "title": "Mr. Smith Goes to Washington",
@@ -538,7 +544,8 @@ const movies = [
     "title": "The Maltese Falcon",
     "director": "John Huston",
     "year": 1941,
-    "country": "USA"
+    "country": "USA",
+    "tier": 3
   },
   {
     "title": "Sullivan's Travels",
@@ -546,7 +553,7 @@ const movies = [
     "year": 1941,
     "country": "USA",
     "rating": 5,
-    "tier": 3
+    "tier": 4
   },
 
 
@@ -684,7 +691,8 @@ const movies = [
     "title": "Les Dames du Bois de Boulogne",
     "director": "Robert Bresson",
     "year": 1945,
-    "country": "France"
+    "country": "France",
+    "tier": 2
   },
   {
     "title": "Les Enfants du paradis",
@@ -734,14 +742,16 @@ const movies = [
     "title": "Great Expectations",
     "director": "David Lean",
     "year": 1946,
-    "country": "UK"
+    "country": "UK",
+    "tier": 2
   },
   {
     "title": "It's a Wonderful Life",
     "director": "Frank Capra",
     "year": 1946,
     "country": "USA",
-    "rating": "?"
+    "rating": "?",
+    "tier": 3
   },
   {
     "title": "Ivan the Terrible, Part 2",
@@ -767,7 +777,8 @@ const movies = [
     "title": "The Big Sleep",
     "director": "Howard Hawks",
     "year": 1946,
-    "country": "USA"
+    "country": "USA",
+    "tier": 2
   },
 
   {
@@ -879,7 +890,8 @@ const movies = [
     "title": "Kind Hearts and Coronets",
     "director": "Robert Hamer",
     "year": 1949,
-    "country": "UK"
+    "country": "UK",
+    "tier": 2
   },
   {
     "title": "Late Spring",
@@ -899,7 +911,8 @@ const movies = [
     "title": "The Third Man",
     "director": "Carol Reed",
     "year": 1949,
-    "country": "UK"
+    "country": "UK",
+    "tier": 2
   },
   {
     "title": "White Heat",
@@ -913,7 +926,8 @@ const movies = [
     "title": "All About Eve",
     "director": "Joseph L. Mankiewicz",
     "year": 1950,
-    "country": "USA"
+    "country": "USA",
+    "tier": 3
   },
   {
     "title": "Gun Crazy",
@@ -2750,6 +2764,14 @@ const movies = [
     "tier": 3
   },
   {
+    "title": "The Killing of a Chinese Bookie",
+    "director": "John Cassavetes",
+    "year": 1976,
+    "country": "USA",
+    "rating": 10,
+    "tier": 1
+  },
+  {
     "title": "Network",
     "director": "Sidney Lumet",
     "year": 1976,
@@ -3580,7 +3602,8 @@ const movies = [
     "title": "Groundhog Day",
     "director": "Harold Ramis",
     "year": 1993,
-    "country": "USA"
+    "country": "USA",
+    "tier": 2
   },
   {
     "title": "Jurassic Park",

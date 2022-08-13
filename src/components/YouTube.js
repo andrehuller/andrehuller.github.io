@@ -15,8 +15,8 @@ const YouTube = {
             <v-img
               :src="'https://i.ytimg.com/vi_webp/' + video.id + '/hqdefault.webp'"
               style="background: black;"
-              height="280px"
-              max-height="280px"
+              height="240px"
+              max-height="240px"
             ></v-img>
             <v-card-title>{{ video.subtitle }}</v-card-title>
             <v-card-subtitle>{{ video.title }}</v-card-subtitle>

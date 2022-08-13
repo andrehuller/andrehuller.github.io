@@ -8,6 +8,29 @@ const Games = {
         :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
         @update:page="$vuetify.goTo(0)"
       >
+        <template v-slot:header>
+          <v-card>
+          <v-toolbar
+            class="mb-4"
+            color="#1867c0"
+            dark flat
+          >
+            <v-container fluid class="pa-0"> 
+              <v-row no-gutters>
+                <v-col cols="12" lg="8">
+                </v-col>
+                <v-col cols="12" lg="4">
+                  <v-text-field
+                    v-model="search"
+                    label="Search..." prepend-inner-icon="mdi-magnify"
+                    flat solo-inverted clearable hide-details
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+            </v-container>
+          </v-toolbar>
+          </v-card>
+        </template>
         <template v-slot:default="props">
           <v-row>
             <v-col sm="12" md="6" lg="3"
@@ -65,12 +88,15 @@ const Games = {
       if (!this.search) return this.games
 
       return this.games.filter(a => a.title.toLowerCase().includes(this.search.toLowerCase()))
-    },
+    }
+    /* ,
     search () {
       return this.$store.state.search
     }
+    */
   },
   data: () => ({
+    search: null,
     games: [
       {
         "title": "Contra III: The Alien Wars",
