@@ -1,53 +1,63 @@
 const Games = {
   template: `
     <v-container fluid>
-       <v-row>
-        <v-col sm="12" md="6" lg="3"
-          v-for="game in filtered"
-          :key="game.title"
-        >
-          <v-card class="fill-height d-flex flex-column">
-            <v-img
-              :src="'assets/games/' + game.src"
-              height="280px"
-              max-height="280px"
-            ></v-img>
-            <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">{{ game.title }}</v-card-title>
-            <v-card-subtitle>{{ game.subtitle }}</v-card-subtitle>
-            <v-spacer></v-spacer>
-            <!--
-            <v-card-text class="pt-0">
-              <v-simple-table>
-                <tr>
-                  <td>
-                    Rating:
-                  </td>
-                  <td align="right">
-                    <v-rating
-                      :value="game.rating"
-                      half-increments
-                      readonly
-                    ></v-rating>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    Difficulty:
-                  </td>
-                  <td align="right">
-                    <v-rating
-                      :value="game.difficulty"
-                      half-increments
-                      readonly
-                    ></v-rating>
-                  </td>
-                </tr>
-              </v-simple-table>
-            </v-card-text>
-            -->
-          </v-card>
-        </v-col>
-      </v-row>
+      <v-data-iterator
+        :items="filtered"
+        :items-per-page="20"
+        :search="search"
+        :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
+        @update:page="$vuetify.goTo(0)"
+      >
+        <template v-slot:default="props">
+          <v-row>
+            <v-col sm="12" md="6" lg="3"
+              v-for="item in props.items"
+              :key="item.title"
+            >
+              <v-card class="fill-height d-flex flex-column">
+                <v-img
+                  :src="'assets/games/' + item.src"
+                  height="280px"
+                  max-height="280px"
+                ></v-img>
+                <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">{{ item.title }}</v-card-title>
+                <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
+                <v-spacer></v-spacer>
+                <!--
+                <v-card-text class="pt-0">
+                  <v-simple-table>
+                    <tr>
+                      <td>
+                        Rating:
+                      </td>
+                      <td align="right">
+                        <v-rating
+                          :value="item.rating"
+                          half-increments
+                          readonly
+                        ></v-rating>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Difficulty:
+                      </td>
+                      <td align="right">
+                        <v-rating
+                          :value="item.difficulty"
+                          half-increments
+                          readonly
+                        ></v-rating>
+                      </td>
+                    </tr>
+                  </v-simple-table>
+                </v-card-text>
+                -->
+              </v-card>
+            </v-col>
+          </v-row>
+        </template>
+      </v-data-iterator>
     </v-container>
   ` ,
   computed: {
@@ -62,6 +72,18 @@ const Games = {
   },
   data: () => ({
     games: [
+      {
+        "title": "Contra III: The Alien Wars",
+        "src": "Contra III: The Alien Wars.jpg",
+        "rating": 5,
+        "difficulty": 3.5
+      },
+      {
+        "title": "Super Ghouls 'n Ghosts",
+        "src": "Super Ghouls 'n Ghosts.jpg",
+        "rating": 5,
+        "difficulty": 4
+      },
       {
         "title": "Super Metroid",
         "src": "Super Metroid.jpg",
@@ -89,12 +111,6 @@ const Games = {
       {
         "title": "Hagane",
         "src": "Hagane.jpg",
-        "rating": 4.5,
-        "difficulty": 4
-      },
-      {
-        "title": "Super Ghouls 'n Ghosts",
-        "src": "Super Ghouls 'n Ghosts.jpg",
         "rating": 4.5,
         "difficulty": 4
       },
