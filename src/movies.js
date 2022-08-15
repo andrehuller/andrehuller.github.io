@@ -4,6 +4,7 @@ const movies = [
     "director": "D.W. Griffith",
     "year": 1915,
     "country": "USA",
+    "rating": 4,
     "tier": 4
   },
   {
@@ -11,6 +12,7 @@ const movies = [
     "director": "D.W. Griffith",
     "year": 1916,
     "country": "USA",
+    "rating": 6,
     "tier": 4
   },
   {
@@ -18,6 +20,7 @@ const movies = [
     "director": "Robert Wiene",
     "year": 1920,
     "country": "Germany",
+    "rating": 8,
     "tier": 1
   },
   {
@@ -33,6 +36,7 @@ const movies = [
     "director": "F.W. Murnau",
     "year": 1922,
     "country": "Germany",
+    "rating": 8,
     "tier": 1
   },
   {
@@ -40,7 +44,8 @@ const movies = [
     "director": "Buster Keaton & John G. Blystone",
     "year": 1923,
     "country": "USA",
-    "tier": 3
+    "rating": 6,
+    "tier": 4
   },
 
   {
@@ -56,6 +61,7 @@ const movies = [
     "director": "Buster Keaton & Donald Crisp",
     "year": 1924,
     "country": "USA",
+    "rating": 8,
     "tier": 3
   },
   {
@@ -63,6 +69,7 @@ const movies = [
     "director": "Buster Keaton",
     "year": 1924,
     "country": "USA",
+    "rating": 9,
     "tier": 1
   },
 
@@ -87,6 +94,7 @@ const movies = [
     "director": "Buster Keaton",
     "year": 1925,
     "country": "USA",
+    "rating": 8,
     "tier": 3
   },
   {
@@ -164,7 +172,8 @@ const movies = [
     "director": "Buster Keaton & Charles Reisner",
     "year": 1928,
     "country": "USA",
-    "rating": "?"
+    "rating": "7",
+    "tier": 3
   },
   {
     "title": "Un Chien andalou",
@@ -262,6 +271,7 @@ const movies = [
     "title": "Scarface",
     "director": "Howard Hawks",
     "year": "1932",
+    "country": "USA",
     "image": "scarface1932",
     "rating": "?"
   },
@@ -269,6 +279,7 @@ const movies = [
     "title": "Trouble in Paradise",
     "director": "Ernst Lubitsch",
     "year": 1932,
+    "country": "USA",
     "tier": 2
   },
 
@@ -307,6 +318,14 @@ const movies = [
     "country": "USA",
     "rating": 9,
     "tier": 2
+  },
+  {
+    "title": "L'Atalante",
+    "director": "Jean Vigo",
+    "year": 1934,
+    "country": "France",
+    "rating": 8,
+    "tier": 3
   },
   {
     "title": "The Scarlet Empress",
@@ -705,6 +724,7 @@ const movies = [
     "title": "Mildred Pierce",
     "director": "Michael Curtiz",
     "year": 1945,
+    "country": "USA",
     "tier": 2
   },
   {
@@ -1007,6 +1027,7 @@ const movies = [
     "title": "Ace in the Hole",
     "director": "Billy Wilder",
     "year": 1951,
+    "country": "USA",
     "tier": 2
   },
   {
@@ -1546,6 +1567,7 @@ const movies = [
     "title": "Elevator to the Gallows",
     "director": "Louis Malle",
     "year": 1958,
+    "country": "France",
     "tier": 2
   },
   {
@@ -2111,6 +2133,7 @@ const movies = [
     "title": "Who's Afraid of Virginia Woolf?",
     "director": "Mike Nichols",
     "year": 1966,
+    "country": "USA",
     "image": "whosafraidofvirginiawoolf",
     "tier": 2
   },
@@ -2199,6 +2222,7 @@ const movies = [
     "title": "Once Upon a Time in the West",
     "director": "Sergio Leone",
     "year": 1968,
+    "country": "Italy-USA",
     "tier": 2
   },
   {
@@ -2649,6 +2673,7 @@ const movies = [
     "title": "Deep Red",
     "director": "Dario Argento",
     "year": 1975,
+    "country": "Italy",
     "tier": 2
   },
   {
@@ -2919,6 +2944,7 @@ const movies = [
     "title": "Monty Python's Life of Brian",
     "director": "Terry Jones",
     "year": 1979,
+    "country": "UK",
     "tier": 2
   },
   {
@@ -3301,6 +3327,7 @@ const movies = [
     "title": "Au revoir les enfants",
     "director": "Louis Malle",
     "year": 1987,
+    "country": "France",
     "tier": 2
   },
   {
@@ -3337,6 +3364,7 @@ const movies = [
     "title": "Full Metal Jacket",
     "director": "Stanley Kubrick",
     "year": 1987,
+    "country": "USA",
     "rating": "?"
   },
   {
@@ -3426,6 +3454,7 @@ const movies = [
     "title": "Women on the Verge of a Nervous Breakdown",
     "director": "Pedro Almodóvar",
     "year": 1988,
+    "country": "Spain",
     "tier": 2
   },
 
@@ -3588,6 +3617,7 @@ const movies = [
     "title": "Carlito's Way",
     "director": "Brian De Palma",
     "year": 1993,
+    "country": "USA",
     "rating": "?",
     "tier": 3
   },
@@ -3649,6 +3679,7 @@ const movies = [
     "title": "Crumb",
     "director": "Terry Zwigoff",
     "year": 1994,
+    "country": "USA",
     "tier": 2
   },
   {
@@ -3701,6 +3732,7 @@ const movies = [
     "title": "Before Sunrise",
     "director": "Richard Linklater",
     "year": 1995,
+    "country": "USA",
     "tier": 2
   },
   {
@@ -3831,6 +3863,7 @@ const movies = [
     "title": "Princess Mononoke",
     "director": "Hayao Miyazaki",
     "year": 1997,
+    "country": "Japan",
     "tier": 2
   },
   {
@@ -3952,6 +3985,7 @@ const movies = [
     "title": "Amores perros",
     "director": "Alejandro González Iñárritu",
     "year": 2000,
+    "country": "Mexico",
     "tier": 2
   },
   {
@@ -4050,6 +4084,7 @@ const movies = [
     "title": "The Piano Teacher",
     "director": "Michael Haneke",
     "year": 2001,
+    "country": "Austria-France-Germany",
     "tier": 1
   },
   {
@@ -4105,6 +4140,7 @@ const movies = [
     "title": "Kill Bill Vol. 1",
     "director": "Quentin Tarantino",
     "year": 2003,
+    "country": "USA",
     "tier": 2
   },
   {
@@ -4156,6 +4192,7 @@ const movies = [
     "title": "2046",
     "director": "Wong Kar-wai",
     "year": 2004,
+    "country": "Hong Kong-China-France-Italy-Germany",
     "tier": 1
   },
   {
@@ -4301,6 +4338,7 @@ const movies = [
     "title": "The Hurt Locker",
     "director": "Kathryn Bigelow",
     "year": 2008,
+    "country": "USA",
     "rating": "?"
   },
   {
@@ -4376,12 +4414,14 @@ const movies = [
     "title": "Blue is the Warmest Colour",
     "director": "Abdellatif Kechiche",
     "year": 2013,
+    "country": "France-Belgium-Spain",
     "tier": 2
   },
   {
     "title": "Inside Llewyn Davis",
     "director": "Joel Coen & Ethan Coen",
     "year": 2013,
+    "country": "USA-UK-France",
     "tier": 2
   },
 
@@ -4405,12 +4445,14 @@ const movies = [
     "title": "Once Upon a Time... in Hollywood",
     "director": "Quentin Tarantino",
     "year": 2019,
+    "country": "USA-UK-China",
     "tier": 2
   },
   {
     "title": "Parasite",
     "director": "Bong Joon-ho",
     "year": 2019,
+    "country": "South Korea",
     "tier": 2
   }
 ]
