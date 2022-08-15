@@ -117,6 +117,12 @@ const Games = {
         "difficulty": 3
       },
       {
+        "title": "Super Street Fighter II - The New Challengers",
+        "src": "Super Street Fighter II - The New Challengers.jpg",
+        "rating": 5,
+        "difficulty": 4
+      },
+      {
         "title": "Donkey Kong Country",
         "src": "Donkey Kong Country.jpg",
         "rating": 4.5,
@@ -141,8 +147,8 @@ const Games = {
         "difficulty": 4
       },
       {
-        "title": "Super Street Fighter II - The New Challengers",
-        "src": "Super Street Fighter II - The New Challengers.jpg",
+        "title": "Super Star Wars",
+        "src": "Super Star Wars.jpg",
         "rating": 4.5,
         "difficulty": 4
       },

@@ -102,6 +102,7 @@ const movies = [
     "director": "Sergei Eisenstein",
     "year": 1925,
     "country": "USSR",
+    "rating": 8,
     "tier": 3
   },
 
@@ -144,14 +145,16 @@ const movies = [
     "director": "Charles Chaplin",
     "year": 1928,
     "country": "USA",
-    "rating": "?"
+    "rating": "7",
+    "tier": 3
   },
   {
     "title": "October",
     "director": "Sergei Eisenstein & Grigori Aleksandrov",
     "year": 1928,
     "country": "USSR",
-    "rating": "?"
+    "rating": "5",
+    "tier": 4
   },
   {
     "title": "The Passion of Joan of Arc",
@@ -356,6 +359,7 @@ const movies = [
     "director": "Charles Chaplin",
     "year": 1936,
     "country": "USA",
+    "rating": 8,
     "tier": 3
   },
 
@@ -378,7 +382,9 @@ const movies = [
     "title": "Alexander Nevsky",
     "director": "Sergei Eisenstein",
     "year": 1938,
-    "country": "USSR"
+    "country": "USSR",
+    "rating": 10,
+    "tier": 2
   },
   {
     "title": "The Adventures of Robin Hood",
@@ -449,7 +455,8 @@ const movies = [
     "director": "John Ford",
     "year": 1939,
     "country": "USA",
-    "tier": 3
+    "rating": 4,
+    "tier": 4
   },
   {
     "title": "The Story of the Last Chrysanthemums",
@@ -472,6 +479,7 @@ const movies = [
     "director": "John Ford",
     "year": 1939,
     "country": "USA",
+    "rating": 7,
     "tier": 3
   },
 
@@ -487,13 +495,16 @@ const movies = [
     "director": "John Ford",
     "year": 1940,
     "country": "USA",
-    "rating": "?"
+    "rating": "6",
+    "tier": 4
   },
   {
     "title": "The Great Dictator",
     "director": "Charles Chaplin",
     "year": 1940,
-    "country": "USA"
+    "country": "USA",
+    "rating": 7,
+    "tier": 3
   },
   {
     "title": "His Girl Friday",
@@ -550,6 +561,7 @@ const movies = [
     "director": "John Ford",
     "year": 1941,
     "country": "USA",
+    "rating": 7,
     "tier": 3
   },
   {
@@ -660,7 +672,9 @@ const movies = [
     "title": "Ivan the Terrible, Part 1",
     "director": "Sergei Eisenstein",
     "year": 1944,
-    "country": "USSR"
+    "country": "USSR",
+    "rating": 8,
+    "tier": 3
   },
   {
     "title": "Laura",
@@ -777,13 +791,16 @@ const movies = [
     "title": "Ivan the Terrible, Part 2",
     "director": "Sergei Eisenstein",
     "year": 1946,
-    "country": "USSR"
+    "country": "USSR",
+    "rating": 8,
+    "tier": 3
   },
   {
     "title": "My Darling Clementine",
     "director": "John Ford",
     "year": 1946,
     "country": "USA",
+    "rating": 6,
     "tier": 3
   },
   {
@@ -819,7 +836,9 @@ const movies = [
     "title": "Monsieur Verdoux",
     "director": "Charles Chaplin",
     "year": 1947,
-    "country": "USA"
+    "country": "USA",
+    "rating": 8,
+    "tier": 3
   },
   {
     "title": "Odd Man Out",
@@ -846,6 +865,7 @@ const movies = [
     "director": "John Ford",
     "year": 1948,
     "country": "USA",
+    "rating": 8,
     "tier": 3
   },
   {
@@ -925,6 +945,7 @@ const movies = [
     "director": "John Ford",
     "year": 1949,
     "country": "USA",
+    "rating": 8,
     "tier": 3
   },
   {
@@ -1134,6 +1155,7 @@ const movies = [
     "director": "John Ford",
     "year": 1952,
     "country": "USA",
+    "rating": 7,
     "tier": 3
   },
   {
@@ -1482,6 +1504,7 @@ const movies = [
     "director": "John Ford",
     "year": 1956,
     "country": "USA",
+    "rating": 10,
     "tier": 2
   },
   {
@@ -1885,6 +1908,7 @@ const movies = [
     "director": "John Ford",
     "year": 1962,
     "country": "USA",
+    "rating": 8,
     "tier": 3
   },
   {
