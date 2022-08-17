@@ -43,8 +43,11 @@ const Games = {
                   height="280px"
                   max-height="280px"
                 ></v-img>
+
                 <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">{{ item.title }}</v-card-title>
-                <v-card-subtitle>{{ item.subtitle }}</v-card-subtitle>
+                <v-card-subtitle v-if="item.developer">
+                  {{ item.developer }} / {{ item.year }}
+                </v-card-subtitle>
                 <v-spacer></v-spacer>
                 <!--
                 <v-card-text class="pt-0">
@@ -100,48 +103,67 @@ const Games = {
     games: [
       {
         "title": "Contra III: The Alien Wars",
+        "developer": "Konami",
+        "year": 1992,
         "src": "Contra III: The Alien Wars.jpg",
         "rating": 5,
         "difficulty": 3.5
       },
       {
         "title": "Super Ghouls 'n Ghosts",
+        "developer": "Capcom",
+        "year": 1991,
         "src": "Super Ghouls 'n Ghosts.jpg",
         "rating": 5,
         "difficulty": 4
       },
       {
         "title": "Super Metroid",
+        "developer": "Nintendo",
+        "year": 1994,
         "src": "Super Metroid.jpg",
         "rating": 5,
         "difficulty": 3
       },
       {
-        "title": "Super Street Fighter II - The New Challengers",
+        "title": "Super Street Fighter II",
+        "subtitle": "The New Challengers",
+        "developer": "Capcom",
+        "year": 1993,
         "src": "Super Street Fighter II - The New Challengers.jpg",
         "rating": 5,
         "difficulty": 4
       },
       {
         "title": "Donkey Kong Country",
+        "developer": "Rare",
+        "year": 1994,
         "src": "Donkey Kong Country.jpg",
         "rating": 4.5,
         "difficulty": 3
       },
       {
-        "title": "Donkey Kong Country 2: Diddy's Kong Quest", // Bonus Content: The Lost World
+        "title": "Donkey Kong Country 2", // Bonus Content: The Lost World
+        "subtitle": "Diddy's Kong Quest",
+        "developer": "Rare",
+        "year": 1995,
         "src": "Donkey Kong Country 2: Diddy's Kong Quest.jpg",
         "rating": 4.5,
         "difficulty": 3.5
       },
       {
-        "title": "Donkey Kong Country 3: Dixie Kong's Double Trouble!",
+        "title": "Donkey Kong Country 3",
+        "subtitle": "Dixie Kong's Double Trouble!",
+        "developer": "Rare",
+        "year": 1996,
         "src": "Donkey Kong Country 3.jpg",
         "rating": 4.5,
         "difficulty": 3
       },
       {
         "title": "Hagane",
+        "developer": "CAProduction",
+        "year": 1994,
         "src": "Hagane.jpg",
         "rating": 4.5,
         "difficulty": 4
@@ -169,6 +191,14 @@ const Games = {
         "src": "Animaniacs.png",
         "rating": 4,
         "difficulty": 4
+      },
+      {
+        "title": "Castlevania: Dracula X", // Missing: Good Ending
+        "developer": "Konami",
+        "year": 1995,
+        "src": "Castlevania: Dracula X.png",
+        "rating": 4,
+        "difficulty": 3.5
       },
       {
         "title": "Goof Troop",

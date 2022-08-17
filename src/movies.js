@@ -1836,6 +1836,14 @@ const movies = [
     "tier": 1
   },
   {
+    "title": "Cléo from 5 to 7",
+    "director": "Agnès Varda",
+    "year": 1962,
+    "country": "France",
+    "rating": 10,
+    "tier": 2
+  },
+  {
     "title": "The Exterminating Angel",
     "director": "Luis Buñuel",
     "year": 1962,
