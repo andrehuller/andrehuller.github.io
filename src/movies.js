@@ -1779,6 +1779,13 @@ const movies = [
     "tier": 4
   },
   {
+    "title": "The Innocents",
+    "director": "Jack Clayton",
+    "year": 1961,
+    "country": "UK",
+    "tier": 2
+  },
+  {
     "title": "La Notte",
     "director": "Michelangelo Antonioni",
     "year": 1961,
@@ -1793,11 +1800,12 @@ const movies = [
     "tier": 2
   },
   {
-    "title": "The Innocents",
-    "director": "Jack Clayton",
+    "title": "The Misfits",
+    "director": "John Huston",
     "year": 1961,
-    "country": "UK",
-    "tier": 2
+    "country": "USA",
+    "rating": 8,
+    "tier": 3
   },
   {
     "title": "Splendor in the Grass",
