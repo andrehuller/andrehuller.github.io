@@ -170,18 +170,32 @@ const Games = {
       },
       {
         "title": "Super Star Wars",
+        "developer": "LucasArts",
+        "year": 1992,
         "src": "Super Star Wars.jpg",
         "rating": 4.5,
         "difficulty": 4
       },
       {
-        "title": "Teenage Mutant Ninja Turtles: Turtles in Time",
+        "title": "Turtles in Time",
+        "developer": "Konami",
+        "year": 1991,
         "src": "Turtles in Time.png",
         "rating": 4.5,
         "difficulty": 3.5
       },
       {
+        "title": "Wild Guns",
+        "developer": "Natsume",
+        "year": 1994,
+        "src": "Wild Guns.png",
+        "rating": 4.5,
+        "difficulty": 4
+      },
+      {
         "title": "Maui Mallard in Cold Shadow", // Prefer (U) version
+        "developer": "Disney Interactive Studios",
+        "year": 1995,
         "src": "Maui Mallard in Cold Shadow.jpg",
         "rating": 4,
         "difficulty": 3

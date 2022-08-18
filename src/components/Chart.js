@@ -294,7 +294,7 @@ const Chartjs = {
             y: {
               // beginAtZero: true,
               display: true,
-              type: 'logarithmic',
+              type: 'logarithmic'
             }
           }
         },
