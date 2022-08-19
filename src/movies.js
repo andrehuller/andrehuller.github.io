@@ -1538,6 +1538,14 @@ const movies = [
     "rating": "?"
   },
   {
+    "title": "The Cranes Are Flying",
+    "director": "Mikhail Kalatozov",
+    "year": 1957,
+    "country": "USSR",
+    "rating": 9,
+    "tier": 2
+  },
+  {
     "title": "Nights of Cabiria",
     "director": "Federico Fellini",
     "year": 1957,

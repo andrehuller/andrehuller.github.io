@@ -40,8 +40,8 @@ const Games = {
               <v-card class="fill-height d-flex flex-column">
                 <v-img
                   :src="'assets/games/' + item.src"
-                  height="280px"
-                  max-height="280px"
+                  height="275px"
+                  max-height="275px"
                 ></v-img>
 
                 <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">{{ item.title }}</v-card-title>
