@@ -2230,6 +2230,14 @@ const movies = [
     "tier": 1
   },
   {
+    "title": "Playtime",
+    "director": "Jacques Tati",
+    "year": 1967,
+    "country": "France",
+    "rating": 10,
+    "tier": 1
+  },
+  {
     "title": "Point Blank",
     "director": "John Boorman",
     "year": 1967,
