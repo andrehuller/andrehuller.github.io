@@ -322,7 +322,8 @@ const lists = [
         "title": "Persona",
         "director": "Ingmar Bergman",
         "year": 1966,
-        "country": "Sweden"
+        "country": "Sweden",
+        "rating": 10
       },
       {
         "title": "Two or Three Things I Know About Her",
@@ -589,36 +590,31 @@ const lists = [
         "title": "Raging Bull",
         "director": "Martin Scorsese",
         "year": 1980,
-        "country": "USA",
-        "tier": 1
+        "country": "USA"
       },
       {
         "title": "The Double Life of Veronique",
         "director": "Krzysztof Kieslowski",
         "year": 1991,
-        "country": "France",
-        "tier": 1
+        "country": "France"
       },
       {
         "title": "Bad Lieutenant",
         "director": "Abel Ferrara",
         "year": 1992,
-        "country": "USA",
-        "tier": 1
+        "country": "USA"
       },
       {
         "title": "Pulp Fiction",
         "director": "Quentin Tarantino",
         "year": 1994,
-        "country": "USA",
-        "tier": 1
+        "country": "USA"
       },
       {
         "title": "Casino",
         "director": "Martin Scorsese",
         "year": 1995,
-        "country": "USA",
-        "tier": 1
+        "country": "USA"
       },
       {
         "title": "Lost Highway",
@@ -801,14 +797,14 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1938,
         "country": "UK",
-        "tier": 2
+        "rating": 10
       },
       {
         "title": "Rebecca",
         "director": "Alfred Hitchcock",
         "year": 1940,
         "country": "USA",
-        "tier": 2
+        "rating": 10
       },
       {
         "title": "Shadow of a Doubt",
@@ -866,6 +862,13 @@ const lists = [
         "country": "Italy"
       },
       {
+        "title": "I Vitelloni",
+        "director": "Federico Fellini",
+        "year": 1953,
+        "country": "Italy",
+        "rating": 10
+      },
+      {
         "title": "The Wages of Fear",
         "director": "Henri-Georges Clouzot",
         "year": 1953,
@@ -901,7 +904,8 @@ const lists = [
         "title": "The Seventh Seal",
         "director": "Ingmar Bergman",
         "year": 1957,
-        "country": "Sweden"
+        "country": "Sweden",
+        "rating": 10
       },
       {
         "title": "Throne of Blood",
@@ -913,7 +917,8 @@ const lists = [
         "title": "Wild Strawberries",
         "director": "Ingmar Bergman",
         "year": 1957,
-        "country": "Sweden"
+        "country": "Sweden",
+        "rating": 10
       },
       {
         "title": "Elevator to the Gallows",
@@ -932,7 +937,8 @@ const lists = [
         "title": "North by Northwest",
         "director": "Alfred Hitchcock",
         "year": 1959,
-        "country": "USA"
+        "country": "USA",
+        "rating": 10
       },
       {
         "title": "Some Like it Hot",
@@ -950,7 +956,8 @@ const lists = [
         "title": "La Dolce vita",
         "director": "Federico Fellini",
         "year": 1960,
-        "country": "Italy"
+        "country": "Italy",
+        "rating": 10
       },
       {
         "title": "Peeping Tom",
@@ -962,7 +969,22 @@ const lists = [
         "title": "Psycho",
         "director": "Alfred Hitchcock",
         "year": 1960,
-        "country": "USA"
+        "country": "USA",
+        "rating": 10
+      },
+      {
+        "title": "Cléo from 5 to 7",
+        "director": "Agnès Varda",
+        "year": 1962,
+        "country": "France",
+        "rating": 10
+      },
+      {
+        "title": "8½",
+        "director": "Federico Fellini",
+        "year": 1963,
+        "country": "Italy",
+        "rating": 10
       },
       {
         "title": "High and Low",
@@ -997,6 +1019,13 @@ const lists = [
         "director": "Dario Argento",
         "year": 1977,
         "country": "Italy",
+        "rating": 10
+      },
+      {
+        "title": "Fanny and Alexander",
+        "director": "Ingmar Bergman",
+        "year": 1982,
+        "country": "Sweden",
         "rating": 10
       },
       {
@@ -1058,45 +1087,46 @@ const lists = [
         "director": "Charles Chaplin",
         "year": 1921,
         "country": "USA",
-        "rating": 9,
-        "tier": 2
+        "rating": 9
       },
       {
         "title": "The General",
         "director": "Buster Keaton",
         "year": 1926,
         "country": "USA",
-        "rating": 9,
-        "tier": 2
+        "rating": 9
       },
       {
         "title": "Trouble in Paradise",
         "director": "Ernst Lubitsch",
         "year": 1932,
-        "country": "USA",
-        "tier": 2
+        "country": "USA"
       },
       {
         "title": "It Happened One Night",
         "director": "Frank Capra",
         "year": 1934,
         "country": "USA",
-        "rating": 9,
-        "tier": 2
+        "rating": 9
       },
       {
         "title": "The 39 Steps",
         "director": "Alfred Hitchcock",
         "year": 1935,
-        "country": "UK",
-        "tier": 2
+        "country": "UK"
+      },
+      {
+        "title": "A Night at the Opera",
+        "director": "Sam Wood",
+        "year": 1935,
+        "country": "USA",
+        "rating": 9
       },
       {
         "title": "Top Hat",
         "director": "Mark Sandrich",
         "year": 1935,
-        "country": "USA",
-        "tier": 2
+        "country": "USA"
       },
       {
         "title": "The Adventures of Robin Hood",
@@ -1167,10 +1197,45 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Great Expectations",
+        "director": "David Lean",
+        "year": 1946,
+        "country": "UK",
+        "rating": 9
+      },
+      {
+        "title": "Notorious",
+        "director": "Alfred Hitchcock",
+        "year": 1946,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Treasure of the Sierra Madre",
         "director": "John Huston",
         "year": 1948,
         "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "The Third Man",
+        "director": "Carol Reed",
+        "year": 1949,
+        "country": "UK",
+        "rating": 9
+      },
+      {
+        "title": "In a Lonely Place",
+        "director": "Nicholas Ray",
+        "year": 1950,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Orpheus",
+        "director": "Jean Cocteau",
+        "year": 1950,
+        "country": "France",
         "rating": 9
       },
       {
@@ -1193,16 +1258,58 @@ const lists = [
         "country": "USA"
       },
       {
+        "title": "Singin' in the Rain",
+        "director": "Stanley Donen",
+        "year": 1952,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "The Band Wagon",
+        "director": "Vincente Minnelli",
+        "year": 1953,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Big Heat",
         "director": "Fritz Lang",
         "year": 1953,
         "country": "USA"
       },
       {
+        "title": "Summer with Monika",
+        "director": "Ingmar Bergman",
+        "year": 1953,
+        "country": "Sweden",
+        "rating": 9
+      },
+      {
+        "title": "La Strada",
+        "director": "Federico Fellini",
+        "year": 1954,
+        "country": "Italy",
+        "rating": 9
+      },
+      {
         "title": "French Cancan",
         "director": "Jean Renoir",
         "year": 1955,
         "country": "France",
+        "rating": 9
+      },
+      {
+        "title": "Nights of Cabiria",
+        "director": "Federico Fellini",
+        "year": 1957,
+        "country": "Italy-France",
+        "rating": 9
+      },
+      {
+        "title": "12 Angry Men",
+        "director": "Sidney Lumet",
+        "year": 1957,
+        "country": "USA",
         "rating": 9
       },
       {
@@ -1213,10 +1320,80 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Sweet Smell of Success",
+        "director": "Alexander Mackendrick",
+        "year": 1957,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Vertigo",
+        "director": "Alfred Hitchcock",
+        "year": 1958,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Anatomy of a Murder",
+        "director": "Otto Preminger",
+        "year": 1959,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Eyes Without a Face",
+        "director": "Georges Franju",
+        "year": 1960,
+        "country": "France-Italy",
+        "rating": 9
+      },
+      {
+        "title": "The Virgin Spring",
+        "director": "Ingmar Bergman",
+        "year": 1960,
+        "country": "Sweden",
+        "rating": 9
+      },
+      {
+        "title": "The Innocents",
+        "director": "Jack Clayton",
+        "year": 1961,
+        "country": "UK",
+        "rating": 9
+      },
+      {
         "title": "Yojimbo",
         "director": "Akira Kurosawa",
         "year": 1961,
         "country": "Japan",
+        "rating": 9
+      },
+      {
+        "title": "Winter Light",
+        "director": "Ingmar Bergman",
+        "year": 1962,
+        "country": "Sweden",
+        "rating": 9
+      },
+      {
+        "title": "The Silence",
+        "director": "Ingmar Bergman",
+        "year": 1963,
+        "country": "Sweden",
+        "rating": 9
+      },
+      {
+        "title": "Marnie",
+        "director": "Alfred Hitchcock",
+        "year": 1964,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Amarcord",
+        "director": "Federico Fellini",
+        "year": 1973,
+        "country": "Italy",
         "rating": 9
       },
       {
@@ -1389,8 +1566,29 @@ const lists = [
         "country": "USA"
       },
       {
+        "title": "It's a Wonderful Life",
+        "director": "Frank Capra",
+        "year": 1946,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Fort Apache",
         "director": "John Ford",
+        "year": 1948,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "The Red Shoes",
+        "director": "Michael Powell & Emeric Pressburger",
+        "year": 1948,
+        "country": "UK",
+        "rating": 8
+      },
+      {
+        "title": "Rope",
+        "director": "Alfred Hitchcock",
         "year": 1948,
         "country": "USA",
         "rating": 8
@@ -1403,10 +1601,45 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "White Heat",
+        "director": "Raoul Walsh",
+        "year": 1949,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "All About Eve",
+        "director": "Joseph L. Mankiewicz",
+        "year": 1950,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Gun Crazy",
+        "director": "Joseph H. Lewis",
+        "year": 1950,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "The River",
         "director": "Jean Renoir",
         "year": 1951,
         "country": "France-India-USA",
+        "rating": 8
+      },
+      {
+        "title": "Strangers on a Train",
+        "director": "Alfred Hitchcock",
+        "year": 1951,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Ugetsu monogatari",
+        "director": "Kenji Mizoguchi",
+        "year": 1953,
+        "country": "Japan",
         "rating": 8
       },
       {
@@ -1421,6 +1654,27 @@ const lists = [
         "director": "Akira Kurosawa",
         "year": 1954,
         "country": "Japan",
+        "rating": 8
+      },
+      {
+        "title": "Smiles of a Summer Night",
+        "director": "Ingmar Bergman",
+        "year": 1955,
+        "country": "Sweden",
+        "rating": 8
+      },
+      {
+        "title": "Bigger Than Life",
+        "director": "Nicholas Ray",
+        "year": 1956,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "An Affair to Remember",
+        "director": "Leo McCarey",
+        "year": 1957,
+        "country": "USA",
         "rating": 8
       },
       {
@@ -1445,6 +1699,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "The Birds",
+        "director": "Alfred Hitchcock",
+        "year": 1963,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Death in Venice",
         "director": "Luchino Visconti",
         "year": 1971,
@@ -1452,10 +1713,24 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Cries and Whispers",
+        "director": "Ingmar Bergman",
+        "year": 1972,
+        "country": "Sweden",
+        "rating": 8
+      },
+      {
         "title": "Blue Velvet",
         "director": "David Lynch",
         "year": 1986,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Saraband",
+        "director": "Ingmar Bergman",
+        "year": 2003,
+        "country": "Sweden-Denmark-Norway-Italy-Finland-Germany-Austria",
         "rating": 8
       },
     ]
@@ -1568,6 +1843,20 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Beauty and the Beast",
+        "director": "Jean Cocteau",
+        "year": 1946,
+        "country": "France",
+        "rating": 7
+      },
+      {
+        "title": "Black Narcissus",
+        "director": "Michael Powell & Emeric Pressburger",
+        "year": 1947,
+        "country": "UK",
+        "rating": 7
+      },
+      {
         "title": "The Lady from Shanghai",
         "director": "Orson Welles",
         "year": 1948,
@@ -1600,6 +1889,20 @@ const lists = [
         "director": "Howard Hawks",
         "year": 1953,
         "country": "US",
+        "rating": 7
+      },
+      {
+        "title": "Sawdust and Tinsel",
+        "director": "Ingmar Bergman",
+        "year": 1953,
+        "country": "Sweden",
+        "rating": 7
+      },
+      {
+        "title": "Johnny Guitar",
+        "director": "Nicholas Ray",
+        "year": 1954,
+        "country": "USA",
         "rating": 7
       },
       {
@@ -1638,6 +1941,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Hour of the Wolf",
+        "director": "Ingmar Bergman",
+        "year": 1968,
+        "country": "Sweden",
+        "rating": 7
+      },
+      {
         "title": "Fat City",
         "director": "John Huston",
         "year": 1972,
@@ -1655,6 +1965,13 @@ const lists = [
         "title": "The Elephant Man",
         "director": "David Lynch",
         "year": 1980,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "The Shawshank Redemption",
+        "director": "Frank Darabont",
+        "year": 1994,
         "country": "USA",
         "rating": 7
       },
@@ -1860,15 +2177,6 @@ const lists = [
         "image": "romeopencity",
         "rating": "?"
       },
-    
-      {
-        "title": "Beauty and the Beast",
-        "director": "Jean Cocteau",
-        "year": 1946,
-        "country": "France",
-        "rating": "?",
-        "tier": 3
-      },
       {
         "title": "The Best Years of Our Lives",
         "director": "William Wyler",
@@ -1882,21 +2190,6 @@ const lists = [
         "year": 1946,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Great Expectations",
-        "director": "David Lean",
-        "year": 1946,
-        "country": "UK",
-        "tier": 2
-      },
-      {
-        "title": "It's a Wonderful Life",
-        "director": "Frank Capra",
-        "year": 1946,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
       },
       {
         "title": "Ivan the Terrible, Part 2",
@@ -1913,21 +2206,7 @@ const lists = [
         "country": "USA",
         "rating": 6
       },
-      {
-        "title": "Notorious",
-        "director": "Alfred Hitchcock",
-        "year": 1946,
-        "country": "USA",
-        "tier": 2
-      },
     
-      {
-        "title": "Black Narcissus",
-        "director": "Michael Powell & Emeric Pressburger",
-        "year": 1947,
-        "country": "UK",
-        "tier": 3
-      },
       {
         "title": "The Ghost and Mrs. Muir",
         "director": "Joseph L. Mankiewicz",
@@ -1979,26 +2258,11 @@ const lists = [
         "rating": 6
       },
       {
-        "title": "The Red Shoes",
-        "director": "Michael Powell & Emeric Pressburger",
-        "year": 1948,
-        "country": "UK",
-        "tier": 3
-      },
-      {
-        "title": "Rope",
-        "director": "Alfred Hitchcock",
-        "year": 1948,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "They Live by Night",
         "director": "Nicholas Ray",
         "year": 1948,
         "country": "USA",
-        "rating": "?",
-        "tier": 3
+        "rating": 6
       },
     
       {
@@ -2006,50 +2270,6 @@ const lists = [
         "director": "Robert Hamer",
         "year": 1949,
         "country": "UK",
-        "tier": 2
-      },
-      {
-        "title": "The Third Man",
-        "director": "Carol Reed",
-        "year": 1949,
-        "country": "UK",
-        "tier": 2
-      },
-      {
-        "title": "White Heat",
-        "director": "Raoul Walsh",
-        "year": 1949,
-        "country": "USA",
-        "tier": 3
-      },
-    
-      {
-        "title": "All About Eve",
-        "director": "Joseph L. Mankiewicz",
-        "year": 1950,
-        "country": "USA",
-        "tier": 3
-      },
-      {
-        "title": "Gun Crazy",
-        "director": "Joseph H. Lewis",
-        "year": 1950,
-        "country": "USA",
-        "tier": 3
-      },
-      {
-        "title": "In a Lonely Place",
-        "director": "Nicholas Ray",
-        "year": 1950,
-        "country": "USA",
-        "tier": 2
-      },
-    
-      {
-        "title": "Orpheus",
-        "director": "Jean Cocteau",
-        "year": 1950,
-        "country": "France",
         "tier": 2
       },
     
@@ -2083,13 +2303,6 @@ const lists = [
         "country": "USA",
         "tier": 2
       },
-      {
-        "title": "Strangers on a Train",
-        "director": "Alfred Hitchcock",
-        "year": 1951,
-        "country": "USA",
-        "tier": 2
-      },
     
       {
         "title": "The Bad and the Beautiful",
@@ -2113,42 +2326,13 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-      {
-        "title": "Singin' in the Rain",
-        "director": "Stanley Donen",
-        "year": 1952,
-        "country": "USA",
-        "tier": 2
-      },
-    
       
-      {
-        "title": "A Night at the Opera",
-        "director": "Sam Wood",
-        "year": 1935,
-        "country": "USA",
-        "tier": 2
-      },
-      {
-        "title": "The Band Wagon",
-        "director": "Vincente Minnelli",
-        "year": 1953,
-        "country": "USA",
-        "tier": 2
-      },
       {
         "title": "El",
         "director": "Luis Buñuel",
         "year": 1953,
         "country": "Mexico",
         "tier": 3
-      },
-      {
-        "title": "I Vitelloni",
-        "director": "Federico Fellini",
-        "year": 1953,
-        "country": "Italy",
-        "tier": 2
       },
     
     
@@ -2160,34 +2344,11 @@ const lists = [
         "tier": 4
       },
       {
-        "title": "Sawdust and Tinsel",
-        "director": "Ingmar Bergman",
-        "year": 1953,
-        "country": "Sweden",
-        "tier": 3
-      },
-      {
         "title": "Shane",
         "director": "George Stevens",
         "year": 1953,
         "country": "USA",
         "tier": 4
-      },
-      {
-        "title": "Summer with Monika",
-        "director": "Ingmar Bergman",
-        "year": 1953,
-        "country": "Sweden",
-        "tier": 3
-      },
-    
-
-      {
-        "title": "Ugetsu monogatari",
-        "director": "Kenji Mizoguchi",
-        "year": "1953",
-        "country": "Japan",
-        "tier": 3
       },
     
       {
@@ -2195,20 +2356,6 @@ const lists = [
         "director": "George Cukor",
         "year": 1954,
         "country": "USA",
-        "tier": 3
-      },
-      {
-        "title": "Johnny Guitar",
-        "director": "Nicholas Ray",
-        "year": 1954,
-        "country": "USA",
-        "tier": 4
-      },
-      {
-        "title": "La Strada",
-        "director": "Federico Fellini",
-        "year": 1954,
-        "country": "Italy",
         "tier": 3
       },
     
@@ -2300,13 +2447,6 @@ const lists = [
         "rating": "?",
         "tier": 3
       },
-      {
-        "title": "Smiles of a Summer Night",
-        "director": "Ingmar Bergman",
-        "year": 1955,
-        "country": "Sweden",
-        "rating": "?"
-      },
     
       {
         "title": "The Ten Commandments",
@@ -2317,13 +2457,6 @@ const lists = [
       },
     
       {
-        "title": "Bigger Than Life",
-        "director": "Nicholas Ray",
-        "year": 1956,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "Forbidden Planet",
         "director": "Fred M. Wilcox",
         "year": 1956,
@@ -2333,24 +2466,8 @@ const lists = [
       {
         "title": "The Killing",
         "director": "Stanley Kubrick",
-        "year": "1956",
+        "year": 1956,
         "country": "USA",
-        "tier": 3
-      },
-    
-      {
-        "title": "12 Angry Men",
-        "director": "Sidney Lumet",
-        "year": 1957,
-        "country": "USA",
-        "tier": 2
-      },
-      {
-        "title": "An Affair to Remember",
-        "director": "Leo McCarey",
-        "year": 1957,
-        "country": "USA",
-        "rating": 8,
         "tier": 3
       },
       {
@@ -2361,12 +2478,6 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Nights of Cabiria",
-        "director": "Federico Fellini",
-        "year": 1957,
-        "country": "Italy-France"
-      },
-      {
         "title": "Night of the Demon",
         "director": "Jacques Tourneur",
         "year": 1957,
@@ -2374,30 +2485,6 @@ const lists = [
         "rating": "?"
       },
 
-      {
-        "title": "Sweet Smell of Success",
-        "director": "Alexander Mackendrick",
-        "year": 1957,
-        "country": "USA",
-        "tier": 2
-      },
-
-      {
-        "title": "Vertigo",
-        "director": "Alfred Hitchcock",
-        "year": 1958,
-        "country": "USA",
-        "tier": 2
-      },
-    
-    
-      {
-        "title": "Anatomy of a Murder",
-        "director": "Otto Preminger",
-        "year": 1959,
-        "country": "USA",
-        "tier": 2
-      },
       {
         "title": "Ben-Hur",
         "director": "William Wyler",
@@ -2411,14 +2498,6 @@ const lists = [
         "director": "Robert Bresson",
         "year": 1959,
         "country": "France",
-        "tier": 2
-      },
-    
-      {
-        "title": "Eyes Without a Face",
-        "director": "Georges Franju",
-        "year": 1960,
-        "country": "France-Italy",
         "tier": 2
       },
 
@@ -2436,13 +2515,6 @@ const lists = [
         "country": "USA",
         "tier": 2
       },
-      {
-        "title": "The Virgin Spring",
-        "director": "Ingmar Bergman",
-        "year": 1960,
-        "country": "Sweden",
-        "tier": 3
-      },
     
       {
         "title": "Breakfast at Tiffany's",
@@ -2457,13 +2529,6 @@ const lists = [
         "year": 1961,
         "country": "USA",
         "tier": 4
-      },
-      {
-        "title": "The Innocents",
-        "director": "Jack Clayton",
-        "year": 1961,
-        "country": "UK",
-        "tier": 2
       },
     
       {
@@ -2482,14 +2547,6 @@ const lists = [
         "tier": 2
       },
     
-      {
-        "title": "Cléo from 5 to 7",
-        "director": "Agnès Varda",
-        "year": 1962,
-        "country": "France",
-        "rating": 10,
-        "tier": 2
-      },
     
       {
         "title": "Harakiri",
@@ -2547,28 +2604,6 @@ const lists = [
       },
     
       {
-        "title": "Winter Light",
-        "director": "Ingmar Bergman",
-        "year": 1962,
-        "country": "Sweden"
-      },
-    
-      {
-        "title": "8½",
-        "director": "Federico Fellini",
-        "year": 1963,
-        "country": "Italy",
-        "tier": 2
-      },
-      {
-        "title": "The Birds",
-        "director": "Alfred Hitchcock",
-        "year": 1963,
-        "country": "USA",
-        "tier": 3
-      },
-    
-      {
         "title": "The Great Escape",
         "director": "John Sturges",
         "year": 1963,
@@ -2589,14 +2624,6 @@ const lists = [
         "country": "USA",
         "tier": 3
       },
-      {
-        "title": "The Silence",
-        "director": "Ingmar Bergman",
-        "year": 1963,
-        "country": "Sweden",
-        "tier": 2
-      },
-    
     
       {
         "title": "Black God, White Devil",
@@ -2610,13 +2637,6 @@ const lists = [
         "director": "Stanley Kubrick",
         "year": 1964,
         "country": "UK-USA",
-        "tier": 2
-      },
-      {
-        "title": "Marnie",
-        "director": "Alfred Hitchcock",
-        "year": 1964,
-        "country": "USA",
         "tier": 2
       },
       {
@@ -2739,15 +2759,6 @@ const lists = [
         "rating": "?"
       },
     
-    
-      {
-        "title": "Hour of the Wolf",
-        "director": "Ingmar Bergman",
-        "year": 1968,
-        "country": "Sweden",
-        "rating": "?",
-        "tier": 3
-      },
       {
         "title": "Night of the Living Dead",
         "director": "George A. Romero",
@@ -2813,7 +2824,7 @@ const lists = [
         "director": "Federico Fellini",
         "year": 1969,
         "country": "Italy",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "The Wild Bunch",
@@ -2892,14 +2903,7 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-      {
-        "title": "Cries and Whispers",
-        "director": "Ingmar Bergman",
-        "year": 1972,
-        "country": "Sweden",
-        "rating": "?",
-        "tier": 2
-      },
+      
       {
         "title": "Deliverance",
         "director": "John Boorman",
@@ -2913,7 +2917,7 @@ const lists = [
         "director": "Federico Fellini",
         "year": "1972",
         "country": "Italy",
-        "rating": "?"
+        "rating": 6
       },
     
       {
@@ -2936,14 +2940,6 @@ const lists = [
         "director": "Andrei Tarkovsky",
         "year": 1972,
         "country": "USSR",
-        "tier": 2
-      },
-    
-      {
-        "title": "Amarcord",
-        "director": "Federico Fellini",
-        "year": 1973,
-        "country": "Italy",
         "tier": 2
       },
       {
@@ -3368,13 +3364,6 @@ const lists = [
         "director": "Steven Spielberg",
         "year": 1982,
         "country": "USA",
-        "tier": 2
-      },
-      {
-        "title": "Fanny and Alexander",
-        "director": "Ingmar Bergman",
-        "year": 1982,
-        "country": "Sweden",
         "tier": 2
       },
     
@@ -3895,14 +3884,6 @@ const lists = [
       },
     
       {
-        "title": "The Shawshank Redemption",
-        "director": "Frank Darabont",
-        "year": 1994,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
-      },
-      {
         "title": "Three Colours: Red",
         "director": "Krzysztof Kieslowski",
         "year": 1994,
@@ -4254,14 +4235,7 @@ const lists = [
         "tier": 3
       },
     
-      {
-        "title": "Saraband",
-        "director": "Ingmar Bergman",
-        "year": 2003,
-        "country": "Sweden-Denmark-Norway-Italy-Finland-Germany-Austria",
-        "rating": "?",
-        "tier": 3
-      },
+
       {
         "title": "Spring, Summer, Autumn, Winter... and Spring",
         "director": "Kim Ki-duk",
