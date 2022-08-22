@@ -10,7 +10,7 @@ const Chartjs = {
                   <v-icon dark>mdi-filmstrip</v-icon>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title>{{ items.length }} films</v-list-item-title>
+                  <v-list-item-title>{{ films }} films</v-list-item-title>
                 </v-list-item-content>
               </v-list-item>
             </v-list>
@@ -80,11 +80,13 @@ const Chartjs = {
   `,
   data: () => ({
     items: [],
+    films: null,
     directors: null,
     countries: null
   }),
   mounted: function() {
     this.items = movies
+    this.items2 = lists
     
     this.createChartDirector()
     this.createChartYear()
@@ -105,8 +107,17 @@ const Chartjs = {
           data.push(value)
         }
       }
-      
       this.directors = keys.length
+
+      var count = 0
+      for (var i = 0; i < this.items2.length; i++) {
+        var _movies = this.items2[i].items
+        count += _movies.length
+        // for (var j = 0; j < _movies.length; j++) {
+
+        // }
+      }
+      this.films = count
   
       const config = {
         type: 'bar',
