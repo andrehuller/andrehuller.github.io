@@ -14,7 +14,7 @@ const Movies = {
         >
           <v-data-iterator
             :items="list.items"
-            :items-per-page="20"
+            :items-per-page="40"
             :search="search"
             :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
             @update:page="$vuetify.goTo(0)"
@@ -35,22 +35,7 @@ const Movies = {
                       max-height="198px"
                     ></v-img>
                     <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">
-                      {{ item.title }}<v-spacer></v-spacer>
-                      <v-menu left offset-y>
-                        <template v-slot:activator="{ on }">
-                          <v-btn icon v-on="on">
-                            <v-icon>mdi-dots-vertical</v-icon>
-                          </v-btn>
-                        </template>
-                        <v-list>
-                          <v-list-item @click="">
-                            <v-list-item-title>Not interested</v-list-item-title>
-                          </v-list-item>
-                          <v-list-item @click="">
-                            <v-list-item-title>Report</v-list-item-title>
-                          </v-list-item>
-                        </v-list>
-                      </v-menu>
+                      {{ item.title }}
                     </v-card-title>
                     <v-card-subtitle>
                       {{ item.director }} / {{ item.year }} / {{ item.country }}

@@ -807,7 +807,7 @@ const lists = [
         "director": "Billy Wilder",
         "year": 1944,
         "country": "USA",
-        "tier": 2
+        "rating": 10
       },
       {
         "title": "Letter from an Unknown Woman",
@@ -815,6 +815,13 @@ const lists = [
         "year": 1948,
         "country": "USA",
         "tier": 2
+      },
+      {
+        "title": "All About Eve",
+        "director": "Joseph L. Mankiewicz",
+        "year": 1950,
+        "country": "USA",
+        "rating": 10
       },
       {
         "title": "Los Olvidados",
@@ -828,14 +835,14 @@ const lists = [
         "director": "Billy Wilder",
         "year": 1950,
         "country": "USA",
-        "tier": 2
+        "rating": 10
       },
       {
         "title": "Ace in the Hole",
         "director": "Billy Wilder",
         "year": 1951,
         "country": "USA",
-        "tier": 2
+        "rating": 10
       },
       {
         "title": "Othello",
@@ -933,13 +940,15 @@ const lists = [
         "title": "Some Like it Hot",
         "director": "Billy Wilder",
         "year": 1959,
-        "country": "USA"
+        "country": "USA",
+        "rating": 10
       },
       {
         "title": "The Apartment",
         "director": "Billy Wilder",
         "year": 1960,
-        "country": "USA"
+        "country": "USA",
+        "rating": 10
       },
       {
         "title": "La Dolce vita",
@@ -1403,6 +1412,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "The Day the Earth Stood Still",
+        "director": "Robert Wise",
+        "year": 1951,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Diary of a Country Priest",
         "director": "Robert Bresson",
         "year": 1951,
@@ -1505,6 +1521,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Pickpocket",
+        "director": "Robert Bresson",
+        "year": 1959,
+        "country": "France",
+        "rating": 9
+      },
+      {
         "title": "Eyes Without a Face",
         "director": "Georges Franju",
         "year": 1960,
@@ -1526,10 +1549,31 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Last Year at Marienbad",
+        "director": "Alain Resnais",
+        "year": 1961,
+        "country": "France-Italy",
+        "rating": 9
+      },
+      {
+        "title": "West Side Story",
+        "director": "Robert Wise",
+        "year": 1961,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Yojimbo",
         "director": "Akira Kurosawa",
         "year": 1961,
         "country": "Japan",
+        "rating": 9
+      },
+      {
+        "title": "La Jetée",
+        "director": "Chris Marker",
+        "year": 1962,
+        "country": "France",
         "rating": 9
       },
       {
@@ -1575,6 +1619,20 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Mean Streets",
+        "director": "Martin Scorsese",
+        "year": 1973,
+        "country": "USA",
+        "rating": 10
+      },
+      {
+        "title": "The Godfather Part II",
+        "director": "Francis Ford Coppola",
+        "year": 1974,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Man Who Would Be King",
         "director": "John Huston",
         "year": 1975,
@@ -1596,6 +1654,20 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Alien",
+        "director": "Ridley Scott",
+        "year": 1979,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Apocalypse Now",
+        "director": "Francis Ford Coppola",
+        "year": 1979,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Kagemusha",
         "director": "Akira Kurosawa",
         "year": 1980,
@@ -1606,6 +1678,13 @@ const lists = [
         "title": "The Shining",
         "director": "Stanley Kubrick",
         "year": 1980,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Blade Runner",
+        "director": "Ridley Scott",
+        "year": 1982,
         "country": "USA",
         "rating": 9
       },
@@ -1687,6 +1766,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Thelma & Louise",
+        "director": "Ridley Scott",
+        "year": 1991,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Reservoir Dogs",
         "director": "Quentin Tarantino",
         "year": 1992,
@@ -1708,11 +1794,32 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Trainspotting",
+        "director": "Danny Boyle",
+        "year": 1996,
+        "country": "UK",
+        "rating": 9
+      },
+      {
+        "title": "Rushmore",
+        "director": "Wes Anderson",
+        "year": 1998,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Before Sunset",
         "director": "Richard Linklater",
         "year": 2004,
         "country": "USA",
-        "tier": 2
+        "rating": 9
+      },
+      {
+        "title": "A History of Violence",
+        "director": "David Cronenberg",
+        "year": 2005,
+        "country": "USA-Germany",
+        "rating": 9
       },
       {
         "title": "The Host",
@@ -1726,6 +1833,20 @@ const lists = [
         "director": "David Lynch",
         "year": 2006,
         "country": "USA-France-Poland",
+        "rating": 9
+      },
+      {
+        "title": "There Will Be Blood",
+        "director": "Paul Thomas Anderson",
+        "year": 2007,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Certified Copy",
+        "director": "Abbas Kiarostami",
+        "year": 2010,
+        "country": "France-Italy-Belgium-Iran",
         "rating": 9
       },
       {
@@ -1924,13 +2045,6 @@ const lists = [
         "rating": 8
       },
       {
-        "title": "All About Eve",
-        "director": "Joseph L. Mankiewicz",
-        "year": 1950,
-        "country": "USA",
-        "rating": 8
-      },
-      {
         "title": "Gun Crazy",
         "director": "Joseph H. Lewis",
         "year": 1950,
@@ -2078,6 +2192,20 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "The Sound of Music",
+        "director": "Robert Wise",
+        "year": 1965,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "The Private Life of Sherlock Holmes",
+        "director": "Billy Wilder",
+        "year": 1970,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Death in Venice",
         "director": "Luchino Visconti",
         "year": 1971,
@@ -2106,6 +2234,20 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "The Tenant",
+        "director": "Roman Polanski",
+        "year": 1976,
+        "country": "France-USA",
+        "rating": 8
+      },
+      {
+        "title": "Star Wars",
+        "director": "George Lucas",
+        "year": 1977,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Raiders of the Lost Ark",
         "director": "Steven Spielberg",
         "year": 1981,
@@ -2130,6 +2272,13 @@ const lists = [
         "title": "Raising Arizona",
         "director": "Joel Coen & Ethan Coen",
         "year": 1987,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "The Last Temptation of Christ",
+        "director": "Martin Scorsese",
+        "year": 1988,
         "country": "USA",
         "rating": 8
       },
@@ -2183,6 +2332,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "The Royal Tenenbaums",
+        "director": "Wes Anderson",
+        "year": 2001,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Saraband",
         "director": "Ingmar Bergman",
         "year": 2003,
@@ -2202,7 +2358,7 @@ const lists = [
         "year": 2008,
         "country": "USA-UK",
         "rating": 8
-      },
+      }
     ]
   },
   {
@@ -2213,14 +2369,14 @@ const lists = [
         "director": "Charles Chaplin",
         "year": 1928,
         "country": "USA",
-        "rating": "7"
+        "rating": 7
       },
       {
         "title": "Steamboat Bill, Jr.",
         "director": "Buster Keaton & Charles Reisner",
         "year": 1928,
         "country": "USA",
-        "rating": "7"
+        "rating": 7
       },
       {
         "title": "Man with a Movie Camera",
@@ -2413,6 +2569,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Repulsion",
+        "director": "Roman Polanski",
+        "year": 1965,
+        "country": "UK",
+        "rating": 7
+      },
+      {
         "title": "Hour of the Wolf",
         "director": "Ingmar Bergman",
         "year": 1968,
@@ -2423,6 +2586,13 @@ const lists = [
         "title": "Fat City",
         "director": "John Huston",
         "year": 1972,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "Chinatown",
+        "director": "Roman Polanski",
+        "year": 1974,
         "country": "USA",
         "rating": 7
       },
@@ -2487,6 +2657,13 @@ const lists = [
         "director": "David Fincher",
         "year": 2010,
         "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "Once Upon a Time in Anatolia",
+        "director": "Nuri Bilge Ceylan",
+        "year": 2011,
+        "country": "Turkey-Bosnia and Herzergovina",
         "rating": 7
       },
     ]
@@ -2799,14 +2976,6 @@ const lists = [
         "tier": 3
       },
       {
-        "title": "The Day the Earth Stood Still",
-        "director": "Robert Wise",
-        "year": 1951,
-        "country": "USA",
-        "tier": 2
-      },
-    
-      {
         "title": "The Bad and the Beautiful",
         "director": "Vincente Minnelli",
         "year": 1952,
@@ -2939,14 +3108,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-    
-      {
-        "title": "Pickpocket",
-        "director": "Robert Bresson",
-        "year": 1959,
-        "country": "France",
-        "tier": 2
-      },
 
       {
         "title": "Shoot the Piano Player",
@@ -2969,24 +3130,6 @@ const lists = [
         "country": "USA",
         "tier": 4
       },
-    
-      {
-        "title": "Last Year at Marienbad",
-        "director": "Alain Resnais",
-        "year": 1961,
-        "country": "France-Italy",
-        "tier": 2
-      },
-    
-      {
-        "title": "West Side Story",
-        "director": "Robert Wise",
-        "year": 1961,
-        "country": "USA",
-        "tier": 2
-      },
-    
-    
       {
         "title": "Harakiri",
         "director": "Masaki Kobayashi",
@@ -3006,12 +3149,6 @@ const lists = [
         "year": 1962,
         "country": "Poland",
         "rating": "?"
-      },
-      {
-        "title": "La Jetée",
-        "director": "Chris Marker",
-        "year": 1962,
-        "country": "France"
       },
       {
         "title": "Lawrence of Arabia",
@@ -3083,21 +3220,6 @@ const lists = [
         "director": "Jean-Luc Godard",
         "year": 1965,
         "country": "France-Italy",
-        "tier": 3
-      },
-      {
-        "title": "Repulsion",
-        "director": "Roman Polanski",
-        "year": 1965,
-        "country": "UK",
-        "rating": "?",
-        "tier": 3
-      },
-      {
-        "title": "The Sound of Music",
-        "director": "Robert Wise",
-        "year": 1965,
-        "country": "USA",
         "tier": 3
       },
       {
@@ -3221,13 +3343,6 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "The Private Life of Sherlock Holmes",
-        "director": "Billy Wilder",
-        "year": 1970,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "Dirty Harry",
         "director": "Don Siegel",
         "year": 1971,
@@ -3286,7 +3401,7 @@ const lists = [
         "director": "George Lucas",
         "year": 1973,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Badlands",
@@ -3316,13 +3431,6 @@ const lists = [
         "year": 1973,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Mean Streets",
-        "director": "Martin Scorsese",
-        "year": 1973,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Pat Garrett and Billy the Kid",
@@ -3374,22 +3482,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-      {
-        "title": "Chinatown",
-        "director": "Roman Polanski",
-        "year": 1974,
-        "country": "USA",
-        "tier": 3
-      },
-    
-      {
-        "title": "The Godfather Part II",
-        "director": "Francis Ford Coppola",
-        "year": 1974,
-        "country": "USA",
-        "tier": 2
-      },
-    
       {
         "title": "The Texas Chainsaw Massacre",
         "director": "Tobe Hooper",
@@ -3497,27 +3589,12 @@ const lists = [
         "rating": "?",
         "tier": 3
       },
-    
-      {
-        "title": "The Tenant",
-        "director": "Roman Polanski",
-        "year": 1976,
-        "country": "France-USA",
-        "tier": 3
-      },
       {
         "title": "Saturday Night Fever",
         "director": "John Badham",
         "year": 1977,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Star Wars",
-        "director": "George Lucas",
-        "year": 1977,
-        "country": "USA",
-        "tier": 3
       },
       {
         "title": "Dawn of the Dead",
@@ -3546,21 +3623,6 @@ const lists = [
         "year": 1978,
         "country": "USA",
         "rating": "?"
-      },
-    
-      {
-        "title": "Alien",
-        "director": "Ridley Scott",
-        "year": 1979,
-        "country": "USA",
-        "tier": 2
-      },
-      {
-        "title": "Apocalypse Now",
-        "director": "Francis Ford Coppola",
-        "year": 1979,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Being There",
@@ -3630,13 +3692,6 @@ const lists = [
         "year": 1981,
         "country": "Australia",
         "rating": "?"
-      },
-      {
-        "title": "Blade Runner",
-        "director": "Ridley Scott",
-        "year": 1982,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "The Thing",
@@ -3816,13 +3871,6 @@ const lists = [
         "tier": 3
       },
       {
-        "title": "The Last Temptation of Christ",
-        "director": "Martin Scorsese",
-        "year": 1988,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "They Live",
         "director": "John Carpenter",
         "year": 1988,
@@ -3907,14 +3955,6 @@ const lists = [
         "country": "USA",
         "tier": 2
       },
-      {
-        "title": "Thelma & Louise",
-        "director": "Ridley Scott",
-        "year": 1991,
-        "country": "USA",
-        "tier": 3
-      },
-
       {
         "title": "Unforgiven",
         "director": "Clint Eastwood",
@@ -4045,15 +4085,6 @@ const lists = [
         "country": "USA",
         "tier": 2
       },
-      
-      {
-        "title": "Trainspotting",
-        "director": "Danny Boyle",
-        "year": 1996,
-        "country": "UK",
-        "tier": 2
-      },
-    
       {
         "title": "Boogie Nights",
         "director": "Paul Thomas Anderson",
@@ -4109,13 +4140,6 @@ const lists = [
         "country": "Denmark",
         "rating": "?",
         "tier": 3
-      },
-      {
-        "title": "Rushmore",
-        "director": "Wes Anderson",
-        "year": 1998,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Saving Private Ryan",
@@ -4213,14 +4237,6 @@ const lists = [
         "country": "USA-Australia",
         "rating": "?"
       },
-    
-      {
-        "title": "The Royal Tenenbaums",
-        "director": "Wes Anderson",
-        "year": 2001,
-        "country": "USA",
-        "tier": 3
-      },
       {
         "title": "Y tu mamá también",
         "director": "Alfonso Cuarón",
@@ -4261,16 +4277,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-    
-    
-      {
-        "title": "A History of Violence",
-        "director": "David Cronenberg",
-        "year": 2005,
-        "country": "USA-Germany",
-        "rating": "?",
-        "tier": 3
-      },
       {
         "title": "Brokeback Mountain",
         "director": "Ang Lee",
@@ -4294,13 +4300,6 @@ const lists = [
         "year": 2006,
         "country": "Germany",
         "rating": "?"
-      },
-      {
-        "title": "There Will Be Blood",
-        "director": "Paul Thomas Anderson",
-        "year": 2007,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Hunger",
@@ -4328,20 +4327,6 @@ const lists = [
         "director": "Andrew Stanton",
         "year": 2008,
         "country": "USA",
-        "rating": "?"
-      },
-      {
-        "title": "Certified Copy",
-        "director": "Abbas Kiarostami",
-        "year": 2010,
-        "country": "France-Italy-Belgium-Iran",
-        "tier": 2
-      },
-      {
-        "title": "Once Upon a Time in Anatolia",
-        "director": "Nuri Bilge Ceylan",
-        "year": 2011,
-        "country": "Turkey-Bosnia and Herzergovina",
         "rating": "?"
       },
       {
