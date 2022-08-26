@@ -67,6 +67,7 @@ const Games = {
                   {{ item.developer }} / {{ item.year }}
                 </v-card-subtitle>
                 <v-spacer></v-spacer>
+
                 <!--
                 <v-card-text class="pt-0">
                   <v-simple-table>
@@ -243,6 +244,12 @@ const Games = {
         "src": "Super Mario Kart.jpg",
         "rating": 4,
         "difficulty": 2.5
+      },
+      {
+        "title": "The Empire Strikes Back",
+        "src": "Super Star Wars: The Empire Strikes Back.png",
+        "rating": 4,
+        "difficulty": 4
       },
       {
         "title": "Zombies Ate My Neighbors",

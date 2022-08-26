@@ -82,6 +82,11 @@ const YouTube = {
         "subtitle": "Alan Watts"
       },
       {
+        "id": "dx4yW0mjezw",
+        "title": "The Benefit of Living With No Purpose",
+        "subtitle": "Alan Watts"
+      },
+      {
         "id": "5G8Gwr5JJ6Y",
         "title": "It's NOT OK to be WEAK",
         "subtitle": "Jordan Peterson"
@@ -115,6 +120,11 @@ const YouTube = {
         "id": "GO_rW0Bvy1I",
         "title": "Joe Rogan Experience #1491",
         "subtitle": "Bill Burr"
+      },
+      {
+        "id": "hl0iNRXcUbE",
+        "title": "Joe Rogan Experience #1512",
+        "subtitle": "Ben Shapiro"
       },
       {
         "id": "6SfPf-_OavY",
