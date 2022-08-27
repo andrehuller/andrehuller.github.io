@@ -810,6 +810,13 @@ const lists = [
         "rating": 10
       },
       {
+        "title": "The Best Years of Our Lives",
+        "director": "William Wyler",
+        "year": 1946,
+        "country": "US",
+        "rating": 10
+      },
+      {
         "title": "Letter from an Unknown Woman",
         "director": "Max Ophüls",
         "year": 1948,
@@ -1021,6 +1028,13 @@ const lists = [
         "rating": 10
       },
       {
+        "title": "Kes",
+        "director": "Ken Loach",
+        "year": 1969,
+        "country": "UK",
+        "rating": 10
+      },
+      {
         "title": "A Clockwork Orange",
         "director": "Stanley Kubrick",
         "year": 1971,
@@ -1060,6 +1074,13 @@ const lists = [
         "director": "Peter Bogdanovich",
         "year": 1973,
         "country": "USA",
+        "rating": 10
+      },
+      {
+        "title": "The Wicker Man",
+        "director": "Robin Hardy",
+        "year": 1973,
+        "country": "UK",
         "rating": 10
       },
       {
@@ -1130,6 +1151,20 @@ const lists = [
         "director": "Hayao Miyazaki",
         "year": 1988,
         "country": "Japan",
+        "rating": 10
+      },
+      {
+        "title": "Women on the Verge of a Nervous Breakdown",
+        "director": "Pedro Almodóvar",
+        "year": 1988,
+        "country": "Spain",
+        "rating": 10
+      },
+      {
+        "title": "Crumb",
+        "director": "Terry Zwigoff",
+        "year": 1994,
+        "country": "USA",
         "rating": 10
       },
       {
@@ -1472,6 +1507,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Les Diaboliques",
+        "director": "Henri-Georges Clouzot",
+        "year": 1955,
+        "country": "France",
+        "rating": 9
+      },
+      {
         "title": "The Ten Commandments",
         "director": "Cecil B. DeMille",
         "year": 1956,
@@ -1577,6 +1619,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Lawrence of Arabia",
+        "director": "David Lean",
+        "year": 1962,
+        "country": "UK",
+        "rating": 9
+      },
+      {
         "title": "Winter Light",
         "director": "Ingmar Bergman",
         "year": 1962,
@@ -1612,6 +1661,34 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "The Spirit of the Beehive",
+        "director": "Victor Erice",
+        "year": 1973,
+        "country": "Spain",
+        "rating": 9
+      },
+      {
+        "title": "Alice in the Cities",
+        "director": "Wim Wenders",
+        "year": 1974,
+        "country": "West Germany",
+        "rating": 9
+      },
+      {
+        "title": "Monty Python and the Holy Grail",
+        "director": "Terry Gilliam",
+        "year": 1975,
+        "country": "UK",
+        "rating": 9
+      },
+      {
+        "title": "Monty Python's Life of Brian",
+        "director": "Terry Jones",
+        "year": 1979,
+        "country": "UK",
+        "rating": 9
+      },
+      {
         "title": "Amarcord",
         "director": "Federico Fellini",
         "year": 1973,
@@ -1640,6 +1717,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "The Mirror",
+        "director": "Andrei Tarkovsky",
+        "year": 1975,
+        "country": "USSR",
+        "rating": 9
+      },
+      {
         "title": "Annie Hall",
         "director": "Woody Allen",
         "year": 1977,
@@ -1664,6 +1748,13 @@ const lists = [
         "title": "Apocalypse Now",
         "director": "Francis Ford Coppola",
         "year": 1979,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "The Empire Strikes Back",
+        "director": "Irvin Kershner",
+        "year": 1980,
         "country": "USA",
         "rating": 9
       },
@@ -1710,6 +1801,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Paris, Texas",
+        "director": "Wim Wenders",
+        "year": 1984,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Terminator",
         "director": "James Cameron",
         "year": 1984,
@@ -1731,6 +1829,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Taipei Story",
+        "director": "Edward Yang",
+        "year": 1985,
+        "country": "Taiwan",
+        "rating": 9
+      },
+      {
         "title": "Aliens",
         "director": "James Cameron",
         "year": 1986,
@@ -1745,8 +1850,22 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "The Sacrifice",
+        "director": "Andrei Tarkovsky",
+        "year": 1986,
+        "country": "France-Sweden",
+        "rating": 9
+      },
+      {
         "title": "Evil Dead II",
         "director": "Sam Raimi",
+        "year": 1987,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Robocop",
+        "director": "Paul Verhoeven",
         "year": 1987,
         "country": "USA",
         "rating": 9
@@ -1759,8 +1878,22 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "A Brighter Summer Day",
+        "director": "Edward Yang",
+        "year": 1991,
+        "country": "Taiwan",
+        "rating": 9
+      },
+      {
         "title": "Barton Fink",
         "director": "Joel Coen & Ethan Coen",
+        "year": 1991,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "The Silence of the Lambs",
+        "director": "Jonathan Demme",
         "year": 1991,
         "country": "USA",
         "rating": 9
@@ -1787,6 +1920,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Three Colours: Blue",
+        "director": "Krzysztof Kieslowski",
+        "year": 1993,
+        "country": "France-Poland-Switzerland",
+        "rating": 9
+      },
+      {
         "title": "Before Sunrise",
         "director": "Richard Linklater",
         "year": 1995,
@@ -1801,10 +1941,31 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Starship Troopers",
+        "director": "Paul Verhoeven",
+        "year": 1997,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Rushmore",
         "director": "Wes Anderson",
         "year": 1998,
         "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Amores perros",
+        "director": "Alejandro González Iñárritu",
+        "year": 2000,
+        "country": "Mexico",
+        "rating": 9
+      },
+      {
+        "title": "Talk to Her",
+        "director": "Pedro Almodóvar",
+        "year": 2002,
+        "country": "Spain",
         "rating": 9
       },
       {
@@ -2010,6 +2171,20 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Monsieur Verdoux",
+        "director": "Charles Chaplin",
+        "year": 1947,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Bicycle Thieves",
+        "director": "Vittorio De Sica",
+        "year": 1948,
+        "country": "Italy",
+        "rating": 8
+      },
+      {
         "title": "Fort Apache",
         "director": "John Ford",
         "year": 1948,
@@ -2028,6 +2203,13 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1948,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Kind Hearts and Coronets",
+        "director": "Robert Hamer",
+        "year": 1949,
+        "country": "UK",
         "rating": 8
       },
       {
@@ -2062,6 +2244,13 @@ const lists = [
         "title": "Strangers on a Train",
         "director": "Alfred Hitchcock",
         "year": 1951,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "The Bad and the Beautiful",
+        "director": "Vincente Minnelli",
+        "year": 1952,
         "country": "USA",
         "rating": 8
       },
@@ -2199,6 +2388,20 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Daisies",
+        "director": "Vera Chytilová",
+        "year": 1966,
+        "country": "Czechoslovakia",
+        "rating": 8
+      },
+      {
+        "title": "Butch Cassidy and the Sundance Kid",
+        "director": "George Roy Hill",
+        "year": 1969,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "The Private Life of Sherlock Holmes",
         "director": "Billy Wilder",
         "year": 1970,
@@ -2227,10 +2430,31 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Deliverance",
+        "director": "John Boorman",
+        "year": 1972,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "The Discreet Charm of the Bourgeoisie",
         "director": "Luis Buñuel",
         "year": 1972,
         "country": "France",
+        "rating": 8
+      },
+      {
+        "title": "Badlands",
+        "director": "Terrence Malick",
+        "year": 1973,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Network",
+        "director": "Sidney Lumet",
+        "year": 1976,
+        "country": "USA",
         "rating": 8
       },
       {
@@ -2248,10 +2472,31 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Days of Heaven",
+        "director": "Terrence Malick",
+        "year": 1978,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Excalibur",
+        "director": "John Boorman",
+        "year": 1981,
+        "country": "UK",
+        "rating": 8
+      },
+      {
         "title": "Raiders of the Lost Ark",
         "director": "Steven Spielberg",
         "year": 1981,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Once Upon a Time in America",
+        "director": "Sergio Leone",
+        "year": 1984,
+        "country": "Italy-USA",
         "rating": 8
       },
       {
@@ -2272,6 +2517,13 @@ const lists = [
         "title": "Raising Arizona",
         "director": "Joel Coen & Ethan Coen",
         "year": 1987,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Die Hard",
+        "director": "John McTiernan",
+        "year": 1988,
         "country": "USA",
         "rating": 8
       },
@@ -2318,10 +2570,38 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Three Colours: Red",
+        "director": "Krzysztof Kieslowski",
+        "year": 1994,
+        "country": "France-Switzerland-Poland",
+        "rating": 8
+      },
+      {
         "title": "Se7en",
         "director": "David Fincher",
         "year": 1995,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Funny Games",
+        "director": "Michael Haneke",
+        "year": 1997,
+        "country": "Austria",
+        "rating": 8
+      },
+      {
+        "title": "The Thin Red Line",
+        "director": "Terrence Malick",
+        "year": 1998,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "The Matrix",
+        "director": "Lana Wachowski & Lilly Wachowski",
+        "year": 1999,
+        "country": "USA-Australia",
         "rating": 8
       },
       {
@@ -2499,6 +2779,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Forbidden Games",
+        "director": "René Clément",
+        "year": 1952,
+        "country": "France",
+        "rating": 7
+      },
+      {
         "title": "The Quiet Man",
         "director": "John Ford",
         "year": 1952,
@@ -2611,6 +2898,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "In the Realm of the Senses",
+        "director": "Nagisa Oshima",
+        "year": 1976,
+        "country": "Japan-France",
+        "rating": 7
+      },
+      {
         "title": "The Elephant Man",
         "director": "David Lynch",
         "year": 1980,
@@ -2625,6 +2919,20 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Down by Law",
+        "director": "Jim Jarmusch",
+        "year": 1986,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "Wings of Desire",
+        "director": "Wim Wenders",
+        "year": 1987,
+        "country": "West Germany-France",
+        "rating": 7
+      },
+      {
         "title": "The Shawshank Redemption",
         "director": "Frank Darabont",
         "year": 1994,
@@ -2632,10 +2940,52 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Dead Man",
+        "director": "Jim Jarmusch",
+        "year": 1995,
+        "country": "USA-Germany",
+        "rating": 7
+      },
+      {
+        "title": "All About My Mother",
+        "director": "Pedro Almodóvar",
+        "year": 1999,
+        "country": "Spain-France",
+        "rating": 7
+      },
+      {
+        "title": "Dancer in the Dark",
+        "director": "Lars von Trier",
+        "year": 2000,
+        "country": "Denmark-France-Sweden-Italy-Germany-Norway-Netherlands-Iceland-Finland-UK-USA",
+        "rating": 7
+      },
+      {
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "director": "Peter Jackson",
+        "year": 2001,
+        "country": "USA-New Zealand",
+        "rating": 7
+      },
+      {
+        "title": "The Lord of the Rings: The Return of the King",
+        "director": "Peter Jackson",
+        "year": 2003,
+        "country": "New Zealand-USA",
+        "rating": 7
+      },
+      {
         "title": "Memories of Murder",
         "director": "Bong Joon-ho",
         "year": 2003,
         "country": "South Korea",
+        "rating": 7
+      },
+      {
+        "title": "Brokeback Mountain",
+        "director": "Ang Lee",
+        "year": 2005,
+        "country": "USA-Canada",
         "rating": 7
       },
       {
@@ -2669,7 +3019,7 @@ const lists = [
     ]
   },
   {
-    "name": "Watchlist",
+    "name": "Average",
     "items": [
       {
         "title": "The Birth of a Nation",
@@ -2853,7 +3203,7 @@ const lists = [
         "director": "Vincente Minnelli",
         "year": 1944,
         "country": "USA",
-        "rating": "?"
+        "rating": 3
       },
     
       {
@@ -2863,13 +3213,6 @@ const lists = [
         "country": "Italy",
         "image": "romeopencity",
         "rating": "?"
-      },
-      {
-        "title": "The Best Years of Our Lives",
-        "director": "William Wyler",
-        "year": 1946,
-        "country": "US",
-        "tier": 2
       },
       {
         "title": "Gilda",
@@ -2894,14 +3237,6 @@ const lists = [
         "rating": 6
       },
       {
-        "title": "Monsieur Verdoux",
-        "director": "Charles Chaplin",
-        "year": 1947,
-        "country": "USA",
-        "rating": 8,
-        "tier": 3
-      },
-      {
         "title": "Odd Man Out",
         "director": "Carol Reed",
         "year": 1947,
@@ -2913,13 +3248,6 @@ const lists = [
         "director": "Jacques Tourneur",
         "year": 1947,
         "country": "USA"
-      },
-    
-      {
-        "title": "Bicycle Thieves",
-        "director": "Vittorio De Sica",
-        "year": 1948,
-        "country": "Italy"
       },
       {
         "title": "La Terra trema",
@@ -2945,14 +3273,6 @@ const lists = [
       },
     
       {
-        "title": "Kind Hearts and Coronets",
-        "director": "Robert Hamer",
-        "year": 1949,
-        "country": "UK",
-        "tier": 2
-      },
-    
-      {
         "title": "A Place in the Sun",
         "director": "George Stevens",
         "year": 1951,
@@ -2973,22 +3293,7 @@ const lists = [
         "director": "Vincente Minnelli",
         "year": 1951,
         "country": "USA",
-        "tier": 3
-      },
-      {
-        "title": "The Bad and the Beautiful",
-        "director": "Vincente Minnelli",
-        "year": 1952,
-        "country": "USA",
-        "tier": 3
-      },
-    
-      {
-        "title": "Forbidden Games",
-        "director": "René Clément",
-        "year": 1952,
-        "country": "France",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "High Noon",
@@ -3051,13 +3356,6 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Les Diaboliques",
-        "director": "Henri-Georges Clouzot",
-        "year": 1955,
-        "country": "France",
-        "tier": 2
-      },
-      {
         "title": "Night and Fog",
         "director": "Alain Resnais",
         "year": 1955,
@@ -3091,7 +3389,7 @@ const lists = [
         "director": "David Lean",
         "year": 1957,
         "country": "UK",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Night of the Demon",
@@ -3149,13 +3447,6 @@ const lists = [
         "year": 1962,
         "country": "Poland",
         "rating": "?"
-      },
-      {
-        "title": "Lawrence of Arabia",
-        "director": "David Lean",
-        "year": 1962,
-        "country": "UK",
-        "tier": 2
       },
       {
         "title": "The Manchurian Candidate",
@@ -3223,13 +3514,6 @@ const lists = [
         "tier": 3
       },
       {
-        "title": "Daisies",
-        "director": "Vera Chytilová",
-        "year": 1966,
-        "country": "Czechoslovakia",
-        "rating": "?"
-      },
-      {
         "title": "The Battle of Algiers",
         "director": "Gillo Pontecorvo",
         "year": 1966,
@@ -3256,7 +3540,7 @@ const lists = [
         "director": "John Boorman",
         "year": 1967,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
     
       {
@@ -3282,26 +3566,11 @@ const lists = [
         "country": "France-Italy"
       },
       {
-        "title": "Butch Cassidy and the Sundance Kid",
-        "director": "George Roy Hill",
-        "year": 1969,
-        "country": "USA",
-        "rating": 8,
-        "tier": 2
-      },
-      {
         "title": "Easy Rider",
         "director": "Dennis Hopper",
         "year": 1969,
         "country": "USA",
         "rating": "?",
-        "tier": 2
-      },
-      {
-        "title": "Kes",
-        "director": "Ken Loach",
-        "year": 1969,
-        "country": "UK",
         "tier": 2
       },
       {
@@ -3326,8 +3595,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-    
-    
       {
         "title": "The Conformist",
         "director": "Bernardo Bertolucci",
@@ -3373,15 +3640,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-      
-      {
-        "title": "Deliverance",
-        "director": "John Boorman",
-        "year": 1972,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
-      },
       {
         "title": "Fellini's Roma",
         "director": "Federico Fellini",
@@ -3402,13 +3660,6 @@ const lists = [
         "year": 1973,
         "country": "USA",
         "rating": 6
-      },
-      {
-        "title": "Badlands",
-        "director": "Terrence Malick",
-        "year": 1973,
-        "country": "USA",
-        "rating": "?"
       },
       {
         "title": "Don't Look Now",
@@ -3446,34 +3697,11 @@ const lists = [
         "country": "Mexico-USA"
       },
       {
-        "title": "The Spirit of the Beehive",
-        "director": "Victor Erice",
-        "year": 1973,
-        "country": "Spain",
-        "rating": "?"
-      },
-      {
-        "title": "The Wicker Man",
-        "director": "Robin Hardy",
-        "year": 1973,
-        "country": "UK",
-        "tier": 2
-      },
-    
-    
-      {
         "title": "Ali: Fear Eats the Soul",
         "director": "Rainer Werner Fassbinder",
         "year": 1974,
         "country": "West Germany",
         "rating": "?"
-      },
-      {
-        "title": "Alice in the Cities",
-        "director": "Wim Wenders",
-        "year": 1974,
-        "country": "West Germany",
-        "tier": 3
       },
       {
         "title": "Bring Me the Head of Alfredo Garcia",
@@ -3503,22 +3731,8 @@ const lists = [
         "director": "Sidney Lumet",
         "year": 1975,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
-      {
-        "title": "The Mirror",
-        "director": "Andrei Tarkovsky",
-        "year": 1975,
-        "country": "USSR"
-      },
-      {
-        "title": "Monty Python and the Holy Grail",
-        "director": "Terry Gilliam",
-        "year": 1975,
-        "country": "UK",
-        "tier": 2
-      },
-    
       {
         "title": "One Flew Over the Cuckoo's Nest",
         "director": "Milos Forman",
@@ -3560,21 +3774,6 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "In the Realm of the Senses",
-        "director": "Nagisa Oshima",
-        "year": 1976,
-        "country": "Japan-France",
-        "tier": 3
-      },
-    
-      {
-        "title": "Network",
-        "director": "Sidney Lumet",
-        "year": 1976,
-        "country": "USA",
-        "rating": "?"
-      },
-      {
         "title": "The Outlaw Josey Wales",
         "director": "Clint Eastwood",
         "year": 1976,
@@ -3604,13 +3803,6 @@ const lists = [
         "tier": 3
       },
       {
-        "title": "Days of Heaven",
-        "director": "Terrence Malick",
-        "year": 1978,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "The Deer Hunter",
         "director": "Michael Cimino",
         "year": 1978,
@@ -3631,16 +3823,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-    
-      {
-        "title": "Monty Python's Life of Brian",
-        "director": "Terry Jones",
-        "year": 1979,
-        "country": "UK",
-        "tier": 2
-      },
-    
-    
       {
         "title": "Airplane!",
         "director": "Jim Abrahams, David Zucker & Jerry Zucker",
@@ -3655,15 +3837,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-    
-      {
-        "title": "The Empire Strikes Back",
-        "director": "Irvin Kershner",
-        "year": 1980,
-        "country": "USA",
-        "tier": 2
-      },
-    
       {
         "title": "An American Werewolf in London",
         "director": "John Landis",
@@ -3678,13 +3851,6 @@ const lists = [
         "year": 1981,
         "country": "West Germany",
         "rating": "?"
-      },
-      {
-        "title": "Excalibur",
-        "director": "John Boorman",
-        "year": 1981,
-        "country": "UK",
-        "tier": 3
       },
       {
         "title": "Mad Max 2",
@@ -3741,21 +3907,6 @@ const lists = [
         "tier": 3
       },
       {
-        "title": "Once Upon a Time in America",
-        "director": "Sergio Leone",
-        "year": 1984,
-        "country": "Italy-USA",
-        "rating": "?",
-        "tier": 3
-      },
-      {
-        "title": "Paris, Texas",
-        "director": "Wim Wenders",
-        "year": 1984,
-        "country": "USA",
-        "tier": 2
-      },
-      {
         "title": "This is Spinal Tap",
         "director": "Rob Reiner",
         "year": 1984,
@@ -3783,31 +3934,11 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Taipei Story",
-        "director": "Edward Yang",
-        "year": 1985,
-        "country": "Taiwan",
-        "rating": "?"
-      },
-      {
-        "title": "Down by Law",
-        "director": "Jim Jarmusch",
-        "year": 1986,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "Ferris Bueller's Day Off",
         "director": "John Hughes",
         "year": 1986,
         "country": "USA",
         "tier": 4
-      },
-      {
-        "title": "The Sacrifice",
-        "director": "Andrei Tarkovsky",
-        "year": 1986,
-        "country": "France-Sweden"
       },
       {
         "title": "Stand by Me",
@@ -3831,34 +3962,10 @@ const lists = [
         "tier": 4
       },
       {
-        "title": "Wings of Desire",
-        "director": "Wim Wenders",
-        "year": 1987,
-        "country": "West Germany-France",
-        "rating": "?",
-        "tier": 3
-      },
-      {
-        "title": "Robocop",
-        "director": "Paul Verhoeven",
-        "year": 1987,
-        "country": "USA",
-        "tier": 2
-      },
-    
-      {
         "title": "Akira",
         "director": "Katsuhiro Otomo",
         "year": 1988,
         "country": "Japan",
-        "rating": "?",
-        "tier": 3
-      },
-      {
-        "title": "Die Hard",
-        "director": "John McTiernan",
-        "year": 1988,
-        "country": "USA",
         "rating": "?",
         "tier": 3
       },
@@ -3877,13 +3984,6 @@ const lists = [
         "country": "USA",
         "rating": "?",
         "tier": 3
-      },
-      {
-        "title": "Women on the Verge of a Nervous Breakdown",
-        "director": "Pedro Almodóvar",
-        "year": 1988,
-        "country": "Spain",
-        "tier": 2
       },
       {
         "title": "Do the Right Thing",
@@ -3925,14 +4025,6 @@ const lists = [
         "country": "USA",
         "rating": 2
       },
-    
-      {
-        "title": "A Brighter Summer Day",
-        "director": "Edward Yang",
-        "year": 1991,
-        "country": "Taiwan",
-        "tier": 2
-      },
       {
         "title": "My Own Private Idaho",
         "director": "Gus Van Sant",
@@ -3947,13 +4039,6 @@ const lists = [
         "country": "Hong Kong",
         "rating": 8,
         "tier": 3
-      },
-      {
-        "title": "The Silence of the Lambs",
-        "director": "Jonathan Demme",
-        "year": 1991,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Unforgiven",
@@ -3989,26 +4074,11 @@ const lists = [
         "country": "USA"
       },
       {
-        "title": "Three Colours: Blue",
-        "director": "Krzysztof Kieslowski",
-        "year": 1993,
-        "country": "France-Poland-Switzerland",
-        "tier": 2
-      },
-    
-      {
         "title": "Chungking Express",
         "director": "Wong Kar-wai",
         "year": 1994,
         "country": "Hong Kong",
         "tier": 3
-      },
-      {
-        "title": "Crumb",
-        "director": "Terry Zwigoff",
-        "year": 1994,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Léon",
@@ -4018,29 +4088,12 @@ const lists = [
         "rating": "?",
         "tier": 3
       },
-    
-      {
-        "title": "Three Colours: Red",
-        "director": "Krzysztof Kieslowski",
-        "year": 1994,
-        "country": "France-Switzerland-Poland",
-        "tier": 2
-      },
       {
         "title": "The Bridges of Madison County",
         "director": "Clint Eastwood",
         "year": 1995,
         "country": "USA",
         "rating": "?"
-      },
-    
-      {
-        "title": "Dead Man",
-        "director": "Jim Jarmusch",
-        "year": 1995,
-        "country": "USA-Germany",
-        "rating": "?",
-        "tier": 3
       },
       {
         "title": "Heat",
@@ -4092,12 +4145,6 @@ const lists = [
         "country": "USA"
       },
       {
-        "title": "Funny Games",
-        "director": "Michael Haneke",
-        "year": 1997,
-        "country": "Austria"
-      },
-      {
         "title": "Hana-bi",
         "director": "Takeshi Kitano",
         "year": 1997,
@@ -4112,13 +4159,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },    
-      {
-        "title": "Starship Troopers",
-        "director": "Paul Verhoeven",
-        "year": 1997,
-        "country": "USA",
-        "tier": 2
-      },
       {
         "title": "Titanic",
         "director": "James Cameron",
@@ -4149,21 +4189,6 @@ const lists = [
         "rating": 6
       },
       {
-        "title": "The Thin Red Line",
-        "director": "Terrence Malick",
-        "year": 1998,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
-      },
-    
-      {
-        "title": "All About My Mother",
-        "director": "Pedro Almodóvar",
-        "year": 1999,
-        "country": "Spain-France"
-      },
-      {
         "title": "American Beauty",
         "director": "Sam Mendes",
         "year": 1999,
@@ -4185,29 +4210,12 @@ const lists = [
         "country": "USA"
       },
       {
-        "title": "The Matrix",
-        "director": "Lana Wachowski & Lilly Wachowski",
-        "year": 1999,
-        "country": "USA-Australia",
-        "tier": 3
-      },
-    
-      {
         "title": "The Straight Story",
         "director": "David Lynch",
         "year": 1999,
         "country": "USA-France-UK",
         "rating": 6
       },
-    
-      {
-        "title": "Amores perros",
-        "director": "Alejandro González Iñárritu",
-        "year": 2000,
-        "country": "Mexico",
-        "tier": 2
-      },
-    
       {
         "title": "Crouching Tiger, Hidden Dragon",
         "director": "Ang Lee",
@@ -4215,21 +4223,6 @@ const lists = [
         "country": "Taiwan-Hong Kong-USA-China",
         "tier": 4
       },
-      {
-        "title": "Dancer in the Dark",
-        "director": "Lars von Trier",
-        "year": 2000,
-        "country": "Denmark-France-Sweden-Italy-Germany-Norway-Netherlands-Iceland-Finland-UK-USA",
-        "tier": 3
-      },
-      {
-        "title": "The Lord of the Rings: The Fellowship of the Ring",
-        "director": "Peter Jackson",
-        "year": 2001,
-        "country": "USA-New Zealand",
-        "tier": 3
-      },
-    
       {
         "title": "Moulin Rouge!",
         "director": "Baz Luhrmann",
@@ -4251,20 +4244,6 @@ const lists = [
         "country": "USA"
       },
       {
-        "title": "Talk to Her",
-        "director": "Pedro Almodóvar",
-        "year": 2002,
-        "country": "Spain"
-      },
-      {
-        "title": "The Lord of the Rings: The Return of the King",
-        "director": "Peter Jackson",
-        "year": 2003,
-        "country": "New Zealand-USA",
-        "rating": "?",
-        "tier": 3
-      },
-      {
         "title": "Lost in Translation",
         "director": "Sofia Coppola",
         "year": 2003,
@@ -4277,16 +4256,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-      {
-        "title": "Brokeback Mountain",
-        "director": "Ang Lee",
-        "year": 2005,
-        "country": "USA-Canada",
-        "rating": "?",
-        "tier": 3
-      },
-    
-    
       {
         "title": "Children of Men",
         "director": "Alfonso Cuarón",
@@ -4336,6 +4305,95 @@ const lists = [
         "country": "Australia-USA",
         "tier": 3
       },
+    ]
+  },
+  {
+    "name": "Watchlist",
+    "items": [
+      {
+        "title": "Fantômas",
+        "director": "Louis Feuillade",
+        "year": 1913,
+        "country": "France"
+      },
+      {
+        "title": "Häxan",
+        "director": "Benjamin Christensen",
+        "year": 1922,
+        "country": "Sweden"
+      },
+      {
+        "title": "Humanity and Paper Balloons",
+        "director": "Sadao Yamanaka",
+        "year": 1937,
+        "country": "Japan"
+      },
+      {
+        "title": "On the Town",
+        "director": "Stanley Donen & Gene Kelly",
+        "year": 1949,
+        "country": "USA"
+      },
+      {
+        "title": "The Reckless Moment",
+        "director": "Max Ophüls",
+        "year": 1949,
+        "country": "USA"
+      },
+      {
+        "title": "The Thing from Another World",
+        "director": "Christian Nyby & Howard Hawks",
+        "year": 1951,
+        "country": "USA"
+      },
+      {
+        "title": "Subarnarekha",
+        "director": "Ritwik Ghatak",
+        "year": 1965,
+        "country": "India"
+      },
+      {
+        "title": "Second Breath",
+        "director": "Jean-Pierre Melville",
+        "year": 1966,
+        "country": "France"
+      },
+      {
+        "title": "Female Trouble",
+        "director": "John Waters",
+        "year": 1974,
+        "country": "USA"
+      },
+      {
+        "title": "National Lampoon's Animal House",
+        "director": "John Landis",
+        "year": 1978,
+        "country": "USA"
+      },
+      {
+        "title": "Bad Timing",
+        "director": "Nicolas Roeg",
+        "year": 1980,
+        "country": "UK"
+      },
+      {
+        "title": "Yol",
+        "director": "Serif Gören & Yilmaz Güney",
+        "year": 1982,
+        "country": "Turkey-Switzerland-France"
+      },
+      {
+        "title": "A Tale of the Wind",
+        "director": "Joris Ivens",
+        "year": 1988,
+        "country": "France-UK-West Germany-Netherlands"
+      },
+      {
+        "title": "Exotica",
+        "director": "Atom Egoyan",
+        "year": 1994,
+        "country": "Canada"
+      }
     ]
   }
 ]
