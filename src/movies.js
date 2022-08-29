@@ -770,16 +770,14 @@ const lists = [
         "director": "Fritz Lang",
         "year": 1931,
         "country": "Germany",
-        "rating": 10,
-        "tier": 2
+        "rating": 10
       },
       {
         "title": "Alexander Nevsky",
         "director": "Sergei Eisenstein",
         "year": 1938,
         "country": "USSR",
-        "rating": 10,
-        "tier": 2
+        "rating": 10
       },
       {
         "title": "The Lady Vanishes",
@@ -799,8 +797,7 @@ const lists = [
         "title": "Shadow of a Doubt",
         "director": "Alfred Hitchcock",
         "year": 1943,
-        "country": "USA",
-        "tier": 2
+        "country": "USA"
       },
       {
         "title": "Double Indemnity",
@@ -820,8 +817,7 @@ const lists = [
         "title": "Letter from an Unknown Woman",
         "director": "Max Ophüls",
         "year": 1948,
-        "country": "USA",
-        "tier": 2
+        "country": "USA"
       },
       {
         "title": "All About Eve",
@@ -855,8 +851,7 @@ const lists = [
         "title": "Othello",
         "director": "Orson Welles",
         "year": 1951,
-        "country": "Italy-France-Morocco-USA",
-        "tier": 2
+        "country": "Italy-France-Morocco-USA"
       },
       {
         "title": "Umberto D.",
@@ -1052,8 +1047,7 @@ const lists = [
         "title": "Solaris",
         "director": "Andrei Tarkovsky",
         "year": 1972,
-        "country": "USSR",
-        "tier": 2
+        "country": "USSR"
       },
       {
         "title": "F for Fake",
@@ -1214,6 +1208,13 @@ const lists = [
         "director": "Hayao Miyazaki",
         "year": 2001,
         "country": "Japan",
+        "rating": 10
+      },
+      {
+        "title": "Y tu mamá también",
+        "director": "Alfonso Cuarón",
+        "year": 2001,
+        "country": "Mexico",
         "rating": 10
       },
       {
@@ -1419,6 +1420,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "On the Town",
+        "director": "Stanley Donen & Gene Kelly",
+        "year": 1949,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Third Man",
         "director": "Carol Reed",
         "year": 1949,
@@ -1612,6 +1620,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Harakiri",
+        "director": "Masaki Kobayashi",
+        "year": 1962,
+        "country": "Japan",
+        "rating": 9
+      },
+      {
         "title": "La Jetée",
         "director": "Chris Marker",
         "year": 1962,
@@ -1661,6 +1676,20 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Night of the Living Dead",
+        "director": "George A. Romero",
+        "year": 1968,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Pat Garrett and Billy the Kid",
+        "director": "Sam Peckinpah",
+        "year": 1973,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Spirit of the Beehive",
         "director": "Victor Erice",
         "year": 1973,
@@ -1696,11 +1725,25 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "The Holy Mountain",
+        "director": "Alejandro Jodorowsky",
+        "year": 1973,
+        "country": "Mexico-USA",
+        "rating": 9
+      },
+      {
         "title": "Mean Streets",
         "director": "Martin Scorsese",
         "year": 1973,
         "country": "USA",
         "rating": 10
+      },
+      {
+        "title": "Ali: Fear Eats the Soul",
+        "director": "Rainer Werner Fassbinder",
+        "year": 1974,
+        "country": "West Germany",
+        "rating": 9
       },
       {
         "title": "The Godfather Part II",
@@ -1784,6 +1827,13 @@ const lists = [
         "director": "Steven Spielberg",
         "year": 1982,
         "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Veronika Voss",
+        "director": "Rainer Werner Fassbinder",
+        "year": 1982,
+        "country": "West Germany",
         "rating": 9
       },
       {
@@ -1878,6 +1928,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Edward Scissorhands",
+        "director": "Tim Burton",
+        "year": 1990,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "A Brighter Summer Day",
         "director": "Edward Yang",
         "year": 1991,
@@ -1924,6 +1981,13 @@ const lists = [
         "director": "Krzysztof Kieslowski",
         "year": 1993,
         "country": "France-Poland-Switzerland",
+        "rating": 9
+      },
+      {
+        "title": "Chungking Express",
+        "director": "Wong Kar-wai",
+        "year": 1994,
+        "country": "Hong Kong",
         "rating": 9
       },
       {
@@ -1983,6 +2047,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Children of Men",
+        "director": "Alfonso Cuarón",
+        "year": 2006,
+        "country": "USA-UK",
+        "rating": 9
+      },
+      {
         "title": "The Host",
         "director": "Bong Joon-ho",
         "year": 2006,
@@ -2021,8 +2092,7 @@ const lists = [
         "title": "Boyhood",
         "director": "Richard Linklater",
         "year": 2014,
-        "country": "USA",
-        "tier": 2
+        "country": "USA"
       },
       {
         "title": "Once Upon a Time... in Hollywood",
@@ -2178,6 +2248,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Out of the Past",
+        "director": "Jacques Tourneur",
+        "year": 1947,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Bicycle Thieves",
         "director": "Vittorio De Sica",
         "year": 1948,
@@ -2283,6 +2360,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "All That Heaven Allows",
+        "director": "Douglas Sirk",
+        "year": 1955,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "The Ladykillers",
         "director": "Alexander Mackendrick",
         "year": 1955,
@@ -2329,6 +2413,13 @@ const lists = [
         "director": "Leo McCarey",
         "year": 1957,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Night of the Demon",
+        "director": "Jacques Tourneur",
+        "year": 1957,
+        "country": "UK",
         "rating": 8
       },
       {
@@ -2395,6 +2486,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Bonnie and Clyde",
+        "director": "Arthur Penn",
+        "year": 1967,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Butch Cassidy and the Sundance Kid",
         "director": "George Roy Hill",
         "year": 1969,
@@ -2451,6 +2549,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Assault on Precinct 13",
+        "director": "John Carpenter",
+        "year": 1976,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Network",
         "director": "Sidney Lumet",
         "year": 1976,
@@ -2468,6 +2573,13 @@ const lists = [
         "title": "Star Wars",
         "director": "George Lucas",
         "year": 1977,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Dawn of the Dead",
+        "director": "George A. Romero",
+        "year": 1978,
         "country": "USA",
         "rating": 8
       },
@@ -2535,10 +2647,24 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "They Live",
+        "director": "John Carpenter",
+        "year": 1988,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "The Killer",
         "director": "John Woo",
         "year": 1989,
         "country": "Hong Kong",
+        "rating": 8
+      },
+      {
+        "title": "My Own Private Idaho",
+        "director": "Gus Van Sant",
+        "year": 1991,
+        "country": "USA",
         "rating": 8
       },
       {
@@ -2577,8 +2703,22 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Heat",
+        "director": "Michael Mann",
+        "year": 1995,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Se7en",
         "director": "David Fincher",
+        "year": 1995,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "The Usual Suspects",
+        "director": "Bryan Singer",
         "year": 1995,
         "country": "USA",
         "rating": 8
@@ -2716,6 +2856,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "The Great Dictator",
+        "director": "Charles Chaplin",
+        "year": 1940,
+        "country": "USA",
+        "rating": 7
+      },
+      {
         "title": "How Green Was My Valley",
         "director": "John Ford",
         "year": 1941,
@@ -2775,6 +2922,13 @@ const lists = [
         "title": "Wagon Master",
         "director": "John Ford",
         "year": 1950,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "A Place in the Sun",
+        "director": "George Stevens",
+        "year": 1951,
         "country": "USA",
         "rating": 7
       },
@@ -2877,6 +3031,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Last Tango in Paris",
+        "director": "Bernardo Bertolucci",
+        "year": 1972,
+        "country": "France-Italy",
+        "rating": 7
+      },
+      {
         "title": "Chinatown",
         "director": "Roman Polanski",
         "year": 1974,
@@ -2905,9 +3066,23 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Halloween",
+        "director": "John Carpenter",
+        "year": 1978,
+        "country": "USA",
+        "rating": 7
+      },
+      {
         "title": "The Elephant Man",
         "director": "David Lynch",
         "year": 1980,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "The Right Stuff",
+        "director": "Philip Kaufman",
+        "year": 1983,
         "country": "USA",
         "rating": 7
       },
@@ -2933,6 +3108,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Days of Being Wild",
+        "director": "Wong Kar-wai",
+        "year": 1990,
+        "country": "Hong Kong",
+        "rating": 7
+      },
+      {
         "title": "The Shawshank Redemption",
         "director": "Frank Darabont",
         "year": 1994,
@@ -2944,6 +3126,13 @@ const lists = [
         "director": "Jim Jarmusch",
         "year": 1995,
         "country": "USA-Germany",
+        "rating": 7
+      },
+      {
+        "title": "Underground",
+        "director": "Emir Kusturica",
+        "year": 1995,
+        "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
         "rating": 7
       },
       {
@@ -3053,15 +3242,13 @@ const lists = [
         "title": "Frankenstein",
         "director": "James Whale",
         "year": 1931,
-        "country": "USA",
-        "tier": 4
+        "country": "USA"
       },
       {
         "title": "King Kong",
         "director": "Merian C. Cooper & Ernest B. Schoedsack",
         "year": 1933,
-        "country": "USA",
-        "tier": 3
+        "country": "USA"
       },
       {
         "title": "The Testament of Dr. Mabuse",
@@ -3074,8 +3261,7 @@ const lists = [
         "title": "Ninotchka",
         "director": "Ernst Lubitsch",
         "year": 1939,
-        "country": "USA",
-        "tier": 3
+        "country": "USA"
       },
       {
         "title": "The Rules of the Game",
@@ -3108,15 +3294,6 @@ const lists = [
         "country": "USA",
         "rating": 6
       },
-      {
-        "title": "The Great Dictator",
-        "director": "Charles Chaplin",
-        "year": 1940,
-        "country": "USA",
-        "rating": 7,
-        "tier": 3
-      },
-    
       {
         "title": "Pinocchio",
         "director": "Ben Sharpsteen & Hamilton Luske",
@@ -3171,7 +3348,7 @@ const lists = [
         "director": "Jacques Tourneur",
         "year": 1942,
         "country": "USA",
-        "tier": 3
+        "rating": 5
       },
       
       {
@@ -3179,7 +3356,7 @@ const lists = [
         "director": "Jacques Tourneur",
         "year": 1943,
         "country": "USA",
-        "tier": 3
+        "rating": 6
       },
     
       {
@@ -3244,12 +3421,6 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Out of the Past",
-        "director": "Jacques Tourneur",
-        "year": 1947,
-        "country": "USA"
-      },
-      {
         "title": "La Terra trema",
         "director": "Luchino Visconti",
         "year": 1948,
@@ -3270,15 +3441,6 @@ const lists = [
         "year": 1948,
         "country": "USA",
         "rating": 6
-      },
-    
-      {
-        "title": "A Place in the Sun",
-        "director": "George Stevens",
-        "year": 1951,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
       },
     
       {
@@ -3307,14 +3469,14 @@ const lists = [
         "director": "William Wyler",
         "year": 1953,
         "country": "USA",
-        "tier": 4
+        "rating": 6
       },
       {
         "title": "Shane",
         "director": "George Stevens",
         "year": 1953,
         "country": "USA",
-        "tier": 4
+        "rating": 3
       },
     
       {
@@ -3331,15 +3493,6 @@ const lists = [
         "year": 1954,
         "country": "Italy",
         "rating": "?"
-      },
-    
-      {
-        "title": "All That Heaven Allows",
-        "director": "Douglas Sirk",
-        "year": 1955,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
       },
       {
         "title": "East of Eden",
@@ -3392,19 +3545,11 @@ const lists = [
         "rating": 6
       },
       {
-        "title": "Night of the Demon",
-        "director": "Jacques Tourneur",
-        "year": 1957,
-        "country": "UK",
-        "rating": "?"
-      },
-
-      {
         "title": "Ben-Hur",
         "director": "William Wyler",
         "year": 1959,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
 
       {
@@ -3427,12 +3572,6 @@ const lists = [
         "year": 1961,
         "country": "USA",
         "tier": 4
-      },
-      {
-        "title": "Harakiri",
-        "director": "Masaki Kobayashi",
-        "year": 1962,
-        "country": "Japan"
       },
       {
         "title": "Jules et Jim",
@@ -3490,7 +3629,7 @@ const lists = [
         "director": "Glauber Rocha",
         "year": 1964,
         "country": "Brazil",
-        "rating": "?"
+        "rating": 2
       },
       {
         "title": "Mary Poppins",
@@ -3518,15 +3657,7 @@ const lists = [
         "director": "Gillo Pontecorvo",
         "year": 1966,
         "country": "Italy-Algeria",
-        "rating": "?"
-      },
-      {
-        "title": "Bonnie and Clyde",
-        "director": "Arthur Penn",
-        "year": 1967,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
+        "rating": 5
       },
       {
         "title": "Cool Hand Luke",
@@ -3541,14 +3672,6 @@ const lists = [
         "year": 1967,
         "country": "USA",
         "rating": 6
-      },
-    
-      {
-        "title": "Night of the Living Dead",
-        "director": "George A. Romero",
-        "year": 1968,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "The Producers",
@@ -3593,7 +3716,7 @@ const lists = [
         "director": "Sam Peckinpah",
         "year": 1969,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "The Conformist",
@@ -3648,13 +3771,6 @@ const lists = [
         "rating": 6
       },
       {
-        "title": "Last Tango in Paris",
-        "director": "Bernardo Bertolucci",
-        "year": 1972,
-        "country": "France-Italy",
-        "tier": 3
-      },
-      {
         "title": "American Graffiti",
         "director": "George Lucas",
         "year": 1973,
@@ -3684,31 +3800,11 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Pat Garrett and Billy the Kid",
-        "director": "Sam Peckinpah",
-        "year": 1973,
-        "country": "USA",
-        "tier": 2
-      },
-      {
-        "title": "The Holy Mountain",
-        "director": "Alejandro Jodorowsky",
-        "year": 1973,
-        "country": "Mexico-USA"
-      },
-      {
-        "title": "Ali: Fear Eats the Soul",
-        "director": "Rainer Werner Fassbinder",
-        "year": 1974,
-        "country": "West Germany",
-        "rating": "?"
-      },
-      {
         "title": "Bring Me the Head of Alfredo Garcia",
         "director": "Sam Peckinpah",
         "year": 1974,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "The Texas Chainsaw Massacre",
@@ -3758,15 +3854,6 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Assault on Precinct 13",
-        "director": "John Carpenter",
-        "year": 1976,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
-      },
-    
-      {
         "title": "Fellini's Casanova",
         "director": "Federico Fellini",
         "year": 1976,
@@ -3796,25 +3883,11 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Dawn of the Dead",
-        "director": "George A. Romero",
-        "year": 1978,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "The Deer Hunter",
         "director": "Michael Cimino",
         "year": 1978,
         "country": "USA",
         "tier": 4
-      },
-      {
-        "title": "Halloween",
-        "director": "John Carpenter",
-        "year": 1978,
-        "country": "USA",
-        "rating": "?"
       },
       {
         "title": "Being There",
@@ -3864,8 +3937,7 @@ const lists = [
         "director": "John Carpenter",
         "year": 1982,
         "country": "USA",
-        "rating": "?",
-        "tier": 3
+        "rating": 6
       },
       {
         "title": "Tootsie",
@@ -3874,22 +3946,6 @@ const lists = [
         "country": "USA",
         "rating": "?",
         "tier": 4
-      },
-      {
-        "title": "Veronika Voss",
-        "director": "Rainer Werner Fassbinder",
-        "year": 1982,
-        "country": "West Germany"
-      },
-    
-    
-      {
-        "title": "The Right Stuff",
-        "director": "Philip Kaufman",
-        "year": 1983,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
       },
       {
         "title": "Amadeus",
@@ -3978,14 +4034,6 @@ const lists = [
         "tier": 3
       },
       {
-        "title": "They Live",
-        "director": "John Carpenter",
-        "year": 1988,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
-      },
-      {
         "title": "Do the Right Thing",
         "director": "Spike Lee",
         "year": 1989,
@@ -4000,37 +4048,12 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-    
-    
-      {
-        "title": "Days of Being Wild",
-        "director": "Wong Kar-wai",
-        "year": 1990,
-        "country": "Hong Kong",
-        "rating": "?"
-      },
-      {
-        "title": "Edward Scissorhands",
-        "director": "Tim Burton",
-        "year": 1990,
-        "country": "USA",
-        "tier": 2
-      },
-    
-    
       {
         "title": "Wild at Heart",
         "director": "David Lynch",
         "year": 1990,
         "country": "USA",
         "rating": 2
-      },
-      {
-        "title": "My Own Private Idaho",
-        "director": "Gus Van Sant",
-        "year": 1991,
-        "country": "USA",
-        "rating": "?"
       },
       {
         "title": "Raise the Red Lantern",
@@ -4074,13 +4097,6 @@ const lists = [
         "country": "USA"
       },
       {
-        "title": "Chungking Express",
-        "director": "Wong Kar-wai",
-        "year": 1994,
-        "country": "Hong Kong",
-        "tier": 3
-      },
-      {
         "title": "Léon",
         "director": "Luc Besson",
         "year": 1994,
@@ -4094,14 +4110,6 @@ const lists = [
         "year": 1995,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Heat",
-        "director": "Michael Mann",
-        "year": 1995,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
       },
       {
         "title": "La Haine",
@@ -4123,20 +4131,6 @@ const lists = [
         "year": 1995,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Underground",
-        "director": "Emir Kusturica",
-        "year": 1995,
-        "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
-        "tier": 3
-      },
-      {
-        "title": "The Usual Suspects",
-        "director": "Bryan Singer",
-        "year": 1995,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Boogie Nights",
@@ -4231,13 +4225,6 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Y tu mamá también",
-        "director": "Alfonso Cuarón",
-        "year": 2001,
-        "country": "Mexico",
-        "tier": 2
-      },
-      {
         "title": "Punch-Drunk Love",
         "director": "Paul Thomas Anderson",
         "year": 2002,
@@ -4254,13 +4241,6 @@ const lists = [
         "director": "Clint Eastwood",
         "year": 2004,
         "country": "USA",
-        "rating": "?"
-      },
-      {
-        "title": "Children of Men",
-        "director": "Alfonso Cuarón",
-        "year": 2006,
-        "country": "USA-UK",
         "rating": "?"
       },
       {
@@ -4327,12 +4307,6 @@ const lists = [
         "director": "Sadao Yamanaka",
         "year": 1937,
         "country": "Japan"
-      },
-      {
-        "title": "On the Town",
-        "director": "Stanley Donen & Gene Kelly",
-        "year": 1949,
-        "country": "USA"
       },
       {
         "title": "The Reckless Moment",

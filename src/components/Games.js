@@ -221,6 +221,8 @@ const Games = {
       },
       {
         "title": "Animaniacs",
+        "developer": "Konami",
+        "year": 1994,
         "src": "Animaniacs.png",
         "rating": 4,
         "difficulty": 4
@@ -235,6 +237,8 @@ const Games = {
       },
       {
         "title": "Goof Troop",
+        "developer": "Capcom",
+        "year": 1993,
         "src": "Goof Troop.jpg",
         "rating": 4,
         "difficulty": 2
@@ -244,6 +248,14 @@ const Games = {
         "src": "Super Mario Kart.jpg",
         "rating": 4,
         "difficulty": 2.5
+      },
+      {
+      	"title": "Super Double Dragon",
+      	"developer": "Technōs Japan",
+      	"year": 1992,
+      	"src": "Super Double Dragon.jpg",
+        "rating": 4,
+        "difficulty": 3
       },
       {
         "title": "The Empire Strikes Back",
