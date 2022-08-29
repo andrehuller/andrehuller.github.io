@@ -1355,6 +1355,13 @@ const lists = [
         "country": "USA"
       },
       {
+        "title": "Pinocchio",
+        "director": "Ben Sharpsteen & Hamilton Luske",
+        "year": 1940,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Casablanca",
         "director": "Michael Curtiz",
         "year": 1942,
@@ -1977,6 +1984,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Groundhog Day",
+        "director": "Harold Ramis",
+        "year": 1993,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Three Colours: Blue",
         "director": "Krzysztof Kieslowski",
         "year": 1993,
@@ -2002,6 +2016,13 @@ const lists = [
         "director": "Danny Boyle",
         "year": 1996,
         "country": "UK",
+        "rating": 9
+      },
+      {
+        "title": "Hana-bi",
+        "director": "Takeshi Kitano",
+        "year": 1997,
+        "country": "Japan",
         "rating": 9
       },
       {
@@ -2192,6 +2213,13 @@ const lists = [
         "director": "Frank Capra",
         "year": 1939,
         "country": "USA"
+      },
+      {
+        "title": "Ninotchka",
+        "director": "Ernst Lubitsch",
+        "year": 1939,
+        "country": "USA",
+        "rating": 7
       },
       {
         "title": "The Story of the Last Chrysanthemums",
@@ -2778,7 +2806,14 @@ const lists = [
         "year": 2008,
         "country": "USA-UK",
         "rating": 8
-      }
+      },
+      {
+        "title": "Mad Max: Fury Road",
+        "director": "George Miller",
+        "year": 2015,
+        "country": "Australia-USA",
+        "rating": 8
+      },
     ]
   },
   {
@@ -2830,6 +2865,13 @@ const lists = [
         "country": "USA"
       },
       {
+        "title": "The Testament of Dr. Mabuse",
+        "director": "Fritz Lang",
+        "year": 1933,
+        "country": "Germany",
+        "rating": 7
+      },
+      {
         "title": "La Grande illusion",
         "director": "Jean Renoir",
         "year": 1937,
@@ -2852,6 +2894,13 @@ const lists = [
         "title": "Young Mr. Lincoln",
         "director": "John Ford",
         "year": 1939,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "The Philadelphia Story",
+        "director": "George Cukor",
+        "year": 1940,
         "country": "USA",
         "rating": 7
       },
@@ -3087,6 +3136,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "This is Spinal Tap",
+        "director": "Rob Reiner",
+        "year": 1984,
+        "country": "USA",
+        "rating": 7
+      },
+      {
         "title": "A Better Tomorrow",
         "director": "John Woo",
         "year": 1986,
@@ -3236,32 +3292,21 @@ const lists = [
         "director": "Sergei Eisenstein & Grigori Aleksandrov",
         "year": 1928,
         "country": "USSR",
-        "rating": "5"
+        "rating": 5
       },
       {
         "title": "Frankenstein",
         "director": "James Whale",
         "year": 1931,
-        "country": "USA"
+        "country": "USA",
+        "rating": "?"
       },
       {
         "title": "King Kong",
         "director": "Merian C. Cooper & Ernest B. Schoedsack",
         "year": 1933,
-        "country": "USA"
-      },
-      {
-        "title": "The Testament of Dr. Mabuse",
-        "director": "Fritz Lang",
-        "year": 1933,
-        "country": "Germany",
-        "rating": "?"
-      },
-      {
-        "title": "Ninotchka",
-        "director": "Ernst Lubitsch",
-        "year": 1939,
-        "country": "USA"
+        "country": "USA",
+        "rating": 6
       },
       {
         "title": "The Rules of the Game",
@@ -3277,9 +3322,6 @@ const lists = [
         "country": "USA",
         "rating": 4
       },
-
-
-    
       {
         "title": "Fantasia",
         "director": "Various Directors",
@@ -3293,21 +3335,6 @@ const lists = [
         "year": 1940,
         "country": "USA",
         "rating": 6
-      },
-      {
-        "title": "Pinocchio",
-        "director": "Ben Sharpsteen & Hamilton Luske",
-        "year": 1940,
-        "country": "USA",
-        "rating": "?"
-      },
-    
-      {
-        "title": "The Philadelphia Story",
-        "director": "George Cukor",
-        "year": 1940,
-        "country": "USA",
-        "tier": 3
       },
       {
         "title": "The Shop Around the Corner",
@@ -3963,13 +3990,6 @@ const lists = [
         "tier": 3
       },
       {
-        "title": "This is Spinal Tap",
-        "director": "Rob Reiner",
-        "year": 1984,
-        "country": "USA",
-        "tier": 3
-      },
-      {
         "title": "Brazil",
         "director": "Terry Gilliam",
         "year": 1985,
@@ -4001,7 +4021,7 @@ const lists = [
         "director": "Rob Reiner",
         "year": 1986,
         "country": "USA",
-        "tier": 4
+        "rating": 6
       },
       {
         "title": "The Last Emperor",
@@ -4015,7 +4035,7 @@ const lists = [
         "director": "Rob Reiner",
         "year": 1987,
         "country": "USA",
-        "tier": 4
+        "rating": 5
       },
       {
         "title": "Akira",
@@ -4046,7 +4066,7 @@ const lists = [
         "director": "Rob Reiner",
         "year": 1989,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Wild at Heart",
@@ -4069,13 +4089,6 @@ const lists = [
         "year": 1992,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Groundhog Day",
-        "director": "Harold Ramis",
-        "year": 1993,
-        "country": "USA",
-        "tier": 2
       },
       {
         "title": "Jurassic Park",
@@ -4137,14 +4150,6 @@ const lists = [
         "director": "Paul Thomas Anderson",
         "year": 1997,
         "country": "USA"
-      },
-      {
-        "title": "Hana-bi",
-        "director": "Takeshi Kitano",
-        "year": 1997,
-        "country": "Japan",
-        "rating": "?",
-        "tier": 3
       },
       {
         "title": "L.A. Confidential",
@@ -4277,13 +4282,6 @@ const lists = [
         "year": 2008,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Mad Max: Fury Road",
-        "director": "George Miller",
-        "year": 2015,
-        "country": "Australia-USA",
-        "tier": 3
       },
     ]
   },
