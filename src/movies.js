@@ -1599,6 +1599,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Breakfast at Tiffany's",
+        "director": "Blake Edwards",
+        "year": 1961,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Innocents",
         "director": "Jack Clayton",
         "year": 1961,
@@ -1655,6 +1662,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Shock Corridor",
+        "director": "Samuel Fuller",
+        "year": 1963,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "The Silence",
         "director": "Ingmar Bergman",
         "year": 1963,
@@ -1686,6 +1700,20 @@ const lists = [
         "title": "Night of the Living Dead",
         "director": "George A. Romero",
         "year": 1968,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Easy Rider",
+        "director": "Dennis Hopper",
+        "year": 1969,
+        "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Harold and Maude",
+        "director": "Hal Ashby",
+        "year": 1971,
         "country": "USA",
         "rating": 9
       },
@@ -2409,6 +2437,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Rebel Without a Cause",
+        "director": "Nicholas Ray",
+        "year": 1955,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Rififi",
         "director": "Jules Dassin",
         "year": 1955,
@@ -2633,10 +2668,24 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Amadeus",
+        "director": "Milos Forman",
+        "year": 1984,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Once Upon a Time in America",
         "director": "Sergio Leone",
         "year": 1984,
         "country": "Italy-USA",
+        "rating": 8
+      },
+      {
+        "title": "Brazil",
+        "director": "Terry Gilliam",
+        "year": 1985,
+        "country": "UK",
         "rating": 8
       },
       {
@@ -3108,12 +3157,27 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "One Flew Over the Cuckoo's Nest",
+        "director": "Milos Forman",
+        "year": 1975,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "Picnic at Hanging Rock",
+        "director": "Peter Weir",
+        "year": 1975,
+        "country": "Australia",
+        "rating": 7
+      },
+      {
         "title": "In the Realm of the Senses",
         "director": "Nagisa Oshima",
         "year": 1976,
         "country": "Japan-France",
         "rating": 7
       },
+
       {
         "title": "Halloween",
         "director": "John Carpenter",
@@ -3132,6 +3196,13 @@ const lists = [
         "title": "The Right Stuff",
         "director": "Philip Kaufman",
         "year": 1983,
+        "country": "USA",
+        "rating": 7
+      },
+      {
+        "title": "Ghostbusters",
+        "director": "Ivan Reitman",
+        "year": 1984,
         "country": "USA",
         "rating": 7
       },
@@ -3548,15 +3619,6 @@ const lists = [
         "year": 1955,
         "country": "USA"
       },
-    
-      {
-        "title": "Rebel Without a Cause",
-        "director": "Nicholas Ray",
-        "year": 1955,
-        "country": "USA",
-        "tier": 3
-      },
-    
       {
         "title": "Forbidden Planet",
         "director": "Fred M. Wilcox",
@@ -3585,13 +3647,6 @@ const lists = [
         "year": 1960,
         "country": "France",
         "tier": 4
-      },
-      {
-        "title": "Breakfast at Tiffany's",
-        "director": "Blake Edwards",
-        "year": 1961,
-        "country": "USA",
-        "tier": 3
       },
       {
         "title": "The Hustler",
@@ -3643,14 +3698,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-      {
-        "title": "Shock Corridor",
-        "director": "Samuel Fuller",
-        "year": 1963,
-        "country": "USA",
-        "tier": 3
-      },
-    
       {
         "title": "Black God, White Devil",
         "director": "Glauber Rocha",
@@ -3707,21 +3754,11 @@ const lists = [
         "country": "USA",
         "tier": 4
       },
-    
-    
       {
         "title": "Army of Shadows",
         "director": "Jean-Pierre Melville",
         "year": 1969,
         "country": "France-Italy"
-      },
-      {
-        "title": "Easy Rider",
-        "director": "Dennis Hopper",
-        "year": 1969,
-        "country": "USA",
-        "rating": "?",
-        "tier": 2
       },
       {
         "title": "Midnight Cowboy",
@@ -3766,15 +3803,6 @@ const lists = [
         "country": "USA",
         "rating": "?"
       },
-      {
-        "title": "Harold and Maude",
-        "director": "Hal Ashby",
-        "year": 1971,
-        "country": "USA",
-        "rating": "?"
-      },
-    
-    
       {
         "title": "The French Connection",
         "director": "William Friedkin",
@@ -3856,23 +3884,6 @@ const lists = [
         "country": "USA",
         "rating": 6
       },
-      {
-        "title": "One Flew Over the Cuckoo's Nest",
-        "director": "Milos Forman",
-        "year": 1975,
-        "country": "USA",
-        "tier": 3
-      },
-    
-      {
-        "title": "Picnic at Hanging Rock",
-        "director": "Peter Weir",
-        "year": 1975,
-        "country": "Australia",
-        "rating": "?"
-      },
-    
-    
       {
         "title": "All the President's Men",
         "director": "Alan J. Pakula",
@@ -3973,27 +3984,6 @@ const lists = [
         "country": "USA",
         "rating": "?",
         "tier": 4
-      },
-      {
-        "title": "Amadeus",
-        "director": "Milos Forman",
-        "year": 1984,
-        "country": "USA",
-        "tier": 3
-      },
-      {
-        "title": "Ghostbusters",
-        "director": "Ivan Reitman",
-        "year": 1984,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
-      },
-      {
-        "title": "Brazil",
-        "director": "Terry Gilliam",
-        "year": 1985,
-        "country": "UK"
       },
       {
         "title": "The Breakfast Club",
