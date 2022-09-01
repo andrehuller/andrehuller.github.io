@@ -1155,6 +1155,13 @@ const lists = [
         "rating": 10
       },
       {
+        "title": "Naked",
+        "director": "Mike Leigh",
+        "year": 1993,
+        "country": "UK",
+        "rating": 10
+      },
+      {
         "title": "Crumb",
         "director": "Terry Zwigoff",
         "year": 1994,
@@ -1963,6 +1970,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Do the Right Thing",
+        "director": "Spike Lee",
+        "year": 1989,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Edward Scissorhands",
         "director": "Tim Burton",
         "year": 1990,
@@ -2040,6 +2054,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "Safe",
+        "director": "Todd Haynes",
+        "year": 1995,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Trainspotting",
         "director": "Danny Boyle",
         "year": 1996,
@@ -2058,6 +2079,13 @@ const lists = [
         "director": "Paul Verhoeven",
         "year": 1997,
         "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Festen",
+        "director": "Thomas Vinterberg",
+        "year": 1998,
+        "country": "Denmark",
         "rating": 9
       },
       {
@@ -2278,6 +2306,20 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Ivan the Terrible, Part 1",
+        "director": "Sergei Eisenstein",
+        "year": 1944,
+        "country": "USSR",
+        "rating": 8
+      },
+      {
+        "title": "The Miracle of Morgan's Creek",
+        "director": "Preston Sturges",
+        "year": 1944,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Detour",
         "director": "Edgar G. Ulmer",
         "year": 1945,
@@ -2294,6 +2336,13 @@ const lists = [
         "director": "Frank Capra",
         "year": 1946,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Ivan the Terrible, Part 2",
+        "director": "Sergei Eisenstein",
+        "year": 1946,
+        "country": "USSR",
         "rating": 8
       },
       {
@@ -2437,6 +2486,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Night and Fog",
+        "director": "Alain Resnais",
+        "year": 1955,
+        "country": "France",
+        "rating": 8
+      },
+      {
         "title": "Rebel Without a Cause",
         "director": "Nicholas Ray",
         "year": 1955,
@@ -2525,6 +2581,13 @@ const lists = [
         "director": "David Lean",
         "year": 1965,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Pierrot le fou",
+        "director": "Jean-Luc Godard",
+        "year": 1965,
+        "country": "France-Italy",
         "rating": 8
       },
       {
@@ -2654,6 +2717,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "An American Werewolf in London",
+        "director": "John Landis",
+        "year": 1981,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "Excalibur",
         "director": "John Boorman",
         "year": 1981,
@@ -2745,9 +2815,23 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "Raise the Red Lantern",
+        "director": "Zhang Yimou",
+        "year": 1991,
+        "country": "Hong Kong",
+        "rating": 8
+      },
+      {
         "title": "Terminator 2: Judgment Day",
         "director": "James Cameron",
         "year": 1991,
+        "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Unforgiven",
+        "director": "Clint Eastwood",
+        "year": 1992,
         "country": "USA",
         "rating": 8
       },
@@ -2961,6 +3045,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Dumbo",
+        "director": "Ben Sharpsteen",
+        "year": 1941,
+        "country": "USA",
+        "rating": 7
+      },
+      {
         "title": "How Green Was My Valley",
         "director": "John Ford",
         "year": 1941,
@@ -2979,6 +3070,14 @@ const lists = [
         "director": "Luchino Visconti",
         "year": 1943,
         "country": "Italy",
+        "rating": 7
+      },
+      {
+        "title": "Rome, Open City",
+        "director": "Roberto Rossellini",
+        "year": 1945,
+        "country": "Italy",
+        "image": "romeopencity",
         "rating": 7
       },
       {
@@ -3136,6 +3235,20 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Don't Look Now",
+        "director": "Nicolas Roeg",
+        "year": 1973,
+        "country": "UK",
+        "rating": 7
+      },
+      {
+        "title": "The Exorcist",
+        "director": "William Friedkin",
+        "year": 1973,
+        "country": "USA",
+        "rating": 7
+      },
+      {
         "title": "Chinatown",
         "director": "Roman Polanski",
         "year": 1974,
@@ -3177,7 +3290,13 @@ const lists = [
         "country": "Japan-France",
         "rating": 7
       },
-
+      {
+        "title": "Rocky",
+        "director": "John G. Avildsen",
+        "year": 1976,
+        "country": "USA",
+        "rating": 7
+      },
       {
         "title": "Halloween",
         "director": "John Carpenter",
@@ -3214,6 +3333,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Come and See",
+        "director": "Elem Klimov",
+        "year": 1985,
+        "country": "USSR",
+        "rating": 7
+      },
+      {
         "title": "A Better Tomorrow",
         "director": "John Woo",
         "year": 1986,
@@ -3239,6 +3365,13 @@ const lists = [
         "director": "Wong Kar-wai",
         "year": 1990,
         "country": "Hong Kong",
+        "rating": 7
+      },
+      {
+        "title": "Léon",
+        "director": "Luc Besson",
+        "year": 1994,
+        "country": "France",
         "rating": 7
       },
       {
@@ -3295,6 +3428,13 @@ const lists = [
         "director": "Bong Joon-ho",
         "year": 2003,
         "country": "South Korea",
+        "rating": 7
+      },
+      {
+        "title": "Million Dollar Baby",
+        "director": "Clint Eastwood",
+        "year": 2004,
+        "country": "USA",
         "rating": 7
       },
       {
@@ -3412,24 +3552,14 @@ const lists = [
         "director": "Ernst Lubitsch",
         "year": 1940,
         "country": "USA",
-        "tier": 4
+        "rating": 5
       },
-    
-      {
-        "title": "Dumbo",
-        "director": "Ben Sharpsteen",
-        "year": 1941,
-        "country": "USA",
-        "rating": "?"
-      },
-    
       {
         "title": "Sullivan's Travels",
         "director": "Preston Sturges",
         "year": 1941,
         "country": "USA",
-        "rating": 5,
-        "tier": 4
+        "rating": 5
       },
     
     
@@ -3456,23 +3586,6 @@ const lists = [
         "country": "USA",
         "rating": 6
       },
-    
-      {
-        "title": "Ivan the Terrible, Part 1",
-        "director": "Sergei Eisenstein",
-        "year": 1944,
-        "country": "USSR",
-        "rating": 8,
-        "tier": 3
-      },
-    
-      {
-        "title": "The Miracle of Morgan's Creek",
-        "director": "Preston Sturges",
-        "year": 1944,
-        "country": "USA",
-        "tier": 3
-      },
       {
         "title": "Meet Me in St. Louis",
         "director": "Vincente Minnelli",
@@ -3480,29 +3593,12 @@ const lists = [
         "country": "USA",
         "rating": 3
       },
-    
-      {
-        "title": "Rome, Open City",
-        "director": "Roberto Rossellini",
-        "year": 1945,
-        "country": "Italy",
-        "image": "romeopencity",
-        "rating": "?"
-      },
       {
         "title": "Gilda",
         "director": "Charles Vidor",
         "year": 1946,
         "country": "USA",
         "rating": "?"
-      },
-      {
-        "title": "Ivan the Terrible, Part 2",
-        "director": "Sergei Eisenstein",
-        "year": 1946,
-        "country": "USSR",
-        "rating": 8,
-        "tier": 3
       },
       {
         "title": "My Darling Clementine",
@@ -3516,7 +3612,7 @@ const lists = [
         "director": "Carol Reed",
         "year": 1947,
         "country": "UK",
-        "rating": "?"
+        "rating": 4
       },
       {
         "title": "La Terra trema",
@@ -3560,7 +3656,7 @@ const lists = [
         "director": "Fred Zinnemann",
         "year": 1952,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "Roman Holiday",
@@ -3581,8 +3677,7 @@ const lists = [
         "title": "A Star is Born",
         "director": "George Cukor",
         "year": 1954,
-        "country": "USA",
-        "tier": 3
+        "country": "USA"
       },
     
       {
@@ -3590,7 +3685,7 @@ const lists = [
         "director": "Roberto Rossellini",
         "year": 1954,
         "country": "Italy",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "East of Eden",
@@ -3604,27 +3699,20 @@ const lists = [
         "director": "Robert Aldrich",
         "year": 1955,
         "country": "USA",
-        "rating": "?"
-      },
-      {
-        "title": "Night and Fog",
-        "director": "Alain Resnais",
-        "year": 1955,
-        "country": "France",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "The Night of the Hunter",
         "director": "Charles Laughton",
         "year": 1955,
-        "country": "USA"
+        "country": "USA",
+        "rating": 6
       },
       {
         "title": "Forbidden Planet",
         "director": "Fred M. Wilcox",
         "year": 1956,
-        "country": "USA",
-        "tier": 4
+        "country": "USA"
       },
       {
         "title": "The Bridge on the River Kwai",
@@ -3645,15 +3733,14 @@ const lists = [
         "title": "Shoot the Piano Player",
         "director": "François Truffaut",
         "year": 1960,
-        "country": "France",
-        "tier": 4
+        "country": "France"
       },
       {
         "title": "The Hustler",
         "director": "Robert Rossen",
         "year": 1961,
         "country": "USA",
-        "tier": 4
+        "rating": 6
       },
       {
         "title": "Jules et Jim",
@@ -3667,7 +3754,7 @@ const lists = [
         "director": "Roman Polanski",
         "year": 1962,
         "country": "Poland",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "The Manchurian Candidate",
@@ -3681,15 +3768,14 @@ const lists = [
         "director": "Robert Mulligan",
         "year": 1962,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
     
       {
         "title": "The Great Escape",
         "director": "John Sturges",
         "year": 1963,
-        "country": "USA",
-        "tier": 4
+        "country": "USA"
       },
       {
         "title": "The Nutty Professor",
@@ -3710,7 +3796,7 @@ const lists = [
         "director": "Robert Stevenson",
         "year": 1964,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Red Desert",
@@ -3718,13 +3804,6 @@ const lists = [
         "year": 1964,
         "country": "Italy-France",
         "rating": "?"
-      },
-      {
-        "title": "Pierrot le fou",
-        "director": "Jean-Luc Godard",
-        "year": 1965,
-        "country": "France-Italy",
-        "tier": 3
       },
       {
         "title": "The Battle of Algiers",
@@ -3752,7 +3831,7 @@ const lists = [
         "director": "Mel Brooks",
         "year": 1968,
         "country": "USA",
-        "tier": 4
+        "rating": 5
       },
       {
         "title": "Army of Shadows",
@@ -3764,8 +3843,7 @@ const lists = [
         "title": "Midnight Cowboy",
         "director": "John Schlesinger",
         "year": 1969,
-        "country": "USA",
-        "tier": 4
+        "country": "USA"
       },
     
       {
@@ -3808,7 +3886,7 @@ const lists = [
         "director": "William Friedkin",
         "year": 1971,
         "country": "USA",
-        "rating": "?"
+        "rating": 3
       },
     
       {
@@ -3833,26 +3911,11 @@ const lists = [
         "rating": 6
       },
       {
-        "title": "Don't Look Now",
-        "director": "Nicolas Roeg",
-        "year": 1973,
-        "country": "UK",
-        "rating": "?",
-        "tier": 3
-      },
-      {
         "title": "Enter the Dragon",
         "director": "Robert Clouse",
         "year": 1973,
         "country": "USA-Hong Kong",
-        "rating": "?"
-      },
-      {
-        "title": "The Exorcist",
-        "director": "William Friedkin",
-        "year": 1973,
-        "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "Bring Me the Head of Alfredo Garcia",
@@ -3873,10 +3936,8 @@ const lists = [
         "director": "Mel Brooks",
         "year": 1974,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
-    
-    
       {
         "title": "Dog Day Afternoon",
         "director": "Sidney Lumet",
@@ -3903,15 +3964,7 @@ const lists = [
         "director": "Clint Eastwood",
         "year": 1976,
         "country": "USA",
-        "rating": "?"
-      },
-      {
-        "title": "Rocky",
-        "director": "John G. Avildsen",
-        "year": 1976,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
+        "rating": 4
       },
       {
         "title": "Saturday Night Fever",
@@ -3924,8 +3977,7 @@ const lists = [
         "title": "The Deer Hunter",
         "director": "Michael Cimino",
         "year": 1978,
-        "country": "USA",
-        "tier": 4
+        "country": "USA"
       },
       {
         "title": "Being There",
@@ -3949,19 +4001,11 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "An American Werewolf in London",
-        "director": "John Landis",
-        "year": 1981,
-        "country": "USA",
-        "tier": 3
-      },
-    
-      {
         "title": "Das Boot",
         "director": "Wolfgang Petersen",
         "year": 1981,
         "country": "West Germany",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Mad Max 2",
@@ -3982,8 +4026,7 @@ const lists = [
         "director": "Sydney Pollack",
         "year": 1982,
         "country": "USA",
-        "rating": "?",
-        "tier": 4
+        "rating": "?"
       },
       {
         "title": "The Breakfast Club",
@@ -3993,18 +4036,10 @@ const lists = [
         "rating": "?"
       },
       {
-        "title": "Come and See",
-        "director": "Elem Klimov",
-        "year": 1985,
-        "country": "USSR",
-        "rating": "?"
-      },
-      {
         "title": "Ferris Bueller's Day Off",
         "director": "John Hughes",
         "year": 1986,
-        "country": "USA",
-        "tier": 4
+        "country": "USA"
       },
       {
         "title": "Stand by Me",
@@ -4032,24 +4067,14 @@ const lists = [
         "director": "Katsuhiro Otomo",
         "year": 1988,
         "country": "Japan",
-        "rating": "?",
-        "tier": 3
+        "rating": "?"
       },
       {
         "title": "Grave of the Fireflies",
         "director": "Isao Takahata",
         "year": 1988,
         "country": "Japan",
-        "rating": "?",
-        "tier": 3
-      },
-      {
-        "title": "Do the Right Thing",
-        "director": "Spike Lee",
-        "year": 1989,
-        "country": "USA",
-        "rating": "?",
-        "tier": 3
+        "rating": "?"
       },
       {
         "title": "When Harry Met Sally...",
@@ -4066,32 +4091,11 @@ const lists = [
         "rating": 2
       },
       {
-        "title": "Raise the Red Lantern",
-        "director": "Zhang Yimou",
-        "year": 1991,
-        "country": "Hong Kong",
-        "rating": 8,
-        "tier": 3
-      },
-      {
-        "title": "Unforgiven",
-        "director": "Clint Eastwood",
-        "year": 1992,
-        "country": "USA",
-        "rating": "?"
-      },
-      {
         "title": "Jurassic Park",
         "director": "Steven Spielberg",
         "year": 1993,
         "country": "USA",
         "rating": 6
-      },
-      {
-        "title": "Naked",
-        "director": "Mike Leigh",
-        "year": 1993,
-        "country": "UK"
       },
       {
         "title": "The Nightmare Before Christmas",
@@ -4100,32 +4104,17 @@ const lists = [
         "country": "USA"
       },
       {
-        "title": "Léon",
-        "director": "Luc Besson",
-        "year": 1994,
-        "country": "France",
-        "rating": "?",
-        "tier": 3
-      },
-      {
         "title": "The Bridges of Madison County",
         "director": "Clint Eastwood",
         "year": 1995,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "La Haine",
         "director": "Mathieu Kassovitz",
         "year": 1995,
         "country": "France",
-        "rating": "?"
-      },
-      {
-        "title": "Safe",
-        "director": "Todd Haynes",
-        "year": 1995,
-        "country": "USA",
         "rating": "?"
       },
       {
@@ -4161,14 +4150,6 @@ const lists = [
         "year": 1998,
         "country": "Brazil-France-Spain-Japan",
         "rating": "?"
-      },
-      {
-        "title": "Festen",
-        "director": "Thomas Vinterberg",
-        "year": 1998,
-        "country": "Denmark",
-        "rating": "?",
-        "tier": 3
       },
       {
         "title": "Saving Private Ryan",
@@ -4209,8 +4190,7 @@ const lists = [
         "title": "Crouching Tiger, Hidden Dragon",
         "director": "Ang Lee",
         "year": 2000,
-        "country": "Taiwan-Hong Kong-USA-China",
-        "tier": 4
+        "country": "Taiwan-Hong Kong-USA-China"
       },
       {
         "title": "Moulin Rouge!",
@@ -4230,13 +4210,6 @@ const lists = [
         "director": "Sofia Coppola",
         "year": 2003,
         "country": "USA-Japan"
-      },
-      {
-        "title": "Million Dollar Baby",
-        "director": "Clint Eastwood",
-        "year": 2004,
-        "country": "USA",
-        "rating": "?"
       },
       {
         "title": "The Lives of Others",
