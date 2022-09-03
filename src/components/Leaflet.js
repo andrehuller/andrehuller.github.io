@@ -140,11 +140,6 @@ const Leaflet = {
           .bindPopup(country[0])
           .addTo(this.map)
       }
-
-      L.geoJson(customgeojson, {
-        // clickable: false,
-        // style: myCustomStyle
-      }).addTo(this.map)
     })
   },
   methods: {

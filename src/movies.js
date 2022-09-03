@@ -1120,6 +1120,13 @@ const lists = [
         "rating": 10
       },
       {
+        "title": "The Thing",
+        "director": "John Carpenter",
+        "year": 1982,
+        "country": "USA",
+        "rating": 10
+      },
+      {
         "title": "Ran",
         "director": "Akira Kurosawa",
         "year": 1985,
@@ -2033,6 +2040,13 @@ const lists = [
         "rating": 9
       },
       {
+        "title": "The Nightmare Before Christmas",
+        "director": "Henry Selick",
+        "year": 1993,
+        "country": "USA",
+        "rating": 9
+      },
+      {
         "title": "Three Colours: Blue",
         "director": "Krzysztof Kieslowski",
         "year": 1993,
@@ -2626,6 +2640,13 @@ const lists = [
         "rating": 8
       },
       {
+        "title": "The Wild Bunch",
+        "director": "Sam Peckinpah",
+        "year": 1969,
+        "country": "USA",
+        "rating": 8
+      },
+      {
         "title": "The Private Life of Sherlock Holmes",
         "director": "Billy Wilder",
         "year": 1970,
@@ -2777,6 +2798,13 @@ const lists = [
         "director": "Joel Coen & Ethan Coen",
         "year": 1987,
         "country": "USA",
+        "rating": 8
+      },
+      {
+        "title": "Akira",
+        "director": "Katsuhiro Otomo",
+        "year": 1988,
+        "country": "Japan",
         "rating": 8
       },
       {
@@ -3200,10 +3228,24 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Jules et Jim",
+        "director": "François Truffaut",
+        "year": 1962,
+        "country": "France",
+        "rating": 7
+      },
+      {
         "title": "The Leopard",
         "director": "Luchino Visconti",
         "year": 1963,
         "country": "Italy",
+        "rating": 7
+      },
+      {
+        "title": "Red Desert",
+        "director": "Michelangelo Antonioni",
+        "year": 1964,
+        "country": "Italy-France",
         "rating": 7
       },
       {
@@ -3305,6 +3347,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Being There",
+        "director": "Hal Ashby",
+        "year": 1979,
+        "country": "USA",
+        "rating": 7
+      },
+      {
         "title": "The Elephant Man",
         "director": "David Lynch",
         "year": 1980,
@@ -3347,6 +3396,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "The Breakfast Club",
+        "director": "John Hughes",
+        "year": 1985,
+        "country": "USA",
+        "rating": 7
+      },
+      {
         "title": "Down by Law",
         "director": "Jim Jarmusch",
         "year": 1986,
@@ -3358,6 +3414,13 @@ const lists = [
         "director": "Wim Wenders",
         "year": 1987,
         "country": "West Germany-France",
+        "rating": 7
+      },
+      {
+        "title": "Grave of the Fireflies",
+        "director": "Isao Takahata",
+        "year": 1988,
+        "country": "Japan",
         "rating": 7
       },
       {
@@ -3400,6 +3463,13 @@ const lists = [
         "director": "Pedro Almodóvar",
         "year": 1999,
         "country": "Spain-France",
+        "rating": 7
+      },
+      {
+        "title": "American Beauty",
+        "director": "Sam Mendes",
+        "year": 1999,
+        "country": "USA",
         "rating": 7
       },
       {
@@ -3712,7 +3782,8 @@ const lists = [
         "title": "Forbidden Planet",
         "director": "Fred M. Wilcox",
         "year": 1956,
-        "country": "USA"
+        "country": "USA",
+        "rating": 5
       },
       {
         "title": "The Bridge on the River Kwai",
@@ -3733,7 +3804,8 @@ const lists = [
         "title": "Shoot the Piano Player",
         "director": "François Truffaut",
         "year": 1960,
-        "country": "France"
+        "country": "France",
+        "rating": 6
       },
       {
         "title": "The Hustler",
@@ -3741,13 +3813,6 @@ const lists = [
         "year": 1961,
         "country": "USA",
         "rating": 6
-      },
-      {
-        "title": "Jules et Jim",
-        "director": "François Truffaut",
-        "year": 1962,
-        "country": "France",
-        "rating": "?"
       },
       {
         "title": "Knife in the Water",
@@ -3775,14 +3840,15 @@ const lists = [
         "title": "The Great Escape",
         "director": "John Sturges",
         "year": 1963,
-        "country": "USA"
+        "country": "USA",
+        "rating": 6
       },
       {
         "title": "The Nutty Professor",
         "director": "Jerry Lewis",
         "year": 1963,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Black God, White Devil",
@@ -3799,13 +3865,6 @@ const lists = [
         "rating": 6
       },
       {
-        "title": "Red Desert",
-        "director": "Michelangelo Antonioni",
-        "year": 1964,
-        "country": "Italy-France",
-        "rating": "?"
-      },
-      {
         "title": "The Battle of Algiers",
         "director": "Gillo Pontecorvo",
         "year": 1966,
@@ -3817,7 +3876,7 @@ const lists = [
         "director": "Stuart Rosenberg",
         "year": 1967,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "Point Blank",
@@ -3843,7 +3902,8 @@ const lists = [
         "title": "Midnight Cowboy",
         "director": "John Schlesinger",
         "year": 1969,
-        "country": "USA"
+        "country": "USA",
+        "rating": 6
       },
     
       {
@@ -3851,13 +3911,6 @@ const lists = [
         "director": "Federico Fellini",
         "year": 1969,
         "country": "Italy",
-        "rating": 6
-      },
-      {
-        "title": "The Wild Bunch",
-        "director": "Sam Peckinpah",
-        "year": 1969,
-        "country": "USA",
         "rating": 6
       },
       {
@@ -3894,7 +3947,7 @@ const lists = [
         "director": "Bob Fosse",
         "year": 1972,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Fellini's Roma",
@@ -3971,34 +4024,28 @@ const lists = [
         "director": "John Badham",
         "year": 1977,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "The Deer Hunter",
         "director": "Michael Cimino",
         "year": 1978,
-        "country": "USA"
-      },
-      {
-        "title": "Being There",
-        "director": "Hal Ashby",
-        "year": 1979,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "Airplane!",
         "director": "Jim Abrahams, David Zucker & Jerry Zucker",
         "year": 1980,
         "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "The Blues Brothers",
         "director": "John Landis",
         "year": 1980,
         "country": "USA",
-        "rating": "?"
+        "rating": 5
       },
       {
         "title": "Das Boot",
@@ -4012,13 +4059,6 @@ const lists = [
         "director": "George Miller",
         "year": 1981,
         "country": "Australia",
-        "rating": "?"
-      },
-      {
-        "title": "The Thing",
-        "director": "John Carpenter",
-        "year": 1982,
-        "country": "USA",
         "rating": 6
       },
       {
@@ -4026,20 +4066,14 @@ const lists = [
         "director": "Sydney Pollack",
         "year": 1982,
         "country": "USA",
-        "rating": "?"
-      },
-      {
-        "title": "The Breakfast Club",
-        "director": "John Hughes",
-        "year": 1985,
-        "country": "USA",
-        "rating": "?"
+        "rating": 6
       },
       {
         "title": "Ferris Bueller's Day Off",
         "director": "John Hughes",
         "year": 1986,
-        "country": "USA"
+        "country": "USA",
+        "rating": 6
       },
       {
         "title": "Stand by Me",
@@ -4063,20 +4097,6 @@ const lists = [
         "rating": 5
       },
       {
-        "title": "Akira",
-        "director": "Katsuhiro Otomo",
-        "year": 1988,
-        "country": "Japan",
-        "rating": "?"
-      },
-      {
-        "title": "Grave of the Fireflies",
-        "director": "Isao Takahata",
-        "year": 1988,
-        "country": "Japan",
-        "rating": "?"
-      },
-      {
         "title": "When Harry Met Sally...",
         "director": "Rob Reiner",
         "year": 1989,
@@ -4096,12 +4116,6 @@ const lists = [
         "year": 1993,
         "country": "USA",
         "rating": 6
-      },
-      {
-        "title": "The Nightmare Before Christmas",
-        "director": "Henry Selick",
-        "year": 1993,
-        "country": "USA"
       },
       {
         "title": "The Bridges of Madison County",
@@ -4158,14 +4172,6 @@ const lists = [
         "country": "USA",
         "rating": 6
       },
-      {
-        "title": "American Beauty",
-        "director": "Sam Mendes",
-        "year": 1999,
-        "country": "USA",
-        "rating": "?"
-      },
-    
       {
         "title": "Fight Club",
         "director": "David Fincher",
@@ -4264,10 +4270,22 @@ const lists = [
         "country": "Sweden"
       },
       {
+        "title": "The Adventures of Prince Achmed",
+        "director": "Lotte Reiniger",
+        "year": 1926,
+        "country": "Germany"
+      },
+      {
         "title": "Humanity and Paper Balloons",
         "director": "Sadao Yamanaka",
         "year": 1937,
         "country": "Japan"
+      },
+      {
+        "title": "Pépé le Moko",
+        "director": "Julien Duvivier",
+        "year": 1937,
+        "country": "France"
       },
       {
         "title": "The Reckless Moment",
@@ -4282,16 +4300,52 @@ const lists = [
         "country": "USA"
       },
       {
+        "title": "Anatahan",
+        "director": "Josef von Sternberg",
+        "year": 1953,
+        "country": "Japan"
+      },
+      {
+        "title": "Black Orpheus",
+        "director": "Marcel Camus",
+        "year": 1959,
+        "country": "Brazil-France"
+      },
+      {
         "title": "Subarnarekha",
         "director": "Ritwik Ghatak",
         "year": 1965,
         "country": "India"
       },
       {
+        "title": "Cul-de-sac",
+        "director": "Roman Polanski",
+        "year": 1966,
+        "country": "UK"
+      },
+      {
         "title": "Second Breath",
         "director": "Jean-Pierre Melville",
         "year": 1966,
         "country": "France"
+      },
+      {
+        "title": "Get Carter",
+        "director": "Mike Hodges",
+        "year": 1971,
+        "country": "UK"
+      },
+      {
+        "title": "The Go-Between",
+        "director": "Joseph Losey",
+        "year": 1971,
+        "country": "UK"
+      },
+      {
+        "title": "Ludwig",
+        "director": "Luchino Visconti",
+        "year": 1973,
+        "country": "Italy-France-West Germany"
       },
       {
         "title": "Female Trouble",
@@ -4328,6 +4382,18 @@ const lists = [
         "director": "Atom Egoyan",
         "year": 1994,
         "country": "Canada"
+      },
+      {
+        "title": "To Live",
+        "director": "Zhang Yimou",
+        "year": 1994,
+        "country": "China-Hong Kong"
+      },
+      {
+        "title": "L'Humanité",
+        "director": "Bruno Dumont",
+        "year": 1999,
+        "country": "France"
       }
     ]
   }
