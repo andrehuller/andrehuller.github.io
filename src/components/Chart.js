@@ -4,50 +4,60 @@ const Chartjs = {
       <v-row>
         <v-col cols="12" lg="4">
           <v-card outlined>
-            <v-list>
-              <v-list-item>
-                <v-list-item-avatar color="#f87979">
-                  <v-icon dark>mdi-filmstrip</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ films }} films</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <v-card-text>
+                <div>FILMS</div>
+                <p class="text-h4 text--primary mb-0">
+                  {{ films }}
+                </p>
+                <v-spacer></v-spacer>
+              </v-card-text>
+              
+              <v-avatar class="ma-5" size="48" color="#f87979">
+                <v-icon dark>mdi-filmstrip</v-icon>
+              </v-avatar>
+            </div>
+          </v-card>
+         </v-col>
+        <v-col cols="12" lg="4">
+          <v-card outlined>
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <v-card-text>
+                <div>DIRECTORS</div>
+                <p class="text-h4 text--primary mb-0">
+                  {{ directors.length }}
+                </p>
+                <v-spacer></v-spacer>
+              </v-card-text>
+              
+              <v-avatar class="ma-5" size="48" color="#f87979">
+                <v-icon dark>mdi-video-vintage</v-icon>
+              </v-avatar>
+            </div>
           </v-card>
         </v-col>
         <v-col cols="12" lg="4">
           <v-card outlined>
-            <v-list>
-              <v-list-item>
-                <v-list-item-avatar color="#f87979">
-                  <v-icon dark>mdi-video-vintage</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ directors.length }} directors</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <v-card-text>
+                <div>COUNTRIES</div>
+                <p class="text-h4 text--primary mb-0">
+                  {{ countries }}
+                </p>
+                <v-spacer></v-spacer>
+              </v-card-text>
+              
+              <v-avatar class="ma-5" size="48" color="#f87979">
+                <v-icon dark>mdi-earth</v-icon>
+              </v-avatar>
+            </div>
           </v-card>
         </v-col>
-        <v-col cols="12" lg="4">
-          <v-card outlined>
-            <v-list>
-              <v-list-item>
-                <v-list-item-avatar color="#f87979">
-                  <v-icon dark>mdi-earth</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ countries }} countries</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
-          </v-card>
-        </v-col>
+        
         <v-col cols="12" lg="12">
           <v-card outlined>
             <div>
-              <canvas id="myChart" height="90px"></canvas>
+              <canvas id="chartDirector" height="90px"></canvas>
             </div>
           </v-card>
         </v-col>
@@ -156,8 +166,8 @@ const Chartjs = {
         },
       };
   
-      const myChart = new Chart(
-        document.getElementById('myChart'),
+      const chartDirector = new Chart(
+        document.getElementById('chartDirector'),
         config
       );
       
