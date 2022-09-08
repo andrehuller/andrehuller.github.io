@@ -194,9 +194,6 @@ const Chartjs = {
                 backgroundColor: '#f87979',
                 // borderColor: 'rgb(255, 99, 132)',
                 borderColor: '#f87979',
-                // fill: false,
-                // stepped: true
-                fill: false,
                 cubicInterpolationMode: 'monotone',
                 tension: 0.4
               }

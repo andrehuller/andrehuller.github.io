@@ -4276,6 +4276,18 @@ const lists = [
         "country": "Germany"
       },
       {
+        "title": "Seventh Heaven",
+        "director": "Frank Borzage",
+        "year": 1927,
+        "country": "USA"
+      },
+      {
+        "title": "La Nuit du carrefour",
+        "director": "Jean Renoir",
+        "year": 1932,
+        "country": "France"
+      },
+      {
         "title": "Humanity and Paper Balloons",
         "director": "Sadao Yamanaka",
         "year": 1937,
@@ -4286,6 +4298,18 @@ const lists = [
         "director": "Julien Duvivier",
         "year": 1937,
         "country": "France"
+      },
+      {
+        "title": "Le Jour se lève",
+        "director": "Marcel Carné",
+        "year": 1939,
+        "country": "France"
+      },
+      {
+        "title": "They Were Expendable",
+        "director": "John Ford",
+        "year": 1945,
+        "country": "USA"
       },
       {
         "title": "The Reckless Moment",
@@ -4306,10 +4330,88 @@ const lists = [
         "country": "Japan"
       },
       {
+        "title": "The Sun Shines Bright",
+        "director": "John Ford",
+        "year": 1953,
+        "country": "USA"
+      },
+      {
+        "title": "Chikamatsu monogatari",
+        "director": "Kenji Mizoguchi",
+        "year": 1954,
+        "country": "Japan"
+      },
+      {
+        "title": "The Incredible Shrinking Man",
+        "director": "Jack Arnold",
+        "year": 1957,
+        "country": "USA"
+      },
+      {
+        "title": "Dracula",
+        "director": "Terence Fisher",
+        "year": 1958,
+        "country": "UK"
+      },
+      {
+        "title": "Floating Weeds",
+        "director": "Yasujiro Ozu",
+        "year": 1959,
+        "country": "Japan"
+      },
+      {
         "title": "Black Orpheus",
         "director": "Marcel Camus",
         "year": 1959,
         "country": "Brazil-France"
+      },
+      {
+        "title": "The End of Summer",
+        "director": "Yasujiro Ozu",
+        "year": 1961,
+        "country": "Japan"
+      },
+      {
+        "title": "Carnival of Souls",
+        "director": "Herk Harvey",
+        "year": 1962,
+        "country": "USA"
+      },
+      {
+        "title": "The Loneliness of the Long Distance Runner",
+        "director": "Tony Richardson",
+        "year": 1962,
+        "country": "UK"
+      },
+      {
+        "title": "Ride the High Country",
+        "director": "Sam Peckinpah",
+        "year": 1962,
+        "country": "USA"
+      },
+      {
+        "title": "America, America",
+        "director": "Elia Kazan",
+        "year": 1963,
+        "country": "USA"
+      },
+      {
+        "title": "Dog Star Man",
+        "director": "Stan Brakhage",
+        "year": 1964,
+        "country": "USA"
+      },
+      {
+        "title": "Juliet of the Spirits",
+        "director": "Federico Fellini",
+        "year": 1965,
+        "country": "Italy"
+      },
+      {
+        "title": "Red Beard",
+        "director": "Akira Kurosawa",
+        "year": 1965,
+        "country": "Japan"
       },
       {
         "title": "Subarnarekha",
@@ -4330,6 +4432,30 @@ const lists = [
         "country": "France"
       },
       {
+        "title": "L'Amour fou",
+        "director": "Jacques Rivette",
+        "year": 1968,
+        "country": "France"
+      },
+      {
+        "title": "L'Enfance nue",
+        "director": "Maurice Pialat",
+        "year": 1968,
+        "country": "France"
+      },
+      {
+        "title": "The Hart of London",
+        "director": "Jack Chambers",
+        "year": 1970,
+        "country": "Canada"
+      },
+      {
+        "title": "Le Boucher",
+        "director": "Claude Chabrol",
+        "year": 1970,
+        "country": "France-Italy"
+      },
+      {
         "title": "Get Carter",
         "director": "Mike Hodges",
         "year": 1971,
@@ -4348,9 +4474,27 @@ const lists = [
         "country": "Italy-France-West Germany"
       },
       {
+        "title": "O Lucky Man!",
+        "director": "Lindsay Anderson",
+        "year": 1973,
+        "country": "UK"
+      },
+      {
+        "title": "Arabian Nights",
+        "director": "Pier Paolo Pasolini",
+        "year": 1974,
+        "country": "Italy-France"
+      },
+      {
         "title": "Female Trouble",
         "director": "John Waters",
         "year": 1974,
+        "country": "USA"
+      },
+      {
+        "title": "3 Women",
+        "director": "Robert Altman",
+        "year": 1977,
         "country": "USA"
       },
       {
@@ -4372,10 +4516,28 @@ const lists = [
         "country": "Turkey-Switzerland-France"
       },
       {
+        "title": "The Ballad of Narayama",
+        "director": "Shohei Imamura",
+        "year": 1983,
+        "country": "Japan"
+      },
+      {
+        "title": "Broadcast News",
+        "director": "James L. Brooks",
+        "year": 1987,
+        "country": "USA"
+      },
+      {
         "title": "A Tale of the Wind",
         "director": "Joris Ivens",
         "year": 1988,
         "country": "France-UK-West Germany-Netherlands"
+      },
+      {
+        "title": "Hôtel Terminus",
+        "director": "Marcel Ophüls",
+        "year": 1988,
+        "country": "USA"
       },
       {
         "title": "Exotica",
@@ -4390,10 +4552,28 @@ const lists = [
         "country": "China-Hong Kong"
       },
       {
+        "title": "Babe",
+        "director": "Chris Noonan",
+        "year": 1995,
+        "country": "Australia"
+      },
+      {
         "title": "L'Humanité",
         "director": "Bruno Dumont",
         "year": 1999,
         "country": "France"
+      },
+      {
+        "title": "Topsy-Turvy",
+        "director": "Mike Leigh",
+        "year": 1999,
+        "country": "UK-USA"
+      },
+      {
+        "title": "The Return",
+        "director": "Andrey Zvyagintsev",
+        "year": 2003,
+        "country": "Russia"
       }
     ]
   }
