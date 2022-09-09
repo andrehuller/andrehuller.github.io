@@ -181,12 +181,16 @@ const Chartjs = {
           ]
         },
         options: {
-          scales: {
-            y: {
-              beginAtZero: true
+          plugins: {
+            legend: {
+              display: false,
+            },
+            title: {
+              display: true,
+              text: "Director"
             }
           }
-        },
+        }
       };
   
       const chartDirector = new Chart(
@@ -223,12 +227,16 @@ const Chartjs = {
             ]
           },
           options: {
-            scales: {
-              y: {
-                beginAtZero: true
+            plugins: {
+              legend: {
+                display: false,
+              },
+              title: {
+                display: true,
+                text: "Year"
               }
             }
-          },
+          }
         }
       );
       
@@ -265,6 +273,15 @@ const Chartjs = {
             ]
           },
           options: {
+            plugins: {
+              legend: {
+                display: false,
+              },
+              title: {
+                display: true,
+                text: "Country"
+              }
+            },
             scales: {
               y: {
                 // beginAtZero: true,
@@ -277,14 +294,23 @@ const Chartjs = {
       );
       
       // Genres
-      console.log(genres)
+      keys = Object.keys(genres)
+      values = []
+      for (var i = 0; i < keys.length; i++) {
+        values.push({
+          "genre": keys[i],
+          "amount": genres[keys[i]]
+        })
+      }
+      values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
+      
       var labels4 = []
       var data4 = []
-      for (var i = 0; i < this.genres.length; i++) {
+      for (var i = 0; i < values.length; i++) {
         var genre = this.genres[i]
-        if (genres[genre] > 1) {
-          labels4.push(genre)
-          data4.push(genres[genre])
+        if (values[i].amount > 3) {
+          labels4.push(values[i].genre)
+          data4.push(values[i].amount)
         }
       }
 
@@ -297,6 +323,7 @@ const Chartjs = {
               {
                 label: "Genre",
                 data: data4,
+                backgroundColor: '#f87979',
                 /*
                 backgroundColor: [
                   'rgb(255, 99, 132, 0.5)',
@@ -317,6 +344,13 @@ const Chartjs = {
               title: {
                 display: true,
                 text: "Genre"
+              }
+            },
+            scales: {
+              y: {
+                // beginAtZero: true,
+                display: true,
+                type: 'logarithmic'
               }
             }
           }

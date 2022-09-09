@@ -38,7 +38,7 @@ const Movies = {
                       {{ item.title }}
                     </v-card-title>
                     <v-card-subtitle>
-                      {{ item.director }} / {{ item.year }} / {{ item.country }} / {{ item.rating }}
+                      {{ item.director }} / {{ item.year }} / {{ item.country }} / {{ item.genre }} / {{ item.rating }}
                     </v-card-subtitle>
 
                     <v-spacer></v-spacer>
