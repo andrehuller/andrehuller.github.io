@@ -166,7 +166,8 @@ const lists = [
         "title": "Touchez pas au Grisbi",
         "director": "Jacques Becker",
         "year": 1954,
-        "country": "France"
+        "country": "France",
+        "genre": "Crime, Caper"
       },
       {
         "title": "Ordet",
@@ -394,7 +395,8 @@ const lists = [
         "title": "Zabriskie Point",
         "director": "Michelangelo Antonioni",
         "year": 1970,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Drama, Road Movie"
       },
       {
         "title": "The Last Picture Show",
@@ -1082,6 +1084,7 @@ const lists = [
         "director": "Dario Argento",
         "year": 1975,
         "country": "Italy",
+        "genre": "Thriller, Giallo",
         "rating": 10
       },
       {
@@ -1103,6 +1106,7 @@ const lists = [
         "director": "Warren Beatty",
         "year": 1981,
         "country": "USA",
+        "genre": "Epic, Historical Film",
         "rating": 10
       },
       {
@@ -1250,6 +1254,7 @@ const lists = [
         "director": "Kim Ki-duk",
         "year": 2003,
         "country": "South Korea-Germany",
+        "genre": "Psychological Drama, Religious Drama",
         "rating": 10
       },
       {
@@ -1445,6 +1450,7 @@ const lists = [
         "director": "Stanley Donen & Gene Kelly",
         "year": 1949,
         "country": "USA",
+        "genre": "Musical, Comedy",
         "rating": 9
       },
       {
@@ -1519,6 +1525,7 @@ const lists = [
         "director": "Ingmar Bergman",
         "year": 1953,
         "country": "Sweden",
+        "genre": "Psychological Drama, Romantic Drama",
         "rating": 9
       },
       {
@@ -1547,6 +1554,7 @@ const lists = [
         "director": "Cecil B. DeMille",
         "year": 1956,
         "country": "USA",
+        "genre": "Religious Epic, Hagiography",
         "rating": 9
       },
       {
@@ -2044,6 +2052,7 @@ const lists = [
         "director": "Henry Selick",
         "year": 1993,
         "country": "USA",
+        "genre": "Fantasy, Animated Musical",
         "rating": 9
       },
       {
@@ -2065,6 +2074,7 @@ const lists = [
         "director": "Richard Linklater",
         "year": 1995,
         "country": "USA",
+        "genre": "Romance, Comedy Drama",
         "rating": 9
       },
       {
@@ -2276,7 +2286,8 @@ const lists = [
         "title": "Holiday",
         "director": "George Cukor",
         "year": 1938,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Comedy, Romance"
       },
       {
         "title": "Mr. Smith Goes to Washington",
@@ -2343,7 +2354,8 @@ const lists = [
         "title": "Mildred Pierce",
         "director": "Michael Curtiz",
         "year": 1945,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Melodrama, Film Noir"
       },
       {
         "title": "It's a Wonderful Life",
@@ -2399,6 +2411,7 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1948,
         "country": "USA",
+        "genre": "Thriller, Psychological Thriller",
         "rating": 8
       },
       {
@@ -2826,6 +2839,7 @@ const lists = [
         "director": "John Carpenter",
         "year": 1988,
         "country": "USA",
+        "genre": "Alien Film, Sci-Fi Action",
         "rating": 8
       },
       {
@@ -2868,6 +2882,7 @@ const lists = [
         "director": "Brian De Palma",
         "year": 1993,
         "country": "USA",
+        "genre": "Crime Drama, Gangster Film",
         "rating": 8
       },
       {
@@ -3023,7 +3038,8 @@ const lists = [
         "title": "Design for Living",
         "director": "Ernst Lubitsch",
         "year": 1933,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Romance, Sophisticated Comedy"
       },
       {
         "title": "The Testament of Dr. Mabuse",
@@ -3176,6 +3192,7 @@ const lists = [
         "director": "Howard Hawks",
         "year": 1953,
         "country": "US",
+        "genre": "Musical Comedy, Romance",
         "rating": 7
       },
       {
@@ -3393,6 +3410,7 @@ const lists = [
         "director": "John Woo",
         "year": 1986,
         "country": "Hong Kong",
+        "genre": "Crime, Action Thriller",
         "rating": 7
       },
       {
@@ -3491,6 +3509,7 @@ const lists = [
         "director": "Peter Jackson",
         "year": 2003,
         "country": "New Zealand-USA",
+        "genre": "Epic, Fantasy",
         "rating": 7
       },
       {
@@ -3668,6 +3687,7 @@ const lists = [
         "director": "Charles Vidor",
         "year": 1946,
         "country": "USA",
+        "genre": "Film Noir, Romantic Mystery",
         "rating": "?"
       },
       {
@@ -3682,6 +3702,7 @@ const lists = [
         "director": "Carol Reed",
         "year": 1947,
         "country": "UK",
+        "genre": "Drama, Crime",
         "rating": 4
       },
       {
@@ -3848,6 +3869,7 @@ const lists = [
         "director": "Jerry Lewis",
         "year": 1963,
         "country": "USA",
+        "genre": "Comedy, Satire",
         "rating": 6
       },
       {
@@ -3968,6 +3990,7 @@ const lists = [
         "director": "Robert Clouse",
         "year": 1973,
         "country": "USA-Hong Kong",
+        "genre": "Action, Martial Arts",
         "rating": 5
       },
       {
@@ -4052,6 +4075,7 @@ const lists = [
         "director": "Wolfgang Petersen",
         "year": 1981,
         "country": "West Germany",
+        "genre": "War Drama, Sea Adventure",
         "rating": 6
       },
       {
@@ -4080,6 +4104,7 @@ const lists = [
         "director": "Rob Reiner",
         "year": 1986,
         "country": "USA",
+        "genre": "Drama, Coming-of-Age",
         "rating": 6
       },
       {
@@ -4190,6 +4215,7 @@ const lists = [
         "director": "David Lynch",
         "year": 1999,
         "country": "USA-France-UK",
+        "genre": "Americana, Road Movie",
         "rating": 6
       },
       {
@@ -4261,19 +4287,29 @@ const lists = [
         "title": "Fantômas",
         "director": "Louis Feuillade",
         "year": 1913,
-        "country": "France"
+        "country": "France",
+        "genre": "Master Criminal Film, Police Detective Film"
+      },
+      {
+        "title": "The Phantom Carriage",
+        "director": "Victor Sjöström",
+        "year": 1920,
+        "country": "Sweden",
+        "genre": "Fantasy, Family Drama"
       },
       {
         "title": "Häxan",
         "director": "Benjamin Christensen",
         "year": 1922,
-        "country": "Sweden"
+        "country": "Sweden",
+        "genre": "Supernatural Horror, Documentary"
       },
       {
         "title": "The Adventures of Prince Achmed",
         "director": "Lotte Reiniger",
         "year": 1926,
-        "country": "Germany"
+        "country": "Germany",
+        "genre": "Children's Fantasy, Animation"
       },
       {
         "title": "Seventh Heaven",
@@ -4282,52 +4318,100 @@ const lists = [
         "country": "USA"
       },
       {
+        "title": "La Chienne",
+        "director": "Jean Renoir",
+        "year": 1931,
+        "country": "France"
+      },
+      {
         "title": "La Nuit du carrefour",
         "director": "Jean Renoir",
         "year": 1932,
-        "country": "France"
+        "country": "France",
+        "genre": "Police Detective Film, Crime Drama"
+      },
+      {
+        "title": "42nd Street",
+        "director": "Lloyd Bacon",
+        "year": 1933,
+        "country": "USA"
       },
       {
         "title": "Humanity and Paper Balloons",
         "director": "Sadao Yamanaka",
         "year": 1937,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama"
       },
       {
         "title": "Pépé le Moko",
         "director": "Julien Duvivier",
         "year": 1937,
-        "country": "France"
+        "country": "France",
+        "genre": "Romantic Drama, Gangster Film"
+      },
+      {
+        "title": "La Bête humaine",
+        "director": "Jean Renoir",
+        "year": 1938,
+        "country": "France",
+        "genre": "Crime Drama, Psychological Drama"
       },
       {
         "title": "Le Jour se lève",
         "director": "Marcel Carné",
         "year": 1939,
-        "country": "France"
+        "country": "France",
+        "genre": "Crime Drama, Romantic Drama"
       },
+      {
+        "title": "Hellzapoppin'",
+        "director": "H.C. Potter",
+        "year": 1941,
+        "country": "USA"
+      },
+      {
+        "title": "Fires Were Started",
+        "director": "Humphrey Jennings",
+        "year": 1943,
+        "country": "UK",
+        "genre": "Military & War, Documentary"
+      },
+
       {
         "title": "They Were Expendable",
         "director": "John Ford",
         "year": 1945,
-        "country": "USA"
+        "country": "USA",
+        "genre": "War Drama, Combat Film"
+      },
+      {
+        "title": "Duel in the Sun",
+        "director": "King Vidor",
+        "year": 1946,
+        "country": "USA",
+        "genre": "Western, Melodrama"
       },
       {
         "title": "The Reckless Moment",
         "director": "Max Ophüls",
         "year": 1949,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Crime Drama, Film Noir"
       },
       {
         "title": "The Thing from Another World",
         "director": "Christian Nyby & Howard Hawks",
         "year": 1951,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Science Fiction, Monster Film"
       },
       {
         "title": "Anatahan",
         "director": "Josef von Sternberg",
         "year": 1953,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama, Adventure"
       },
       {
         "title": "The Sun Shines Bright",
@@ -4339,13 +4423,22 @@ const lists = [
         "title": "Chikamatsu monogatari",
         "director": "Kenji Mizoguchi",
         "year": 1954,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Melodrama, Romantic Drama"
       },
       {
         "title": "The Incredible Shrinking Man",
         "director": "Jack Arnold",
         "year": 1957,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Science Fiction, Psychological Sci-Fi"
+      },
+      {
+        "title": "Mother India",
+        "director": "Mehboob Khan",
+        "year": 1957,
+        "country": "India",
+        "genre": "Epic, Melodrama"
       },
       {
         "title": "Dracula",
@@ -4354,28 +4447,51 @@ const lists = [
         "country": "UK"
       },
       {
+        "title": "Man of the West",
+        "director": "Anthony Mann",
+        "year": 1958,
+        "country": "USA",
+        "genre": "Western, Psychological Western"
+      },
+      {
+        "title": "Moi, un Noir",
+        "director": "Jean Rouch",
+        "year": 1958,
+        "country": "France"
+      },
+      {
         "title": "Floating Weeds",
         "director": "Yasujiro Ozu",
         "year": 1959,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama, Reunion Film"
       },
       {
         "title": "Black Orpheus",
         "director": "Marcel Camus",
         "year": 1959,
-        "country": "Brazil-France"
+        "country": "Brazil-France",
+        "genre": "Fantasy, Romance"
+      },
+      {
+        "title": "Strangers When We Meet",
+        "director": "Richard Quine",
+        "year": 1960,
+        "country": "USA"
       },
       {
         "title": "The End of Summer",
         "director": "Yasujiro Ozu",
         "year": 1961,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama, Family Drama"
       },
       {
         "title": "Carnival of Souls",
         "director": "Herk Harvey",
         "year": 1962,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Horror, Gothic Film"
       },
       {
         "title": "The Loneliness of the Long Distance Runner",
@@ -4387,49 +4503,63 @@ const lists = [
         "title": "Ride the High Country",
         "director": "Sam Peckinpah",
         "year": 1962,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Western, Revisionist Western"
       },
       {
         "title": "America, America",
         "director": "Elia Kazan",
         "year": 1963,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Drama, Americana"
       },
       {
         "title": "Dog Star Man",
         "director": "Stan Brakhage",
         "year": 1964,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Avant-garde-Experimental, Abstract Film"
       },
       {
         "title": "Juliet of the Spirits",
         "director": "Federico Fellini",
         "year": 1965,
-        "country": "Italy"
+        "country": "Italy",
+        "genre": "Comedy Drama, Marriage Drama"
       },
       {
         "title": "Red Beard",
         "director": "Akira Kurosawa",
         "year": 1965,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Period Film, Medical Drama"
       },
       {
         "title": "Subarnarekha",
         "director": "Ritwik Ghatak",
         "year": 1965,
-        "country": "India"
+        "country": "India",
+        "genre": "Drama"
       },
       {
         "title": "Cul-de-sac",
         "director": "Roman Polanski",
         "year": 1966,
-        "country": "UK"
+        "country": "UK",
+        "genre": "Comedy Thriller, Black Comedy"
       },
       {
         "title": "Second Breath",
         "director": "Jean-Pierre Melville",
         "year": 1966,
-        "country": "France"
+        "country": "France",
+        "genre": "Crime Thriller, Caper"
+      },
+      {
+        "title": "Branded to Kill",
+        "director": "Seijun Suzuki",
+        "year": 1967,
+        "country": "Japan"
       },
       {
         "title": "L'Amour fou",
@@ -4441,71 +4571,120 @@ const lists = [
         "title": "L'Enfance nue",
         "director": "Maurice Pialat",
         "year": 1968,
-        "country": "France"
+        "country": "France",
+        "genre": "Childhood Drama, Coming-of-Age"
+      },
+      {
+        "title": "Macunaima",
+        "director": "Joaquim Pedro de Andrade",
+        "year": 1969,
+        "country": "Brazil"
       },
       {
         "title": "The Hart of London",
         "director": "Jack Chambers",
         "year": 1970,
-        "country": "Canada"
+        "country": "Canada",
+        "genre": "Avant-garde-Experimental"
       },
       {
         "title": "Le Boucher",
         "director": "Claude Chabrol",
         "year": 1970,
-        "country": "France-Italy"
+        "country": "France-Italy",
+        "genre": "Thriller, Psychological Thriller"
       },
       {
         "title": "Get Carter",
         "director": "Mike Hodges",
         "year": 1971,
-        "country": "UK"
+        "country": "UK",
+        "genre": "Crime Thriller, Gangster Film"
       },
       {
         "title": "The Go-Between",
         "director": "Joseph Losey",
         "year": 1971,
-        "country": "UK"
+        "country": "UK",
+        "genre": "Romantic Drama, Period Film"
+      },
+      {
+        "title": "Pink Flamingos",
+        "director": "John Waters",
+        "year": 1972,
+        "country": "USA",
+        "genre": "Comedy, Trash Film"
       },
       {
         "title": "Ludwig",
         "director": "Luchino Visconti",
         "year": 1973,
-        "country": "Italy-France-West Germany"
+        "country": "Italy-France-West Germany",
+        "genre": "Historical Film, Biography"
       },
       {
         "title": "O Lucky Man!",
         "director": "Lindsay Anderson",
         "year": 1973,
-        "country": "UK"
+        "country": "UK",
+        "genre": "Comedy, Satire"
       },
       {
         "title": "Arabian Nights",
         "director": "Pier Paolo Pasolini",
         "year": 1974,
-        "country": "Italy-France"
+        "country": "Italy-France",
+        "genre": "Adventure, Romantic Fantasy"
       },
       {
         "title": "Female Trouble",
         "director": "John Waters",
         "year": 1974,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Comedy, Trash Film"
+      },
+      {
+        "title": "My Little Loves",
+        "director": "Jean Eustache",
+        "year": 1974,
+        "country": "France"
+      },
+      {
+        "title": "Numéro deux",
+        "director": "Jean-Luc Godard",
+        "year": 1975,
+        "country": "France"
+      },
+      {
+        "title": "Sholay",
+        "director": "Ramesh Sippy",
+        "year": 1975,
+        "country": "India"
       },
       {
         "title": "3 Women",
         "director": "Robert Altman",
         "year": 1977,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "National Lampoon's Animal House",
         "director": "John Landis",
         "year": 1978,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Gross-Out Comedy, Anarchic Comedy"
       },
       {
         "title": "Bad Timing",
         "director": "Nicolas Roeg",
+        "year": 1980,
+        "country": "UK",
+        "genre": "Mystery, Psychological Drama"
+      },
+      {
+        "title": "Gregory's Girl",
+        "director": "Bill Forsyth",
         "year": 1980,
         "country": "UK"
       },
@@ -4513,61 +4692,119 @@ const lists = [
         "title": "Yol",
         "director": "Serif Gören & Yilmaz Güney",
         "year": 1982,
-        "country": "Turkey-Switzerland-France"
+        "country": "Turkey-Switzerland-France",
+        "genre": "Political Drama, Prison Film"
       },
       {
         "title": "The Ballad of Narayama",
         "director": "Shohei Imamura",
         "year": 1983,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Rural Drama, Family Drama"
       },
       {
         "title": "Broadcast News",
         "director": "James L. Brooks",
         "year": 1987,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Workplace Comedy, Media Satire"
+      },
+      {
+        "title": "Dust in the Wind",
+        "director": "Hou Hsiao-hsien",
+        "year": 1987,
+        "country": "Taiwan",
+        "genre": "Drama, Coming-of-Age"
       },
       {
         "title": "A Tale of the Wind",
         "director": "Joris Ivens",
         "year": 1988,
-        "country": "France-UK-West Germany-Netherlands"
+        "country": "France-UK-West Germany-Netherlands",
+        "genre": "Culture & Society, Documentary"
       },
       {
         "title": "Hôtel Terminus",
         "director": "Marcel Ophüls",
         "year": 1988,
-        "country": "USA"
+        "country": "USA",
+        "genre": "History, Documentary"
+      },
+      {
+        "title": "The Match Factory Girl",
+        "director": "Aki Kaurismäki",
+        "year": 1990,
+        "country": "Finland-Sweden",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "Twin Peaks: Fire Walk with Me",
+        "director": "David Lynch",
+        "year": 1992,
+        "country": "USA-France",
+        "genre": "Mystery, Surrealist Film"
       },
       {
         "title": "Exotica",
         "director": "Atom Egoyan",
         "year": 1994,
-        "country": "Canada"
+        "country": "Canada",
+        "genre": "Psychological Drama, Ensemble Film"
       },
       {
         "title": "To Live",
         "director": "Zhang Yimou",
         "year": 1994,
-        "country": "China-Hong Kong"
+        "country": "China-Hong Kong",
+        "genre": "Family Drama, Political Drama"
       },
       {
         "title": "Babe",
         "director": "Chris Noonan",
         "year": 1995,
-        "country": "Australia"
+        "country": "Australia",
+        "genre": "Animal Picture, Children's Fantasy"
       },
       {
         "title": "L'Humanité",
         "director": "Bruno Dumont",
         "year": 1999,
-        "country": "France"
+        "country": "France",
+        "genre": "Psychological Drama, Police Detective Film"
+      },
+      {
+        "title": "Sicilia!",
+        "director": "Jean-Marie Straub & Danièle Huillet",
+        "year": 1999,
+        "country": "Italy-France-Germany"
       },
       {
         "title": "Topsy-Turvy",
         "director": "Mike Leigh",
         "year": 1999,
-        "country": "UK-USA"
+        "country": "UK-USA",
+        "genre": "Comedy Drama, Musical Drama"
+      },
+       {
+        "title": "As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty",
+        "director": "Jonas Mekas",
+        "year": 2000,
+        "country": "USA",
+        "genre": "Biography, Documentary"
+      },
+      {
+        "title": "In Praise of Love",
+        "director": "Jean-Luc Godard",
+        "year": 2001,
+        "country": "France",
+        "genre": "Drama"
+      },
+      {
+        "title": "Ten",
+        "director": "Abbas Kiarostami",
+        "year": 2002,
+        "country": "France-Iran",
+        "genre": "Avant-garde-Experimental, Urban Drama"
       },
       {
         "title": "The Return",

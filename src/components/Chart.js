@@ -76,6 +76,14 @@ const Chartjs = {
             </div>
           </v-card>
         </v-col>
+        
+        <v-col cols="12" lg="12">
+          <v-card outlined>
+            <div>
+              <canvas id="chartGenre" height="80px"></canvas>
+            </div>
+          </v-card>
+        </v-col>
       </v-row>
     </v-container>
   `,
@@ -96,6 +104,7 @@ const Chartjs = {
       var directorHist = {}
       var years = {}
       var countries = {}
+      var genres = {}
 
       for (var i = 0; i < this.lists.length; i++) {
         var _movies = this.lists[i].items
@@ -123,7 +132,20 @@ const Chartjs = {
                 countries[c] = countries[c] ? countries[c] + 1 : 1
               }
             }
-          }          
+          }
+          // genre
+          var genre = item.genre
+          if (genre) {
+            if (genre.indexOf(", ") == -1) {
+              genres[genre] = genres[genre] ? genres[genre] + 1 : 1
+            } else {
+              var array = genre.split(", ")
+              for (var k = 0; k < array.length; k++) {
+                var c = array[k]
+                genres[c] = genres[c] ? genres[c] + 1 : 1
+              }
+            }
+          }        
         }
       }
       
@@ -131,6 +153,7 @@ const Chartjs = {
       this.directors = Object.keys(directorHist).sort()
       this.years = Object.keys(years).sort()
       this.countries = Object.keys(countries).length
+      this.genres = Object.keys(genres)
       
       var labels = []
       var data = []
@@ -252,6 +275,53 @@ const Chartjs = {
           },
         }
       );
+      
+      // Genres
+      console.log(genres)
+      var labels4 = []
+      var data4 = []
+      for (var i = 0; i < this.genres.length; i++) {
+        var genre = this.genres[i]
+        if (genres[genre] > 1) {
+          labels4.push(genre)
+          data4.push(genres[genre])
+        }
+      }
+
+      new Chart(
+        document.getElementById('chartGenre'), {
+          type: 'bar',
+          data: {
+            labels: labels4,
+            datasets: [
+              {
+                label: "Genre",
+                data: data4,
+                /*
+                backgroundColor: [
+                  'rgb(255, 99, 132, 0.5)',
+                  'rgb(75, 192, 192, 0.5)',
+                  'rgb(255, 205, 86, 0.5)',
+                  'rgb(201, 203, 207, 0.5)',
+                  'rgb(54, 162, 235, 0.5)'
+                ]
+                */
+              }
+            ]
+          },
+          options: {
+            plugins: {
+              legend: {
+                display: false
+              },
+              title: {
+                display: true,
+                text: "Genre"
+              }
+            }
+          }
+        }
+      );      
     }
   }
 }
