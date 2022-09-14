@@ -244,6 +244,14 @@ const Games = {
         "difficulty": 2
       },
       {
+      	"title": "Metal Warriors",
+        "developer": "LucasArts",
+        "year": 1995,
+      	"src": "Metal Warriors.jpg",
+      	"rating": 4,
+      	"difficulty": 3
+      },
+      {
         "title": "Super Mario Kart",
         "src": "Super Mario Kart.jpg",
         "rating": 4,
@@ -262,7 +270,7 @@ const Games = {
         "src": "Super Star Wars: The Empire Strikes Back.png",
         "rating": 4,
         "difficulty": 4
-      },
+      }, // Return of the Jedi - Some of the bosses are really terrible
       {
         "title": "Zombies Ate My Neighbors",
         "src": "Zombies Ate My Neighbors.png",
