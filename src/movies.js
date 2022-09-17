@@ -35,6 +35,7 @@ const lists = [
         "director": "Charles Chaplin",
         "year": 1925,
         "country": "USA",
+        "genre": "Slapstick, Adventure Comedy",
         "rating": 10
       },
       {
@@ -50,6 +51,7 @@ const lists = [
         "director": "F.W. Murnau",
         "year": 1927,
         "country": "USA",
+        "genre": "Melodrama, Romantic Drama",
         "rating": 9
       },
       {
@@ -112,19 +114,22 @@ const lists = [
         "title": "Les Enfants du paradis",
         "director": "Marcel Carné",
         "year": 1945,
-        "country": "France"
+        "country": "France",
+        "genre": "Period Film, Romantic Drama"
       },
       {
         "title": "Late Spring",
         "director": "Yasujiro Ozu",
         "year": 1949,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama, Family Drama"
       },
       {
         "title": "Rashomon",
         "director": "Akira Kurosawa",
         "year": 1950,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Period Film, Crime Drama"
       },
       {
         "title": "Early Summer",
@@ -163,13 +168,15 @@ const lists = [
         "title": "Tokyo Story",
         "director": "Yasujiro Ozu",
         "year": 1953,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama, Family Drama"
       },
       {
         "title": "Rear Window",
         "director": "Alfred Hitchcock",
         "year": 1954,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Thriller, Romantic Mystery"
       },
       {
         "title": "Touchez pas au Grisbi",
@@ -182,13 +189,15 @@ const lists = [
         "title": "Ordet",
         "director": "Carl Theodor Dreyer",
         "year": 1955,
-        "country": "Denmark"
+        "country": "Denmark",
+        "genre": "Drama, Religious Drama"
       },
       {
         "title": "A Man Escaped",
         "director": "Robert Bresson",
         "year": 1956,
-        "country": "France"
+        "country": "France",
+        "genre": "Drama, Prison Film"
       },
       {
         "title": "Written on the Wind",
@@ -201,7 +210,8 @@ const lists = [
         "title": "The 400 Blows",
         "director": "François Truffaut",
         "year": 1959,
-        "country": "France"
+        "country": "France",
+        "genre": "Childhood Drama, Coming-of-Age"
       },
       {
         "title": "Good Morning",
@@ -226,13 +236,15 @@ const lists = [
         "title": "Breathless",
         "director": "Jean-Luc Godard",
         "year": 1960,
-        "country": "France"
+        "country": "France",
+        "genre": "Crime Drama, Urban Drama"
       },
       {
         "title": "L'Avventura",
         "director": "Michelangelo Antonioni",
         "year": 1960,
-        "country": "Italy-France"
+        "country": "Italy-France",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "Le Trou",
@@ -252,6 +264,7 @@ const lists = [
         "director": "Luis Buñuel",
         "year": 1961,
         "country": "Spain",
+        "genre": "Comedy Drama, Satire",
         "rating": 10
       },
       {
@@ -290,7 +303,8 @@ const lists = [
         "title": "Contempt",
         "director": "Jean-Luc Godard",
         "year": 1963,
-        "country": "France-Italy"
+        "country": "France-Italy",
+        "genre": "Showbiz Drama, Satire"
       },
       {
         "title": "Band of Outsiders",
@@ -317,19 +331,22 @@ const lists = [
         "title": "Andrei Rublev",
         "director": "Andrei Tarkovsky",
         "year": 1966,
-        "country": "USSR"
+        "country": "USSR",
+        "genre": "Historical Film, Biography"
       },
       {
         "title": "Au hasard Balthazar",
         "director": "Robert Bresson",
         "year": 1966,
-        "country": "France"
+        "country": "France",
+        "genre": "Rural Drama, Animal Picture"
       },
       {
         "title": "Blow-Up",
         "director": "Michelangelo Antonioni",
         "year": 1966,
-        "country": "Italy-UK"
+        "country": "Italy-UK",
+        "genre": "Mystery, Psychological Thriller"
       },
       {
         "title": "The Good, the Bad and the Ugly",
@@ -342,6 +359,7 @@ const lists = [
         "director": "Ingmar Bergman",
         "year": 1966,
         "country": "Sweden",
+        "genre": "Drama, Psychological Drama",
         "rating": 10
       },
       {
@@ -367,6 +385,7 @@ const lists = [
         "director": "Jacques Tati",
         "year": 1967,
         "country": "France",
+        "genre": "Satire, Urban Comedy",
         "rating": 10
       },
       {
@@ -380,6 +399,7 @@ const lists = [
         "director": "Stanley Kubrick",
         "year": 1968,
         "country": "UK-USA",
+        "genre": "Psychological Sci-Fi, Space Adventure",
         "rating": 10
       },
       {
@@ -445,7 +465,8 @@ const lists = [
         "title": "A Woman Under the Influence",
         "director": "John Cassavetes",
         "year": 1974,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Marriage Drama, Psychological Drama"
       },
       {
         "title": "The Conversation",
@@ -473,6 +494,7 @@ const lists = [
         "director": "Stanley Kubrick",
         "year": 1975,
         "country": "UK",
+        "genre": "Drama, Period Film",
         "rating": 10
       },
       {
@@ -480,13 +502,15 @@ const lists = [
         "director": "Chantal Akerman",
         "year": 1975,
         "country": "Belgium-France",
+        "genre": "Avant-garde-Experimental, Feminist Film",
         "rating": 10
       },
       {
         "title": "Nashville",
         "director": "Robert Altman",
         "year": 1975,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Ensemble Film, Media Satire",
       },
       {
         "title": "The Passenger",
@@ -518,7 +542,8 @@ const lists = [
         "title": "Taxi Driver",
         "director": "Martin Scorsese",
         "year": 1976,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Psychological Drama, Urban Drama"
       },
       {
         "title": "That Obscure Object of Desire",
@@ -545,7 +570,8 @@ const lists = [
         "title": "Stalker",
         "director": "Andrei Tarkovsky",
         "year": 1979,
-        "country": "USSR"
+        "country": "USSR",
+        "genre": "Science Fiction, Psychological Sci-Fi"
       },
       {
         "title": "Blow Out",
@@ -612,13 +638,15 @@ const lists = [
         "title": "Close-Up",
         "director": "Abbas Kiarostami",
         "year": 1990,
-        "country": "Iran"
+        "country": "Iran",
+        "genre": "Docudrama, Courtroom Drama"
       },
       {
         "title": "Goodfellas",
         "director": "Martin Scorsese",
         "year": 1990,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Gangster Film, Crime Drama"
       },
       {
         "title": "Miller's Crossing",
@@ -631,7 +659,8 @@ const lists = [
         "title": "Raging Bull",
         "director": "Martin Scorsese",
         "year": 1980,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Biography, Sports Drama"
       },
       {
         "title": "The Double Life of Veronique",
@@ -651,7 +680,8 @@ const lists = [
         "title": "Pulp Fiction",
         "director": "Quentin Tarantino",
         "year": 1994,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Crime Comedy, Ensemble Film"
       },
       {
         "title": "Casino",
@@ -692,7 +722,8 @@ const lists = [
         "title": "In the Mood for Love",
         "director": "Wong Kar-wai",
         "year": 2000,
-        "country": "Hong Kong-France"
+        "country": "Hong Kong-France",
+        "genre": "Melodrama, Romantic Drama"
       },
       {
         "title": "Yi yi",
@@ -719,7 +750,8 @@ const lists = [
         "title": "Mulholland Dr.",
         "director": "David Lynch",
         "year": 2001,
-        "country": "France-US"
+        "country": "France-US",
+        "genre": "Mystery, Psychological Thriller"
       },
       {
         "title": "The Piano Teacher",
@@ -803,6 +835,7 @@ const lists = [
         "director": "Sergei Eisenstein",
         "year": 1925,
         "country": "USSR",
+        "genre": "Political Drama, Propaganda Film",
         "rating": 10
       },
       {
@@ -810,6 +843,7 @@ const lists = [
         "director": "Fritz Lang",
         "year": 1927,
         "country": "Germany",
+        "genre": "Science Fiction, Psychological Sci-Fi",
         "rating": 10
       },
       {
@@ -817,6 +851,7 @@ const lists = [
         "director": "Fritz Lang",
         "year": 1931,
         "country": "Germany",
+        "genre": "Psychological Thriller, Police Detective Film",
         "rating": 10
       },
       {
@@ -897,6 +932,7 @@ const lists = [
         "director": "Billy Wilder",
         "year": 1950,
         "country": "USA",
+        "genre": "Showbiz Drama, Satire",
         "rating": 10
       },
       {
@@ -938,7 +974,8 @@ const lists = [
         "title": "Sansho the Bailiff",
         "director": "Kenji Mizoguchi",
         "year": 1954,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama, Period Film"
       },
       {
         "title": "Invasion of the Body Snatchers",
@@ -952,6 +989,7 @@ const lists = [
         "director": "John Ford",
         "year": 1956,
         "country": "USA",
+        "genre": "Western, Revisionist Western",
         "rating": 10
       },
       {
@@ -966,6 +1004,7 @@ const lists = [
         "director": "Ingmar Bergman",
         "year": 1957,
         "country": "Sweden",
+        "genre": "Fantasy, Psychological Drama",
         "rating": 10
       },
       {
@@ -979,6 +1018,7 @@ const lists = [
         "director": "Ingmar Bergman",
         "year": 1957,
         "country": "Sweden",
+        "genre": "Drama, Psychological Drama",
         "rating": 10
       },
       {
@@ -992,6 +1032,7 @@ const lists = [
         "director": "Orson Welles",
         "year": 1958,
         "country": "USA",
+        "genre": "Crime, Film Noir",
         "rating": 10
       },
       {
@@ -999,6 +1040,7 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1959,
         "country": "USA",
+        "genre": "Thriller, Chase Movie",
         "rating": 10
       },
       {
@@ -1006,6 +1048,7 @@ const lists = [
         "director": "Billy Wilder",
         "year": 1959,
         "country": "USA",
+        "genre": "Comedy, Farce",
         "rating": 10
       },
       {
@@ -1013,6 +1056,7 @@ const lists = [
         "director": "Billy Wilder",
         "year": 1960,
         "country": "USA",
+        "genre": "Comedy Drama, Workplace Comedy",
         "rating": 10
       },
       {
@@ -1020,6 +1064,7 @@ const lists = [
         "director": "Federico Fellini",
         "year": 1960,
         "country": "Italy",
+        "genre": "Comedy Drama, Media Satire",
         "rating": 10
       },
       {
@@ -1033,6 +1078,7 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1960,
         "country": "USA",
+        "genre": "Thriller, Psychological Thriller",
         "rating": 10
       },
       {
@@ -1055,6 +1101,7 @@ const lists = [
         "director": "Federico Fellini",
         "year": 1963,
         "country": "Italy",
+        "genre": "Satire, Psychological Drama",
         "rating": 10
       },
       {
@@ -1086,6 +1133,7 @@ const lists = [
         "director": "Sergio Leone",
         "year": 1968,
         "country": "Italy-USA",
+        "genre": "Epic Western, Spaghetti Western",
         "rating": 10
       },
       {
@@ -1100,6 +1148,7 @@ const lists = [
         "director": "Stanley Kubrick",
         "year": 1971,
         "country": "UK",
+        "genre": "Satire, Psychological Sci-Fi",
         "rating": 10
       },
       {
@@ -1107,6 +1156,7 @@ const lists = [
         "director": "Francis Ford Coppola",
         "year": 1972,
         "country": "USA",
+        "genre": "Gangster Film, Crime Drama",
         "rating": 10
       },
       {
@@ -1182,6 +1232,7 @@ const lists = [
         "director": "Ingmar Bergman",
         "year": 1982,
         "country": "Sweden",
+        "genre": "Family Drama, Childhood Drama",
         "rating": 10
       },
       {
@@ -1389,6 +1440,7 @@ const lists = [
         "director": "Buster Keaton",
         "year": 1926,
         "country": "USA",
+        "genre": "Buster Keaton & Clyde Bruckman",
         "rating": 9
       },
       {
@@ -1470,13 +1522,15 @@ const lists = [
         "title": "Casablanca",
         "director": "Michael Curtiz",
         "year": 1942,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Drama, War Romance"
       },
       {
         "title": "To Be or Not to Be",
         "director": "Ernst Lubitsch",
         "year": 1942,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Comedy, Satire"
       },
       {
         "title": "Laura",
@@ -1548,6 +1602,7 @@ const lists = [
         "director": "Carol Reed",
         "year": 1949,
         "country": "UK",
+        "genre": "Mystery, Film Noir",
         "rating": 9
       },
       {
@@ -1599,6 +1654,7 @@ const lists = [
         "director": "Stanley Donen",
         "year": 1952,
         "country": "USA",
+        "genre": "Musical, Showbiz Comedy",
         "rating": 9
       },
       {
@@ -1628,6 +1684,7 @@ const lists = [
         "director": "Federico Fellini",
         "year": 1954,
         "country": "Italy",
+        "genre": "Melodrama, Romantic Drama",
         "rating": 9
       },
       {
@@ -1689,6 +1746,7 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1958,
         "country": "USA",
+        "genre": "Romantic Mystery, Psychological Thriller",
         "rating": 9
       },
       {
@@ -1704,6 +1762,7 @@ const lists = [
         "director": "Robert Bresson",
         "year": 1959,
         "country": "France",
+        "genre": "Crime Drama, Psychological Drama",
         "rating": 9
       },
       {
@@ -1741,6 +1800,7 @@ const lists = [
         "director": "Alain Resnais",
         "year": 1961,
         "country": "France-Italy",
+        "genre": "Avant-garde-Experimental, Psychological Drama",
         "rating": 9
       },
       {
@@ -1778,6 +1838,7 @@ const lists = [
         "director": "David Lean",
         "year": 1962,
         "country": "UK",
+        "genre": "Epic, British Empire Film",
         "rating": 9
       },
       {
@@ -1808,6 +1869,7 @@ const lists = [
         "director": "Stanley Kubrick",
         "year": 1964,
         "country": "UK-USA",
+        "genre": "Black Comedy, Anti-War Film",
         "rating": 9
       },
       {
@@ -1891,6 +1953,7 @@ const lists = [
         "director": "Federico Fellini",
         "year": 1973,
         "country": "Italy",
+        "genre": "Comedy Drama, Ensemble Film",
         "rating": 9
       },
       {
@@ -1920,6 +1983,7 @@ const lists = [
         "director": "Francis Ford Coppola",
         "year": 1974,
         "country": "USA",
+        "genre": "Gangster Film, Crime Drama",
         "rating": 9
       },
       {
@@ -1935,6 +1999,7 @@ const lists = [
         "director": "Andrei Tarkovsky",
         "year": 1975,
         "country": "USSR",
+        "genre": "Avant-garde-Experimental, Essay Film",
         "rating": 9
       },
       {
@@ -1942,6 +2007,7 @@ const lists = [
         "director": "Woody Allen",
         "year": 1977,
         "country": "USA",
+        "genre": "Romantic Comedy, Urban Comedy",
         "rating": 9
       },
       {
@@ -1963,6 +2029,7 @@ const lists = [
         "director": "Francis Ford Coppola",
         "year": 1979,
         "country": "USA",
+        "genre": "Anti-War Film, Jungle Film",
         "rating": 9
       },
       {
@@ -1985,6 +2052,7 @@ const lists = [
         "director": "Stanley Kubrick",
         "year": 1980,
         "country": "USA",
+        "genre": "Horror, Haunted House Film",
         "rating": 9
       },
       {
@@ -1992,6 +2060,7 @@ const lists = [
         "director": "Ridley Scott",
         "year": 1982,
         "country": "USA",
+        "genre": "Science Fiction, Tech Noir",
         "rating": 9
       },
       {
@@ -2380,13 +2449,15 @@ const lists = [
         "title": "The Passion of Joan of Arc",
         "director": "Carl Theodor Dreyer",
         "year": 1928,
-        "country": "France"
+        "country": "France",
+        "genre": "Historical Film, Hagiography"
       },
       {
         "title": "City Lights",
         "director": "Charles Chaplin",
         "year": 1931,
         "country": "USA",
+        "genre": "Comedy Drama, Romance",
         "rating": 8
       },
       {
@@ -2417,6 +2488,7 @@ const lists = [
         "director": "Jean Vigo",
         "year": 1934,
         "country": "France",
+        "genre": "Romantic Drama, Marriage Drama",
         "rating": 8
       },
       {
@@ -2430,6 +2502,7 @@ const lists = [
         "director": "Charles Chaplin",
         "year": 1936,
         "country": "USA",
+        "genre": "Comedy, Satire",
         "rating": 8
       },
       {
@@ -2466,6 +2539,7 @@ const lists = [
         "director": "Orson Welles",
         "year": 1941,
         "country": "USA",
+        "genre": "Drama, Film a Clef",
         "rating": 8
       },
       {
@@ -2509,6 +2583,7 @@ const lists = [
         "director": "Frank Capra",
         "year": 1946,
         "country": "USA",
+        "genre": "Comedy Drama, Fantasy",
         "rating": 8
       },
       {
@@ -2537,6 +2612,7 @@ const lists = [
         "director": "Vittorio De Sica",
         "year": 1948,
         "country": "Italy",
+        "genre": "Family Drama, Urban Drama",
         "rating": 8
       },
       {
@@ -2629,6 +2705,7 @@ const lists = [
         "director": "Kenji Mizoguchi",
         "year": 1953,
         "country": "Japan",
+        "genre": "Romantic Fantasy, Period Film",
         "rating": 8
       },
       {
@@ -2643,6 +2720,7 @@ const lists = [
         "director": "Akira Kurosawa",
         "year": 1954,
         "country": "Japan",
+        "genre": "Drama, Samurai Film",
         "rating": 8
       },
       {
@@ -2761,6 +2839,7 @@ const lists = [
         "director": "John Ford",
         "year": 1962,
         "country": "USA",
+        "genre": "Western, Outlaw (Gunfighter) Film",
         "rating": 8
       },
       {
@@ -2783,6 +2862,7 @@ const lists = [
         "director": "Jean-Luc Godard",
         "year": 1965,
         "country": "France-Italy",
+        "genre": "Road Movie, Romantic Drama",
         "rating": 8
       },
       {
@@ -2828,6 +2908,7 @@ const lists = [
         "director": "Sam Peckinpah",
         "year": 1969,
         "country": "USA",
+        "genre": "Revisionist Western, Outlaw (Gunfighter) Film",
         "rating": 8
       },
       {
@@ -2963,6 +3044,7 @@ const lists = [
         "director": "Sergio Leone",
         "year": 1984,
         "country": "Italy-USA",
+        "genre": "Crime, Gangster Film",
         "rating": 8
       },
       {
@@ -2977,6 +3059,7 @@ const lists = [
         "director": "David Lynch",
         "year": 1986,
         "country": "USA",
+        "genre": "Mystery, Crime Thriller",
         "rating": 8
       },
       {
@@ -3214,7 +3297,8 @@ const lists = [
         "title": "Man with a Movie Camera",
         "director": "Dziga Vertov",
         "year": 1929,
-        "country": "USSR"
+        "country": "USSR",
+        "genre": "Avant-garde-Experimental, Documentary"
       },
       {
         "title": "All Quiet on the Western Front",
@@ -3256,7 +3340,8 @@ const lists = [
         "title": "La Grande illusion",
         "director": "Jean Renoir",
         "year": 1937,
-        "country": "France"
+        "country": "France",
+        "genre": "Anti-War Film, War Drama"
       },
       {
         "title": "Snow White and the Seven Dwarfs",
@@ -3314,6 +3399,7 @@ const lists = [
         "director": "Orson Welles",
         "year": 1942,
         "country": "USA",
+        "genre": "Family Drama, Period Film",
         "rating": 7
       },
       {
@@ -3445,6 +3531,7 @@ const lists = [
         "director": "Howard Hawks",
         "year": 1959,
         "country": "USA",
+        "genre": "Western, Buddy Film",
         "rating": 7
       },
       {
@@ -3467,6 +3554,7 @@ const lists = [
         "director": "François Truffaut",
         "year": 1962,
         "country": "France",
+        "genre": "Drama, Romance",
         "rating": 7
       },
       {
@@ -3474,6 +3562,7 @@ const lists = [
         "director": "Luchino Visconti",
         "year": 1963,
         "country": "Italy",
+        "genre": "Epic, Family Drama",
         "rating": 7
       },
       {
@@ -3534,6 +3623,7 @@ const lists = [
         "director": "Roman Polanski",
         "year": 1974,
         "country": "USA",
+        "genre": "Mystery, Post-Noir (Modern Noir)",
         "rating": 7
       },
       {
@@ -3549,6 +3639,7 @@ const lists = [
         "director": "Steven Spielberg",
         "year": 1975,
         "country": "USA",
+        "genre": "Thriller, Natural Horror",
         "rating": 7
       },
       {
@@ -3862,6 +3953,7 @@ const lists = [
         "director": "Jean Renoir",
         "year": 1939,
         "country": "France",
+        "genre": "Comedy Drama, Ensemble Film",
         "rating": 5
       },
       {
@@ -4035,6 +4127,7 @@ const lists = [
         "director": "Roberto Rossellini",
         "year": 1954,
         "country": "Italy",
+        "genre": "Marriage Drama, Psychological Drama",
         "rating": 5
       },
       {
@@ -4057,6 +4150,7 @@ const lists = [
         "director": "Charles Laughton",
         "year": 1955,
         "country": "USA",
+        "genre": "Crime Thriller, Psychological Thriller",
         "rating": 6
       },
       {
@@ -4161,6 +4255,7 @@ const lists = [
         "director": "Gillo Pontecorvo",
         "year": 1966,
         "country": "Italy-Algeria",
+        "genre": "Docudrama, Political Drama",
         "rating": 5
       },
       {
@@ -4214,6 +4309,7 @@ const lists = [
         "director": "Bernardo Bertolucci",
         "year": 1970,
         "country": "Italy-France-West Germany",
+        "genre": "Psychological Drama, Political Drama",
         "rating": "?"
       },
       {
@@ -4645,6 +4741,13 @@ const lists = [
         "genre": "Drama, Psychological Drama"
       },
       {
+        "title": "Le Million",
+        "director": "René Clair",
+        "year": 1931,
+        "country": "France",
+        "genre": "Musical Comedy, Chase Movie"
+      },
+      {
         "title": "La Nuit du carrefour",
         "director": "Jean Renoir",
         "year": 1932,
@@ -4657,6 +4760,13 @@ const lists = [
         "year": 1933,
         "country": "USA",
         "genre": "Backstage Musical, Musical Comedy"
+      },
+      {
+        "title": "It's a Gift",
+        "director": "Norman Z. McLeod",
+        "year": 1934,
+        "country": "USA",
+        "genre": "Comedy, Screwball Comedy"
       },
       {
         "title": "Humanity and Paper Balloons",
@@ -4678,6 +4788,13 @@ const lists = [
         "year": 1938,
         "country": "France",
         "genre": "Crime Drama, Psychological Drama"
+      },
+      {
+        "title": "Port of Shadows",
+        "director": "Marcel Carné",
+        "year": 1938,
+        "country": "France",
+        "genre": "Romantic Drama, Crime Drama"
       },
       {
         "title": "Le Jour se lève",
@@ -4730,6 +4847,13 @@ const lists = [
         "genre": "Science Fiction, Monster Film"
       },
       {
+        "title": "The Lusty Men",
+        "director": "Nicholas Ray",
+        "year": 1952,
+        "country": "USA",
+        "genre": "Drama, Modern Western"
+      },
+      {
         "title": "Anatahan",
         "director": "Josef von Sternberg",
         "year": 1953,
@@ -4749,6 +4873,13 @@ const lists = [
         "year": 1954,
         "country": "Japan",
         "genre": "Melodrama, Romantic Drama"
+      },
+      {
+        "title": "Street of Shame",
+        "director": "Kenji Mizoguchi",
+        "year": 1956,
+        "country": "Japan",
+        "genre": "Melodrama, Urban Drama"
       },
       {
         "title": "The Incredible Shrinking Man",
@@ -4855,6 +4986,20 @@ const lists = [
         "genre": "Avant-garde-Experimental, Abstract Film"
       },
       {
+        "title": "Kwaidan",
+        "director": "Masaki Kobayashi",
+        "year": 1964,
+        "country": "Japan",
+        "genre": "Fantasy, Costume Horror"
+      },
+      {
+        "title": "Faster, Pussycat! Kill! Kill!",
+        "director": "Russ Meyer",
+        "year": 1965,
+        "country": "USA",
+        "genre": "Sexploitation, Action Comedy"
+      },
+      {
         "title": "Juliet of the Spirits",
         "director": "Federico Fellini",
         "year": 1965,
@@ -4874,6 +5019,13 @@ const lists = [
         "year": 1965,
         "country": "India",
         "genre": "Drama"
+      },
+      {
+        "title": "Black Girl",
+        "director": "Ousmane Sembene",
+        "year": 1966,
+        "country": "Senegal-France",
+        "genre": "Drama, Social Problem Film"
       },
       {
         "title": "Cul-de-sac",
@@ -4911,6 +5063,13 @@ const lists = [
         "genre": "Childhood Drama, Coming-of-Age"
       },
       {
+        "title": "Diaries, Notes and Sketches",
+        "director": "Jonas Mekas",
+        "year": 1969,
+        "country": "USA",
+        "genre": "Avant-garde/Experimental"
+      },
+      {
         "title": "Macunaima",
         "director": "Joaquim Pedro de Andrade",
         "year": 1969,
@@ -4930,6 +5089,13 @@ const lists = [
         "year": 1970,
         "country": "France-Italy",
         "genre": "Thriller, Psychological Thriller"
+      },
+      {
+        "title": "Fata Morgana",
+        "director": "Werner Herzog",
+        "year": 1971,
+        "country": "West Germany",
+        "genre": "Avant-garde/Experimental"
       },
       {
         "title": "Get Carter",
@@ -5002,6 +5168,13 @@ const lists = [
         "genre": "Action, Adventure Drama"
       },
       {
+        "title": "Cría cuervos",
+        "director": "Carlos Saura",
+        "year": 1976,
+        "country": "Spain",
+        "genre": "Childhood Drama, Family Drama"
+      },
+      {
         "title": "3 Women",
         "director": "Robert Altman",
         "year": 1977,
@@ -5009,11 +5182,32 @@ const lists = [
         "genre": "Drama, Psychological Drama"
       },
       {
+        "title": "Hitler: A Film from Germany",
+        "director": "Hans-Jürgen Syberberg",
+        "year": 1977,
+        "country": "West Germany-France-UK",
+        "genre": "Avant-garde-Experimental, Essay Film"
+      },
+      {
         "title": "National Lampoon's Animal House",
         "director": "John Landis",
         "year": 1978,
         "country": "USA",
         "genre": "Gross-Out Comedy, Anarchic Comedy"
+      },
+      {
+        "title": "Vengeance is Mine",
+        "director": "Shohei Imamura",
+        "year": 1979,
+        "country": "Japan",
+        "genre": "Crime, Psychological Drama"
+      },
+      {
+        "title": "The Age of the Earth",
+        "director": "Glauber Rocha",
+        "year": 1980,
+        "country": "Brazil",
+        "genre": "Religious Epic, Political Drama"
       },
       {
         "title": "Bad Timing",
@@ -5030,6 +5224,13 @@ const lists = [
         "genre": "Comedy Drama, Coming-of-Age"
       },
       {
+        "title": "Mon oncle d'Amérique",
+        "director": "Alain Resnais",
+        "year": 1980,
+        "country": "France",
+        "genre": "Comedy Drama, Satire"
+      },
+      {
         "title": "Yol",
         "director": "Serif Gören & Yilmaz Güney",
         "year": 1982,
@@ -5042,6 +5243,13 @@ const lists = [
         "year": 1983,
         "country": "Japan",
         "genre": "Rural Drama, Family Drama"
+      },
+      {
+        "title": "Diary",
+        "director": "David Perlov",
+        "year": 1983,
+        "country": "Israel",
+        "genre": "Documentary, Political"
       },
       {
         "title": "Broadcast News",
@@ -5072,6 +5280,20 @@ const lists = [
         "genre": "History, Documentary"
       },
       {
+        "title": "The Cook, The Thief, His Wife & Her Lover",
+        "director": "Peter Greenaway",
+        "year": 1989,
+        "country": "UK-France",
+        "genre": "Black Comedy, Satire"
+      },
+      {
+        "title": "Time of the Gypsies",
+        "director": "Emir Kusturica",
+        "year": 1989,
+        "country": "Yugoslavia",
+        "genre": "Comedy Drama, Coming-of-Age"
+      },
+      {
         "title": "The Match Factory Girl",
         "director": "Aki Kaurismäki",
         "year": 1990,
@@ -5079,11 +5301,39 @@ const lists = [
         "genre": "Drama, Psychological Drama"
       },
       {
+        "title": "Point Break",
+        "director": "Kathryn Bigelow",
+        "year": 1991,
+        "country": "USA-Japan",
+        "genre": "Action, Thriller"
+      },
+      {
         "title": "Twin Peaks: Fire Walk with Me",
         "director": "David Lynch",
         "year": 1992,
         "country": "USA-France",
         "genre": "Mystery, Surrealist Film"
+      },
+      {
+        "title": "The Last Bolshevik",
+        "director": "Chris Marker",
+        "year": 1993,
+        "country": "France-Finland",
+        "genre": "Essay Film, Documentary"
+      },
+      {
+        "title": "Burnt by the Sun",
+        "director": "Nikita Mikhalkov",
+        "year": 1994,
+        "country": "Russia-France",
+        "genre": "Political Drama, Family Drama"
+      },
+      {
+        "title": "Caro diario",
+        "director": "Nanni Moretti",
+        "year": 1994,
+        "country": "Italy-France",
+        "genre": "Comedy, Satire"
       },
       {
         "title": "Exotica",
@@ -5105,6 +5355,13 @@ const lists = [
         "year": 1995,
         "country": "Australia",
         "genre": "Animal Picture, Children's Fantasy"
+      },
+      {
+        "title": "The Idiots",
+        "director": "Lars von Trier",
+        "year": 1998,
+        "country": "Denmark-Spain-Sweden-France-Netherlands-Italy",
+        "genre": "Comedy Drama, Satire"
       },
       {
         "title": "L'Humanité",
