@@ -1,7 +1,7 @@
 const Calendar = {
   template: `
     <v-container fluid>
-      <v-sheet color="grey lighten-4">
+      <v-sheet>
         <v-btn icon class="ma-2" @click="$refs.calendar.prev()">
           <v-icon>mdi-chevron-left</v-icon>
         </v-btn>

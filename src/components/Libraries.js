@@ -35,7 +35,6 @@ const Libraries = {
         <v-tab-item
           v-for="category in categories"
           :key="category.name"
-          style="background-color: #FAFAFA;"
         ><!-- overflow-y: auto; max-height: 856px; -->
           <v-container fluid>
             <v-row>
@@ -43,13 +42,13 @@ const Libraries = {
                 v-for="library in category.items"
                 :key="library.title"
               >
-                <v-card class="fill-height d-flex flex-column">
+                <v-card class="fill-height d-flex flex-column" flat tile>
                   <a :href="library.href" target="_blank">
                     <v-img
                       :src="library.src"
                       height="198px"
-                      style="border-top-left-radius: 4px; border-top-right-radius: 4px;"
                     ></v-img>
+                    <!-- style="border-top-left-radius: 4px; border-top-right-radius: 4px;" -->
                   </a>
                   <v-divider></v-divider>
                   <v-card-title>

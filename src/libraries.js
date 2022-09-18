@@ -264,14 +264,6 @@ const categories = [
         "group": "Documentation",
         "highlight": true
       },
-
-      {
-        "title": "WebStorm",
-        "subtitle": "The smartest JavaScript IDE",
-        "href": "https://www.jetbrains.com/webstorm/",
-        "src": "assets/libraries/WebStorm.png",
-        "group": "IDE"
-      },
       {
         "title": "Sass",
         "subtitle": "Syntactically Awesome Style Sheets",

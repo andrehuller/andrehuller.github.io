@@ -2,7 +2,7 @@ const TreeView = {
   template: `
     <v-container fluid>
       <v-card>
-        <v-card-title class="grey lighten-5">
+        <v-card-title>
           Choose a location
         </v-card-title>
         <v-divider></v-divider>

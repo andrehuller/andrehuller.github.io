@@ -170,9 +170,7 @@
       <v-app-bar
         app
         clipped-left
-        color="#980000"
-        dark
-      ><!-- color="#25305E" -->
+      ><!-- color="#980000" color="#25305E" -->
         <v-app-bar-nav-icon
           @click.stop="drawer = !drawer"
         ></v-app-bar-nav-icon>
@@ -225,7 +223,7 @@
           </v-list>
         </v-menu>
       </v-app-bar>
-      <v-main class="grey lighten-5">
+      <v-main>
         <keep-alive>
           <router-view></router-view>
         </keep-alive>
@@ -383,7 +381,9 @@
     new Vue({
       el: '#app',
       store: store,
-      vuetify: new Vuetify(),
+      vuetify: new Vuetify({
+        theme: { dark: true },
+      }),
       router,
       data: () => ({
         drawer: null,
