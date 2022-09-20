@@ -99,7 +99,8 @@ const Chartjs = {
   },
   methods: {
     createCharts: function () {
-
+      // Chart.defaults.font.weight = 'bold';
+      Chart.defaults.color = 'white'
       var count = 0
       var directorHist = {}
       var years = {}
@@ -183,7 +184,7 @@ const Chartjs = {
         options: {
           plugins: {
             legend: {
-              display: false,
+              display: false
             },
             title: {
               display: true,
@@ -207,7 +208,7 @@ const Chartjs = {
         labels2.push(year)
         data2.push(years[year])
       }
-      
+      // document.getElementById('chartYear').style.backgroundColor = '#FFFFFF';
       new Chart(
         document.getElementById('chartYear'), {
           type: 'line',

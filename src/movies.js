@@ -4713,6 +4713,13 @@ const lists = [
         "genre": "Supernatural Horror, Documentary"
       },
       {
+        "title": "A Woman of Paris",
+        "director": "Charles Chaplin",
+        "year": 1923,
+        "country": "USA",
+        "genre": "Romance, Melodrama"
+      },
+      {
         "title": "The Adventures of Prince Achmed",
         "director": "Lotte Reiniger",
         "year": 1926,
@@ -4730,6 +4737,13 @@ const lists = [
         "title": "Seventh Heaven",
         "director": "Frank Borzage",
         "year": 1927,
+        "country": "USA",
+        "genre": "Romance, Melodrama"
+      },
+      {
+        "title": "Morocco",
+        "director": "Josef von Sternberg",
+        "year": 1930,
         "country": "USA",
         "genre": "Romance, Melodrama"
       },
@@ -4783,11 +4797,25 @@ const lists = [
         "genre": "Romantic Drama, Gangster Film"
       },
       {
+        "title": "Street Angel",
+        "director": "Yuan Muzhi",
+        "year": 1937,
+        "country": "China",
+        "genre": "Drama, Comedy"
+      },
+      {
         "title": "La Bête humaine",
         "director": "Jean Renoir",
         "year": 1938,
         "country": "France",
         "genre": "Crime Drama, Psychological Drama"
+      },
+      {
+        "title": "Olympia",
+        "director": "Leni Riefenstahl",
+        "year": 1938,
+        "country": "Germany",
+        "genre": "Sports, Documentary"
       },
       {
         "title": "Port of Shadows",
@@ -4833,6 +4861,13 @@ const lists = [
         "genre": "Western, Melodrama"
       },
       {
+        "title": "Le Sang des bêtes",
+        "director": "Georges Franju",
+        "year": 1949,
+        "country": "France",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
         "title": "The Reckless Moment",
         "director": "Max Ophüls",
         "year": 1949,
@@ -4873,6 +4908,27 @@ const lists = [
         "year": 1954,
         "country": "Japan",
         "genre": "Melodrama, Romantic Drama"
+      },
+      {
+        "title": "Les Maîtres fous",
+        "director": "Jean Rouch",
+        "year": 1955,
+        "country": "France",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
+        "title": "Le Bonheur",
+        "director": "Agnès Varda",
+        "year": 1965,
+        "country": "France",
+        "genre": "Romance, Marriage Drama"
+      },
+      {
+        "title": "The Red Balloon",
+        "director": "Albert Lamorisse",
+        "year": 1956,
+        "country": "France",
+        "genre": "Children's/Family, Family-Oriented Adventure"
       },
       {
         "title": "Street of Shame",
@@ -4917,6 +4973,13 @@ const lists = [
         "genre": "Culture & Society, Anthropology"
       },
       {
+        "title": "Black Orpheus",
+        "director": "Marcel Camus",
+        "year": 1959,
+        "country": "Brazil-France",
+        "genre": "Fantasy, Romance"
+      },
+      {
         "title": "Floating Weeds",
         "director": "Yasujiro Ozu",
         "year": 1959,
@@ -4924,11 +4987,11 @@ const lists = [
         "genre": "Drama, Reunion Film"
       },
       {
-        "title": "Black Orpheus",
-        "director": "Marcel Camus",
+        "title": "Kaagaz Ke Phool",
+        "director": "Guru Dutt",
         "year": 1959,
-        "country": "Brazil-France",
-        "genre": "Fantasy, Romance"
+        "country": "India",
+        "genre": "Romance, Drama"
       },
       {
         "title": "The Naked Island",
@@ -4950,6 +5013,13 @@ const lists = [
         "year": 1961,
         "country": "Japan",
         "genre": "Drama, Family Drama"
+      },
+      {
+        "title": "Il Posto",
+        "director": "Ermanno Olmi",
+        "year": 1961,
+        "country": "Italy",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "Carnival of Souls",
@@ -4977,6 +5047,13 @@ const lists = [
         "year": 1963,
         "country": "USA",
         "genre": "Drama, Americana"
+      },
+      {
+        "title": "Flaming Creatures",
+        "director": "Jack Smith",
+        "year": 1963,
+        "country": "USA",
+        "genre": "Avant-garde-Experimental, Horror"
       },
       {
         "title": "Dog Star Man",
@@ -5042,6 +5119,13 @@ const lists = [
         "genre": "Crime Thriller, Caper"
       },
       {
+        "title": "Seven Women",
+        "director": "John Ford",
+        "year": 1966,
+        "country": "USA",
+        "genre": "Drama, Period Film"
+      },
+      {
         "title": "Branded to Kill",
         "director": "Seijun Suzuki",
         "year": 1967,
@@ -5075,6 +5159,20 @@ const lists = [
         "year": 1969,
         "country": "Brazil",
         "genre": "Comedy, Satire"
+      },
+      {
+        "title": "Deep End",
+        "director": "Jerzy Skolimowski",
+        "year": 1970,
+        "country": "UK-West Germany",
+        "genre": "Drama, Coming-of-Age"
+      },
+      {
+        "title": "Dodes'ka-den",
+        "director": "Akira Kurosawa",
+        "year": 1970,
+        "country": "Japan",
+        "genre": "Ensemble Film, Urban Drama"
       },
       {
         "title": "The Hart of London",
@@ -5112,11 +5210,25 @@ const lists = [
         "genre": "Romantic Drama, Period Film"
       },
       {
+        "title": "Two English Girls",
+        "director": "François Truffaut",
+        "year": 1971,
+        "country": "France",
+        "genre": "Romantic Drama, Period Film"
+      },
+      {
         "title": "Pink Flamingos",
         "director": "John Waters",
         "year": 1972,
         "country": "USA",
         "genre": "Comedy, Trash Film"
+      },
+      {
+        "title": "The Last Detail",
+        "director": "Hal Ashby",
+        "year": 1973,
+        "country": "USA",
+        "genre": "Comedy Drama, Road Movie"
       },
       {
         "title": "Ludwig",
@@ -5154,6 +5266,20 @@ const lists = [
         "genre": "Drama"
       },
       {
+        "title": "We All Loved Each Other So Much",
+        "director": "Ettore Scola",
+        "year": 1974,
+        "country": "Italy",
+        "genre": "Comedy Drama, Romantic Drama"
+      },
+      {
+        "title": "Iracema - Uma Transa Amazônica",
+        "director": "Jorge Bodanzky & Orlando Senna",
+        "year": 1975,
+        "country": "Brazil-West Germany-France",
+        "genre": "Drama"
+      },
+      {
         "title": "Numéro deux",
         "director": "Jean-Luc Godard",
         "year": 1975,
@@ -5175,6 +5301,13 @@ const lists = [
         "genre": "Childhood Drama, Family Drama"
       },
       {
+        "title": "News from Home",
+        "director": "Chantal Akerman",
+        "year": 1976,
+        "country": "France-Belgium-West Germany",
+        "genre": "Avant-garde/Experimental, Urban Drama"
+      },
+      {
         "title": "3 Women",
         "director": "Robert Altman",
         "year": 1977,
@@ -5187,6 +5320,13 @@ const lists = [
         "year": 1977,
         "country": "West Germany-France-UK",
         "genre": "Avant-garde-Experimental, Essay Film"
+      },
+      {
+        "title": "New York, New York",
+        "director": "Martin Scorsese",
+        "year": 1977,
+        "country": "USA",
+        "genre": "Period Film, Musical Drama"
       },
       {
         "title": "National Lampoon's Animal House",
@@ -5308,11 +5448,25 @@ const lists = [
         "genre": "Action, Thriller"
       },
       {
+        "title": "Lessons of Darkness",
+        "director": "Werner Herzog",
+        "year": 1992,
+        "country": "France-UK-Germany",
+        "genre": "Social History, Documentary"
+      },
+      {
         "title": "Twin Peaks: Fire Walk with Me",
         "director": "David Lynch",
         "year": 1992,
         "country": "USA-France",
         "genre": "Mystery, Surrealist Film"
+      },
+      {
+        "title": "Blue",
+        "director": "Derek Jarman",
+        "year": 1993,
+        "country": "UK",
+        "genre": "Avant-garde/Experimental, Gay & Lesbian Film"
       },
       {
         "title": "The Last Bolshevik",
@@ -5355,6 +5509,13 @@ const lists = [
         "year": 1995,
         "country": "Australia",
         "genre": "Animal Picture, Children's Fantasy"
+      },
+      {
+        "title": "The Sweet Hereafter",
+        "director": "Atom Egoyan",
+        "year": 1997,
+        "country": "Canada",
+        "genre": "Drama, Ensemble Film"
       },
       {
         "title": "The Idiots",
@@ -5410,7 +5571,21 @@ const lists = [
         "director": "Andrey Zvyagintsev",
         "year": 2003,
         "country": "Russia"
-      }
+      },
+      {
+        "title": "The Intruder",
+        "director": "Claire Denis",
+        "year": 2004,
+        "country": "France-Korea",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "Sideways",
+        "director": "Alexander Payne",
+        "year": 2004,
+        "country": "USA",
+        "genre": "Comedy Drama, Buddy Film"
+      },
     ]
   }
 ]
