@@ -14,6 +14,7 @@ const lists = [
         "director": "F.W. Murnau",
         "year": 1922,
         "country": "Germany",
+        "genre": "Horror, Gothic Film",
         "rating": 8
       },
       {
@@ -28,6 +29,7 @@ const lists = [
         "director": "Buster Keaton",
         "year": 1924,
         "country": "USA",
+        "genre": "Comedy, Slapstick",
         "rating": 9
       },
       {
@@ -95,7 +97,8 @@ const lists = [
         "title": "The Lady Eve",
         "director": "Preston Sturges",
         "year": 1941,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Romantic Comedy, Sophisticated Comedy"
       },
       {
         "title": "The Palm Beach Story",
@@ -149,13 +152,15 @@ const lists = [
         "title": "Ikiru",
         "director": "Akira Kurosawa",
         "year": 1952,
-        "country": "Japan"
+        "country": "Japan",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "Madame de...",
         "director": "Max Ophüls",
         "year": 1953,
-        "country": "France-Italy"
+        "country": "France-Italy",
+        "genre": "Period Film, Romantic Drama"
       },
       {
         "title": "Pickup on South Street",
@@ -224,7 +229,8 @@ const lists = [
         "title": "Hiroshima mon amour",
         "director": "Alain Resnais",
         "year": 1959,
-        "country": "France-Japan"
+        "country": "France-Japan",
+        "genre": "Psychological Drama, Romantic Drama"
       },
       {
         "title": "Imitation of Life",
@@ -291,13 +297,15 @@ const lists = [
         "title": "L'Eclisse",
         "director": "Michelangelo Antonioni",
         "year": 1962,
-        "country": "Italy-France"
+        "country": "Italy-France",
+        "genre": "Psychological Drama, Urban Drama"
       },
       {
         "title": "Vivre sa vie",
         "director": "Jean-Luc Godard",
         "year": 1962,
-        "country": "France"
+        "country": "France",
+        "genre": "Psychological Drama, Urban Drama"
       },
       {
         "title": "Contempt",
@@ -352,7 +360,8 @@ const lists = [
         "title": "The Good, the Bad and the Ugly",
         "director": "Sergio Leone",
         "year": 1966,
-        "country": "Italy-Spain"
+        "country": "Italy-Spain",
+        "genre": "Spaghetti Western, Outlaw (Gunfighter) Film"
       },
       {
         "title": "Persona",
@@ -406,7 +415,8 @@ const lists = [
         "title": "Rosemary's Baby",
         "director": "Roman Polanski",
         "year": 1968,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Occult Horror, Psychological Thriller"
       },
       {
         "title": "My Night at Maud's",
@@ -459,7 +469,8 @@ const lists = [
         "title": "Aguirre: The Wrath of God",
         "director": "Werner Herzog",
         "year": 1972,
-        "country": "West Germany"
+        "country": "West Germany",
+        "genre": "Adventure Drama, Jungle Film"
       },
       {
         "title": "A Woman Under the Influence",
@@ -516,7 +527,8 @@ const lists = [
         "title": "The Passenger",
         "director": "Michelangelo Antonioni",
         "year": 1975,
-        "country": "Italy"
+        "country": "Italy",
+        "genre": "Road Movie, Psychological Drama"
       },
       {
         "title": "Salò, or the 120 Days of Sodom",
@@ -557,7 +569,8 @@ const lists = [
         "title": "Manhattan",
         "director": "Woody Allen",
         "year": 1979,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Urban Comedy, Romantic Comedy"
       },
       {
         "title": "The Marriage of Maria Braun",
@@ -605,7 +618,8 @@ const lists = [
         "title": "Sans soleil",
         "director": "Chris Marker",
         "year": 1983,
-        "country": "France"
+        "country": "France",
+        "genre": "Avant-garde-Experimental, Documentary"
       },
       {
         "title": "Videodrome",
@@ -729,7 +743,8 @@ const lists = [
         "title": "Yi yi",
         "director": "Edward Yang",
         "year": 2000,
-        "country": "Taiwan-Japan"
+        "country": "Taiwan-Japan",
+        "genre": "Ensemble Film, Family Drama"
       },
       {
         "title": "A.I. Artificial Intelligence",
@@ -911,13 +926,15 @@ const lists = [
         "title": "Letter from an Unknown Woman",
         "director": "Max Ophüls",
         "year": 1948,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Melodrama, Romantic Drama"
       },
       {
         "title": "All About Eve",
         "director": "Joseph L. Mankiewicz",
         "year": 1950,
         "country": "USA",
+        "genre": "Satire, Showbiz Drama",
         "rating": 10
       },
       {
@@ -925,6 +942,7 @@ const lists = [
         "director": "Luis Buñuel",
         "year": 1950,
         "country": "Mexico",
+        "genre": "Juvenile Delinquency Film, Urban Drama",
         "rating": 10
       },
       {
@@ -1448,13 +1466,15 @@ const lists = [
         "director": "Luis Buñuel",
         "year": 1928,
         "country": "France",
+        "genre": "Avant-garde-Experimental, Surrealist Film",
         "rating": 9
       },
       {
         "title": "Trouble in Paradise",
         "director": "Ernst Lubitsch",
         "year": 1932,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Sophisticated Comedy, Romantic Comedy"
       },
       {
         "title": "It Happened One Night",
@@ -1496,19 +1516,22 @@ const lists = [
         "title": "Bringing Up Baby",
         "director": "Howard Hawks",
         "year": 1938,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Screwball Comedy, Romantic Comedy"
       },
       {
         "title": "Gone with the Wind",
         "director": "Victor Fleming",
         "year": 1939,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Romantic Epic, Historical Epic"
       },
       {
         "title": "His Girl Friday",
         "director": "Howard Hawks",
         "year": 1940,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Screwball Comedy, Romantic Comedy"
       },
       {
         "title": "Pinocchio",
@@ -1552,6 +1575,7 @@ const lists = [
         "director": "David Lean",
         "year": 1945,
         "country": "UK",
+        "genre": "Drama, Romance"
       },
       {
         "title": "Les Dames du Bois de Boulogne",
@@ -1580,6 +1604,7 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1946,
         "country": "USA",
+        "genre": "Thriller, Romantic Mystery",
         "rating": 9
       },
       {
@@ -1831,6 +1856,7 @@ const lists = [
         "director": "Chris Marker",
         "year": 1962,
         "country": "France",
+        "genre": "Science Fiction, Avant-garde-Experimental",
         "rating": 9
       },
       {
@@ -1922,6 +1948,7 @@ const lists = [
         "director": "Victor Erice",
         "year": 1973,
         "country": "Spain",
+        "genre": "Drama, Childhood Drama",
         "rating": 9
       },
       {
@@ -1976,6 +2003,7 @@ const lists = [
         "director": "Rainer Werner Fassbinder",
         "year": 1974,
         "country": "West Germany",
+        "genre": "Melodrama, Psychological Drama",
         "rating": 9
       },
       {
@@ -2022,6 +2050,7 @@ const lists = [
         "director": "Ridley Scott",
         "year": 1979,
         "country": "USA",
+        "genre": "Horror, Science Fiction",
         "rating": 9
       },
       {
@@ -2068,6 +2097,7 @@ const lists = [
         "director": "Steven Spielberg",
         "year": 1982,
         "country": "USA",
+        "genre": "Science Fiction, Children's Fantasy",
         "rating": 9
       },
       {
@@ -2183,6 +2213,7 @@ const lists = [
         "director": "Spike Lee",
         "year": 1989,
         "country": "USA",
+        "genre": "Urban Drama, Ensemble Film",
         "rating": 9
       },
       {
@@ -2198,6 +2229,7 @@ const lists = [
         "director": "Edward Yang",
         "year": 1991,
         "country": "Taiwan",
+        "genre": "Drama, Coming-of-Age",
         "rating": 9
       },
       {
@@ -2481,7 +2513,8 @@ const lists = [
         "title": "Duck Soup",
         "director": "Leo McCarey",
         "year": 1933,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Anarchic Comedy, Farce"
       },
       {
         "title": "L'Atalante",
@@ -2532,6 +2565,7 @@ const lists = [
         "director": "Victor Fleming",
         "year": 1939,
         "country": "USA",
+        "genre": "Children's/Family, Musical Fantasy",
         "rating": 8
       },
       {
@@ -2939,6 +2973,7 @@ const lists = [
         "director": "Ingmar Bergman",
         "year": 1972,
         "country": "Sweden",
+        "genre": "Drama, Family Drama",
         "rating": 8
       },
       {
@@ -2961,6 +2996,7 @@ const lists = [
         "director": "Terrence Malick",
         "year": 1973,
         "country": "USA",
+        "genre": "Crime Drama, Americana",
         "rating": 8
       },
       {
@@ -2992,6 +3028,7 @@ const lists = [
         "director": "George Lucas",
         "year": 1977,
         "country": "USA",
+        "genre": "Science Fiction, Space Adventure",
         "rating": 8
       },
       {
@@ -3312,6 +3349,7 @@ const lists = [
         "director": "Luis Buñuel",
         "year": 1930,
         "country": "France",
+        "genre": "Avant-garde/Experimental, Surrealist Film",
         "rating": 7   
       },
       {
@@ -3327,6 +3365,13 @@ const lists = [
         "year": 1933,
         "country": "USA",
         "genre": "Romance, Sophisticated Comedy"
+      },
+      {
+        "title": "Outskirts",
+        "director": "Boris Barnet",
+        "year": 1933,
+        "country": "USSR",
+        "genre": "War Drama, Period Film"
       },
       {
         "title": "The Testament of Dr. Mabuse",
@@ -3415,6 +3460,7 @@ const lists = [
         "director": "Roberto Rossellini",
         "year": 1945,
         "country": "Italy",
+        "genre": "War Drama, Resistance Film",
         "image": "romeopencity",
         "rating": 7
       },
@@ -3542,6 +3588,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "The Ladies Man",
+        "director": "Jerry Lewis",
+        "year": 1961,
+        "country": "USA",
+        "genre": "Comedy, Slapstick"
+      },
+      {
         "title": "Splendor in the Grass",
         "director": "Elia Kazan",
         "year": 1961,
@@ -3589,6 +3642,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "O Bandido da Luz Vermelha",
+        "director": "Rogério Sganzerla",
+        "year": 1968,
+        "country": "Brazil",
+        "genre": "Biopic"
+      },
+      {
         "title": "Fat City",
         "director": "John Huston",
         "year": 1972,
@@ -3609,6 +3669,7 @@ const lists = [
         "director": "Nicolas Roeg",
         "year": 1973,
         "country": "UK",
+        "genre": "Psychological Thriller, Supernatural Thriller",
         "rating": 7
       },
       {
@@ -3647,6 +3708,7 @@ const lists = [
         "director": "Milos Forman",
         "year": 1975,
         "country": "USA",
+        "genre": "Comedy Drama, Psychological Drama",
         "rating": 7
       },
       {
@@ -3656,6 +3718,13 @@ const lists = [
         "country": "Australia",
         "genre": "Mystery, Period Film",
         "rating": 7
+      },
+      {
+        "title": "The Seasons",
+        "director": "Artavazd Peleshian",
+        "year": 1975,
+        "country": "USSR",
+        "genre": "Documentary"
       },
       {
         "title": "In the Realm of the Senses",
@@ -3720,10 +3789,19 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "The Breakfast Club",
+        "director": "John Hughes",
+        "year": 1985,
+        "country": "USA",
+        "genre": "Comedy Drama, Teen Movie",
+        "rating": 7
+      },
+      {
         "title": "Come and See",
         "director": "Elem Klimov",
         "year": 1985,
         "country": "USSR",
+        "genre": "War Drama, Coming-of-Age",
         "rating": 7
       },
       {
@@ -3735,20 +3813,19 @@ const lists = [
         "rating": 7
       },
       {
-        "title": "The Breakfast Club",
-        "director": "John Hughes",
-        "year": 1985,
-        "country": "USA",
-        "genre": "Comedy Drama, Teen Movie",
-        "rating": 7
-      },
-      {
         "title": "Down by Law",
         "director": "Jim Jarmusch",
         "year": 1986,
         "country": "USA",
         "genre": "Comedy, Buddy Film",
         "rating": 7
+      },
+      {
+        "title": "Near Dark",
+        "director": "Kathryn Bigelow",
+        "year": 1987,
+        "country": "USA",
+        "genre": "Horror, Hybrid Western"
       },
       {
         "title": "Wings of Desire",
@@ -3773,6 +3850,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Abraham's Valley",
+        "director": "Manoel de Oliveira",
+        "year": 1993,
+        "country": "Portugal-France-Switzerland",
+        "genre": "Psychological Drama"
+      },
+      {
         "title": "Léon",
         "director": "Luc Besson",
         "year": 1994,
@@ -3789,6 +3873,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "Vive L'Amour",
+        "director": "Tsai Ming-liang",
+        "year": 1994,
+        "country": "Taiwan",
+        "genre": "Drama, Urban Drama"
+      },
+      {
         "title": "Dead Man",
         "director": "Jim Jarmusch",
         "year": 1995,
@@ -3802,6 +3893,14 @@ const lists = [
         "year": 1995,
         "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
         "rating": 7
+      },
+      {
+        "title": "The River",
+        "director": "Tsai Ming-liang",
+        "year": 1997,
+        "country": "Taiwan",
+        "genre": "Drama, Family Drama",
+        "image": "river1997.jpg"
       },
       {
         "title": "All About My Mother",
@@ -3875,6 +3974,13 @@ const lists = [
         "rating": 7
       },
       {
+        "title": "A Prophet",
+        "director": "Jacques Audiard",
+        "year": 2009,
+        "country": "France-Italy",
+        "genre": "Drama, Prison Film"
+      },
+      {
         "title": "Avatar",
         "director": "James Cameron",
         "year": 2009,
@@ -3915,6 +4021,7 @@ const lists = [
         "director": "D.W. Griffith",
         "year": 1916,
         "country": "USA",
+        "genre": "Historical Epic, Melodrama",
         "rating": 6
       },
       {
@@ -3961,6 +4068,7 @@ const lists = [
         "director": "John Ford",
         "year": 1939,
         "country": "USA",
+        "genre": "Western, Traditional Western",
         "rating": 4
       },
       {
@@ -4040,6 +4148,7 @@ const lists = [
         "director": "John Ford",
         "year": 1946,
         "country": "USA",
+        "genre": "Western, Traditional Western",
         "rating": 6
       },
       {
@@ -4706,6 +4815,13 @@ const lists = [
         "genre": "Fantasy, Family Drama"
       },
       {
+        "title": "Foolish Wives",
+        "director": "Erich von Stroheim",
+        "year": 1922,
+        "country": "USA",
+        "genre": "Drama"
+      },
+      {
         "title": "Häxan",
         "director": "Benjamin Christensen",
         "year": 1922,
@@ -4832,6 +4948,13 @@ const lists = [
         "genre": "Crime Drama, Romantic Drama"
       },
       {
+        "title": "The Thief of Bagdad",
+        "director": "Michael Powell, Ludwig Berger & Tim Whelan",
+        "year": 1940,
+        "country": "UK",
+        "genre": "Fantasy, Costume Adventure"
+      },
+      {
         "title": "Hellzapoppin'",
         "director": "H.C. Potter",
         "year": 1941,
@@ -4938,6 +5061,13 @@ const lists = [
         "genre": "Melodrama, Urban Drama"
       },
       {
+        "title": "Il Grido",
+        "director": "Michelangelo Antonioni",
+        "year": 1957,
+        "country": "Italy",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
         "title": "The Incredible Shrinking Man",
         "director": "Jack Arnold",
         "year": 1957,
@@ -4999,6 +5129,13 @@ const lists = [
         "year": 1960,
         "country": "Japan",
         "genre": "Rural Drama"
+      },
+      {
+        "title": "Saturday Night and Sunday Morning",
+        "director": "Karel Reisz",
+        "year": 1960,
+        "country": "UK",
+        "genre": "Drama, Urban Drama"
       },
       {
         "title": "Strangers When We Meet",
@@ -5119,6 +5256,13 @@ const lists = [
         "genre": "Crime Thriller, Caper"
       },
       {
+        "title": "The Hawks and the Sparrows",
+        "director": "Pier Paolo Pasolini",
+        "year": 1966,
+        "country": "Italy",
+        "genre": "Comedy, Satire"
+      },
+      {
         "title": "Seven Women",
         "director": "John Ford",
         "year": 1966,
@@ -5131,6 +5275,27 @@ const lists = [
         "year": 1967,
         "country": "Japan",
         "genre": "Gangster Film, Crime Thriller"
+      },
+      {
+        "title": "The Firemen's Ball",
+        "director": "Milos Forman",
+        "year": 1967,
+        "country": "Czechoslovakia",
+        "genre": "Comedy, Satire"
+      },
+      {
+        "title": "Portrait of Jason",
+        "director": "Shirley Clarke",
+        "year": 1967,
+        "country": "USA",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
+        "title": "The Chronicle of Anna Magdalena Bach",
+        "director": "Jean-Marie Straub",
+        "year": 1968,
+        "country": "West Germany-Italy",
+        "genre": "Drama, Biopic"
       },
       {
         "title": "L'Amour fou",
@@ -5159,6 +5324,13 @@ const lists = [
         "year": 1969,
         "country": "Brazil",
         "genre": "Comedy, Satire"
+      },
+      {
+        "title": "Z",
+        "director": "Constantin Costa-Gavras",
+        "year": 1969,
+        "country": "France",
+        "genre": "Thriller, Political Thriller"
       },
       {
         "title": "Deep End",
@@ -5252,6 +5424,13 @@ const lists = [
         "genre": "Adventure, Romantic Fantasy"
       },
       {
+        "title": "Edvard Munch",
+        "director": "Peter Watkins",
+        "year": 1974,
+        "country": "Sweden-Norway",
+        "genre": "Drama, Biopic"
+      },
+      {
         "title": "Female Trouble",
         "director": "John Waters",
         "year": 1974,
@@ -5336,6 +5515,13 @@ const lists = [
         "genre": "Gross-Out Comedy, Anarchic Comedy"
       },
       {
+        "title": "The Tin Drum",
+        "director": "Volker Schlöndorff",
+        "year": 1979,
+        "country": "West Germany-France-Poland-Yugoslavia",
+        "genre": "Political Drama, Childhood Drama"
+      },
+      {
         "title": "Vengeance is Mine",
         "director": "Shohei Imamura",
         "year": 1979,
@@ -5371,6 +5557,13 @@ const lists = [
         "genre": "Comedy Drama, Satire"
       },
       {
+        "title": "Sauve qui peut (la vie)",
+        "director": "Jean-Luc Godard",
+        "year": 1980,
+        "country": "France-Switzerland",
+        "genre": "Psychological Drama, Urban Drama"
+      },
+      {
         "title": "Yol",
         "director": "Serif Gören & Yilmaz Güney",
         "year": 1982,
@@ -5392,6 +5585,13 @@ const lists = [
         "genre": "Documentary, Political"
       },
       {
+        "title": "A Short Film About Killing",
+        "director": "Krzysztof Kieslowski",
+        "year": 1987,
+        "country": "Poland",
+        "genre": "Drama, Crime"
+      },
+      {
         "title": "Broadcast News",
         "director": "James L. Brooks",
         "year": 1987,
@@ -5404,6 +5604,13 @@ const lists = [
         "year": 1987,
         "country": "Taiwan",
         "genre": "Drama, Coming-of-Age"
+      },
+      {
+        "title": "Red Sorghum",
+        "director": "Zhang Yimou",
+        "year": 1987,
+        "country": "China",
+        "genre": "Rural Drama, Marriage Drama"
       },
       {
         "title": "A Tale of the Wind",
@@ -5455,6 +5662,13 @@ const lists = [
         "genre": "Social History, Documentary"
       },
       {
+        "title": "The Long Day Closes",
+        "director": "Terence Davies",
+        "year": 1992,
+        "country": "UK",
+        "genre": "Coming-of-Age, Family Drama"
+      },
+      {
         "title": "Twin Peaks: Fire Walk with Me",
         "director": "David Lynch",
         "year": 1992,
@@ -5467,6 +5681,13 @@ const lists = [
         "year": 1993,
         "country": "UK",
         "genre": "Avant-garde/Experimental, Gay & Lesbian Film"
+      },
+      {
+        "title": "D'est",
+        "director": "Chantal Akerman",
+        "year": 1993,
+        "country": "Belgium-France-Portugal",
+        "genre": "Culture & Society, Documentary"
       },
       {
         "title": "The Last Bolshevik",
