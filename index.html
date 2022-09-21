@@ -264,7 +264,6 @@
   <script src="./src/components/Calendar.js"></script>
   <script src="./src/components/Chart.js"></script>
   <script src="./src/components/DatePicker.js"></script>
-  <script src="./src/components/DataTable.js"></script>
   <script src="./src/components/Git.js"></script>
   <script src="./src/components/Leaflet.js"></script>
   <script src="./src/components/Libraries.js"></script>
@@ -304,7 +303,7 @@
           <v-row justify="center">
             <v-col cols="12" lg="4">
               <v-card>
-                <v-card-title class="grey lighten-5">
+                <v-card-title>
                   Login
                 </v-card-title>
                 <v-divider></v-divider>
@@ -342,7 +341,6 @@
       
       { path: '/calendar', component: Calendar },
       { path: '/carousel', component: Carousel },
-      { path: '/data_table', component: DataTable },
       { path: '/date_picker', component: DatePicker },
       { path: '/tree_view', component: TreeView },
       
@@ -382,7 +380,15 @@
       el: '#app',
       store: store,
       vuetify: new Vuetify({
-        theme: { dark: true },
+        theme: {
+        	dark: true,
+        	themes: {
+            dark: {
+              primary: '#f87979',
+              secondary: '#f87979'
+            }
+          }
+        },
       }),
       router,
       data: () => ({
@@ -400,11 +406,6 @@
             title: 'Carousel'
           },
           */
-          {
-            route: '/data_table',
-            icon: 'mdi-table',
-            title: 'Data Table'
-          },
           {
             route: '/date_picker',
             icon: 'mdi-calendar',

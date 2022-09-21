@@ -84,17 +84,55 @@ const Chartjs = {
             </div>
           </v-card>
         </v-col>
+        <v-col cols="12" lg="12">
+          <v-data-table
+            :headers="headers"
+            :items="items"
+            class="elevation-1"
+          >
+          </v-data-table>
+        </v-col>
       </v-row>
     </v-container>
   `,
   data: () => ({
     films: null,
     directors: [],
-    countries: null
+    countries: null,
+    headers: [
+      {
+        text: 'Title',
+        value: 'title',
+        width: '20%'
+      },
+      {
+        text: 'Director',
+        value: 'director',
+        width: '20%'
+      },
+      {
+        text: 'Year',
+        value: 'year',
+        width: '20%'
+      },
+      {
+        text: 'Country',
+        value: 'country',
+        width: '20%'
+      },
+      {
+        text: 'Genre',
+        value: 'genre',
+        width: '20%'
+      }
+    ],
+    items: []
   }),
   mounted: function() {
     this.lists = lists
-    
+    for (var i = 0; i < lists.length; i++) {
+      this.items = this.items.concat(lists[i].items)
+    }
     this.createCharts()
   },
   methods: {

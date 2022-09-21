@@ -22,6 +22,7 @@ const lists = [
         "director": "F.W. Murnau",
         "year": 1924,
         "country": "Germany",
+        "genre": "Drama, Psychological Drama",
         "rating": 10
       },
       {
@@ -236,7 +237,8 @@ const lists = [
         "title": "Imitation of Life",
         "director": "Douglas Sirk",
         "year": 1959,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Melodrama, Family Drama"
       },
       {
         "title": "Breathless",
@@ -284,6 +286,7 @@ const lists = [
         "director": "Luis Buñuel",
         "year": 1962,
         "country": "Mexico",
+        "genre": "Comedy Drama, Satire",
         "rating": 9
       },
       {
@@ -387,7 +390,8 @@ const lists = [
         "title": "Mouchette",
         "director": "Robert Bresson",
         "year": 1967,
-        "country": "France"
+        "country": "France",
+        "genre": "Drama, Childhood Drama"
       },
       {
         "title": "Playtime",
@@ -483,7 +487,8 @@ const lists = [
         "title": "The Conversation",
         "director": "Francis Ford Coppola",
         "year": 1974,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Thriller, Paranoid Thriller"
       },
       {
         "title": "Lancelot du Lac",
@@ -913,6 +918,7 @@ const lists = [
         "director": "Billy Wilder",
         "year": 1944,
         "country": "USA",
+        "genre": "Film Noir, Crime Thriller",
         "rating": 10
       },
       {
@@ -972,7 +978,8 @@ const lists = [
         "title": "Umberto D.",
         "director": "Vittorio De Sica",
         "year": 1952,
-        "country": "Italy"
+        "country": "Italy",
+        "genre": "Urban Drama, Melodrama"
       },
       {
         "title": "I Vitelloni",
@@ -1159,6 +1166,7 @@ const lists = [
         "director": "Ken Loach",
         "year": 1969,
         "country": "UK",
+        "genre": "Coming-of-Age, Family Drama",
         "rating": 10
       },
       {
@@ -1181,7 +1189,8 @@ const lists = [
         "title": "Solaris",
         "director": "Andrei Tarkovsky",
         "year": 1972,
-        "country": "USSR"
+        "country": "USSR",
+        "genre": "Science Fiction, Psychological Sci-Fi"
       },
       {
         "title": "F for Fake",
@@ -1334,6 +1343,7 @@ const lists = [
         "director": "Joel Coen & Ethan Coen",
         "year": 1996,
         "country": "USA",
+        "genre": "Crime, Black Comedy",
         "rating": 10
       },
       {
@@ -1372,6 +1382,7 @@ const lists = [
         "director": "Hayao Miyazaki",
         "year": 2001,
         "country": "Japan",
+        "genre": "Fantasy Adventure, Anime",
         "rating": 10
       },
       {
@@ -1409,7 +1420,8 @@ const lists = [
         "title": "Eternal Sunshine of the Spotless Mind",
         "director": "Michel Gondry",
         "year": 2004,
-        "country": "USA"
+        "country": "USA",
+        "genre": "Comedy Drama, Romantic Fantasy"
       },
       {
         "title": "Pan's Labyrinth",
@@ -1741,6 +1753,7 @@ const lists = [
         "director": "Federico Fellini",
         "year": 1957,
         "country": "Italy-France",
+        "genre": "Melodrama, Tragi-comedy",
         "rating": 9
       },
       {
@@ -2043,6 +2056,7 @@ const lists = [
         "director": "Steven Spielberg",
         "year": 1977,
         "country": "USA",
+        "genre": "Science Fiction, Adventure Drama",
         "rating": 9
       },
       {
@@ -2298,6 +2312,7 @@ const lists = [
         "director": "Wong Kar-wai",
         "year": 1994,
         "country": "Hong Kong",
+        "genre": "Urban Drama, Romantic Drama",
         "rating": 9
       },
       {
@@ -2417,6 +2432,7 @@ const lists = [
         "director": "Paul Thomas Anderson",
         "year": 2007,
         "country": "USA",
+        "genre": "Family Drama, Period Film",
         "rating": 9
       },
       {
@@ -2639,6 +2655,7 @@ const lists = [
         "director": "Jacques Tourneur",
         "year": 1947,
         "country": "USA",
+        "genre": "Crime, Film Noir",
         "rating": 8
       },
       {
@@ -2662,6 +2679,7 @@ const lists = [
         "director": "Michael Powell & Emeric Pressburger",
         "year": 1948,
         "country": "UK",
+        "genre": "Romantic Drama, Musical Drama",
         "rating": 8
       },
       {
@@ -2708,6 +2726,7 @@ const lists = [
         "director": "Jean Renoir",
         "year": 1951,
         "country": "France-India-USA",
+        "genre": "Drama, Romantic Drama",
         "rating": 8
       },
       {
@@ -2747,6 +2766,7 @@ const lists = [
         "director": "Elia Kazan",
         "year": 1954,
         "country": "USA",
+        "genre": "Message Movie, Urban Drama",
         "rating": 8
       },
       {
@@ -2786,6 +2806,7 @@ const lists = [
         "director": "Alain Resnais",
         "year": 1955,
         "country": "France",
+        "genre": "Military & War, Documentary",
         "rating": 8
       },
       {
@@ -2881,6 +2902,7 @@ const lists = [
         "director": "Alfred Hitchcock",
         "year": 1963,
         "country": "USA",
+        "genre": "Horror, Natural Horror",
         "rating": 8
       },
       {
@@ -2958,6 +2980,7 @@ const lists = [
         "director": "Luchino Visconti",
         "year": 1971,
         "country": "Italy",
+        "genre": "Drama, Period Film",
         "rating": 8
       },
       {
@@ -2989,6 +3012,7 @@ const lists = [
         "director": "Luis Buñuel",
         "year": 1972,
         "country": "France",
+        "genre": "Satire, Black Comedy",
         "rating": 8
       },
       {
@@ -3043,6 +3067,7 @@ const lists = [
         "director": "Terrence Malick",
         "year": 1978,
         "country": "USA",
+        "genre": "Rural Drama, Romantic Drama",
         "rating": 8
       },
       {
@@ -3066,6 +3091,7 @@ const lists = [
         "director": "Steven Spielberg",
         "year": 1981,
         "country": "USA",
+        "genre": "Adventure, Action",
         "rating": 8
       },
       {
@@ -3089,6 +3115,7 @@ const lists = [
         "director": "Terry Gilliam",
         "year": 1985,
         "country": "UK",
+        "genre": "Science Fiction, Satire",
         "rating": 8
       },
       {
@@ -3252,6 +3279,7 @@ const lists = [
         "director": "Terrence Malick",
         "year": 1998,
         "country": "USA",
+        "genre": "War Drama, Ensemble Film",
         "rating": 8
       },
       {
@@ -3421,6 +3449,7 @@ const lists = [
         "director": "Charles Chaplin",
         "year": 1940,
         "country": "USA",
+        "genre": "Comedy, Anti-War Film",
         "rating": 7
       },
       {
@@ -3476,6 +3505,7 @@ const lists = [
         "director": "Michael Powell & Emeric Pressburger",
         "year": 1947,
         "country": "UK",
+        "genre": "Melodrama, Religious Drama",
         "rating": 7
       },
       {
@@ -3585,6 +3615,7 @@ const lists = [
         "director": "Luchino Visconti",
         "year": 1960,
         "country": "Italy-France",
+        "genre": "Family Drama, Urban Drama",
         "rating": 7
       },
       {
@@ -3821,13 +3852,6 @@ const lists = [
         "rating": 7
       },
       {
-        "title": "Near Dark",
-        "director": "Kathryn Bigelow",
-        "year": 1987,
-        "country": "USA",
-        "genre": "Horror, Hybrid Western"
-      },
-      {
         "title": "Wings of Desire",
         "director": "Wim Wenders",
         "year": 1987,
@@ -4053,6 +4077,7 @@ const lists = [
         "director": "Merian C. Cooper & Ernest B. Schoedsack",
         "year": 1933,
         "country": "USA",
+        "genre": "Adventure, Monster Film",
         "rating": 6
       },
       {
@@ -4084,6 +4109,7 @@ const lists = [
         "director": "John Ford",
         "year": 1940,
         "country": "USA",
+        "genre": "Rural Drama, Americana",
         "rating": 6
       },
       {
@@ -4491,6 +4517,7 @@ const lists = [
         "director": "Tobe Hooper",
         "year": 1974,
         "country": "USA",
+        "genre": "Horror, Slasher Film",
         "rating": "?"
       },
       {
@@ -4544,6 +4571,7 @@ const lists = [
         "director": "Michael Cimino",
         "year": 1978,
         "country": "USA",
+        "genre": "Ensemble Film, War Drama",
         "rating": 5
       },
       {
@@ -5005,6 +5033,13 @@ const lists = [
         "genre": "Science Fiction, Monster Film"
       },
       {
+        "title": "The Golden Coach",
+        "director": "Jean Renoir",
+        "year": 1952,
+        "country": "Italy-France",
+        "genre": "Costume Adventure, Romantic Adventure"
+      },
+      {
         "title": "The Lusty Men",
         "director": "Nicholas Ray",
         "year": 1952,
@@ -5040,11 +5075,11 @@ const lists = [
         "genre": "Culture & Society, Documentary"
       },
       {
-        "title": "Le Bonheur",
-        "director": "Agnès Varda",
-        "year": 1965,
-        "country": "France",
-        "genre": "Romance, Marriage Drama"
+        "title": "Moonfleet",
+        "director": "Fritz Lang",
+        "year": 1955,
+        "country": "USA",
+        "genre": "Costume Adventure, Swashbuckler"
       },
       {
         "title": "The Red Balloon",
@@ -5082,6 +5117,13 @@ const lists = [
         "genre": "Epic, Melodrama"
       },
       {
+        "title": "Big Deal on Madonna Street",
+        "director": "Mario Monicelli",
+        "year": 1958,
+        "country": "Italy",
+        "genre": "Crime Comedy, Caper"
+      },
+      {
         "title": "Dracula",
         "director": "Terence Fisher",
         "year": 1958,
@@ -5101,6 +5143,13 @@ const lists = [
         "year": 1958,
         "country": "France",
         "genre": "Culture & Society, Anthropology"
+      },
+      {
+        "title": "The Tiger of Eschnapur",
+        "director": "Fritz Lang",
+        "year": 1958,
+        "country": "West Germany-France-Italy",
+        "genre": "Adventure Drama, Romantic Drama"
       },
       {
         "title": "Black Orpheus",
@@ -5179,6 +5228,13 @@ const lists = [
         "genre": "Western, Revisionist Western"
       },
       {
+        "title": "The Trial",
+        "director": "Orson Welles",
+        "year": 1962,
+        "country": "France-West Germany-Italy",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
         "title": "America, America",
         "director": "Elia Kazan",
         "year": 1963,
@@ -5219,6 +5275,13 @@ const lists = [
         "year": 1965,
         "country": "Italy",
         "genre": "Comedy Drama, Marriage Drama"
+      },
+      {
+        "title": "Le Bonheur",
+        "director": "Agnès Varda",
+        "year": 1965,
+        "country": "France",
+        "genre": "Romance, Marriage Drama"
       },
       {
         "title": "Red Beard",
@@ -5269,6 +5332,7 @@ const lists = [
         "country": "USA",
         "genre": "Drama, Period Film"
       },
+
       {
         "title": "Branded to Kill",
         "director": "Seijun Suzuki",
@@ -5290,6 +5354,14 @@ const lists = [
         "country": "USA",
         "genre": "Culture & Society, Documentary"
       },
+      {
+        "title": "Titicut Follies",
+        "director": "Frederick Wiseman",
+        "year": 1967,
+        "country": "USA",
+        "genre": "Social Issues, Documentary"
+      },
+
       {
         "title": "The Chronicle of Anna Magdalena Bach",
         "director": "Jean-Marie Straub",
@@ -5361,6 +5433,13 @@ const lists = [
         "genre": "Thriller, Psychological Thriller"
       },
       {
+        "title": "The Wild Child",
+        "director": "François Truffaut",
+        "year": 1970,
+        "country": "France",
+        "genre": "Period Film, Childhood Drama"
+      },
+      {
         "title": "Fata Morgana",
         "director": "Werner Herzog",
         "year": 1971,
@@ -5387,6 +5466,20 @@ const lists = [
         "year": 1971,
         "country": "France",
         "genre": "Romantic Drama, Period Film"
+      },
+      {
+        "title": "Walkabout",
+        "director": "Nicolas Roeg",
+        "year": 1971,
+        "country": "Australia",
+        "genre": "Adventure, Drama"
+      },
+      {
+        "title": "W.R.: Mysteries of the Organism",
+        "director": "Dusan Makavejev",
+        "year": 1971,
+        "country": "Yugoslavia",
+        "genre": "Avant-garde-Experimental, Sex Comedy"
       },
       {
         "title": "Pink Flamingos",
@@ -5471,6 +5564,13 @@ const lists = [
         "year": 1975,
         "country": "India",
         "genre": "Action, Adventure Drama"
+      },
+      {
+        "title": "Xala",
+        "director": "Ousmane Sembene",
+        "year": 1975,
+        "country": "Senegal",
+        "genre": "Comedy, Satire"
       },
       {
         "title": "Cría cuervos",
@@ -5564,6 +5664,20 @@ const lists = [
         "genre": "Psychological Drama, Urban Drama"
       },
       {
+        "title": "The Woman Next Door",
+        "director": "François Truffaut",
+        "year": 1981,
+        "country": "France",
+        "genre": "Romantic Drama, Psychological Drama"
+      },
+      {
+        "title": "Passion",
+        "director": "Jean-Luc Godard",
+        "year": 1982,
+        "country": "France-Switzerland",
+        "genre": "Psychological Drama, Showbiz Drama"
+      },
+      {
         "title": "Yol",
         "director": "Serif Gören & Yilmaz Güney",
         "year": 1982,
@@ -5583,6 +5697,20 @@ const lists = [
         "year": 1983,
         "country": "Israel",
         "genre": "Documentary, Political"
+      },
+      {
+        "title": "Zelig",
+        "director": "Woody Allen",
+        "year": 1983,
+        "country": "USA",
+        "genre": "Mockumentary, Fantasy Comedy"
+      },
+      {
+        "title": "My Life as a Dog",
+        "director": "Lasse Hallström",
+        "year": 1985,
+        "country": "Sweden",
+        "genre": "Coming-of-Age, Childhood Drama"
       },
       {
         "title": "A Short Film About Killing",
@@ -5606,11 +5734,32 @@ const lists = [
         "genre": "Drama, Coming-of-Age"
       },
       {
+        "title": "The Emperor's Naked Army Marches On",
+        "director": "Kazuo Hara",
+        "year": 1987,
+        "country": "Japan",
+        "genre": "History, Documentary"
+      },
+      {
+        "title": "Near Dark",
+        "director": "Kathryn Bigelow",
+        "year": 1987,
+        "country": "USA",
+        "genre": "Horror, Hybrid Western"
+      },
+      {
         "title": "Red Sorghum",
         "director": "Zhang Yimou",
         "year": 1987,
         "country": "China",
         "genre": "Rural Drama, Marriage Drama"
+      },
+      {
+        "title": "Yeelen",
+        "director": "Souleymane Cissé",
+        "year": 1987,
+        "country": "Mali-Burkina Faso-France-West Germany-Japan",
+        "genre": "Coming-of-Age, Adventure Drama"
       },
       {
         "title": "A Tale of the Wind",
@@ -5646,6 +5795,20 @@ const lists = [
         "year": 1990,
         "country": "Finland-Sweden",
         "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "Nouvelle vague",
+        "director": "Jean-Luc Godard",
+        "year": 1990,
+        "country": "France-Switzerland",
+        "genre": "Avant-garde-Experimental, Fantasy"
+      },
+      {
+        "title": "JFK",
+        "director": "Oliver Stone",
+        "year": 1991,
+        "country": "USA",
+        "genre": "Political Thriller, Ensemble Film"
       },
       {
         "title": "Point Break",
@@ -5732,18 +5895,48 @@ const lists = [
         "genre": "Animal Picture, Children's Fantasy"
       },
       {
+        "title": "Crash",
+        "director": "David Cronenberg",
+        "year": 1996,
+        "country": "Canada",
+        "genre": "Erotic Drama, Psychological Drama"
+      },
+
+      {
+        "title": "Gummo",
+        "director": "Harmony Korine",
+        "year": 1997,
+        "country": "USA",
+        "genre": "Avant-garde-Experimental, Teen Movie"
+      },
+      {
+        "title": "Mother and Son",
+        "director": "Aleksandr Sokurov",
+        "year": 1997,
+        "country": "Russia-Germany",
+        "genre": "Family Drama, Psychological Drama"
+      },
+      {
         "title": "The Sweet Hereafter",
         "director": "Atom Egoyan",
         "year": 1997,
         "country": "Canada",
         "genre": "Drama, Ensemble Film"
       },
+
       {
         "title": "The Idiots",
         "director": "Lars von Trier",
         "year": 1998,
         "country": "Denmark-Spain-Sweden-France-Netherlands-Italy",
         "genre": "Comedy Drama, Satire"
+      },
+      {
+        "title": "Audition",
+        "director": "Takashi Miike",
+        "year": 1999,
+        "country": "Japan-South Korea",
+        "genre": "Thriller, Sadistic Horror"
       },
       {
         "title": "L'Humanité",
@@ -5781,6 +5974,13 @@ const lists = [
         "genre": "Drama"
       },
       {
+        "title": "Irréversible",
+        "director": "Gaspar Noé",
+        "year": 2002,
+        "country": "France",
+        "genre": "Crime, Drama"
+      },
+      {
         "title": "Ten",
         "director": "Abbas Kiarostami",
         "year": 2002,
@@ -5806,6 +6006,20 @@ const lists = [
         "year": 2004,
         "country": "USA",
         "genre": "Comedy Drama, Buddy Film"
+      },
+      {
+        "title": "The New World",
+        "director": "Terrence Malick",
+        "year": 2005,
+        "country": "USA",
+        "genre": "Historical Film, Romantic Drama"
+      },
+      {
+        "title": "The Headless Woman",
+        "director": "Lucrecia Martel",
+        "year": 2008,
+        "country": "Argentina-Spain-France-Italy",
+        "genre": "Thriller, Psychological Thriller"
       },
     ]
   }
