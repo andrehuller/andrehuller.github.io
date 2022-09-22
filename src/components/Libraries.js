@@ -50,7 +50,6 @@ const Libraries = {
                     ></v-img>
                     <!-- style="border-top-left-radius: 4px; border-top-right-radius: 4px;" -->
                   </a>
-                  <v-divider></v-divider>
                   <v-card-title>
                     {{ library.title }}
                     <v-spacer></v-spacer>

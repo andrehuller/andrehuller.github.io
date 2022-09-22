@@ -206,6 +206,13 @@ const lists = [
         "genre": "Drama, Prison Film"
       },
       {
+        "title": "Aparajito",
+        "director": "Satyajit Ray",
+        "year": 1956,
+        "country": "India",
+        "genre": "Drama, Coming-of-Age"
+      },
+      {
         "title": "Written on the Wind",
         "director": "Douglas Sirk",
         "year": 1956,
@@ -421,6 +428,13 @@ const lists = [
         "year": 1968,
         "country": "USA",
         "genre": "Occult Horror, Psychological Thriller"
+      },
+      {
+        "title": "Antonio das Mortes",
+        "director": "Glauber Rocha",
+        "year": 1969,
+        "country": "Brazil",
+        "genre": "Adventure Drama, Political Drama"
       },
       {
         "title": "My Night at Maud's",
@@ -4843,6 +4857,13 @@ const lists = [
         "genre": "Fantasy, Family Drama"
       },
       {
+        "title": "Dr. Mabuse, the Gambler",
+        "director": "Fritz Lang",
+        "year": 1922,
+        "country": "Germany",
+        "genre": "Master Criminal Film, Police Detective Film"
+      },
+      {
         "title": "Foolish Wives",
         "director": "Erich von Stroheim",
         "year": 1922,
@@ -4885,6 +4906,13 @@ const lists = [
         "genre": "Romance, Melodrama"
       },
       {
+        "title": "The Wedding March",
+        "director": "Erich von Stroheim",
+        "year": 1928,
+        "country": "USA",
+        "genre": "Drama, Melodrama"
+      },
+      {
         "title": "Morocco",
         "director": "Josef von Sternberg",
         "year": 1930,
@@ -4913,6 +4941,13 @@ const lists = [
         "genre": "Police Detective Film, Crime Drama"
       },
       {
+        "title": "Love Me Tonight",
+        "director": "Rouben Mamoulian",
+        "year": 1932,
+        "country": "USA",
+        "genre": "Comedy, Musical Romance"
+      },
+      {
         "title": "42nd Street",
         "director": "Lloyd Bacon",
         "year": 1933,
@@ -4925,6 +4960,13 @@ const lists = [
         "year": 1934,
         "country": "USA",
         "genre": "Comedy, Screwball Comedy"
+      },
+      {
+        "title": "By the Bluest of Seas",
+        "director": "Boris Barnet",
+        "year": 1936,
+        "country": "USSR",
+        "genre": "Comedy, Romantic Comedy"
       },
       {
         "title": "Humanity and Paper Balloons",
@@ -5026,11 +5068,25 @@ const lists = [
         "genre": "Crime Drama, Film Noir"
       },
       {
+        "title": "Un Chant d'amour",
+        "director": "Jean Genet",
+        "year": 1950,
+        "country": "France",
+        "genre": "Avant-garde-Experimental, Surrealist Film"
+      },
+      {
         "title": "The Thing from Another World",
         "director": "Christian Nyby & Howard Hawks",
         "year": 1951,
         "country": "USA",
         "genre": "Science Fiction, Monster Film"
+      },
+      {
+        "title": "Europa '51",
+        "director": "Roberto Rossellini",
+        "year": 1952,
+        "country": "Italy",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "The Golden Coach",
@@ -5145,6 +5201,13 @@ const lists = [
         "genre": "Culture & Society, Anthropology"
       },
       {
+        "title": "Nazarín",
+        "director": "Luis Buñuel",
+        "year": 1958,
+        "country": "Mexico",
+        "genre": "Religious Drama, Satire"
+      },
+      {
         "title": "The Tiger of Eschnapur",
         "director": "Fritz Lang",
         "year": 1958,
@@ -5208,6 +5271,13 @@ const lists = [
         "genre": "Drama, Psychological Drama"
       },
       {
+        "title": "Plácido",
+        "director": "Luis García Berlanga",
+        "year": 1961,
+        "country": "Spain",
+        "genre": "Comedy"
+      },
+      {
         "title": "Carnival of Souls",
         "director": "Herk Harvey",
         "year": 1962,
@@ -5249,6 +5319,13 @@ const lists = [
         "genre": "Avant-garde-Experimental, Horror"
       },
       {
+        "title": "Scorpio Rising",
+        "director": "Kenneth Anger",
+        "year": 1963,
+        "country": "USA",
+        "genre": "Avant-garde-Experimental, Surrealist Film"
+      },
+      {
         "title": "Dog Star Man",
         "director": "Stan Brakhage",
         "year": 1964,
@@ -5284,6 +5361,13 @@ const lists = [
         "genre": "Romance, Marriage Drama"
       },
       {
+        "title": "Loves of a Blonde",
+        "director": "Milos Forman",
+        "year": 1965,
+        "country": "Czechoslovakia",
+        "genre": "Comedy Drama, Satire"
+      },
+      {
         "title": "Red Beard",
         "director": "Akira Kurosawa",
         "year": 1965,
@@ -5310,6 +5394,13 @@ const lists = [
         "year": 1966,
         "country": "UK",
         "genre": "Comedy Thriller, Black Comedy"
+      },
+      {
+        "title": "The Round-Up",
+        "director": "Miklós Jancsó",
+        "year": 1966,
+        "country": "Hungary",
+        "genre": "Political Drama, Period Film"
       },
       {
         "title": "Second Breath",
@@ -5382,6 +5473,13 @@ const lists = [
         "year": 1968,
         "country": "France",
         "genre": "Childhood Drama, Coming-of-Age"
+      },
+      {
+        "title": "The Party",
+        "director": "Blake Edwards",
+        "year": 1968,
+        "country": "USA",
+        "genre": "Comedy, Slapstick"
       },
       {
         "title": "Diaries, Notes and Sketches",
@@ -5615,6 +5713,13 @@ const lists = [
         "genre": "Gross-Out Comedy, Anarchic Comedy"
       },
       {
+        "title": "Arrebato",
+        "director": "Iván Zulueta",
+        "year": 1979,
+        "country": "Spain",
+        "genre": "Drama, Horror"
+      },
+      {
         "title": "The Tin Drum",
         "director": "Volker Schlöndorff",
         "year": 1979,
@@ -5699,11 +5804,32 @@ const lists = [
         "genre": "Documentary, Political"
       },
       {
+        "title": "El Sur",
+        "director": "Victor Erice",
+        "year": 1983,
+        "country": "Spain-France",
+        "genre": "Drama"
+      },
+      {
+        "title": "Local Hero",
+        "director": "Bill Forsyth",
+        "year": 1983,
+        "country": "UK",
+        "genre": "Comedy, Comedy of Manners"
+      },
+      {
         "title": "Zelig",
         "director": "Woody Allen",
         "year": 1983,
         "country": "USA",
         "genre": "Mockumentary, Fantasy Comedy"
+      },
+      {
+        "title": "Twenty Years Later",
+        "director": "Eduardo Coutinho",
+        "year": 1984,
+        "country": "Brazil",
+        "genre": "Documentary"
       },
       {
         "title": "My Life as a Dog",
@@ -5790,6 +5916,13 @@ const lists = [
         "genre": "Comedy Drama, Coming-of-Age"
       },
       {
+        "title": "An Angel at My Table",
+        "director": "Jane Campion",
+        "year": 1990,
+        "country": "New Zealand-Australia-UK-USA",
+        "genre": "Biography, Psychological Drama"
+      },
+      {
         "title": "The Match Factory Girl",
         "director": "Aki Kaurismäki",
         "year": 1990,
@@ -5816,6 +5949,13 @@ const lists = [
         "year": 1991,
         "country": "USA-Japan",
         "genre": "Action, Thriller"
+      },
+      {
+        "title": "Van Gogh",
+        "director": "Maurice Pialat",
+        "year": 1991,
+        "country": "France",
+        "genre": "Drama, Biography"
       },
       {
         "title": "Lessons of Darkness",
@@ -5925,6 +6065,13 @@ const lists = [
       },
 
       {
+        "title": "After Life",
+        "director": "Hirokazu Koreeda",
+        "year": 1998,
+        "country": "Japan",
+        "genre": "Fantasy, Psychological Drama"
+      },
+      {
         "title": "The Idiots",
         "director": "Lars von Trier",
         "year": 1998,
@@ -5974,6 +6121,20 @@ const lists = [
         "genre": "Drama"
       },
       {
+        "title": "La Ciénaga",
+        "director": "Lucrecia Martel",
+        "year": 2001,
+        "country": "Argentina-France-Spain",
+        "genre": "Drama"
+      },
+      {
+        "title": "Blissfully Yours",
+        "director": "Apichatpong Weerasethakul",
+        "year": 2002,
+        "country": "Thailand-France",
+        "genre": "Avant-garde-Experimental, Drama"
+      },
+      {
         "title": "Irréversible",
         "director": "Gaspar Noé",
         "year": 2002,
@@ -5986,6 +6147,13 @@ const lists = [
         "year": 2002,
         "country": "France-Iran",
         "genre": "Avant-garde-Experimental, Urban Drama"
+      },
+      {
+        "title": "Goodbye, Dragon Inn",
+        "director": "Tsai Ming-liang",
+        "year": 2003,
+        "country": "Taiwan",
+        "genre": "Showbiz Drama, Comedy Drama"
       },
       {
         "title": "The Return",
@@ -6020,6 +6188,13 @@ const lists = [
         "year": 2008,
         "country": "Argentina-Spain-France-Italy",
         "genre": "Thriller, Psychological Thriller"
+      },
+      {
+        "title": "Nostalgia for the Light",
+        "director": "Patricio Guzmán",
+        "year": 2010,
+        "country": "France-Germany-Chile-Spain-USA",
+        "genre": "Social History, Documentary"
       },
     ]
   }

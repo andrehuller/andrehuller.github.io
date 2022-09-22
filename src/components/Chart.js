@@ -85,12 +85,14 @@ const Chartjs = {
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
-          <v-data-table
-            :headers="headers"
-            :items="items"
-            class="elevation-1"
-          >
-          </v-data-table>
+          <v-card outlined>
+            <v-data-table
+              :headers="headers"
+              :items="items"
+              class="elevation-1"
+            >
+            </v-data-table>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
