@@ -1,4 +1,4 @@
-const lists = [
+const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
   {
     "name": "Recommendations",
     "items": [
@@ -394,6 +394,13 @@ const lists = [
         "country": "France"
       },
       {
+        "title": "Marketa Lazarová",
+        "director": "Frantisek Vlácil",
+        "year": 1967,
+        "country": "Czechoslovakia",
+        "genre": "Epic, Historical Film"
+      },
+      {
         "title": "Mouchette",
         "director": "Robert Bresson",
         "year": 1967,
@@ -503,6 +510,13 @@ const lists = [
         "year": 1974,
         "country": "USA",
         "genre": "Thriller, Paranoid Thriller"
+      },
+      {
+        "title": "The Enigma of Kaspar Hauser",
+        "director": "Werner Herzog",
+        "year": 1974,
+        "country": "West Germany",
+        "genre": "Psychological Drama, Biography"
       },
       {
         "title": "Lancelot du Lac",
@@ -701,6 +715,13 @@ const lists = [
         "year": 1991,
         "country": "France",
         "genre": "Romantic Drama, Psychological Drama"
+      },
+      {
+        "title": "Les Amants du Pont-Neuf",
+        "director": "Leos Carax",
+        "year": 1991,
+        "country": "France",
+        "genre": "Romantic Drama, Urban Drama"
       },
       {
         "title": "Bad Lieutenant",
@@ -2304,6 +2325,14 @@ const lists = [
         "director": "Harold Ramis",
         "year": 1993,
         "country": "USA",
+        "rating": 9
+      },
+      {
+        "title": "Jurassic Park",
+        "director": "Steven Spielberg",
+        "year": 1993,
+        "country": "USA",
+        "genre": "Prehistoric Fantasy, Sci-Fi Action",
         "rating": 9
       },
       {
@@ -4677,14 +4706,6 @@ const lists = [
         "rating": 2
       },
       {
-        "title": "Jurassic Park",
-        "director": "Steven Spielberg",
-        "year": 1993,
-        "country": "USA",
-        "genre": "Prehistoric Fantasy, Sci-Fi Action",
-        "rating": 6
-      },
-      {
         "title": "The Bridges of Madison County",
         "director": "Clint Eastwood",
         "year": 1995,
@@ -5326,6 +5347,20 @@ const lists = [
         "genre": "Avant-garde-Experimental, Surrealist Film"
       },
       {
+        "title": "The Servant",
+        "director": "Joseph Losey",
+        "year": 1963,
+        "country": "UK",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "A Hard Day's Night",
+        "director": "Richard Lester",
+        "year": 1964,
+        "country": "UK",
+        "genre": "Rock Musical, Anarchic Comedy"
+      },
+      {
         "title": "Dog Star Man",
         "director": "Stan Brakhage",
         "year": 1964,
@@ -5394,6 +5429,13 @@ const lists = [
         "year": 1966,
         "country": "UK",
         "genre": "Comedy Thriller, Black Comedy"
+      },
+      {
+        "title": "The Rise to Power of Louis XIV",
+        "director": "Roberto Rossellini",
+        "year": 1966,
+        "country": "France",
+        "genre": "Historical Film, Period Film"
       },
       {
         "title": "The Round-Up",
@@ -5496,6 +5538,13 @@ const lists = [
         "genre": "Comedy, Satire"
       },
       {
+        "title": "Salesman",
+        "director": "Albert Maysles, David Maysles & Charlotte Zwerin",
+        "year": 1969,
+        "country": "USA",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
         "title": "Z",
         "director": "Constantin Costa-Gavras",
         "year": 1969,
@@ -5531,11 +5580,25 @@ const lists = [
         "genre": "Thriller, Psychological Thriller"
       },
       {
+        "title": "The Red Circle",
+        "director": "Jean-Pierre Melville",
+        "year": 1970,
+        "country": "France-Italy",
+        "genre": "Crime Thriller, Post-Noir (Modern Noir)"
+      },
+      {
         "title": "The Wild Child",
         "director": "François Truffaut",
         "year": 1970,
         "country": "France",
         "genre": "Period Film, Childhood Drama"
+      },
+      {
+        "title": "The Devils",
+        "director": "Ken Russell",
+        "year": 1971,
+        "country": "UK",
+        "genre": "Historical Film, Religious Drama"
       },
       {
         "title": "Fata Morgana",
@@ -5559,6 +5622,13 @@ const lists = [
         "genre": "Romantic Drama, Period Film"
       },
       {
+        "title": "La Région centrale",
+        "director": "Michael Snow",
+        "year": 1971,
+        "country": "Canada",
+        "genre": "Avant-garde-Experimental, Drama"
+      },
+      {
         "title": "Two English Girls",
         "director": "François Truffaut",
         "year": 1971,
@@ -5578,6 +5648,13 @@ const lists = [
         "year": 1971,
         "country": "Yugoslavia",
         "genre": "Avant-garde-Experimental, Sex Comedy"
+      },
+      {
+        "title": "The Bitter Tears of Petra von Kant",
+        "director": "Rainer Werner Fassbinder",
+        "year": 1972,
+        "country": "West Germany",
+        "genre": "Drama, Melodrama"
       },
       {
         "title": "Pink Flamingos",
@@ -5671,11 +5748,25 @@ const lists = [
         "genre": "Comedy, Satire"
       },
       {
+        "title": "The Ascent",
+        "director": "Larisa Shepitko",
+        "year": 1976,
+        "country": "USSR",
+        "genre": "War Drama, Resistance Film"
+      },
+      {
         "title": "Cría cuervos",
         "director": "Carlos Saura",
         "year": 1976,
         "country": "Spain",
         "genre": "Childhood Drama, Family Drama"
+      },
+      {
+        "title": "Harlan County, U.S.A.",
+        "director": "Barbara Kopple",
+        "year": 1976,
+        "country": "USA",
+        "genre": "Social Issues, Documentary"
       },
       {
         "title": "News from Home",
@@ -5689,6 +5780,13 @@ const lists = [
         "director": "Robert Altman",
         "year": 1977,
         "country": "USA",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "The Devil, Probably",
+        "director": "Robert Bresson",
+        "year": 1977,
+        "country": "France",
         "genre": "Drama, Psychological Drama"
       },
       {
@@ -5706,6 +5804,13 @@ const lists = [
         "genre": "Period Film, Musical Drama"
       },
       {
+        "title": "Providence",
+        "director": "Alain Resnais",
+        "year": 1977,
+        "country": "France-Switzerland",
+        "genre": "Drama, Ensemble Film"
+      },
+      {
         "title": "National Lampoon's Animal House",
         "director": "John Landis",
         "year": 1978,
@@ -5718,6 +5823,13 @@ const lists = [
         "year": 1979,
         "country": "Spain",
         "genre": "Drama, Horror"
+      },
+      {
+        "title": "Tale of Tales",
+        "director": "Yuriy Norshteyn",
+        "year": 1979,
+        "country": "USSR",
+        "genre": "Avant-garde-Experimental, Animation"
       },
       {
         "title": "The Tin Drum",
@@ -5944,6 +6056,13 @@ const lists = [
         "genre": "Political Thriller, Ensemble Film"
       },
       {
+        "title": "La Belle noiseuse",
+        "director": "Jacques Rivette",
+        "year": 1991,
+        "country": "France",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
         "title": "Point Break",
         "director": "Kathryn Bigelow",
         "year": 1991,
@@ -5956,6 +6075,13 @@ const lists = [
         "year": 1991,
         "country": "France",
         "genre": "Drama, Biography"
+      },
+      {
+        "title": "And Life Goes On...",
+        "director": "Abbas Kiarostami",
+        "year": 1992,
+        "country": "Iran",
+        "genre": "Drama, Docudrama"
       },
       {
         "title": "Lessons of Darkness",
@@ -5977,6 +6103,13 @@ const lists = [
         "year": 1992,
         "country": "USA-France",
         "genre": "Mystery, Surrealist Film"
+      },
+      {
+        "title": "The Age of Innocence",
+        "director": "Martin Scorsese",
+        "year": 1993,
+        "country": "USA",
+        "genre": "Period Film, Romantic Drama"
       },
       {
         "title": "Blue",
@@ -6041,7 +6174,13 @@ const lists = [
         "country": "Canada",
         "genre": "Erotic Drama, Psychological Drama"
       },
-
+      {
+        "title": "Secrets & Lies",
+        "director": "Mike Leigh",
+        "year": 1996,
+        "country": "UK",
+        "genre": "Drama, Family Drama"
+      },
       {
         "title": "Gummo",
         "director": "Harmony Korine",
@@ -6114,6 +6253,13 @@ const lists = [
         "genre": "Biography, Documentary"
       },
       {
+        "title": "In Vanda's Room",
+        "director": "Pedro Costa",
+        "year": 2000,
+        "country": "Portugal-Germany-Switzerland-Italy",
+        "genre": "Drama"
+      },
+      {
         "title": "In Praise of Love",
         "director": "Jean-Luc Godard",
         "year": 2001,
@@ -6135,11 +6281,25 @@ const lists = [
         "genre": "Avant-garde-Experimental, Drama"
       },
       {
+        "title": "Distant",
+        "director": "Nuri Bilge Ceylan",
+        "year": 2002,
+        "country": "Turkey-Netherlands",
+        "genre": "Psychological Drama, Urban Drama"
+      },
+      {
         "title": "Irréversible",
         "director": "Gaspar Noé",
         "year": 2002,
         "country": "France",
         "genre": "Crime, Drama"
+      },
+      {
+        "title": "The Son",
+        "director": "Jean-Pierre Dardenne & Luc Dardenne",
+        "year": 2002,
+        "country": "Belgium-France",
+        "genre": "Drama, Social Problem Film"
       },
       {
         "title": "Ten",
@@ -6181,6 +6341,20 @@ const lists = [
         "year": 2005,
         "country": "USA",
         "genre": "Historical Film, Romantic Drama"
+      },
+      {
+        "title": "Syndromes and a Century",
+        "director": "Apichatpong Weerasethakul",
+        "year": 2006,
+        "country": "Thailand-France-Austria-Netherlands",
+        "genre": "Drama, Ensemble Film"
+      },
+      {
+        "title": "4 Months, 3 Weeks and 2 Days",
+        "director": "Cristian Mungiu",
+        "year": 2007,
+        "country": "Romania-Netherlands-France-Germany",
+        "genre": "Drama, Slice of Life"
       },
       {
         "title": "The Headless Woman",

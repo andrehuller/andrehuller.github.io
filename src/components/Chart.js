@@ -349,7 +349,7 @@ const Chartjs = {
       var data4 = []
       for (var i = 0; i < values.length; i++) {
         var genre = this.genres[i]
-        if (values[i].amount > 5) {
+        if (values[i].amount > 6) {
           labels4.push(values[i].genre)
           data4.push(values[i].amount)
         }
