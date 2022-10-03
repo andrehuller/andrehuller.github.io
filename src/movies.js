@@ -780,6 +780,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Melodrama, Romantic Drama"
       },
       {
+        "title": "Songs from the Second Floor",
+        "director": "Roy Andersson",
+        "year": 2000,
+        "country": "Sweden-France-Denmark-Norway-Germany",
+        "genre": "Surrealist Film, Black Comedy"
+      },
+      {
         "title": "Yi yi",
         "director": "Edward Yang",
         "year": 2000,
@@ -1551,6 +1558,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1935,
         "country": "USA",
         "genre": "Musical Romance, Romantic Comedy"
+      },
+      {
+        "title": "Triumph of the Will",
+        "director": "Leni Riefenstahl",
+        "year": 1935,
+        "country": "Germany",
+        "genre": "Propaganda Film, Documentary"
       },
       {
         "title": "The Adventures of Robin Hood",
@@ -3662,13 +3676,6 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "rating": 7
       },
       {
-        "title": "The Ladies Man",
-        "director": "Jerry Lewis",
-        "year": 1961,
-        "country": "USA",
-        "genre": "Comedy, Slapstick"
-      },
-      {
         "title": "Splendor in the Grass",
         "director": "Elia Kazan",
         "year": 1961,
@@ -4871,6 +4878,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Master Criminal Film, Police Detective Film"
       },
       {
+        "title": "Les Vampires",
+        "director": "Louis Feuillade",
+        "year": 1915,
+        "country": "France",
+        "genre": "Master Criminal Film, Crime Thriller"
+      },
+      {
         "title": "The Phantom Carriage",
         "director": "Victor Sjöström",
         "year": 1920,
@@ -4932,6 +4946,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1928,
         "country": "USA",
         "genre": "Drama, Melodrama"
+      },
+      {
+        "title": "The Wind",
+        "director": "Victor Sjöström",
+        "year": 1928,
+        "country": "USA",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "Morocco",
@@ -5094,6 +5115,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1950,
         "country": "France",
         "genre": "Avant-garde-Experimental, Surrealist Film"
+      },
+      {
+        "title": "Miracle in Milan",
+        "director": "Vittorio De Sica",
+        "year": 1951,
+        "country": "Italy",
+        "genre": "Fantasy Comedy, Satire"
       },
       {
         "title": "The Thing from Another World",
@@ -5278,6 +5306,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Drama, Melodrama"
       },
       {
+        "title": "Chronicle of a Summer",
+        "director": "Jean Rouch & Edgar Morin",
+        "year": 1961,
+        "country": "France",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
         "title": "The End of Summer",
         "director": "Yasujiro Ozu",
         "year": 1961,
@@ -5290,6 +5325,20 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1961,
         "country": "Italy",
         "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "The Ladies Man",
+        "director": "Jerry Lewis",
+        "year": 1961,
+        "country": "USA",
+        "genre": "Comedy, Slapstick"
+      },
+      {
+        "title": "Lola",
+        "director": "Jacques Demy",
+        "year": 1961,
+        "country": "France",
+        "genre": "Drama, Romance"
       },
       {
         "title": "Plácido",
@@ -5424,6 +5473,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Drama, Social Problem Film"
       },
       {
+        "title": "Chelsea Girls",
+        "director": "Andy Warhol",
+        "year": 1966,
+        "country": "USA",
+        "genre": "Avant-garde-Experimental, Trash Film"
+      },
+      {
         "title": "Cul-de-sac",
         "director": "Roman Polanski",
         "year": 1966,
@@ -5457,6 +5513,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1966,
         "country": "Italy",
         "genre": "Comedy, Satire"
+      },
+      {
+        "title": "Masculin Feminin",
+        "director": "Jean-Luc Godard",
+        "year": 1966,
+        "country": "France-Sweden",
+        "genre": "Urban Drama, Ensemble Film"
       },
       {
         "title": "Seven Women",
@@ -5494,13 +5557,19 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "country": "USA",
         "genre": "Social Issues, Documentary"
       },
-
       {
         "title": "The Chronicle of Anna Magdalena Bach",
         "director": "Jean-Marie Straub",
         "year": 1968,
         "country": "West Germany-Italy",
         "genre": "Drama, Biopic"
+      },
+      {
+        "title": "The Hour of the Furnaces",
+        "director": "Fernando E. Solanas & Octavio Getino",
+        "year": 1968,
+        "country": "Argentina",
+        "genre": "Politics & Government, Documentary"
       },
       {
         "title": "L'Amour fou",
@@ -5522,6 +5591,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1968,
         "country": "USA",
         "genre": "Comedy, Slapstick"
+      },
+      {
+        "title": "The Damned",
+        "director": "Luchino Visconti",
+        "year": 1969,
+        "country": "Italy-West Germany",
+        "genre": "Political Drama, Family Drama"
       },
       {
         "title": "Diaries, Notes and Sketches",
@@ -5564,6 +5640,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1970,
         "country": "Japan",
         "genre": "Ensemble Film, Urban Drama"
+      },
+      {
+        "title": "Gimme Shelter",
+        "director": "Albert Maysles, David Maysles & Charlotte Zwerin",
+        "year": 1970,
+        "country": "USA",
+        "genre": "Music, Documentary"
       },
       {
         "title": "The Hart of London",
@@ -5718,6 +5801,20 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1974,
         "country": "Italy",
         "genre": "Comedy Drama, Romantic Drama"
+      },
+      {
+        "title": "Grey Gardens",
+        "director": "David Maysles, Albert Maysles, Ellen Hovde & Muffie Meyer",
+        "year": 1975,
+        "country": "USA",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
+        "title": "India Song",
+        "director": "Marguerite Duras",
+        "year": 1975,
+        "country": "France",
+        "genre": "Avant-garde-Experimental, Psychological Drama"
       },
       {
         "title": "Iracema - Uma Transa Amazônica",
@@ -5944,6 +6041,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Documentary"
       },
       {
+        "title": "My Friend Ivan Lapshin",
+        "director": "Aleksey German",
+        "year": 1985,
+        "country": "USSR",
+        "genre": "Police Drama, Period Film"
+      },
+      {
         "title": "My Life as a Dog",
         "director": "Lasse Hallström",
         "year": 1985,
@@ -6098,6 +6202,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Coming-of-Age, Family Drama"
       },
       {
+        "title": "Orlando",
+        "director": "Sally Potter",
+        "year": 1992,
+        "country": "UK-Russia-France-Italy-Netherlands",
+        "genre": "Drama, Fantasy"
+      },
+      {
         "title": "Twin Peaks: Fire Walk with Me",
         "director": "David Lynch",
         "year": 1992,
@@ -6126,11 +6237,25 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Culture & Society, Documentary"
       },
       {
+        "title": "Farewell, My Concubine",
+        "director": "Chen Kaige",
+        "year": 1993,
+        "country": "Hong Kong-China",
+        "genre": "Drama, Romantic Epic"
+      },
+      {
         "title": "The Last Bolshevik",
         "director": "Chris Marker",
         "year": 1993,
         "country": "France-Finland",
         "genre": "Essay Film, Documentary"
+      },
+      {
+        "title": "Short Cuts",
+        "director": "Robert Altman",
+        "year": 1993,
+        "country": "USA",
+        "genre": "Ensemble Film, Urban Drama"
       },
       {
         "title": "Burnt by the Sun",
@@ -6245,7 +6370,14 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "country": "UK-USA",
         "genre": "Comedy Drama, Musical Drama"
       },
-       {
+      {
+        "title": "The Wind Will Carry Us",
+        "director": "Abbas Kiarostami",
+        "year": 1999,
+        "country": "France-Iran",
+        "genre": "Drama, Rural Drama"
+      },
+      {
         "title": "As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty",
         "director": "Jonas Mekas",
         "year": 2000,
@@ -6336,11 +6468,32 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Comedy Drama, Buddy Film"
       },
       {
+        "title": "Grizzly Man",
+        "director": "Werner Herzog",
+        "year": 2005,
+        "country": "USA",
+        "genre": "Nature, Documentary"
+      },
+      {
         "title": "The New World",
         "director": "Terrence Malick",
         "year": 2005,
         "country": "USA",
         "genre": "Historical Film, Romantic Drama"
+      },
+      {
+        "title": "Colossal Youth",
+        "director": "Pedro Costa",
+        "year": 2006,
+        "country": "Portugal-France-Switzerland",
+        "genre": "Drama, Slice of Life"
+      },
+      {
+        "title": "Still Life",
+        "director": "Jia Zhangke",
+        "year": 2006,
+        "country": "China-Hong Kong",
+        "genre": "Drama, Social Problem Film"
       },
       {
         "title": "Syndromes and a Century",
@@ -6357,6 +6510,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Drama, Slice of Life"
       },
       {
+        "title": "Silent Light",
+        "director": "Carlos Reygadas",
+        "year": 2007,
+        "country": "Mexico-France-Netherlands",
+        "genre": "Psychological Drama, Rural Drama"
+      },
+      {
         "title": "The Headless Woman",
         "director": "Lucrecia Martel",
         "year": 2008,
@@ -6369,6 +6529,20 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 2010,
         "country": "France-Germany-Chile-Spain-USA",
         "genre": "Social History, Documentary"
+      },
+      {
+        "title": "The Act of Killing",
+        "director": "Joshua Oppenheimer",
+        "year": 2012,
+        "country": "Denmark-Norway-UK-Finland",
+        "genre": "Social History, Documentary"
+      },
+      {
+        "title": "The Master",
+        "director": "Paul Thomas Anderson",
+        "year": 2012,
+        "country": "USA",
+        "genre": "Period Film, Psychological Drama"
       },
     ]
   }

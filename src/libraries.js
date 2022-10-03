@@ -47,7 +47,7 @@ const categories = [
       },
       {
         "title": "Foundation",
-        "subtitle": "The most advanced responsive <strong>front-end framework</strong> in the world",
+        "subtitle": "The most advanced responsive front-end framework in the world",
         "href": "https://foundation.zurb.com/",
         "src": "assets/libraries/Foundation.png",
         "release": "09/2011"

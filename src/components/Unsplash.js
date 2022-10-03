@@ -15,7 +15,7 @@ const Unsplash = {
               height="335"
             ></v-img>
             <v-list>
-              <v-list-item @click="">
+              <v-list-item>
                 <v-list-item-icon>
                   <v-icon>mdi-map-marker</v-icon>
                 </v-list-item-icon>

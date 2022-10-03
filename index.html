@@ -253,10 +253,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
 
-  <!--
-  <script src="https://d3js.org/d3.v7.min.js"></script>
-  -->
-
   <script src="./src/libraries.js"></script>
   <script src="./src/locations.js"></script>
   <script src="./src/movies.js"></script>
@@ -276,27 +272,6 @@
   <script src="./src/components/YouTube.js"></script>
 
   <script>
-    const Carousel = {
-      template: `
-        <v-container>
-          <v-row>
-            <v-col>
-              <v-card>
-                <v-carousel height="700">
-                  <v-carousel-item
-                    src="assets/cow.jpeg"
-                  ></v-carousel-item>
-                  <v-carousel-item
-                    src="assets/chicken.jpeg"
-                  ></v-carousel-item>            
-                </v-carousel>
-              </v-card>
-            </v-col>
-          </v-row>
-        </v-container>
-      `
-    }
-
     const Login = {
       template: `
         <v-container fluid>
@@ -340,7 +315,6 @@
       { path: '/chart', component: Chartjs },
       
       { path: '/calendar', component: Calendar },
-      { path: '/carousel', component: Carousel },
       { path: '/date_picker', component: DatePicker },
       { path: '/tree_view', component: TreeView },
       
@@ -399,13 +373,6 @@
             icon: 'mdi-calendar',
             title: 'Calendar'
           },
-          /*
-          {
-            route: '/carousel',
-            icon: 'mdi-view-carousel',
-            title: 'Carousel'
-          },
-          */
           {
             route: '/date_picker',
             icon: 'mdi-calendar',
