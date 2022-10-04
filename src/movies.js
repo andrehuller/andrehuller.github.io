@@ -1,4 +1,4 @@
-const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
+const lists = [ // Last Movie: Chelsea Girls (500-401)
   {
     "name": "Recommendations",
     "items": [
@@ -448,6 +448,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "director": "Eric Rohmer",
         "year": 1969,
         "country": "France"
+      },
+      {
+        "title": "The Sorrow and the Pity",
+        "director": "Marcel Ophüls",
+        "year": 1969,
+        "country": "France-Switzerland-Germany",
+        "genre": "Military & War, Documentary"
       },
       {
         "title": "Claire's Knee",
@@ -1256,6 +1263,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "country": "USA",
         "genre": "Comedy Drama, Road Movie",
         "rating": 10
+      },
+      {
+        "title": "Scenes from a Marriage",
+        "director": "Ingmar Bergman",
+        "year": 1973,
+        "country": "Sweden",
+        "genre": "Drama, Marriage Drama"
       },
       {
         "title": "The Wicker Man",
@@ -4941,6 +4955,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Romance, Melodrama"
       },
       {
+        "title": "The Cameraman",
+        "director": "Buster Keaton & Edward Sedgwick",
+        "year": 1928,
+        "country": "USA",
+        "genre": "Slapstick, Romantic Comedy"
+      },
+      {
         "title": "The Wedding March",
         "director": "Erich von Stroheim",
         "year": 1928,
@@ -4974,6 +4995,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1931,
         "country": "France",
         "genre": "Musical Comedy, Chase Movie"
+      },
+      {
+        "title": "Limite",
+        "director": "Mario Peixoto",
+        "year": 1931,
+        "country": "Brazil",
+        "genre": "Avant-garde/Experimental, Surrealist Film"
       },
       {
         "title": "La Nuit du carrefour",
@@ -5110,6 +5138,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Crime Drama, Film Noir"
       },
       {
+        "title": "The Flowers of St. Francis",
+        "director": "Roberto Rossellini",
+        "year": 1950,
+        "country": "Italy",
+        "genre": "Religious Drama, Biography"
+      },
+      {
         "title": "Un Chant d'amour",
         "director": "Jean Genet",
         "year": 1950,
@@ -5222,6 +5257,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Epic, Melodrama"
       },
       {
+        "title": "Pyaasa",
+        "director": "Guru Dutt",
+        "year": 1957,
+        "country": "India",
+        "genre": "Drama, Romance"
+      },
+      {
         "title": "Big Deal on Madonna Street",
         "director": "Mario Monicelli",
         "year": 1958,
@@ -5283,6 +5325,20 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1959,
         "country": "India",
         "genre": "Romance, Drama"
+      },
+      {
+        "title": "Shadows",
+        "director": "John Cassavetes",
+        "year": 1959,
+        "country": "USA",
+        "genre": "Drama, Ensemble Film"
+      },
+      {
+        "title": "The Cloud-Capped Star",
+        "director": "Ritwik Ghatak",
+        "year": 1960,
+        "country": "India",
+        "genre": "Family Drama, Rural Drama"
       },
       {
         "title": "The Naked Island",
@@ -5410,6 +5466,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Rock Musical, Anarchic Comedy"
       },
       {
+        "title": "Charulata",
+        "director": "Satyajit Ray",
+        "year": 1964,
+        "country": "India",
+        "genre": "Drama, Romantic Drama"
+      },
+      {
         "title": "Dog Star Man",
         "director": "Stan Brakhage",
         "year": 1964,
@@ -5422,6 +5485,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1964,
         "country": "Japan",
         "genre": "Fantasy, Costume Horror"
+      },
+      {
+        "title": "Shadows of Our Forgotten Ancestors",
+        "director": "Sergei Parajanov",
+        "year": 1964,
+        "country": "USSR",
+        "genre": "Drama, Period Film"
       },
       {
         "title": "Faster, Pussycat! Kill! Kill!",
@@ -5478,6 +5548,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1966,
         "country": "USA",
         "genre": "Avant-garde-Experimental, Trash Film"
+      },
+      {
+        "title": "Closely Watched Trains",
+        "director": "Jirí Menzel",
+        "year": 1966,
+        "country": "Czechoslovakia",
+        "genre": "War, Comedy Drama"
       },
       {
         "title": "Cul-de-sac",
@@ -5712,6 +5789,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Avant-garde-Experimental, Drama"
       },
       {
+        "title": "Out 1, noli me tangere",
+        "director": "Jacques Rivette",
+        "year": 1971,
+        "country": "France",
+        "genre": "Drama, Comedy"
+      },
+      {
         "title": "Two English Girls",
         "director": "François Truffaut",
         "year": 1971,
@@ -5745,6 +5829,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1972,
         "country": "USA",
         "genre": "Comedy, Trash Film"
+      },
+      {
+        "title": "Day for Night",
+        "director": "François Truffaut",
+        "year": 1973,
+        "country": "France",
+        "genre": "Comedy Drama, Showbiz Drama"
       },
       {
         "title": "The Last Detail",
@@ -5901,6 +5992,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Period Film, Musical Drama"
       },
       {
+        "title": "Opening Night",
+        "director": "John Cassavetes",
+        "year": 1977,
+        "country": "USA",
+        "genre": "Ensemble Film, Showbiz Drama"
+      },
+      {
         "title": "Providence",
         "director": "Alain Resnais",
         "year": 1977,
@@ -5908,11 +6006,32 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Drama, Ensemble Film"
       },
       {
+        "title": "In a Year with 13 Moons",
+        "director": "Rainer Werner Fassbinder",
+        "year": 1978,
+        "country": "West Germany",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
         "title": "National Lampoon's Animal House",
         "director": "John Landis",
         "year": 1978,
         "country": "USA",
         "genre": "Gross-Out Comedy, Anarchic Comedy"
+      },
+      {
+        "title": "The Tree of Wooden Clogs",
+        "director": "Ermanno Olmi",
+        "year": 1978,
+        "country": "Italy",
+        "genre": "Rural Drama, Family Drama"
+      },
+      {
+        "title": "All That Jazz",
+        "director": "Bob Fosse",
+        "year": 1979,
+        "country": "USA",
+        "genre": "Musical, Showbiz Drama"
       },
       {
         "title": "Arrebato",
@@ -6055,6 +6174,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Coming-of-Age, Childhood Drama"
       },
       {
+        "title": "Vagabond",
+        "director": "Agnès Varda",
+        "year": 1985,
+        "country": "France",
+        "genre": "Drama, Road Movie"
+      },
+      {
         "title": "A Short Film About Killing",
         "director": "Krzysztof Kieslowski",
         "year": 1987,
@@ -6067,6 +6193,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1987,
         "country": "USA",
         "genre": "Workplace Comedy, Media Satire"
+      },
+      {
+        "title": "The Dead",
+        "director": "John Huston",
+        "year": 1987,
+        "country": "USA",
+        "genre": "Drama, Period Film"
       },
       {
         "title": "Dust in the Wind",
@@ -6097,6 +6230,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Rural Drama, Marriage Drama"
       },
       {
+        "title": "Withnail & I",
+        "director": "Bruce Robinson",
+        "year": 1987,
+        "country": "UK",
+        "genre": "Comedy, Buddy Film"
+      },
+      {
         "title": "Yeelen",
         "director": "Souleymane Cissé",
         "year": 1987,
@@ -6116,6 +6256,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1988,
         "country": "USA",
         "genre": "History, Documentary"
+      },
+      {
+        "title": "Landscape in the Mist",
+        "director": "Theo Angelopoulos",
+        "year": 1988,
+        "country": "Greece-France-Italy",
+        "genre": "Road Movie, Childhood Drama"
       },
       {
         "title": "The Cook, The Thief, His Wife & Her Lover",
@@ -6279,6 +6426,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "genre": "Psychological Drama, Ensemble Film"
       },
       {
+        "title": "Hoop Dreams",
+        "director": "Steve James",
+        "year": 1994,
+        "country": "USA",
+        "genre": "Sports, Documentary"
+      },
+      {
         "title": "To Live",
         "director": "Zhang Yimou",
         "year": 1994,
@@ -6291,6 +6445,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 1995,
         "country": "Australia",
         "genre": "Animal Picture, Children's Fantasy"
+      },
+      {
+        "title": "A Moment of Innocence",
+        "director": "Mohsen Makhmalbaf",
+        "year": 1996,
+        "country": "Iran-France",
+        "genre": "Comedy Drama, Satire"
       },
       {
         "title": "Crash",
@@ -6327,13 +6488,19 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "country": "Canada",
         "genre": "Drama, Ensemble Film"
       },
-
       {
         "title": "After Life",
         "director": "Hirokazu Koreeda",
         "year": 1998,
         "country": "Japan",
         "genre": "Fantasy, Psychological Drama"
+      },
+      {
+        "title": "Flowers of Shanghai",
+        "director": "Hou Hsiao-hsien",
+        "year": 1998,
+        "country": "Taiwan",
+        "genre": "Romantic Drama, Period Film"
       },
       {
         "title": "The Idiots",
@@ -6536,6 +6703,13 @@ const lists = [ // Last Movie: Les Amants du Pont-Neuf (600-501)
         "year": 2012,
         "country": "Denmark-Norway-UK-Finland",
         "genre": "Social History, Documentary"
+      },
+      {
+        "title": "Amour",
+        "director": "Michael Haneke",
+        "year": 2012,
+        "country": "Austria-France-Germany",
+        "genre": "Drama, Romantic Drama"
       },
       {
         "title": "The Master",
