@@ -200,7 +200,7 @@ const Chartjs = {
       var data = []
       for (var i = 0; i < this.directors.length; i++) {
         var value = directorHist[this.directors[i]]
-        if (value > 3) {
+        if (value > 4) {
           labels.push(this.directors[i])
           data.push(value)
         }
@@ -349,7 +349,7 @@ const Chartjs = {
       var data4 = []
       for (var i = 0; i < values.length; i++) {
         var genre = this.genres[i]
-        if (values[i].amount > 6) {
+        if (values[i].amount > 7) {
           labels4.push(values[i].genre)
           data4.push(values[i].amount)
         }

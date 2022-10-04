@@ -1,4 +1,4 @@
-const lists = [ // Last Movie: Chelsea Girls (500-401)
+const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
   {
     "name": "Recommendations",
     "items": [
@@ -392,13 +392,6 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "director": "Jean-Pierre Melville",
         "year": 1967,
         "country": "France"
-      },
-      {
-        "title": "Marketa Lazarová",
-        "director": "Frantisek Vlácil",
-        "year": 1967,
-        "country": "Czechoslovakia",
-        "genre": "Epic, Historical Film"
       },
       {
         "title": "Mouchette",
@@ -893,6 +886,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "director": "Lars von Trier",
         "year": 2011,
         "country": "Denmark-Sweden-France-Germany"
+      },
+      {
+        "title": "The Turin Horse",
+        "director": "Béla Tarr",
+        "year": 2011,
+        "country": "Hungary-France-Germany-Switzerland-USA",
+        "genre": "Drama, Slice of Life"
       },
     ]
   },
@@ -2200,6 +2200,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "country": "USA",
         "genre": "Post-Noir (Modern Noir), Crime Thriller",
         "rating": 9
+      },
+      {
+        "title": "Love Streams",
+        "director": "John Cassavetes",
+        "year": 1984,
+        "country": "USA",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "Paris, Texas",
@@ -4885,6 +4892,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
     "name": "Watchlist",
     "items": [
       {
+        "title": "Le Voyage dans la lune",
+        "director": "Georges Méliès",
+        "year": 1902,
+        "country": "France",
+        "genre": "Science Fiction, Space Adventure"
+      },
+      {
         "title": "Fantômas",
         "director": "Louis Feuillade",
         "year": 1913,
@@ -4897,6 +4911,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1915,
         "country": "France",
         "genre": "Master Criminal Film, Crime Thriller"
+      },
+      {
+        "title": "Broken Blossoms",
+        "director": "D.W. Griffith",
+        "year": 1919,
+        "country": "USA",
+        "genre": "Melodrama, Romantic Drama"
       },
       {
         "title": "The Phantom Carriage",
@@ -4927,11 +4948,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Supernatural Horror, Documentary"
       },
       {
+        "title": "Nanook of the North",
+        "director": "Robert Flaherty",
+        "year": 1922,
+        "country": "USA",
+        "genre": "Anthropology, Documentary"
+      },
+      {
         "title": "A Woman of Paris",
         "director": "Charles Chaplin",
         "year": 1923,
         "country": "USA",
         "genre": "Romance, Melodrama"
+      },
+      {
+        "title": "Greed",
+        "director": "Erich von Stroheim",
+        "year": 1924,
+        "country": "USA",
+        "genre": "Melodrama, Psychological Drama"
       },
       {
         "title": "The Adventures of Prince Achmed",
@@ -4948,6 +4983,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Avant-garde-Experimental, Documentary"
       },
       {
+        "title": "Napoléon",
+        "director": "Abel Gance",
+        "year": 1927,
+        "country": "France",
+        "genre": "Historical Epic, Biography"
+      },
+      {
         "title": "Seventh Heaven",
         "director": "Frank Borzage",
         "year": 1927,
@@ -4962,6 +5004,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Slapstick, Romantic Comedy"
       },
       {
+        "title": "The Crowd",
+        "director": "King Vidor",
+        "year": 1928,
+        "country": "USA",
+        "genre": "Drama, Urban Drama"
+      },
+      {
         "title": "The Wedding March",
         "director": "Erich von Stroheim",
         "year": 1928,
@@ -4974,6 +5023,20 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1928,
         "country": "USA",
         "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "Pandora's Box",
+        "director": "G.W. Pabst",
+        "year": 1929,
+        "country": "Germany",
+        "genre": "Drama, Melodrama"
+      },
+      {
+        "title": "Earth",
+        "director": "Alexander Dovzhenko",
+        "year": 1930,
+        "country": "USSR",
+        "genre": "Drama, Rural Drama"
       },
       {
         "title": "Morocco",
@@ -5004,6 +5067,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Avant-garde/Experimental, Surrealist Film"
       },
       {
+        "title": "Freaks",
+        "director": "Tod Browning",
+        "year": 1932,
+        "country": "USA",
+        "genre": "Melodrama, Psychological Thriller"
+      },
+      {
         "title": "La Nuit du carrefour",
         "director": "Jean Renoir",
         "year": 1932,
@@ -5018,11 +5088,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Comedy, Musical Romance"
       },
       {
+        "title": "Vampyr",
+        "director": "Carl Theodor Dreyer",
+        "year": 1932,
+        "country": "Germany-France",
+        "genre": "Horror, Gothic Film"
+      },
+      {
         "title": "42nd Street",
         "director": "Lloyd Bacon",
         "year": 1933,
         "country": "USA",
         "genre": "Backstage Musical, Musical Comedy"
+      },
+      {
+        "title": "Zero for Conduct",
+        "director": "Jean Vigo",
+        "year": 1933,
+        "country": "France",
+        "genre": "Coming-of-Age, Childhood Drama"
       },
       {
         "title": "It's a Gift",
@@ -5032,6 +5116,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Comedy, Screwball Comedy"
       },
       {
+        "title": "Man of Aran",
+        "director": "Robert Flaherty",
+        "year": 1934,
+        "country": "UK",
+        "genre": "Anthropology, Documentary"
+      },
+      {
         "title": "By the Bluest of Seas",
         "director": "Boris Barnet",
         "year": 1936,
@@ -5039,11 +5130,39 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Comedy, Romantic Comedy"
       },
       {
+        "title": "The Crime of Monsieur Lange",
+        "director": "Jean Renoir",
+        "year": 1936,
+        "country": "France",
+        "genre": "Drama, Crime Drama"
+      },
+      {
+        "title": "Partie de campagne",
+        "director": "Jean Renoir",
+        "year": 1936,
+        "country": "France",
+        "genre": "Comedy Drama, Romance"
+      },
+      {
+        "title": "The Awful Truth",
+        "director": "Leo McCarey",
+        "year": 1937,
+        "country": "USA",
+        "genre": "Romantic Comedy, Screwball Comedy"
+      },
+      {
         "title": "Humanity and Paper Balloons",
         "director": "Sadao Yamanaka",
         "year": 1937,
         "country": "Japan",
         "genre": "Drama"
+      },
+      {
+        "title": "Make Way for Tomorrow",
+        "director": "Leo McCarey",
+        "year": 1937,
+        "country": "USA",
+        "genre": "Family Drama, Marriage Drama"
       },
       {
         "title": "Pépé le Moko",
@@ -5102,13 +5221,47 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Anarchic Comedy, Backstage Musical"
       },
       {
+        "title": "Listen to Britain",
+        "director": "Humphrey Jennings",
+        "year": 1942,
+        "country": "UK",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
         "title": "Fires Were Started",
         "director": "Humphrey Jennings",
         "year": 1943,
         "country": "UK",
         "genre": "Military & War, Documentary"
       },
-
+      {
+        "title": "The Life and Death of Colonel Blimp",
+        "director": "Michael Powell & Emeric Pressburger",
+        "year": 1943,
+        "country": "UK",
+        "genre": "Drama, Period Film"
+      },
+      {
+        "title": "Meshes of the Afternoon",
+        "director": "Maya Deren & Alexander Hammid",
+        "year": 1943,
+        "country": "USA",
+        "genre": "Avant-garde-Experimental, Surrealist Film"
+      },
+      {
+        "title": "A Canterbury Tale",
+        "director": "Michael Powell & Emeric Pressburger",
+        "year": 1944,
+        "country": "UK",
+        "genre": "Comedy Drama, Road Movie"
+      },
+      {
+        "title": "I Know Where I'm Going!",
+        "director": "Michael Powell & Emeric Pressburger",
+        "year": 1945,
+        "country": "UK",
+        "genre": "Drama, Romance"
+      },
       {
         "title": "They Were Expendable",
         "director": "John Ford",
@@ -5117,11 +5270,39 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "War Drama, Combat Film"
       },
       {
+        "title": "A Matter of Life and Death",
+        "director": "Michael Powell & Emeric Pressburger",
+        "year": 1946,
+        "country": "UK",
+        "genre": "Romantic Fantasy, Heaven-Can-Wait Fantasy"
+      },
+      {
         "title": "Duel in the Sun",
         "director": "King Vidor",
         "year": 1946,
         "country": "USA",
         "genre": "Western, Melodrama"
+      },
+      {
+        "title": "Paisan",
+        "director": "Roberto Rossellini",
+        "year": 1946,
+        "country": "Italy",
+        "genre": "Drama, War Drama"
+      },
+      {
+        "title": "Germany, Year Zero",
+        "director": "Roberto Rossellini",
+        "year": 1948,
+        "country": "Italy-West Germany",
+        "genre": "War Drama, Childhood Drama"
+      },
+      {
+        "title": "Spring in a Small Town",
+        "director": "Fei Mu",
+        "year": 1948,
+        "country": "China",
+        "genre": "Drama, Romantic Drama"
       },
       {
         "title": "Le Sang des bêtes",
@@ -5143,6 +5324,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1950,
         "country": "Italy",
         "genre": "Religious Drama, Biography"
+      },
+      {
+        "title": "Stromboli",
+        "director": "Roberto Rossellini",
+        "year": 1950,
+        "country": "Italy",
+        "genre": "Melodrama, Marriage Drama"
       },
       {
         "title": "Un Chant d'amour",
@@ -5180,6 +5368,20 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Costume Adventure, Romantic Adventure"
       },
       {
+        "title": "Le Plaisir",
+        "director": "Max Ophüls",
+        "year": 1952,
+        "country": "France",
+        "genre": "Romance, Drama"
+      },
+      {
+        "title": "The Life of Oharu",
+        "director": "Kenji Mizoguchi",
+        "year": 1952,
+        "country": "Japan",
+        "genre": "Drama, Period Film"
+      },
+      {
         "title": "The Lusty Men",
         "director": "Nicholas Ray",
         "year": 1952,
@@ -5192,6 +5394,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1953,
         "country": "Japan",
         "genre": "Drama, Adventure"
+      },
+      {
+        "title": "Mr. Hulot's Holiday",
+        "director": "Jacques Tati",
+        "year": 1953,
+        "country": "France",
+        "genre": "Comedy, Slapstick"
       },
       {
         "title": "The Sun Shines Bright",
@@ -5208,6 +5417,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Melodrama, Romantic Drama"
       },
       {
+        "title": "Floating Clouds",
+        "director": "Mikio Naruse",
+        "year": 1955,
+        "country": "Japan",
+        "genre": "Drama, Urban Drama"
+      },
+      {
         "title": "Les Maîtres fous",
         "director": "Jean Rouch",
         "year": 1955,
@@ -5220,6 +5436,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1955,
         "country": "USA",
         "genre": "Costume Adventure, Swashbuckler"
+      },
+      {
+        "title": "Pather Panchali",
+        "director": "Satyajit Ray",
+        "year": 1955,
+        "country": "India",
+        "genre": "Rural Drama, Family Drama"
       },
       {
         "title": "The Red Balloon",
@@ -5264,6 +5487,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Drama, Romance"
       },
       {
+        "title": "Ashes and Diamonds",
+        "director": "Andrzej Wajda",
+        "year": 1958,
+        "country": "Poland",
+        "genre": "Political Drama, War Drama"
+      },
+      {
         "title": "Big Deal on Madonna Street",
         "director": "Mario Monicelli",
         "year": 1958,
@@ -5292,11 +5522,32 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Culture & Society, Anthropology"
       },
       {
+        "title": "Mon oncle",
+        "director": "Jacques Tati",
+        "year": 1958,
+        "country": "France",
+        "genre": "Satire, Domestic Comedy"
+      },
+      {
+        "title": "The Music Room",
+        "director": "Satyajit Ray",
+        "year": 1958,
+        "country": "India",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
         "title": "Nazarín",
         "director": "Luis Buñuel",
         "year": 1958,
         "country": "Mexico",
         "genre": "Religious Drama, Satire"
+      },
+      {
+        "title": "Some Came Running",
+        "director": "Vincente Minnelli",
+        "year": 1958,
+        "country": "USA",
+        "genre": "Drama, Americana"
       },
       {
         "title": "The Tiger of Eschnapur",
@@ -5334,6 +5585,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Drama, Ensemble Film"
       },
       {
+        "title": "The World of Apu",
+        "director": "Satyajit Ray",
+        "year": 1959,
+        "country": "India",
+        "genre": "Drama, Family Drama"
+      },
+      {
         "title": "The Cloud-Capped Star",
         "director": "Ritwik Ghatak",
         "year": 1960,
@@ -5360,6 +5618,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1960,
         "country": "USA",
         "genre": "Drama, Melodrama"
+      },
+      {
+        "title": "Accattone",
+        "director": "Pier Paolo Pasolini",
+        "year": 1961,
+        "country": "Italy",
+        "genre": "Urban Drama, Psychological Drama"
       },
       {
         "title": "Chronicle of a Summer",
@@ -5424,6 +5689,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Western, Revisionist Western"
       },
       {
+        "title": "Salvatore Giuliano",
+        "director": "Francesco Rosi",
+        "year": 1962,
+        "country": "Italy",
+        "genre": "Crime, Political Drama"
+      },
+      {
         "title": "The Trial",
         "director": "Orson Welles",
         "year": 1962,
@@ -5438,11 +5710,39 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Drama, Americana"
       },
       {
+        "title": "Barren Lives",
+        "director": "Nelson Pereira dos Santos",
+        "year": 1963,
+        "country": "Brazil",
+        "genre": "Drama, Rural Drama"
+      },
+      {
+        "title": "El Verdugo",
+        "director": "Luis García Berlanga",
+        "year": 1963,
+        "country": "Spain-Italy",
+        "genre": "Comedy Drama, Black Comedy"
+      },
+      {
         "title": "Flaming Creatures",
         "director": "Jack Smith",
         "year": 1963,
         "country": "USA",
         "genre": "Avant-garde-Experimental, Horror"
+      },
+      {
+        "title": "The House is Black",
+        "director": "Forugh Farrokhzad",
+        "year": 1963,
+        "country": "Iran",
+        "genre": "Illnesses & Disabilities, Documentary"
+      },
+      {
+        "title": "Muriel",
+        "director": "Alain Resnais",
+        "year": 1963,
+        "country": "France-Italy",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "Scorpio Rising",
@@ -5480,6 +5780,27 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Avant-garde-Experimental, Abstract Film"
       },
       {
+        "title": "Gertrud",
+        "director": "Carl Theodor Dreyer",
+        "year": 1964,
+        "country": "Denmark",
+        "genre": "Psychological Drama, Marriage Drama"
+      },
+      {
+        "title": "The Gospel According to St. Matthew",
+        "director": "Pier Paolo Pasolini",
+        "year": 1964,
+        "country": "Italy-France",
+        "genre": "Hagiography, Religious Drama"
+      },
+      {
+        "title": "I Am Cuba",
+        "director": "Mikhail Kalatozov",
+        "year": 1964,
+        "country": "USSR-Cuba",
+        "genre": "Drama, Avant-garde-Experimental"
+      },
+      {
         "title": "Kwaidan",
         "director": "Masaki Kobayashi",
         "year": 1964,
@@ -5492,6 +5813,20 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1964,
         "country": "USSR",
         "genre": "Drama, Period Film"
+      },
+      {
+        "title": "The Umbrellas of Cherbourg",
+        "director": "Jacques Demy",
+        "year": 1964,
+        "country": "France-Germany",
+        "genre": "Musical, Romance"
+      },
+      {
+        "title": "Chimes at Midnight",
+        "director": "Orson Welles",
+        "year": 1965,
+        "country": "France-Spain-Switzerland",
+        "genre": "Drama, Tragi-comedy"
       },
       {
         "title": "Faster, Pussycat! Kill! Kill!",
@@ -5614,11 +5949,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Gangster Film, Crime Thriller"
       },
       {
+        "title": "Don't Look Back",
+        "director": "D.A. Pennebaker",
+        "year": 1967,
+        "country": "USA",
+        "genre": "Music, Documentary"
+      },
+      {
         "title": "The Firemen's Ball",
         "director": "Milos Forman",
         "year": 1967,
         "country": "Czechoslovakia",
         "genre": "Comedy, Satire"
+      },
+      {
+        "title": "Marketa Lazarová",
+        "director": "Frantisek Vlácil",
+        "year": 1967,
+        "country": "Czechoslovakia",
+        "genre": "Epic, Historical Film"
       },
       {
         "title": "Portrait of Jason",
@@ -5628,11 +5977,32 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Culture & Society, Documentary"
       },
       {
+        "title": "Terra em Transe",
+        "director": "Glauber Rocha",
+        "year": 1967,
+        "country": "Brazil",
+        "genre": "Drama, Political Drama"
+      },
+      {
         "title": "Titicut Follies",
         "director": "Frederick Wiseman",
         "year": 1967,
         "country": "USA",
         "genre": "Social Issues, Documentary"
+      },
+      {
+        "title": "Wavelength",
+        "director": "Michael Snow",
+        "year": 1967,
+        "country": "Canada-USA",
+        "genre": "Abstract Film"
+      },
+      {
+        "title": "The Young Girls of Rochefort",
+        "director": "Jacques Demy",
+        "year": 1967,
+        "country": "France",
+        "genre": "Romance, Musical"
       },
       {
         "title": "The Chronicle of Anna Magdalena Bach",
@@ -5642,11 +6012,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Drama, Biopic"
       },
       {
+        "title": "Faces",
+        "director": "John Cassavetes",
+        "year": 1968,
+        "country": "USA",
+        "genre": "Marriage Drama, Psychological Drama"
+      },
+      {
         "title": "The Hour of the Furnaces",
         "director": "Fernando E. Solanas & Octavio Getino",
         "year": 1968,
         "country": "Argentina",
         "genre": "Politics & Government, Documentary"
+      },
+      {
+        "title": "If....",
+        "director": "Lindsay Anderson",
+        "year": 1968,
+        "country": "UK",
+        "genre": "Drama, Satire"
       },
       {
         "title": "L'Amour fou",
@@ -5663,11 +6047,32 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Childhood Drama, Coming-of-Age"
       },
       {
+        "title": "Memories of Underdevelopment",
+        "director": "Tomás Gutiérrez Alea",
+        "year": 1968,
+        "country": "Cuba",
+        "genre": "Psychological Drama, Political Drama"
+      },
+      {
         "title": "The Party",
         "director": "Blake Edwards",
         "year": 1968,
         "country": "USA",
         "genre": "Comedy, Slapstick"
+      },
+      {
+        "title": "Teorema",
+        "director": "Pier Paolo Pasolini",
+        "year": 1968,
+        "country": "Italy",
+        "genre": "Drama, Religious Drama"
+      },
+      {
+        "title": "The Colour of Pomegranates",
+        "director": "Sergei Parajanov",
+        "year": 1969,
+        "country": "USSR",
+        "genre": "Avant-garde-Experimental, Essay Film"
       },
       {
         "title": "The Damned",
@@ -5719,6 +6124,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Ensemble Film, Urban Drama"
       },
       {
+        "title": "Five Easy Pieces",
+        "director": "Bob Rafelson",
+        "year": 1970,
+        "country": "USA",
+        "genre": "Drama, Road Movie"
+      },
+      {
         "title": "Gimme Shelter",
         "director": "Albert Maysles, David Maysles & Charlotte Zwerin",
         "year": 1970,
@@ -5733,11 +6145,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Avant-garde-Experimental"
       },
       {
+        "title": "Husbands",
+        "director": "John Cassavetes",
+        "year": 1970,
+        "country": "USA",
+        "genre": "Drama, Buddy Film"
+      },
+      {
         "title": "Le Boucher",
         "director": "Claude Chabrol",
         "year": 1970,
         "country": "France-Italy",
         "genre": "Thriller, Psychological Thriller"
+      },
+      {
+        "title": "Performance",
+        "director": "Nicolas Roeg & Donald Cammell",
+        "year": 1970,
+        "country": "UK",
+        "genre": "Psychological Drama, Satire"
       },
       {
         "title": "The Red Circle",
@@ -5747,11 +6173,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Crime Thriller, Post-Noir (Modern Noir)"
       },
       {
+        "title": "Wanda",
+        "director": "Barbara Loden",
+        "year": 1970,
+        "country": "USA",
+        "genre": "Drama, Road Movie"
+      },
+      {
         "title": "The Wild Child",
         "director": "François Truffaut",
         "year": 1970,
         "country": "France",
         "genre": "Period Film, Childhood Drama"
+      },
+      {
+        "title": "A Touch of Zen",
+        "director": "King Hu",
+        "year": 1971,
+        "country": "Taiwan",
+        "genre": "Martial Arts, Drama"
       },
       {
         "title": "The Devils",
@@ -5852,6 +6292,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Historical Film, Biography"
       },
       {
+        "title": "The Mother and the Whore",
+        "director": "Jean Eustache",
+        "year": 1973,
+        "country": "France",
+        "genre": "Psychological Drama, Urban Drama"
+      },
+      {
         "title": "O Lucky Man!",
         "director": "Lindsay Anderson",
         "year": 1973,
@@ -5859,11 +6306,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Comedy, Satire"
       },
       {
+        "title": "Touki Bouki",
+        "director": "Djibril Diop Mambéty",
+        "year": 1973,
+        "country": "Senegal",
+        "genre": "Drama, Road Movie"
+      },
+      {
         "title": "Arabian Nights",
         "director": "Pier Paolo Pasolini",
         "year": 1974,
         "country": "Italy-France",
         "genre": "Adventure, Romantic Fantasy"
+      },
+      {
+        "title": "Celine and Julie Go Boating",
+        "director": "Jacques Rivette",
+        "year": 1974,
+        "country": "France",
+        "genre": "Avant-garde-Experimental, Surrealist Film"
       },
       {
         "title": "Edvard Munch",
@@ -5929,11 +6390,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Action, Adventure Drama"
       },
       {
+        "title": "The Travelling Players",
+        "director": "Theo Angelopoulos",
+        "year": 1975,
+        "country": "Greece",
+        "genre": "Drama, Political Drama"
+      },
+      {
         "title": "Xala",
         "director": "Ousmane Sembene",
         "year": 1975,
         "country": "Senegal",
         "genre": "Comedy, Satire"
+      },
+      {
+        "title": "1900",
+        "director": "Bernardo Bertolucci",
+        "year": 1976,
+        "country": "Italy-France-West Germany",
+        "genre": "Political Drama, Family Drama"
       },
       {
         "title": "The Ascent",
@@ -5955,6 +6430,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1976,
         "country": "USA",
         "genre": "Social Issues, Documentary"
+      },
+      {
+        "title": "Kings of the Road",
+        "director": "Wim Wenders",
+        "year": 1976,
+        "country": "West Germany",
+        "genre": "Drama, Road Movie"
       },
       {
         "title": "News from Home",
@@ -5983,6 +6465,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1977,
         "country": "West Germany-France-UK",
         "genre": "Avant-garde-Experimental, Essay Film"
+      },
+      {
+        "title": "Killer of Sheep",
+        "director": "Charles Burnett",
+        "year": 1977,
+        "country": "USA",
+        "genre": "Drama, Family Drama"
       },
       {
         "title": "New York, New York",
@@ -6076,11 +6565,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Mystery, Psychological Drama"
       },
       {
+        "title": "Berlin Alexanderplatz",
+        "director": "Rainer Werner Fassbinder",
+        "year": 1980,
+        "country": "West Germany-Italy",
+        "genre": "Epic, Political Drama"
+      },
+      {
         "title": "Gregory's Girl",
         "director": "Bill Forsyth",
         "year": 1980,
         "country": "UK",
         "genre": "Comedy Drama, Coming-of-Age"
+      },
+      {
+        "title": "Heaven's Gate",
+        "director": "Michael Cimino",
+        "year": 1980,
+        "country": "USA",
+        "genre": "Epic Western, Revisionist Western"
       },
       {
         "title": "Mon oncle d'Amérique",
@@ -6118,6 +6621,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Political Drama, Prison Film"
       },
       {
+        "title": "À nos amours",
+        "director": "Maurice Pialat",
+        "year": 1983,
+        "country": "France",
+        "genre": "Drama, Coming-of-Age"
+      },
+      {
         "title": "The Ballad of Narayama",
         "director": "Shohei Imamura",
         "year": 1983,
@@ -6139,11 +6649,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Drama"
       },
       {
+        "title": "L'Argent",
+        "director": "Robert Bresson",
+        "year": 1983,
+        "country": "France-Switzerland",
+        "genre": "Drama, Crime"
+      },
+      {
         "title": "Local Hero",
         "director": "Bill Forsyth",
         "year": 1983,
         "country": "UK",
         "genre": "Comedy, Comedy of Manners"
+      },
+      {
+        "title": "Nostalghia",
+        "director": "Andrei Tarkovsky",
+        "year": 1983,
+        "country": "Italy",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "Zelig",
@@ -6153,11 +6677,25 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Mockumentary, Fantasy Comedy"
       },
       {
+        "title": "Stranger Than Paradise",
+        "director": "Jim Jarmusch",
+        "year": 1984,
+        "country": "USA",
+        "genre": "Comedy, Road Movie"
+      },
+      {
         "title": "Twenty Years Later",
         "director": "Eduardo Coutinho",
         "year": 1984,
         "country": "Brazil",
         "genre": "Documentary"
+      },
+      {
+        "title": "Yellow Earth",
+        "director": "Chen Kaige",
+        "year": 1984,
+        "country": "China",
+        "genre": "Family Drama, Rural Drama"
       },
       {
         "title": "My Friend Ivan Lapshin",
@@ -6174,11 +6712,32 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Coming-of-Age, Childhood Drama"
       },
       {
+        "title": "Shoah",
+        "director": "Claude Lanzmann",
+        "year": 1985,
+        "country": "France",
+        "genre": "Military & War, Documentary"
+      },
+      {
+        "title": "The Time to Live and the Time to Die",
+        "director": "Hou Hsiao-hsien",
+        "year": 1985,
+        "country": "Taiwan",
+        "genre": "Coming-of-Age, Family Drama"
+      },
+      {
         "title": "Vagabond",
         "director": "Agnès Varda",
         "year": 1985,
         "country": "France",
         "genre": "Drama, Road Movie"
+      },
+      {
+        "title": "The Green Ray",
+        "director": "Eric Rohmer",
+        "year": 1986,
+        "country": "France",
+        "genre": "Romantic Drama, Urban Drama"
       },
       {
         "title": "A Short Film About Killing",
@@ -6251,6 +6810,20 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Culture & Society, Documentary"
       },
       {
+        "title": "Dekalog",
+        "director": "Krzysztof Kieslowski",
+        "year": 1988,
+        "country": "Poland-West Germany",
+        "genre": "Drama, Psychological Drama"
+      },
+      {
+        "title": "Distant Voices, Still Lives",
+        "director": "Terence Davies",
+        "year": 1988,
+        "country": "UK",
+        "genre": "Family Drama, Biography"
+      },
+      {
         "title": "Hôtel Terminus",
         "director": "Marcel Ophüls",
         "year": 1988,
@@ -6263,6 +6836,20 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1988,
         "country": "Greece-France-Italy",
         "genre": "Road Movie, Childhood Drama"
+      },
+      {
+        "title": "The Thin Blue Line",
+        "director": "Errol Morris",
+        "year": 1988,
+        "country": "USA",
+        "genre": "Law & Crime, Documentary"
+      },
+      {
+        "title": "A City of Sadness",
+        "director": "Hou Hsiao-hsien",
+        "year": 1989,
+        "country": "Taiwan-Hong Kong",
+        "genre": "Family Drama, Period Film"
       },
       {
         "title": "The Cook, The Thief, His Wife & Her Lover",
@@ -6356,6 +6943,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Drama, Fantasy"
       },
       {
+        "title": "The Quince Tree Sun",
+        "director": "Victor Erice",
+        "year": 1992,
+        "country": "Spain",
+        "genre": "Drama, Documentary"
+      },
+      {
         "title": "Twin Peaks: Fire Walk with Me",
         "director": "David Lynch",
         "year": 1992,
@@ -6398,6 +6992,20 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Essay Film, Documentary"
       },
       {
+        "title": "The Piano",
+        "director": "Jane Campion",
+        "year": 1993,
+        "country": "New Zealand-Australia-France",
+        "genre": "Romantic Drama, Period Film"
+      },
+      {
+        "title": "The Puppetmaster",
+        "director": "Hou Hsiao-hsien",
+        "year": 1993,
+        "country": "Taiwan",
+        "genre": "Biography, Drama"
+      },
+      {
         "title": "Short Cuts",
         "director": "Robert Altman",
         "year": 1993,
@@ -6433,6 +7041,20 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Sports, Documentary"
       },
       {
+        "title": "Sátántangó",
+        "director": "Béla Tarr",
+        "year": 1994,
+        "country": "Hungary-Germany-Switzerland",
+        "genre": "Drama, Ensemble Film"
+      },
+      {
+        "title": "Through the Olive Trees",
+        "director": "Abbas Kiarostami",
+        "year": 1994,
+        "country": "Iran-France",
+        "genre": "Drama, Docudrama"
+      },
+      {
         "title": "To Live",
         "director": "Zhang Yimou",
         "year": 1994,
@@ -6452,6 +7074,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1996,
         "country": "Iran-France",
         "genre": "Comedy Drama, Satire"
+      },
+      {
+        "title": "Breaking the Waves",
+        "director": "Lars von Trier",
+        "year": 1996,
+        "country": "Denmark-Sweden-France-Netherlands-Norway-Iceland-Spain",
+        "genre": "Psychological Drama, Romantic Drama"
       },
       {
         "title": "Crash",
@@ -6475,6 +7104,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Avant-garde-Experimental, Teen Movie"
       },
       {
+        "title": "Happy Together",
+        "director": "Wong Kar-wai",
+        "year": 1997,
+        "country": "Hong Kong",
+        "genre": "Romance, Drama"
+      },
+      {
         "title": "Mother and Son",
         "director": "Aleksandr Sokurov",
         "year": 1997,
@@ -6487,6 +7123,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1997,
         "country": "Canada",
         "genre": "Drama, Ensemble Film"
+      },
+      {
+        "title": "Taste of Cherry",
+        "director": "Abbas Kiarostami",
+        "year": 1997,
+        "country": "Iran",
+        "genre": "Drama, Road Movie"
       },
       {
         "title": "After Life",
@@ -6503,6 +7146,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Romantic Drama, Period Film"
       },
       {
+        "title": "Histoire(s) du cinéma",
+        "director": "Jean-Luc Godard",
+        "year": 1998,
+        "country": "France",
+        "genre": "Essay Film, Documentary"
+      },
+      {
         "title": "The Idiots",
         "director": "Lars von Trier",
         "year": 1998,
@@ -6515,6 +7165,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 1999,
         "country": "Japan-South Korea",
         "genre": "Thriller, Sadistic Horror"
+      },
+      {
+        "title": "Beau travail",
+        "director": "Claire Denis",
+        "year": 1999,
+        "country": "France",
+        "genre": "Drama, Psychological Drama"
       },
       {
         "title": "L'Humanité",
@@ -6552,11 +7209,32 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Biography, Documentary"
       },
       {
+        "title": "The Gleaners & I",
+        "director": "Agnès Varda",
+        "year": 2000,
+        "country": "France",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
         "title": "In Vanda's Room",
         "director": "Pedro Costa",
         "year": 2000,
         "country": "Portugal-Germany-Switzerland-Italy",
         "genre": "Drama"
+      },
+      {
+        "title": "Platform",
+        "director": "Jia Zhangke",
+        "year": 2000,
+        "country": "China-Hong Kong-Japan-France",
+        "genre": "Comedy Drama, Ensemble Film"
+      },
+      {
+        "title": "Werckmeister Harmonies",
+        "director": "Béla Tarr",
+        "year": 2000,
+        "country": "Hungary-Germany-France-Switzerland-Italy",
+        "genre": "Horror, Psychological Drama"
       },
       {
         "title": "In Praise of Love",
@@ -6594,6 +7272,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Crime, Drama"
       },
       {
+        "title": "Russian Ark",
+        "director": "Aleksandr Sokurov",
+        "year": 2002,
+        "country": "Russia-Germany-Japan-Canada-Finland-Denmark",
+        "genre": "Avant-garde-Experimental, Essay Film"
+      },
+      {
         "title": "The Son",
         "director": "Jean-Pierre Dardenne & Luc Dardenne",
         "year": 2002,
@@ -6621,6 +7306,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "country": "Russia"
       },
       {
+        "title": "Tie Xi Qu: West of the Tracks",
+        "director": "Wang Bing",
+        "year": 2003,
+        "country": "China",
+        "genre": "Culture & Society, Documentary"
+      },
+      {
         "title": "The Intruder",
         "director": "Claire Denis",
         "year": 2004,
@@ -6633,6 +7325,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "year": 2004,
         "country": "USA",
         "genre": "Comedy Drama, Buddy Film"
+      },
+      {
+        "title": "The Death of Mr. Lazarescu",
+        "director": "Cristi Puiu",
+        "year": 2005,
+        "country": "Romania",
+        "genre": "Drama, Medical Drama"
       },
       {
         "title": "Grizzly Man",
@@ -6698,6 +7397,13 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Social History, Documentary"
       },
       {
+        "title": "The Tree of Life",
+        "director": "Terrence Malick",
+        "year": 2011,
+        "country": "USA",
+        "genre": "Drama, Family Drama"
+      },
+      {
         "title": "The Act of Killing",
         "director": "Joshua Oppenheimer",
         "year": 2012,
@@ -6712,11 +7418,32 @@ const lists = [ // Last Movie: Chelsea Girls (500-401)
         "genre": "Drama, Romantic Drama"
       },
       {
+        "title": "Holy Motors",
+        "director": "Leos Carax",
+        "year": 2012,
+        "country": "France-Germany",
+        "genre": "Avant-garde-Experimental, Fantasy"
+      },
+      {
         "title": "The Master",
         "director": "Paul Thomas Anderson",
         "year": 2012,
         "country": "USA",
         "genre": "Period Film, Psychological Drama"
+      },
+      {
+        "title": "Under the Skin",
+        "director": "Jonathan Glazer",
+        "year": 2013,
+        "country": "UK-USA-Switzerland",
+        "genre": "Science Fiction, Psychological Sci-Fi"
+      },
+      {
+        "title": "Toni Erdmann",
+        "director": "Maren Ade",
+        "year": 2016,
+        "country": "Germany-Austria-Switzerland-Romania",
+        "genre": "Comedy Drama, Slice of Life"
       },
     ]
   }
