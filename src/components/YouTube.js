@@ -112,6 +112,11 @@ const YouTube = {
         "subtitle": "Brian Cox"
       },
       {
+        "id": "sCD9zjf_YRU",
+        "title": "Joe Rogan Experience #1276",
+        "subtitle": "Ben Shapiro"
+      },
+      {
         "id": "2O-iLk1G_ng",
         "title": "Joe Rogan Experience #1330",
         "subtitle": "Bernie Sanders"

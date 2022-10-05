@@ -1,4 +1,4 @@
-const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
+const lists = [
   {
     "name": "Recommendations",
     "items": [
@@ -7,6 +7,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Wiene",
         "year": 1920,
         "country": "Germany",
+        "runtime": 69,
+        "genre": "Horror, Costume Horror",
         "rating": 8
       },
       {
@@ -14,6 +16,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "F.W. Murnau",
         "year": 1922,
         "country": "Germany",
+        "runtime": 84,
         "genre": "Horror, Gothic Film",
         "rating": 8
       },
@@ -22,6 +25,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "F.W. Murnau",
         "year": 1924,
         "country": "Germany",
+        "runtime": 77,
         "genre": "Drama, Psychological Drama",
         "rating": 10
       },
@@ -30,6 +34,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Buster Keaton",
         "year": 1924,
         "country": "USA",
+        "runtime": 44,
         "genre": "Comedy, Slapstick",
         "rating": 9
       },
@@ -38,6 +43,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Charles Chaplin",
         "year": 1925,
         "country": "USA",
+        "runtime": 82,
         "genre": "Slapstick, Adventure Comedy",
         "rating": 10
       },
@@ -54,6 +60,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "F.W. Murnau",
         "year": 1927,
         "country": "USA",
+        "runtime": 110,
         "genre": "Melodrama, Romantic Drama",
         "rating": 9
       },
@@ -76,6 +83,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "F.W. Murnau",
         "year": 1931,
         "country": "USA",
+        "runtime": 82,
+        "genre": "Romance, Docudrama",
         "rating": 10
       },
       {
@@ -99,6 +108,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Preston Sturges",
         "year": 1941,
         "country": "USA",
+        "runtime": 94,
         "genre": "Romantic Comedy, Sophisticated Comedy"
       },
       {
@@ -112,13 +122,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Day of Wrath",
         "director": "Carl Theodor Dreyer",
         "year": 1943,
-        "country": "Denmark"
+        "country": "Denmark",
+        "runtime": 110,
+        "genre": "Period Film, Psychological Drama"
       },
       {
         "title": "Les Enfants du paradis",
         "director": "Marcel Carné",
         "year": 1945,
         "country": "France",
+        "runtime": 195,
         "genre": "Period Film, Romantic Drama"
       },
       {
@@ -126,6 +139,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Yasujiro Ozu",
         "year": 1949,
         "country": "Japan",
+        "runtime": 108,
         "genre": "Drama, Family Drama"
       },
       {
@@ -133,6 +147,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Akira Kurosawa",
         "year": 1950,
         "country": "Japan",
+        "runtime": 88,
         "genre": "Period Film, Crime Drama"
       },
       {
@@ -154,6 +169,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Akira Kurosawa",
         "year": 1952,
         "country": "Japan",
+        "runtime": 143,
         "genre": "Drama, Psychological Drama"
       },
       {
@@ -161,6 +177,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Max Ophüls",
         "year": 1953,
         "country": "France-Italy",
+        "runtime": 105,
         "genre": "Period Film, Romantic Drama"
       },
       {
@@ -175,6 +192,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Yasujiro Ozu",
         "year": 1953,
         "country": "Japan",
+        "runtime": 134,
         "genre": "Drama, Family Drama"
       },
       {
@@ -182,6 +200,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alfred Hitchcock",
         "year": 1954,
         "country": "USA",
+        "runtime": 112,
         "genre": "Thriller, Romantic Mystery"
       },
       {
@@ -196,6 +215,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Carl Theodor Dreyer",
         "year": 1955,
         "country": "Denmark",
+        "runtime": 125,
         "genre": "Drama, Religious Drama"
       },
       {
@@ -203,6 +223,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Bresson",
         "year": 1956,
         "country": "France",
+        "runtime": 102,
         "genre": "Drama, Prison Film"
       },
       {
@@ -224,6 +245,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "François Truffaut",
         "year": 1959,
         "country": "France",
+        "runtime": 99,
         "genre": "Childhood Drama, Coming-of-Age"
       },
       {
@@ -238,6 +260,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alain Resnais",
         "year": 1959,
         "country": "France-Japan",
+        "runtime": 91,
         "genre": "Psychological Drama, Romantic Drama"
       },
       {
@@ -245,6 +268,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Douglas Sirk",
         "year": 1959,
         "country": "USA",
+        "runtime": 124,
         "genre": "Melodrama, Family Drama"
       },
       {
@@ -252,6 +276,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean-Luc Godard",
         "year": 1960,
         "country": "France",
+        "runtime": 89,
         "genre": "Crime Drama, Urban Drama"
       },
       {
@@ -259,6 +284,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michelangelo Antonioni",
         "year": 1960,
         "country": "Italy-France",
+        "runtime": 145,
         "genre": "Drama, Psychological Drama"
       },
       {
@@ -272,13 +298,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "La Notte",
         "director": "Michelangelo Antonioni",
         "year": 1961,
-        "country": "Italy-France"
+        "country": "Italy-France",
+        "runtime": 120,
+        "genre": "Psychological Drama, Marriage Drama"
       },
       {
         "title": "Viridiana",
         "director": "Luis Buñuel",
         "year": 1961,
         "country": "Spain",
+        "runtime": 90,
         "genre": "Comedy Drama, Satire",
         "rating": 10
       },
@@ -286,13 +315,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "An Autumn Afternoon",
         "director": "Yasujiro Ozu",
         "year": 1962,
-        "country": "Japan"
+        "country": "Japan",
+        "runtime": 115,
+        "genre": "Family Drama, Romantic Drama"
       },
       {
         "title": "The Exterminating Angel",
         "director": "Luis Buñuel",
         "year": 1962,
         "country": "Mexico",
+        "runtime": 95,
         "genre": "Comedy Drama, Satire",
         "rating": 9
       },
@@ -308,6 +340,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michelangelo Antonioni",
         "year": 1962,
         "country": "Italy-France",
+        "runtime": 126,
         "genre": "Psychological Drama, Urban Drama"
       },
       {
@@ -315,6 +348,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean-Luc Godard",
         "year": 1962,
         "country": "France",
+        "runtime": 85,
         "genre": "Psychological Drama, Urban Drama"
       },
       {
@@ -322,6 +356,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean-Luc Godard",
         "year": 1963,
         "country": "France-Italy",
+        "runtime": 103,
         "genre": "Showbiz Drama, Satire"
       },
       {
@@ -350,6 +385,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Andrei Tarkovsky",
         "year": 1966,
         "country": "USSR",
+        "runtime": 185,
         "genre": "Historical Film, Biography"
       },
       {
@@ -357,6 +393,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Bresson",
         "year": 1966,
         "country": "France",
+        "runtime": 95,
         "genre": "Rural Drama, Animal Picture"
       },
       {
@@ -364,6 +401,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michelangelo Antonioni",
         "year": 1966,
         "country": "Italy-UK",
+        "runtime": 111,
         "genre": "Mystery, Psychological Thriller"
       },
       {
@@ -371,6 +409,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sergio Leone",
         "year": 1966,
         "country": "Italy-Spain",
+        "runtime": 161,
         "genre": "Spaghetti Western, Outlaw (Gunfighter) Film"
       },
       {
@@ -378,6 +417,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ingmar Bergman",
         "year": 1966,
         "country": "Sweden",
+        "runtime": 83,
         "genre": "Drama, Psychological Drama",
         "rating": 10
       },
@@ -385,19 +425,24 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Two or Three Things I Know About Her",
         "director": "Jean-Luc Godard",
         "year": 1966,
-        "country": "France"
+        "country": "France",
+        "runtime": 87,
+        "genre": "Essay Film, Urban Drama"
       },
       {
         "title": "Le Samouraï",
         "director": "Jean-Pierre Melville",
         "year": 1967,
-        "country": "France"
+        "country": "France",
+        "runtime": 95,
+        "genre": "Crime Thriller, Post-Noir (Modern Noir)"
       },
       {
         "title": "Mouchette",
         "director": "Robert Bresson",
         "year": 1967,
         "country": "France",
+        "runtime": 80,
         "genre": "Drama, Childhood Drama"
       },
       {
@@ -405,6 +450,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jacques Tati",
         "year": 1967,
         "country": "France",
+        "runtime": 108,
         "genre": "Satire, Urban Comedy",
         "rating": 10
       },
@@ -419,6 +465,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Kubrick",
         "year": 1968,
         "country": "UK-USA",
+        "runtime": 139,
         "genre": "Psychological Sci-Fi, Space Adventure",
         "rating": 10
       },
@@ -427,6 +474,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Roman Polanski",
         "year": 1968,
         "country": "USA",
+        "runtime": 136,
         "genre": "Occult Horror, Psychological Thriller"
       },
       {
@@ -440,7 +488,9 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "My Night at Maud's",
         "director": "Eric Rohmer",
         "year": 1969,
-        "country": "France"
+        "country": "France",
+        "runtime": 105,
+        "genre": "Comedy of Manners, Romantic Drama"
       },
       {
         "title": "The Sorrow and the Pity",
@@ -481,7 +531,9 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "McCabe & Mrs. Miller",
         "director": "Robert Altman",
         "year": 1971,
-        "country": "USA"
+        "country": "USA",
+        "runtime": 121,
+        "genre": "Drama, Revisionist Western"
       },
       {
         "title": "Two-Lane Blacktop",
@@ -495,6 +547,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Werner Herzog",
         "year": 1972,
         "country": "West Germany",
+        "runtime": 94,
         "genre": "Adventure Drama, Jungle Film"
       },
       {
@@ -502,6 +555,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Cassavetes",
         "year": 1974,
         "country": "USA",
+        "runtime": 155,
         "genre": "Marriage Drama, Psychological Drama"
       },
       {
@@ -509,6 +563,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Francis Ford Coppola",
         "year": 1974,
         "country": "USA",
+        "runtime": 113,
         "genre": "Thriller, Paranoid Thriller"
       },
       {
@@ -538,6 +593,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Kubrick",
         "year": 1975,
         "country": "UK",
+        "runtime": 183,
         "genre": "Drama, Period Film",
         "rating": 10
       },
@@ -546,6 +602,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Chantal Akerman",
         "year": 1975,
         "country": "Belgium-France",
+        "runtime": 201,
         "genre": "Avant-garde-Experimental, Feminist Film",
         "rating": 10
       },
@@ -554,6 +611,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Altman",
         "year": 1975,
         "country": "USA",
+        "runtime": 159,
         "genre": "Ensemble Film, Media Satire",
       },
       {
@@ -561,13 +619,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michelangelo Antonioni",
         "year": 1975,
         "country": "Italy",
+        "runtime": 119,
         "genre": "Road Movie, Psychological Drama"
       },
       {
         "title": "Salò, or the 120 Days of Sodom",
         "director": "Pier Paolo Pasolini",
         "year": 1975,
-        "country": "Italy"
+        "country": "Italy",
+        "runtime": 117,
+        "genre": "Drama, Sex Horror"
       },
       {
         "title": "Carrie",
@@ -588,6 +649,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Martin Scorsese",
         "year": 1976,
         "country": "USA",
+        "runtime": 113,
         "genre": "Psychological Drama, Urban Drama"
       },
       {
@@ -603,6 +665,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Woody Allen",
         "year": 1979,
         "country": "USA",
+        "runtime": 96,
         "genre": "Urban Comedy, Romantic Comedy"
       },
       {
@@ -617,6 +680,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Andrei Tarkovsky",
         "year": 1979,
         "country": "USSR",
+        "runtime": 160,
         "genre": "Science Fiction, Psychological Sci-Fi"
       },
       {
@@ -652,13 +716,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Chris Marker",
         "year": 1983,
         "country": "France",
+        "runtime": 100,
         "genre": "Avant-garde-Experimental, Documentary"
       },
       {
         "title": "Videodrome",
         "director": "David Cronenberg",
         "year": 1983,
-        "country": "Canada"
+        "country": "Canada",
+        "runtime": 90,
+        "genre": "Media Satire, Sci-Fi Horror"
       },
       {
         "title": "The Fly",
@@ -672,6 +739,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Abbas Kiarostami",
         "year": 1987,
         "country": "Iran",
+        "runtime": 85,
+        "genre": "Drama, Childhood Drama",
         "image": "whereisthefriendshome"
       },
       {
@@ -686,6 +755,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Abbas Kiarostami",
         "year": 1990,
         "country": "Iran",
+        "runtime": 98,
         "genre": "Docudrama, Courtroom Drama"
       },
       {
@@ -693,6 +763,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Martin Scorsese",
         "year": 1990,
         "country": "USA",
+        "runtime": 146,
         "genre": "Gangster Film, Crime Drama"
       },
       {
@@ -707,6 +778,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Martin Scorsese",
         "year": 1980,
         "country": "USA",
+        "runtime": 128,
         "genre": "Biography, Sports Drama"
       },
       {
@@ -735,6 +807,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Quentin Tarantino",
         "year": 1994,
         "country": "USA",
+        "runtime": 154,
         "genre": "Crime Comedy, Ensemble Film"
       },
       {
@@ -756,6 +829,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Kubrick",
         "year": 1999,
         "country": "USA-UK",
+        "runtime": 159,
+        "genre": "Marriage Drama, Psychological Drama",
         "rating": 9
       },
       {
@@ -777,6 +852,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Wong Kar-wai",
         "year": 2000,
         "country": "Hong Kong-France",
+        "runtime": 97,
         "genre": "Melodrama, Romantic Drama"
       },
       {
@@ -791,6 +867,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Edward Yang",
         "year": 2000,
         "country": "Taiwan-Japan",
+        "runtime": 173,
         "genre": "Ensemble Film, Family Drama"
       },
       {
@@ -813,6 +890,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "David Lynch",
         "year": 2001,
         "country": "France-US",
+        "runtime": 147,
         "genre": "Mystery, Psychological Thriller"
       },
       {
@@ -826,7 +904,9 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "City of God",
         "director": "Fernando Meirelles & Kátia Lund",
         "year": 2002,
-        "country": "Brazil-Germany-France"
+        "country": "Brazil-Germany-France",
+        "runtime": 129,
+        "genre": "Crime Drama, Coming-of-Age"
       },
       {
         "title": "Elephant",
@@ -853,13 +933,17 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Tropical Malady",
         "director": "Apichatpong Weerasethakul",
         "year": 2004,
-        "country": "France-Thailand-Germany-Italy-Switzerland"
+        "country": "France-Thailand-Germany-Italy-Switzerland",
+        "runtime": 118,
+        "genre": "Avant-garde-Experimental, Adventure Drama"
       },
       {
         "title": "Caché",
         "director": "Michael Haneke",
         "year": 2005,
-        "country": "France-Austria-Germany-Italy"
+        "country": "France-Austria-Germany-Italy",
+        "runtime": 117,
+        "genre": "Drama, Psychological Thriller"
       },
       {
         "title": "Synecdoche, New York",
@@ -904,6 +988,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sergei Eisenstein",
         "year": 1925,
         "country": "USSR",
+        "runtime": 71,
         "genre": "Political Drama, Propaganda Film",
         "rating": 10
       },
@@ -912,6 +997,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Fritz Lang",
         "year": 1927,
         "country": "Germany",
+        "runtime": 153,
         "genre": "Science Fiction, Psychological Sci-Fi",
         "rating": 10
       },
@@ -920,6 +1006,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Fritz Lang",
         "year": 1931,
         "country": "Germany",
+        "runtime": 99,
         "genre": "Psychological Thriller, Police Detective Film",
         "rating": 10
       },
@@ -967,6 +1054,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Billy Wilder",
         "year": 1944,
         "country": "USA",
+        "runtime": 106,
         "genre": "Film Noir, Crime Thriller",
         "rating": 10
       },
@@ -975,6 +1063,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "William Wyler",
         "year": 1946,
         "country": "US",
+        "runtime": 172,
+        "genre": "Family Drama, Ensemble Film",
         "rating": 10
       },
       {
@@ -982,6 +1072,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Max Ophüls",
         "year": 1948,
         "country": "USA",
+        "runtime": 90,
         "genre": "Melodrama, Romantic Drama"
       },
       {
@@ -989,6 +1080,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Joseph L. Mankiewicz",
         "year": 1950,
         "country": "USA",
+        "runtime": 138,
         "genre": "Satire, Showbiz Drama",
         "rating": 10
       },
@@ -997,6 +1089,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luis Buñuel",
         "year": 1950,
         "country": "Mexico",
+        "runtime": 88,
         "genre": "Juvenile Delinquency Film, Urban Drama",
         "rating": 10
       },
@@ -1005,6 +1098,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Billy Wilder",
         "year": 1950,
         "country": "USA",
+        "runtime": 110,
         "genre": "Showbiz Drama, Satire",
         "rating": 10
       },
@@ -1028,6 +1122,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Vittorio De Sica",
         "year": 1952,
         "country": "Italy",
+        "runtime": 89,
         "genre": "Urban Drama, Melodrama"
       },
       {
@@ -1042,13 +1137,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "The Wages of Fear",
         "director": "Henri-Georges Clouzot",
         "year": 1953,
-        "country": "France-Italy"
+        "country": "France-Italy",
+        "runtime": 105,
+        "genre": "Thriller, Adventure Drama"
       },
       {
         "title": "Sansho the Bailiff",
         "director": "Kenji Mizoguchi",
         "year": 1954,
         "country": "Japan",
+        "runtime": 125,
         "genre": "Drama, Period Film"
       },
       {
@@ -1063,6 +1161,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Ford",
         "year": 1956,
         "country": "USA",
+        "runtime": 119,
         "genre": "Western, Revisionist Western",
         "rating": 10
       },
@@ -1071,6 +1170,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Kubrick",
         "year": 1957,
         "country": "USA",
+        "runtime": 86,
+        "genre": "Anti-War Film, War Drama",
         "rating": 10
       },
       {
@@ -1078,6 +1179,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ingmar Bergman",
         "year": 1957,
         "country": "Sweden",
+        "runtime": 96,
         "genre": "Fantasy, Psychological Drama",
         "rating": 10
       },
@@ -1085,13 +1187,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Throne of Blood",
         "director": "Akira Kurosawa",
         "year": 1957,
-        "country": "Japan"
+        "country": "Japan",
+        "runtime": 108,
+        "genre": "Drama, Samurai Film"
       },
       {
         "title": "Wild Strawberries",
         "director": "Ingmar Bergman",
         "year": 1957,
         "country": "Sweden",
+        "runtime": 90,
         "genre": "Drama, Psychological Drama",
         "rating": 10
       },
@@ -1106,6 +1211,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Orson Welles",
         "year": 1958,
         "country": "USA",
+        "runtime": 108,
         "genre": "Crime, Film Noir",
         "rating": 10
       },
@@ -1114,6 +1220,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alfred Hitchcock",
         "year": 1959,
         "country": "USA",
+        "runtime": 136,
         "genre": "Thriller, Chase Movie",
         "rating": 10
       },
@@ -1122,6 +1229,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Billy Wilder",
         "year": 1959,
         "country": "USA",
+        "runtime": 119,
         "genre": "Comedy, Farce",
         "rating": 10
       },
@@ -1130,6 +1238,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Billy Wilder",
         "year": 1960,
         "country": "USA",
+        "runtime": 125,
         "genre": "Comedy Drama, Workplace Comedy",
         "rating": 10
       },
@@ -1138,6 +1247,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Federico Fellini",
         "year": 1960,
         "country": "Italy",
+        "runtime": 175,
         "genre": "Comedy Drama, Media Satire",
         "rating": 10
       },
@@ -1145,13 +1255,16 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Peeping Tom",
         "director": "Michael Powell",
         "year": 1960,
-        "country": "UK"
+        "country": "UK",
+        "runtime": 109,
+        "genre": "Thriller, Psychological Thriller"
       },
       {
         "title": "Psycho",
         "director": "Alfred Hitchcock",
         "year": 1960,
         "country": "USA",
+        "runtime": 109,
         "genre": "Thriller, Psychological Thriller",
         "rating": 10
       },
@@ -1168,6 +1281,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Agnès Varda",
         "year": 1962,
         "country": "France",
+        "runtime": 90,
+        "genre": "Drama, Psychological Drama",
         "rating": 10
       },
       {
@@ -1175,6 +1290,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Federico Fellini",
         "year": 1963,
         "country": "Italy",
+        "runtime": 135,
         "genre": "Satire, Psychological Drama",
         "rating": 10
       },
@@ -1200,6 +1316,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Mike Nichols",
         "year": 1967,
         "country": "USA",
+        "runtime": 105,
+        "genre": "Comedy, Coming-of-Age",
         "rating": 10
       },
       {
@@ -1207,6 +1325,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sergio Leone",
         "year": 1968,
         "country": "Italy-USA",
+        "runtime": 165,
         "genre": "Epic Western, Spaghetti Western",
         "rating": 10
       },
@@ -1215,6 +1334,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ken Loach",
         "year": 1969,
         "country": "UK",
+        "runtime": 113,
         "genre": "Coming-of-Age, Family Drama",
         "rating": 10
       },
@@ -1223,6 +1343,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Kubrick",
         "year": 1971,
         "country": "UK",
+        "runtime": 137,
         "genre": "Satire, Psychological Sci-Fi",
         "rating": 10
       },
@@ -1231,6 +1352,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Francis Ford Coppola",
         "year": 1972,
         "country": "USA",
+        "runtime": 175,
         "genre": "Gangster Film, Crime Drama",
         "rating": 10
       },
@@ -1239,6 +1361,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Andrei Tarkovsky",
         "year": 1972,
         "country": "USSR",
+        "runtime": 165,
         "genre": "Science Fiction, Psychological Sci-Fi"
       },
       {
@@ -1246,6 +1369,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Orson Welles",
         "year": 1973,
         "country": "France-Iran-West Germany",
+        "runtime": 85,
+        "genre": "Avant-garde-Experimental, Essay Film",
         "rating": 10
       },
       {
@@ -1292,6 +1417,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "David Lynch",
         "year": 1977,
         "country": "USA",
+        "runtime": 85,
+        "genre": "Avant-garde-Experimental, Surrealist Film",
         "rating": 10
       },
       {
@@ -1315,6 +1442,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ingmar Bergman",
         "year": 1982,
         "country": "Sweden",
+        "runtime": 189,
         "genre": "Family Drama, Childhood Drama",
         "rating": 10
       },
@@ -1331,6 +1459,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Carpenter",
         "year": 1982,
         "country": "USA",
+        "runtime": 108,
+        "genre": "Science Fiction, Horror",
         "rating": 10
       },
       {
@@ -1338,6 +1468,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Akira Kurosawa",
         "year": 1985,
         "country": "France-Japan",
+        "runtime": 161,
+        "genre": "Historical Epic, Samurai Film",
         "rating": 10
       },
       {
@@ -1353,13 +1485,17 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Giuseppe Tornatore",
         "year": 1988,
         "country": "Italy-France",
+        "runtime": 123,
+        "genre": "Drama, Coming-of-Age",
         "rating": 10
       },
       {
-        "title": "My Neighbor Totoro",
+        "title": "My Neighbour Totoro",
         "director": "Hayao Miyazaki",
         "year": 1988,
         "country": "Japan",
+        "runtime": 86,
+        "genre": "Children's Fantasy, Animation",
         "rating": 10
       },
       {
@@ -1399,6 +1535,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Joel Coen & Ethan Coen",
         "year": 1996,
         "country": "USA",
+        "runtime": 98,
         "genre": "Crime, Black Comedy",
         "rating": 10
       },
@@ -1415,6 +1552,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Joel Coen & Ethan Coen",
         "year": 1998,
         "country": "USA-UK",
+        "runtime": 113,
+        "genre": "Crime Comedy, Screwball Comedy",
         "rating": 10
       },
       {
@@ -1438,6 +1577,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Hayao Miyazaki",
         "year": 2001,
         "country": "Japan",
+        "runtime": 124,
         "genre": "Fantasy Adventure, Anime",
         "rating": 10
       },
@@ -1477,6 +1617,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michel Gondry",
         "year": 2004,
         "country": "USA",
+        "runtime": 108,
         "genre": "Comedy Drama, Romantic Fantasy"
       },
       {
@@ -1526,6 +1667,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Buster Keaton",
         "year": 1926,
         "country": "USA",
+        "runtime": 74,
         "genre": "Buster Keaton & Clyde Bruckman",
         "rating": 9
       },
@@ -1534,6 +1676,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luis Buñuel",
         "year": 1928,
         "country": "France",
+        "runtime": 16,
         "genre": "Avant-garde-Experimental, Surrealist Film",
         "rating": 9
       },
@@ -1542,6 +1685,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ernst Lubitsch",
         "year": 1932,
         "country": "USA",
+        "runtime": 83,
         "genre": "Sophisticated Comedy, Romantic Comedy"
       },
       {
@@ -1592,6 +1736,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Howard Hawks",
         "year": 1938,
         "country": "USA",
+        "runtime": 102,
         "genre": "Screwball Comedy, Romantic Comedy"
       },
       {
@@ -1599,6 +1744,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Victor Fleming",
         "year": 1939,
         "country": "USA",
+        "runtime": 222,
         "genre": "Romantic Epic, Historical Epic"
       },
       {
@@ -1606,6 +1752,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Howard Hawks",
         "year": 1940,
         "country": "USA",
+        "runtime": 92,
         "genre": "Screwball Comedy, Romantic Comedy"
       },
       {
@@ -1621,6 +1768,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michael Curtiz",
         "year": 1942,
         "country": "USA",
+        "runtime": 102,
         "genre": "Drama, War Romance"
       },
       {
@@ -1628,6 +1776,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ernst Lubitsch",
         "year": 1942,
         "country": "USA",
+        "runtime": 99,
         "genre": "Comedy, Satire"
       },
       {
@@ -1650,6 +1799,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "David Lean",
         "year": 1945,
         "country": "UK",
+        "runtime": 85,
         "genre": "Drama, Romance"
       },
       {
@@ -1679,6 +1829,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alfred Hitchcock",
         "year": 1946,
         "country": "USA",
+        "runtime": 101,
         "genre": "Thriller, Romantic Mystery",
         "rating": 9
       },
@@ -1687,6 +1838,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Huston",
         "year": 1948,
         "country": "USA",
+        "runtime": 124,
+        "genre": "Adventure, Drama",
         "rating": 9
       },
       {
@@ -1702,6 +1855,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Carol Reed",
         "year": 1949,
         "country": "UK",
+        "runtime": 104,
         "genre": "Mystery, Film Noir",
         "rating": 9
       },
@@ -1710,6 +1864,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Nicholas Ray",
         "year": 1950,
         "country": "USA",
+        "runtime": 91,
+        "genre": "Psychological Drama, Film Noir",
         "rating": 9
       },
       {
@@ -1740,7 +1896,9 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Diary of a Country Priest",
         "director": "Robert Bresson",
         "year": 1951,
-        "country": "France"
+        "country": "France",
+        "runtime": 120,
+        "genre": "Psychological Drama, Religious Drama"
       },
       {
         "title": "Limelight",
@@ -1754,6 +1912,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Donen",
         "year": 1952,
         "country": "USA",
+        "runtime": 102,
         "genre": "Musical, Showbiz Comedy",
         "rating": 9
       },
@@ -1762,6 +1921,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Vincente Minnelli",
         "year": 1953,
         "country": "USA",
+        "runtime": 112,
+        "genre": "Musical, Comedy",
         "rating": 9
       },
       {
@@ -1784,6 +1945,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Federico Fellini",
         "year": 1954,
         "country": "Italy",
+        "runtime": 115,
         "genre": "Melodrama, Romantic Drama",
         "rating": 9
       },
@@ -1816,6 +1978,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Federico Fellini",
         "year": 1957,
         "country": "Italy-France",
+        "runtime": 110,
         "genre": "Melodrama, Tragi-comedy",
         "rating": 9
       },
@@ -1840,6 +2003,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alexander Mackendrick",
         "year": 1957,
         "country": "USA",
+        "runtime": 96,
+        "genre": "Drama, Media Satire",
         "rating": 9
       },
       {
@@ -1847,6 +2012,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alfred Hitchcock",
         "year": 1958,
         "country": "USA",
+        "runtime": 128,
         "genre": "Romantic Mystery, Psychological Thriller",
         "rating": 9
       },
@@ -1863,6 +2029,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Bresson",
         "year": 1959,
         "country": "France",
+        "runtime": 75,
         "genre": "Crime Drama, Psychological Drama",
         "rating": 9
       },
@@ -1901,6 +2068,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alain Resnais",
         "year": 1961,
         "country": "France-Italy",
+        "runtime": 94,
         "genre": "Avant-garde-Experimental, Psychological Drama",
         "rating": 9
       },
@@ -1932,6 +2100,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Chris Marker",
         "year": 1962,
         "country": "France",
+        "runtime": 27,
         "genre": "Science Fiction, Avant-garde-Experimental",
         "rating": 9
       },
@@ -1940,6 +2109,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "David Lean",
         "year": 1962,
         "country": "UK",
+        "runtime": 216,
         "genre": "Epic, British Empire Film",
         "rating": 9
       },
@@ -1971,6 +2141,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Kubrick",
         "year": 1964,
         "country": "UK-USA",
+        "runtime": 93,
         "genre": "Black Comedy, Anti-War Film",
         "rating": 9
       },
@@ -1987,6 +2158,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luis Buñuel",
         "year": 1967,
         "country": "France-Italy",
+        "runtime": 100,
         "rating": 9
       },
       {
@@ -1994,6 +2166,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "George A. Romero",
         "year": 1968,
         "country": "USA",
+        "runtime": 96,
+        "genre": "Horror, Creature Film",
         "rating": 9
       },
       {
@@ -2024,6 +2198,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Victor Erice",
         "year": 1973,
         "country": "Spain",
+        "runtime": 95,
         "genre": "Drama, Childhood Drama",
         "rating": 9
       },
@@ -2056,6 +2231,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Federico Fellini",
         "year": 1973,
         "country": "Italy",
+        "runtime": 127,
         "genre": "Comedy Drama, Ensemble Film",
         "rating": 9
       },
@@ -2072,6 +2248,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Martin Scorsese",
         "year": 1973,
         "country": "USA",
+        "runtime": 110,
+        "genre": "Crime, Urban Drama",
         "rating": 10
       },
       {
@@ -2079,6 +2257,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Rainer Werner Fassbinder",
         "year": 1974,
         "country": "West Germany",
+        "runtime": 94,
         "genre": "Melodrama, Psychological Drama",
         "rating": 9
       },
@@ -2087,6 +2266,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Francis Ford Coppola",
         "year": 1974,
         "country": "USA",
+        "runtime": 200,
         "genre": "Gangster Film, Crime Drama",
         "rating": 9
       },
@@ -2103,6 +2283,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Andrei Tarkovsky",
         "year": 1975,
         "country": "USSR",
+        "runtime": 108,
         "genre": "Avant-garde-Experimental, Essay Film",
         "rating": 9
       },
@@ -2111,6 +2292,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Woody Allen",
         "year": 1977,
         "country": "USA",
+        "runtime": 94,
         "genre": "Romantic Comedy, Urban Comedy",
         "rating": 9
       },
@@ -2119,6 +2301,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Steven Spielberg",
         "year": 1977,
         "country": "USA",
+        "runtime": 135,
         "genre": "Science Fiction, Adventure Drama",
         "rating": 9
       },
@@ -2127,6 +2310,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ridley Scott",
         "year": 1979,
         "country": "USA",
+        "runtime": 117,
         "genre": "Horror, Science Fiction",
         "rating": 9
       },
@@ -2135,6 +2319,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Francis Ford Coppola",
         "year": 1979,
         "country": "USA",
+        "runtime": 150,
         "genre": "Anti-War Film, Jungle Film",
         "rating": 9
       },
@@ -2143,6 +2328,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Irvin Kershner",
         "year": 1980,
         "country": "USA",
+        "runtime": 124,
+        "genre": "Science Fiction, Space Adventure",
         "rating": 9
       },
       {
@@ -2158,6 +2345,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Stanley Kubrick",
         "year": 1980,
         "country": "USA",
+        "runtime": 142,
         "genre": "Horror, Haunted House Film",
         "rating": 9
       },
@@ -2166,6 +2354,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ridley Scott",
         "year": 1982,
         "country": "USA",
+        "runtime": 118,
         "genre": "Science Fiction, Tech Noir",
         "rating": 9
       },
@@ -2174,6 +2363,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Steven Spielberg",
         "year": 1982,
         "country": "USA",
+        "runtime": 115,
         "genre": "Science Fiction, Children's Fantasy",
         "rating": 9
       },
@@ -2206,6 +2396,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Cassavetes",
         "year": 1984,
         "country": "USA",
+        "runtime": 141,
         "genre": "Drama, Psychological Drama"
       },
       {
@@ -2213,6 +2404,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Wim Wenders",
         "year": 1984,
         "country": "USA",
+        "runtime": 150,
+        "genre": "Drama, Road Movie",
         "rating": 9
       },
       {
@@ -2228,6 +2421,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Zemeckis",
         "year": 1985,
         "country": "USA",
+        "runtime": 116,
+        "genre": "Teen Movie, Sci-Fi Comedy",
         "rating": 9
       },
       {
@@ -2290,6 +2485,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Woody Allen",
         "year": 1989,
         "country": "USA",
+        "runtime": 104,
+        "genre": "Comedy Drama, Ensemble Film",
         "rating": 9
       },
       {
@@ -2297,6 +2494,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Spike Lee",
         "year": 1989,
         "country": "USA",
+        "runtime": 120,
         "genre": "Urban Drama, Ensemble Film",
         "rating": 9
       },
@@ -2313,6 +2511,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Edward Yang",
         "year": 1991,
         "country": "Taiwan",
+        "runtime": 237,
         "genre": "Drama, Coming-of-Age",
         "rating": 9
       },
@@ -2360,6 +2559,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Harold Ramis",
         "year": 1993,
         "country": "USA",
+        "runtime": 103,
+        "genre": "Fantasy Comedy, Romantic Comedy",
         "rating": 9
       },
       {
@@ -2383,6 +2584,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Krzysztof Kieslowski",
         "year": 1993,
         "country": "France-Poland-Switzerland",
+        "runtime": 100,
+        "genre": "Psychological Drama, Romantic Drama",
         "rating": 9
       },
       {
@@ -2390,6 +2593,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Wong Kar-wai",
         "year": 1994,
         "country": "Hong Kong",
+        "runtime": 104,
         "genre": "Urban Drama, Romantic Drama",
         "rating": 9
       },
@@ -2510,6 +2714,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Paul Thomas Anderson",
         "year": 2007,
         "country": "USA",
+        "runtime": 158,
         "genre": "Family Drama, Period Film",
         "rating": 9
       },
@@ -2576,6 +2781,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Carl Theodor Dreyer",
         "year": 1928,
         "country": "France",
+        "runtime": 110,
         "genre": "Historical Film, Hagiography"
       },
       {
@@ -2583,6 +2789,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Charles Chaplin",
         "year": 1931,
         "country": "USA",
+        "runtime": 86,
         "genre": "Comedy Drama, Romance",
         "rating": 8
       },
@@ -2608,6 +2815,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Leo McCarey",
         "year": 1933,
         "country": "USA",
+        "runtime": 70,
         "genre": "Anarchic Comedy, Farce"
       },
       {
@@ -2615,6 +2823,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Vigo",
         "year": 1934,
         "country": "France",
+        "runtime": 89,
         "genre": "Romantic Drama, Marriage Drama",
         "rating": 8
       },
@@ -2629,6 +2838,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Charles Chaplin",
         "year": 1936,
         "country": "USA",
+        "runtime": 89,
         "genre": "Comedy, Satire",
         "rating": 8
       },
@@ -2652,6 +2862,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Kenji Mizoguchi",
         "year": 1939,
         "country": "Japan",
+        "runtime": 143,
+        "genre": "Period Film, Romantic Drama",
         "rating": 8
       },
       {
@@ -2659,6 +2871,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Victor Fleming",
         "year": 1939,
         "country": "USA",
+        "runtime": 101,
         "genre": "Children's/Family, Musical Fantasy",
         "rating": 8
       },
@@ -2668,6 +2881,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "year": 1941,
         "country": "USA",
         "genre": "Drama, Film a Clef",
+        "runtime": 119,
         "rating": 8
       },
       {
@@ -2675,6 +2889,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Huston",
         "year": 1941,
         "country": "USA",
+        "runtime": 100,
+        "genre": "Mystery, Film Noir",
         "rating": 8
       },
       {
@@ -2682,6 +2898,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sergei Eisenstein",
         "year": 1944,
         "country": "USSR",
+        "runtime": 96,
+        "genre": "Historical Film, Biography",
         "rating": 8
       },
       {
@@ -2711,6 +2929,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Frank Capra",
         "year": 1946,
         "country": "USA",
+        "runtime": 129,
         "genre": "Comedy Drama, Fantasy",
         "rating": 8
       },
@@ -2719,6 +2938,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sergei Eisenstein",
         "year": 1946,
         "country": "USSR",
+        "runtime": 88,
+        "genre": "Historical Film, Biography",
         "rating": 8
       },
       {
@@ -2726,6 +2947,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Charles Chaplin",
         "year": 1947,
         "country": "USA",
+        "runtime": 123,
+        "genre": "Black Comedy, Crime Comedy",
         "rating": 8
       },
       {
@@ -2733,6 +2956,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jacques Tourneur",
         "year": 1947,
         "country": "USA",
+        "runtime": 97,
         "genre": "Crime, Film Noir",
         "rating": 8
       },
@@ -2741,6 +2965,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Vittorio De Sica",
         "year": 1948,
         "country": "Italy",
+        "runtime": 90,
         "genre": "Family Drama, Urban Drama",
         "rating": 8
       },
@@ -2757,6 +2982,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michael Powell & Emeric Pressburger",
         "year": 1948,
         "country": "UK",
+        "runtime": 133,
         "genre": "Romantic Drama, Musical Drama",
         "rating": 8
       },
@@ -2773,6 +2999,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Hamer",
         "year": 1949,
         "country": "UK",
+        "runtime": 104,
+        "genre": "Black Comedy, Crime Comedy",
         "rating": 8
       },
       {
@@ -2804,6 +3032,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Renoir",
         "year": 1951,
         "country": "France-India-USA",
+        "runtime": 99,
         "genre": "Drama, Romantic Drama",
         "rating": 8
       },
@@ -2836,6 +3065,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Kenji Mizoguchi",
         "year": 1953,
         "country": "Japan",
+        "runtime": 96,
         "genre": "Romantic Fantasy, Period Film",
         "rating": 8
       },
@@ -2844,6 +3074,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Elia Kazan",
         "year": 1954,
         "country": "USA",
+        "runtime": 108,
         "genre": "Message Movie, Urban Drama",
         "rating": 8
       },
@@ -2852,6 +3083,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Akira Kurosawa",
         "year": 1954,
         "country": "Japan",
+        "runtime": 200,
         "genre": "Drama, Samurai Film",
         "rating": 8
       },
@@ -2884,6 +3116,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alain Resnais",
         "year": 1955,
         "country": "France",
+        "runtime": 32,
         "genre": "Military & War, Documentary",
         "rating": 8
       },
@@ -2972,6 +3205,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Ford",
         "year": 1962,
         "country": "USA",
+        "runtime": 119,
         "genre": "Western, Outlaw (Gunfighter) Film",
         "rating": 8
       },
@@ -2980,6 +3214,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alfred Hitchcock",
         "year": 1963,
         "country": "USA",
+        "runtime": 120,
         "genre": "Horror, Natural Horror",
         "rating": 8
       },
@@ -2996,6 +3231,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean-Luc Godard",
         "year": 1965,
         "country": "France-Italy",
+        "runtime": 110,
         "genre": "Road Movie, Romantic Drama",
         "rating": 8
       },
@@ -3020,6 +3256,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Vera Chytilová",
         "year": 1966,
         "country": "Czechoslovakia",
+        "runtime": 76,
+        "genre": "Avant-garde-Experimental, Satire",
         "rating": 8
       },
       {
@@ -3027,6 +3265,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Arthur Penn",
         "year": 1967,
         "country": "USA",
+        "runtime": 111,
+        "genre": "Gangster Film, Crime Drama",
         "rating": 8
       },
       {
@@ -3042,6 +3282,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sam Peckinpah",
         "year": 1969,
         "country": "USA",
+        "runtime": 144,
         "genre": "Revisionist Western, Outlaw (Gunfighter) Film",
         "rating": 8
       },
@@ -3058,6 +3299,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luchino Visconti",
         "year": 1971,
         "country": "Italy",
+        "runtime": 130,
         "genre": "Drama, Period Film",
         "rating": 8
       },
@@ -3074,6 +3316,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ingmar Bergman",
         "year": 1972,
         "country": "Sweden",
+        "runtime": 106,
         "genre": "Drama, Family Drama",
         "rating": 8
       },
@@ -3090,6 +3333,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luis Buñuel",
         "year": 1972,
         "country": "France",
+        "runtime": 100,
         "genre": "Satire, Black Comedy",
         "rating": 8
       },
@@ -3098,6 +3342,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Terrence Malick",
         "year": 1973,
         "country": "USA",
+        "runtime": 95,
         "genre": "Crime Drama, Americana",
         "rating": 8
       },
@@ -3130,6 +3375,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "George Lucas",
         "year": 1977,
         "country": "USA",
+        "runtime": 121,
         "genre": "Science Fiction, Space Adventure",
         "rating": 8
       },
@@ -3145,6 +3391,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Terrence Malick",
         "year": 1978,
         "country": "USA",
+        "runtime": 95,
         "genre": "Rural Drama, Romantic Drama",
         "rating": 8
       },
@@ -3169,6 +3416,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Steven Spielberg",
         "year": 1981,
         "country": "USA",
+        "runtime": 115,
         "genre": "Adventure, Action",
         "rating": 8
       },
@@ -3185,6 +3433,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sergio Leone",
         "year": 1984,
         "country": "Italy-USA",
+        "runtime": 229,
         "genre": "Crime, Gangster Film",
         "rating": 8
       },
@@ -3193,6 +3442,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Terry Gilliam",
         "year": 1985,
         "country": "UK",
+        "runtime": 131,
         "genre": "Science Fiction, Satire",
         "rating": 8
       },
@@ -3201,6 +3451,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "David Lynch",
         "year": 1986,
         "country": "USA",
+        "runtime": 120,
         "genre": "Mystery, Crime Thriller",
         "rating": 8
       },
@@ -3289,6 +3540,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Clint Eastwood",
         "year": 1992,
         "country": "USA",
+        "runtime": 127,
+        "genre": "Western, Outlaw (Gunfighter) Film",
         "rating": 8
       },
       {
@@ -3304,6 +3557,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Steven Spielberg",
         "year": 1993,
         "country": "USA",
+        "runtime": 195,
+        "genre": "War Drama, Biography",
         "rating": 8
       },
       {
@@ -3319,6 +3574,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Krzysztof Kieslowski",
         "year": 1994,
         "country": "France-Switzerland-Poland",
+        "runtime": 99,
+        "genre": "Psychological Drama, Romantic Drama",
         "rating": 8
       },
       {
@@ -3357,6 +3614,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Terrence Malick",
         "year": 1998,
         "country": "USA",
+        "runtime": 170,
         "genre": "War Drama, Ensemble Film",
         "rating": 8
       },
@@ -3365,6 +3623,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Lana Wachowski & Lilly Wachowski",
         "year": 1999,
         "country": "USA-Australia",
+        "runtime": 136,
+        "genre": "Science Fiction, Sci-Fi Action",
         "rating": 8
       },
       {
@@ -3441,6 +3701,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Dziga Vertov",
         "year": 1929,
         "country": "USSR",
+        "runtime": 80,
         "genre": "Avant-garde-Experimental, Documentary"
       },
       {
@@ -3455,6 +3716,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luis Buñuel",
         "year": 1930,
         "country": "France",
+        "runtime": 63,
         "genre": "Avant-garde/Experimental, Surrealist Film",
         "rating": 7   
       },
@@ -3492,6 +3754,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Renoir",
         "year": 1937,
         "country": "France",
+        "runtime": 117,
         "genre": "Anti-War Film, War Drama"
       },
       {
@@ -3505,7 +3768,9 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Only Angels Have Wings",
         "director": "Howard Hawks",
         "year": 1939,
-        "country": "USA"
+        "country": "USA",
+        "runtime": 121,
+        "genre": "Adventure, Buddy Film"
       },
       {
         "title": "Young Mr. Lincoln",
@@ -3527,6 +3792,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Charles Chaplin",
         "year": 1940,
         "country": "USA",
+        "runtime": 128,
         "genre": "Comedy, Anti-War Film",
         "rating": 7
       },
@@ -3551,6 +3817,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Orson Welles",
         "year": 1942,
         "country": "USA",
+        "runtime": 88,
         "genre": "Family Drama, Period Film",
         "rating": 7
       },
@@ -3567,6 +3834,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Roberto Rossellini",
         "year": 1945,
         "country": "Italy",
+        "runtime": 105,
         "genre": "War Drama, Resistance Film",
         "image": "romeopencity",
         "rating": 7
@@ -3576,6 +3844,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Cocteau",
         "year": 1946,
         "country": "France",
+        "runtime": 95,
+        "genre": "Fairy Tale, Romantic Fantasy",
         "rating": 7
       },
       {
@@ -3583,6 +3853,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michael Powell & Emeric Pressburger",
         "year": 1947,
         "country": "UK",
+        "runtime": 99,
         "genre": "Melodrama, Religious Drama",
         "rating": 7
       },
@@ -3639,6 +3910,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Ford",
         "year": 1952,
         "country": "USA",
+        "runtime": 129,
+        "genre": "Comedy Drama, Romance",
         "rating": 7
       },
       {
@@ -3662,6 +3935,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Nicholas Ray",
         "year": 1954,
         "country": "USA",
+        "runtime": 110,
+        "genre": "Western, Psychological Western",
         "rating": 7
       },
       {
@@ -3685,6 +3960,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Howard Hawks",
         "year": 1959,
         "country": "USA",
+        "runtime": 141,
         "genre": "Western, Buddy Film",
         "rating": 7
       },
@@ -3693,6 +3969,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luchino Visconti",
         "year": 1960,
         "country": "Italy-France",
+        "runtime": 180,
         "genre": "Family Drama, Urban Drama",
         "rating": 7
       },
@@ -3709,6 +3986,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "François Truffaut",
         "year": 1962,
         "country": "France",
+        "runtime": 104,
         "genre": "Drama, Romance",
         "rating": 7
       },
@@ -3717,6 +3995,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luchino Visconti",
         "year": 1963,
         "country": "Italy",
+        "runtime": 205,
         "genre": "Epic, Family Drama",
         "rating": 7
       },
@@ -3771,6 +4050,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Nicolas Roeg",
         "year": 1973,
         "country": "UK",
+        "runtime": 110,
         "genre": "Psychological Thriller, Supernatural Thriller",
         "rating": 7
       },
@@ -3779,6 +4059,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "William Friedkin",
         "year": 1973,
         "country": "USA",
+        "runtime": 122,
+        "genre": "Horror, Religious Drama",
         "rating": 7
       },
       {
@@ -3786,6 +4068,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Roman Polanski",
         "year": 1974,
         "country": "USA",
+        "runtime": 131,
         "genre": "Mystery, Post-Noir (Modern Noir)",
         "rating": 7
       },
@@ -3802,6 +4085,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Steven Spielberg",
         "year": 1975,
         "country": "USA",
+        "runtime": 124,
         "genre": "Thriller, Natural Horror",
         "rating": 7
       },
@@ -3810,6 +4094,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Milos Forman",
         "year": 1975,
         "country": "USA",
+        "runtime": 133,
         "genre": "Comedy Drama, Psychological Drama",
         "rating": 7
       },
@@ -3903,6 +4188,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Elem Klimov",
         "year": 1985,
         "country": "USSR",
+        "runtime": 136,
         "genre": "War Drama, Coming-of-Age",
         "rating": 7
       },
@@ -3927,6 +4213,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Wim Wenders",
         "year": 1987,
         "country": "West Germany-France",
+        "runtime": 130,
+        "genre": "Fantasy, Romantic Fantasy",
         "rating": 7
       },
       {
@@ -3987,6 +4275,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Emir Kusturica",
         "year": 1995,
         "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
+        "runtime": 192,
+        "genre": "Comedy Drama, Political Satire",
         "rating": 7
       },
       {
@@ -4116,6 +4406,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "D.W. Griffith",
         "year": 1916,
         "country": "USA",
+        "runtime": 178,
         "genre": "Historical Epic, Melodrama",
         "rating": 6
       },
@@ -4148,6 +4439,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Merian C. Cooper & Ernest B. Schoedsack",
         "year": 1933,
         "country": "USA",
+        "runtime": 103,
         "genre": "Adventure, Monster Film",
         "rating": 6
       },
@@ -4156,6 +4448,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Renoir",
         "year": 1939,
         "country": "France",
+        "runtime": 113,
         "genre": "Comedy Drama, Ensemble Film",
         "rating": 5
       },
@@ -4164,6 +4457,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Ford",
         "year": 1939,
         "country": "USA",
+        "runtime": 96,
         "genre": "Western, Traditional Western",
         "rating": 4
       },
@@ -4180,6 +4474,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Ford",
         "year": 1940,
         "country": "USA",
+        "runtime": 129,
         "genre": "Rural Drama, Americana",
         "rating": 6
       },
@@ -4188,6 +4483,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Ernst Lubitsch",
         "year": 1940,
         "country": "USA",
+        "runtime": 97,
+        "genre": "Comedy, Romance",
         "rating": 5
       },
       {
@@ -4195,19 +4492,17 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Preston Sturges",
         "year": 1941,
         "country": "USA",
+        "runtime": 91,
+        "genre": "Comedy, Satire",
         "rating": 5
       },
-    
-    
       {
         "title": "Bambi",
         "director": "David Hand",
         "year": 1942,
         "country": "USA",
-        "genre": "Children's Fantasy, Animated Musical",
-        "rating": "?"
+        "genre": "Children's Fantasy, Animated Musical"
       },
-    
       {
         "title": "Cat People",
         "director": "Jacques Tourneur",
@@ -4216,7 +4511,6 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "genre": "Horror, Supernatural Thriller",
         "rating": 5
       },
-      
       {
         "title": "I Walked with a Zombie",
         "director": "Jacques Tourneur",
@@ -4230,6 +4524,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Vincente Minnelli",
         "year": 1944,
         "country": "USA",
+        "runtime": 113,
+        "genre": "Musical, Family Drama",
         "rating": 3
       },
       {
@@ -4245,6 +4541,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Ford",
         "year": 1946,
         "country": "USA",
+        "runtime": 97,
         "genre": "Western, Traditional Western",
         "rating": 6
       },
@@ -4269,6 +4566,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Howard Hawks",
         "year": 1948,
         "country": "USA",
+        "runtime": 133,
+        "genre": "Western, Epic Western",
         "rating": 6
       },
       {
@@ -4333,6 +4632,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Roberto Rossellini",
         "year": 1954,
         "country": "Italy",
+        "runtime": 97,
         "genre": "Marriage Drama, Psychological Drama",
         "rating": 5
       },
@@ -4356,6 +4656,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Charles Laughton",
         "year": 1955,
         "country": "USA",
+        "runtime": 93,
         "genre": "Crime Thriller, Psychological Thriller",
         "rating": 6
       },
@@ -4446,6 +4747,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Glauber Rocha",
         "year": 1964,
         "country": "Brazil",
+        "runtime": 110,
+        "genre": "Road Movie, Crime Drama",
         "rating": 2
       },
       {
@@ -4461,6 +4764,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Gillo Pontecorvo",
         "year": 1966,
         "country": "Italy-Algeria",
+        "runtime": 123,
         "genre": "Docudrama, Political Drama",
         "rating": 5
       },
@@ -4515,24 +4819,22 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Bernardo Bertolucci",
         "year": 1970,
         "country": "Italy-France-West Germany",
-        "genre": "Psychological Drama, Political Drama",
-        "rating": "?"
+        "runtime": 107,
+        "genre": "Psychological Drama, Political Drama"
       },
       {
         "title": "M*A*S*H",
         "director": "Robert Altman",
         "year": 1970,
         "country": "USA",
-        "genre": "Military Comedy, Satire",
-        "rating": "?"
+        "genre": "Military Comedy, Satire"
       },
       {
         "title": "Dirty Harry",
         "director": "Don Siegel",
         "year": 1971,
         "country": "USA",
-        "genre": "Crime, Action Thriller",
-        "rating": "?"
+        "genre": "Crime, Action Thriller"
       },
       {
         "title": "The French Connection",
@@ -4588,6 +4890,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Tobe Hooper",
         "year": 1974,
         "country": "USA",
+        "runtime": 83,
         "genre": "Horror, Slasher Film",
         "rating": "?"
       },
@@ -4604,6 +4907,8 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sidney Lumet",
         "year": 1975,
         "country": "USA",
+        "runtime": 125,
+        "genre": "Crime, Urban Drama",
         "rating": 6
       },
       {
@@ -4642,6 +4947,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michael Cimino",
         "year": 1978,
         "country": "USA",
+        "runtime": 183,
         "genre": "Ensemble Film, War Drama",
         "rating": 5
       },
@@ -4808,7 +5114,9 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "title": "Magnolia",
         "director": "Paul Thomas Anderson",
         "year": 1999,
-        "country": "USA"
+        "country": "USA",
+        "runtime": 188,
+        "genre": "Drama, Ensemble Film"
       },
       {
         "title": "The Straight Story",
@@ -4917,6 +5225,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "D.W. Griffith",
         "year": 1919,
         "country": "USA",
+        "runtime": 90,
         "genre": "Melodrama, Romantic Drama"
       },
       {
@@ -4952,6 +5261,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Flaherty",
         "year": 1922,
         "country": "USA",
+        "runtime": 79,
         "genre": "Anthropology, Documentary"
       },
       {
@@ -4966,6 +5276,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Erich von Stroheim",
         "year": 1924,
         "country": "USA",
+        "runtime": 239, // FIXME: 140m; 239m (reconstructed version)
         "genre": "Melodrama, Psychological Drama"
       },
       {
@@ -4987,6 +5298,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Abel Gance",
         "year": 1927,
         "country": "France",
+        "runtime": 235,
         "genre": "Historical Epic, Biography"
       },
       {
@@ -5008,6 +5320,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "King Vidor",
         "year": 1928,
         "country": "USA",
+        "runtime": 104,
         "genre": "Drama, Urban Drama"
       },
       {
@@ -5029,6 +5342,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "G.W. Pabst",
         "year": 1929,
         "country": "Germany",
+        "runtime": 133,
         "genre": "Drama, Melodrama"
       },
       {
@@ -5036,6 +5350,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Alexander Dovzhenko",
         "year": 1930,
         "country": "USSR",
+        "runtime": 75,
         "genre": "Drama, Rural Drama"
       },
       {
@@ -5071,6 +5386,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Tod Browning",
         "year": 1932,
         "country": "USA",
+        "runtime": 64,
         "genre": "Melodrama, Psychological Thriller"
       },
       {
@@ -5092,6 +5408,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Carl Theodor Dreyer",
         "year": 1932,
         "country": "Germany-France",
+        "runtime": 73,
         "genre": "Horror, Gothic Film"
       },
       {
@@ -5106,6 +5423,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Vigo",
         "year": 1933,
         "country": "France",
+        "runtime": 41,
         "genre": "Coming-of-Age, Childhood Drama"
       },
       {
@@ -5141,6 +5459,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Renoir",
         "year": 1936,
         "country": "France",
+        "runtime": 40,
         "genre": "Comedy Drama, Romance"
       },
       {
@@ -5239,6 +5558,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michael Powell & Emeric Pressburger",
         "year": 1943,
         "country": "UK",
+        "runtime": 163,
         "genre": "Drama, Period Film"
       },
       {
@@ -5246,6 +5566,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Maya Deren & Alexander Hammid",
         "year": 1943,
         "country": "USA",
+        "runtime": 15,
         "genre": "Avant-garde-Experimental, Surrealist Film"
       },
       {
@@ -5274,6 +5595,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michael Powell & Emeric Pressburger",
         "year": 1946,
         "country": "UK",
+        "runtime": 104,
         "genre": "Romantic Fantasy, Heaven-Can-Wait Fantasy"
       },
       {
@@ -5288,6 +5610,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Roberto Rossellini",
         "year": 1946,
         "country": "Italy",
+        "runtime": 120,
         "genre": "Drama, War Drama"
       },
       {
@@ -5295,6 +5618,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Roberto Rossellini",
         "year": 1948,
         "country": "Italy-West Germany",
+        "runtime": 74,
         "genre": "War Drama, Childhood Drama"
       },
       {
@@ -5302,6 +5626,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Fei Mu",
         "year": 1948,
         "country": "China",
+        "runtime": 85,
         "genre": "Drama, Romantic Drama"
       },
       {
@@ -5379,6 +5704,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Kenji Mizoguchi",
         "year": 1952,
         "country": "Japan",
+        "runtime": 146,
         "genre": "Drama, Period Film"
       },
       {
@@ -5400,6 +5726,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jacques Tati",
         "year": 1953,
         "country": "France",
+        "runtime": 86,
         "genre": "Comedy, Slapstick"
       },
       {
@@ -5421,6 +5748,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Mikio Naruse",
         "year": 1955,
         "country": "Japan",
+        "runtime": 123,
         "genre": "Drama, Urban Drama"
       },
       {
@@ -5442,6 +5770,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Satyajit Ray",
         "year": 1955,
         "country": "India",
+        "runtime": 112,
         "genre": "Rural Drama, Family Drama"
       },
       {
@@ -5491,6 +5820,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Andrzej Wajda",
         "year": 1958,
         "country": "Poland",
+        "runtime": 96,
         "genre": "Political Drama, War Drama"
       },
       {
@@ -5533,6 +5863,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Satyajit Ray",
         "year": 1958,
         "country": "India",
+        "runtime": 95,
         "genre": "Drama, Psychological Drama"
       },
       {
@@ -5721,6 +6052,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Luis García Berlanga",
         "year": 1963,
         "country": "Spain-Italy",
+        "runtime": 90,
         "genre": "Comedy Drama, Black Comedy"
       },
       {
@@ -5784,6 +6116,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Carl Theodor Dreyer",
         "year": 1964,
         "country": "Denmark",
+        "runtime": 116,
         "genre": "Psychological Drama, Marriage Drama"
       },
       {
@@ -5791,6 +6124,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Pier Paolo Pasolini",
         "year": 1964,
         "country": "Italy-France",
+        "runtime": 135,
         "genre": "Hagiography, Religious Drama"
       },
       {
@@ -5819,6 +6153,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jacques Demy",
         "year": 1964,
         "country": "France-Germany",
+        "runtime": 91,
         "genre": "Musical, Romance"
       },
       {
@@ -5826,6 +6161,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Orson Welles",
         "year": 1965,
         "country": "France-Spain-Switzerland",
+        "runtime": 115,
         "genre": "Drama, Tragi-comedy"
       },
       {
@@ -5995,6 +6331,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Michael Snow",
         "year": 1967,
         "country": "Canada-USA",
+        "runtime": 45,
         "genre": "Abstract Film"
       },
       {
@@ -6016,6 +6353,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Cassavetes",
         "year": 1968,
         "country": "USA",
+        "runtime": 130,
         "genre": "Marriage Drama, Psychological Drama"
       },
       {
@@ -6051,6 +6389,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Tomás Gutiérrez Alea",
         "year": 1968,
         "country": "Cuba",
+        "runtime": 97,
         "genre": "Psychological Drama, Political Drama"
       },
       {
@@ -6072,6 +6411,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Sergei Parajanov",
         "year": 1969,
         "country": "USSR",
+        "runtime": 73,
         "genre": "Avant-garde-Experimental, Essay Film"
       },
       {
@@ -6149,6 +6489,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "John Cassavetes",
         "year": 1970,
         "country": "USA",
+        "runtime": 138,
         "genre": "Drama, Buddy Film"
       },
       {
@@ -6163,6 +6504,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Nicolas Roeg & Donald Cammell",
         "year": 1970,
         "country": "UK",
+        "runtime": 105,
         "genre": "Psychological Drama, Satire"
       },
       {
@@ -6177,6 +6519,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Barbara Loden",
         "year": 1970,
         "country": "USA",
+        "runtime": 105,
         "genre": "Drama, Road Movie"
       },
       {
@@ -6296,6 +6639,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean Eustache",
         "year": 1973,
         "country": "France",
+        "runtime": 210,
         "genre": "Psychological Drama, Urban Drama"
       },
       {
@@ -6324,6 +6668,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jacques Rivette",
         "year": 1974,
         "country": "France",
+        "runtime": 192,
         "genre": "Avant-garde-Experimental, Surrealist Film"
       },
       {
@@ -6394,6 +6739,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Theo Angelopoulos",
         "year": 1975,
         "country": "Greece",
+        "runtime": 230,
         "genre": "Drama, Political Drama"
       },
       {
@@ -6436,6 +6782,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Wim Wenders",
         "year": 1976,
         "country": "West Germany",
+        "runtime": 175,
         "genre": "Drama, Road Movie"
       },
       {
@@ -6653,6 +7000,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Robert Bresson",
         "year": 1983,
         "country": "France-Switzerland",
+        "runtime": 90,
         "genre": "Drama, Crime"
       },
       {
@@ -6716,6 +7064,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Claude Lanzmann",
         "year": 1985,
         "country": "France",
+        "runtime": 566,
         "genre": "Military & War, Documentary"
       },
       {
@@ -6814,6 +7163,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Krzysztof Kieslowski",
         "year": 1988,
         "country": "Poland-West Germany",
+        "runtime": 550,
         "genre": "Drama, Psychological Drama"
       },
       {
@@ -6821,6 +7171,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Terence Davies",
         "year": 1988,
         "country": "UK",
+        "runtime": 85,
         "genre": "Family Drama, Biography"
       },
       {
@@ -6842,6 +7193,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Errol Morris",
         "year": 1988,
         "country": "USA",
+        "runtime": 96,
         "genre": "Law & Crime, Documentary"
       },
       {
@@ -6849,6 +7201,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Hou Hsiao-hsien",
         "year": 1989,
         "country": "Taiwan-Hong Kong",
+        "runtime": 157,
         "genre": "Family Drama, Period Film"
       },
       {
@@ -6996,6 +7349,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jane Campion",
         "year": 1993,
         "country": "New Zealand-Australia-France",
+        "runtime": 121,
         "genre": "Romantic Drama, Period Film"
       },
       {
@@ -7045,6 +7399,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Béla Tarr",
         "year": 1994,
         "country": "Hungary-Germany-Switzerland",
+        "runtime": 450,
         "genre": "Drama, Ensemble Film"
       },
       {
@@ -7080,6 +7435,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Lars von Trier",
         "year": 1996,
         "country": "Denmark-Sweden-France-Netherlands-Norway-Iceland-Spain",
+        "runtime": 156,
         "genre": "Psychological Drama, Romantic Drama"
       },
       {
@@ -7150,6 +7506,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Jean-Luc Godard",
         "year": 1998,
         "country": "France",
+        "runtime": 265,
         "genre": "Essay Film, Documentary"
       },
       {
@@ -7171,6 +7528,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Claire Denis",
         "year": 1999,
         "country": "France",
+        "runtime": 92,
         "genre": "Drama, Psychological Drama"
       },
       {
@@ -7397,10 +7755,19 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "genre": "Social History, Documentary"
       },
       {
+        "title": "Uncle Boonmee Who Can Recall His Past Lives",
+        "director": "Apichatpong Weerasethakul",
+        "year": 2010,
+        "country": "Thailand-UK-France-Germany-Spain-Netherlands",
+        "runtime": 113,
+        "genre": "Avant-garde-Experimental, Fantasy Drama"
+      },
+      {
         "title": "The Tree of Life",
         "director": "Terrence Malick",
         "year": 2011,
         "country": "USA",
+        "runtime": 139,
         "genre": "Drama, Family Drama"
       },
       {
@@ -7422,6 +7789,7 @@ const lists = [ // Last Movie: Shadows of Our Forgotten Ancestors (500-401)
         "director": "Leos Carax",
         "year": 2012,
         "country": "France-Germany",
+        "runtime": 115,
         "genre": "Avant-garde-Experimental, Fantasy"
       },
       {

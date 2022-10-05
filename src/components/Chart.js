@@ -61,6 +61,7 @@ const Chartjs = {
             </div>
           </v-card>
         </v-col>
+        
         <v-col cols="12" lg="12">
           <v-card outlined>
             <div>
@@ -73,6 +74,14 @@ const Chartjs = {
           <v-card outlined>
             <div>
               <canvas id="chartCountry" height="80px"></canvas>
+            </div>
+          </v-card>
+        </v-col>
+        
+        <v-col cols="12" lg="12">
+          <v-card outlined>
+            <div>
+              <canvas id="chartRuntime" height="80px"></canvas>
             </div>
           </v-card>
         </v-col>
@@ -142,9 +151,10 @@ const Chartjs = {
       // Chart.defaults.font.weight = 'bold';
       Chart.defaults.color = 'white'
       var count = 0
-      var directorHist = {}
+      var directorSet = {}
       var years = {}
-      var countries = {}
+      var countrySet = {}
+      var runtimeSet = {}
       var genres = {}
 
       for (var i = 0; i < this.lists.length; i++) {
@@ -153,10 +163,10 @@ const Chartjs = {
         for (var j = 0; j < _movies.length; j++) {
           var item = _movies[j]
           
-          if (directorHist[item.director]) {
-            directorHist[item.director] = directorHist[item.director] + 1
+          if (directorSet[item.director]) {
+            directorSet[item.director] = directorSet[item.director] + 1
           } else {
-            directorHist[item.director] = 1
+            directorSet[item.director] = 1
           }
           
           years[item.year] = years[item.year] ? years[item.year] + 1 : 1
@@ -165,15 +175,21 @@ const Chartjs = {
           var country = item.country
           if (country) {
             if (country.indexOf("-") == -1) {
-              countries[country] = countries[country] ? countries[country] + 1 : 1
+              countrySet[country] = countrySet[country] ? countrySet[country] + 1 : 1
             } else {
               var array = country.split("-")
               for (var k = 0; k < array.length; k++) {
                 var c = array[k]
-                countries[c] = countries[c] ? countries[c] + 1 : 1
+                countrySet[c] = countrySet[c] ? countrySet[c] + 1 : 1
               }
             }
           }
+          // runtime
+          var runtime = item.runtime
+          if (runtime) {
+            runtimeSet[runtime] = runtimeSet[runtime] ? runtimeSet[runtime] + 1 : 1
+          }
+          
           // genre
           var genre = item.genre
           if (genre) {
@@ -186,20 +202,20 @@ const Chartjs = {
                 genres[c] = genres[c] ? genres[c] + 1 : 1
               }
             }
-          }        
+          }
         }
       }
       
       this.films = count
-      this.directors = Object.keys(directorHist).sort()
+      this.directors = Object.keys(directorSet).sort()
       this.years = Object.keys(years).sort()
-      this.countries = Object.keys(countries).length
+      this.countries = Object.keys(countrySet).length
       this.genres = Object.keys(genres)
       
       var labels = []
       var data = []
       for (var i = 0; i < this.directors.length; i++) {
-        var value = directorHist[this.directors[i]]
+        var value = directorSet[this.directors[i]]
         if (value > 4) {
           labels.push(this.directors[i])
           data.push(value)
@@ -281,13 +297,51 @@ const Chartjs = {
         }
       );
       
+      // Runtime
+      var rLabels = []
+      var rData = []
+      var runtimes = Object.keys(runtimeSet)
+      for (var i = 0; i < runtimes.length; i++) {
+        var runtime = runtimes[i]
+        rLabels.push(runtime)
+        rData.push(runtimeSet[runtime])
+      }
+      new Chart(
+        document.getElementById('chartRuntime'), {
+        type: 'bar',
+        data: {
+          labels: rLabels,
+          datasets: [
+            {
+              label: "Runtime",
+              // backgroundColor: 'rgba(255, 99, 132, 0.2)',
+              backgroundColor: '#f87979',
+              // borderColor: 'rgb(255, 99, 132)',
+              borderColor: '#f87979',
+              data: rData
+            }
+          ]
+        },
+        options: {
+          plugins: {
+            legend: {
+              display: false
+            },
+            title: {
+              display: true,
+              text: "Runtime"
+            }
+          }
+        }
+      });
+      
       // Country
-      var keys = Object.keys(countries)
+      var keys = Object.keys(countrySet)
       var values = []
       for (var i = 0; i < keys.length; i++) {
         values.push({
           country: keys[i],
-          amount: countries[keys[i]]
+          amount: countrySet[keys[i]]
         })
       }
       values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
