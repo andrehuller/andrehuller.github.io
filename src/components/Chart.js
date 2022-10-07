@@ -81,7 +81,7 @@ const Chartjs = {
         <v-col cols="12" lg="12">
           <v-card outlined>
             <div>
-              <canvas id="chartRuntime" height="80px"></canvas>
+              <canvas id="chartRuntime" height="60px"></canvas>
             </div>
           </v-card>
         </v-col>
@@ -124,7 +124,12 @@ const Chartjs = {
       {
         text: 'Year',
         value: 'year',
-        width: '20%'
+        width: '10%'
+      },
+      {
+        text: 'Runtime',
+        value: 'runtime',
+        width: '10%'
       },
       {
         text: 'Country',
@@ -331,7 +336,14 @@ const Chartjs = {
               display: true,
               text: "Runtime"
             }
-          }
+          }/* ,
+          scales: {
+            y: {
+              // beginAtZero: true,
+              display: true,
+              type: 'logarithmic'
+            }
+          } */
         }
       });
       
