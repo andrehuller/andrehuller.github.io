@@ -324,6 +324,7 @@ const Chartjs = {
               // borderColor: 'rgb(255, 99, 132)',
               borderColor: '#f87979',
               data: rData
+              // stepped: true
             }
           ]
         },

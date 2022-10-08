@@ -1736,20 +1736,6 @@ const lists = [
         "runtime": 153,
         "genre": "War Adventure",
         "rating": 10
-      },
-      {
-        "title": "Blue is the Warmest Colour",
-        "director": "Abdellatif Kechiche",
-        "year": 2013,
-        "country": "France-Belgium-Spain",
-        "rating": 10
-      },
-      {
-        "title": "Parasite",
-        "director": "Bong Joon-ho",
-        "year": 2019,
-        "country": "South Korea",
-        "rating": 10
       }
     ]
   },
@@ -2304,6 +2290,7 @@ const lists = [
         "year": 1967,
         "country": "France-Italy",
         "runtime": 100,
+        "genre": "Satire, Psychological Drama",
         "rating": 9
       },
       {
@@ -2626,6 +2613,7 @@ const lists = [
         "year": 1986,
         "country": "France-Sweden",
         "runtime": 145,
+        "genre": "Psychological Drama, Religious Drama",
         "rating": 9
       },
       {
@@ -2917,27 +2905,13 @@ const lists = [
         "rating": 9
       },
       {
-        "title": "Inside Llewyn Davis",
-        "director": "Joel Coen & Ethan Coen",
-        "year": 2013,
-        "country": "USA-UK-France",
-        "rating": 9
-      },
-      {
         "title": "Boyhood",
         "director": "Richard Linklater",
         "year": 2014,
         "country": "USA",
         "runtime": 165,
         "genre": "Childhood Drama, Coming-of-Age"
-      },
-      {
-        "title": "Once Upon a Time... in Hollywood",
-        "director": "Quentin Tarantino",
-        "year": 2019,
-        "country": "USA-UK-China",
-        "rating": 9
-      },
+      }
     ]
   },
   {
@@ -5576,12 +5550,6 @@ const lists = [
         "genre": "Horror, Drama"
       },
       {
-        "title": "The Hurt Locker",
-        "director": "Kathryn Bigelow",
-        "year": 2008,
-        "country": "USA"
-      },
-      {
         "title": "WALL-E",
         "director": "Andrew Stanton",
         "year": 2008,
@@ -7935,6 +7903,7 @@ const lists = [
         "director": "Sally Potter",
         "year": 1992,
         "country": "UK-Russia-France-Italy-Netherlands",
+        "runtime": 94,
         "genre": "Drama, Fantasy"
       },
       {
