@@ -176,7 +176,7 @@ const Chartjs = {
             } else {
               var array = director.split("&")
               for (var k = 0; k < array.length; k++) {
-                var c = array[k]
+                var c = array[k].trim()
                 directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
               }
             }
