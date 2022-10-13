@@ -20,11 +20,8 @@ Vue.component('date-picker', {
           v-mask="'##/##/####'"
           v-on="on"
           :label="label"
-          
           prepend-inner-icon="mdi-calendar"
-          hide-details
-          clearable
-          outlined
+          clearable hide-details outlined
         ></v-text-field>
       </template>
       <v-date-picker
@@ -51,20 +48,26 @@ Vue.component('date-picker', {
 const DatePicker = {
   template: `
     <v-container fluid>
+      <v-row>
+      <v-col>
       <v-card>
         <v-container fluid>
+<!--
           <v-row>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <date-picker
                 label="Start Date"
               ></date-picker>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <date-picker
                 label="End Date"
               ></date-picker>
             </v-col>
-            <v-col cols="12" lg="3">
+          </v-row>
+-->
+          <v-row>
+            <v-col cols="12" lg="2">
               <v-menu
                 ref="startMenu"
                 v-model="startMenu"
@@ -78,8 +81,8 @@ const DatePicker = {
                     label="Start Date"
                     prepend-inner-icon="mdi-calendar"
                     @blur="startDate = parseDate(startDateFmt)"
-                    v-on="on" clearable
-                    hide-details outlined
+                    v-on="on"
+                    clearable hide-details outlined
                   ></v-text-field>
                 </template>
                 <v-date-picker v-model="startDate" no-title
@@ -87,7 +90,7 @@ const DatePicker = {
                 ></v-date-picker>
               </v-menu>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-menu
                 v-model="endMenu"
                 :close-on-content-click="false"
@@ -108,40 +111,45 @@ const DatePicker = {
                 ></v-date-picker>
               </v-menu>
             </v-col>
-          </v-row>
-          <v-row>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-text-field
                 v-mask="['(##) ####-####', '(##) #####-####']"
                 label="Phone"
                 prepend-inner-icon="mdi-phone"
-                outlined clearable
+                outlined clearable hide-details
               ></v-text-field>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-text-field
                 v-mask="'###.###.###-##'"
                 label="CPF"
-                outlined clearable
+                outlined clearable hide-details
               ></v-text-field>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-text-field
                 v-mask="'##.###.###/####-##'"
                 label="CNPJ"
-                outlined clearable
+                outlined clearable hide-details
               ></v-text-field>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-text-field
                 v-mask="'#####-###'"
                 label="CEP"
-                outlined clearable
+                outlined clearable hide-details
               ></v-text-field>
             </v-col>
           </v-row>
         </v-container>
+        <v-divider></v-divider>
+        <v-card-actions class="justify-center">
+          <v-btn width="200">Pesquisar</v-btn>
+          <v-btn width="200">Limpar</v-btn>
+        </v-card-actions>
       </v-card>
+      </v-col>
+      </v-row>
     </v-container>
     `,
   data: () => ({

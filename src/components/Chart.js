@@ -168,15 +168,24 @@ const Chartjs = {
         for (var j = 0; j < _movies.length; j++) {
           var item = _movies[j]
           
-          if (directorSet[item.director]) {
-            directorSet[item.director] = directorSet[item.director] + 1
-          } else {
-            directorSet[item.director] = 1
+          // Director
+          var director = item.director
+          if (director) {
+            if (director.indexOf("&") == -1) {
+              directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
+            } else {
+              var array = director.split("&")
+              for (var k = 0; k < array.length; k++) {
+                var c = array[k]
+                directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
+              }
+            }
           }
           
+          // Year          
           years[item.year] = years[item.year] ? years[item.year] + 1 : 1
           
-          // country
+          // Country
           var country = item.country
           if (country) {
             if (country.indexOf("-") == -1) {
@@ -189,7 +198,8 @@ const Chartjs = {
               }
             }
           }
-          // runtime
+          
+          // Runtime
           var runtime = item.runtime
           if (runtime) {
             runtimeSet[runtime] = runtimeSet[runtime] ? runtimeSet[runtime] + 1 : 1
