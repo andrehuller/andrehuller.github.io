@@ -140,6 +140,15 @@ const Leaflet = {
           .bindPopup(country[0])
           .addTo(this.map)
       }
+
+      L.geoJSON(geojson, {
+        style: function (feature) {
+          if (feature.properties.id % 2 == 0) {
+            return {fillColor: "#ff0000", color: "#000000", weight: 1};
+          }
+          return {fillColor: "#0000ff", color: "#000000", weight: 1};
+        }
+      }).addTo(this.map)
     })
   },
   methods: {
