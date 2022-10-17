@@ -4,7 +4,7 @@ const Leaflet = {
       <v-row>
         <v-col>
           <v-card outlined>
-            <div id="map" style="width: 100%; height: 500px; z-index: 0;"></div>
+            <div id="map" style="width: 100%; height: 875px; z-index: 0;"></div>
           </v-card>
         </v-col>
       </v-row>
@@ -48,18 +48,6 @@ const Leaflet = {
         "href": "https://github.com/nguyenning/Leaflet.defaultextent"
       },
       {
-        "icon": "mdi-map-marker",
-        "title": "Leaflet.markercluster",
-        "subtitle": "Marker Cluster",
-        "href": "https://github.com/Leaflet/Leaflet.markercluster"
-      },
-      {
-        "icon": "mdi-map-marker-plus",
-        "title": "leaflet-geoman",
-        "subtitle": "the best geometry editing for Leaflet Maps",
-        "href": "https://geoman.io/leaflet-geoman"
-      },
-      {
         "icon": "mdi-lasso",
         "title": "leaflet-lasso",
         "subtitle": "Lasso selection plugin for Leaflet",
@@ -91,19 +79,22 @@ const Leaflet = {
   },
   mounted () {
     this.$nextTick(() => {
-      this.map = L.map('map').setView([25, 0], 2) //.setView([-24.618588, -51.316993], 7) // FIXME
+      // this.map = L.map('map').setView([25, 0], 2)
+      this.map = L.map('map').setView([-24.618588, -51.316993], 8)
 
       this.layers = L.control.layers({
+        'Gray': L.esri.basemapLayer('Gray').addTo(this.map),
+        'Imagery': L.esri.basemapLayer('Imagery'),
+        'Topographic': L.esri.basemapLayer('Topographic'),
         'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        }),
-        'Imagery': L.esri.basemapLayer('Imagery'),
-        'Topographic': L.esri.basemapLayer('Topographic').addTo(this.map),
+        })
       }).addTo(this.map)
 
       L.control.defaultExtent()
         .addTo(this.map)
       
+      /*
       this.map.gestureHandling.enable()
 
       var countries = [
@@ -140,14 +131,66 @@ const Leaflet = {
           .bindPopup(country[0])
           .addTo(this.map)
       }
-
-      L.geoJSON(geojson, {
-        style: function (feature) {
-          if (feature.properties.id % 2 == 0) {
-            return {fillColor: "#ff0000", color: "#000000", weight: 1};
-          }
-          return {fillColor: "#0000ff", color: "#000000", weight: 1};
+      */
+      var geojson
+      
+      function highlightFeature(e) {
+        var layer = e.target
+        
+        layer.setStyle({
+          weight: 3,
+          color: '#666',
+          dashArray: '',
+          fillOpacity: 0.7
+        })
+        
+        if (!L.Browser.opera && !L.Browser.edge) {
+          layer.bringToFront()
         }
+      }
+      
+      function resetHighlight(e) {
+        geojson.resetStyle(e.target)
+      }
+      
+      var zoomToFeature = (e) => {
+        this.map.fitBounds(e.target.getBounds())
+      }
+      
+      function onEachFeature(feature, layer) {
+        layer.on({
+          mouseover: highlightFeature,
+          mouseout: resetHighlight,
+          click: zoomToFeature
+        })
+      }
+      
+      geojson = L.geoJSON(cities, {
+        style: function (feature) {
+          var fillColor = '#f0f9e8'
+          switch (feature.properties.id % 5) {
+            case 4:
+              fillColor = '#0868ac'
+              break
+            case 3:
+              fillColor = '#43a2ca'
+              break
+            case 2:
+              fillColor = '#7bccc4'
+              break
+            case 1:
+              fillColor = '#bae4bc'
+              break
+          }
+          
+          return {
+            fillColor: fillColor,
+            color: "#ffffff",
+            weight: 1,
+            fillOpacity: 0.7
+          }
+        },
+        onEachFeature, onEachFeature
       }).addTo(this.map)
     })
   },
