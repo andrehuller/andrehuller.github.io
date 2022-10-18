@@ -19,19 +19,33 @@
   <link rel="icon" href="favicon.ico">
 
   <style>
-    [v-cloak] {
-      display: none;
-    }
-    #map {
-      height: 500px;
-      z-index: 0;
-    }
-    .leaflet-bar a, .leaflet-bar a:hover {
-      color: black !important;
-    }
-    .selected {
-      filter: hue-rotate(135deg);
-    }
+[v-cloak] {
+  display: none;
+}
+#map {
+  height: 500px;
+  z-index: 0;
+}
+.leaflet-bar a, .leaflet-bar a:hover {
+  color: black !important;
+}
+.selected {
+  filter: hue-rotate(135deg);
+}
+/*
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+*/
   </style>
 </head>
 <body>
@@ -62,7 +76,7 @@
               <v-list-item-title>Libraries</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <!--
+<!--
           <v-list-item to="/games">
             <v-list-item-icon>
               <v-icon>mdi-gamepad</v-icon>
@@ -71,7 +85,8 @@
               <v-list-item-title>Games</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          -->
+-->
+
         </v-list>
         <v-divider></v-divider>
         <v-list dense nav>

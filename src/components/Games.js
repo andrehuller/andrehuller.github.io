@@ -284,7 +284,7 @@ const Games = {
         "difficulty": 2.5
       },
       {
-        "title": "Mighty Morphin Power Rangers",
+        "title": "Mighty Morphin Power Rangers", // Short game - 5 stages + 2/3 bosses
         "src": "Mighty Morphin Power Rangers.jpg",
         "rating": 3.5,
         "difficulty": 2

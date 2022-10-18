@@ -133,6 +133,22 @@ const Leaflet = {
       }
       */
       var geojson
+      /*
+      var info = L.control()
+      
+      info.onAdd = function (map) {
+        this._div = L.DomUtil.create('div', 'info') // create a div with a class "info"
+        this.update()
+        return this._div
+      }
+      
+      // method that we will use to update the control based on feature properties passed
+      info.update = function (props) {
+        this._div.innerHTML = (props ? props.name : 'Hover over a city')
+      }
+      
+      info.addTo(this.map)
+      */
       
       function highlightFeature(e) {
         var layer = e.target
@@ -147,10 +163,13 @@ const Leaflet = {
         if (!L.Browser.opera && !L.Browser.edge) {
           layer.bringToFront()
         }
+        
+        // info.update(layer.feature.properties)
       }
       
       function resetHighlight(e) {
         geojson.resetStyle(e.target)
+        // info.update()
       }
       
       var zoomToFeature = (e) => {
@@ -163,23 +182,35 @@ const Leaflet = {
           mouseout: resetHighlight,
           click: zoomToFeature
         })
+        layer.bindTooltip(layer.feature.properties.name, {
+          sticky: true
+        })
       }
       
       geojson = L.geoJSON(cities, {
         style: function (feature) {
-          var fillColor = '#f0f9e8'
-          switch (feature.properties.id % 5) {
+          var fillColor = '#f7fcf0'
+          switch (feature.properties.id % 8) {
+            case 7:
+              fillColor = '#08589e'
+              break
+            case 6:
+              fillColor = '#2b8cbe'
+              break
+            case 5:
+              fillColor = '#4eb3d3'
+              break
             case 4:
-              fillColor = '#0868ac'
-              break
-            case 3:
-              fillColor = '#43a2ca'
-              break
-            case 2:
               fillColor = '#7bccc4'
               break
+            case 3:
+              fillColor = '#a8ddb5'
+              break
+            case 2:
+              fillColor = '#ccebc5'
+              break
             case 1:
-              fillColor = '#bae4bc'
+              fillColor = '#e0f3db'
               break
           }
           
