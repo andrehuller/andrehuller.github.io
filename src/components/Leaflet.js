@@ -182,36 +182,36 @@ const Leaflet = {
           mouseout: resetHighlight,
           click: zoomToFeature
         })
-        layer.bindTooltip(layer.feature.properties.name, {
+        
+        var tooltip = '<b>' + layer.feature.properties.name + '</b>' + ': '
+          + layer.feature.properties.population.toLocaleString('pt-BR') + ' pessoas'
+        layer.bindTooltip(tooltip, {
           sticky: true
         })
       }
       
+      for (var i = 0; i < cities.features.length; i++) {
+      	var name = cities.features[i].properties.name
+      	if (cityProperties[name].population) {
+        	cities.features[i].properties.population = cityProperties[name].population
+        }
+      }
+      
       geojson = L.geoJSON(cities, {
         style: function (feature) {
-          var fillColor = '#f7fcf0'
-          switch (feature.properties.id % 8) {
-            case 7:
-              fillColor = '#08589e'
-              break
-            case 6:
+          var fillColor = null
+          if (feature.properties.population) {
+            if (feature.properties.population > 18040) {
               fillColor = '#2b8cbe'
-              break
-            case 5:
-              fillColor = '#4eb3d3'
-              break
-            case 4:
+            } else if (feature.properties.population > 9085) {
               fillColor = '#7bccc4'
-              break
-            case 3:
-              fillColor = '#a8ddb5'
-              break
-            case 2:
-              fillColor = '#ccebc5'
-              break
-            case 1:
-              fillColor = '#e0f3db'
-              break
+            } else if (feature.properties.population > 5046) {
+              fillColor = '#bae4bc'
+            } else {
+              fillColor = '#f0f9e8'
+            }
+          } else {
+            fillColor = '#000000'
           }
           
           return {

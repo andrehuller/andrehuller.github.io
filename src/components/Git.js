@@ -30,6 +30,7 @@ const Git = {
               
               <p><kbd>git fetch</kbd></p>
               <p><kbd>git pull</kbd></p>
+              
               <v-divider class="pb-4"></v-divider>
 
               <p>use <kbd>git restore &lt;file&gt;...</kbd> to discard changes in working directory</p>
@@ -48,6 +49,11 @@ const Git = {
               <p><kbd>
                 git push https://&lt;username>:&lt;personal_access_token&gt;@github.com/&lt;username&gt;/&lt;project_name&gt;.git master
               </kbd></p>
+              
+              <p><b>Install the Eclipse snap package</b></p>
+              
+              <p><kbd>sudo snap install --classic eclipse</kbd></p>
+
             </v-card-text>
           </v-card>
         </v-col>
