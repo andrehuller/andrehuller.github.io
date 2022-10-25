@@ -1,60 +1,57 @@
+Vue.component('indicator', {
+  props: ['text', 'value', 'icon'],
+  template: `
+    <v-card outlined>
+      <div class="d-flex flex-no-wrap justify-space-between">
+        <v-card-text>
+          <div>{{ text }}</div>
+          <p class="text-h4 text--primary mb-0">
+            {{ value }}
+          </p>
+        </v-card-text>
+        
+        <v-avatar class="ma-5" size="48" color="#f87979">
+          <v-icon dark>{{ icon }}</v-icon>
+        </v-avatar>
+      </div>
+    </v-card>
+  `
+})
+
 const Chartjs = {
   template: `
     <v-container fluid>
       <v-row>
-        <v-col cols="12" lg="4">
-          <v-card outlined>
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <v-card-text>
-                <div>FILMS</div>
-                <p class="text-h4 text--primary mb-0">
-                  {{ films }}
-                </p>
-                <v-spacer></v-spacer>
-              </v-card-text>
-              
-              <v-avatar class="ma-5" size="48" color="#f87979">
-                <v-icon dark>mdi-filmstrip</v-icon>
-              </v-avatar>
-            </div>
-          </v-card>
-         </v-col>
-        <v-col cols="12" lg="4">
-          <v-card outlined>
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <v-card-text>
-                <div>DIRECTORS</div>
-                <p class="text-h4 text--primary mb-0">
-                  {{ directors.length }}
-                </p>
-                <v-spacer></v-spacer>
-              </v-card-text>
-              
-              <v-avatar class="ma-5" size="48" color="#f87979">
-                <v-icon dark>mdi-video-vintage</v-icon>
-              </v-avatar>
-            </div>
-          </v-card>
+        <v-col cols="12" lg="3">
+          <indicator
+            text="FILMS"
+            :value="films"
+            icon="mdi-filmstrip"
+          ></indicator>
         </v-col>
-        <v-col cols="12" lg="4">
-          <v-card outlined>
-            <div class="d-flex flex-no-wrap justify-space-between">
-              <v-card-text>
-                <div>COUNTRIES</div>
-                <p class="text-h4 text--primary mb-0">
-                  {{ countries }}
-                </p>
-                <v-spacer></v-spacer>
-              </v-card-text>
-              
-              <v-avatar class="ma-5" size="48" color="#f87979">
-                <v-icon dark>mdi-earth</v-icon>
-              </v-avatar>
-            </div>
-          </v-card>
+        <v-col cols="12" lg="3">
+          <indicator
+            text="DIRECTORS"
+            :value="directors.length"
+            icon="mdi-video-vintage"
+          ></indicator>
+        </v-col>
+        <v-col cols="12" lg="3">
+          <indicator
+            text="YEARS"
+            :value="years.length"
+            icon="mdi-calendar"
+          ></indicator>
+        </v-col>
+        <v-col cols="12" lg="3">
+          <indicator
+            text="COUNTRIES"
+            :value="countries.length"
+            icon="mdi-earth"
+          ></indicator>
         </v-col>
         
-        <v-col cols="12" lg="12">
+        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
           <v-card outlined>
             <div>
               <canvas id="chartDirector" height="90px"></canvas>
@@ -96,12 +93,61 @@ const Chartjs = {
         
         <v-col cols="12" lg="12">
           <v-card outlined>
+            <v-container fluid>
+              <v-row>
+                <v-col cols="12" lg="3">
+                  <v-autocomplete
+                    v-model="director"
+                    label="Director"
+                    :items="directors"
+                    @change="update"
+                    prepend-inner-icon="mdi-magnify"
+                    multiple
+                    flat solo-inverted
+                    clearable hide-details
+                  ></v-autocomplete>
+                </v-col>
+                <v-col cols="12" lg="3">
+                  <v-autocomplete
+                    v-model="year"
+                    label="Year"
+                    :items="years"
+                    @change="update"
+                    prepend-inner-icon="mdi-magnify"
+                    multiple
+                    flat solo-inverted
+                    clearable hide-details
+                  ></v-autocomplete>
+                </v-col>
+                <v-col cols="12" lg="3">
+                  <v-autocomplete
+                    v-model="country"
+                    label="Country"
+                    :items="countries"
+                    @change="update"
+                    prepend-inner-icon="mdi-magnify"
+                    multiple
+                    flat solo-inverted
+                    clearable hide-details
+                  ></v-autocomplete>
+                </v-col>
+                <v-col cols="12" lg="3" class="justify-right">
+                  <v-text-field
+                    v-model="search"
+                    label="Search"
+                    prepend-inner-icon="mdi-magnify"
+                    flat solo-inverted clearable hide-details
+                  ></v-text-field>
+                </v-col>
+              </v-row>
+            </v-container>
+            <v-divider></v-divider>
             <v-data-table
               :headers="headers"
-              :items="items"
+              :items="filteredItems"
+              :search="search"
               class="elevation-1"
-            >
-            </v-data-table>
+            ></v-data-table>
           </v-card>
         </v-col>
       </v-row>
@@ -109,56 +155,92 @@ const Chartjs = {
   `,
   data: () => ({
     films: null,
+    director: null,
     directors: [],
-    countries: null,
+    year: null,
+    years: [],
+    country: null,
+    countries: [],
+    search: null,
     headers: [
       {
         text: 'Title',
         value: 'title',
-        width: '20%'
+        width: '16.67%'
       },
       {
         text: 'Director',
         value: 'director',
-        width: '20%'
+        width: '16.67%'
       },
       {
         text: 'Year',
         value: 'year',
-        width: '10%'
+        width: '16.67%'
       },
       {
         text: 'Runtime',
         value: 'runtime',
-        width: '10%'
+        width: '16.67%'
       },
       {
         text: 'Country',
         value: 'country',
-        width: '20%'
+        width: '16.67%'
       },
       {
         text: 'Genre',
         value: 'genre',
-        width: '20%'
+        width: '16.67%'
       }
     ],
-    items: []
+    items: [],
+    filteredItems: []
   }),
   mounted: function() {
     this.lists = lists
     for (var i = 0; i < lists.length; i++) {
       this.items = this.items.concat(lists[i].items)
+      this.filteredItems = this.filteredItems.concat(lists[i].items) // filtered items
     }
     this.createCharts()
   },
   methods: {
+    update: function () {
+      this.filteredItems = []
+      
+      function isEmpty(array) {
+        return array == null || array.length == 0
+      }
+      
+      function containsElement(str, array) {
+        if (isEmpty(array)) return true
+
+        str = str.toString() // FIXME: number
+        
+        for (var i = 0; i < array.length; i++)
+          if (str.indexOf(array[i]) != -1)
+            return true
+        
+        return false
+      }
+      
+      if (this.items) {
+        for (var i = 0; i < this.items.length; i++) {
+          if (containsElement(this.items[i].director, this.director)
+            && containsElement(this.items[i].country, this.country)
+            && containsElement(this.items[i].year, this.year)) {
+            this.filteredItems.push(this.items[i])
+          }
+        }
+      }
+    },
     createCharts: function () {
       // Chart.defaults.font.weight = 'bold';
       Chart.defaults.color = 'white'
       var count = 0
       var directorSet = {}
-      var years = {}
+      var yearSet = {}
       var countrySet = {}
       var runtimeSet = {}
       var genres = {}
@@ -184,7 +266,7 @@ const Chartjs = {
           }
           
           // Year          
-          years[item.year] = years[item.year] ? years[item.year] + 1 : 1
+          yearSet[item.year] = yearSet[item.year] ? yearSet[item.year] + 1 : 1
           
           // Country
           var country = item.country
@@ -224,8 +306,8 @@ const Chartjs = {
       
       this.films = count
       this.directors = Object.keys(directorSet).sort()
-      this.years = Object.keys(years).sort()
-      this.countries = Object.keys(countrySet).length
+      this.years = Object.keys(yearSet).sort()
+      this.countries = Object.keys(countrySet).sort()
       this.genres = Object.keys(genres)
       
       var labels = []
@@ -275,10 +357,8 @@ const Chartjs = {
       var labels2 = []
       var data2 = []
       for (var i = 0; i < this.years.length; i++) {
-        var year = this.years[i]
-        
-        labels2.push(year)
-        data2.push(years[year])
+        labels2.push(this.years[i])
+        data2.push(yearSet[this.years[i]])
       }
       // document.getElementById('chartYear').style.backgroundColor = '#FFFFFF';
       new Chart(

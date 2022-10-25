@@ -111,42 +111,6 @@ const categories = [
     ]
   },
   {
-    "name": "Icons",
-    "items": [
-      {
-        "title": "Font Awesome",
-        "subtitle": "the web's most popular icon set and toolkit",
-        "href": "https://fontawesome.com/",
-        "src": "assets/libraries/Font Awesome.png"
-      },
-      {
-        "title": "Ionicons",
-        "subtitle": "Beautifully crafted open source icons",
-        "href": "https://ionicons.com/",
-        "src": "assets/libraries/Ionicons.png"
-      },
-      {
-        "title": "Material Design Icons",
-        "subtitle": "Community-led Iconography",
-        "href": "https://materialdesignicons.com",
-        "src": "assets/libraries/Material Design Icons.png",
-        "highlight": true
-      },
-      {
-        "title": "Material Icons",
-        "subtitle": "Material icons are delightful, beautifully crafted symbols for common actions and items",
-        "href": "https://material.io/resources/icons/?style=baseline",
-        "src": "assets/libraries/Material Icons.png",
-      },
-      {
-        "title": "Octicons",
-        "subtitle": "Your project. GitHub's icons.",
-        "href": "https://octicons.github.com/",
-        "src": "assets/libraries/Octicons.png",
-      }
-    ]
-  },
-  {
     "name": "Libraries",
     "items": [
       {
@@ -716,7 +680,6 @@ const categories = [
       },
       {
         "title": "Here",
-        "subtitle": "https://www.here.com/",
         "href": "https://www.here.com/",
         "src": "assets/screenshots/here.jpg"
       },
@@ -728,14 +691,7 @@ const categories = [
         "group": "Other"
       },
       {
-        "title": "Material Design",
-        "subtitle": "Build beautiful products, faster.",
-        "href": "https://material.io/",
-        "src": "assets/screenshots/material.png"
-      },
-      {
         "title": "OneZoom Tree of Life Explorer",
-        "subtitle": "https://www.onezoom.org/",
         "href": "https://www.onezoom.org/",
         "src": "assets/screenshots/onezoom.png"
       },
@@ -753,8 +709,57 @@ const categories = [
       },
       {
         "title": "ZDoom",
+        "subtitle": "Beyond Doom",
         "href": "https://www.zdoom.org",
         "src": "assets/screenshots/ZDoom.png"
+      },
+      {
+        "title": "ZSNES",
+        "subtitle": "SNES games emulator",
+        "href": "https://zsnes.com/",
+        "src": "assets/screenshots/ZSNES.png"
+      }
+    ]
+  },
+  {
+    "name": "Icons",
+    "items": [
+      {
+        "title": "Font Awesome",
+        "subtitle": "the web's most popular icon set and toolkit",
+        "href": "https://fontawesome.com/",
+        "src": "assets/libraries/Font Awesome.png"
+      },
+      {
+        "title": "Ionicons",
+        "subtitle": "Beautifully crafted open source icons",
+        "href": "https://ionicons.com/",
+        "src": "assets/libraries/Ionicons.png"
+      },
+      {
+        "title": "Material Design",
+        "subtitle": "Build beautiful products, faster.",
+        "href": "https://material.io/",
+        "src": "assets/screenshots/material.png"
+      },
+      {
+        "title": "Material Design Icons",
+        "subtitle": "Community-led Iconography",
+        "href": "https://materialdesignicons.com",
+        "src": "assets/libraries/Material Design Icons.png",
+        "highlight": true
+      },
+      {
+        "title": "Material Icons",
+        "subtitle": "Material icons are delightful, beautifully crafted symbols for common actions and items",
+        "href": "https://material.io/resources/icons/?style=baseline",
+        "src": "assets/libraries/Material Icons.png",
+      },
+      {
+        "title": "Octicons",
+        "subtitle": "Your project. GitHub's icons.",
+        "href": "https://octicons.github.com/",
+        "src": "assets/libraries/Octicons.png",
       }
     ]
   }

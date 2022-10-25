@@ -112,26 +112,6 @@ const DatePicker = {
         </v-card-actions>
       </v-card>
       </v-col>
-      <v-col>
-        <v-card>
-          <v-container fluid>
-            <v-row>
-              <v-col cols="12" lg="3">
-                <v-text-field
-                  label="Challenge"
-                  outlined clearable hide-details
-                ></v-text-field>
-              </v-col>
-              <v-col cols="12" lg="3">
-                <v-text-field
-                  label="Housework"
-                  outlined clearable hide-details
-                ></v-text-field>
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
-      </v-col>
       </v-row>
     </v-container>
   `

@@ -93,6 +93,15 @@ const Leaflet = {
 
       L.control.defaultExtent()
         .addTo(this.map)
+      /*
+      var printer = L.easyPrint({
+        // tileLayer: osmLayer,
+        sizeModes: ['Current', 'A4Landscape', 'A4Portrait'],
+        filename: 'myMap',
+        exportOnly: true,
+        hideControlContainer: true
+      }).addTo(this.map)
+      */
       
       /*
       this.map.gestureHandling.enable()
@@ -157,7 +166,7 @@ const Leaflet = {
           weight: 3,
           color: '#666',
           dashArray: '',
-          fillOpacity: 0.7
+          fillOpacity: 0.8
         })
         
         if (!L.Browser.opera && !L.Browser.edge) {
@@ -183,8 +192,10 @@ const Leaflet = {
           click: zoomToFeature
         })
         
-        var tooltip = '<b>' + layer.feature.properties.name + '</b>' + ': '
-          + layer.feature.properties.population.toLocaleString('pt-BR') + ' pessoas'
+        var props = layer.feature.properties
+        var tooltip = '<b>' + props.name + '</b>' + ': '
+          + props.population.toLocaleString('pt-BR') + ' pessoas'
+                  
         layer.bindTooltip(tooltip, {
           sticky: true
         })
@@ -218,7 +229,7 @@ const Leaflet = {
             fillColor: fillColor,
             color: "#ffffff",
             weight: 1,
-            fillOpacity: 0.7
+            fillOpacity: 0.8
           }
         },
         onEachFeature, onEachFeature

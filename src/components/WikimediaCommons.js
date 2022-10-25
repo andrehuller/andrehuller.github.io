@@ -9,7 +9,7 @@ const WikimediaCommons = {
         >
           <v-card class="fill-height d-flex flex-column" flat tile>
             <div>
-              <v-img height="500" :src="'assets/wikimedia/' + item.name + '.jpg'"></v-img>
+              <v-img height="475" :src="'assets/wikimedia/' + item.name + '.jpg'"></v-img>
             </div>
             <v-card-title>
               {{ item.name }}
@@ -61,6 +61,12 @@ const WikimediaCommons = {
           'Prince of Darkness (1987)'
         ]
       },
+      /*
+      {
+        name: 'Alfred Hitchcock',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Hitchcock,_Alfred_02.jpg">Ante Brkan</a>, Public domain, via Wikimedia Commons'
+      },
+      */
       {
         name: 'Joseph L. Mankiewicz',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:Joseph_L._Mankiewicz_(1950).jpg">English:  Photographer unknown; work-for-hire on behalf of 20th Century Fox.</a>, Public domain, via Wikimedia Commons',
@@ -80,6 +86,12 @@ const WikimediaCommons = {
           'In the Heat of the Night (1967)'
         ]
       }
+      /*,
+      {
+      	name: 'Parasite (2019)',
+      	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Parasite2019_(cropped).jpg">Kinocine PARKJEAHWAN4wiki</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons'
+      }
+      */
     ]
   })
 }
