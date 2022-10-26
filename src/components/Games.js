@@ -12,7 +12,7 @@ const Games = {
           <v-card>
           <v-toolbar
             class="mb-4"
-            color="#1867c0"
+            color="red lighten-1"
             dark flat
           >
             <v-container fluid class="pa-0"> 
@@ -188,6 +188,14 @@ const Games = {
         "difficulty": 4
       },
       {
+        "title": "Mega Man X",
+        "developer": "Capcom",
+        "year": "1993",
+        "src": "Mega Man X.jpg",
+        "rating": 4.5,
+        "difficulty": 3.5
+      },
+      {
         "title": "Super Star Wars",
         "developer": "LucasArts",
         "year": 1992,
@@ -253,6 +261,8 @@ const Games = {
       },
       {
         "title": "Super Mario Kart",
+        "developer": "Nintendo",
+        "year": 1992,
         "src": "Super Mario Kart.jpg",
         "rating": 4,
         "difficulty": 2.5
@@ -267,6 +277,8 @@ const Games = {
       },
       {
         "title": "The Empire Strikes Back",
+        "developer": "LucasArts",
+        "year": 1993,
         "src": "Super Star Wars: The Empire Strikes Back.png",
         "rating": 4,
         "difficulty": 4
