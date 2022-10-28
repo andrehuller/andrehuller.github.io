@@ -93,6 +93,9 @@ const Leaflet = {
 
       L.control.defaultExtent()
         .addTo(this.map)
+
+      // 
+      
       /*
       var printer = L.easyPrint({
         // tileLayer: osmLayer,
@@ -158,6 +161,42 @@ const Leaflet = {
       
       info.addTo(this.map)
       */
+
+      var info = L.control()
+
+      info.onAdd = function (map) {
+      	this._div = L.DomUtil.create('div', 'leaflet-info') // create a div with a class "info"
+
+      	this._div.innerHTML = '<div style="margin-bottom: 4px;">' //  style="padding: 4px"
+      	  + '<input type="radio" id="varA" name="drone" value="huey" checked class="leaflet-control-layers-selector">'
+          + '<label for="varA" style="padding-left: 8px">População no último censo (2010)</label>'
+          + '</div>'
+      	this._div.innerHTML += '<div style="margin-bottom: 4px;">'
+      	  + '<input type="radio" id="varB" name="drone" value="huey">'
+          + '<label for="varB" style="padding-left: 8px">Taxa de escolarização de 6 a 14 anos de idade</label>'
+          + '</div>'
+      	this._div.innerHTML += '<div style="margin-bottom: 4px;">'
+      	  + '<input type="radio" id="salario" name="drone" value="huey">'
+          + '<label for="salario" style="padding-left: 8px">Salário médio mensal dos trabalhadores formais</label>'
+          + '</div>'
+
+      	return this._div
+      }
+      info.addTo(this.map)
+
+      function createTooltip (layer) {
+        var props = layer.feature.properties
+
+        var tooltip = '<b>' + props.name + '</b>' + ': '
+        if (document.getElementById("varA").checked)
+          tooltip += props.varA.toLocaleString('pt-BR') + ' pessoas'
+        else if (document.getElementById("varB").checked)
+          tooltip += props.varB + '%'
+        else if (document.getElementById("salario").checked)
+          tooltip += props.salario.toLocaleString('pt-BR') + ' salários mínimos'
+
+        return tooltip
+      }
       
       function highlightFeature(e) {
         var layer = e.target
@@ -172,13 +211,22 @@ const Leaflet = {
         if (!L.Browser.opera && !L.Browser.edge) {
           layer.bringToFront()
         }
+
+        var tooltip = createTooltip(layer)
         
-        // info.update(layer.feature.properties)
+        layer.setTooltipContent(tooltip)
       }
       
       function resetHighlight(e) {
-        geojson.resetStyle(e.target)
+        // geojson.resetStyle(e.target)
         // info.update()
+        var layer = e.target
+        
+        layer.setStyle({
+          color: "#ffffff",
+          weight: 1,
+          fillOpacity: 0.8
+        })
       }
       
       var zoomToFeature = (e) => {
@@ -192,10 +240,8 @@ const Leaflet = {
           click: zoomToFeature
         })
         
-        var props = layer.feature.properties
-        var tooltip = '<b>' + props.name + '</b>' + ': '
-          + props.population.toLocaleString('pt-BR') + ' pessoas'
-                  
+        var tooltip = createTooltip(layer)
+        
         layer.bindTooltip(tooltip, {
           sticky: true
         })
@@ -203,37 +249,99 @@ const Leaflet = {
       
       for (var i = 0; i < cities.features.length; i++) {
       	var name = cities.features[i].properties.name
-      	if (cityProperties[name].population) {
-        	cities.features[i].properties.population = cityProperties[name].population
+      	if (csvjson[name].varA) {
+        	cities.features[i].properties.varA = csvjson[name].varA
+        	cities.features[i].properties.varB = csvjson[name].varB
+        	cities.features[i].properties.salario = salario[name].value
+        }
+      }
+      
+      var styleA = function (feature) {
+        var fillColor = null
+        if (feature.properties.varA) {
+          if (feature.properties.varA > 18040) {
+            fillColor = '#2b8cbe'
+          } else if (feature.properties.varA > 9085) {
+            fillColor = '#7bccc4'
+          } else if (feature.properties.varA > 5046) {
+            fillColor = '#bae4bc'
+          } else {
+            fillColor = '#f0f9e8'
+          }
+        } else {
+          fillColor = '#000000'
+        }
+        
+        return {
+          fillColor: fillColor,
+          color: "#ffffff",
+          weight: 1,
+          fillOpacity: 0.8
+        }
+      }
+      
+      var styleB = function (feature) {
+        var fillColor = null
+        if (feature.properties.varB) {
+          if (feature.properties.varB > 98.7) {
+            fillColor = '#2b8cbe'
+          } else if (feature.properties.varB > 98.1) {
+            fillColor = '#7bccc4'
+          } else if (feature.properties.varB > 97.2) {
+            fillColor = '#bae4bc'
+          } else {
+            fillColor = '#f0f9e8'
+          }
+        } else {
+          fillColor = '#000000'
+        }
+          
+        return {
+          fillColor: fillColor,
+          color: "#ffffff",
+          weight: 1,
+          fillOpacity: 0.8
+        }
+      }
+      
+      var styleSalary = function (feature) {
+        var fillColor = null
+        if (feature.properties.salario) {
+          if (feature.properties.salario > 2.2) {
+            fillColor = '#2b8cbe'
+          } else if (feature.properties.salario > 2.1) {
+            fillColor = '#7bccc4'
+          } else if (feature.properties.salario > 1.9) {
+            fillColor = '#bae4bc'
+          } else {
+            fillColor = '#f0f9e8'
+          }
+        } else {
+          fillColor = '#000000'
+        }
+          
+        return {
+          fillColor: fillColor,
+          color: "#ffffff",
+          weight: 1,
+          fillOpacity: 0.8
         }
       }
       
       geojson = L.geoJSON(cities, {
-        style: function (feature) {
-          var fillColor = null
-          if (feature.properties.population) {
-            if (feature.properties.population > 18040) {
-              fillColor = '#2b8cbe'
-            } else if (feature.properties.population > 9085) {
-              fillColor = '#7bccc4'
-            } else if (feature.properties.population > 5046) {
-              fillColor = '#bae4bc'
-            } else {
-              fillColor = '#f0f9e8'
-            }
-          } else {
-            fillColor = '#000000'
-          }
-          
-          return {
-            fillColor: fillColor,
-            color: "#ffffff",
-            weight: 1,
-            fillOpacity: 0.8
-          }
-        },
+        style: styleA,
         onEachFeature, onEachFeature
       }).addTo(this.map)
+      
+      document.getElementById("varA").addEventListener("change", function () {
+        geojson.setStyle(styleA)
+      })
+      document.getElementById("varB").addEventListener("change", function () {
+        geojson.setStyle(styleB)
+      })
+      document.getElementById("salario").addEventListener("change", function () {
+        geojson.setStyle(styleSalary)
+      })
     })
   },
   methods: {

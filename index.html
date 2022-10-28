@@ -40,20 +40,24 @@
   box-sizing: unset;
 }
 */
-/*
-.info {
+
+.leaflet-info {
   padding: 6px 8px;
   font: 14px/16px Arial, Helvetica, sans-serif;
+  color: black;
   background: white;
   background: rgba(255,255,255,0.8);
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.2);
+  background-clip: padding-box;
+
 }
-.info h4 {
+.leaflet-info h4 {
   margin: 0 0 5px;
   color: #777;
 }
-*/
+
   </style>
 </head>
 <body>
@@ -292,7 +296,9 @@
   <script src="./src/locations.js"></script>
   <script src="./src/movies.js"></script>
   <script src="./src/geojson.js"></script>
-  <script src="./src/cityProperties.js"></script>
+  
+  <script src="./src/csvjson.json"></script>
+  <script src="./assets/json/salario.json"></script>
   
   <script src="./src/components/Calendar.js"></script>
   <script src="./src/components/Chart.js"></script>
