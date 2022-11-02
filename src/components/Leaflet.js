@@ -8,70 +8,38 @@ const Leaflet = {
           </v-card>
         </v-col>
       </v-row>
-      <v-row>
-        <v-col cols="12" lg="4"
-          v-for="plugin in sortedPlugins"
-          :key="plugin.title"
-        >
-          <v-card outlined :href="plugin.href">
-            <v-list>
-              <v-list-item>
-                <v-list-item-avatar class="indigo darken-1">
-                  <v-icon dark>{{ plugin.icon }}</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ plugin.title }}</v-list-item-title>
-                  <v-list-item-subtitle>{{ plugin.subtitle }}</v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action>
-                  <v-icon>mdi-arrow-right</v-icon>
-                </v-list-item-action>
-              </v-list-item>
-            </v-list>
-          </v-card>
-        </v-col>
-      </v-row>
     </v-container>
   `,
   data: () => ({
-    plugins: [
+/*    plugins: [
       {
-        "icon": "mdi-map",
         "title": "Leaflet.GestureHandling",
         "subtitle": "Gesture Handling",
         "href": "https://github.com/elmarquis/Leaflet.GestureHandling"
       },
       {
-        "icon": "mdi-home",
         "title": "Leaflet.defaultextent",
         "subtitle": "Default Extent Button",
         "href": "https://github.com/nguyenning/Leaflet.defaultextent"
       },
       {
-        "icon": "mdi-lasso",
         "title": "leaflet-lasso",
         "subtitle": "Lasso selection plugin for Leaflet",
         "href": "https://github.com/zakjan/leaflet-lasso"
       },
       {
-        "icon": "mdi-crosshairs-gps",
         "title": "leaflet-locatecontrol",
         "subtitle": "A customizable locate control",
         "href": "https://github.com/domoritz/leaflet-locatecontrol/"
       },
       {
-        "icon": "mdi-map",
         "title": "leaflet.wms",
         "subtitle": "Enhanced WMS support for Leaflet",
         "href": "https://github.com/heigeo/leaflet.wms"
       }
     ]
+*/
   }),
-  computed: {
-    sortedPlugins () {
-      return _.sortBy(this.plugins, 'title')
-    }
-  },
   beforeRouteEnter (to, from, next) {
     next(vm => {
       vm.onResize()
@@ -138,11 +106,17 @@ const Leaflet = {
       info.onAdd = function (map) {
       	this._div = L.DomUtil.create('div', 'leaflet-info') // create a div with a class "info"
 
-        this._div.innerHTML = createOption('populacao', 'População no último censo (2010)', true)
+        this._div.innerHTML = '<p style="margin-bottom: 4px;"><b>População</b></p>'
+        this._div.innerHTML += createOption('populacao', 'População no último censo (2010)', true)
+        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Trabalho e Rendimento</b></p>'
         this._div.innerHTML += createOption('salario', 'Salário médio mensal dos trabalhadores formais')
+        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Educação</b></p>'
         this._div.innerHTML += createOption('educacao', 'Taxa de escolarização de 6 a 14 anos de idade')
+        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Economia</b></p>'
         this._div.innerHTML += createOption('pib', 'PIB per capita')
+        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Saúde</b></p>'
         this._div.innerHTML += createOption('saude', 'Mortalidade Infantil')
+        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Território e Ambiente</b></p>'
         this._div.innerHTML += createOption('territorio', 'Área da unidade territorial')
         
       	return this._div
