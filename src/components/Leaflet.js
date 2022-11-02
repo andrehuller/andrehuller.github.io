@@ -81,7 +81,10 @@ const Leaflet = {
     this.$nextTick(() => {
       // this.map = L.map('map').setView([25, 0], 2)
       this.map = L.map('map').setView([-24.618588, -51.316993], 8)
-
+      
+      L.esri.basemapLayer('Gray').addTo(this.map)
+      
+      /*
       this.layers = L.control.layers({
         'Gray': L.esri.basemapLayer('Gray').addTo(this.map),
         'Imagery': L.esri.basemapLayer('Imagery'),
@@ -90,11 +93,10 @@ const Leaflet = {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         })
       }).addTo(this.map)
+      */
 
       L.control.defaultExtent()
         .addTo(this.map)
-
-      // 
       
       /*
       var printer = L.easyPrint({
@@ -106,44 +108,6 @@ const Leaflet = {
       }).addTo(this.map)
       */
       
-      /*
-      this.map.gestureHandling.enable()
-
-      var countries = [
-        ['Algeria', 18.968147, 37.2962055, -8.668908, 11.997337],
-        ['Australia', -55.3228175, -9.0882278, 72.2460938, 168.2249543],
-        ['Brazil', -33.8689056, 5.2842873, -73.9830625, -28.6341164],
-        ['Canada', 41.6765556, 83.3362128, -141.00275, -52.3231981],
-        ['Czech Republic', 48.5518083, 51.0557036, 12.0905901, 18.859216],
-        ['Denmark', 54.4516667, 57.9524297, 7.7153255, 15.5530641],
-        ['France', 41.2632185, 51.268318, -5.4534286, 9.8678344],
-        ['Germany', 47.2701114, 55.099161, 5.8663153, 15.0419319],
-        ['Hong Kong', 22.1193278, 22.4393278, 114.0028131, 114.3228131],
-        ['India', 6.5546079, 35.6745457, 68.1113787, 97.395561],
-        ['Iran', 24.8465103, 39.7816502, 44.0318908, 63.3332704],
-        ['Italy', 35.2889616, 47.0921462, 6.6272658, 18.7844746],
-        ['Japan', 20.2145811, 45.7112046, 122.7141754, 154.205541],
-        ['Mexico', 19.2726009, 19.5926009, -99.2933416, -98.9733416],
-        ['Poland', 49.0020468, 55.0336963, 14.1229707, 24.145783],
-        ['Russia', 41.1850968, 82.0586232, 19.6389, 180],
-        ['Spain', 27.4335426, 43.9933088, -18.3936845, 4.5918885],
-        ['Sweden', 55.1331192, 69.0599699, 10.5930952, 24.1776819],
-        // ['United Kingdom', 25.2223186, 25.2241651, 55.1579517, 55.1606916],
-        ['United States', 24.9493, 49.5904, -125.0011, -66.9326]
-      ]
-
-      for (var i = 0; i < countries.length; i++) {
-        var country = countries[i]
-        var lat0 = country[1]
-        var lat1 = country[2]
-        var lng0 = country[3]
-        var lng1 = country[4]
-        var center = L.bounds([[lng0, lat0], [lng1, lat1]]).getCenter()
-        L.marker([center.y, center.x])
-          .bindPopup(country[0])
-          .addTo(this.map)
-      }
-      */
       var geojson
       /*
       var info = L.control()
@@ -163,23 +127,24 @@ const Leaflet = {
       */
 
       var info = L.control()
-
+      function createOption (id, text, checked) {
+        return '<div style="margin-bottom: 4px;">'
+          + '<input type="radio" id="' + id + '" name="drone" value="huey"'
+          + (checked ? ' checked' : '')
+          + '>'
+          + '<label for="' + id + '" style="padding-left: 8px">' + text + '</label>'
+          + '</div>'
+      }
       info.onAdd = function (map) {
       	this._div = L.DomUtil.create('div', 'leaflet-info') // create a div with a class "info"
 
-      	this._div.innerHTML = '<div style="margin-bottom: 4px;">' //  style="padding: 4px"
-      	  + '<input type="radio" id="varA" name="drone" value="huey" checked class="leaflet-control-layers-selector">'
-          + '<label for="varA" style="padding-left: 8px">População no último censo (2010)</label>'
-          + '</div>'
-      	this._div.innerHTML += '<div style="margin-bottom: 4px;">'
-      	  + '<input type="radio" id="varB" name="drone" value="huey">'
-          + '<label for="varB" style="padding-left: 8px">Taxa de escolarização de 6 a 14 anos de idade</label>'
-          + '</div>'
-      	this._div.innerHTML += '<div style="margin-bottom: 4px;">'
-      	  + '<input type="radio" id="salario" name="drone" value="huey">'
-          + '<label for="salario" style="padding-left: 8px">Salário médio mensal dos trabalhadores formais</label>'
-          + '</div>'
-
+        this._div.innerHTML = createOption('populacao', 'População no último censo (2010)', true)
+        this._div.innerHTML += createOption('salario', 'Salário médio mensal dos trabalhadores formais')
+        this._div.innerHTML += createOption('educacao', 'Taxa de escolarização de 6 a 14 anos de idade')
+        this._div.innerHTML += createOption('pib', 'PIB per capita')
+        this._div.innerHTML += createOption('saude', 'Mortalidade Infantil')
+        this._div.innerHTML += createOption('territorio', 'Área da unidade territorial')
+        
       	return this._div
       }
       info.addTo(this.map)
@@ -188,12 +153,20 @@ const Leaflet = {
         var props = layer.feature.properties
 
         var tooltip = '<b>' + props.name + '</b>' + ': '
-        if (document.getElementById("varA").checked)
-          tooltip += props.varA.toLocaleString('pt-BR') + ' pessoas'
-        else if (document.getElementById("varB").checked)
-          tooltip += props.varB + '%'
+        if (document.getElementById("populacao").checked)
+          tooltip += props.populacao.toLocaleString('pt-BR') + ' pessoas'
         else if (document.getElementById("salario").checked)
           tooltip += props.salario.toLocaleString('pt-BR') + ' salários mínimos'
+        else if (document.getElementById("educacao").checked)
+          tooltip += props.educacao + '%'
+        else if (document.getElementById("pib").checked)
+          tooltip += props.pib.toLocaleString('pt-BR') + ' R$'
+        else if (document.getElementById("saude").checked) {
+          if (props.saude) {
+            tooltip += props.saude.toLocaleString('pt-BR') + ' óbitos por mil nascidos vivos'
+          }
+        } else if (document.getElementById("territorio").checked)
+          tooltip += props.territorio.toLocaleString('pt-BR') + ' km²'
 
         return tooltip
       }
@@ -249,98 +222,72 @@ const Leaflet = {
       
       for (var i = 0; i < cities.features.length; i++) {
       	var name = cities.features[i].properties.name
-      	if (csvjson[name].varA) {
-        	cities.features[i].properties.varA = csvjson[name].varA
-        	cities.features[i].properties.varB = csvjson[name].varB
+
+        	cities.features[i].properties.populacao = populacao[name].value
         	cities.features[i].properties.salario = salario[name].value
-        }
+        	cities.features[i].properties.educacao = educacao[name].value
+        	cities.features[i].properties.pib = pib[name].value
+        	if ("-".localeCompare(saude[name].value) != 0) {
+          	cities.features[i].properties.saude = saude[name].value
+          }
+        	cities.features[i].properties.territorio = territorio[name].value
       }
       
-      var styleA = function (feature) {
-        var fillColor = null
-        if (feature.properties.varA) {
-          if (feature.properties.varA > 18040) {
-            fillColor = '#2b8cbe'
-          } else if (feature.properties.varA > 9085) {
-            fillColor = '#7bccc4'
-          } else if (feature.properties.varA > 5046) {
-            fillColor = '#bae4bc'
+      function createStyleFunction (propertyName, high, medium, low) {
+        return function (feature) {
+          var fillColor = null
+          if (feature.properties[propertyName]) {
+            if (feature.properties[propertyName] > high) {
+              fillColor = '#2b8cbe'
+            } else if (feature.properties[propertyName] > medium) {
+              fillColor = '#7bccc4'
+            } else if (feature.properties[propertyName] > low) {
+              fillColor = '#bae4bc'
+            } else {
+              fillColor = '#f0f9e8'
+            }
           } else {
-            fillColor = '#f0f9e8'
+            fillColor = '#d9d9d9'
           }
-        } else {
-          fillColor = '#000000'
-        }
-        
-        return {
-          fillColor: fillColor,
-          color: "#ffffff",
-          weight: 1,
-          fillOpacity: 0.8
+
+          return {
+            fillColor: fillColor,
+            color: "#ffffff",
+            weight: 1,
+            fillOpacity: 0.8
+          }
         }
       }
-      
-      var styleB = function (feature) {
-        var fillColor = null
-        if (feature.properties.varB) {
-          if (feature.properties.varB > 98.7) {
-            fillColor = '#2b8cbe'
-          } else if (feature.properties.varB > 98.1) {
-            fillColor = '#7bccc4'
-          } else if (feature.properties.varB > 97.2) {
-            fillColor = '#bae4bc'
-          } else {
-            fillColor = '#f0f9e8'
-          }
-        } else {
-          fillColor = '#000000'
-        }
-          
-        return {
-          fillColor: fillColor,
-          color: "#ffffff",
-          weight: 1,
-          fillOpacity: 0.8
-        }
-      }
-      
-      var styleSalary = function (feature) {
-        var fillColor = null
-        if (feature.properties.salario) {
-          if (feature.properties.salario > 2.2) {
-            fillColor = '#2b8cbe'
-          } else if (feature.properties.salario > 2.1) {
-            fillColor = '#7bccc4'
-          } else if (feature.properties.salario > 1.9) {
-            fillColor = '#bae4bc'
-          } else {
-            fillColor = '#f0f9e8'
-          }
-        } else {
-          fillColor = '#000000'
-        }
-          
-        return {
-          fillColor: fillColor,
-          color: "#ffffff",
-          weight: 1,
-          fillOpacity: 0.8
-        }
-      }
+
+      var stylePopulacao = createStyleFunction("populacao", 18040, 9085, 5046)
+      var styleSalario = createStyleFunction("salario", 2.2, 2.1, 1.9)
+      var styleEducacao = createStyleFunction("educacao", 98.7, 98.1, 97.2)
+      var stylePib = createStyleFunction("pib", 37484.15, 28896.69, 22889.12)
+      var styleSaude = createStyleFunction("saude", 21.19, 12.22, 8.01)
+      var styleTerritorio = createStyleFunction("territorio", 629.224, 353.331, 216.415)
       
       geojson = L.geoJSON(cities, {
-        style: styleA,
+        style: stylePopulacao,
         onEachFeature, onEachFeature
       }).addTo(this.map)
       
-      document.getElementById("varA").addEventListener("change", function () {
-        geojson.setStyle(styleA)
-      })
-      document.getElementById("varB").addEventListener("change", function () {
-        geojson.setStyle(styleB)
+      document.getElementById("populacao").addEventListener("change", function () {
+        geojson.setStyle(stylePopulacao)
       })
       document.getElementById("salario").addEventListener("change", function () {
-        geojson.setStyle(styleSalary)
+        geojson.setStyle(styleSalario)
+      })
+      document.getElementById("educacao").addEventListener("change", function () {
+        geojson.setStyle(styleEducacao)
+      })
+      document.getElementById("pib").addEventListener("change", function () {
+        geojson.setStyle(stylePib)
+      })
+      document.getElementById("saude").addEventListener("change", function () {
+        geojson.setStyle(styleSaude)
+      })
+      document.getElementById("territorio").addEventListener("change", function () {
+        geojson.setStyle(styleTerritorio)
       })
     })
   },

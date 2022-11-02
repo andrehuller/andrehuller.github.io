@@ -1,0 +1,1199 @@
+var populacao = {
+  "Abatiá": {
+    "value": 7764
+  },
+  "Adrianópolis": {
+    "value": 6376
+  },
+  "Agudos do Sul": {
+    "value": 8270
+  },
+  "Almirante Tamandaré": {
+    "value": 103204
+  },
+  "Altamira do Paraná": {
+    "value": 4306
+  },
+  "Altônia": {
+    "value": 20516
+  },
+  "Alto Paraná": {
+    "value": 13663
+  },
+  "Alto Piquiri": {
+    "value": 10179
+  },
+  "Alvorada do Sul": {
+    "value": 10283
+  },
+  "Amaporã": {
+    "value": 5443
+  },
+  "Ampére": {
+    "value": 17308
+  },
+  "Anahy": {
+    "value": 2874
+  },
+  "Andirá": {
+    "value": 20610
+  },
+  "Ângulo": {
+    "value": 2859
+  },
+  "Antonina": {
+    "value": 18891
+  },
+  "Antônio Olinto": {
+    "value": 7351
+  },
+  "Apucarana": {
+    "value": 120919
+  },
+  "Arapongas": {
+    "value": 104150
+  },
+  "Arapoti": {
+    "value": 25855
+  },
+  "Arapuã": {
+    "value": 3561
+  },
+  "Araruna": {
+    "value": 13419
+  },
+  "Araucária": {
+    "value": 119123
+  },
+  "Ariranha do Ivaí": {
+    "value": 2453
+  },
+  "Assaí": {
+    "value": 16354
+  },
+  "Assis Chateaubriand": {
+    "value": 33025
+  },
+  "Astorga": {
+    "value": 24698
+  },
+  "Atalaia": {
+    "value": 3913
+  },
+  "Balsa Nova": {
+    "value": 11300
+  },
+  "Bandeirantes": {
+    "value": 32184
+  },
+  "Barbosa Ferraz": {
+    "value": 12656
+  },
+  "Barracão": {
+    "value": 9735
+  },
+  "Barra do Jacaré": {
+    "value": 2727
+  },
+  "Bela Vista da Caroba": {
+    "value": 3945
+  },
+  "Bela Vista do Paraíso": {
+    "value": 15079
+  },
+  "Bituruna": {
+    "value": 15880
+  },
+  "Boa Esperança": {
+    "value": 4568
+  },
+  "Boa Esperança do Iguaçu": {
+    "value": 2764
+  },
+  "Boa Ventura de São Roque": {
+    "value": 6554
+  },
+  "Boa Vista da Aparecida": {
+    "value": 7911
+  },
+  "Bocaiúva do Sul": {
+    "value": 10987
+  },
+  "Bom Jesus do Sul": {
+    "value": 3796
+  },
+  "Bom Sucesso": {
+    "value": 6561
+  },
+  "Bom Sucesso do Sul": {
+    "value": 3293
+  },
+  "Borrazópolis": {
+    "value": 7878
+  },
+  "Braganey": {
+    "value": 5735
+  },
+  "Brasilândia do Sul": {
+    "value": 3209
+  },
+  "Cafeara": {
+    "value": 2695
+  },
+  "Cafelândia": {
+    "value": 14662
+  },
+  "Cafezal do Sul": {
+    "value": 4290
+  },
+  "Califórnia": {
+    "value": 8069
+  },
+  "Cambará": {
+    "value": 23886
+  },
+  "Cambé": {
+    "value": 96733
+  },
+  "Cambira": {
+    "value": 7236
+  },
+  "Campina da Lagoa": {
+    "value": 15394
+  },
+  "Campina do Simão": {
+    "value": 4076
+  },
+  "Campina Grande do Sul": {
+    "value": 38769
+  },
+  "Campo Bonito": {
+    "value": 4407
+  },
+  "Campo do Tenente": {
+    "value": 7125
+  },
+  "Campo Largo": {
+    "value": 112377
+  },
+  "Campo Magro": {
+    "value": 24843
+  },
+  "Campo Mourão": {
+    "value": 87194
+  },
+  "Cândido de Abreu": {
+    "value": 16655
+  },
+  "Candói": {
+    "value": 14983
+  },
+  "Cantagalo": {
+    "value": 12952
+  },
+  "Capanema": {
+    "value": 18526
+  },
+  "Capitão Leônidas Marques": {
+    "value": 14970
+  },
+  "Carambeí": {
+    "value": 19163
+  },
+  "Carlópolis": {
+    "value": 13706
+  },
+  "Cascavel": {
+    "value": 286205
+  },
+  "Castro": {
+    "value": 67084
+  },
+  "Catanduvas": {
+    "value": 10202
+  },
+  "Centenário do Sul": {
+    "value": 11190
+  },
+  "Cerro Azul": {
+    "value": 16938
+  },
+  "Céu Azul": {
+    "value": 11032
+  },
+  "Chopinzinho": {
+    "value": 19679
+  },
+  "Cianorte": {
+    "value": 69958
+  },
+  "Cidade Gaúcha": {
+    "value": 11062
+  },
+  "Clevelândia": {
+    "value": 17240
+  },
+  "Colombo": {
+    "value": 212967
+  },
+  "Colorado": {
+    "value": 22345
+  },
+  "Congonhinhas": {
+    "value": 8279
+  },
+  "Conselheiro Mairinck": {
+    "value": 3636
+  },
+  "Contenda": {
+    "value": 15891
+  },
+  "Corbélia": {
+    "value": 16312
+  },
+  "Cornélio Procópio": {
+    "value": 46928
+  },
+  "Coronel Domingos Soares": {
+    "value": 7238
+  },
+  "Coronel Vivida": {
+    "value": 21749
+  },
+  "Corumbataí do Sul": {
+    "value": 4002
+  },
+  "Cruzeiro do Iguaçu": {
+    "value": 4278
+  },
+  "Cruzeiro do Oeste": {
+    "value": 20416
+  },
+  "Cruzeiro do Sul": {
+    "value": 4563
+  },
+  "Cruz Machado": {
+    "value": 18040
+  },
+  "Cruzmaltina": {
+    "value": 3162
+  },
+  "Curitiba": {
+    "value": 1751907
+  },
+  "Curiúva": {
+    "value": 13923
+  },
+  "Diamante do Norte": {
+    "value": 5516
+  },
+  "Diamante do Sul": {
+    "value": 3510
+  },
+  "Diamante D'Oeste": {
+    "value": 5027
+  },
+  "Dois Vizinhos": {
+    "value": 36179
+  },
+  "Douradina": {
+    "value": 7445
+  },
+  "Doutor Camargo": {
+    "value": 5828
+  },
+  "Enéas Marques": {
+    "value": 6103
+  },
+  "Engenheiro Beltrão": {
+    "value": 13906
+  },
+  "Esperança Nova": {
+    "value": 1970
+  },
+  "Entre Rios do Oeste": {
+    "value": 3926
+  },
+  "Espigão Alto do Iguaçu": {
+    "value": 4677
+  },
+  "Farol": {
+    "value": 3472
+  },
+  "Faxinal": {
+    "value": 16314
+  },
+  "Fazenda Rio Grande": {
+    "value": 81675
+  },
+  "Fênix": {
+    "value": 4802
+  },
+  "Fernandes Pinheiro": {
+    "value": 5932
+  },
+  "Figueira": {
+    "value": 8293
+  },
+  "Floraí": {
+    "value": 5050
+  },
+  "Flor da Serra do Sul": {
+    "value": 4726
+  },
+  "Floresta": {
+    "value": 5931
+  },
+  "Florestópolis": {
+    "value": 11222
+  },
+  "Flórida": {
+    "value": 2543
+  },
+  "Formosa do Oeste": {
+    "value": 7541
+  },
+  "Foz do Iguaçu": {
+    "value": 256088
+  },
+  "Francisco Alves": {
+    "value": 6418
+  },
+  "Francisco Beltrão": {
+    "value": 78943
+  },
+  "Foz do Jordão": {
+    "value": 5420
+  },
+  "General Carneiro": {
+    "value": 13669
+  },
+  "Godoy Moreira": {
+    "value": 3337
+  },
+  "Goioerê": {
+    "value": 29018
+  },
+  "Goioxim": {
+    "value": 7503
+  },
+  "Grandes Rios": {
+    "value": 6625
+  },
+  "Guaíra": {
+    "value": 30704
+  },
+  "Guairaçá": {
+    "value": 6197
+  },
+  "Guamiranga": {
+    "value": 7900
+  },
+  "Guapirama": {
+    "value": 3891
+  },
+  "Guaporema": {
+    "value": 2219
+  },
+  "Guaraci": {
+    "value": 5227
+  },
+  "Guaraniaçu": {
+    "value": 14582
+  },
+  "Guarapuava": {
+    "value": 167328
+  },
+  "Guaraqueçaba": {
+    "value": 7871
+  },
+  "Guaratuba": {
+    "value": 32095
+  },
+  "Honório Serpa": {
+    "value": 5955
+  },
+  "Ibaiti": {
+    "value": 28751
+  },
+  "Ibema": {
+    "value": 6066
+  },
+  "Ibiporã": {
+    "value": 48198
+  },
+  "Icaraíma": {
+    "value": 8839
+  },
+  "Iguaraçu": {
+    "value": 3982
+  },
+  "Iguatu": {
+    "value": 2234
+  },
+  "Imbaú": {
+    "value": 11274
+  },
+  "Imbituva": {
+    "value": 28455
+  },
+  "Inácio Martins": {
+    "value": 10943
+  },
+  "Inajá": {
+    "value": 2988
+  },
+  "Indianópolis": {
+    "value": 4299
+  },
+  "Ipiranga": {
+    "value": 14150
+  },
+  "Iporã": {
+    "value": 14981
+  },
+  "Iracema do Oeste": {
+    "value": 2578
+  },
+  "Irati": {
+    "value": 56207
+  },
+  "Iretama": {
+    "value": 10622
+  },
+  "Itaguajé": {
+    "value": 4568
+  },
+  "Itaipulândia": {
+    "value": 9026
+  },
+  "Itambaracá": {
+    "value": 6759
+  },
+  "Itambé": {
+    "value": 5979
+  },
+  "Itapejara d'Oeste": {
+    "value": 10531
+  },
+  "Itaperuçu": {
+    "value": 23887
+  },
+  "Itaúna do Sul": {
+    "value": 3583
+  },
+  "Ivaí": {
+    "value": 12815
+  },
+  "Ivaiporã": {
+    "value": 31816
+  },
+  "Ivaté": {
+    "value": 7514
+  },
+  "Ivatuba": {
+    "value": 3010
+  },
+  "Jaboti": {
+    "value": 4902
+  },
+  "Jacarezinho": {
+    "value": 39121
+  },
+  "Jaguapitã": {
+    "value": 12225
+  },
+  "Jaguariaíva": {
+    "value": 32606
+  },
+  "Jandaia do Sul": {
+    "value": 20269
+  },
+  "Janiópolis": {
+    "value": 6532
+  },
+  "Japira": {
+    "value": 4903
+  },
+  "Japurá": {
+    "value": 8549
+  },
+  "Jardim Alegre": {
+    "value": 12324
+  },
+  "Jardim Olinda": {
+    "value": 1409
+  },
+  "Jataizinho": {
+    "value": 11875
+  },
+  "Jesuítas": {
+    "value": 9001
+  },
+  "Joaquim Távora": {
+    "value": 10736
+  },
+  "Jundiaí do Sul": {
+    "value": 3433
+  },
+  "Juranda": {
+    "value": 7641
+  },
+  "Jussara": {
+    "value": 6610
+  },
+  "Kaloré": {
+    "value": 4506
+  },
+  "Lapa": {
+    "value": 44932
+  },
+  "Laranjal": {
+    "value": 6360
+  },
+  "Laranjeiras do Sul": {
+    "value": 30777
+  },
+  "Leópolis": {
+    "value": 4145
+  },
+  "Lidianópolis": {
+    "value": 3973
+  },
+  "Lindoeste": {
+    "value": 5361
+  },
+  "Loanda": {
+    "value": 21201
+  },
+  "Lobato": {
+    "value": 4401
+  },
+  "Londrina": {
+    "value": 506701
+  },
+  "Luiziana": {
+    "value": 7315
+  },
+  "Lunardelli": {
+    "value": 5160
+  },
+  "Lupionópolis": {
+    "value": 4592
+  },
+  "Mallet": {
+    "value": 12973
+  },
+  "Mamborê": {
+    "value": 13961
+  },
+  "Mandaguaçu": {
+    "value": 19781
+  },
+  "Mandaguari": {
+    "value": 32658
+  },
+  "Mandirituba": {
+    "value": 22220
+  },
+  "Manfrinópolis": {
+    "value": 3127
+  },
+  "Mangueirinha": {
+    "value": 17048
+  },
+  "Manoel Ribas": {
+    "value": 13169
+  },
+  "Marechal Cândido Rondon": {
+    "value": 46819
+  },
+  "Maria Helena": {
+    "value": 5956
+  },
+  "Marialva": {
+    "value": 31959
+  },
+  "Marilândia do Sul": {
+    "value": 8863
+  },
+  "Marilena": {
+    "value": 6858
+  },
+  "Mariluz": {
+    "value": 10224
+  },
+  "Maringá": {
+    "value": 357077
+  },
+  "Mariópolis": {
+    "value": 6268
+  },
+  "Maripá": {
+    "value": 5684
+  },
+  "Marmeleiro": {
+    "value": 13900
+  },
+  "Marquinho": {
+    "value": 4981
+  },
+  "Marumbi": {
+    "value": 4603
+  },
+  "Matelândia": {
+    "value": 16078
+  },
+  "Matinhos": {
+    "value": 29428
+  },
+  "Mato Rico": {
+    "value": 3818
+  },
+  "Mauá da Serra": {
+    "value": 8555
+  },
+  "Medianeira": {
+    "value": 41817
+  },
+  "Mercedes": {
+    "value": 5046
+  },
+  "Mirador": {
+    "value": 2327
+  },
+  "Miraselva": {
+    "value": 1862
+  },
+  "Missal": {
+    "value": 10474
+  },
+  "Moreira Sales": {
+    "value": 12606
+  },
+  "Morretes": {
+    "value": 15718
+  },
+  "Munhoz de Melo": {
+    "value": 3672
+  },
+  "Nossa Senhora das Graças": {
+    "value": 3836
+  },
+  "Nova Aliança do Ivaí": {
+    "value": 1431
+  },
+  "Nova América da Colina": {
+    "value": 3478
+  },
+  "Nova Aurora": {
+    "value": 11866
+  },
+  "Nova Cantu": {
+    "value": 7425
+  },
+  "Nova Esperança": {
+    "value": 26615
+  },
+  "Nova Esperança do Sudoeste": {
+    "value": 5098
+  },
+  "Nova Fátima": {
+    "value": 8147
+  },
+  "Nova Laranjeiras": {
+    "value": 11241
+  },
+  "Nova Londrina": {
+    "value": 13067
+  },
+  "Nova Olímpia": {
+    "value": 5503
+  },
+  "Nova Santa Bárbara": {
+    "value": 3908
+  },
+  "Nova Santa Rosa": {
+    "value": 7626
+  },
+  "Nova Prata do Iguaçu": {
+    "value": 10377
+  },
+  "Nova Tebas": {
+    "value": 7398
+  },
+  "Novo Itacolomi": {
+    "value": 2827
+  },
+  "Ortigueira": {
+    "value": 23380
+  },
+  "Ourizona": {
+    "value": 3380
+  },
+  "Ouro Verde do Oeste": {
+    "value": 5692
+  },
+  "Paiçandu": {
+    "value": 35936
+  },
+  "Palmas": {
+    "value": 42888
+  },
+  "Palmeira": {
+    "value": 32123
+  },
+  "Palmital": {
+    "value": 14865
+  },
+  "Palotina": {
+    "value": 28683
+  },
+  "Paraíso do Norte": {
+    "value": 11772
+  },
+  "Paranacity": {
+    "value": 10250
+  },
+  "Paranaguá": {
+    "value": 140469
+  },
+  "Paranapoema": {
+    "value": 2791
+  },
+  "Paranavaí": {
+    "value": 81590
+  },
+  "Pato Bragado": {
+    "value": 4822
+  },
+  "Pato Branco": {
+    "value": 72370
+  },
+  "Paula Freitas": {
+    "value": 5434
+  },
+  "Paulo Frontin": {
+    "value": 6913
+  },
+  "Peabiru": {
+    "value": 13624
+  },
+  "Perobal": {
+    "value": 5653
+  },
+  "Pérola": {
+    "value": 10208
+  },
+  "Pérola d'Oeste": {
+    "value": 6761
+  },
+  "Piên": {
+    "value": 11236
+  },
+  "Pinhais": {
+    "value": 117008
+  },
+  "Pinhalão": {
+    "value": 6215
+  },
+  "Pinhal de São Bento": {
+    "value": 2625
+  },
+  "Pinhão": {
+    "value": 30208
+  },
+  "Piraí do Sul": {
+    "value": 23424
+  },
+  "Piraquara": {
+    "value": 93207
+  },
+  "Pitanga": {
+    "value": 32638
+  },
+  "Pitangueiras": {
+    "value": 2814
+  },
+  "Planaltina do Paraná": {
+    "value": 4095
+  },
+  "Planalto": {
+    "value": 13654
+  },
+  "Ponta Grossa": {
+    "value": 311611
+  },
+  "Pontal do Paraná": {
+    "value": 20920
+  },
+  "Porecatu": {
+    "value": 14189
+  },
+  "Porto Amazonas": {
+    "value": 4514
+  },
+  "Porto Barreiro": {
+    "value": 3663
+  },
+  "Porto Rico": {
+    "value": 2530
+  },
+  "Porto Vitória": {
+    "value": 4020
+  },
+  "Prado Ferreira": {
+    "value": 3434
+  },
+  "Pranchita": {
+    "value": 5628
+  },
+  "Presidente Castelo Branco": {
+    "value": 4784
+  },
+  "Primeiro de Maio": {
+    "value": 10832
+  },
+  "Prudentópolis": {
+    "value": 48792
+  },
+  "Quarto Centenário": {
+    "value": 4856
+  },
+  "Quatiguá": {
+    "value": 7045
+  },
+  "Quatro Barras": {
+    "value": 19851
+  },
+  "Quatro Pontes": {
+    "value": 3803
+  },
+  "Quedas do Iguaçu": {
+    "value": 30605
+  },
+  "Querência do Norte": {
+    "value": 11729
+  },
+  "Quinta do Sol": {
+    "value": 5088
+  },
+  "Quitandinha": {
+    "value": 17089
+  },
+  "Ramilândia": {
+    "value": 4134
+  },
+  "Rancho Alegre": {
+    "value": 3955
+  },
+  "Rancho Alegre D'Oeste": {
+    "value": 2847
+  },
+  "Realeza": {
+    "value": 16338
+  },
+  "Rebouças": {
+    "value": 14176
+  },
+  "Renascença": {
+    "value": 6812
+  },
+  "Reserva": {
+    "value": 25172
+  },
+  "Reserva do Iguaçu": {
+    "value": 7307
+  },
+  "Ribeirão Claro": {
+    "value": 10678
+  },
+  "Ribeirão do Pinhal": {
+    "value": 13524
+  },
+  "Rio Azul": {
+    "value": 14093
+  },
+  "Rio Bom": {
+    "value": 3334
+  },
+  "Rio Bonito do Iguaçu": {
+    "value": 13661
+  },
+  "Rio Branco do Ivaí": {
+    "value": 3898
+  },
+  "Rio Branco do Sul": {
+    "value": 30650
+  },
+  "Rio Negro": {
+    "value": 31274
+  },
+  "Rolândia": {
+    "value": 57862
+  },
+  "Roncador": {
+    "value": 11537
+  },
+  "Rondon": {
+    "value": 8996
+  },
+  "Rosário do Ivaí": {
+    "value": 5588
+  },
+  "Sabáudia": {
+    "value": 6096
+  },
+  "Salgado Filho": {
+    "value": 4403
+  },
+  "Salto do Itararé": {
+    "value": 5178
+  },
+  "Salto do Lontra": {
+    "value": 13689
+  },
+  "Santa Amélia": {
+    "value": 3803
+  },
+  "Santa Cecília do Pavão": {
+    "value": 3646
+  },
+  "Santa Cruz de Monte Castelo": {
+    "value": 8092
+  },
+  "Santa Fé": {
+    "value": 10432
+  },
+  "Santa Helena": {
+    "value": 23413
+  },
+  "Santa Inês": {
+    "value": 1818
+  },
+  "Santa Isabel do Ivaí": {
+    "value": 8760
+  },
+  "Santa Izabel do Oeste": {
+    "value": 13132
+  },
+  "Santa Lúcia": {
+    "value": 3925
+  },
+  "Santa Maria do Oeste": {
+    "value": 11500
+  },
+  "Santa Mariana": {
+    "value": 12435
+  },
+  "Santa Mônica": {
+    "value": 3571
+  },
+  "Santana do Itararé": {
+    "value": 5249
+  },
+  "Santa Tereza do Oeste": {
+    "value": 10332
+  },
+  "Santa Terezinha de Itaipu": {
+    "value": 20841
+  },
+  "Santo Antônio da Platina": {
+    "value": 42707
+  },
+  "Santo Antônio do Caiuá": {
+    "value": 2727
+  },
+  "Santo Antônio do Paraíso": {
+    "value": 2408
+  },
+  "Santo Antônio do Sudoeste": {
+    "value": 18893
+  },
+  "Santo Inácio": {
+    "value": 5269
+  },
+  "São Carlos do Ivaí": {
+    "value": 6354
+  },
+  "São Jerônimo da Serra": {
+    "value": 11337
+  },
+  "São João": {
+    "value": 10599
+  },
+  "São João do Caiuá": {
+    "value": 5911
+  },
+  "São João do Ivaí": {
+    "value": 11525
+  },
+  "São João do Triunfo": {
+    "value": 13704
+  },
+  "São Jorge d'Oeste": {
+    "value": 9085
+  },
+  "São Jorge do Ivaí": {
+    "value": 5517
+  },
+  "São Jorge do Patrocínio": {
+    "value": 6041
+  },
+  "São José da Boa Vista": {
+    "value": 6511
+  },
+  "São José das Palmeiras": {
+    "value": 3830
+  },
+  "São José dos Pinhais": {
+    "value": 264210
+  },
+  "São Manoel do Paraná": {
+    "value": 2098
+  },
+  "São Mateus do Sul": {
+    "value": 41257
+  },
+  "São Miguel do Iguaçu": {
+    "value": 25769
+  },
+  "São Pedro do Iguaçu": {
+    "value": 6491
+  },
+  "São Pedro do Ivaí": {
+    "value": 10167
+  },
+  "São Pedro do Paraná": {
+    "value": 2491
+  },
+  "São Sebastião da Amoreira": {
+    "value": 8626
+  },
+  "São Tomé": {
+    "value": 5349
+  },
+  "Sapopema": {
+    "value": 6736
+  },
+  "Sarandi": {
+    "value": 82847
+  },
+  "Saudade do Iguaçu": {
+    "value": 5028
+  },
+  "Sengés": {
+    "value": 18414
+  },
+  "Serranópolis do Iguaçu": {
+    "value": 4568
+  },
+  "Sertaneja": {
+    "value": 5817
+  },
+  "Sertanópolis": {
+    "value": 15638
+  },
+  "Siqueira Campos": {
+    "value": 18454
+  },
+  "Sulina": {
+    "value": 3394
+  },
+  "Tamarana": {
+    "value": 12262
+  },
+  "Tamboara": {
+    "value": 4664
+  },
+  "Tapejara": {
+    "value": 14598
+  },
+  "Tapira": {
+    "value": 5836
+  },
+  "Teixeira Soares": {
+    "value": 10283
+  },
+  "Telêmaco Borba": {
+    "value": 69872
+  },
+  "Terra Boa": {
+    "value": 15776
+  },
+  "Terra Rica": {
+    "value": 15221
+  },
+  "Terra Roxa": {
+    "value": 16759
+  },
+  "Tibagi": {
+    "value": 19344
+  },
+  "Tijucas do Sul": {
+    "value": 14537
+  },
+  "Toledo": {
+    "value": 119313
+  },
+  "Tomazina": {
+    "value": 8791
+  },
+  "Três Barras do Paraná": {
+    "value": 11824
+  },
+  "Tunas do Paraná": {
+    "value": 6256
+  },
+  "Tuneiras do Oeste": {
+    "value": 8695
+  },
+  "Tupãssi": {
+    "value": 7997
+  },
+  "Turvo": {
+    "value": 13811
+  },
+  "Ubiratã": {
+    "value": 21558
+  },
+  "Umuarama": {
+    "value": 100676
+  },
+  "União da Vitória": {
+    "value": 52735
+  },
+  "Uniflor": {
+    "value": 2466
+  },
+  "Uraí": {
+    "value": 11472
+  },
+  "Wenceslau Braz": {
+    "value": 19298
+  },
+  "Ventania": {
+    "value": 9957
+  },
+  "Vera Cruz do Oeste": {
+    "value": 8973
+  },
+  "Verê": {
+    "value": 7878
+  },
+  "Alto Paraíso": {
+    "value": 3206
+  },
+  "Doutor Ulysses": {
+    "value": 5727
+  },
+  "Virmond": {
+    "value": 3950
+  },
+  "Vitorino": {
+    "value": 6513
+  },
+  "Xambrê": {
+    "value": 6012
+  }
+}

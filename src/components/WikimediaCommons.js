@@ -85,7 +85,7 @@ const WikimediaCommons = {
           "Guess Who's Coming to Dinner (1967)",
           'In the Heat of the Night (1967)'
         ]
-      }
+      },
       /*,
       {
       	name: 'Parasite (2019)',
