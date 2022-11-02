@@ -107,7 +107,7 @@ const Leaflet = {
       	this._div = L.DomUtil.create('div', 'leaflet-info') // create a div with a class "info"
 
         this._div.innerHTML = '<p style="margin-bottom: 4px;"><b>População</b></p>'
-        this._div.innerHTML += createOption('populacao', 'População no último censo (2010)', true)
+        this._div.innerHTML += createOption('populacao', 'População no último censo [2010]', true)
         this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Trabalho e Rendimento</b></p>'
         this._div.innerHTML += createOption('salario', 'Salário médio mensal dos trabalhadores formais')
         this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Educação</b></p>'
