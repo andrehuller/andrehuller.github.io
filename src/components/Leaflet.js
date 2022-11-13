@@ -66,6 +66,48 @@ const Leaflet = {
       L.control.defaultExtent()
         .addTo(this.map)
       
+      L.control.lasso({
+        position: 'topleft',
+        intersect: true
+      }).addTo(this.map)
+      
+      var resetSelectedState = () => {
+        this.map.eachLayer(layer => {
+          if (layer instanceof L.Marker && !(layer instanceof L.MarkerCluster)) {
+            layer.setIcon(new L.Icon.Default());
+          } else if (layer instanceof L.Path) {
+            // layer.setStyle({ color: '#3388ff' });
+            layer.setStyle({ color: '#ffffff' })
+          }
+        });
+
+        // lassoResult.innerHTML = '';
+      }
+      
+      function setSelectedLayers(layers) {
+        resetSelectedState();
+
+        layers.forEach(layer => {
+          if (layer instanceof L.Marker && !(layer instanceof L.MarkerCluster)) {
+            layer.setIcon(new L.Icon.Default({ className: 'selected '}));
+          } else if (layer instanceof L.Path) {
+            layer.setStyle({
+              weight: 2,
+              color: '#666' // '#ff4620' 
+            });
+            if (!L.Browser.opera && !L.Browser.edge) {
+              layer.bringToFront()
+            }
+          }
+        });
+
+        // lassoResult.innerHTML = layers.length ? `Selected ${layers.length} layers` : '';
+      }
+        
+      this.map.on('lasso.finished', event => {
+        setSelectedLayers(event.layers)
+      })
+      
       /*
       var printer = L.easyPrint({
         // tileLayer: osmLayer,
@@ -197,14 +239,14 @@ const Leaflet = {
       for (var i = 0; i < cities.features.length; i++) {
       	var name = cities.features[i].properties.name
 
-        	cities.features[i].properties.populacao = populacao[name].value
-        	cities.features[i].properties.salario = salario[name].value
-        	cities.features[i].properties.educacao = educacao[name].value
-        	cities.features[i].properties.pib = pib[name].value
-        	if ("-".localeCompare(saude[name].value) != 0) {
-          	cities.features[i].properties.saude = saude[name].value
+          cities.features[i].properties.populacao = populacao[name].value
+          cities.features[i].properties.salario = salario[name].value
+          cities.features[i].properties.educacao = educacao[name].value
+          cities.features[i].properties.pib = pib[name].value
+          if ("-".localeCompare(saude[name].value) != 0) {
+            cities.features[i].properties.saude = saude[name].value
           }
-        	cities.features[i].properties.territorio = territorio[name].value
+          cities.features[i].properties.territorio = territorio[name].value
       }
       
       function createStyleFunction (propertyName, high, medium, low) {

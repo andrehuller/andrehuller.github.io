@@ -10,25 +10,25 @@ const Games = {
       >
         <template v-slot:header>
           <v-card>
-          <v-toolbar
-            class="mb-4"
-            color="red lighten-1"
-            dark flat
-          >
-            <v-container fluid class="pa-0"> 
-              <v-row no-gutters>
-                <v-col cols="12" lg="8">
-                </v-col>
-                <v-col cols="12" lg="4">
-                  <v-text-field
-                    v-model="search"
-                    label="Search..." prepend-inner-icon="mdi-magnify"
-                    flat solo-inverted clearable hide-details
-                  ></v-text-field>
-                </v-col>
-              </v-row>
-            </v-container>
-          </v-toolbar>
+            <v-toolbar
+              class="mb-4"
+              color="red lighten-1"
+              dark flat
+            >
+              <v-container fluid class="pa-0"> 
+                <v-row no-gutters>
+                  <v-col cols="12" lg="8">
+                  </v-col>
+                  <v-col cols="12" lg="4">
+                    <v-text-field
+                      v-model="search"
+                      label="Search..." prepend-inner-icon="mdi-magnify"
+                      flat solo-inverted clearable hide-details
+                    ></v-text-field>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-toolbar>
           </v-card>
         </template>
         <template v-slot:default="props">

@@ -11,6 +11,7 @@ const WikimediaCommons = {
             <div>
               <v-img height="475" :src="'assets/wikimedia/' + item.name + '.jpg'"></v-img>
             </div>
+
             <v-card-title>
               {{ item.name }}
               <v-spacer></v-spacer>
@@ -42,6 +43,7 @@ const WikimediaCommons = {
           </v-card>
         </v-col>
       </v-row>
+
     </v-container>
   `,
   data: () => ({
@@ -77,6 +79,24 @@ const WikimediaCommons = {
         ]
       },
       {
+        name: 'Joss Whedon',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Joss_Whedon_by_Gage_Skidmore_4.jpg">Gage Skidmore</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons',
+        movies: [
+          'Firefly (2002)',
+          'The Cabin in the Woods (2011)',
+          "Dr. Horrible's Sing-Along Blog (2008)"
+        ]
+      },
+      {
+      	name: 'Sam Raimi',
+      	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Sam_Raimi_by_Gage_Skidmore_2.jpg">Gage Skidmore</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons',
+      	movies: [
+      	  'Army of Darkness (1992)',
+      	  'Darkman (1990)',
+      	  'Evil Dead II (1987)'
+      	]
+      },
+      {
         name: 'Sidney Poitier',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:Poitier_cropped.jpg">U.S. Information Agency. Press and Publications Service.  (ca. 1953 - ca. 1978)</a>, Public domain, via Wikimedia Commons',
         movies: [
@@ -86,12 +106,14 @@ const WikimediaCommons = {
           'In the Heat of the Night (1967)'
         ]
       },
-      /*,
+      {
+        name: 'Tomm Moore',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Tomm_moore_headshot.jpg">Dylan Vaughan</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons'
+      },
       {
       	name: 'Parasite (2019)',
       	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Parasite2019_(cropped).jpg">Kinocine PARKJEAHWAN4wiki</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons'
       }
-      */
     ]
   })
 }
