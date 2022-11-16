@@ -1,11 +1,9 @@
 const Leaflet = {
   template: `
-    <v-container fluid>
+    <v-container fluid pa-0>
       <v-row>
         <v-col>
-          <v-card outlined>
-            <div id="map" style="width: 100%; height: 875px; z-index: 0;"></div>
-          </v-card>
+          <div id="map" style="width: 100%; height: calc(100vh - 64px); z-index: 0;"></div>
         </v-col>
       </v-row>
     </v-container>
@@ -286,7 +284,7 @@ const Leaflet = {
         style: stylePopulacao,
         onEachFeature, onEachFeature
       }).addTo(this.map)
-      
+           
       document.getElementById("populacao").addEventListener("change", function () {
         geojson.setStyle(stylePopulacao)
       })
