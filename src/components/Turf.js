@@ -99,12 +99,9 @@ const Turf = {
           // click: zoomToFeature
         })
         
-        // var tooltip = createTooltip(layer)
-        /*
-        layer.bindTooltip(tooltip, {
+        layer.bindTooltip('<b>Points</b>: ' + feature.properties.data, {
           sticky: true
         })
-        */
       }
       
       L.geoJSON(geojson, {
