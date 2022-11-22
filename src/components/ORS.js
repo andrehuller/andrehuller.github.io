@@ -57,52 +57,32 @@ const ORS = {
           <div id="map" style="width: 100%; height: calc(100vh - 64px); z-index: 0;"></div>
         </v-col>
         <v-col cols="12" lg="3">
-          <v-container>
+          <v-container pa-0>
             <v-row>
               <v-col cols="12">
-                <v-card>
+                <v-card tile outlined>
                   <v-card-title>
                     Jobs
                   </v-card-title>
                   <v-divider></v-divider>
-                  <v-list class="pa-0">
-                    <v-list-item v-for="(item, i) in jobs" :key="i">
-                      <v-list-item-icon>
-                        <v-icon>mdi-map-marker</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>{{ formatLocation(item.location) }}</v-list-item-title>
-                      </v-list-item-content>
-                      <v-list-item-action>
-                        <v-btn icon>
-                          <v-icon>mdi-dots-vertical</v-icon>
-                        </v-btn>
-                      </v-list-item-action>
-                    </v-list-item>
-                  </v-list>
+                  <v-data-table
+                    :headers="headers"
+                    :items="jobs"
+                    :items-per-page="5"
+                  ></v-data-table>
                 </v-card>
               </v-col>
               <v-col cols="12">
-                <v-card>
+                <v-card tile outlined>
                   <v-card-title>
                     Vehicles
                   </v-card-title>
                   <v-divider></v-divider>
-                  <v-list class="pa-0">
-                    <v-list-item v-for="(item, index) in vehicles" :key="index">
-                      <v-list-item-icon>
-                        <v-icon>mdi-map-marker</v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title>{{ formatLocation(item.start) }}</v-list-item-title>
-                      </v-list-item-content>
-                      <v-list-item-action>
-                        <v-btn icon>
-                          <v-icon>mdi-dots-vertical</v-icon>
-                        </v-btn>
-                      </v-list-item-action>
-                    </v-list-item>
-                  </v-list>
+                  <v-data-table
+                    :headers="headersVehicles"
+                    :items="vehicles"
+                    :items-per-page="5"
+                  ></v-data-table>
                 </v-card>
               </v-col>
             </v-row>
@@ -127,6 +107,14 @@ const ORS = {
     })
   },
   data: () => ({
+    headers: [
+      { text: 'Longitude', value: 'location[0]' },
+      { text: 'Latitude', value: 'location[1]' }
+    ],
+    headersVehicles: [
+      { text: 'Longitude', value: 'start[0]' },
+      { text: 'Latitude', value: 'start[1]' }
+    ],
     jobs: [],
     vehicles: []
   /*
@@ -240,8 +228,8 @@ const ORS = {
       */
       
       for (var i = 0; i < 15; i++) {
-        var lng = parseFloat(randomPoints[i].lon)
-        var lat = parseFloat(randomPoints[i].lat)
+        var lng = L.Util.formatNum(parseFloat(randomPoints[i].lon), 6)
+        var lat = L.Util.formatNum(parseFloat(randomPoints[i].lat), 6)
         
         var marker = L.marker([lat, lng]).addTo(this.map)
         
@@ -274,10 +262,10 @@ const ORS = {
         shadowSize: [41, 41]
       })      
 
-
+      // error	"Too many vehicles ( 4 ) in query, maximum is set to 3"
       for (var i = 0; i < 3; i++) {
-        var lng = parseFloat(busStations[i].lon)
-        var lat = parseFloat(busStations[i].lat)
+        var lng = L.Util.formatNum(parseFloat(busStations[i].lon), 6)
+        var lat = L.Util.formatNum(parseFloat(busStations[i].lat), 6)
         
         var marker = L.marker([lat, lng], {
           icon: redIcon
@@ -325,9 +313,6 @@ const ORS = {
       
       // bounds(southWest, northEast)
 
-      
-      // return;
-
       this.calculateRoutes()
     },
     calculateRoutes () {
@@ -361,7 +346,8 @@ const ORS = {
           }
           
           L.polyline(latlngs, {
-            color: color
+            color: color,
+            weight: 4
           }).addTo(this.map)
         }
       })
