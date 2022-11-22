@@ -47,7 +47,7 @@ const Turf = {
       // var geojson = turf.voronoi(points, options);
       // turf.tin(points, options)
       
-      var cellSide = 25;
+      var cellSide = 20;
       var options = {units: 'kilometers'}; // kilometers, miles
 
       var geojson = turf.hexGrid(bbox, cellSide, options);

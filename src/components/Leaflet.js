@@ -106,33 +106,6 @@ const Leaflet = {
         setSelectedLayers(event.layers)
       })
       
-      this.map.on('click', event => {
-        var lat = L.Util.formatNum(event.latlng.lat, 6)
-        var lng = L.Util.formatNum(event.latlng.lng, 6)
-        L.marker(event.latlng)
-          .bindPopup('[' + lng + ', ' + lat + ']')
-          .addTo(this.map)
-        
-        axios.post('https://api.openrouteservice.org/v2/isochrones/driving-car', {
-          headers: {
-            'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8',
-            'Authorization': '5b3ce3597851110001cf62487874328b06a74dc59414c1047d781422',
-            'Content-Type': 'application/json; charset=utf-8'
-          },
-          data: {
-            locations: [[event.latlng.lng, event.latlng.lat]],
-            range: [300, 200]
-          }
-        })
-          .then(reponse => {
-            console.log(response)
-          })
-          .catch(error => {
-            console.log(error)
-          })
-        
-      })
-      
       /*
       var printer = L.easyPrint({
         // tileLayer: osmLayer,
