@@ -64,14 +64,20 @@ const ORS = {
                   <v-card-title>
                     Jobs
                   </v-card-title>
+                  <v-divider></v-divider>
                   <v-list class="pa-0">
                     <v-list-item v-for="(item, i) in jobs" :key="i">
                       <v-list-item-icon>
                         <v-icon>mdi-map-marker</v-icon>
                       </v-list-item-icon>
                       <v-list-item-content>
-                        <v-list-item-title>{{ formatLocation(item) }}</v-list-item-title>
+                        <v-list-item-title>{{ formatLocation(item.location) }}</v-list-item-title>
                       </v-list-item-content>
+                      <v-list-item-action>
+                        <v-btn icon>
+                          <v-icon>mdi-dots-vertical</v-icon>
+                        </v-btn>
+                      </v-list-item-action>
                     </v-list-item>
                   </v-list>
                 </v-card>
@@ -81,6 +87,22 @@ const ORS = {
                   <v-card-title>
                     Vehicles
                   </v-card-title>
+                  <v-divider></v-divider>
+                  <v-list class="pa-0">
+                    <v-list-item v-for="(item, index) in vehicles" :key="index">
+                      <v-list-item-icon>
+                        <v-icon>mdi-map-marker</v-icon>
+                      </v-list-item-icon>
+                      <v-list-item-content>
+                        <v-list-item-title>{{ formatLocation(item.start) }}</v-list-item-title>
+                      </v-list-item-content>
+                      <v-list-item-action>
+                        <v-btn icon>
+                          <v-icon>mdi-dots-vertical</v-icon>
+                        </v-btn>
+                      </v-list-item-action>
+                    </v-list-item>
+                  </v-list>
                 </v-card>
               </v-col>
             </v-row>
@@ -100,36 +122,6 @@ const ORS = {
       this.map = L.map('map') // .setView([-24.618588, -51.316993], 7)
       L.esri.basemapLayer('Gray').addTo(this.map)
       L.control.defaultExtent().addTo(this.map)
-      /*
-      this.map.on('click', event => {
-        var lat = L.Util.formatNum(event.latlng.lat, 6)
-        var lng = L.Util.formatNum(event.latlng.lng, 6)
-        L.marker(event.latlng)
-          .bindPopup('[' + lng + ', ' + lat + ']')
-          .addTo(this.map)
-        
-        axios({
-          method: 'post',
-          url: 'https://api.openrouteservice.org/v2/isochrones/driving-car',
-          headers: {
-            'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8',
-            'Authorization': '5b3ce3597851110001cf62487874328b06a74dc59414c1047d781422',
-            'Content-Type': 'application/json; charset=utf-8'
-          },
-          data: {
-            locations: [[event.latlng.lng, event.latlng.lat]],
-            range: [300, 600]
-          }
-        })
-          .then(response => {
-            L.geoJSON(response.data)
-              .addTo(this.map)
-          })
-          .catch(error => {
-            console.log(error)
-          })
-      })
-      */
       
       this.optimization()
     })
@@ -182,6 +174,26 @@ const ORS = {
         "location": [2.89357, 48.90736],
         "skills": [14]
       }
+    ],
+    vehicles: [
+      {
+        "id": 1,
+        "profile": "driving-car",
+        "start": [2.35044, 48.71764],
+        "end": [2.35044, 48.71764],
+        "capacity": [4],
+        "skills": [1, 14],
+        "time_window": [28800, 43200]
+      },
+      {
+        "id": 2,
+        "profile": "driving-car",
+        "start": [2.35044, 48.71764],
+        "end": [2.35044, 48.71764],
+        "capacity": [4],
+        "skills": [2, 14],
+        "time_window": [28800, 43200]
+      }
     ]
   }),
   methods: {
@@ -190,10 +202,10 @@ const ORS = {
         this.map.invalidateSize()
       }
     },
-    formatLocation (item) {
-      var lng = item.location[0]
-      var lat = item.location[1]
-      return '[' + lng + ', ' + lat + ']'
+    formatLocation (location) {
+      var lng = location[0].toFixed(6)
+      var lat = location[1].toFixed(6)
+      return lng + ', ' + lat
     },
     optimization () {
       // var points = []
@@ -218,6 +230,17 @@ const ORS = {
           console.log('[' + lat + ', ' + lng + '] (2)')
         })
       }
+      for (var i = 0; i < this.vehicles.length; i++) {
+        var lng = this.vehicles[i].start[0]
+        var lat = this.vehicles[i].start[1]
+        L.marker([lat, lng])
+          .addTo(this.map)
+          
+        lng = this.vehicles[i].end[0]
+        lat = this.vehicles[i].end[1]
+        L.marker([lat, lng])
+          .addTo(this.map)
+      }
       this.map.fitBounds(markers.getBounds())
       
       // var bbox = turf.bbox(turf.multiPoint(points))
@@ -232,6 +255,9 @@ const ORS = {
       
       // return;
 
+      this.calculateRoutes()
+    },
+    calculateRoutes () {
       axios({
         method: 'post',
         url: 'https://api.openrouteservice.org/optimization',
@@ -242,26 +268,7 @@ const ORS = {
         },
         data: {
           "jobs": this.jobs,
-          "vehicles": [
-            {
-              "id": 1,
-              "profile": "driving-car",
-              "start": [2.35044, 48.71764],
-              "end": [2.35044, 48.71764],
-              "capacity": [4],
-              "skills": [1, 14],
-              "time_window": [28800, 43200]
-            },
-            {
-              "id": 2,
-              "profile": "driving-car",
-              "start": [2.35044, 48.71764],
-              "end": [2.35044, 48.71764],
-              "capacity": [4],
-              "skills": [2, 14],
-              "time_window": [28800, 43200]
-            }
-          ],
+          "vehicles": this.vehicles,
           options: {
             "g": "true"
           }
@@ -276,6 +283,36 @@ const ORS = {
       })
       .catch(error => {
         console.log(error)
+      })
+    },
+    isochrone () {
+      this.map.on('click', event => {
+        var lat = L.Util.formatNum(event.latlng.lat, 6)
+        var lng = L.Util.formatNum(event.latlng.lng, 6)
+        L.marker(event.latlng)
+          .bindPopup('[' + lng + ', ' + lat + ']')
+          .addTo(this.map)
+        
+        axios({
+          method: 'post',
+          url: 'https://api.openrouteservice.org/v2/isochrones/driving-car',
+          headers: {
+            'Accept': 'application/json, application/geo+json, application/gpx+xml, img/png; charset=utf-8',
+            'Authorization': '5b3ce3597851110001cf62487874328b06a74dc59414c1047d781422',
+            'Content-Type': 'application/json; charset=utf-8'
+          },
+          data: {
+            locations: [[event.latlng.lng, event.latlng.lat]],
+            range: [300, 600]
+          }
+        })
+          .then(response => {
+            L.geoJSON(response.data)
+              .addTo(this.map)
+          })
+          .catch(error => {
+            console.log(error)
+          })
       })
     }
   }
