@@ -127,6 +127,9 @@ const ORS = {
     })
   },
   data: () => ({
+    jobs: [],
+    vehicles: []
+  /*
     jobs: [ // [48.701, 1.98935]
       {
         "id": 1,
@@ -195,6 +198,7 @@ const ORS = {
         "time_window": [28800, 43200]
       }
     ]
+    */
   }),
   methods: {
     onResize () {
@@ -208,9 +212,12 @@ const ORS = {
       return lng + ', ' + lat
     },
     optimization () {
+      // https://nominatim.openstreetmap.org/search?q=curitiba[hospital]&format=xml&polygon=0&addressdetails=1
+      
       // var points = []
       var markers = L.markerClusterGroup()
       
+      /*
       for (var i = 0; i < this.jobs.length; i++) {
         var lng = this.jobs[i].location[0]
         var lat = this.jobs[i].location[1]
@@ -230,17 +237,83 @@ const ORS = {
           console.log('[' + lat + ', ' + lng + '] (2)')
         })
       }
+      */
+      
+      for (var i = 0; i < 15; i++) {
+        var lng = parseFloat(randomPoints[i].lon)
+        var lat = parseFloat(randomPoints[i].lat)
+        
+        var marker = L.marker([lat, lng]).addTo(this.map)
+        
+        markers.addLayer(marker)
+        
+        this.jobs.push({
+          "id": i + 1,
+          "service": 300,
+          "amount": [1],
+          "location": [lng, lat],
+          "skills": [1]
+        })
+      }
+      
+      var greenIcon = new L.Icon({
+        iconUrl: './assets/icons/marker-icon-green.png',
+        shadowUrl: './assets/icons/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+      })
+
+      var redIcon = new L.Icon({
+        iconUrl: './assets/icons/marker-icon-red.png',
+        shadowUrl: './assets/icons/marker-shadow.png',
+        iconSize: [25, 41],
+        iconAnchor: [12, 41],
+        popupAnchor: [1, -34],
+        shadowSize: [41, 41]
+      })      
+
+
+      for (var i = 0; i < 3; i++) {
+        var lng = parseFloat(busStations[i].lon)
+        var lat = parseFloat(busStations[i].lat)
+        
+        var marker = L.marker([lat, lng], {
+          icon: redIcon
+        }).addTo(this.map)
+        
+        this.vehicles.push({
+          "id": i + 1,
+          "profile": "driving-car",
+          "start": [lng, lat],
+          "end": [lng, lat],
+          "capacity": [5],
+          "skills": [1]
+        })
+        
+        markers.addLayer(marker)
+      }
+      
+/*
       for (var i = 0; i < this.vehicles.length; i++) {
         var lng = this.vehicles[i].start[0]
         var lat = this.vehicles[i].start[1]
-        L.marker([lat, lng])
+        
+        L.marker([lat, lng], {
+          icon: greenIcon
+        })
           .addTo(this.map)
           
         lng = this.vehicles[i].end[0]
         lat = this.vehicles[i].end[1]
-        L.marker([lat, lng])
+        L.marker([lat, lng], {
+          icon: redIcon
+        })
           .addTo(this.map)
       }
+*/
+      
       this.map.fitBounds(markers.getBounds())
       
       // var bbox = turf.bbox(turf.multiPoint(points))
@@ -277,8 +350,19 @@ const ORS = {
         var routes = response.data.routes
         for (var i = 0; i < routes.length; i++) {
           var latlngs = decodePolyline(routes[i].geometry, false)
-          console.log(latlngs)
-          L.polyline(latlngs).addTo(this.map)
+          var color = '#fdc086'
+          switch (i % 3) {
+            case 0:
+              color = '#7fc97f'
+              break
+            case 1:
+              color = '#beaed4'
+              break
+          }
+          
+          L.polyline(latlngs, {
+            color: color
+          }).addTo(this.map)
         }
       })
       .catch(error => {
