@@ -23,30 +23,71 @@ const Chartjs = {
     <v-container fluid>
       <v-row>
         <v-col cols="12" lg="3">
+          <v-text-field
+            v-model="search"
+            label="Search"
+            prepend-inner-icon="mdi-magnify"
+            flat solo-inverted clearable hide-details
+          ></v-text-field>
+        </v-col>
+        <v-col cols="12" lg="3">
+          <v-autocomplete
+            v-model="director"
+            label="Director"
+            :items="directors"
+            prepend-inner-icon="mdi-magnify"
+            flat solo-inverted
+            clearable hide-details
+          ></v-autocomplete>
+        </v-col>
+        <v-col cols="12" lg="3">
+          <v-autocomplete
+            v-model="year"
+            label="Year"
+            :items="years"
+            prepend-inner-icon="mdi-magnify"
+            flat solo-inverted
+            clearable hide-details
+          ></v-autocomplete>
+        </v-col>
+        <v-col cols="12" lg="3">
+          <v-autocomplete
+            v-model="country"
+            label="Country"
+            :items="countries"
+            prepend-inner-icon="mdi-magnify"
+            flat solo-inverted
+            clearable hide-details
+          ></v-autocomplete>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col cols="12" lg="3">
           <indicator
             text="FILMS"
-            :value="films"
+            :value="countFilm"
             icon="mdi-filmstrip"
           ></indicator>
         </v-col>
         <v-col cols="12" lg="3">
           <indicator
             text="DIRECTORS"
-            :value="directors.length"
+            :value="countDirector"
             icon="mdi-video-vintage"
           ></indicator>
         </v-col>
         <v-col cols="12" lg="3">
           <indicator
             text="YEARS"
-            :value="years.length"
+            :value="countYear"
             icon="mdi-calendar"
           ></indicator>
         </v-col>
         <v-col cols="12" lg="3">
           <indicator
             text="COUNTRIES"
-            :value="countries.length"
+            :value="countCountry"
             icon="mdi-earth"
           ></indicator>
         </v-col>
@@ -59,7 +100,7 @@ const Chartjs = {
           </v-card>
         </v-col>
         
-        <v-col cols="12" lg="12">
+        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
           <v-card outlined>
             <div>
               <canvas id="chartYear" height="60px"></canvas>
@@ -67,7 +108,7 @@ const Chartjs = {
           </v-card>
         </v-col>
 
-        <v-col cols="12" lg="12">
+        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
           <v-card outlined>
             <div>
               <canvas id="chartCountry" height="80px"></canvas>
@@ -75,7 +116,7 @@ const Chartjs = {
           </v-card>
         </v-col>
         
-        <v-col cols="12" lg="12">
+        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
           <v-card outlined>
             <div>
               <canvas id="chartRuntime" height="60px"></canvas>
@@ -83,7 +124,7 @@ const Chartjs = {
           </v-card>
         </v-col>
         
-        <v-col cols="12" lg="12">
+        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
           <v-card outlined>
             <div>
               <canvas id="chartGenre" height="80px"></canvas>
@@ -93,60 +134,11 @@ const Chartjs = {
         
         <v-col cols="12" lg="12">
           <v-card outlined>
-            <v-container fluid>
-              <v-row>
-                <v-col cols="12" lg="3">
-                  <v-autocomplete
-                    v-model="director"
-                    label="Director"
-                    :items="directors"
-                    @change="update"
-                    prepend-inner-icon="mdi-magnify"
-                    multiple
-                    flat solo-inverted
-                    clearable hide-details
-                  ></v-autocomplete>
-                </v-col>
-                <v-col cols="12" lg="3">
-                  <v-autocomplete
-                    v-model="year"
-                    label="Year"
-                    :items="years"
-                    @change="update"
-                    prepend-inner-icon="mdi-magnify"
-                    multiple
-                    flat solo-inverted
-                    clearable hide-details
-                  ></v-autocomplete>
-                </v-col>
-                <v-col cols="12" lg="3">
-                  <v-autocomplete
-                    v-model="country"
-                    label="Country"
-                    :items="countries"
-                    @change="update"
-                    prepend-inner-icon="mdi-magnify"
-                    multiple
-                    flat solo-inverted
-                    clearable hide-details
-                  ></v-autocomplete>
-                </v-col>
-                <v-col cols="12" lg="3" class="justify-right">
-                  <v-text-field
-                    v-model="search"
-                    label="Search"
-                    prepend-inner-icon="mdi-magnify"
-                    flat solo-inverted clearable hide-details
-                  ></v-text-field>
-                </v-col>
-              </v-row>
-            </v-container>
-            <v-divider></v-divider>
             <v-data-table
               :headers="headers"
-              :items="filteredItems"
+              :items="listFilm"
               :search="search"
-              class="elevation-1"
+
             ></v-data-table>
           </v-card>
         </v-col>
@@ -154,7 +146,6 @@ const Chartjs = {
     </v-container>
   `,
   data: () => ({
-    films: null,
     director: null,
     directors: [],
     year: null,
@@ -194,117 +185,157 @@ const Chartjs = {
         width: '16.67%'
       }
     ],
-    items: [],
-    filteredItems: []
+    items: []
   }),
-  mounted: function() {
-    this.lists = lists
-    for (var i = 0; i < lists.length; i++) {
-      this.items = this.items.concat(lists[i].items)
-      this.filteredItems = this.filteredItems.concat(lists[i].items) // filtered items
-    }
-    this.createCharts()
-  },
-  methods: {
-    update: function () {
-      this.filteredItems = []
-      
-      function isEmpty(array) {
-        return array == null || array.length == 0
+  computed: {
+    listFilm () {
+      var filtered = []
+      for (var i = 0; i < this.items.length; i++) {
+        if ((!this.director || this.items[i].director.indexOf(this.director) != -1)
+          && (!this.year || this.items[i].year == this.year)
+          && (!this.country || this.items[i].country.indexOf(this.country) != -1)) {
+          filtered.push(this.items[i])
+        }
       }
-      
-      function containsElement(str, array) {
-        if (isEmpty(array)) return true
-
-        str = str.toString() // FIXME: number
-        
-        for (var i = 0; i < array.length; i++)
-          if (str.indexOf(array[i]) != -1)
-            return true
-        
-        return false
-      }
-      
-      if (this.items) {
-        for (var i = 0; i < this.items.length; i++) {
-          if (containsElement(this.items[i].director, this.director)
-            && containsElement(this.items[i].country, this.country)
-            && containsElement(this.items[i].year, this.year)) {
-            this.filteredItems.push(this.items[i])
+      return filtered
+    },
+    setDirector () {
+      var directorSet = {}
+      for (var i = 0; i < this.listFilm.length; i++) {
+        var item = this.listFilm[i]
+        var director = item.director
+        if (director) {
+          if (director.indexOf("&") == -1) {
+            directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
+          } else {
+            var array = director.replaceAll(',', '&').split("&")
+            for (var k = 0; k < array.length; k++) {
+              var c = array[k].trim()
+              directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
+            }
           }
         }
       }
+      return directorSet
     },
+    setYear () {
+      var yearSet = {}
+      for (var i = 0; i < this.listFilm.length; i++) {
+        var item = this.listFilm[i]
+        yearSet[item.year] = yearSet[item.year] ? yearSet[item.year] + 1 : 1
+      }
+      return yearSet
+    },
+    setCountry () {
+      var set = {}
+      for (var i = 0; i < this.listFilm.length; i++) {
+        var item = this.listFilm[i]
+        var country = item.country
+        if (country) {
+          if (country.indexOf("-") == -1) {
+            set[country] = set[country] ? set[country] + 1 : 1
+          } else {
+            var array = country.split("-")
+            for (var k = 0; k < array.length; k++) {
+              var c = array[k]
+              set[c] = set[c] ? set[c] + 1 : 1
+            }
+          }
+        }
+      }
+      return set
+    },
+    listDirector () {
+      return Object.keys(this.setDirector).sort()
+    },
+    listYear() {
+      return Object.keys(this.setYear).sort()
+    },
+    listCountry () {
+      return Object.keys(this.setCountry).sort()
+    },
+    countFilm () {
+      return this.listFilm.length
+    },
+    countDirector () {
+      return this.listDirector.length
+    },
+    countYear () {
+      return this.listYear.length
+    },
+    countCountry () {
+      return this.listCountry.length
+    }
+  },
+  mounted: function() {
+    this.items = lists
+    this.createCharts()
+  },
+  methods: {
     createCharts: function () {
       // Chart.defaults.font.weight = 'bold';
-      Chart.defaults.color = 'white'
-      var count = 0
+      // Chart.defaults.color = 'white'
       var directorSet = {}
       var yearSet = {}
       var countrySet = {}
       var runtimeSet = {}
       var genres = {}
 
-      for (var i = 0; i < this.lists.length; i++) {
-        var _movies = this.lists[i].items
-        count += _movies.length
-        for (var j = 0; j < _movies.length; j++) {
-          var item = _movies[j]
-          
-          // Director
-          var director = item.director
-          if (director) {
-            if (director.indexOf("&") == -1) {
-              directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
-            } else {
-              var array = director.replaceAll(',', '&').split("&")
-              for (var k = 0; k < array.length; k++) {
-                var c = array[k].trim()
-                directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
-              }
+      for (var i = 0; i < this.items.length; i++) {
+        var item = this.items[i]
+        
+        // Director
+        var director = item.director
+        if (director) {
+          if (director.indexOf("&") == -1) {
+            directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
+          } else {
+            var array = director.replaceAll(',', '&').split("&")
+            for (var k = 0; k < array.length; k++) {
+              var c = array[k].trim()
+              directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
             }
           }
-          
-          // Year          
-          yearSet[item.year] = yearSet[item.year] ? yearSet[item.year] + 1 : 1
-          
-          // Country
-          var country = item.country
-          if (country) {
-            if (country.indexOf("-") == -1) {
-              countrySet[country] = countrySet[country] ? countrySet[country] + 1 : 1
-            } else {
-              var array = country.split("-")
-              for (var k = 0; k < array.length; k++) {
-                var c = array[k]
-                countrySet[c] = countrySet[c] ? countrySet[c] + 1 : 1
-              }
+        }
+        
+        // Year          
+        yearSet[item.year] = yearSet[item.year] ? yearSet[item.year] + 1 : 1
+        
+        // Country
+        var country = item.country
+        if (country) {
+          if (country.indexOf("-") == -1) {
+            countrySet[country] = countrySet[country] ? countrySet[country] + 1 : 1
+          } else {
+            var array = country.split("-")
+            for (var k = 0; k < array.length; k++) {
+              var c = array[k]
+              countrySet[c] = countrySet[c] ? countrySet[c] + 1 : 1
             }
           }
-          
-          // Runtime
-          var runtime = item.runtime
-          if (runtime) {
-            runtimeSet[runtime] = runtimeSet[runtime] ? runtimeSet[runtime] + 1 : 1
-          }
-          
-          // genre
-          var genre = item.genre
-          if (genre) {
-            if (genre.indexOf(", ") == -1) {
-              genres[genre] = genres[genre] ? genres[genre] + 1 : 1
-            } else {
-              var array = genre.split(", ")
-              for (var k = 0; k < array.length; k++) {
-                var c = array[k].trim()
-                genres[c] = genres[c] ? genres[c] + 1 : 1
-              }
+        }
+        
+        // Runtime
+        var runtime = item.runtime
+        if (runtime) {
+          runtimeSet[runtime] = runtimeSet[runtime] ? runtimeSet[runtime] + 1 : 1
+        }
+        
+        // genre
+        var genre = item.genre
+        if (genre) {
+          if (genre.indexOf(", ") == -1) {
+            genres[genre] = genres[genre] ? genres[genre] + 1 : 1
+          } else {
+            var array = genre.split(", ")
+            for (var k = 0; k < array.length; k++) {
+              var c = array[k].trim()
+              genres[c] = genres[c] ? genres[c] + 1 : 1
             }
           }
         }
       }
       
-      this.films = count
       this.directors = Object.keys(directorSet).sort()
       this.years = Object.keys(yearSet).sort()
       this.countries = Object.keys(countrySet).sort()

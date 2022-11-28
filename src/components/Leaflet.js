@@ -1,7 +1,7 @@
 const Leaflet = {
   template: `
     <v-container fluid pa-0>
-      <v-row>
+      <v-row no-gutters>
         <v-col>
           <div id="map" style="width: 100%; height: calc(100vh - 64px); z-index: 0;"></div>
         </v-col>
@@ -37,6 +37,9 @@ const Leaflet = {
       }
     ]
 */
+    options: [
+      'Salário médio mensal dos trabalhadores formais'
+    ]
   }),
   beforeRouteEnter (to, from, next) {
     next(vm => {

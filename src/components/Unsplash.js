@@ -9,11 +9,14 @@ const Unsplash = {
         >
           <v-card
             class="fill-height d-flex flex-column"
+            flat tile
           >
             <v-img
               :src="image.src"
               height="335"
+              style="border-radius: 8px"
             ></v-img>
+            <!--
             <v-list>
               <v-list-item>
                 <v-list-item-icon>
@@ -26,11 +29,15 @@ const Unsplash = {
                 </v-list-item-content>
               </v-list-item>
             </v-list>
-            <v-card-actions>
+            -->
+            <v-card-title>
+              {{ image.title }}
+            </v-card-title>
+            <v-card-text>
               <a :href="image.href">
                 {{ image.href }}
               </a>
-            </v-card-actions>
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>

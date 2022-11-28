@@ -5,11 +5,13 @@ const WikimediaCommons = {
         <v-col
           v-for="item in items"
           :key="item.name"
-          lg="3"
+          :lg="item.size ? 6 : 3"
         >
           <v-card class="fill-height d-flex flex-column" flat tile>
             <div>
-              <v-img height="475" :src="'assets/wikimedia/' + item.name + '.jpg'"></v-img>
+              <v-img height="475" :src="'assets/wikimedia/' + item.name + '.jpg'"
+              	style="border-radius: 8px"
+              ></v-img>
             </div>
 
             <v-card-title>
@@ -79,6 +81,16 @@ const WikimediaCommons = {
         ]
       },
       {
+        name: 'Sidney Poitier',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Poitier_cropped.jpg">U.S. Information Agency. Press and Publications Service.  (ca. 1953 - ca. 1978)</a>, Public domain, via Wikimedia Commons',
+        movies: [
+          'No Way Out (1950)',
+          'Blackboard Jungle (1955)',
+          "Guess Who's Coming to Dinner (1967)",
+          'In the Heat of the Night (1967)'
+        ]
+      },
+      {
         name: 'Joss Whedon',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:Joss_Whedon_by_Gage_Skidmore_4.jpg">Gage Skidmore</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons',
         movies: [
@@ -97,22 +109,27 @@ const WikimediaCommons = {
       	]
       },
       {
-        name: 'Sidney Poitier',
-        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Poitier_cropped.jpg">U.S. Information Agency. Press and Publications Service.  (ca. 1953 - ca. 1978)</a>, Public domain, via Wikimedia Commons',
-        movies: [
-          'No Way Out (1950)',
-          'Blackboard Jungle (1955)',
-          "Guess Who's Coming to Dinner (1967)",
-          'In the Heat of the Night (1967)'
-        ]
+      	name: 'Alan Tudyk',
+      	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Alan_Tudyk_by_Gage_Skidmore.jpg">Gage Skidmore</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons'
+      },
+      {
+      	name: 'Nathan Fillion',
+      	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Nathan_Fillion_by_Gage_Skidmore.jpg">Gage Skidmore</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons'
+      },
+      {
+      	name: 'Amy Acker',
+      	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Person_Of_Interest_-_Panel_(9353660946).jpg">Thibault from Paris, France</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>, via Wikimedia Commons',
+      	size: 'large'
       },
       {
         name: 'Tomm Moore',
-        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Tomm_moore_headshot.jpg">Dylan Vaughan</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons'
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Tomm_moore_headshot.jpg">Dylan Vaughan</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons',
+        size: 'large'
       },
       {
       	name: 'Parasite (2019)',
-      	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Parasite2019_(cropped).jpg">Kinocine PARKJEAHWAN4wiki</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons'
+      	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Parasite2019_(cropped).jpg">Kinocine PARKJEAHWAN4wiki</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons',
+      	size: 'large'
       }
     ]
   })

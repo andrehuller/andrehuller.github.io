@@ -346,8 +346,7 @@ const ORS = {
           }
           
           L.polyline(latlngs, {
-            color: color,
-            weight: 4
+            color: color
           }).addTo(this.map)
         }
       })
