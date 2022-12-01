@@ -670,7 +670,7 @@ const categories = [
     ]
   },
   {
-    "name": "Companies",
+    "name": "Others",
     "items": [
       {
         "title": "Airflow",
@@ -694,6 +694,12 @@ const categories = [
         "title": "OneZoom Tree of Life Explorer",
         "href": "https://www.onezoom.org/",
         "src": "assets/screenshots/onezoom.png"
+      },
+      {
+      	"title": "Proton Mail",
+      	"subtitle": "Secure email that protects your privacy",
+      	"href": "https://proton.me/mail",
+        "src": "assets/screenshots/Proton Mail.png"
       },
       {
         "title": "TinyPNG",

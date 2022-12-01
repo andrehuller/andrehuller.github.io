@@ -53,11 +53,14 @@ const YouTube = {
                 <v-card class="fill-height d-flex flex-column" flat tile>
                   <a :href="'https://youtu.be/' + item.id" target="_blank">
                     <v-img
-                      :src="'https://i.ytimg.com/vi_webp/' + item.id + '/hqdefault.webp'"
-                      style="background: black;"
+                      :src="'assets/ytimg/' + item.id + '.webp'"
+                      style="background: black; border-radius: 8px;"
                       height="225px"
                       max-height="225px"
                     ></v-img>
+                    <!--
+                    :src="'https://i.ytimg.com/vi_webp/' + item.id + '/hqdefault.webp'"
+                    -->
                   </a>
                   <v-card-title>{{ item.subtitle }}</v-card-title>
                   <v-card-subtitle>{{ item.title }}</v-card-subtitle>
