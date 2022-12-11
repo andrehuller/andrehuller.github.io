@@ -29,6 +29,7 @@ const Libraries = {
         <v-tab
           v-for="category in categories"
           :key="category.name"
+          style="background-color: #FAFAFA"
         >
           {{ category.name }}
         </v-tab>
@@ -42,15 +43,16 @@ const Libraries = {
             :search="search"
             :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
             @update:page="$vuetify.goTo(0)"
+            class="grey lighten-5"
           >
             <template v-slot:default="props">
-              <v-container fluid>
+              <v-container fluid class="grey lighten-5">
                 <v-row>
                   <v-col sm="12" md="6" lg="3"
                     v-for="library in props.items"
                     :key="library.title"
                   >
-                    <v-card class="fill-height d-flex flex-column" flat tile>
+                    <v-card class="fill-height d-flex flex-column" flat tile class="grey lighten-5">
                       <a :href="library.href" target="_blank">
                         <v-img
                           :src="library.src"

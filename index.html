@@ -227,6 +227,8 @@
       <v-app-bar
         app
         clipped-left
+        color="#084081"
+        dark
       ><!-- color="#980000" color="#25305E" -->
         <v-app-bar-nav-icon
           @click.stop="drawer = !drawer"
@@ -237,7 +239,6 @@
         
         <v-text-field
           v-model="search"
-          color="#40403E"
           prepend-inner-icon="mdi-magnify"
           label="Search"
           class="hidden-sm-and-down"
@@ -280,7 +281,7 @@
           </v-list>
         </v-menu>
       </v-app-bar>
-      <v-main>
+      <v-main class="grey lighten-5">
         <keep-alive>
           <router-view></router-view>
         </keep-alive>
@@ -329,9 +330,6 @@
   <script src="./assets/json/populacao.json"></script>  
   <script src="./assets/json/salario.json"></script>
   <script src="./assets/json/educacao.json"></script>
-  <script src="./assets/json/pib.json"></script>
-  <script src="./assets/json/saude.json"></script>
-  <script src="./assets/json/territorio.json"></script>
   
   <script src="./assets/json/randomPoints.json"></script>
   <script src="./assets/json/busStations.json"></script>
@@ -444,6 +442,9 @@
         theme: {
           // dark: true,
           themes: {
+            light: {
+              primary: '#0868ac'
+            },
             dark: {
               primary: '#f87979',
               secondary: '#f87979'

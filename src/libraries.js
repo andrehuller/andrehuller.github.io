@@ -297,14 +297,6 @@ const categories = [
         "group": "Utilities"
       },
       {
-        "title": "Vue Router",
-        "subtitle": "Vue Router is the official router for Vue.js",
-        "href": "https://router.vuejs.org/",
-        "src": "assets/libraries/Vue Router.png",
-        "group": "Vue",
-        "highlight": true
-      },
-      {
         "title": "axios",
         "subtitle": "Promise based HTTP client for the browser and node.js",
         "href": "https://axios-http.com/",
@@ -558,13 +550,6 @@ const categories = [
         "href": "https://quasar.dev/",
         "src": "assets/libraries/Quasar.png"
       },
-      {
-        "title": "Vuetify",
-        "subtitle": "Material Design Component Framework",
-        "href": "https://vuetifyjs.com/en/",
-        "highlight": true,
-        "src": "assets/libraries/Vuetify.png"
-      },
 
       {
         "title": "Element",
@@ -623,6 +608,14 @@ const categories = [
         "highlight": true
       },
       {
+        "title": "Vue Router",
+        "subtitle": "Vue Router is the official router for Vue.js",
+        "href": "https://router.vuejs.org/",
+        "src": "assets/libraries/Vue Router.png",
+        "group": "Vue",
+        "highlight": true
+      },
+      {
         "title": "Vuex",
         "subtitle": "Vuex is a state management pattern + library for Vue.js applications",
         "href": "https://vuex.vuejs.org/",
@@ -666,6 +659,13 @@ const categories = [
         "subtitle": "Component Library for Vue.JS",
         "href": "https://vuecidity.wemakesites.net/",
         "src": "assets/libraries/Vuecidity.png"
+      },
+      {
+        "title": "Vuetify",
+        "subtitle": "Material Design Component Framework",
+        "href": "https://vuetifyjs.com/en/",
+        "highlight": true,
+        "src": "assets/libraries/Vuetify.png"
       }
     ]
   },

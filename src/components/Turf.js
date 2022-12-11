@@ -121,7 +121,7 @@ const Turf = {
             fillColor: fillColor,
             color: "#ffffff",
             weight: 1,
-            fillOpacity: 0.8
+            fillOpacity: 0.7
           }
         },
         onEachFeature, onEachFeature

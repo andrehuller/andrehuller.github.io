@@ -1,5 +1,5 @@
 Vue.component('indicator', {
-  props: ['text', 'value', 'icon'],
+  props: ['text', 'value', 'icon', 'color'],
   template: `
     <v-card outlined>
       <div class="d-flex flex-no-wrap justify-space-between">
@@ -10,7 +10,7 @@ Vue.component('indicator', {
           </p>
         </v-card-text>
         
-        <v-avatar class="ma-5" size="48" color="#f87979">
+        <v-avatar class="ma-5" size="48" :color="color">
           <v-icon dark>{{ icon }}</v-icon>
         </v-avatar>
       </div>
@@ -67,6 +67,7 @@ const Chartjs = {
           <indicator
             text="FILMS"
             :value="countFilm"
+            :color="backgroundColor"
             icon="mdi-filmstrip"
           ></indicator>
         </v-col>
@@ -74,6 +75,7 @@ const Chartjs = {
           <indicator
             text="DIRECTORS"
             :value="countDirector"
+            :color="backgroundColor"
             icon="mdi-video-vintage"
           ></indicator>
         </v-col>
@@ -81,6 +83,7 @@ const Chartjs = {
           <indicator
             text="YEARS"
             :value="countYear"
+            :color="backgroundColor"
             icon="mdi-calendar"
           ></indicator>
         </v-col>
@@ -88,6 +91,7 @@ const Chartjs = {
           <indicator
             text="COUNTRIES"
             :value="countCountry"
+            :color="backgroundColor"
             icon="mdi-earth"
           ></indicator>
         </v-col>
@@ -95,7 +99,7 @@ const Chartjs = {
         <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
           <v-card outlined>
             <div>
-              <canvas id="chartDirector" height="90px"></canvas>
+              <canvas id="chartDirector" style="height: 450px; max-height: 450px"></canvas>
             </div>
           </v-card>
         </v-col>
@@ -146,6 +150,7 @@ const Chartjs = {
     </v-container>
   `,
   data: () => ({
+    backgroundColor: 'rgba(43, 140, 190, 0.5)', // 'rgba(8, 104, 172, 0.6)',
     director: null,
     directors: [],
     year: null,
@@ -358,10 +363,7 @@ const Chartjs = {
           datasets: [
             {
               label: "Director",
-              // backgroundColor: 'rgba(255, 99, 132, 0.2)',
-              backgroundColor: '#f87979',
-              // borderColor: 'rgb(255, 99, 132)',
-              borderWidth: 1,
+              backgroundColor: this.backgroundColor, // '#0868ac', '#f87979',
               data: data
             }
           ]
@@ -401,10 +403,9 @@ const Chartjs = {
               {
                 label: "Year",
                 data: data2,
-                // backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                backgroundColor: '#f87979',
-                // borderColor: 'rgb(255, 99, 132)',
-                borderColor: '#f87979',
+                backgroundColor: this.backgroundColor,
+                borderColor: this.backgroundColor,
+                borderWidth: 2,
                 cubicInterpolationMode: 'monotone',
                 tension: 0.4
               }
@@ -441,10 +442,7 @@ const Chartjs = {
           datasets: [
             {
               label: "Runtime",
-              // backgroundColor: 'rgba(255, 99, 132, 0.2)',
-              backgroundColor: '#f87979',
-              // borderColor: 'rgb(255, 99, 132)',
-              borderColor: '#f87979',
+              backgroundColor: this.backgroundColor,
               data: rData
               // stepped: true
             }
@@ -497,8 +495,7 @@ const Chartjs = {
               {
                 label: "Country",
                 data: data3,
-                backgroundColor: '#f87979',
-                borderColor: '#f87979'
+                backgroundColor: this.backgroundColor
               }
             ]
           },
@@ -553,16 +550,7 @@ const Chartjs = {
               {
                 label: "Genre",
                 data: data4,
-                backgroundColor: '#f87979',
-                /*
-                backgroundColor: [
-                  'rgb(255, 99, 132, 0.5)',
-                  'rgb(75, 192, 192, 0.5)',
-                  'rgb(255, 205, 86, 0.5)',
-                  'rgb(201, 203, 207, 0.5)',
-                  'rgb(54, 162, 235, 0.5)'
-                ]
-                */
+                backgroundColor: this.backgroundColor,
               }
             ]
           },

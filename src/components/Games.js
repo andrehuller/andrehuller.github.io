@@ -162,7 +162,7 @@ const Games = {
         "difficulty": 3
       },
       {
-        "title": "Donkey Kong Country 2", // Bonus Content: The Lost World
+        "title": "Donkey Kong Country 2", // Finished 102 %
         "subtitle": "Diddy's Kong Quest",
         "developer": "Rare",
         "year": 1995,

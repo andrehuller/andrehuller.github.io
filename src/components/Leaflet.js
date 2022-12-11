@@ -155,12 +155,6 @@ const Leaflet = {
         this._div.innerHTML += createOption('salario', 'Salário médio mensal dos trabalhadores formais')
         this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Educação</b></p>'
         this._div.innerHTML += createOption('educacao', 'Taxa de escolarização de 6 a 14 anos de idade')
-        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Economia</b></p>'
-        this._div.innerHTML += createOption('pib', 'PIB per capita')
-        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Saúde</b></p>'
-        this._div.innerHTML += createOption('saude', 'Mortalidade Infantil')
-        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Território e Ambiente</b></p>'
-        this._div.innerHTML += createOption('territorio', 'Área da unidade territorial')
         
       	return this._div
       }
@@ -176,14 +170,6 @@ const Leaflet = {
           tooltip += props.salario.toLocaleString('pt-BR') + ' salários mínimos'
         else if (document.getElementById("educacao").checked)
           tooltip += props.educacao + '%'
-        else if (document.getElementById("pib").checked)
-          tooltip += props.pib.toLocaleString('pt-BR') + ' R$'
-        else if (document.getElementById("saude").checked) {
-          if (props.saude) {
-            tooltip += props.saude.toLocaleString('pt-BR') + ' óbitos por mil nascidos vivos'
-          }
-        } else if (document.getElementById("territorio").checked)
-          tooltip += props.territorio.toLocaleString('pt-BR') + ' km²'
 
         return tooltip
       }
@@ -243,11 +229,6 @@ const Leaflet = {
           cities.features[i].properties.populacao = populacao[name].value
           cities.features[i].properties.salario = salario[name].value
           cities.features[i].properties.educacao = educacao[name].value
-          cities.features[i].properties.pib = pib[name].value
-          if ("-".localeCompare(saude[name].value) != 0) {
-            cities.features[i].properties.saude = saude[name].value
-          }
-          cities.features[i].properties.territorio = territorio[name].value
       }
       
       function createStyleFunction (propertyName, high, medium, low) {
@@ -271,7 +252,7 @@ const Leaflet = {
             fillColor: fillColor,
             color: "#ffffff",
             weight: 1,
-            fillOpacity: 0.8
+            fillOpacity: 0.7
           }
         }
       }
@@ -279,15 +260,12 @@ const Leaflet = {
       var stylePopulacao = createStyleFunction("populacao", 18040, 9085, 5046)
       var styleSalario = createStyleFunction("salario", 2.2, 2.1, 1.9)
       var styleEducacao = createStyleFunction("educacao", 98.7, 98.1, 97.2)
-      var stylePib = createStyleFunction("pib", 37484.15, 28896.69, 22889.12)
-      var styleSaude = createStyleFunction("saude", 21.19, 12.22, 8.01)
-      var styleTerritorio = createStyleFunction("territorio", 629.224, 353.331, 216.415)
       
       geojson = L.geoJSON(cities, {
         style: stylePopulacao,
         onEachFeature, onEachFeature
       }).addTo(this.map)
-           
+      
       document.getElementById("populacao").addEventListener("change", function () {
         geojson.setStyle(stylePopulacao)
       })
@@ -297,15 +275,35 @@ const Leaflet = {
       document.getElementById("educacao").addEventListener("change", function () {
         geojson.setStyle(styleEducacao)
       })
-      document.getElementById("pib").addEventListener("change", function () {
-        geojson.setStyle(stylePib)
-      })
-      document.getElementById("saude").addEventListener("change", function () {
-        geojson.setStyle(styleSaude)
-      })
-      document.getElementById("territorio").addEventListener("change", function () {
-        geojson.setStyle(styleTerritorio)
-      })
+
+      var union = turf.union(
+        cities.features.find(city => "Adrianópolis".localeCompare(city.properties.name) == 0),
+        cities.features.find(city => "Agudos do Sul".localeCompare(city.properties.name) == 0)
+      )
+      union = turf.union(union,
+        cities.features.find(city => "Bocaiúva do Sul".localeCompare(city.properties.name) == 0)
+      )
+      union = turf.union(union,
+        cities.features.find(city => "Cerro Azul".localeCompare(city.properties.name) == 0)
+      )
+      union = turf.union(union,
+        cities.features.find(city => "Tunas do Paraná".localeCompare(city.properties.name) == 0)
+      )
+      L.geoJSON(union)
+      	.addTo(this.map)
+      	
+      var municipios = {
+        'Abatiá': {
+          nucleo: 'Cornélio Procópio'
+        },
+        'Adrianópolis': {
+          nucleo: 'Curitiba'
+        },
+        'Agudos do Sul': {
+          nucleo: 'Curitiba'
+        }
+      }
+       	
     })
   },
   methods: {

@@ -81,6 +81,13 @@ const WikimediaCommons = {
         ]
       },
       {
+        name: 'Angie Dickinson',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Stump_the_Stars_1963.jpg">CBS Television</a>, Public domain, via Wikimedia Commons',
+        movies: [
+          'Rio Bravo (1959)'
+        ]
+      },
+      {
         name: 'Sidney Poitier',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:Poitier_cropped.jpg">U.S. Information Agency. Press and Publications Service.  (ca. 1953 - ca. 1978)</a>, Public domain, via Wikimedia Commons',
         movies: [
@@ -120,6 +127,10 @@ const WikimediaCommons = {
       	name: 'Amy Acker',
       	attribution: '<a href="https://commons.wikimedia.org/wiki/File:Person_Of_Interest_-_Panel_(9353660946).jpg">Thibault from Paris, France</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>, via Wikimedia Commons',
       	size: 'large'
+      },
+      {
+        name: 'Fran Kranz',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Fran_Kranz_by_Gage_Skidmore.jpg">Gage Skidmore</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons'
       },
       {
         name: 'Tomm Moore',
