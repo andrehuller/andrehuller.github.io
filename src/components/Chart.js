@@ -2,7 +2,7 @@ Vue.component('indicator', {
   props: ['text', 'value', 'icon', 'color'],
   template: `
     <v-card outlined>
-      <div class="d-flex flex-no-wrap justify-space-between">
+      <div class="d-flex flex-no-wrap justify-space-between grey lighten-5">
         <v-card-text>
           <div>{{ text }}</div>
           <p class="text-h4 text--primary mb-0">
@@ -97,7 +97,7 @@ const Chartjs = {
         </v-col>
         
         <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined>
+          <v-card outlined class="grey lighten-5">
             <div>
               <canvas id="chartDirector" style="height: 450px; max-height: 450px"></canvas>
             </div>
@@ -105,7 +105,7 @@ const Chartjs = {
         </v-col>
         
         <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined>
+          <v-card outlined class="grey lighten-5">
             <div>
               <canvas id="chartYear" height="60px"></canvas>
             </div>
@@ -113,7 +113,7 @@ const Chartjs = {
         </v-col>
 
         <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined>
+          <v-card outlined class="grey lighten-5">
             <div>
               <canvas id="chartCountry" height="80px"></canvas>
             </div>
@@ -121,7 +121,7 @@ const Chartjs = {
         </v-col>
         
         <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined>
+          <v-card outlined class="grey lighten-5">
             <div>
               <canvas id="chartRuntime" height="60px"></canvas>
             </div>
@@ -129,7 +129,7 @@ const Chartjs = {
         </v-col>
         
         <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined>
+          <v-card outlined class="grey lighten-5">
             <div>
               <canvas id="chartGenre" height="80px"></canvas>
             </div>

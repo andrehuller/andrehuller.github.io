@@ -7,7 +7,7 @@ const WikimediaCommons = {
           :key="item.name"
           :lg="item.size ? 6 : 3"
         >
-          <v-card class="fill-height d-flex flex-column" flat tile>
+          <v-card class="fill-height d-flex flex-column" color="grey lighten-5" flat tile>
             <div>
               <v-img height="475" :src="'assets/wikimedia/' + item.name + '.jpg'"
               	style="border-radius: 8px"
@@ -61,7 +61,10 @@ const WikimediaCommons = {
         name: 'John Carpenter',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:John_Carpenter.JPG">Nathan Hartley Maas</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons',
         movies: [
+          'Assault on Precinct 13 (1976)',
+          'Escape from New York (1981)',
           'The Thing (1982)',
+          'Big Trouble in Little China (1986)',
           'Prince of Darkness (1987)'
         ]
       },

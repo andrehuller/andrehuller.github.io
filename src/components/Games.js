@@ -2,34 +2,26 @@ const Games = {
   template: `
     <v-container fluid>
       <v-data-iterator
-        :items="filtered"
+        :items="games"
         :items-per-page="20"
         :search="search"
         :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
         @update:page="$vuetify.goTo(0)"
       >
         <template v-slot:header>
-          <v-card>
-            <v-toolbar
-              class="mb-4"
-              color="red lighten-1"
-              dark flat
-            >
-              <v-container fluid class="pa-0"> 
-                <v-row no-gutters>
-                  <v-col cols="12" lg="8">
-                  </v-col>
-                  <v-col cols="12" lg="4">
-                    <v-text-field
-                      v-model="search"
-                      label="Search..." prepend-inner-icon="mdi-magnify"
-                      flat solo-inverted clearable hide-details
-                    ></v-text-field>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-toolbar>
-          </v-card>
+          <v-container fluid px-0>
+            <v-row>
+              <v-col cols="12" lg="9">
+              </v-col>
+              <v-col cols="12" lg="3">
+                <v-text-field
+                  v-model="search"
+                  label="Search..." prepend-inner-icon="mdi-magnify"
+                  flat solo-inverted clearable hide-details
+                ></v-text-field>
+              </v-col>
+            </v-row>
+          </v-container>
         </template>
         <template v-slot:default="props">
           <v-row>
@@ -37,11 +29,12 @@ const Games = {
               v-for="item in props.items"
               :key="item.title"
             >
-              <v-card class="fill-height d-flex flex-column">
+              <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
                 <v-img
                   :src="'assets/games/' + item.src"
                   height="275px"
                   max-height="275px"
+                  style="border-radius: 8px"
                 ></v-img>
 
                 <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">
@@ -104,19 +97,7 @@ const Games = {
         </template>
       </v-data-iterator>
     </v-container>
-  ` ,
-  computed: {
-    filtered: function () {
-      if (!this.search) return this.games
-
-      return this.games.filter(a => a.title.toLowerCase().includes(this.search.toLowerCase()))
-    }
-    /* ,
-    search () {
-      return this.$store.state.search
-    }
-    */
-  },
+  `,
   data: () => ({
     search: null,
     games: [
@@ -166,7 +147,7 @@ const Games = {
         "subtitle": "Diddy's Kong Quest",
         "developer": "Rare",
         "year": 1995,
-        "src": "Donkey Kong Country 2: Diddy's Kong Quest.jpg",
+        "src": "Donkey Kong Country 2: Diddy's Kong Quest.png",
         "rating": 4.5,
         "difficulty": 3.5
       },
@@ -298,7 +279,7 @@ const Games = {
       {
         "title": "Mighty Morphin Power Rangers", // Short game - 5 stages + 2/3 bosses
         "src": "Mighty Morphin Power Rangers.jpg",
-        "rating": 3.5,
+        "rating": 3.5, // *
         "difficulty": 2
       },
       {

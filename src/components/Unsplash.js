@@ -8,7 +8,7 @@ const Unsplash = {
           cols="12" sm="12" md="6" lg="4"
         >
           <v-card
-            class="fill-height d-flex flex-column"
+            class="fill-height d-flex flex-column grey lighten-5"
             flat tile
           >
             <v-img

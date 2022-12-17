@@ -7,40 +7,40 @@ const YouTube = {
         :search="search"
       >
         <template v-slot:header>
-            <v-container fluid py-0>
-              <v-row>
-                <v-col cols="12" lg="4">
-                  <v-autocomplete
-                    v-model="guest"
-                    label="Guest"
-                    :items="guests"
-                    prepend-inner-icon="mdi-magnify"
-                    flat solo-inverted
-                    multiple chips deletable-chips
-                    clearable hide-details
-                  ></v-autocomplete>
-                </v-col>
-                <v-col cols="12" lg="4">
-                  <v-autocomplete
-                    v-model="channel"
-                    label="Channel"
-                    :items="channels"
-                    prepend-inner-icon="mdi-magnify"
-                    flat solo-inverted
-                    multiple chips deletable-chips
-                    clearable hide-details
-                  ></v-autocomplete>
-                </v-col>
-                <v-col cols="12" lg="4">
-                  <v-text-field
-                    v-model="search"
-                    label="Search"
-                    prepend-inner-icon="mdi-magnify"
-                    flat solo-inverted clearable hide-details
-                  ></v-text-field>                  
-                </v-col>
-              </v-row>
-            </v-container>
+          <v-container fluid py-0>
+            <v-row>
+              <v-col cols="12" lg="4">
+                <v-autocomplete
+                  v-model="guest"
+                  label="Guest"
+                  :items="guests"
+                  prepend-inner-icon="mdi-magnify"
+                  flat solo-inverted
+                  multiple chips deletable-chips
+                  clearable hide-details
+                ></v-autocomplete>
+              </v-col>
+              <v-col cols="12" lg="4">
+                <v-autocomplete
+                  v-model="channel"
+                  label="Channel"
+                  :items="channels"
+                  prepend-inner-icon="mdi-magnify"
+                  flat solo-inverted
+                  multiple chips deletable-chips
+                  clearable hide-details
+                ></v-autocomplete>
+              </v-col>
+              <v-col cols="12" lg="4">
+                <v-text-field
+                  v-model="search"
+                  label="Search"
+                  prepend-inner-icon="mdi-magnify"
+                  flat solo-inverted clearable hide-details
+                ></v-text-field>                  
+              </v-col>
+            </v-row>
+          </v-container>
         </template>
         <template v-slot:default="props">
           <v-container fluid>
@@ -50,7 +50,7 @@ const YouTube = {
                 :key="item.id"
                 cols="12" lg="3"
               >
-                <v-card class="fill-height d-flex flex-column" flat tile>
+                <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
                   <a :href="'https://youtu.be/' + item.id" target="_blank">
                     <v-img
                       :src="'assets/ytimg/' + item.id + '.webp'"
