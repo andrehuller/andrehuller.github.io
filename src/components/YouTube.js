@@ -53,7 +53,7 @@ const YouTube = {
                 <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
                   <a :href="'https://youtu.be/' + item.id" target="_blank">
                     <v-img
-                      :src="'assets/ytimg/' + item.id + '.webp'"
+                      :src="item.src"
                       style="background: black; border-radius: 8px;"
                       height="225px"
                       max-height="225px"
@@ -155,85 +155,105 @@ const YouTube = {
         "id": "qOZqGUCrje8",
         "title": "What Happens When You Only Pursue Pleasure",
         "subtitle": "Alan Watts",
-        "channel": "After Skool"
+        "channel": "After Skool",
+        "src": "assets/ytimg/qOZqGUCrje8.webp"
       },
       {
         "id": "MzubNgsQsog",
         "title": "Why You Shouldn't Want To Live Forever",
         "subtitle": "Alan Watts",
-        "channel": "After Skool"
+        "channel": "After Skool",
+        "src": "assets/ytimg/MzubNgsQsog.webp"
       },
       {
         "id": "dx4yW0mjezw",
         "title": "The Benefit of Living With No Purpose",
         "subtitle": "Alan Watts",
-        "channel": "After Skool"
+        "channel": "After Skool",
+        "src": "assets/ytimg/dx4yW0mjezw.webp"
       },
       {
         "id": "5G8Gwr5JJ6Y",
         "title": "It's NOT OK to be WEAK",
         "subtitle": "Jordan Peterson",
-        "channel": "After Skool"
+        "channel": "After Skool",
+        "src": "assets/ytimg/5G8Gwr5JJ6Y.webp"
       },
       {
         "id": "wvdM_u4NZQw",
         "title": "Joe Rogan Experience #692",
         "subtitle": "Jay Leno",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/wvdM_u4NZQw.webp"
       },
       {
         "id": "b9GWqfNlWHI",
         "title": "Joe Rogan Experience #909",
         "subtitle": "Bill Burr",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/b9GWqfNlWHI.webp"
       },
       {
         "id": "UQTfyjhvfH8",
         "title": "Joe Rogan Experience #993",
         "subtitle": "Ben Shapiro",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/UQTfyjhvfH8.webp"
       },
       {
         "id": "wieRZoJSVtw",
         "title": "Joe Rogan Experience #1233",
         "subtitle": "Brian Cox",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/wieRZoJSVtw.webp"
       },
       {
         "id": "sCD9zjf_YRU",
         "title": "Joe Rogan Experience #1276",
         "subtitle": "Ben Shapiro",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/sCD9zjf_YRU.webp"
       },
       {
         "id": "2O-iLk1G_ng",
         "title": "Joe Rogan Experience #1330",
         "subtitle": "Bernie Sanders",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/2O-iLk1G_ng.webp"
       },
       {
         "id": "-KQGZa773sI",
         "title": "Joe Rogan Experience #1413",
         "subtitle": "Bill Maher",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/-KQGZa773sI.webp"
       },
       {
         "id": "GO_rW0Bvy1I",
         "title": "Joe Rogan Experience #1491",
         "subtitle": "Bill Burr",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/GO_rW0Bvy1I.webp"
       },
       {
         "id": "hl0iNRXcUbE",
         "title": "Joe Rogan Experience #1512",
         "subtitle": "Ben Shapiro",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/hl0iNRXcUbE.webp"
       },
       {
         "id": "6SfPf-_OavY",
         "title": "IF",
         "subtitle": "Rudyard Kipling",
-        "channel": "Joe Rogan Experience"
+        "channel": "Joe Rogan Experience",
+        "src": "assets/ytimg/6SfPf-_OavY.webp"
+      },
+      {
+      	// https://sp.rmbl.ws/s8/1/K/o/S/t/KoSth.OvCc.2-small-Elons-Banning-Spree-and-The.jpg
+      	"title": "Elon’s Banning Spree & The Media’s Sudden Conversion to Free Speech Absolutists",
+      	"subtitle": "SYSTEM UPDATE #5",
+      	"src": "assets/rumble/KoSth.OvCc.2-small-Elons-Banning-Spree-and-The.jpg"
       }
     ]
   })

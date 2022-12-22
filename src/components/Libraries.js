@@ -52,7 +52,7 @@ const Libraries = {
                     v-for="library in props.items"
                     :key="library.title"
                   >
-                    <v-card class="fill-height d-flex flex-column" flat tile class="grey lighten-5">
+                    <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
                       <a :href="library.href" target="_blank">
                         <v-img
                           :src="library.src"

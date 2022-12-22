@@ -2,7 +2,7 @@ Vue.component('indicator', {
   props: ['text', 'value', 'icon', 'color'],
   template: `
     <v-card outlined>
-      <div class="d-flex flex-no-wrap justify-space-between grey lighten-5">
+      <div class="d-flex flex-no-wrap justify-space-between">
         <v-card-text>
           <div>{{ text }}</div>
           <p class="text-h4 text--primary mb-0">
@@ -21,13 +21,13 @@ Vue.component('indicator', {
 const Chartjs = {
   template: `
     <v-container fluid>
-      <v-row>
+      <v-row class="grey lighten-1">
         <v-col cols="12" lg="3">
           <v-text-field
             v-model="search"
             label="Search"
             prepend-inner-icon="mdi-magnify"
-            flat solo-inverted clearable hide-details
+            flat clearable solo hide-details
           ></v-text-field>
         </v-col>
         <v-col cols="12" lg="3">
@@ -36,8 +36,7 @@ const Chartjs = {
             label="Director"
             :items="directors"
             prepend-inner-icon="mdi-magnify"
-            flat solo-inverted
-            clearable hide-details
+            flat clearable solo hide-details
           ></v-autocomplete>
         </v-col>
         <v-col cols="12" lg="3">
@@ -46,8 +45,7 @@ const Chartjs = {
             label="Year"
             :items="years"
             prepend-inner-icon="mdi-magnify"
-            flat solo-inverted
-            clearable hide-details
+            flat clearable solo hide-details
           ></v-autocomplete>
         </v-col>
         <v-col cols="12" lg="3">
@@ -56,8 +54,7 @@ const Chartjs = {
             label="Country"
             :items="countries"
             prepend-inner-icon="mdi-magnify"
-            flat solo-inverted
-            clearable hide-details
+            flat clearable solo hide-details
           ></v-autocomplete>
         </v-col>
       </v-row>
@@ -66,7 +63,7 @@ const Chartjs = {
         <v-col cols="12" lg="3">
           <indicator
             text="FILMS"
-            :value="countFilm"
+            :value="listFilm.length"
             :color="backgroundColor"
             icon="mdi-filmstrip"
           ></indicator>
@@ -74,7 +71,7 @@ const Chartjs = {
         <v-col cols="12" lg="3">
           <indicator
             text="DIRECTORS"
-            :value="countDirector"
+            :value="directors.length"
             :color="backgroundColor"
             icon="mdi-video-vintage"
           ></indicator>
@@ -82,7 +79,7 @@ const Chartjs = {
         <v-col cols="12" lg="3">
           <indicator
             text="YEARS"
-            :value="countYear"
+            :value="years.length"
             :color="backgroundColor"
             icon="mdi-calendar"
           ></indicator>
@@ -90,46 +87,46 @@ const Chartjs = {
         <v-col cols="12" lg="3">
           <indicator
             text="COUNTRIES"
-            :value="countCountry"
+            :value="countries.length"
             :color="backgroundColor"
             icon="mdi-earth"
           ></indicator>
         </v-col>
         
-        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined class="grey lighten-5">
+        <v-col cols="12" lg="12">
+          <v-card outlined>
             <div>
               <canvas id="chartDirector" style="height: 450px; max-height: 450px"></canvas>
             </div>
           </v-card>
         </v-col>
         
-        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined class="grey lighten-5">
+        <v-col cols="12" lg="12">
+          <v-card outlined>
             <div>
               <canvas id="chartYear" height="60px"></canvas>
             </div>
           </v-card>
         </v-col>
 
-        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined class="grey lighten-5">
+        <v-col cols="12" lg="12">
+          <v-card outlined>
             <div>
               <canvas id="chartCountry" height="80px"></canvas>
             </div>
           </v-card>
         </v-col>
         
-        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined class="grey lighten-5">
+        <v-col cols="12" lg="12">
+          <v-card outlined>
             <div>
               <canvas id="chartRuntime" height="60px"></canvas>
             </div>
           </v-card>
         </v-col>
         
-        <v-col cols="12" lg="12" v-show="director == null || director.length == 0">
-          <v-card outlined class="grey lighten-5">
+        <v-col cols="12" lg="12">
+          <v-card outlined>
             <div>
               <canvas id="chartGenre" height="80px"></canvas>
             </div>
@@ -151,6 +148,11 @@ const Chartjs = {
   `,
   data: () => ({
     backgroundColor: 'rgba(43, 140, 190, 0.5)', // 'rgba(8, 104, 172, 0.6)',
+    chartDirector: null,
+    chartYear: null,
+    chartCountry: null,
+    chartRuntime: null,
+    chartGenre: null,
     director: null,
     directors: [],
     year: null,
@@ -203,94 +205,27 @@ const Chartjs = {
         }
       }
       return filtered
-    },
-    setDirector () {
-      var directorSet = {}
-      for (var i = 0; i < this.listFilm.length; i++) {
-        var item = this.listFilm[i]
-        var director = item.director
-        if (director) {
-          if (director.indexOf("&") == -1) {
-            directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
-          } else {
-            var array = director.replaceAll(',', '&').split("&")
-            for (var k = 0; k < array.length; k++) {
-              var c = array[k].trim()
-              directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
-            }
-          }
-        }
-      }
-      return directorSet
-    },
-    setYear () {
-      var yearSet = {}
-      for (var i = 0; i < this.listFilm.length; i++) {
-        var item = this.listFilm[i]
-        yearSet[item.year] = yearSet[item.year] ? yearSet[item.year] + 1 : 1
-      }
-      return yearSet
-    },
-    setCountry () {
-      var set = {}
-      for (var i = 0; i < this.listFilm.length; i++) {
-        var item = this.listFilm[i]
-        var country = item.country
-        if (country) {
-          if (country.indexOf("-") == -1) {
-            set[country] = set[country] ? set[country] + 1 : 1
-          } else {
-            var array = country.split("-")
-            for (var k = 0; k < array.length; k++) {
-              var c = array[k]
-              set[c] = set[c] ? set[c] + 1 : 1
-            }
-          }
-        }
-      }
-      return set
-    },
-    listDirector () {
-      return Object.keys(this.setDirector).sort()
-    },
-    listYear() {
-      return Object.keys(this.setYear).sort()
-    },
-    listCountry () {
-      return Object.keys(this.setCountry).sort()
-    },
-    countFilm () {
-      return this.listFilm.length
-    },
-    countDirector () {
-      return this.listDirector.length
-    },
-    countYear () {
-      return this.listYear.length
-    },
-    countCountry () {
-      return this.listCountry.length
     }
   },
-  mounted: function() {
+  watch: {
+    listFilm (newList, oldList) {
+      this.updateDirector(newList)
+      this.updateYear(newList)
+      
+      this.updateCountry(newList)
+      this.updateRuntime(newList)
+      this.updateGenre(newList)
+    }
+  },
+  mounted: function () {
     this.items = lists
-    this.createCharts()
   },
   methods: {
-    createCharts: function () {
-      // Chart.defaults.font.weight = 'bold';
-      // Chart.defaults.color = 'white'
+    updateDirector: function (items) {
       var directorSet = {}
-      var yearSet = {}
-      var countrySet = {}
-      var runtimeSet = {}
-      var genres = {}
-
-      for (var i = 0; i < this.items.length; i++) {
-        var item = this.items[i]
-        
-        // Director
-        var director = item.director
+      
+      for (var i = 0; i < items.length; i++) {
+        var director = items[i].director
         if (director) {
           if (director.indexOf("&") == -1) {
             directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
@@ -302,12 +237,117 @@ const Chartjs = {
             }
           }
         }
-        
-        // Year          
-        yearSet[item.year] = yearSet[item.year] ? yearSet[item.year] + 1 : 1
-        
-        // Country
-        var country = item.country
+      }
+      
+      this.directors = Object.keys(directorSet).sort()
+
+      var keys = Object.keys(directorSet)
+      var values = [];
+      for (var i = 0; i < keys.length; i++) {
+        values.push({
+          director: keys[i],
+          amount: directorSet[keys[i]]
+        })
+      }
+      values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
+      values = values.slice(0, 60)
+      
+      var labels = []
+      var data = []
+      for (var i = 0; i < values.length; i++) {
+        labels.push(values[i].director)
+        data.push(values[i].amount)
+      }
+      
+      if (this.chartDirector) {
+        this.chartDirector.data.labels = labels
+        this.chartDirector.data.datasets[0].data = data
+        this.chartDirector.update()
+      } else {
+        this.chartDirector = new Chart(
+          document.getElementById('chartDirector'), {
+            type: 'bar',
+            data: {
+              labels: labels,
+              datasets: [
+                {
+                  label: "Director",
+                  backgroundColor: this.backgroundColor, // '#0868ac', '#f87979',
+                  data: data
+                }
+              ]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                },
+                title: {
+                  display: true,
+                  text: "Director"
+                }
+              }
+            }
+          }
+        )
+      }
+    },
+    updateYear: function (items) {
+      var yearSet = {}
+      for (var i = 0; i < items.length; i++) {
+        var year = items[i].year
+        yearSet[year] = yearSet[year] ? yearSet[year] + 1 : 1
+      }
+      this.years = Object.keys(yearSet).sort()
+      
+      var labels = []
+      var data = []
+      for (var i = 0; i < this.years.length; i++) {
+        labels.push(this.years[i])
+        data.push(yearSet[this.years[i]])
+      }
+      // document.getElementById('chartYear').style.backgroundColor = '#FFFFFF';
+      if (this.chartYear) {
+        this.chartYear.data.labels = labels
+        this.chartYear.data.datasets[0].data = data
+        this.chartYear.update()
+      } else {
+        this.chartYear = new Chart(
+          document.getElementById('chartYear'), {
+            type: 'line',
+            data: {
+              labels: labels,
+              datasets: [
+                {
+                  label: "Year",
+                  data: data,
+                  backgroundColor: this.backgroundColor,
+                  borderColor: this.backgroundColor,
+                  borderWidth: 2,
+                  cubicInterpolationMode: 'monotone',
+                  tension: 0.4
+                }
+              ]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                title: {
+                  display: true,
+                  text: "Year"
+                }
+              }
+            }
+          }
+        );
+      }
+    },
+    updateCountry: function (items) {
+      var countrySet = {}
+      for (var i = 0; i < items.length; i++) {
+        var country = items[i].country
         if (country) {
           if (country.indexOf("-") == -1) {
             countrySet[country] = countrySet[country] ? countrySet[country] + 1 : 1
@@ -319,15 +359,126 @@ const Chartjs = {
             }
           }
         }
-        
-        // Runtime
-        var runtime = item.runtime
+      }
+      this.countries = Object.keys(countrySet).sort()
+      
+      var keys = Object.keys(countrySet)
+      var values = []
+      for (var i = 0; i < keys.length; i++) {
+        values.push({
+          country: keys[i],
+          amount: countrySet[keys[i]]
+        })
+      }
+      values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
+      
+      var labels = []
+      var data = []
+      for (var i = 0; i < values.length; i++) {
+        labels.push(values[i].country)
+        data.push(values[i].amount)
+      }
+      
+      if (this.chartCountry) {
+        this.chartCountry.data.labels = labels
+        this.chartCountry.data.datasets[0].data = data
+        this.chartCountry.update()
+      } else {
+        this.chartCountry = new Chart(
+          document.getElementById('chartCountry'), {
+            type: 'bar',
+            data: {
+              labels: labels,
+              datasets: [
+                {
+                  label: "Country",
+                  data: data,
+                  backgroundColor: this.backgroundColor
+                }
+              ]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false,
+                },
+                title: {
+                  display: true,
+                  text: "Country"
+                }
+              },
+              scales: {
+                y: {
+                  // beginAtZero: true,
+                  display: true,
+                  type: 'logarithmic'
+                }
+              }
+            }
+          }
+        )
+      }
+    },
+    updateRuntime (items) {
+      var runtimeSet = {}
+      
+      for (var i = 0; i < items.length; i++) {
+        var runtime = items[i].runtime
         if (runtime) {
           runtimeSet[runtime] = runtimeSet[runtime] ? runtimeSet[runtime] + 1 : 1
         }
+      }
+      
+      var runtimes = Object.keys(runtimeSet)      
+
+      var labels = []
+      var data = []
+
+      for (var i = 0; i < runtimes.length; i++) {
+        var runtime = runtimes[i]
         
-        // genre
-        var genre = item.genre
+        labels.push(runtime)
+        data.push(runtimeSet[runtime])
+      }
+      
+      if (this.chartRuntime) {
+        this.chartRuntime.data.labels = labels
+        this.chartRuntime.data.datasets[0].data = data
+        this.chartRuntime.update()
+      } else {
+        this.chartRuntime = new Chart(
+          document.getElementById('chartRuntime'), {
+          type: 'bar',
+          data: {
+            labels: labels,
+            datasets: [
+              {
+                label: "Runtime",
+                backgroundColor: this.backgroundColor,
+                data: data
+                // stepped: true
+              }
+            ]
+          },
+          options: {
+            plugins: {
+              legend: {
+                display: false
+              },
+              title: {
+                display: true,
+                text: "Runtime"
+              }
+            }
+          }
+        })
+      }
+    },
+    updateGenre (items) {
+      var genres = {}
+      
+      for (var i = 0; i < items.length; i++) {
+        var genre = items[i].genre
         if (genre) {
           if (genre.indexOf(", ") == -1) {
             genres[genre] = genres[genre] ? genres[genre] + 1 : 1
@@ -341,239 +492,84 @@ const Chartjs = {
         }
       }
       
-      this.directors = Object.keys(directorSet).sort()
-      this.years = Object.keys(yearSet).sort()
-      this.countries = Object.keys(countrySet).sort()
       this.genres = Object.keys(genres)
       
-      var labels = []
-      var data = []
-      for (var i = 0; i < this.directors.length; i++) {
-        var value = directorSet[this.directors[i]]
-        if (value > 4) {
-          labels.push(this.directors[i])
-          data.push(value)
-        }
-      }
-  
-      const config = {
-        type: 'bar',
-        data: {
-          labels: labels,
-          datasets: [
-            {
-              label: "Director",
-              backgroundColor: this.backgroundColor, // '#0868ac', '#f87979',
-              data: data
-            }
-          ]
-        },
-        options: {
-          plugins: {
-            legend: {
-              display: false
-            },
-            title: {
-              display: true,
-              text: "Director"
-            }
-          }
-        }
-      };
-  
-      const chartDirector = new Chart(
-        document.getElementById('chartDirector'),
-        config
-      );
-      
-      // Year
-      var labels2 = []
-      var data2 = []
-      for (var i = 0; i < this.years.length; i++) {
-        labels2.push(this.years[i])
-        data2.push(yearSet[this.years[i]])
-      }
-      // document.getElementById('chartYear').style.backgroundColor = '#FFFFFF';
-      new Chart(
-        document.getElementById('chartYear'), {
-          type: 'line',
-          data: {
-            labels: labels2,
-            datasets: [
-              {
-                label: "Year",
-                data: data2,
-                backgroundColor: this.backgroundColor,
-                borderColor: this.backgroundColor,
-                borderWidth: 2,
-                cubicInterpolationMode: 'monotone',
-                tension: 0.4
-              }
-            ]
-          },
-          options: {
-            plugins: {
-              legend: {
-                display: false,
-              },
-              title: {
-                display: true,
-                text: "Year"
-              }
-            }
-          }
-        }
-      );
-      
-      // Runtime
-      var rLabels = []
-      var rData = []
-      var runtimes = Object.keys(runtimeSet)
-      for (var i = 0; i < runtimes.length; i++) {
-        var runtime = runtimes[i]
-        rLabels.push(runtime)
-        rData.push(runtimeSet[runtime])
-      }
-      new Chart(
-        document.getElementById('chartRuntime'), {
-        type: 'bar',
-        data: {
-          labels: rLabels,
-          datasets: [
-            {
-              label: "Runtime",
-              backgroundColor: this.backgroundColor,
-              data: rData
-              // stepped: true
-            }
-          ]
-        },
-        options: {
-          plugins: {
-            legend: {
-              display: false
-            },
-            title: {
-              display: true,
-              text: "Runtime"
-            }
-          }/* ,
-          scales: {
-            y: {
-              // beginAtZero: true,
-              display: true,
-              type: 'logarithmic'
-            }
-          } */
-        }
-      });
-      
-      // Country
-      var keys = Object.keys(countrySet)
+      keys = Object.keys(genres)
       var values = []
       for (var i = 0; i < keys.length; i++) {
         values.push({
-          country: keys[i],
-          amount: countrySet[keys[i]]
+          genre: keys[i],
+          amount: genres[keys[i]]
         })
       }
       values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
+      values = values.splice(0, 60)
       
-      var labels3 = []
-      var data3 = []
-      for (var i = 0; i < values.length; i++) {
-        labels3.push(values[i].country)
-        data3.push(values[i].amount)
-      }
-      
-      new Chart(
-        document.getElementById('chartCountry'), {
-          type: 'bar',
-          data: {
-            labels: labels3,
-            datasets: [
-              {
-                label: "Country",
-                data: data3,
-                backgroundColor: this.backgroundColor
-              }
-            ]
-          },
-          options: {
-            plugins: {
-              legend: {
-                display: false,
-              },
-              title: {
-                display: true,
-                text: "Country"
-              }
-            },
-            scales: {
-              y: {
-                // beginAtZero: true,
-                display: true,
-                type: 'logarithmic'
-              }
-            }
-          },
-        }
-      );
-      
-      // Genres
-      keys = Object.keys(genres)
-      values = []
-      for (var i = 0; i < keys.length; i++) {
-        values.push({
-          "genre": keys[i],
-          "amount": genres[keys[i]]
-        })
-      }
-      values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
-      
-      var labels4 = []
-      var data4 = []
+      var labels = []
+      var data = []
       for (var i = 0; i < values.length; i++) {
         var genre = this.genres[i]
-        if (values[i].amount > 7) {
-          labels4.push(values[i].genre)
-          data4.push(values[i].amount)
-        }
+
+        labels.push(values[i].genre)
+        data.push(values[i].amount)
       }
 
-      new Chart(
-        document.getElementById('chartGenre'), {
-          type: 'bar',
-          data: {
-            labels: labels4,
-            datasets: [
-              {
-                label: "Genre",
-                data: data4,
-                backgroundColor: this.backgroundColor,
-              }
-            ]
-          },
-          options: {
-            plugins: {
-              legend: {
-                display: false
-              },
-              title: {
-                display: true,
-                text: "Genre"
-              }
-            },
-            scales: {
-              y: {
-                // beginAtZero: true,
-                display: true,
-                type: 'logarithmic'
-              }
+      if (this.chartGenre) {
+        if (labels.length < 10) {
+          this.chartGenre.config.type = 'doughnut'
+          this.chartGenre.options.scales = null
+        } else {
+          this.chartGenre.config.type = 'bar'
+          this.chartGenre.options.scales = {
+            y: {
+              display: true,
+              type: 'logarithmic'
             }
           }
         }
-      );      
+         
+        this.chartGenre.data.labels = labels
+        this.chartGenre.data.datasets[0].data = data
+        this.chartGenre.update()
+      } else {
+        this.chartGenre = new Chart(
+          document.getElementById('chartGenre'), {
+            type: 'bar',
+            data: {
+              labels: labels,
+              datasets: [
+                {
+                  label: "Genre",
+                  data: data,
+                  backgroundColor: this.backgroundColor,
+                }
+              ]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  display: false
+                },
+                title: {
+                  display: true,
+                  text: "Genre"
+                }
+              },
+              scales: {
+                y: {
+                  // beginAtZero: true,
+                  display: true,
+                  type: 'logarithmic'
+                }
+              }
+            }
+          }
+        )
+      }
+    },
+    createCharts: function () {
+      // Chart.defaults.font.weight = 'bold';
+      // Chart.defaults.color = 'white'
     }
   }
 }
