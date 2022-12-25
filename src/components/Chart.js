@@ -112,7 +112,7 @@ const Chartjs = {
         <v-col cols="12" lg="12">
           <v-card outlined>
             <div>
-              <canvas id="chartCountry" height="80px"></canvas>
+              <canvas id="chartCountry" style="height: 450px; max-height: 450px"></canvas>
             </div>
           </v-card>
         </v-col>
@@ -128,7 +128,7 @@ const Chartjs = {
         <v-col cols="12" lg="12">
           <v-card outlined>
             <div>
-              <canvas id="chartGenre" height="80px"></canvas>
+              <canvas id="chartGenre" style="height: 450px; max-height: 450px"></canvas>
             </div>
           </v-card>
         </v-col>
@@ -200,7 +200,7 @@ const Chartjs = {
       for (var i = 0; i < this.items.length; i++) {
         if ((!this.director || this.items[i].director.indexOf(this.director) != -1)
           && (!this.year || this.items[i].year == this.year)
-          && (!this.country || this.items[i].country.indexOf(this.country) != -1)) {
+          && (!this.country || this.items[i].country.split("-").indexOf(this.country) != -1)) {
           filtered.push(this.items[i])
         }
       }
@@ -249,7 +249,7 @@ const Chartjs = {
           amount: directorSet[keys[i]]
         })
       }
-      values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
+      values = values.sort((a, b) => (a.amount == b.amount) ? a.director.localeCompare(b.director) : ((a.amount < b.amount) ? 1 : -1))
       values = values.slice(0, 60)
       
       var labels = []
@@ -286,6 +286,17 @@ const Chartjs = {
                   display: true,
                   text: "Director"
                 }
+              },
+              onClick: (e) => {
+                const points = this.chartDirector.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+               
+                if (points.length) {
+                  const firstPoint = points[0];
+                  const label = this.chartDirector.data.labels[firstPoint.index];
+                  const value = this.chartDirector.data.datasets[firstPoint.datasetIndex].data[firstPoint.index];
+
+                  this.director = label
+                }
               }
             }
           }
@@ -294,12 +305,23 @@ const Chartjs = {
     },
     updateYear: function (items) {
       var yearSet = {}
+      var minYear = Infinity
+      var maxYear = 0
       for (var i = 0; i < items.length; i++) {
         var year = items[i].year
+        if (year < minYear)
+          minYear = year
+        if (year > maxYear)
+          maxYear = year
         yearSet[year] = yearSet[year] ? yearSet[year] + 1 : 1
       }
+      /*
+      for (var i = minYear; i <= maxYear; i++) {
+        if (!yearSet[i])
+          yearSet[i] = 0
+      }
+      */
       this.years = Object.keys(yearSet).sort()
-      
       var labels = []
       var data = []
       for (var i = 0; i < this.years.length; i++) {
@@ -338,6 +360,17 @@ const Chartjs = {
                   display: true,
                   text: "Year"
                 }
+              },
+              onClick: (e) => {
+                const points = this.chartYear.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+               
+                if (points.length) {
+                  const firstPoint = points[0];
+                  const label = this.chartYear.data.labels[firstPoint.index];
+                  const value = this.chartYear.data.datasets[firstPoint.datasetIndex].data[firstPoint.index];
+
+                  this.year = label
+                }
               }
             }
           }
@@ -370,7 +403,7 @@ const Chartjs = {
           amount: countrySet[keys[i]]
         })
       }
-      values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
+      values = values.sort((a, b) => (a.amount == b.amount) ? a.country.localeCompare(b.country) : ((a.amount < b.amount) ? 1 : -1))
       
       var labels = []
       var data = []
@@ -412,6 +445,17 @@ const Chartjs = {
                   // beginAtZero: true,
                   display: true,
                   type: 'logarithmic'
+                }
+              },
+              onClick: (e) => {
+                const points = this.chartCountry.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
+               
+                if (points.length) {
+                  const firstPoint = points[0];
+                  const label = this.chartCountry.data.labels[firstPoint.index];
+                  const value = this.chartCountry.data.datasets[firstPoint.datasetIndex].data[firstPoint.index];
+
+                  this.country = label
                 }
               }
             }
@@ -502,7 +546,7 @@ const Chartjs = {
           amount: genres[keys[i]]
         })
       }
-      values = values.sort((a, b) => (a.amount < b.amount) ? 1 : -1)
+      values = values.sort((a, b) => (a.amount == b.amount) ? a.genre.localeCompare(b.genre) : ((a.amount < b.amount) ? 1 : -1))
       values = values.splice(0, 60)
       
       var labels = []

@@ -1,4 +1,4 @@
-const lists = [ // Nosferatu
+const lists = [
   {
     "title": "Le Voyage dans la lune",
     "director": "Georges Méliès",
@@ -16,20 +16,20 @@ const lists = [ // Nosferatu
     "genre": "Master Criminal Film, Police Detective Film"
   },
   {
-    "title": "The Birth of a Nation",
-    "director": "D.W. Griffith",
-    "year": 1915,
-    "country": "USA",
-    "runtime": 187,
-    "genre": "Epic, Historical Film"
-  },
-  {
     "title": "Les Vampires",
     "director": "Louis Feuillade",
     "year": 1915,
     "country": "France",
     "runtime": 440,
     "genre": "Master Criminal Film, Crime Thriller"
+  },
+  {
+    "title": "The Birth of a Nation",
+    "director": "D.W. Griffith",
+    "year": 1915,
+    "country": "USA",
+    "runtime": 187,
+    "genre": "Epic, Historical Film"
   },
   {
     "title": "Intolerance",
@@ -72,14 +72,6 @@ const lists = [ // Nosferatu
     "genre": "Comedy Drama, Melodrama"
   },
   {
-    "title": "Nosferatu",
-    "director": "F.W. Murnau",
-    "year": 1922,
-    "country": "Germany",
-    "runtime": 84,
-    "genre": "Horror, Gothic Film"
-  },
-  {
     "title": "Dr. Mabuse, the Gambler",
     "director": "Fritz Lang",
     "year": 1922,
@@ -112,12 +104,12 @@ const lists = [ // Nosferatu
     "genre": "Anthropology, Documentary"
   },
   {
-    "title": "Our Hospitality",
-    "director": "Buster Keaton & John G. Blystone",
-    "year": 1923,
-    "country": "USA",
-    "runtime": 74,
-    "genre": "Comedy, Romantic Comedy"
+    "title": "Nosferatu",
+    "director": "F.W. Murnau",
+    "year": 1922,
+    "country": "Germany",
+    "runtime": 84,
+    "genre": "Horror, Gothic Film"
   },
   {
     "title": "A Woman of Paris",
@@ -128,12 +120,20 @@ const lists = [ // Nosferatu
     "genre": "Romance, Melodrama"
   },
   {
-    "title": "The Last Laugh",
-    "director": "F.W. Murnau",
+    "title": "Our Hospitality",
+    "director": "Buster Keaton & John G. Blystone",
+    "year": 1923,
+    "country": "USA",
+    "runtime": 74,
+    "genre": "Comedy, Romantic Comedy"
+  },
+  {
+    "title": "Greed",
+    "director": "Erich von Stroheim",
     "year": 1924,
-    "country": "Germany",
-    "runtime": 77,
-    "genre": "Drama, Psychological Drama"
+    "country": "USA",
+    "runtime": 239,
+    "genre": "Melodrama, Psychological Drama"
   },
   {
     "title": "Sherlock Jr.",
@@ -144,28 +144,20 @@ const lists = [ // Nosferatu
     "genre": "Comedy, Slapstick"
   },
   {
+    "title": "The Last Laugh",
+    "director": "F.W. Murnau",
+    "year": 1924,
+    "country": "Germany",
+    "runtime": 77,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
     "title": "The Navigator",
     "director": "Buster Keaton & Donald Crisp",
     "year": 1924,
     "country": "USA",
     "runtime": 59,
     "genre": "Comedy, Slapstick"
-  },
-  {
-    "title": "Greed",
-    "director": "Erich von Stroheim",
-    "year": 1924,
-    "country": "USA",
-    "runtime": 239, // FIXME: 140m; 239m (reconstructed version)
-    "genre": "Melodrama, Psychological Drama"
-  },
-  {
-    "title": "The Gold Rush",
-    "director": "Charles Chaplin",
-    "year": 1925,
-    "country": "USA",
-    "runtime": 82,
-    "genre": "Slapstick, Adventure Comedy"
   },
   {
     "title": "Battleship Potemkin",
@@ -192,20 +184,20 @@ const lists = [ // Nosferatu
     "genre": "Political Drama, Historical Epic"
   },
   {
+    "title": "The Gold Rush",
+    "director": "Charles Chaplin",
+    "year": 1925,
+    "country": "USA",
+    "runtime": 82,
+    "genre": "Slapstick, Adventure Comedy"
+  },
+  {
     "title": "Faust",
     "director": "F.W. Murnau",
     "year": 1926,
     "country": "Germany",
     "runtime": 116,
     "genre": "Fantasy, Tragedy"
-  },
-  {
-    "title": "The General",
-    "director": "Buster Keaton",
-    "year": 1926,
-    "country": "USA",
-    "runtime": 74,
-    "genre": "Buster Keaton & Clyde Bruckman"
   },
   {
     "title": "The Adventures of Prince Achmed",
@@ -216,20 +208,12 @@ const lists = [ // Nosferatu
     "genre": "Children's Fantasy, Animation"
   },
   {
-    "title": "Sunrise",
-    "director": "F.W. Murnau",
-    "year": 1927,
+    "title": "The General",
+    "director": "Buster Keaton",
+    "year": 1926,
     "country": "USA",
-    "runtime": 110,
-    "genre": "Melodrama, Romantic Drama"
-  },
-  {
-    "title": "Metropolis",
-    "director": "Fritz Lang",
-    "year": 1927,
-    "country": "Germany",
-    "runtime": 153,
-    "genre": "Science Fiction, Psychological Sci-Fi"
+    "runtime": 74,
+    "genre": "Buster Keaton & Clyde Bruckman"
   },
   {
     "title": "Berlin: Symphony of a Great City",
@@ -238,6 +222,14 @@ const lists = [ // Nosferatu
     "country": "Germany",
     "runtime": 65,
     "genre": "Avant-garde-Experimental, Documentary"
+  },
+  {
+    "title": "Metropolis",
+    "director": "Fritz Lang",
+    "year": 1927,
+    "country": "Germany",
+    "runtime": 153,
+    "genre": "Science Fiction, Psychological Sci-Fi"
   },
   {
     "title": "Napoléon",
@@ -256,44 +248,12 @@ const lists = [ // Nosferatu
     "genre": "Romance, Melodrama"
   },
   {
-    "title": "Spione",
-    "director": "Fritz Lang",
-    "year": 1928,
-    "country": "Germany",
-    "runtime": 90,
-    "genre": "Thriller, Spy Film"
-  },
-  {
-    "title": "Un Chien andalou",
-    "director": "Luis Buñuel",
-    "year": 1928,
-    "country": "France",
-    "runtime": 16,
-    "genre": "Avant-garde-Experimental, Surrealist Film"
-  },
-  {
-    "title": "The Passion of Joan of Arc",
-    "director": "Carl Theodor Dreyer",
-    "year": 1928,
-    "country": "France",
+    "title": "Sunrise",
+    "director": "F.W. Murnau",
+    "year": 1927,
+    "country": "USA",
     "runtime": 110,
-    "genre": "Historical Film, Hagiography"
-  },
-  {
-    "title": "The Circus",
-    "director": "Charles Chaplin",
-    "year": 1928,
-    "country": "USA",
-    "runtime": 72,
-    "genre": "Comedy, Slapstick"
-  },
-  {
-    "title": "Steamboat Bill, Jr.",
-    "director": "Buster Keaton & Charles Reisner",
-    "year": 1928,
-    "country": "USA",
-    "runtime": 71,
-    "genre": "Adventure Comedy, Slapstick"
+    "genre": "Melodrama, Romantic Drama"
   },
   {
     "title": "October",
@@ -304,6 +264,22 @@ const lists = [ // Nosferatu
     "genre": "Historical Film, Docudrama"
   },
   {
+    "title": "Spione",
+    "director": "Fritz Lang",
+    "year": 1928,
+    "country": "Germany",
+    "runtime": 90,
+    "genre": "Thriller, Spy Film"
+  },
+  {
+    "title": "Steamboat Bill, Jr.",
+    "director": "Buster Keaton & Charles Reisner",
+    "year": 1928,
+    "country": "USA",
+    "runtime": 71,
+    "genre": "Adventure Comedy, Slapstick"
+  },
+  {
     "title": "The Cameraman",
     "director": "Buster Keaton & Edward Sedgwick",
     "year": 1928,
@@ -312,12 +288,28 @@ const lists = [ // Nosferatu
     "genre": "Slapstick, Romantic Comedy"
   },
   {
+    "title": "The Circus",
+    "director": "Charles Chaplin",
+    "year": 1928,
+    "country": "USA",
+    "runtime": 72,
+    "genre": "Comedy, Slapstick"
+  },
+  {
     "title": "The Crowd",
     "director": "King Vidor",
     "year": 1928,
     "country": "USA",
     "runtime": 104,
     "genre": "Drama, Urban Drama"
+  },
+  {
+    "title": "The Passion of Joan of Arc",
+    "director": "Carl Theodor Dreyer",
+    "year": 1928,
+    "country": "France",
+    "runtime": 110,
+    "genre": "Historical Film, Hagiography"
   },
   {
     "title": "The Wedding March",
@@ -336,6 +328,14 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
+    "title": "Un Chien andalou",
+    "director": "Luis Buñuel",
+    "year": 1928,
+    "country": "France",
+    "runtime": 16,
+    "genre": "Avant-garde-Experimental, Surrealist Film"
+  },
+  {
     "title": "Man with a Movie Camera",
     "director": "Dziga Vertov",
     "year": 1929,
@@ -352,28 +352,12 @@ const lists = [ // Nosferatu
     "genre": "Drama, Melodrama"
   },
   {
-    "title": "The Blue Angel",
-    "director": "Josef von Sternberg",
-    "year": 1930,
-    "country": "Germany",
-    "runtime": 103,
-    "genre": "Melodrama, Psychological Drama"
-  },
-  {
     "title": "All Quiet on the Western Front",
     "director": "Lewis Milestone",
     "year": 1930,
     "country": "USA",
     "runtime": 133,
     "genre": "War Drama, Anti-War Film"
-  },
-  {
-    "title": "L'Âge d'or",
-    "director": "Luis Buñuel",
-    "year": 1930,
-    "country": "France",
-    "runtime": 63,
-    "genre": "Avant-garde/Experimental, Surrealist Film"
   },
   {
     "title": "Earth",
@@ -384,6 +368,14 @@ const lists = [ // Nosferatu
     "genre": "Drama, Rural Drama"
   },
   {
+    "title": "L'Âge d'or",
+    "director": "Luis Buñuel",
+    "year": 1930,
+    "country": "France",
+    "runtime": 63,
+    "genre": "Avant-garde/Experimental, Surrealist Film"
+  },
+  {
     "title": "Morocco",
     "director": "Josef von Sternberg",
     "year": 1930,
@@ -392,959 +384,54 @@ const lists = [ // Nosferatu
     "genre": "Romance, Melodrama"
   },
   {
-    "title": "Tabu",
-    "director": "F.W. Murnau",
+    "title": "The Blue Angel",
+    "director": "Josef von Sternberg",
+    "year": 1930,
+    "country": "Germany",
+    "runtime": 103,
+    "genre": "Melodrama, Psychological Drama"
+  },
+  {
+    "title": "City Lights",
+    "director": "Charles Chaplin",
     "year": 1931,
     "country": "USA",
-    "runtime": 82,
-    "genre": "Romance, Docudrama"
-  },
-  /* ---- */ 
-
-
-
-
-
-  {
-    "title": "I Was Born, But…",
-    "director": "Yasujiro Ozu",
-    "year": 1932,
-    "country": "Japan",
-    "runtime": 100,
-    "genre": "Comedy Drama, Coming-of-Age"
+    "runtime": 86,
+    "genre": "Comedy Drama, Romance",
+    "rating": 8
   },
   {
-    "title": "The Scarlet Empress",
-    "director": "Josef von Sternberg",
-    "year": 1934,
+    "title": "Frankenstein",
+    "director": "James Whale",
+    "year": 1931,
     "country": "USA",
-    "runtime": 110,
-    "genre": "Historical Film, Period Film"
+    "runtime": 70,
+    "genre": "Horror, Monster Film"
   },
   {
-    "title": "The Lady Eve",
-    "director": "Preston Sturges",
-    "year": 1941,
-    "country": "USA",
-    "runtime": 94,
-    "genre": "Romantic Comedy, Sophisticated Comedy"
-  },
-  {
-    "title": "The Palm Beach Story",
-    "director": "Preston Sturges",
-    "year": 1942,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Screwball Comedy, Comedy of Manners"
-  },
-  {
-    "title": "Day of Wrath",
-    "director": "Carl Theodor Dreyer",
-    "year": 1943,
-    "country": "Denmark",
-    "runtime": 110,
-    "genre": "Period Film, Psychological Drama"
-  },
-  {
-    "title": "Les Enfants du paradis",
-    "director": "Marcel Carné",
-    "year": 1945,
+    "title": "La Chienne",
+    "director": "Jean Renoir",
+    "year": 1931,
     "country": "France",
-    "runtime": 195,
-    "genre": "Period Film, Romantic Drama"
-  },
-  {
-    "title": "Late Spring",
-    "director": "Yasujiro Ozu",
-    "year": 1949,
-    "country": "Japan",
-    "runtime": 108,
-    "genre": "Drama, Family Drama"
-  },
-  {
-    "title": "Rashomon",
-    "director": "Akira Kurosawa",
-    "year": 1950,
-    "country": "Japan",
-    "runtime": 88,
-    "genre": "Period Film, Crime Drama"
-  },
-  {
-    "title": "Early Summer",
-    "director": "Yasujiro Ozu",
-    "year": 1951,
-    "country": "Japan",
-    "runtime": 135,
-    "genre": "Drama, Family Drama"
-  },
-  {
-    "title": "Casque d'or",
-    "director": "Jacques Becker",
-    "year": 1952,
-    "country": "France",
-    "runtime": 96,
-    "genre": "Crime Drama, Melodrama"
-  },
-  {
-    "title": "Ikiru",
-    "director": "Akira Kurosawa",
-    "year": 1952,
-    "country": "Japan",
-    "runtime": 143,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
-    "title": "Madame de...",
-    "director": "Max Ophüls",
-    "year": 1953,
-    "country": "France-Italy",
-    "runtime": 105,
-    "genre": "Period Film, Romantic Drama"
-  },
-  {
-    "title": "Pickup on South Street",
-    "director": "Samuel Fuller",
-    "year": 1953,
-    "country": "USA",
-    "runtime": 80,
-    "genre": "Thriller, Film Noir"
-  },
-  {
-    "title": "Tokyo Story",
-    "director": "Yasujiro Ozu",
-    "year": 1953,
-    "country": "Japan",
-    "runtime": 134,
-    "genre": "Drama, Family Drama"
-  },
-  {
-    "title": "Rear Window",
-    "director": "Alfred Hitchcock",
-    "year": 1954,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Thriller, Romantic Mystery"
-  },
-  {
-    "title": "Touchez pas au Grisbi",
-    "director": "Jacques Becker",
-    "year": 1954,
-    "country": "France",
-    "runtime": 94,
-    "genre": "Crime, Caper"
-  },
-  {
-    "title": "Ordet",
-    "director": "Carl Theodor Dreyer",
-    "year": 1955,
-    "country": "Denmark",
-    "runtime": 125,
-    "genre": "Drama, Religious Drama"
-  },
-  {
-    "title": "A Man Escaped",
-    "director": "Robert Bresson",
-    "year": 1956,
-    "country": "France",
-    "runtime": 102,
-    "genre": "Drama, Prison Film"
-  },
-  {
-    "title": "Aparajito",
-    "director": "Satyajit Ray",
-    "year": 1956,
-    "country": "India",
-    "runtime": 108,
-    "genre": "Drama, Coming-of-Age"
-  },
-  {
-    "title": "Written on the Wind",
-    "director": "Douglas Sirk",
-    "year": 1956,
-    "country": "USA",
-    "runtime": 99,
-    "genre": "Melodrama, Family Drama"
-  },
-  {
-    "title": "The 400 Blows",
-    "director": "François Truffaut",
-    "year": 1959,
-    "country": "France",
-    "runtime": 99,
-    "genre": "Childhood Drama, Coming-of-Age"
-  },
-  {
-    "title": "Good Morning",
-    "director": "Yasujiro Ozu",
-    "year": 1959,
-    "country": "Japan",
-    "runtime": 94,
-    "genre": "Domestic Comedy, Family Drama"
-  },
-  {
-    "title": "Hiroshima mon amour",
-    "director": "Alain Resnais",
-    "year": 1959,
-    "country": "France-Japan",
-    "runtime": 91,
-    "genre": "Psychological Drama, Romantic Drama"
-  },
-  {
-    "title": "Imitation of Life",
-    "director": "Douglas Sirk",
-    "year": 1959,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Melodrama, Family Drama"
-  },
-  {
-    "title": "Breathless",
-    "director": "Jean-Luc Godard",
-    "year": 1960,
-    "country": "France",
-    "runtime": 89,
-    "genre": "Crime Drama, Urban Drama"
-  },
-  {
-    "title": "L'Avventura",
-    "director": "Michelangelo Antonioni",
-    "year": 1960,
-    "country": "Italy-France",
-    "runtime": 145,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
-    "title": "Le Trou",
-    "director": "Jacques Becker",
-    "year": 1960,
-    "country": "France-Italy",
-    "runtime": 140,
-    "genre": "Prison Film, Crime Drama"
-  },
-  {
-    "title": "La Notte",
-    "director": "Michelangelo Antonioni",
-    "year": 1961,
-    "country": "Italy-France",
-    "runtime": 120,
-    "genre": "Psychological Drama, Marriage Drama"
-  },
-  {
-    "title": "Viridiana",
-    "director": "Luis Buñuel",
-    "year": 1961,
-    "country": "Spain",
-    "runtime": 90,
-    "genre": "Comedy Drama, Satire"
-  },
-  {
-    "title": "An Autumn Afternoon",
-    "director": "Yasujiro Ozu",
-    "year": 1962,
-    "country": "Japan",
-    "runtime": 115,
-    "genre": "Family Drama, Romantic Drama"
-  },
-  {
-    "title": "The Exterminating Angel",
-    "director": "Luis Buñuel",
-    "year": 1962,
-    "country": "Mexico",
     "runtime": 95,
-    "genre": "Comedy Drama, Satire"
+    "genre": "Drama, Psychological Drama"
   },
   {
-    "title": "Ivan's Childhood",
-    "director": "Andrei Tarkovsky",
-    "year": 1962,
-    "country": "USSR",
-    "runtime": 94,
-    "genre": "War, Childhood Drama"
-  },
-  {
-    "title": "L'Eclisse",
-    "director": "Michelangelo Antonioni",
-    "year": 1962,
-    "country": "Italy-France",
-    "runtime": 126,
-    "genre": "Psychological Drama, Urban Drama"
-  },
-  {
-    "title": "Vivre sa vie",
-    "director": "Jean-Luc Godard",
-    "year": 1962,
+    "title": "Le Million",
+    "director": "René Clair",
+    "year": 1931,
     "country": "France",
     "runtime": 85,
-    "genre": "Psychological Drama, Urban Drama"
+    "genre": "Musical Comedy, Chase Movie"
   },
   {
-    "title": "Contempt",
-    "director": "Jean-Luc Godard",
-    "year": 1963,
-    "country": "France-Italy",
-    "runtime": 103,
-    "genre": "Showbiz Drama, Satire"
-  },
-  {
-    "title": "Band of Outsiders",
-    "director": "Jean-Luc Godard",
-    "year": 1964,
-    "country": "France",
-    "runtime": 97,
-    "genre": "Drama, Crime Drama"
-  },
-  {
-    "title": "Woman in the Dunes",
-    "director": "Hiroshi Teshigahara",
-    "year": 1964,
-    "country": "Japan",
-    "runtime": 127,
-    "genre": "Avant-garde-Experimental, Psychological Drama"
-  },
-  {
-    "title": "Alphaville",
-    "director": "Jean-Luc Godard",
-    "year": 1965,
-    "country": "France",
-    "runtime": 95,
-    "genre": "Psychological Sci-Fi, Tech Noir"
-  },
-  {
-    "title": "Andrei Rublev",
-    "director": "Andrei Tarkovsky",
-    "year": 1966,
-    "country": "USSR",
-    "runtime": 185,
-    "genre": "Historical Film, Biography"
-  },
-  {
-    "title": "Au hasard Balthazar",
-    "director": "Robert Bresson",
-    "year": 1966,
-    "country": "France",
-    "runtime": 95,
-    "genre": "Rural Drama, Animal Picture"
-  },
-  {
-    "title": "Blow-Up",
-    "director": "Michelangelo Antonioni",
-    "year": 1966,
-    "country": "Italy-UK",
-    "runtime": 111,
-    "genre": "Mystery, Psychological Thriller"
-  },
-  {
-    "title": "The Good, the Bad and the Ugly",
-    "director": "Sergio Leone",
-    "year": 1966,
-    "country": "Italy-Spain",
-    "runtime": 161,
-    "genre": "Spaghetti Western, Outlaw (Gunfighter) Film"
-  },
-  {
-    "title": "Persona",
-    "director": "Ingmar Bergman",
-    "year": 1966,
-    "country": "Sweden",
-    "runtime": 83,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
-    "title": "Two or Three Things I Know About Her",
-    "director": "Jean-Luc Godard",
-    "year": 1966,
-    "country": "France",
-    "runtime": 87,
-    "genre": "Essay Film, Urban Drama"
-  },
-  {
-    "title": "Le Samouraï",
-    "director": "Jean-Pierre Melville",
-    "year": 1967,
-    "country": "France",
-    "runtime": 95,
-    "genre": "Crime Thriller, Post-Noir (Modern Noir)"
-  },
-  {
-    "title": "Mouchette",
-    "director": "Robert Bresson",
-    "year": 1967,
-    "country": "France",
-    "runtime": 80,
-    "genre": "Drama, Childhood Drama"
-  },
-  {
-    "title": "Playtime",
-    "director": "Jacques Tati",
-    "year": 1967,
-    "country": "France",
-    "runtime": 108,
-    "genre": "Satire, Urban Comedy"
-  },
-  {
-    "title": "Week-End",
-    "director": "Jean-Luc Godard",
-    "year": 1967,
-    "country": "France-Italy",
-    "runtime": 103,
-    "genre": "Avant-garde-Experimental, Satire"
-  },
-  {
-    "title": "2001: A Space Odyssey",
-    "director": "Stanley Kubrick",
-    "year": 1968,
-    "country": "UK-USA",
-    "runtime": 139,
-    "genre": "Psychological Sci-Fi, Space Adventure"
-  },
-  {
-    "title": "Rosemary's Baby",
-    "director": "Roman Polanski",
-    "year": 1968,
-    "country": "USA",
-    "runtime": 136,
-    "genre": "Occult Horror, Psychological Thriller"
-  },
-  {
-    "title": "Antonio das Mortes",
-    "director": "Glauber Rocha",
-    "year": 1969,
+    "title": "Limite",
+    "director": "Mario Peixoto",
+    "year": 1931,
     "country": "Brazil",
-    "runtime": 95,
-    "genre": "Adventure Drama, Political Drama"
+    "runtime": 114,
+    "genre": "Avant-garde/Experimental, Surrealist Film"
   },
-  {
-    "title": "My Night at Maud's",
-    "director": "Eric Rohmer",
-    "year": 1969,
-    "country": "France",
-    "runtime": 105,
-    "genre": "Comedy of Manners, Romantic Drama"
-  },
-  {
-    "title": "The Sorrow and the Pity",
-    "director": "Marcel Ophüls",
-    "year": 1969,
-    "country": "France-Switzerland-Germany",
-    "runtime": 260,
-    "genre": "Military & War, Documentary"
-  },
-  {
-    "title": "Claire's Knee",
-    "director": "Eric Rohmer",
-    "year": 1970,
-    "country": "France",
-    "runtime": 105,
-    "genre": "Comedy Drama, Comedy of Manners"
-  },
-  {
-    "title": "Tristana",
-    "director": "Luis Buñuel",
-    "year": 1970,
-    "country": "Spain-Italy-France",
-    "runtime": 98,
-    "genre": "Psychological Drama, Satire"
-  },
-  {
-    "title": "Zabriskie Point",
-    "director": "Michelangelo Antonioni",
-    "year": 1970,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Drama, Road Movie"
-  },
-  {
-    "title": "The Last Picture Show",
-    "director": "Peter Bogdanovich",
-    "year": 1971,
-    "country": "USA",
-    "runtime": 118,
-    "genre": "Drama, Coming-of-Age"
-  },
-  {
-    "title": "McCabe & Mrs. Miller",
-    "director": "Robert Altman",
-    "year": 1971,
-    "country": "USA",
-    "runtime": 121,
-    "genre": "Drama, Revisionist Western"
-  },
-  {
-    "title": "Two-Lane Blacktop",
-    "director": "Monte Hellman",
-    "year": 1971,
-    "country": "USA",
-    "runtime": 101,
-    "genre": "Drama, Road Movie"
-  },
-  {
-    "title": "Aguirre: The Wrath of God",
-    "director": "Werner Herzog",
-    "year": 1972,
-    "country": "West Germany",
-    "runtime": 94,
-    "genre": "Adventure Drama, Jungle Film"
-  },
-  {
-    "title": "A Woman Under the Influence",
-    "director": "John Cassavetes",
-    "year": 1974,
-    "country": "USA",
-    "runtime": 155,
-    "genre": "Marriage Drama, Psychological Drama"
-  },
-  {
-    "title": "The Conversation",
-    "director": "Francis Ford Coppola",
-    "year": 1974,
-    "country": "USA",
-    "runtime": 113,
-    "genre": "Thriller, Paranoid Thriller"
-  },
-  {
-    "title": "The Enigma of Kaspar Hauser",
-    "director": "Werner Herzog",
-    "year": 1974,
-    "country": "West Germany",
-    "runtime": 110,
-    "genre": "Psychological Drama, Biography"
-  },
-  {
-    "title": "Lancelot du Lac",
-    "director": "Robert Bresson",
-    "year": 1974,
-    "country": "France-Italy",
-    "runtime": 84,
-    "genre": "Drama, Period Film"
-  },
-  {
-    "title": "The Phantom of Liberty",
-    "director": "Luis Buñuel",
-    "year": 1974,
-    "country": "France",
-    "runtime": 104,
-    "genre": "Satire, Black Comedy"
-  },
-  {
-    "title": "Barry Lyndon",
-    "director": "Stanley Kubrick",
-    "year": 1975,
-    "country": "UK",
-    "runtime": 183,
-    "genre": "Drama, Period Film"
-  },
-  {
-    "title": "Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles",
-    "director": "Chantal Akerman",
-    "year": 1975,
-    "country": "Belgium-France",
-    "runtime": 201,
-    "genre": "Avant-garde-Experimental, Feminist Film"
-  },
-  {
-    "title": "Nashville",
-    "director": "Robert Altman",
-    "year": 1975,
-    "country": "USA",
-    "runtime": 159,
-    "genre": "Ensemble Film, Media Satire",
-  },
-  {
-    "title": "The Passenger",
-    "director": "Michelangelo Antonioni",
-    "year": 1975,
-    "country": "Italy",
-    "runtime": 119,
-    "genre": "Road Movie, Psychological Drama"
-  },
-  {
-    "title": "Salò, or the 120 Days of Sodom",
-    "director": "Pier Paolo Pasolini",
-    "year": 1975,
-    "country": "Italy",
-    "runtime": 117,
-    "genre": "Drama, Sex Horror"
-  },
-  {
-    "title": "Carrie",
-    "director": "Brian De Palma",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 97,
-    "genre": "Horror, Supernatural Thriller"
-  },
-  {
-    "title": "The Killing of a Chinese Bookie",
-    "director": "John Cassavetes",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 109,
-    "genre": "Crime, Drama"
-  },
-  {
-    "title": "Taxi Driver",
-    "director": "Martin Scorsese",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 113,
-    "genre": "Psychological Drama, Urban Drama"
-  },
-  {
-    "title": "That Obscure Object of Desire",
-    "director": "Luis Buñuel",
-    "year": 1977,
-    "country": "France-Spain",
-    "runtime": 103,
-    "genre": "Black Comedy, Satire"
-  },
-  {
-    "title": "Manhattan",
-    "director": "Woody Allen",
-    "year": 1979,
-    "country": "USA",
-    "runtime": 96,
-    "genre": "Urban Comedy, Romantic Comedy"
-  },
-  {
-    "title": "The Marriage of Maria Braun",
-    "director": "Rainer Werner Fassbinder",
-    "year": 1979,
-    "country": "West Germany",
-    "runtime": 120,
-    "genre": "War Drama, Melodrama"
-  },
-  {
-    "title": "Stalker",
-    "director": "Andrei Tarkovsky",
-    "year": 1979,
-    "country": "USSR",
-    "runtime": 160,
-    "genre": "Science Fiction, Psychological Sci-Fi"
-  },
-  {
-    "title": "Blow Out",
-    "director": "Brian De Palma",
-    "year": 1981,
-    "country": "USA",
-    "runtime": 107,
-    "genre": "Political Thriller, Paranoid Thriller"
-  },
-  {
-    "title": "Possession",
-    "director": "Andrzej Zulawski",
-    "year": 1981,
-    "country": "France-West Germany",
-    "runtime": 127,
-    "genre": "Marriage Drama, Supernatural Horror"
-  },
-  {
-    "title": "Fitzcarraldo",
-    "director": "Werner Herzog",
-    "year": 1982,
-    "country": "West Germany",
-    "runtime": 157,
-    "genre": "Adventure Drama, Jungle Film"
-  },
-  {
-    "title": "The King of Comedy",
-    "director": "Martin Scorsese",
-    "year": 1983,
-    "country": "USA",
-    "runtime": 109,
-    "genre": "Showbiz Comedy, Black Comedy"
-  },
-  {
-    "title": "Sans soleil",
-    "director": "Chris Marker",
-    "year": 1983,
-    "country": "France",
-    "runtime": 100,
-    "genre": "Avant-garde-Experimental, Documentary"
-  },
-  {
-    "title": "Videodrome",
-    "director": "David Cronenberg",
-    "year": 1983,
-    "country": "Canada",
-    "runtime": 90,
-    "genre": "Media Satire, Sci-Fi Horror"
-  },
-  {
-    "title": "The Fly",
-    "director": "David Cronenberg",
-    "year": 1986,
-    "country": "USA",
-    "runtime": 100,
-    "genre": "Science Fiction, Horror",
-  },
-  {
-    "title": "Where is the Friend's Home?",
-    "director": "Abbas Kiarostami",
-    "year": 1987,
-    "country": "Iran",
-    "runtime": 85,
-    "genre": "Drama, Childhood Drama",
-    "image": "whereisthefriendshome"
-  },
-  {
-    "title": "Dead Ringers",
-    "director": "David Cronenberg",
-    "year": 1988,
-    "country": "Canada",
-    "runtime": 115,
-    "genre": "Drama, Psychological Thriller"
-  },
-  {
-    "title": "Close-Up",
-    "director": "Abbas Kiarostami",
-    "year": 1990,
-    "country": "Iran",
-    "runtime": 98,
-    "genre": "Docudrama, Courtroom Drama"
-  },
-  {
-    "title": "Goodfellas",
-    "director": "Martin Scorsese",
-    "year": 1990,
-    "country": "USA",
-    "runtime": 146,
-    "genre": "Gangster Film, Crime Drama"
-  },
-  {
-    "title": "Miller's Crossing",
-    "director": "Joel Coen & Ethan Coen",
-    "year": 1990,
-    "country": "USA",
-    "runtime": 115,
-    "genre": "Crime, Gangster Film"
-  },
-  {
-    "title": "Raging Bull",
-    "director": "Martin Scorsese",
-    "year": 1980,
-    "country": "USA",
-    "runtime": 128,
-    "genre": "Biography, Sports Drama"
-  },
-  {
-    "title": "The Double Life of Veronique",
-    "director": "Krzysztof Kieslowski",
-    "year": 1991,
-    "country": "France",
-    "runtime": 97,
-    "genre": "Romantic Drama, Psychological Drama"
-  },
-  {
-    "title": "Les Amants du Pont-Neuf",
-    "director": "Leos Carax",
-    "year": 1991,
-    "country": "France",
-    "runtime": 126,
-    "genre": "Romantic Drama, Urban Drama"
-  },
-  {
-    "title": "Bad Lieutenant",
-    "director": "Abel Ferrara",
-    "year": 1992,
-    "country": "USA",
-    "runtime": 98,
-    "genre": "Police Drama, Crime Drama"
-  },
-  {
-    "title": "Pulp Fiction",
-    "director": "Quentin Tarantino",
-    "year": 1994,
-    "country": "USA",
-    "runtime": 154,
-    "genre": "Crime Comedy, Ensemble Film"
-  },
-  {
-    "title": "Casino",
-    "director": "Martin Scorsese",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 182,
-    "genre": "Gangster Film, Crime Drama"
-  },
-  {
-    "title": "Lost Highway",
-    "director": "David Lynch",
-    "year": 1997,
-    "country": "USA-France",
-    "runtime": 134,
-    "genre": "Mystery, Surrealist Film"
-  },
-  {
-    "title": "Eyes Wide Shut",
-    "director": "Stanley Kubrick",
-    "year": 1999,
-    "country": "USA-UK",
-    "runtime": 159,
-    "genre": "Marriage Drama, Psychological Drama"
-  },
-  {
-    "title": "Rosetta",
-    "director": "Jean-Pierre Dardenne & Luc Dardenne",
-    "year": 1999,
-    "country": "Belgium-France",
-    "runtime": 94,
-    "genre": "Drama, Coming-of-Age"
-  },
-  {
-    "title": "Code Unknown",
-    "director": "Michael Haneke",
-    "year": 2000,
-    "country": "France-Germany-Romania",
-    "runtime": 116,
-    "genre": "Ensemble Film, Urban Drama"
-  },
-  {
-    "title": "In the Mood for Love",
-    "director": "Wong Kar-wai",
-    "year": 2000,
-    "country": "Hong Kong-France",
-    "runtime": 97,
-    "genre": "Melodrama, Romantic Drama"
-  },
-  {
-    "title": "Songs from the Second Floor",
-    "director": "Roy Andersson",
-    "year": 2000,
-    "country": "Sweden-France-Denmark-Norway-Germany",
-    "runtime": 98,
-    "genre": "Surrealist Film, Black Comedy"
-  },
-  {
-    "title": "Yi yi",
-    "director": "Edward Yang",
-    "year": 2000,
-    "country": "Taiwan-Japan",
-    "runtime": 173,
-    "genre": "Ensemble Film, Family Drama"
-  },
-  {
-    "title": "A.I. Artificial Intelligence",
-    "director": "Steven Spielberg",
-    "year": 2001,
-    "country": "USA",
-    "runtime": 145,
-    "genre": "Science Fiction, Psychological Drama"
-  },
-  {
-    "title": "Millennium Mambo",
-    "director": "Hou Hsiao-hsien",
-    "year": 2001,
-    "country": "Taiwan-France",
-    "runtime": 119,
-    "genre": "Urban Drama, Coming-of-Age"
-  },
-  {
-    "title": "Mulholland Dr.",
-    "director": "David Lynch",
-    "year": 2001,
-    "country": "France-US",
-    "runtime": 147,
-    "genre": "Mystery, Psychological Thriller"
-  },
-  {
-    "title": "The Piano Teacher",
-    "director": "Michael Haneke",
-    "year": 2001,
-    "country": "Austria-France-Germany",
-    "runtime": 130,
-    "genre": "Psychological Drama, Erotic Drama"
-  },
-  {
-    "title": "City of God",
-    "director": "Fernando Meirelles & Kátia Lund",
-    "year": 2002,
-    "country": "Brazil-Germany-France",
-    "runtime": 129,
-    "genre": "Crime Drama, Coming-of-Age"
-  },
-  {
-    "title": "Elephant",
-    "director": "Gus Van Sant",
-    "year": 2003,
-    "country": "USA",
-    "runtime": 81,
-    "genre": "Drama, Ensemble Film"
-  },
-  {
-    "title": "Oldboy",
-    "director": "Park Chan-wook",
-    "year": 2003,
-    "country": "South Korea",
-    "runtime": 120,
-    "genre": "Thriller, Psychological Drama"
-  },
-  {
-    "title": "2046",
-    "director": "Wong Kar-wai",
-    "year": 2004,
-    "country": "Hong Kong-China-France-Italy-Germany",
-    "runtime": 129,
-    "genre": "Romance, Science Fiction"
-  },
-  {
-    "title": "Tropical Malady",
-    "director": "Apichatpong Weerasethakul",
-    "year": 2004,
-    "country": "France-Thailand-Germany-Italy-Switzerland",
-    "runtime": 118,
-    "genre": "Avant-garde-Experimental, Adventure Drama"
-  },
-  {
-    "title": "Caché",
-    "director": "Michael Haneke",
-    "year": 2005,
-    "country": "France-Austria-Germany-Italy",
-    "runtime": 117,
-    "genre": "Drama, Psychological Thriller"
-  },
-  {
-    "title": "Synecdoche, New York",
-    "director": "Charlie Kaufman",
-    "year": 2008,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Psychological Drama, Showbiz Drama"
-  },
-  {
-    "title": "The White Ribbon",
-    "director": "Michael Haneke",
-    "year": 2009,
-    "country": "Germany-Austria-France-Italy",
-    "runtime": 144,
-    "genre": "Drama, Period Film"
-  },
-  {
-    "title": "A Separation",
-    "director": "Asghar Farhadi",
-    "year": 2011,
-    "country": "Iran",
-    "runtime": 123,
-    "genre": "Drama, Ensemble Film"
-  },
-  {
-    "title": "Melancholia",
-    "director": "Lars von Trier",
-    "year": 2011,
-    "country": "Denmark-Sweden-France-Germany",
-    "runtime": 136,
-    "genre": "Science Fiction, Psychological Sci-Fi"
-  },
-  {
-    "title": "The Turin Horse",
-    "director": "Béla Tarr",
-    "year": 2011,
-    "country": "Hungary-France-Germany-Switzerland-USA",
-    "runtime": 146,
-    "genre": "Drama, Slice of Life"
-  },
-  
-  
-
   {
     "title": "M",
     "director": "Fritz Lang",
@@ -1354,651 +441,72 @@ const lists = [ // Nosferatu
     "genre": "Psychological Thriller, Police Detective Film"
   },
   {
-    "title": "Alexander Nevsky",
-    "director": "Sergei Eisenstein",
-    "year": 1938,
-    "country": "USSR",
-    "runtime": 107,
-    "genre": "Historical Epic, Biography"
-  },
-  {
-    "title": "The Lady Vanishes",
-    "director": "Alfred Hitchcock",
-    "year": 1938,
-    "country": "UK",
-    "runtime": 97,
-    "genre": "Spy Film, Thriller"
-  },
-  {
-    "title": "Mr. Smith Goes to Washington",
-    "director": "Frank Capra",
-    "year": 1939,
+    "title": "Tabu",
+    "director": "F.W. Murnau",
+    "year": 1931,
     "country": "USA",
-    "runtime": 129,
-    "genre": "Comedy Drama, Message Movie"
+    "runtime": 82,
+    "genre": "Romance, Docudrama"
   },
   {
-    "title": "Rebecca",
-    "director": "Alfred Hitchcock",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 130,
-    "genre": "Mystery, Gothic Film"
-  },
-  {
-    "title": "Shadow of a Doubt",
-    "director": "Alfred Hitchcock",
-    "year": 1943,
-    "country": "USA",
-    "runtime": 108,
-    "genre": "Thriller, Psychological Thriller"
-  },
-  {
-    "title": "Double Indemnity",
-    "director": "Billy Wilder",
-    "year": 1944,
-    "country": "USA",
-    "runtime": 106,
-    "genre": "Film Noir, Crime Thriller"
-  },
-  {
-    "title": "The Best Years of Our Lives",
-    "director": "William Wyler",
-    "year": 1946,
-    "country": "US",
-    "runtime": 172,
-    "genre": "Family Drama, Ensemble Film"
-  },
-  {
-    "title": "Letter from an Unknown Woman",
-    "director": "Max Ophüls",
-    "year": 1948,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Melodrama, Romantic Drama"
-  },
-  {
-    "title": "All About Eve",
-    "director": "Joseph L. Mankiewicz",
-    "year": 1950,
-    "country": "USA",
-    "runtime": 138,
-    "genre": "Satire, Showbiz Drama"
-  },
-  {
-    "title": "Los Olvidados",
-    "director": "Luis Buñuel",
-    "year": 1950,
-    "country": "Mexico",
-    "runtime": 88,
-    "genre": "Juvenile Delinquency Film, Urban Drama"
-  },
-  {
-    "title": "Sunset Blvd.",
-    "director": "Billy Wilder",
-    "year": 1950,
-    "country": "USA",
-    "runtime": 110,
-    "genre": "Showbiz Drama, Satire"
-  },
-  {
-    "title": "Ace in the Hole",
-    "director": "Billy Wilder",
-    "year": 1951,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Drama, Media Satire"
-  },
-  {
-    "title": "Othello",
-    "director": "Orson Welles",
-    "year": 1951,
-    "country": "Italy-France-Morocco-USA",
-    "runtime": 90,
-    "genre": "Drama, Tragedy"
-  },
-  {
-    "title": "Umberto D.",
-    "director": "Vittorio De Sica",
-    "year": 1952,
-    "country": "Italy",
-    "runtime": 89,
-    "genre": "Urban Drama, Melodrama"
-  },
-  {
-    "title": "I Vitelloni",
-    "director": "Federico Fellini",
-    "year": 1953,
-    "country": "Italy",
-    "runtime": 104,
-    "genre": "Drama, Comedy"
-  },
-  {
-    "title": "The Wages of Fear",
-    "director": "Henri-Georges Clouzot",
-    "year": 1953,
-    "country": "France-Italy",
-    "runtime": 105,
-    "genre": "Thriller, Adventure Drama"
-  },
-  {
-    "title": "Sansho the Bailiff",
-    "director": "Kenji Mizoguchi",
-    "year": 1954,
-    "country": "Japan",
-    "runtime": 125,
-    "genre": "Drama, Period Film"
-  },
-  {
-    "title": "Invasion of the Body Snatchers",
-    "director": "Don Siegel",
-    "year": 1956,
-    "country": "USA",
-    "runtime": 80,
-    "genre": "Science Fiction, Alien Invasion Film"
-  },
-  {
-    "title": "The Searchers",
-    "director": "John Ford",
-    "year": 1956,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Western, Revisionist Western"
-  },
-  {
-    "title": "Paths of Glory",
-    "director": "Stanley Kubrick",
-    "year": 1957,
-    "country": "USA",
-    "runtime": 86,
-    "genre": "Anti-War Film, War Drama"
-  },
-  {
-    "title": "The Seventh Seal",
-    "director": "Ingmar Bergman",
-    "year": 1957,
-    "country": "Sweden",
-    "runtime": 96,
-    "genre": "Fantasy, Psychological Drama"
-  },
-  {
-    "title": "Throne of Blood",
-    "director": "Akira Kurosawa",
-    "year": 1957,
-    "country": "Japan",
-    "runtime": 108,
-    "genre": "Drama, Samurai Film"
-  },
-  {
-    "title": "Wild Strawberries",
-    "director": "Ingmar Bergman",
-    "year": 1957,
-    "country": "Sweden",
-    "runtime": 90,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
-    "title": "Elevator to the Gallows",
-    "director": "Louis Malle",
-    "year": 1958,
+    "title": "Boudu Saved from Drowning",
+    "director": "Jean Renoir",
+    "year": 1932,
     "country": "France",
-    "runtime": 92,
-    "genre": "Romance, Crime Thriller"
-  },
-  {
-    "title": "Touch of Evil",
-    "director": "Orson Welles",
-    "year": 1958,
-    "country": "USA",
-    "runtime": 108,
-    "genre": "Crime, Film Noir"
-  },
-  {
-    "title": "North by Northwest",
-    "director": "Alfred Hitchcock",
-    "year": 1959,
-    "country": "USA",
-    "runtime": 136,
-    "genre": "Thriller, Chase Movie"
-  },
-  {
-    "title": "Some Like it Hot",
-    "director": "Billy Wilder",
-    "year": 1959,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Comedy, Farce"
-  },
-  {
-    "title": "The Apartment",
-    "director": "Billy Wilder",
-    "year": 1960,
-    "country": "USA",
-    "runtime": 125,
-    "genre": "Comedy Drama, Workplace Comedy",
-    "rating": 10
-  },
-  {
-    "title": "La Dolce vita",
-    "director": "Federico Fellini",
-    "year": 1960,
-    "country": "Italy",
-    "runtime": 175,
-    "genre": "Comedy Drama, Media Satire",
-    "rating": 10
-  },
-  {
-    "title": "Peeping Tom",
-    "director": "Michael Powell",
-    "year": 1960,
-    "country": "UK",
-    "runtime": 109,
-    "genre": "Thriller, Psychological Thriller"
-  },
-  {
-    "title": "Psycho",
-    "director": "Alfred Hitchcock",
-    "year": 1960,
-    "country": "USA",
-    "runtime": 109,
-    "genre": "Thriller, Psychological Thriller",
-    "rating": 10
-  },
-  {
-    "title": "Spartacus",
-    "director": "Stanley Kubrick",
-    "year": 1960,
-    "country": "USA",
-    "runtime": 184,
-    "genre": "Sword-and-Sandal, Historical Epic",
-    "rating": 10
-  },
-  {
-    "title": "Cléo from 5 to 7",
-    "director": "Agnès Varda",
-    "year": 1962,
-    "country": "France",
-    "runtime": 90,
-    "genre": "Drama, Psychological Drama",
-    "rating": 10
-  },
-  {
-    "title": "8½",
-    "director": "Federico Fellini",
-    "year": 1963,
-    "country": "Italy",
-    "runtime": 135,
-    "genre": "Satire, Psychological Drama",
-    "rating": 10
-  },
-  {
-    "title": "High and Low",
-    "director": "Akira Kurosawa",
-    "year": 1963,
-    "country": "Japan",
-    "runtime": 142,
-    "genre": "Drama, Post-Noir (Modern Noir)",
-    "rating": 10
-  },
-  {
-    "title": "Who's Afraid of Virginia Woolf?",
-    "director": "Mike Nichols",
-    "year": 1966,
-    "country": "USA",
-    "runtime": 129,
-    "genre": "Marriage Drama, Psychological Drama",
-    "image": "whosafraidofvirginiawoolf",
-    "rating": 10
-  },
-  {
-    "title": "The Graduate",
-    "director": "Mike Nichols",
-    "year": 1967,
-    "country": "USA",
-    "runtime": 105,
-    "genre": "Comedy, Coming-of-Age",
-    "rating": 10
-  },
-  {
-    "title": "Once Upon a Time in the West",
-    "director": "Sergio Leone",
-    "year": 1968,
-    "country": "Italy-USA",
-    "runtime": 165,
-    "genre": "Epic Western, Spaghetti Western",
-    "rating": 10
-  },
-  {
-    "title": "Kes",
-    "director": "Ken Loach",
-    "year": 1969,
-    "country": "UK",
-    "runtime": 113,
-    "genre": "Coming-of-Age, Family Drama",
-    "rating": 10
-  },
-  {
-    "title": "A Clockwork Orange",
-    "director": "Stanley Kubrick",
-    "year": 1971,
-    "country": "UK",
-    "runtime": 137,
-    "genre": "Satire, Psychological Sci-Fi",
-    "rating": 10
-  },
-  {
-    "title": "The Godfather",
-    "director": "Francis Ford Coppola",
-    "year": 1972,
-    "country": "USA",
-    "runtime": 175,
-    "genre": "Gangster Film, Crime Drama",
-    "rating": 10
-  },
-  {
-    "title": "Solaris",
-    "director": "Andrei Tarkovsky",
-    "year": 1972,
-    "country": "USSR",
-    "runtime": 165,
-    "genre": "Science Fiction, Psychological Sci-Fi"
-  },
-  {
-    "title": "F for Fake",
-    "director": "Orson Welles",
-    "year": 1973,
-    "country": "France-Iran-West Germany",
-    "runtime": 85,
-    "genre": "Avant-garde-Experimental, Essay Film",
-    "rating": 10
-  },
-  {
-    "title": "The Long Goodbye",
-    "director": "Robert Altman",
-    "year": 1973,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Mystery, Post-Noir (Modern Noir)",
-    "rating": 10
-  },
-  {
-    "title": "Paper Moon",
-    "director": "Peter Bogdanovich",
-    "year": 1973,
-    "country": "USA",
-    "runtime": 102,
-    "genre": "Comedy Drama, Road Movie",
-    "rating": 10
-  },
-  {
-    "title": "Scenes from a Marriage",
-    "director": "Ingmar Bergman",
-    "year": 1973,
-    "country": "Sweden",
-    "runtime": 168,
-    "genre": "Drama, Marriage Drama"
-  },
-  {
-    "title": "The Wicker Man",
-    "director": "Robin Hardy",
-    "year": 1973,
-    "country": "UK",
-    "runtime": 103,
-    "genre": "Occult Horror, Police Detective Film",
-    "rating": 10
-  },
-  {
-    "title": "Deep Red",
-    "director": "Dario Argento",
-    "year": 1975,
-    "country": "Italy",
-    "runtime": 98,
-    "genre": "Thriller, Giallo",
-    "rating": 10
-  },
-  {
-    "title": "Eraserhead",
-    "director": "David Lynch",
-    "year": 1977,
-    "country": "USA",
-    "runtime": 85,
-    "genre": "Avant-garde-Experimental, Surrealist Film",
-    "rating": 10
-  },
-  {
-    "title": "Suspiria",
-    "director": "Dario Argento",
-    "year": 1977,
-    "country": "Italy",
-    "runtime": 92,
-    "genre": "Horror, Gothic Film",
-    "rating": 10
-  },
-  {
-    "title": "Reds",
-    "director": "Warren Beatty",
-    "year": 1981,
-    "country": "USA",
-    "runtime": 200,
-    "genre": "Epic, Historical Film",
-    "rating": 10
-  },
-  {
-    "title": "Fanny and Alexander",
-    "director": "Ingmar Bergman",
-    "year": 1982,
-    "country": "Sweden",
-    "runtime": 189,
-    "genre": "Family Drama, Childhood Drama",
-    "rating": 10
-  },
-  {
-    "title": "Koyaanisqatsi",
-    "director": "Godfrey Reggio",
-    "year": 1982,
-    "country": "USA",
     "runtime": 87,
-    "genre": "Essay Film, Documentary",
-    "rating": 10
+    "genre": "Comedy, Satire"
   },
   {
-    "title": "The Thing",
-    "director": "John Carpenter",
-    "year": 1982,
+    "title": "Freaks",
+    "director": "Tod Browning",
+    "year": 1932,
     "country": "USA",
-    "runtime": 108,
-    "genre": "Science Fiction, Horror",
-    "rating": 10
+    "runtime": 64,
+    "genre": "Melodrama, Psychological Thriller"
   },
   {
-    "title": "Ran",
-    "director": "Akira Kurosawa",
-    "year": 1985,
-    "country": "France-Japan",
-    "runtime": 161,
-    "genre": "Historical Epic, Samurai Film",
-    "rating": 10
-  },
-  {
-    "title": "Au revoir les enfants",
-    "director": "Louis Malle",
-    "year": 1987,
-    "country": "France",
-    "runtime": 103,
-    "genre": "War Drama, Childhood Drama",
-    "rating": 10
-  },
-  {
-    "title": "Cinema Paradiso",
-    "director": "Giuseppe Tornatore",
-    "year": 1988,
-    "country": "Italy-France",
-    "runtime": 123,
-    "genre": "Drama, Coming-of-Age",
-    "rating": 10
-  },
-  {
-    "title": "My Neighbour Totoro",
-    "director": "Hayao Miyazaki",
-    "year": 1988,
+    "title": "I Was Born, But…",
+    "director": "Yasujiro Ozu",
+    "year": 1932,
     "country": "Japan",
-    "runtime": 86,
-    "genre": "Children's Fantasy, Animation",
-    "rating": 10
-  },
-  {
-    "title": "Women on the Verge of a Nervous Breakdown",
-    "director": "Pedro Almodóvar",
-    "year": 1988,
-    "country": "Spain",
-    "runtime": 88,
-    "genre": "Comedy, Farce",
-    "rating": 10
-  },
-  {
-    "title": "Naked",
-    "director": "Mike Leigh",
-    "year": 1993,
-    "country": "UK",
-    "runtime": 126,
-    "genre": "Urban Drama, Social Problem Film",
-    "rating": 10
-  },
-  {
-    "title": "Crumb",
-    "director": "Terry Zwigoff",
-    "year": 1994,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Documentary, Biography",
-    "rating": 10
-  },
-  {
-    "title": "Ed Wood",
-    "director": "Tim Burton",
-    "year": 1994,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Comedy Drama, Biography",
-    "rating": 10
-  },
-  {
-    "title": "Fargo",
-    "director": "Joel Coen & Ethan Coen",
-    "year": 1996,
-    "country": "USA",
-    "runtime": 98,
-    "genre": "Crime, Black Comedy",
-    "rating": 10
-  },
-  {
-    "title": "Princess Mononoke",
-    "director": "Hayao Miyazaki",
-    "year": 1997,
-    "country": "Japan",
-    "runtime": 134,
-    "genre": "Anime, Fantasy Adventure",
-    "rating": 10
-  },
-  {
-    "title": "The Big Lebowski",
-    "director": "Joel Coen & Ethan Coen",
-    "year": 1998,
-    "country": "USA-UK",
-    "runtime": 113,
-    "genre": "Crime Comedy, Screwball Comedy",
-    "rating": 10
-  },
-  {
-    "title": "Requiem for a Dream",
-    "director": "Darren Aronofsky",
-    "year": 2000,
-    "country": "USA",
     "runtime": 100,
-    "genre": "Addiction Drama, Psychological Drama",
-    "rating": 10
+    "genre": "Comedy Drama, Coming-of-Age"
   },
   {
-    "title": "Amélie",
-    "director": "Jean-Pierre Jeunet",
-    "year": 2001,
-    "country": "France-Germany",
-    "runtime": 122,
-    "genre": "Romance, Comedy",
-    "rating": 10
+    "title": "La Nuit du carrefour",
+    "director": "Jean Renoir",
+    "year": 1932,
+    "country": "France",
+    "runtime": 70,
+    "genre": "Police Detective Film, Crime Drama"
   },
   {
-    "title": "Spirited Away",
-    "director": "Hayao Miyazaki",
-    "year": 2001,
-    "country": "Japan",
-    "runtime": 124,
-    "genre": "Fantasy Adventure, Anime",
-    "rating": 10
+    "title": "Land Without Bread",
+    "director": "Luis Buñuel",
+    "year": 1932,
+    "country": "Spain",
+    "runtime": 28,
+    "genre": "Culture & Society, Documentary",
+    "rating": 8
   },
   {
-    "title": "Y tu mamá también",
-    "director": "Alfonso Cuarón",
-    "year": 2001,
-    "country": "Mexico",
-    "runtime": 105,
-    "genre": "Coming-of-Age, Road Movie",
-    "rating": 10
-  },
-  {
-    "title": "Dogville",
-    "director": "Lars von Trier",
-    "year": 2003,
-    "country": "Denmark-Sweden-France-UK-Germany-Finland-Italy-Netherlands-Norway",
-    "runtime": 177,
-    "genre": "Drama, Avant-garde-Experimental",
-    "rating": 10
-  },
-  {
-    "title": "Kill Bill Vol. 1",
-    "director": "Quentin Tarantino",
-    "year": 2003,
+    "title": "Love Me Tonight",
+    "director": "Rouben Mamoulian",
+    "year": 1932,
     "country": "USA",
-    "runtime": 111,
-    "genre": "Action Thriller, Martial Arts",
-    "rating": 10
+    "runtime": 96,
+    "genre": "Comedy, Musical Romance"
   },
   {
-    "title": "Spring, Summer, Autumn, Winter... and Spring",
-    "director": "Kim Ki-duk",
-    "year": 2003,
-    "country": "South Korea-Germany",
-    "runtime": 103,
-    "genre": "Psychological Drama, Religious Drama",
-    "rating": 10
-  },
-  {
-    "title": "Eternal Sunshine of the Spotless Mind",
-    "director": "Michel Gondry",
-    "year": 2004,
+    "title": "Scarface",
+    "director": "Howard Hawks",
+    "year": 1932,
     "country": "USA",
-    "runtime": 108,
-    "genre": "Comedy Drama, Romantic Fantasy"
+    "runtime": 90,
+    "genre": "Gangster Film, Crime Drama",
+    "image": "scarface1932",
+    "rating": 8
   },
-  {
-    "title": "Pan's Labyrinth",
-    "director": "Guillermo del Toro",
-    "year": 2006,
-    "country": "Spain-Mexico-USA",
-    "runtime": 120,
-    "genre": "Fantasy, Fairy Tales & Legends",
-    "rating": 10
-  },
-  {
-    "title": "Inglourious Basterds",
-    "director": "Quentin Tarantino",
-    "year": 2009,
-    "country": "USA-Germany",
-    "runtime": 153,
-    "genre": "War Adventure",
-    "rating": 10
-  },
-
   {
     "title": "Trouble in Paradise",
     "director": "Ernst Lubitsch",
@@ -2006,6 +514,72 @@ const lists = [ // Nosferatu
     "country": "USA",
     "runtime": 83,
     "genre": "Sophisticated Comedy, Romantic Comedy"
+  },
+  {
+    "title": "Vampyr",
+    "director": "Carl Theodor Dreyer",
+    "year": 1932,
+    "country": "Germany-France",
+    "runtime": 73,
+    "genre": "Horror, Gothic Film"
+  },
+  {
+    "title": "42nd Street",
+    "director": "Lloyd Bacon",
+    "year": 1933,
+    "country": "USA",
+    "runtime": 89,
+    "genre": "Backstage Musical, Musical Comedy"
+  },
+  {
+    "title": "Design for Living",
+    "director": "Ernst Lubitsch",
+    "year": 1933,
+    "country": "USA",
+    "runtime": 90,
+    "genre": "Romance, Sophisticated Comedy"
+  },
+  {
+    "title": "Duck Soup",
+    "director": "Leo McCarey",
+    "year": 1933,
+    "country": "USA",
+    "runtime": 70,
+    "genre": "Anarchic Comedy, Farce"
+  },
+  {
+    "title": "King Kong",
+    "director": "Merian C. Cooper & Ernest B. Schoedsack",
+    "year": 1933,
+    "country": "USA",
+    "runtime": 103,
+    "genre": "Adventure, Monster Film",
+    "rating": 6
+  },
+  {
+    "title": "Outskirts",
+    "director": "Boris Barnet",
+    "year": 1933,
+    "country": "USSR",
+    "runtime": 98,
+    "genre": "War Drama, Period Film"
+  },
+  {
+    "title": "The Testament of Dr. Mabuse",
+    "director": "Fritz Lang",
+    "year": 1933,
+    "country": "Germany",
+    "runtime": 120,
+    "genre": "Master Criminal Film, Police Detective Film",
+    "rating": 7
+  },
+  {
+    "title": "Zero for Conduct",
+    "director": "Jean Vigo",
+    "year": 1933,
+    "country": "France",
+    "runtime": 41,
+    "genre": "Coming-of-Age, Childhood Drama"
   },
   {
     "title": "It Happened One Night",
@@ -2017,12 +591,37 @@ const lists = [ // Nosferatu
     "rating": 9
   },
   {
-    "title": "The 39 Steps",
-    "director": "Alfred Hitchcock",
-    "year": 1935,
+    "title": "It's a Gift",
+    "director": "Norman Z. McLeod",
+    "year": 1934,
+    "country": "USA",
+    "runtime": 73,
+    "genre": "Comedy, Screwball Comedy"
+  },
+  {
+    "title": "L'Atalante",
+    "director": "Jean Vigo",
+    "year": 1934,
+    "country": "France",
+    "runtime": 89,
+    "genre": "Romantic Drama, Marriage Drama",
+    "rating": 8
+  },
+  {
+    "title": "Man of Aran",
+    "director": "Robert Flaherty",
+    "year": 1934,
     "country": "UK",
-    "runtime": 87,
-    "genre": "Thriller, Spy Film"
+    "runtime": 77,
+    "genre": "Anthropology, Documentary"
+  },
+  {
+    "title": "The Scarlet Empress",
+    "director": "Josef von Sternberg",
+    "year": 1934,
+    "country": "USA",
+    "runtime": 110,
+    "genre": "Historical Film, Period Film"
   },
   {
     "title": "A Night at the Opera",
@@ -2032,6 +631,22 @@ const lists = [ // Nosferatu
     "runtime": 92,
     "genre": "Anarchic Comedy, Farce",
     "rating": 9
+  },
+  {
+    "title": "Bride of Frankenstein",
+    "director": "James Whale",
+    "year": 1935,
+    "country": "USA",
+    "runtime": 75,
+    "genre": "Monster Film, Sci-Fi Horror"
+  },
+  {
+    "title": "The 39 Steps",
+    "director": "Alfred Hitchcock",
+    "year": 1935,
+    "country": "UK",
+    "runtime": 87,
+    "genre": "Thriller, Spy Film"
   },
   {
     "title": "Top Hat",
@@ -2050,1152 +665,12 @@ const lists = [ // Nosferatu
     "genre": "Propaganda Film, Documentary"
   },
   {
-    "title": "The Adventures of Robin Hood",
-    "director": "Michael Curtiz",
-    "year": 1938,
-    "country": "USA",
-    "runtime": 102,
-    "genre": "Swashbuckler, Romantic Adventure"
-  },
-  {
-    "title": "Bringing Up Baby",
-    "director": "Howard Hawks",
-    "year": 1938,
-    "country": "USA",
-    "runtime": 102,
-    "genre": "Screwball Comedy, Romantic Comedy"
-  },
-  {
-    "title": "Gone with the Wind",
-    "director": "Victor Fleming",
-    "year": 1939,
-    "country": "USA",
-    "runtime": 222,
-    "genre": "Romantic Epic, Historical Epic"
-  },
-  {
-    "title": "His Girl Friday",
-    "director": "Howard Hawks",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 92,
-    "genre": "Screwball Comedy, Romantic Comedy"
-  },
-  {
-    "title": "Pinocchio",
-    "director": "Ben Sharpsteen & Hamilton Luske",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 88,
-    "genre": "Children's Fantasy, Animated Musical",
-    "rating": 9
-  },
-  {
-    "title": "Casablanca",
-    "director": "Michael Curtiz",
-    "year": 1942,
-    "country": "USA",
-    "runtime": 102,
-    "genre": "Drama, War Romance"
-  },
-  {
-    "title": "To Be or Not to Be",
-    "director": "Ernst Lubitsch",
-    "year": 1942,
-    "country": "USA",
-    "runtime": 99,
-    "genre": "Comedy, Satire"
-  },
-  {
-    "title": "Laura",
-    "director": "Otto Preminger",
-    "year": 1944,
-    "country": "USA",
-    "runtime": 85,
-    "genre": "Mystery, Film Noir"
-  },
-  {
-    "title": "To Have and Have Not",
-    "director": "Howard Hawks",
-    "year": 1944,
-    "country": "USA",
-    "runtime": 100,
-    "genre": "Drama, Romance",
-    "rating": 9
-  },
-  {
-    "title": "Brief Encounter",
-    "director": "David Lean",
-    "year": 1945,
-    "country": "UK",
-    "runtime": 85,
-    "genre": "Drama, Romance"
-  },
-  {
-    "title": "Les Dames du Bois de Boulogne",
-    "director": "Robert Bresson",
-    "year": 1945,
-    "country": "France",
-    "runtime": 85,
-    "genre": "Psychological Drama, Period Film"
-  },
-  {
-    "title": "The Big Sleep",
-    "director": "Howard Hawks",
-    "year": 1946,
-    "country": "USA",
-    "runtime": 114,
-    "genre": "Mystery, Film Noir",
-    "rating": 9
-  },
-  {
-    "title": "Great Expectations",
-    "director": "David Lean",
-    "year": 1946,
-    "country": "UK",
-    "runtime": 118,
-    "genre": "Drama, Period Film",
-    "rating": 9
-  },
-  {
-    "title": "Notorious",
-    "director": "Alfred Hitchcock",
-    "year": 1946,
-    "country": "USA",
-    "runtime": 101,
-    "genre": "Thriller, Romantic Mystery",
-    "rating": 9
-  },
-  {
-    "title": "The Treasure of the Sierra Madre",
-    "director": "John Huston",
-    "year": 1948,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Adventure, Drama",
-    "rating": 9
-  },
-  {
-    "title": "On the Town",
-    "director": "Stanley Donen & Gene Kelly",
-    "year": 1949,
-    "country": "USA",
-    "runtime": 98,
-    "genre": "Musical, Comedy",
-    "rating": 9
-  },
-  {
-    "title": "The Third Man",
-    "director": "Carol Reed",
-    "year": 1949,
-    "country": "UK",
-    "runtime": 104,
-    "genre": "Mystery, Film Noir",
-    "rating": 9
-  },
-  {
-    "title": "In a Lonely Place",
-    "director": "Nicholas Ray",
-    "year": 1950,
-    "country": "USA",
-    "runtime": 91,
-    "genre": "Psychological Drama, Film Noir",
-    "rating": 9
-  },
-  {
-    "title": "Orpheus",
-    "director": "Jean Cocteau",
-    "year": 1950,
-    "country": "France",
-    "runtime": 95,
-    "genre": "Fantasy, Romantic Fantasy",
-    "rating": 9
-  },
-  {
-    "title": "A Streetcar Named Desire",
-    "director": "Elia Kazan",
-    "year": 1951,
-    "country": "USA",
-    "runtime": 122,
-    "genre": "Marriage Drama, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "The Day the Earth Stood Still",
-    "director": "Robert Wise",
-    "year": 1951,
-    "country": "USA",
-    "runtime": 92,
-    "genre": "Science Fiction, Alien Invasion Film",
-    "rating": 9
-  },
-  {
-    "title": "Diary of a Country Priest",
-    "director": "Robert Bresson",
-    "year": 1951,
-    "country": "France",
-    "runtime": 120,
-    "genre": "Psychological Drama, Religious Drama"
-  },
-  {
-    "title": "Limelight",
-    "director": "Charles Chaplin",
-    "year": 1952,
-    "country": "USA",
-    "runtime": 145,
-    "genre": "Comedy Drama, Melodrama"
-  },
-  {
-    "title": "Singin' in the Rain",
-    "director": "Stanley Donen",
-    "year": 1952,
-    "country": "USA",
-    "runtime": 102,
-    "genre": "Musical, Showbiz Comedy",
-    "rating": 9
-  },
-  {
-    "title": "The Band Wagon",
-    "director": "Vincente Minnelli",
-    "year": 1953,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Musical, Comedy",
-    "rating": 9
-  },
-  {
-    "title": "The Big Heat",
-    "director": "Fritz Lang",
-    "year": 1953,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Crime, Film Noir"
-  },
-  {
-    "title": "Summer with Monika",
-    "director": "Ingmar Bergman",
-    "year": 1953,
-    "country": "Sweden",
-    "runtime": 96,
-    "genre": "Psychological Drama, Romantic Drama",
-    "rating": 9
-  },
-  {
-    "title": "La Strada",
-    "director": "Federico Fellini",
-    "year": 1954,
-    "country": "Italy",
-    "runtime": 115,
-    "genre": "Melodrama, Romantic Drama",
-    "rating": 9
-  },
-  {
-    "title": "French Cancan",
-    "director": "Jean Renoir",
-    "year": 1955,
-    "country": "France",
-    "runtime": 93,
-    "genre": "Comedy Drama, Musical Comedy",
-    "rating": 9
-  },
-  {
-    "title": "Les Diaboliques",
-    "director": "Henri-Georges Clouzot",
-    "year": 1955,
-    "country": "France",
-    "runtime": 114,
-    "genre": "Thriller, Psychological Thriller",
-    "rating": 9
-  },
-  {
-    "title": "The Ten Commandments",
-    "director": "Cecil B. DeMille",
-    "year": 1956,
-    "country": "USA",
-    "runtime": 220,
-    "genre": "Religious Epic, Hagiography",
-    "rating": 9
-  },
-  {
-    "title": "Nights of Cabiria",
-    "director": "Federico Fellini",
-    "year": 1957,
-    "country": "Italy-France",
-    "runtime": 110,
-    "genre": "Melodrama, Tragi-comedy",
-    "rating": 9
-  },
-  {
-    "title": "12 Angry Men",
-    "director": "Sidney Lumet",
-    "year": 1957,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Drama, Courtroom Drama",
-    "rating": 9
-  },
-  {
-    "title": "The Cranes Are Flying",
-    "director": "Mikhail Kalatozov",
-    "year": 1957,
+    "title": "By the Bluest of Seas",
+    "director": "Boris Barnet",
+    "year": 1936,
     "country": "USSR",
-    "runtime": 94,
-    "genre": "Melodrama, Romantic Drama",
-    "rating": 9
-  },
-  {
-    "title": "Sweet Smell of Success",
-    "director": "Alexander Mackendrick",
-    "year": 1957,
-    "country": "USA",
-    "runtime": 96,
-    "genre": "Drama, Media Satire",
-    "rating": 9
-  },
-  {
-    "title": "Vertigo",
-    "director": "Alfred Hitchcock",
-    "year": 1958,
-    "country": "USA",
-    "runtime": 128,
-    "genre": "Romantic Mystery, Psychological Thriller",
-    "rating": 9
-  },
-  {
-    "title": "Anatomy of a Murder",
-    "director": "Otto Preminger",
-    "year": 1959,
-    "country": "USA",
-    "runtime": 160,
-    "genre": "Drama, Courtroom Drama",
-    "rating": 9
-  },
-  {
-    "title": "Pickpocket",
-    "director": "Robert Bresson",
-    "year": 1959,
-    "country": "France",
-    "runtime": 75,
-    "genre": "Crime Drama, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "Eyes Without a Face",
-    "director": "Georges Franju",
-    "year": 1960,
-    "country": "France-Italy",
-    "runtime": 88,
-    "genre": "Horror, Gothic Film",
-    "rating": 9
-  },
-  {
-    "title": "The Virgin Spring",
-    "director": "Ingmar Bergman",
-    "year": 1960,
-    "country": "Sweden",
-    "runtime": 88,
-    "genre": "Drama, Period Film",
-    "rating": 9
-  },
-  {
-    "title": "Breakfast at Tiffany's",
-    "director": "Blake Edwards",
-    "year": 1961,
-    "country": "USA",
-    "runtime": 115,
-    "genre": "Comedy Drama, Romantic Comedy",
-    "rating": 9
-  },
-  {
-    "title": "The Innocents",
-    "director": "Jack Clayton",
-    "year": 1961,
-    "country": "UK",
-    "runtime": 100,
-    "genre": "Horror, Supernatural Thriller",
-    "rating": 9
-  },
-  {
-    "title": "Last Year at Marienbad",
-    "director": "Alain Resnais",
-    "year": 1961,
-    "country": "France-Italy",
-    "runtime": 94,
-    "genre": "Avant-garde-Experimental, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "West Side Story",
-    "director": "Robert Wise",
-    "year": 1961,
-    "country": "USA",
-    "runtime": 151,
-    "genre": "Musical Romance, Juvenile Delinquency Film",
-    "rating": 9
-  },
-  {
-    "title": "Yojimbo",
-    "director": "Akira Kurosawa",
-    "year": 1961,
-    "country": "Japan",
-    "runtime": 110,
-    "genre": "Adventure, Samurai Film",
-    "rating": 9
-  },
-  {
-    "title": "Harakiri",
-    "director": "Masaki Kobayashi",
-    "year": 1962,
-    "country": "Japan",
-    "runtime": 133,
-    "genre": "Drama, Samurai Film",
-    "rating": 9
-  },
-  {
-    "title": "La Jetée",
-    "director": "Chris Marker",
-    "year": 1962,
-    "country": "France",
-    "runtime": 27,
-    "genre": "Science Fiction, Avant-garde-Experimental",
-    "rating": 9
-  },
-  {
-    "title": "Lawrence of Arabia",
-    "director": "David Lean",
-    "year": 1962,
-    "country": "UK",
-    "runtime": 216,
-    "genre": "Epic, British Empire Film",
-    "rating": 9
-  },
-  {
-    "title": "Winter Light",
-    "director": "Ingmar Bergman",
-    "year": 1962,
-    "country": "Sweden",
-    "runtime": 80,
-    "genre": "Psychological Drama, Religious Drama",
-    "rating": 9
-  },
-  {
-    "title": "Shock Corridor",
-    "director": "Samuel Fuller",
-    "year": 1963,
-    "country": "USA",
-    "runtime": 101,
-    "genre": "Drama, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "The Silence",
-    "director": "Ingmar Bergman",
-    "year": 1963,
-    "country": "Sweden",
-    "runtime": 96,
-    "genre": "Psychological Drama, Family Drama",
-    "rating": 9
-  },
-  {
-    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
-    "director": "Stanley Kubrick",
-    "year": 1964,
-    "country": "UK-USA",
-    "runtime": 93,
-    "genre": "Black Comedy, Anti-War Film",
-    "rating": 9
-  },
-  {
-    "title": "Marnie",
-    "director": "Alfred Hitchcock",
-    "year": 1964,
-    "country": "USA",
-    "runtime": 130,
-    "genre": "Romantic Mystery, Psychological Thriller",
-    "rating": 9
-  },
-  {
-    "title": "Belle de jour",
-    "director": "Luis Buñuel",
-    "year": 1967,
-    "country": "France-Italy",
-    "runtime": 100,
-    "genre": "Satire, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "Night of the Living Dead",
-    "director": "George A. Romero",
-    "year": 1968,
-    "country": "USA",
-    "runtime": 96,
-    "genre": "Horror, Creature Film",
-    "rating": 9
-  },
-  {
-    "title": "Easy Rider",
-    "director": "Dennis Hopper",
-    "year": 1969,
-    "country": "USA",
-    "runtime": 94,
-    "genre": "Road Movie, Biker Film",
-    "rating": 9
-  },
-  {
-    "title": "Harold and Maude",
-    "director": "Hal Ashby",
-    "year": 1971,
-    "country": "USA",
-    "runtime": 91,
-    "genre": "Black Comedy, Coming-of-Age",
-    "rating": 9
-  },
-  {
-    "title": "Pat Garrett and Billy the Kid",
-    "director": "Sam Peckinpah",
-    "year": 1973,
-    "country": "USA",
-    "runtime": 122,
-    "genre": "Revisionist Western, Outlaw (Gunfighter) Film",
-    "rating": 9
-  },
-  {
-    "title": "The Spirit of the Beehive",
-    "director": "Victor Erice",
-    "year": 1973,
-    "country": "Spain",
-    "runtime": 95,
-    "genre": "Drama, Childhood Drama",
-    "rating": 9
-  },
-  {
-    "title": "Alice in the Cities",
-    "director": "Wim Wenders",
-    "year": 1974,
-    "country": "West Germany",
-    "runtime": 110,
-    "genre": "Drama, Road Movie",
-    "rating": 9
-  },
-  {
-    "title": "Monty Python and the Holy Grail",
-    "director": "Terry Gilliam",
-    "year": 1975,
-    "country": "UK",
-    "runtime": 90,
-    "genre": "Anarchic Comedy, Parody/Spoof",
-    "rating": 9
-  },
-  {
-    "title": "Monty Python's Life of Brian",
-    "director": "Terry Jones",
-    "year": 1979,
-    "country": "UK",
-    "runtime": 93,
-    "genre": "Parody/Spoof, Religious Comedy",
-    "rating": 9
-  },
-  {
-    "title": "Amarcord",
-    "director": "Federico Fellini",
-    "year": 1973,
-    "country": "Italy",
-    "runtime": 127,
-    "genre": "Comedy Drama, Ensemble Film",
-    "rating": 9
-  },
-  {
-    "title": "The Holy Mountain",
-    "director": "Alejandro Jodorowsky",
-    "year": 1973,
-    "country": "Mexico-USA",
-    "runtime": 114,
-    "genre": "Avant-garde-Experimental, Surrealist Film",
-    "rating": 9
-  },
-  {
-    "title": "Mean Streets",
-    "director": "Martin Scorsese",
-    "year": 1973,
-    "country": "USA",
-    "runtime": 110,
-    "genre": "Crime, Urban Drama",
-    "rating": 10
-  },
-  {
-    "title": "Ali: Fear Eats the Soul",
-    "director": "Rainer Werner Fassbinder",
-    "year": 1974,
-    "country": "West Germany",
-    "runtime": 94,
-    "genre": "Melodrama, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "The Godfather Part II",
-    "director": "Francis Ford Coppola",
-    "year": 1974,
-    "country": "USA",
-    "runtime": 200,
-    "genre": "Gangster Film, Crime Drama",
-    "rating": 9
-  },
-  {
-    "title": "The Man Who Would Be King",
-    "director": "John Huston",
-    "year": 1975,
-    "country": "USA",
-    "runtime": 129,
-    "genre": "Adventure, British Empire Film",
-    "rating": 9
-  },
-  {
-    "title": "The Mirror",
-    "director": "Andrei Tarkovsky",
-    "year": 1975,
-    "country": "USSR",
-    "runtime": 108,
-    "genre": "Avant-garde-Experimental, Essay Film",
-    "rating": 9
-  },
-  {
-    "title": "Annie Hall",
-    "director": "Woody Allen",
-    "year": 1977,
-    "country": "USA",
-    "runtime": 94,
-    "genre": "Romantic Comedy, Urban Comedy",
-    "rating": 9
-  },
-  {
-    "title": "Close Encounters of the Third Kind",
-    "director": "Steven Spielberg",
-    "year": 1977,
-    "country": "USA",
-    "runtime": 135,
-    "genre": "Science Fiction, Adventure Drama",
-    "rating": 9
-  },
-  {
-    "title": "Alien",
-    "director": "Ridley Scott",
-    "year": 1979,
-    "country": "USA",
-    "runtime": 117,
-    "genre": "Horror, Science Fiction",
-    "rating": 9
-  },
-  {
-    "title": "Apocalypse Now",
-    "director": "Francis Ford Coppola",
-    "year": 1979,
-    "country": "USA",
-    "runtime": 150,
-    "genre": "Anti-War Film, Jungle Film",
-    "rating": 9
-  },
-  {
-    "title": "The Empire Strikes Back",
-    "director": "Irvin Kershner",
-    "year": 1980,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Science Fiction, Space Adventure",
-    "rating": 9
-  },
-  {
-    "title": "Kagemusha",
-    "director": "Akira Kurosawa",
-    "year": 1980,
-    "country": "Japan",
-    "runtime": 159,
-    "genre": "Historical Epic, Samurai Film",
-    "rating": 9
-  },
-  {
-    "title": "The Shining",
-    "director": "Stanley Kubrick",
-    "year": 1980,
-    "country": "USA",
-    "runtime": 142,
-    "genre": "Horror, Haunted House Film",
-    "rating": 9
-  },
-  {
-    "title": "Blade Runner",
-    "director": "Ridley Scott",
-    "year": 1982,
-    "country": "USA",
-    "runtime": 118,
-    "genre": "Science Fiction, Tech Noir",
-    "rating": 9
-  },
-  {
-    "title": "E.T. The Extra-Terrestrial",
-    "director": "Steven Spielberg",
-    "year": 1982,
-    "country": "USA",
-    "runtime": 115,
-    "genre": "Science Fiction, Children's Fantasy",
-    "rating": 9
-  },
-  {
-    "title": "Veronika Voss",
-    "director": "Rainer Werner Fassbinder",
-    "year": 1982,
-    "country": "West Germany",
-    "runtime": 105,
-    "genre": "Drama, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "Scarface",
-    "director": "Brian De Palma",
-    "year": 1983,
-    "country": "USA",
-    "runtime": 170,
-    "genre": "Crime Thriller, Gangster Film",
-    "rating": 9
-  },
-  {
-    "title": "Blood Simple",
-    "director": "Joel Coen & Ethan Coen",
-    "year": 1984,
-    "country": "USA",
-    "runtime": 97,
-    "genre": "Post-Noir (Modern Noir), Crime Thriller",
-    "rating": 9
-  },
-  {
-    "title": "Love Streams",
-    "director": "John Cassavetes",
-    "year": 1984,
-    "country": "USA",
-    "runtime": 141,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
-    "title": "Paris, Texas",
-    "director": "Wim Wenders",
-    "year": 1984,
-    "country": "USA",
-    "runtime": 150,
-    "genre": "Drama, Road Movie",
-    "rating": 9
-  },
-  {
-    "title": "The Terminator",
-    "director": "James Cameron",
-    "year": 1984,
-    "country": "USA",
-    "runtime": 107,
-    "genre": "Science Fiction, Action",
-    "rating": 9
-  },
-  {
-    "title": "Back to the Future",
-    "director": "Robert Zemeckis",
-    "year": 1985,
-    "country": "USA",
-    "runtime": 116,
-    "genre": "Teen Movie, Sci-Fi Comedy",
-    "rating": 9
-  },
-  {
-    "title": "The Purple Rose of Cairo",
-    "director": "Woody Allen",
-    "year": 1985,
-    "country": "USA",
-    "runtime": 82,
-    "genre": "Comedy, Romantic Fantasy",
-    "rating": 9
-  },
-  {
-    "title": "Taipei Story",
-    "director": "Edward Yang",
-    "year": 1985,
-    "country": "Taiwan",
-    "runtime": 119,
-    "genre": "Romantic Drama, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "Aliens",
-    "director": "James Cameron",
-    "year": 1986,
-    "country": "USA",
-    "runtime": 137,
-    "genre": "Horror, Sci-Fi Action",
-    "rating": 9
-  },
-  {
-    "title": "Hannah and Her Sisters",
-    "director": "Woody Allen",
-    "year": 1986,
-    "country": "USA",
-    "runtime": 106,
-    "genre": "Comedy Drama, Ensemble Film",
-    "rating": 9
-  },
-  {
-    "title": "The Sacrifice",
-    "director": "Andrei Tarkovsky",
-    "year": 1986,
-    "country": "France-Sweden",
-    "runtime": 145,
-    "genre": "Psychological Drama, Religious Drama",
-    "rating": 9
-  },
-  {
-    "title": "Evil Dead II",
-    "director": "Sam Raimi",
-    "year": 1987,
-    "country": "USA",
-    "runtime": 85,
-    "genre": "Horror, Horror Comedy",
-    "rating": 9
-  },
-  {
-    "title": "Robocop",
-    "director": "Paul Verhoeven",
-    "year": 1987,
-    "country": "USA",
-    "runtime": 103,
-    "genre": "Action, Science Fiction",
-    "rating": 9
-  },
-  {
-    "title": "Crimes and Misdemeanors",
-    "director": "Woody Allen",
-    "year": 1989,
-    "country": "USA",
-    "runtime": 104,
-    "genre": "Comedy Drama, Ensemble Film",
-    "rating": 9
-  },
-  {
-    "title": "Do the Right Thing",
-    "director": "Spike Lee",
-    "year": 1989,
-    "country": "USA",
-    "runtime": 120,
-    "genre": "Urban Drama, Ensemble Film",
-    "rating": 9
-  },
-  {
-    "title": "Edward Scissorhands",
-    "director": "Tim Burton",
-    "year": 1990,
-    "country": "USA",
-    "runtime": 100,
-    "genre": "Fantasy Comedy, Romance",
-    "rating": 9
-  },
-  {
-    "title": "A Brighter Summer Day",
-    "director": "Edward Yang",
-    "year": 1991,
-    "country": "Taiwan",
-    "runtime": 237,
-    "genre": "Drama, Coming-of-Age",
-    "rating": 9
-  },
-  {
-    "title": "Barton Fink",
-    "director": "Joel Coen & Ethan Coen",
-    "year": 1991,
-    "country": "USA",
-    "runtime": 117,
-    "genre": "Comedy Drama, Black Comedy",
-    "rating": 9
-  },
-  {
-    "title": "The Silence of the Lambs",
-    "director": "Jonathan Demme",
-    "year": 1991,
-    "country": "USA",
-    "runtime": 118,
-    "genre": "Psychological Drama, Family Drama",
-    "rating": 9
-  },
-  {
-    "title": "Thelma & Louise",
-    "director": "Ridley Scott",
-    "year": 1991,
-    "country": "USA",
-    "runtime": 128,
-    "genre": "Road Movie, Buddy Film",
-    "rating": 9
-  },
-  {
-    "title": "Reservoir Dogs",
-    "director": "Quentin Tarantino",
-    "year": 1992,
-    "country": "USA",
-    "runtime": 99,
-    "genre": "Crime Thriller, Gangster Film",
-    "rating": 9
-  },
-  {
-    "title": "Dazed and Confused",
-    "director": "Richard Linklater",
-    "year": 1993,
-    "country": "USA",
-    "runtime": 94,
-    "genre": "Comedy Drama, Coming-of-Age",
-    "rating": 9
-  },
-  {
-    "title": "Groundhog Day",
-    "director": "Harold Ramis",
-    "year": 1993,
-    "country": "USA",
-    "runtime": 103,
-    "genre": "Fantasy Comedy, Romantic Comedy",
-    "rating": 9
-  },
-  {
-    "title": "Jurassic Park",
-    "director": "Steven Spielberg",
-    "year": 1993,
-    "country": "USA",
-    "runtime": 126,
-    "genre": "Prehistoric Fantasy, Sci-Fi Action",
-    "rating": 9
-  },
-  {
-    "title": "The Nightmare Before Christmas",
-    "director": "Henry Selick",
-    "year": 1993,
-    "country": "USA",
-    "runtime": 76,
-    "genre": "Fantasy, Animated Musical",
-    "rating": 9
-  },
-  {
-    "title": "Three Colours: Blue",
-    "director": "Krzysztof Kieslowski",
-    "year": 1993,
-    "country": "France-Poland-Switzerland",
-    "runtime": 100,
-    "genre": "Psychological Drama, Romantic Drama",
-    "rating": 9
-  },
-  {
-    "title": "Chungking Express",
-    "director": "Wong Kar-wai",
-    "year": 1994,
-    "country": "Hong Kong",
-    "runtime": 104,
-    "genre": "Urban Drama, Romantic Drama",
-    "rating": 9
-  },
-  {
-    "title": "Before Sunrise",
-    "director": "Richard Linklater",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 101,
-    "genre": "Romance, Comedy Drama",
-    "rating": 9
-  },
-  {
-    "title": "Safe",
-    "director": "Todd Haynes",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Medical Drama, Psychological Drama",
-    "rating": 9
-  },
-  {
-    "title": "Trainspotting",
-    "director": "Danny Boyle",
-    "year": 1996,
-    "country": "UK",
-    "runtime": 95,
-    "genre": "Comedy Drama, Addiction Drama",
-    "rating": 9
-  },
-  {
-    "title": "Hana-bi",
-    "director": "Takeshi Kitano",
-    "year": 1997,
-    "country": "Japan",
-    "runtime": 103,
-    "genre": "Crime Drama, Road Movie",
-    "rating": 9
-  },
-  {
-    "title": "Starship Troopers",
-    "director": "Paul Verhoeven",
-    "year": 1997,
-    "country": "USA",
-    "runtime": 129,
-    "genre": "Sci-Fi Action, Political Satire",
-    "rating": 9
-  },
-  {
-    "title": "Festen",
-    "director": "Thomas Vinterberg",
-    "year": 1998,
-    "country": "Denmark",
-    "runtime": 105,
-    "genre": "Ensemble Film, Family Drama",
-    "rating": 9
-  },
-  {
-    "title": "Rushmore",
-    "director": "Wes Anderson",
-    "year": 1998,
-    "country": "USA",
-    "runtime": 93,
-    "genre": "Comedy Drama, Coming-of-Age",
-    "rating": 9
-  },
-  {
-    "title": "Amores perros",
-    "director": "Alejandro González Iñárritu",
-    "year": 2000,
-    "country": "Mexico",
-    "runtime": 153,
-    "genre": "Ensemble Film, Urban Drama",
-    "rating": 9
-  },
-  {
-    "title": "Talk to Her",
-    "director": "Pedro Almodóvar",
-    "year": 2002,
-    "country": "Spain",
-    "runtime": 112,
-    "genre": "Melodrama, Romantic Drama",
-    "rating": 9
-  },
-  {
-    "title": "Before Sunset",
-    "director": "Richard Linklater",
-    "year": 2004,
-    "country": "USA",
-    "runtime": 80,
-    "genre": "Romance, Comedy Drama",
-    "rating": 9
-  },
-  {
-    "title": "A History of Violence",
-    "director": "David Cronenberg",
-    "year": 2005,
-    "country": "USA-Germany",
-    "runtime": 96,
-    "genre": "Crime Thriller, Psychological Thriller",
-    "rating": 9
-  },
-  {
-    "title": "Children of Men",
-    "director": "Alfonso Cuarón",
-    "year": 2006,
-    "country": "USA-UK",
-    "runtime": 109,
-    "genre": "Psychological Sci-Fi, Action Thriller",
-    "rating": 9
-  },
-  {
-    "title": "The Host",
-    "director": "Bong Joon-ho",
-    "year": 2006,
-    "country": "South Korea-Japan",
-    "runtime": 119,
-    "genre": "Sci-Fi Horror, Monster Film",
-    "rating": 9
-  },
-  {
-    "title": "Inland Empire",
-    "director": "David Lynch",
-    "year": 2006,
-    "country": "USA-France-Poland",
-    "runtime": 180,
-    "genre": "Avant-garde-Experimental, Mystery",
-    "rating": 9
-  },
-  {
-    "title": "There Will Be Blood",
-    "director": "Paul Thomas Anderson",
-    "year": 2007,
-    "country": "USA",
-    "runtime": 158,
-    "genre": "Family Drama, Period Film",
-    "rating": 9
-  },
-  {
-    "title": "Certified Copy",
-    "director": "Abbas Kiarostami",
-    "year": 2010,
-    "country": "France-Italy-Belgium-Iran",
-    "runtime": 106,
-    "genre": "Drama, Slice of Life",
-    "rating": 9
-  },
-  {
-    "title": "Boyhood",
-    "director": "Richard Linklater",
-    "year": 2014,
-    "country": "USA",
-    "runtime": 165,
-    "genre": "Childhood Drama, Coming-of-Age"
-  },
-
-
-  {
-    "title": "City Lights",
-    "director": "Charles Chaplin",
-    "year": 1931,
-    "country": "USA",
-    "runtime": 86,
-    "genre": "Comedy Drama, Romance",
-    "rating": 8
-  },
-  {
-    "title": "Land Without Bread",
-    "director": "Luis Buñuel",
-    "year": 1932,
-    "country": "Spain",
-    "runtime": 28,
-    "genre": "Culture & Society, Documentary",
-    "rating": 8
-  },
-  {
-    "title": "Scarface",
-    "director": "Howard Hawks",
-    "year": 1932,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Gangster Film, Crime Drama",
-    "image": "scarface1932",
-    "rating": 8
-  },
-  {
-    "title": "Duck Soup",
-    "director": "Leo McCarey",
-    "year": 1933,
-    "country": "USA",
-    "runtime": 70,
-    "genre": "Anarchic Comedy, Farce"
-  },
-  {
-    "title": "L'Atalante",
-    "director": "Jean Vigo",
-    "year": 1934,
-    "country": "France",
-    "runtime": 89,
-    "genre": "Romantic Drama, Marriage Drama",
-    "rating": 8
-  },
-  {
-    "title": "Bride of Frankenstein",
-    "director": "James Whale",
-    "year": 1935,
-    "country": "USA",
-    "runtime": 75,
-    "genre": "Monster Film, Sci-Fi Horror"
+    "runtime": 71,
+    "genre": "Comedy, Romantic Comedy"
   },
   {
     "title": "Modern Times",
@@ -3207,12 +682,164 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Partie de campagne",
+    "director": "Jean Renoir",
+    "year": 1936,
+    "country": "France",
+    "runtime": 40,
+    "genre": "Comedy Drama, Romance"
+  },
+  {
+    "title": "The Crime of Monsieur Lange",
+    "director": "Jean Renoir",
+    "year": 1936,
+    "country": "France",
+    "runtime": 90,
+    "genre": "Drama, Crime Drama"
+  },
+  {
+    "title": "Humanity and Paper Balloons",
+    "director": "Sadao Yamanaka",
+    "year": 1937,
+    "country": "Japan",
+    "runtime": 86,
+    "genre": "Drama"
+  },
+  {
+    "title": "La Grande illusion",
+    "director": "Jean Renoir",
+    "year": 1937,
+    "country": "France",
+    "runtime": 117,
+    "genre": "Anti-War Film, War Drama"
+  },
+  {
+    "title": "Make Way for Tomorrow",
+    "director": "Leo McCarey",
+    "year": 1937,
+    "country": "USA",
+    "runtime": 92,
+    "genre": "Family Drama, Marriage Drama"
+  },
+  {
+    "title": "Pépé le Moko",
+    "director": "Julien Duvivier",
+    "year": 1937,
+    "country": "France",
+    "runtime": 94,
+    "genre": "Romantic Drama, Gangster Film"
+  },
+  {
+    "title": "Snow White and the Seven Dwarfs",
+    "director": "David Hand",
+    "year": 1937,
+    "country": "USA",
+    "runtime": 83,
+    "genre": "Children's Fantasy, Animated Musical"
+  },
+  {
+    "title": "Street Angel",
+    "director": "Yuan Muzhi",
+    "year": 1937,
+    "country": "China",
+    "runtime": 91,
+    "genre": "Drama, Comedy"
+  },
+  {
+    "title": "The Awful Truth",
+    "director": "Leo McCarey",
+    "year": 1937,
+    "country": "USA",
+    "runtime": 92,
+    "genre": "Romantic Comedy, Screwball Comedy"
+  },
+  {
+    "title": "Alexander Nevsky",
+    "director": "Sergei Eisenstein",
+    "year": 1938,
+    "country": "USSR",
+    "runtime": 107,
+    "genre": "Historical Epic, Biography"
+  },
+  {
+    "title": "Bringing Up Baby",
+    "director": "Howard Hawks",
+    "year": 1938,
+    "country": "USA",
+    "runtime": 102,
+    "genre": "Screwball Comedy, Romantic Comedy"
+  },
+  {
     "title": "Holiday",
     "director": "George Cukor",
     "year": 1938,
     "country": "USA",
     "runtime": 93,
     "genre": "Comedy, Romance"
+  },
+  {
+    "title": "La Bête humaine",
+    "director": "Jean Renoir",
+    "year": 1938,
+    "country": "France",
+    "runtime": 99,
+    "genre": "Crime Drama, Psychological Drama"
+  },
+  {
+    "title": "Olympia",
+    "director": "Leni Riefenstahl",
+    "year": 1938,
+    "country": "Germany",
+    "runtime": 220,
+    "genre": "Sports, Documentary"
+  },
+  {
+    "title": "Port of Shadows",
+    "director": "Marcel Carné",
+    "year": 1938,
+    "country": "France",
+    "runtime": 91,
+    "genre": "Romantic Drama, Crime Drama"
+  },
+  {
+    "title": "The Adventures of Robin Hood",
+    "director": "Michael Curtiz",
+    "year": 1938,
+    "country": "USA",
+    "runtime": 102,
+    "genre": "Swashbuckler, Romantic Adventure"
+  },
+  {
+    "title": "The Lady Vanishes",
+    "director": "Alfred Hitchcock",
+    "year": 1938,
+    "country": "UK",
+    "runtime": 97,
+    "genre": "Spy Film, Thriller"
+  },
+  {
+    "title": "Gone with the Wind",
+    "director": "Victor Fleming",
+    "year": 1939,
+    "country": "USA",
+    "runtime": 222,
+    "genre": "Romantic Epic, Historical Epic"
+  },
+  {
+    "title": "Le Jour se lève",
+    "director": "Marcel Carné",
+    "year": 1939,
+    "country": "France",
+    "runtime": 93,
+    "genre": "Crime Drama, Romantic Drama"
+  },
+  {
+    "title": "Mr. Smith Goes to Washington",
+    "director": "Frank Capra",
+    "year": 1939,
+    "country": "USA",
+    "runtime": 129,
+    "genre": "Comedy Drama, Message Movie"
   },
   {
     "title": "Ninotchka",
@@ -3222,6 +849,32 @@ const lists = [ // Nosferatu
     "runtime": 110,
     "genre": "Romantic Comedy, Sophisticated Comedy",
     "rating": 7
+  },
+  {
+    "title": "Only Angels Have Wings",
+    "director": "Howard Hawks",
+    "year": 1939,
+    "country": "USA",
+    "runtime": 121,
+    "genre": "Adventure, Buddy Film"
+  },
+  {
+    "title": "Stagecoach",
+    "director": "John Ford",
+    "year": 1939,
+    "country": "USA",
+    "runtime": 96,
+    "genre": "Western, Traditional Western",
+    "rating": 4
+  },
+  {
+    "title": "The Rules of the Game",
+    "director": "Jean Renoir",
+    "year": 1939,
+    "country": "France",
+    "runtime": 113,
+    "genre": "Comedy Drama, Ensemble Film",
+    "rating": 5
   },
   {
     "title": "The Story of the Last Chrysanthemums",
@@ -3242,6 +895,92 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Young Mr. Lincoln",
+    "director": "John Ford",
+    "year": 1939,
+    "country": "USA",
+    "runtime": 100,
+    "genre": "Historical Film, Biography",
+    "rating": 7
+  },
+  {
+    "title": "Fantasia",
+    "director": "Various Directors",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 120,
+    "genre": "Animated Musical, Children's Fantasy"
+  },
+  {
+    "title": "His Girl Friday",
+    "director": "Howard Hawks",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 92,
+    "genre": "Screwball Comedy, Romantic Comedy"
+  },
+  {
+    "title": "Pinocchio",
+    "director": "Ben Sharpsteen & Hamilton Luske",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 88,
+    "genre": "Children's Fantasy, Animated Musical",
+    "rating": 9
+  },
+  {
+    "title": "Rebecca",
+    "director": "Alfred Hitchcock",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 130,
+    "genre": "Mystery, Gothic Film"
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "director": "John Ford",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 129,
+    "genre": "Rural Drama, Americana",
+    "rating": 6
+  },
+  {
+    "title": "The Great Dictator",
+    "director": "Charles Chaplin",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 128,
+    "genre": "Comedy, Anti-War Film",
+    "rating": 7
+  },
+  {
+    "title": "The Philadelphia Story",
+    "director": "George Cukor",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Screwball Comedy, Romantic Comedy",
+    "rating": 7
+  },
+  {
+    "title": "The Shop Around the Corner",
+    "director": "Ernst Lubitsch",
+    "year": 1940,
+    "country": "USA",
+    "runtime": 97,
+    "genre": "Comedy, Romance",
+    "rating": 5
+  },
+  {
+    "title": "The Thief of Bagdad",
+    "director": "Michael Powell, Ludwig Berger & Tim Whelan",
+    "year": 1940,
+    "country": "UK",
+    "runtime": 106,
+    "genre": "Fantasy, Costume Adventure"
+  },
+  {
     "title": "Citizen Kane",
     "director": "Orson Welles",
     "year": 1941,
@@ -3249,6 +988,49 @@ const lists = [ // Nosferatu
     "genre": "Drama, Film a Clef",
     "runtime": 119,
     "rating": 8
+  },
+  {
+    "title": "Dumbo",
+    "director": "Ben Sharpsteen",
+    "year": 1941,
+    "country": "USA",
+    "runtime": 64,
+    "genre": "Animated Musical, Children's Fantasy",
+    "rating": 7
+  },
+  {
+    "title": "Hellzapoppin'",
+    "director": "H.C. Potter",
+    "year": 1941,
+    "country": "USA",
+    "runtime": 84,
+    "genre": "Anarchic Comedy, Backstage Musical"
+  },
+  {
+    "title": "How Green Was My Valley",
+    "director": "John Ford",
+    "year": 1941,
+    "country": "USA",
+    "runtime": 118,
+    "genre": "Family Drama, Rural Drama",
+    "rating": 7
+  },
+  {
+    "title": "Sullivan's Travels",
+    "director": "Preston Sturges",
+    "year": 1941,
+    "country": "USA",
+    "runtime": 91,
+    "genre": "Comedy, Satire",
+    "rating": 5
+  },
+  {
+    "title": "The Lady Eve",
+    "director": "Preston Sturges",
+    "year": 1941,
+    "country": "USA",
+    "runtime": 94,
+    "genre": "Romantic Comedy, Sophisticated Comedy"
   },
   {
     "title": "The Maltese Falcon",
@@ -3260,6 +1042,138 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Bambi",
+    "director": "David Hand",
+    "year": 1942,
+    "country": "USA",
+    "runtime": 69,
+    "genre": "Children's Fantasy, Animated Musical"
+  },
+  {
+    "title": "Casablanca",
+    "director": "Michael Curtiz",
+    "year": 1942,
+    "country": "USA",
+    "runtime": 102,
+    "genre": "Drama, War Romance"
+  },
+  {
+    "title": "Cat People",
+    "director": "Jacques Tourneur",
+    "year": 1942,
+    "country": "USA",
+    "runtime": 73,
+    "genre": "Horror, Supernatural Thriller",
+    "rating": 5
+  },
+  {
+    "title": "Listen to Britain",
+    "director": "Humphrey Jennings",
+    "year": 1942,
+    "country": "UK",
+    "runtime": 20,
+    "genre": "Culture & Society, Documentary"
+  },
+  {
+    "title": "The Magnificent Ambersons",
+    "director": "Orson Welles",
+    "year": 1942,
+    "country": "USA",
+    "runtime": 88,
+    "genre": "Family Drama, Period Film",
+    "rating": 7
+  },
+  {
+    "title": "The Palm Beach Story",
+    "director": "Preston Sturges",
+    "year": 1942,
+    "country": "USA",
+    "runtime": 90,
+    "genre": "Screwball Comedy, Comedy of Manners"
+  },
+  {
+    "title": "To Be or Not to Be",
+    "director": "Ernst Lubitsch",
+    "year": 1942,
+    "country": "USA",
+    "runtime": 99,
+    "genre": "Comedy, Satire"
+  },
+  {
+    "title": "Day of Wrath",
+    "director": "Carl Theodor Dreyer",
+    "year": 1943,
+    "country": "Denmark",
+    "runtime": 110,
+    "genre": "Period Film, Psychological Drama"
+  },
+  {
+    "title": "Fires Were Started",
+    "director": "Humphrey Jennings",
+    "year": 1943,
+    "country": "UK",
+    "runtime": 80,
+    "genre": "Military & War, Documentary"
+  },
+  {
+    "title": "I Walked with a Zombie",
+    "director": "Jacques Tourneur",
+    "year": 1943,
+    "country": "USA",
+    "runtime": 69,
+    "genre": "Horror, Supernatural Horror",
+    "rating": 6
+  },
+  {
+    "title": "Meshes of the Afternoon",
+    "director": "Maya Deren & Alexander Hammid",
+    "year": 1943,
+    "country": "USA",
+    "runtime": 15,
+    "genre": "Avant-garde-Experimental, Surrealist Film"
+  },
+  {
+    "title": "Ossessione",
+    "director": "Luchino Visconti",
+    "year": 1943,
+    "country": "Italy",
+    "runtime": 140,
+    "genre": "Drama, Crime",
+    "rating": 7
+  },
+  {
+    "title": "Shadow of a Doubt",
+    "director": "Alfred Hitchcock",
+    "year": 1943,
+    "country": "USA",
+    "runtime": 108,
+    "genre": "Thriller, Psychological Thriller"
+  },
+  {
+    "title": "The Life and Death of Colonel Blimp",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1943,
+    "country": "UK",
+    "runtime": 163,
+    "genre": "Drama, Period Film"
+  },
+  {
+    "title": "A Canterbury Tale",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1944,
+    "country": "UK",
+    "runtime": 124,
+    "genre": "Comedy Drama, Road Movie"
+  },
+  {
+    "title": "Double Indemnity",
+    "director": "Billy Wilder",
+    "year": 1944,
+    "country": "USA",
+    "runtime": 106,
+    "genre": "Film Noir, Crime Thriller"
+  },
+  {
     "title": "Ivan the Terrible, Part 1",
     "director": "Sergei Eisenstein",
     "year": 1944,
@@ -3267,6 +1181,23 @@ const lists = [ // Nosferatu
     "runtime": 96,
     "genre": "Historical Film, Biography",
     "rating": 8
+  },
+  {
+    "title": "Laura",
+    "director": "Otto Preminger",
+    "year": 1944,
+    "country": "USA",
+    "runtime": 85,
+    "genre": "Mystery, Film Noir"
+  },
+  {
+    "title": "Meet Me in St. Louis",
+    "director": "Vincente Minnelli",
+    "year": 1944,
+    "country": "USA",
+    "runtime": 113,
+    "genre": "Musical, Family Drama",
+    "rating": 3
   },
   {
     "title": "The Miracle of Morgan's Creek",
@@ -3278,6 +1209,23 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "To Have and Have Not",
+    "director": "Howard Hawks",
+    "year": 1944,
+    "country": "USA",
+    "runtime": 100,
+    "genre": "Drama, Romance",
+    "rating": 9
+  },
+  {
+    "title": "Brief Encounter",
+    "director": "David Lean",
+    "year": 1945,
+    "country": "UK",
+    "runtime": 85,
+    "genre": "Drama, Romance"
+  },
+  {
     "title": "Detour",
     "director": "Edgar G. Ulmer",
     "year": 1945,
@@ -3286,12 +1234,96 @@ const lists = [ // Nosferatu
     "genre": "Film Noir, Crime Drama"
   },
   {
+    "title": "I Know Where I'm Going!",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1945,
+    "country": "UK",
+    "runtime": 91,
+    "genre": "Drama, Romance"
+  },
+  {
+    "title": "Les Dames du Bois de Boulogne",
+    "director": "Robert Bresson",
+    "year": 1945,
+    "country": "France",
+    "runtime": 85,
+    "genre": "Psychological Drama, Period Film"
+  },
+  {
+    "title": "Les Enfants du paradis",
+    "director": "Marcel Carné",
+    "year": 1945,
+    "country": "France",
+    "runtime": 195,
+    "genre": "Period Film, Romantic Drama"
+  },
+  {
     "title": "Mildred Pierce",
     "director": "Michael Curtiz",
     "year": 1945,
     "country": "USA",
     "runtime": 109,
     "genre": "Melodrama, Film Noir"
+  },
+  {
+    "title": "Rome, Open City",
+    "director": "Roberto Rossellini",
+    "year": 1945,
+    "country": "Italy",
+    "runtime": 105,
+    "genre": "War Drama, Resistance Film",
+    "image": "romeopencity",
+    "rating": 7
+  },
+  {
+    "title": "They Were Expendable",
+    "director": "John Ford",
+    "year": 1945,
+    "country": "USA",
+    "runtime": 135,
+    "genre": "War Drama, Combat Film"
+  },
+  {
+    "title": "A Matter of Life and Death",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1946,
+    "country": "UK",
+    "runtime": 104,
+    "genre": "Romantic Fantasy, Heaven-Can-Wait Fantasy"
+  },
+  {
+    "title": "Beauty and the Beast",
+    "director": "Jean Cocteau",
+    "year": 1946,
+    "country": "France",
+    "runtime": 95,
+    "genre": "Fairy Tale, Romantic Fantasy",
+    "rating": 7
+  },
+  {
+    "title": "Duel in the Sun",
+    "director": "King Vidor",
+    "year": 1946,
+    "country": "USA",
+    "runtime": 130,
+    "genre": "Western, Melodrama"
+  },
+  {
+    "title": "Gilda",
+    "director": "Charles Vidor",
+    "year": 1946,
+    "country": "USA",
+    "runtime": 110,
+    "genre": "Film Noir, Romantic Mystery"
+  },
+  {
+    "title": "Great Expectations",
+    "director": "David Lean",
+    "year": 1946,
+    "country": "UK",
+    "runtime": 118,
+    "genre": "Drama, Period Film",
+    "rating": 9
   },
   {
     "title": "It's a Wonderful Life",
@@ -3312,6 +1344,58 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "My Darling Clementine",
+    "director": "John Ford",
+    "year": 1946,
+    "country": "USA",
+    "runtime": 97,
+    "genre": "Western, Traditional Western",
+    "rating": 6
+  },
+  {
+    "title": "Notorious",
+    "director": "Alfred Hitchcock",
+    "year": 1946,
+    "country": "USA",
+    "runtime": 101,
+    "genre": "Thriller, Romantic Mystery",
+    "rating": 9
+  },
+  {
+    "title": "Paisan",
+    "director": "Roberto Rossellini",
+    "year": 1946,
+    "country": "Italy",
+    "runtime": 120,
+    "genre": "Drama, War Drama"
+  },
+  {
+    "title": "The Best Years of Our Lives",
+    "director": "William Wyler",
+    "year": 1946,
+    "country": "US",
+    "runtime": 172,
+    "genre": "Family Drama, Ensemble Film"
+  },
+  {
+    "title": "The Big Sleep",
+    "director": "Howard Hawks",
+    "year": 1946,
+    "country": "USA",
+    "runtime": 114,
+    "genre": "Mystery, Film Noir",
+    "rating": 9
+  },
+  {
+    "title": "Black Narcissus",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1947,
+    "country": "UK",
+    "runtime": 99,
+    "genre": "Melodrama, Religious Drama",
+    "rating": 7
+  },
+  {
     "title": "Monsieur Verdoux",
     "director": "Charles Chaplin",
     "year": 1947,
@@ -3321,6 +1405,15 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Odd Man Out",
+    "director": "Carol Reed",
+    "year": 1947,
+    "country": "UK",
+    "runtime": 115,
+    "genre": "Drama, Crime",
+    "rating": 4
+  },
+  {
     "title": "Out of the Past",
     "director": "Jacques Tourneur",
     "year": 1947,
@@ -3328,6 +1421,15 @@ const lists = [ // Nosferatu
     "runtime": 97,
     "genre": "Crime, Film Noir",
     "rating": 8
+  },
+  {
+    "title": "The Ghost and Mrs. Muir",
+    "director": "Joseph L. Mankiewicz",
+    "year": 1947,
+    "country": "USA",
+    "runtime": 104,
+    "genre": "Romance, Fantasy",
+    "rating": 7
   },
   {
     "title": "Bicycle Thieves",
@@ -3348,13 +1450,38 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
-    "title": "The Red Shoes",
-    "director": "Michael Powell & Emeric Pressburger",
+    "title": "Germany, Year Zero",
+    "director": "Roberto Rossellini",
     "year": 1948,
-    "country": "UK",
+    "country": "Italy-West Germany",
+    "runtime": 74,
+    "genre": "War Drama, Childhood Drama"
+  },
+  {
+    "title": "La Terra trema",
+    "director": "Luchino Visconti",
+    "year": 1948,
+    "country": "Italy",
+    "runtime": 160,
+    "genre": "La Terra trema",
+    "rating": 6
+  },
+  {
+    "title": "Letter from an Unknown Woman",
+    "director": "Max Ophüls",
+    "year": 1948,
+    "country": "USA",
+    "runtime": 90,
+    "genre": "Melodrama, Romantic Drama"
+  },
+  {
+    "title": "Red River",
+    "director": "Howard Hawks",
+    "year": 1948,
+    "country": "USA",
     "runtime": 133,
-    "genre": "Romantic Drama, Musical Drama",
-    "rating": 8
+    "genre": "Western, Epic Western",
+    "rating": 6
   },
   {
     "title": "Rope",
@@ -3366,6 +1493,50 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Spring in a Small Town",
+    "director": "Fei Mu",
+    "year": 1948,
+    "country": "China",
+    "runtime": 85,
+    "genre": "Drama, Romantic Drama"
+  },
+  {
+    "title": "The Lady from Shanghai",
+    "director": "Orson Welles",
+    "year": 1948,
+    "country": "USA",
+    "runtime": 87,
+    "genre": "Film Noir, Romantic Mystery",
+    "rating": 7
+  },
+  {
+    "title": "The Red Shoes",
+    "director": "Michael Powell & Emeric Pressburger",
+    "year": 1948,
+    "country": "UK",
+    "runtime": 133,
+    "genre": "Romantic Drama, Musical Drama",
+    "rating": 8
+  },
+  {
+    "title": "The Treasure of the Sierra Madre",
+    "director": "John Huston",
+    "year": 1948,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Adventure, Drama",
+    "rating": 9
+  },
+  {
+    "title": "They Live by Night",
+    "director": "Nicholas Ray",
+    "year": 1948,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Crime Drama, Film Noir",
+    "rating": 6
+  },
+  {
     "title": "Kind Hearts and Coronets",
     "director": "Robert Hamer",
     "year": 1949,
@@ -3373,6 +1544,31 @@ const lists = [ // Nosferatu
     "runtime": 104,
     "genre": "Black Comedy, Crime Comedy",
     "rating": 8
+  },
+  {
+    "title": "Late Spring",
+    "director": "Yasujiro Ozu",
+    "year": 1949,
+    "country": "Japan",
+    "runtime": 108,
+    "genre": "Drama, Family Drama"
+  },
+  {
+    "title": "Le Sang des bêtes",
+    "director": "Georges Franju",
+    "year": 1949,
+    "country": "France",
+    "runtime": 20,
+    "genre": "Culture & Society, Documentary"
+  },
+  {
+    "title": "On the Town",
+    "director": "Stanley Donen & Gene Kelly",
+    "year": 1949,
+    "country": "USA",
+    "runtime": 98,
+    "genre": "Musical, Comedy",
+    "rating": 9
   },
   {
     "title": "She Wore a Yellow Ribbon",
@@ -3384,6 +1580,23 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "The Reckless Moment",
+    "director": "Max Ophüls",
+    "year": 1949,
+    "country": "USA",
+    "runtime": 82,
+    "genre": "Crime Drama, Film Noir"
+  },
+  {
+    "title": "The Third Man",
+    "director": "Carol Reed",
+    "year": 1949,
+    "country": "UK",
+    "runtime": 104,
+    "genre": "Mystery, Film Noir",
+    "rating": 9
+  },
+  {
     "title": "White Heat",
     "director": "Raoul Walsh",
     "year": 1949,
@@ -3391,6 +1604,14 @@ const lists = [ // Nosferatu
     "runtime": 114,
     "genre": "Crime, Gangster Film",
     "rating": 8
+  },
+  {
+    "title": "All About Eve",
+    "director": "Joseph L. Mankiewicz",
+    "year": 1950,
+    "country": "USA",
+    "runtime": 138,
+    "genre": "Satire, Showbiz Drama"
   },
   {
     "title": "Gun Crazy",
@@ -3402,13 +1623,155 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
-    "title": "The River",
-    "director": "Jean Renoir",
+    "title": "In a Lonely Place",
+    "director": "Nicholas Ray",
+    "year": 1950,
+    "country": "USA",
+    "runtime": 91,
+    "genre": "Psychological Drama, Film Noir",
+    "rating": 9
+  },
+  {
+    "title": "Los Olvidados",
+    "director": "Luis Buñuel",
+    "year": 1950,
+    "country": "Mexico",
+    "runtime": 88,
+    "genre": "Juvenile Delinquency Film, Urban Drama"
+  },
+  {
+    "title": "Orpheus",
+    "director": "Jean Cocteau",
+    "year": 1950,
+    "country": "France",
+    "runtime": 95,
+    "genre": "Fantasy, Romantic Fantasy",
+    "rating": 9
+  },
+  {
+    "title": "Rashomon",
+    "director": "Akira Kurosawa",
+    "year": 1950,
+    "country": "Japan",
+    "runtime": 88,
+    "genre": "Period Film, Crime Drama"
+  },
+  {
+    "title": "Stromboli",
+    "director": "Roberto Rossellini",
+    "year": 1950,
+    "country": "Italy",
+    "runtime": 107,
+    "genre": "Melodrama, Marriage Drama"
+  },
+  {
+    "title": "Sunset Blvd.",
+    "director": "Billy Wilder",
+    "year": 1950,
+    "country": "USA",
+    "runtime": 110,
+    "genre": "Showbiz Drama, Satire"
+  },
+  {
+    "title": "The Asphalt Jungle",
+    "director": "John Huston",
+    "year": 1950,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Crime Thriller, Film Noir",
+    "rating": 7
+  },
+  {
+    "title": "The Flowers of St. Francis",
+    "director": "Roberto Rossellini",
+    "year": 1950,
+    "country": "Italy",
+    "runtime": 83,
+    "genre": "Religious Drama, Biography"
+  },
+  {
+    "title": "Un Chant d'amour",
+    "director": "Jean Genet",
+    "year": 1950,
+    "country": "France",
+    "runtime": 26,
+    "genre": "Avant-garde-Experimental, Surrealist Film"
+  },
+  {
+    "title": "Wagon Master",
+    "director": "John Ford",
+    "year": 1950,
+    "country": "USA",
+    "runtime": 86,
+    "genre": "Western, Traditional Western",
+    "rating": 7
+  },
+  {
+    "title": "A Place in the Sun",
+    "director": "George Stevens",
     "year": 1951,
-    "country": "France-India-USA",
-    "runtime": 99,
-    "genre": "Drama, Romantic Drama",
-    "rating": 8
+    "country": "USA",
+    "runtime": 122,
+    "genre": "Romantic Drama, Psychological Drama",
+    "rating": 7
+  },
+  {
+    "title": "A Streetcar Named Desire",
+    "director": "Elia Kazan",
+    "year": 1951,
+    "country": "USA",
+    "runtime": 122,
+    "genre": "Marriage Drama, Psychological Drama",
+    "rating": 9
+  },
+  {
+    "title": "Ace in the Hole",
+    "director": "Billy Wilder",
+    "year": 1951,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Drama, Media Satire"
+  },
+  {
+    "title": "An American in Paris",
+    "director": "Vincente Minnelli",
+    "year": 1951,
+    "country": "USA",
+    "runtime": 115,
+    "genre": "Musical, Romance",
+    "rating": 6
+  },
+  {
+    "title": "Diary of a Country Priest",
+    "director": "Robert Bresson",
+    "year": 1951,
+    "country": "France",
+    "runtime": 120,
+    "genre": "Psychological Drama, Religious Drama"
+  },
+  {
+    "title": "Early Summer",
+    "director": "Yasujiro Ozu",
+    "year": 1951,
+    "country": "Japan",
+    "runtime": 135,
+    "genre": "Drama, Family Drama"
+  },
+  {
+    "title": "Miracle in Milan",
+    "director": "Vittorio De Sica",
+    "year": 1951,
+    "country": "Italy",
+    "runtime": 95,
+    "genre": "Fantasy Comedy, Satire"
+  },
+  {
+    "title": "Othello",
+    "director": "Orson Welles",
+    "year": 1951,
+    "country": "Italy-France-Morocco-USA",
+    "runtime": 90,
+    "genre": "Drama, Tragedy"
   },
   {
     "title": "Strangers on a Train",
@@ -3420,6 +1783,108 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "The African Queen",
+    "director": "John Huston",
+    "year": 1951,
+    "country": "USA",
+    "runtime": 105,
+    "genre": "Romance, Adventure",
+    "rating": 6
+  },
+  {
+    "title": "The Day the Earth Stood Still",
+    "director": "Robert Wise",
+    "year": 1951,
+    "country": "USA",
+    "runtime": 92,
+    "genre": "Science Fiction, Alien Invasion Film",
+    "rating": 9
+  },
+  {
+    "title": "The River",
+    "director": "Jean Renoir",
+    "year": 1951,
+    "country": "France-India-USA",
+    "runtime": 99,
+    "genre": "Drama, Romantic Drama",
+    "rating": 8
+  },
+  {
+    "title": "The Thing from Another World",
+    "director": "Christian Nyby & Howard Hawks",
+    "year": 1951,
+    "country": "USA",
+    "runtime": 87,
+    "genre": "Science Fiction, Monster Film"
+  },
+  {
+    "title": "Casque d'or",
+    "director": "Jacques Becker",
+    "year": 1952,
+    "country": "France",
+    "runtime": 96,
+    "genre": "Crime Drama, Melodrama"
+  },
+  {
+    "title": "Europa '51",
+    "director": "Roberto Rossellini",
+    "year": 1952,
+    "country": "Italy",
+    "runtime": 113,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "Forbidden Games",
+    "director": "René Clément",
+    "year": 1952,
+    "country": "France",
+    "runtime": 87,
+    "genre": "Childhood Drama, War Drama",
+    "rating": 7
+  },
+  {
+    "title": "High Noon",
+    "director": "Fred Zinnemann",
+    "year": 1952,
+    "country": "USA",
+    "runtime": 84,
+    "genre": "Western, Psychological Western",
+    "rating": 5
+  },
+  {
+    "title": "Ikiru",
+    "director": "Akira Kurosawa",
+    "year": 1952,
+    "country": "Japan",
+    "runtime": 143,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "Le Plaisir",
+    "director": "Max Ophüls",
+    "year": 1952,
+    "country": "France",
+    "runtime": 97,
+    "genre": "Romance, Drama"
+  },
+  {
+    "title": "Limelight",
+    "director": "Charles Chaplin",
+    "year": 1952,
+    "country": "USA",
+    "runtime": 145,
+    "genre": "Comedy Drama, Melodrama"
+  },
+  {
+    "title": "Singin' in the Rain",
+    "director": "Stanley Donen",
+    "year": 1952,
+    "country": "USA",
+    "runtime": 102,
+    "genre": "Musical, Showbiz Comedy",
+    "rating": 9
+  },
+  {
     "title": "The Bad and the Beautiful",
     "director": "Vincente Minnelli",
     "year": 1952,
@@ -3427,6 +1892,55 @@ const lists = [ // Nosferatu
     "runtime": 118,
     "genre": "Drama, Showbiz Drama",
     "rating": 8
+  },
+  {
+    "title": "The Golden Coach",
+    "director": "Jean Renoir",
+    "year": 1952,
+    "country": "Italy-France",
+    "runtime": 100,
+    "genre": "Costume Adventure, Romantic Adventure"
+  },
+  {
+    "title": "The Life of Oharu",
+    "director": "Kenji Mizoguchi",
+    "year": 1952,
+    "country": "Japan",
+    "runtime": 146,
+    "genre": "Drama, Period Film"
+  },
+  {
+    "title": "The Lusty Men",
+    "director": "Nicholas Ray",
+    "year": 1952,
+    "country": "USA",
+    "runtime": 113,
+    "genre": "Drama, Modern Western"
+  },
+  {
+    "title": "The Quiet Man",
+    "director": "John Ford",
+    "year": 1952,
+    "country": "USA",
+    "runtime": 129,
+    "genre": "Comedy Drama, Romance",
+    "rating": 7
+  },
+  {
+    "title": "Umberto D.",
+    "director": "Vittorio De Sica",
+    "year": 1952,
+    "country": "Italy",
+    "runtime": 89,
+    "genre": "Urban Drama, Melodrama"
+  },
+  {
+    "title": "Anatahan",
+    "director": "Josef von Sternberg",
+    "year": 1953,
+    "country": "Japan",
+    "runtime": 90,
+    "genre": "Drama, Adventure"
   },
   {
     "title": "El",
@@ -3438,6 +1952,124 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Gentlemen Prefer Blondes",
+    "director": "Howard Hawks",
+    "year": 1953,
+    "country": "US",
+    "runtime": 91,
+    "genre": "Musical Comedy, Romance",
+    "rating": 7
+  },
+  {
+    "title": "I Vitelloni",
+    "director": "Federico Fellini",
+    "year": 1953,
+    "country": "Italy",
+    "runtime": 104,
+    "genre": "Drama, Comedy"
+  },
+  {
+    "title": "Madame de...",
+    "director": "Max Ophüls",
+    "year": 1953,
+    "country": "France-Italy",
+    "runtime": 105,
+    "genre": "Period Film, Romantic Drama"
+  },
+  {
+    "title": "Mr. Hulot's Holiday",
+    "director": "Jacques Tati",
+    "year": 1953,
+    "country": "France",
+    "runtime": 86,
+    "genre": "Comedy, Slapstick"
+  },
+  {
+    "title": "Pickup on South Street",
+    "director": "Samuel Fuller",
+    "year": 1953,
+    "country": "USA",
+    "runtime": 80,
+    "genre": "Thriller, Film Noir"
+  },
+  {
+    "title": "Roman Holiday",
+    "director": "William Wyler",
+    "year": 1953,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Romance, Comedy",
+    "rating": 6
+  },
+  {
+    "title": "Sawdust and Tinsel",
+    "director": "Ingmar Bergman",
+    "year": 1953,
+    "country": "Sweden",
+    "runtime": 92,
+    "genre": "Drama, Psychological Drama",
+    "rating": 7
+  },
+  {
+    "title": "Shane",
+    "director": "George Stevens",
+    "year": 1953,
+    "country": "USA",
+    "runtime": 118,
+    "genre": "Western, Psychological Western",
+    "rating": 3
+  },
+  {
+    "title": "Summer with Monika",
+    "director": "Ingmar Bergman",
+    "year": 1953,
+    "country": "Sweden",
+    "runtime": 96,
+    "genre": "Psychological Drama, Romantic Drama",
+    "rating": 9
+  },
+  {
+    "title": "The Band Wagon",
+    "director": "Vincente Minnelli",
+    "year": 1953,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Musical, Comedy",
+    "rating": 9
+  },
+  {
+    "title": "The Big Heat",
+    "director": "Fritz Lang",
+    "year": 1953,
+    "country": "USA",
+    "runtime": 90,
+    "genre": "Crime, Film Noir"
+  },
+  {
+    "title": "The Sun Shines Bright",
+    "director": "John Ford",
+    "year": 1953,
+    "country": "USA",
+    "runtime": 90,
+    "genre": "Drama, Americana"
+  },
+  {
+    "title": "The Wages of Fear",
+    "director": "Henri-Georges Clouzot",
+    "year": 1953,
+    "country": "France-Italy",
+    "runtime": 105,
+    "genre": "Thriller, Adventure Drama"
+  },
+  {
+    "title": "Tokyo Story",
+    "director": "Yasujiro Ozu",
+    "year": 1953,
+    "country": "Japan",
+    "runtime": 134,
+    "genre": "Drama, Family Drama"
+  },
+  {
     "title": "Ugetsu monogatari",
     "director": "Kenji Mizoguchi",
     "year": 1953,
@@ -3445,6 +2077,40 @@ const lists = [ // Nosferatu
     "runtime": 96,
     "genre": "Romantic Fantasy, Period Film",
     "rating": 8
+  },
+  {
+    "title": "A Star is Born",
+    "director": "George Cukor",
+    "year": 1954,
+    "country": "USA",
+    "runtime": 154,
+    "genre": "Musical, Showbiz Drama"
+  },
+  {
+    "title": "Chikamatsu monogatari",
+    "director": "Kenji Mizoguchi",
+    "year": 1954,
+    "country": "Japan",
+    "runtime": 100,
+    "genre": "Melodrama, Romantic Drama"
+  },
+  {
+    "title": "Johnny Guitar",
+    "director": "Nicholas Ray",
+    "year": 1954,
+    "country": "USA",
+    "runtime": 110,
+    "genre": "Western, Psychological Western",
+    "rating": 7
+  },
+  {
+    "title": "La Strada",
+    "director": "Federico Fellini",
+    "year": 1954,
+    "country": "Italy",
+    "runtime": 115,
+    "genre": "Melodrama, Romantic Drama",
+    "rating": 9
   },
   {
     "title": "On the Waterfront",
@@ -3456,6 +2122,31 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Rear Window",
+    "director": "Alfred Hitchcock",
+    "year": 1954,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Thriller, Romantic Mystery"
+  },
+  {
+    "title": "Sansho the Bailiff",
+    "director": "Kenji Mizoguchi",
+    "year": 1954,
+    "country": "Japan",
+    "runtime": 125,
+    "genre": "Drama, Period Film"
+  },
+  {
+    "title": "Senso",
+    "director": "Luchino Visconti",
+    "year": 1954,
+    "country": "Italy",
+    "runtime": 115,
+    "genre": "Melodrama, Romantic Drama",
+    "rating": 7
+  },
+  {
     "title": "Seven Samurai",
     "director": "Akira Kurosawa",
     "year": 1954,
@@ -3463,6 +2154,23 @@ const lists = [ // Nosferatu
     "runtime": 200,
     "genre": "Drama, Samurai Film",
     "rating": 8
+  },
+  {
+    "title": "Touchez pas au Grisbi",
+    "director": "Jacques Becker",
+    "year": 1954,
+    "country": "France",
+    "runtime": 94,
+    "genre": "Crime, Caper"
+  },
+  {
+    "title": "Voyage in Italy",
+    "director": "Roberto Rossellini",
+    "year": 1954,
+    "country": "Italy",
+    "runtime": 97,
+    "genre": "Marriage Drama, Psychological Drama",
+    "rating": 5
   },
   {
     "title": "All That Heaven Allows",
@@ -3474,13 +2182,56 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
-    "title": "The Ladykillers",
-    "director": "Alexander Mackendrick",
+    "title": "East of Eden",
+    "director": "Elia Kazan",
     "year": 1955,
-    "country": "UK",
-    "runtime": 90,
-    "genre": "Crime, Black Comedy",
-    "rating": 8
+    "country": "USA",
+    "runtime": 115,
+    "genre": "Family Drama, Rural Drama",
+    "rating": 6
+  },
+  {
+    "title": "Floating Clouds",
+    "director": "Mikio Naruse",
+    "year": 1955,
+    "country": "Japan",
+    "runtime": 123,
+    "genre": "Drama, Urban Drama"
+  },
+  {
+    "title": "French Cancan",
+    "director": "Jean Renoir",
+    "year": 1955,
+    "country": "France",
+    "runtime": 93,
+    "genre": "Comedy Drama, Musical Comedy",
+    "rating": 9
+  },
+  {
+    "title": "Kiss Me Deadly",
+    "director": "Robert Aldrich",
+    "year": 1955,
+    "country": "USA",
+    "runtime": 106,
+    "genre": "Thriller, Film Noir",
+    "rating": 5
+  },
+  {
+    "title": "Les Diaboliques",
+    "director": "Henri-Georges Clouzot",
+    "year": 1955,
+    "country": "France",
+    "runtime": 114,
+    "genre": "Thriller, Psychological Thriller",
+    "rating": 9
+  },
+  {
+    "title": "Les Maîtres fous",
+    "director": "Jean Rouch",
+    "year": 1955,
+    "country": "France",
+    "runtime": 36,
+    "genre": "Culture & Society, Documentary"
   },
   {
     "title": "Lola Montès",
@@ -3492,6 +2243,14 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
+    "title": "Moonfleet",
+    "director": "Fritz Lang",
+    "year": 1955,
+    "country": "USA",
+    "runtime": 89,
+    "genre": "Costume Adventure, Swashbuckler"
+  },
+  {
     "title": "Night and Fog",
     "director": "Alain Resnais",
     "year": 1955,
@@ -3499,6 +2258,22 @@ const lists = [ // Nosferatu
     "runtime": 32,
     "genre": "Military & War, Documentary",
     "rating": 8
+  },
+  {
+    "title": "Ordet",
+    "director": "Carl Theodor Dreyer",
+    "year": 1955,
+    "country": "Denmark",
+    "runtime": 125,
+    "genre": "Drama, Religious Drama"
+  },
+  {
+    "title": "Pather Panchali",
+    "director": "Satyajit Ray",
+    "year": 1955,
+    "country": "India",
+    "runtime": 112,
+    "genre": "Rural Drama, Family Drama"
   },
   {
     "title": "Rebel Without a Cause",
@@ -3528,832 +2303,6 @@ const lists = [ // Nosferatu
     "rating": 8
   },
   {
-    "title": "Bigger Than Life",
-    "director": "Nicholas Ray",
-    "year": 1956,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Psychological Drama, Family Drama",
-    "rating": 8
-  },
-  {
-    "title": "The Killing",
-    "director": "Stanley Kubrick",
-    "year": 1956,
-    "country": "USA",
-    "runtime": 85,
-    "genre": "Crime Thriller, Film Noir",
-    "rating": 8
-  },
-  {
-    "title": "An Affair to Remember",
-    "director": "Leo McCarey",
-    "year": 1957,
-    "country": "USA",
-    "runtime": 115,
-    "genre": "Romance, Melodrama",
-    "rating": 8
-  },
-  {
-    "title": "Night of the Demon",
-    "director": "Jacques Tourneur",
-    "year": 1957,
-    "country": "UK",
-    "runtime": 82,
-    "genre": "Occult Horror, Gothic Film",
-    "rating": 8
-  },
-  {
-    "title": "The Misfits",
-    "director": "John Huston",
-    "year": 1961,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Drama, Modern Western",
-    "rating": 8
-  },
-  {
-    "title": "Hatari!",
-    "director": "Howard Hawks",
-    "year": 1962,
-    "country": "USA",
-    "runtime": 159,
-    "genre": "Adventure, Comedy",
-    "rating": 8
-  },
-  {
-    "title": "Lolita",
-    "director": "Stanley Kubrick",
-    "year": 1962,
-    "country": "UK",
-    "runtime": 152,
-    "genre": "Black Comedy, Psychological Drama",
-    "rating": 8
-  },
-  {
-    "title": "The Man Who Shot Liberty Valance",
-    "director": "John Ford",
-    "year": 1962,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Western, Outlaw (Gunfighter) Film",
-    "rating": 8
-  },
-  {
-    "title": "The Birds",
-    "director": "Alfred Hitchcock",
-    "year": 1963,
-    "country": "USA",
-    "runtime": 120,
-    "genre": "Horror, Natural Horror",
-    "rating": 8
-  },
-  {
-    "title": "Doctor Zhivago",
-    "director": "David Lean",
-    "year": 1965,
-    "country": "USA",
-    "runtime": 197,
-    "genre": "Romantic Epic, Period Film",
-    "rating": 8
-  },
-  {
-    "title": "Pierrot le fou",
-    "director": "Jean-Luc Godard",
-    "year": 1965,
-    "country": "France-Italy",
-    "runtime": 110,
-    "genre": "Road Movie, Romantic Drama",
-    "rating": 8
-  },
-  {
-    "title": "Simon of the Desert",
-    "director": "Luis Buñuel",
-    "year": 1965,
-    "country": "Mexico",
-    "runtime": 43,
-    "genre": "Satire, Religious Comedy",
-    "rating": 8
-  },
-  {
-    "title": "The Sound of Music",
-    "director": "Robert Wise",
-    "year": 1965,
-    "country": "USA",
-    "runtime": 174,
-    "genre": "Musical, Drama",
-    "rating": 8
-  },
-  {
-    "title": "Daisies",
-    "director": "Vera Chytilová",
-    "year": 1966,
-    "country": "Czechoslovakia",
-    "runtime": 76,
-    "genre": "Avant-garde-Experimental, Satire",
-    "rating": 8
-  },
-  {
-    "title": "Bonnie and Clyde",
-    "director": "Arthur Penn",
-    "year": 1967,
-    "country": "USA",
-    "runtime": 111,
-    "genre": "Gangster Film, Crime Drama",
-    "rating": 8
-  },
-  {
-    "title": "Butch Cassidy and the Sundance Kid",
-    "director": "George Roy Hill",
-    "year": 1969,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Western, Buddy Film",
-    "rating": 8
-  },
-  {
-    "title": "The Wild Bunch",
-    "director": "Sam Peckinpah",
-    "year": 1969,
-    "country": "USA",
-    "runtime": 144,
-    "genre": "Revisionist Western, Outlaw (Gunfighter) Film",
-    "rating": 8
-  },
-  {
-    "title": "The Private Life of Sherlock Holmes",
-    "director": "Billy Wilder",
-    "year": 1970,
-    "country": "USA",
-    "runtime": 125,
-    "genre": "Romantic Adventure, Comedy Thriller",
-    "rating": 8
-  },
-  {
-    "title": "Death in Venice",
-    "director": "Luchino Visconti",
-    "year": 1971,
-    "country": "Italy",
-    "runtime": 130,
-    "genre": "Drama, Period Film",
-    "rating": 8
-  },
-  {
-    "title": "Duel",
-    "director": "Steven Spielberg",
-    "year": 1971,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Thriller, Road Movie",
-    "rating": 8
-  },
-  {
-    "title": "Cries and Whispers",
-    "director": "Ingmar Bergman",
-    "year": 1972,
-    "country": "Sweden",
-    "runtime": 106,
-    "genre": "Drama, Family Drama",
-    "rating": 8
-  },
-  {
-    "title": "Deliverance",
-    "director": "John Boorman",
-    "year": 1972,
-    "country": "USA",
-    "runtime": 109,
-    "genre": "Drama, Adventure Drama",
-    "rating": 8
-  },
-  {
-    "title": "The Discreet Charm of the Bourgeoisie",
-    "director": "Luis Buñuel",
-    "year": 1972,
-    "country": "France",
-    "runtime": 100,
-    "genre": "Satire, Black Comedy",
-    "rating": 8
-  },
-  {
-    "title": "Badlands",
-    "director": "Terrence Malick",
-    "year": 1973,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Crime Drama, Americana",
-    "rating": 8
-  },
-  {
-    "title": "Assault on Precinct 13",
-    "director": "John Carpenter",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Action Thriller, Police Drama",
-    "rating": 8
-  },
-  {
-    "title": "Network",
-    "director": "Sidney Lumet",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 121,
-    "genre": "Comedy Drama, Media Satire",
-    "rating": 8
-  },
-  {
-    "title": "The Tenant",
-    "director": "Roman Polanski",
-    "year": 1976,
-    "country": "France-USA",
-    "runtime": 125,
-    "genre": "Thriller, Black Comedy",
-    "rating": 8
-  },
-  {
-    "title": "Star Wars",
-    "director": "George Lucas",
-    "year": 1977,
-    "country": "USA",
-    "runtime": 121,
-    "genre": "Science Fiction, Space Adventure",
-    "rating": 8
-  },
-  {
-    "title": "Dawn of the Dead",
-    "director": "George A. Romero",
-    "year": 1978,
-    "country": "USA",
-    "runtime": 126,
-    "genre": "Horror, Creature Film",
-    "rating": 8
-  },
-  {
-    "title": "Days of Heaven",
-    "director": "Terrence Malick",
-    "year": 1978,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Rural Drama, Romantic Drama",
-    "rating": 8
-  },
-  {
-    "title": "An American Werewolf in London",
-    "director": "John Landis",
-    "year": 1981,
-    "country": "USA",
-    "runtime": 97,
-    "genre": "Horror Comedy, Creature Film",
-    "rating": 8
-  },
-  {
-    "title": "Excalibur",
-    "director": "John Boorman",
-    "year": 1981,
-    "country": "UK",
-    "runtime": 140,
-    "genre": "Sword-and-Sorcery, Mythological Fantasy",
-    "rating": 8
-  },
-  {
-    "title": "Raiders of the Lost Ark",
-    "director": "Steven Spielberg",
-    "year": 1981,
-    "country": "USA",
-    "runtime": 115,
-    "genre": "Adventure, Action",
-    "rating": 8
-  },
-  {
-    "title": "Amadeus",
-    "director": "Milos Forman",
-    "year": 1984,
-    "country": "USA",
-    "runtime": 158,
-    "genre": "Musical Drama, Biography",
-    "rating": 8
-  },
-  {
-    "title": "Once Upon a Time in America",
-    "director": "Sergio Leone",
-    "year": 1984,
-    "country": "Italy-USA",
-    "runtime": 229,
-    "genre": "Crime, Gangster Film",
-    "rating": 8
-  },
-  {
-    "title": "Brazil",
-    "director": "Terry Gilliam",
-    "year": 1985,
-    "country": "UK",
-    "runtime": 131,
-    "genre": "Science Fiction, Satire",
-    "rating": 8
-  },
-  {
-    "title": "Blue Velvet",
-    "director": "David Lynch",
-    "year": 1986,
-    "country": "USA",
-    "runtime": 120,
-    "genre": "Mystery, Crime Thriller",
-    "rating": 8
-  },
-  {
-    "title": "Full Metal Jacket",
-    "director": "Stanley Kubrick",
-    "year": 1987,
-    "country": "USA",
-    "runtime": 116,
-    "genre": "Anti-War Film, War Drama",
-    "rating": 8
-  },
-  {
-    "title": "Raising Arizona",
-    "director": "Joel Coen & Ethan Coen",
-    "year": 1987,
-    "country": "USA",
-    "runtime": 92,
-    "genre": "Crime Comedy, Domestic Comedy",
-    "rating": 8
-  },
-  {
-    "title": "Akira",
-    "director": "Katsuhiro Otomo",
-    "year": 1988,
-    "country": "Japan",
-    "runtime": 124,
-    "genre": "Science Fiction, Anime",
-    "rating": 8
-  },
-  {
-    "title": "Die Hard",
-    "director": "John McTiernan",
-    "year": 1988,
-    "country": "USA",
-    "runtime": 131,
-    "genre": "Action, Action Thriller",
-    "rating": 8
-  },
-  {
-    "title": "The Last Temptation of Christ",
-    "director": "Martin Scorsese",
-    "year": 1988,
-    "country": "USA",
-    "runtime": 164,
-    "genre": "Religious Drama, Hagiography",
-    "rating": 8
-  },
-  {
-    "title": "They Live",
-    "director": "John Carpenter",
-    "year": 1988,
-    "country": "USA",
-    "runtime": 93,
-    "genre": "Alien Film, Sci-Fi Action",
-    "rating": 8
-  },
-  {
-    "title": "The Killer",
-    "director": "John Woo",
-    "year": 1989,
-    "country": "Hong Kong",
-    "runtime": 110,
-    "genre": "Crime, Action Thriller",
-    "rating": 8
-  },
-  {
-    "title": "My Own Private Idaho",
-    "director": "Gus Van Sant",
-    "year": 1991,
-    "country": "USA",
-    "runtime": 102,
-    "genre": "Drama, Buddy Film",
-    "rating": 8
-  },
-  {
-    "title": "Raise the Red Lantern",
-    "director": "Zhang Yimou",
-    "year": 1991,
-    "country": "Hong Kong",
-    "runtime": 125,
-    "genre": "Period Film, Marriage Drama",
-    "rating": 8
-  },
-  {
-    "title": "Terminator 2: Judgment Day",
-    "director": "James Cameron",
-    "year": 1991,
-    "country": "USA",
-    "runtime": 136,
-    "genre": "Science Fiction, Sci-Fi Action",
-    "rating": 8
-  },
-  {
-    "title": "Unforgiven",
-    "director": "Clint Eastwood",
-    "year": 1992,
-    "country": "USA",
-    "runtime": 127,
-    "genre": "Western, Outlaw (Gunfighter) Film",
-    "rating": 8
-  },
-  {
-    "title": "Carlito's Way",
-    "director": "Brian De Palma",
-    "year": 1993,
-    "country": "USA",
-    "runtime": 144,
-    "genre": "Crime Drama, Gangster Film",
-    "rating": 8
-  },
-  {
-    "title": "Schindler's List",
-    "director": "Steven Spielberg",
-    "year": 1993,
-    "country": "USA",
-    "runtime": 195,
-    "genre": "War Drama, Biography",
-    "rating": 8
-  },
-  {
-    "title": "Forrest Gump",
-    "director": "Robert Zemeckis",
-    "year": 1994,
-    "country": "USA",
-    "runtime": 142,
-    "genre": "Comedy Drama, Americana",
-    "rating": 8
-  },
-  {
-    "title": "Three Colours: Red",
-    "director": "Krzysztof Kieslowski",
-    "year": 1994,
-    "country": "France-Switzerland-Poland",
-    "runtime": 99,
-    "genre": "Psychological Drama, Romantic Drama",
-    "rating": 8
-  },
-  {
-    "title": "Heat",
-    "director": "Michael Mann",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 174,
-    "genre": "Crime, Thriller",
-    "rating": 8
-  },
-  {
-    "title": "Se7en",
-    "director": "David Fincher",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 127,
-    "genre": "Police Detective Film, Crime Thriller",
-    "rating": 8
-  },
-  {
-    "title": "The Usual Suspects",
-    "director": "Bryan Singer",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 105,
-    "genre": "Crime, Thriller",
-    "rating": 8
-  },
-  {
-    "title": "Funny Games",
-    "director": "Michael Haneke",
-    "year": 1997,
-    "country": "Austria",
-    "runtime": 108,
-    "genre": "Crime Thriller, Psychological Thriller",
-    "rating": 8
-  },
-  {
-    "title": "The Thin Red Line",
-    "director": "Terrence Malick",
-    "year": 1998,
-    "country": "USA",
-    "runtime": 170,
-    "genre": "War Drama, Ensemble Film",
-    "rating": 8
-  },
-  {
-    "title": "The Matrix",
-    "director": "Lana Wachowski & Lilly Wachowski",
-    "year": 1999,
-    "country": "USA-Australia",
-    "runtime": 136,
-    "genre": "Science Fiction, Sci-Fi Action",
-    "rating": 8
-  },
-  {
-    "title": "Memento",
-    "director": "Christopher Nolan",
-    "year": 2000,
-    "country": "USA",
-    "runtime": 113,
-    "genre": "Mystery, Crime Thriller",
-    "rating": 8
-  },
-  {
-    "title": "The Royal Tenenbaums",
-    "director": "Wes Anderson",
-    "year": 2001,
-    "country": "USA",
-    "runtime": 109,
-    "genre": "Comedy Drama, Comedy of Manners",
-    "rating": 8
-  },
-  {
-    "title": "Saraband",
-    "director": "Ingmar Bergman",
-    "year": 2003,
-    "country": "Sweden-Denmark-Norway-Italy-Finland-Germany-Austria",
-    "runtime": 120,
-    "genre": "Psychological Drama, Family Drama",
-    "rating": 8
-  },
-  {
-    "title": "No Country for Old Men",
-    "director": "Joel Coen & Ethan Coen",
-    "year": 2007,
-    "country": "USA",
-    "runtime": 122,
-    "genre": "Thriller, Crime Thriller",
-    "rating": 8
-  },
-  {
-    "title": "The Dark Knight",
-    "director": "Christopher Nolan",
-    "year": 2008,
-    "country": "USA-UK",
-    "runtime": 152,
-    "genre": "Crime Drama, Comic-Book Superhero Film",
-    "rating": 8
-  },
-  {
-    "title": "Mad Max: Fury Road",
-    "director": "George Miller",
-    "year": 2015,
-    "country": "Australia-USA",
-    "runtime": 120,
-    "genre": "Action Thriller, Road Movie",
-    "rating": 8
-  },
-
-
-
-  {
-    "title": "Boudu Saved from Drowning",
-    "director": "Jean Renoir",
-    "year": 1932,
-    "country": "France",
-    "runtime": 87,
-    "genre": "Comedy, Satire"
-  },
-  {
-    "title": "Design for Living",
-    "director": "Ernst Lubitsch",
-    "year": 1933,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Romance, Sophisticated Comedy"
-  },
-  {
-    "title": "Outskirts",
-    "director": "Boris Barnet",
-    "year": 1933,
-    "country": "USSR",
-    "runtime": 98,
-    "genre": "War Drama, Period Film"
-  },
-  {
-    "title": "The Testament of Dr. Mabuse",
-    "director": "Fritz Lang",
-    "year": 1933,
-    "country": "Germany",
-    "runtime": 120,
-    "genre": "Master Criminal Film, Police Detective Film",
-    "rating": 7
-  },
-  {
-    "title": "La Grande illusion",
-    "director": "Jean Renoir",
-    "year": 1937,
-    "country": "France",
-    "runtime": 117,
-    "genre": "Anti-War Film, War Drama"
-  },
-  {
-    "title": "Snow White and the Seven Dwarfs",
-    "director": "David Hand",
-    "year": 1937,
-    "country": "USA",
-    "runtime": 83,
-    "genre": "Children's Fantasy, Animated Musical"
-  },
-  {
-    "title": "Only Angels Have Wings",
-    "director": "Howard Hawks",
-    "year": 1939,
-    "country": "USA",
-    "runtime": 121,
-    "genre": "Adventure, Buddy Film"
-  },
-  {
-    "title": "Young Mr. Lincoln",
-    "director": "John Ford",
-    "year": 1939,
-    "country": "USA",
-    "runtime": 100,
-    "genre": "Historical Film, Biography",
-    "rating": 7
-  },
-  {
-    "title": "The Philadelphia Story",
-    "director": "George Cukor",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Screwball Comedy, Romantic Comedy",
-    "rating": 7
-  },
-  {
-    "title": "The Great Dictator",
-    "director": "Charles Chaplin",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 128,
-    "genre": "Comedy, Anti-War Film",
-    "rating": 7
-  },
-  {
-    "title": "Dumbo",
-    "director": "Ben Sharpsteen",
-    "year": 1941,
-    "country": "USA",
-    "runtime": 64,
-    "genre": "Animated Musical, Children's Fantasy",
-    "rating": 7
-  },
-  {
-    "title": "How Green Was My Valley",
-    "director": "John Ford",
-    "year": 1941,
-    "country": "USA",
-    "runtime": 118,
-    "genre": "Family Drama, Rural Drama",
-    "rating": 7
-  },
-  {
-    "title": "The Magnificent Ambersons",
-    "director": "Orson Welles",
-    "year": 1942,
-    "country": "USA",
-    "runtime": 88,
-    "genre": "Family Drama, Period Film",
-    "rating": 7
-  },
-  {
-    "title": "Ossessione",
-    "director": "Luchino Visconti",
-    "year": 1943,
-    "country": "Italy",
-    "runtime": 140,
-    "genre": "Drama, Crime",
-    "rating": 7
-  },
-  {
-    "title": "Rome, Open City",
-    "director": "Roberto Rossellini",
-    "year": 1945,
-    "country": "Italy",
-    "runtime": 105,
-    "genre": "War Drama, Resistance Film",
-    "image": "romeopencity",
-    "rating": 7
-  },
-  {
-    "title": "Beauty and the Beast",
-    "director": "Jean Cocteau",
-    "year": 1946,
-    "country": "France",
-    "runtime": 95,
-    "genre": "Fairy Tale, Romantic Fantasy",
-    "rating": 7
-  },
-  {
-    "title": "Black Narcissus",
-    "director": "Michael Powell & Emeric Pressburger",
-    "year": 1947,
-    "country": "UK",
-    "runtime": 99,
-    "genre": "Melodrama, Religious Drama",
-    "rating": 7
-  },
-  {
-    "title": "The Ghost and Mrs. Muir",
-    "director": "Joseph L. Mankiewicz",
-    "year": 1947,
-    "country": "USA",
-    "runtime": 104,
-    "genre": "Romance, Fantasy",
-    "rating": 7
-  },
-  {
-    "title": "The Lady from Shanghai",
-    "director": "Orson Welles",
-    "year": 1948,
-    "country": "USA",
-    "runtime": 87,
-    "genre": "Film Noir, Romantic Mystery",
-    "rating": 7
-  },
-  {
-    "title": "The Asphalt Jungle",
-    "director": "John Huston",
-    "year": 1950,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Crime Thriller, Film Noir",
-    "rating": 7
-  },
-  {
-    "title": "Wagon Master",
-    "director": "John Ford",
-    "year": 1950,
-    "country": "USA",
-    "runtime": 86,
-    "genre": "Western, Traditional Western",
-    "rating": 7
-  },
-  {
-    "title": "A Place in the Sun",
-    "director": "George Stevens",
-    "year": 1951,
-    "country": "USA",
-    "runtime": 122,
-    "genre": "Romantic Drama, Psychological Drama",
-    "rating": 7
-  },
-  {
-    "title": "Forbidden Games",
-    "director": "René Clément",
-    "year": 1952,
-    "country": "France",
-    "runtime": 87,
-    "genre": "Childhood Drama, War Drama",
-    "rating": 7
-  },
-  {
-    "title": "The Quiet Man",
-    "director": "John Ford",
-    "year": 1952,
-    "country": "USA",
-    "runtime": 129,
-    "genre": "Comedy Drama, Romance",
-    "rating": 7
-  },
-  {
-    "title": "Gentlemen Prefer Blondes",
-    "director": "Howard Hawks",
-    "year": 1953,
-    "country": "US",
-    "runtime": 91,
-    "genre": "Musical Comedy, Romance",
-    "rating": 7
-  },
-  {
-    "title": "Sawdust and Tinsel",
-    "director": "Ingmar Bergman",
-    "year": 1953,
-    "country": "Sweden",
-    "runtime": 92,
-    "genre": "Drama, Psychological Drama",
-    "rating": 7
-  },
-  {
-    "title": "Johnny Guitar",
-    "director": "Nicholas Ray",
-    "year": 1954,
-    "country": "USA",
-    "runtime": 110,
-    "genre": "Western, Psychological Western",
-    "rating": 7
-  },
-  {
-    "title": "Senso",
-    "director": "Luchino Visconti",
-    "year": 1954,
-    "country": "Italy",
-    "runtime": 115,
-    "genre": "Melodrama, Romantic Drama",
-    "rating": 7
-  },
-  {
     "title": "The Criminal Life of Archibaldo de la Cruz",
     "director": "Luis Buñuel",
     "year": 1955,
@@ -4363,727 +2312,13 @@ const lists = [ // Nosferatu
     "rating": 7
   },
   {
-    "title": "Rio Bravo",
-    "director": "Howard Hawks",
-    "year": 1959,
-    "country": "USA",
-    "runtime": 141,
-    "genre": "Western, Buddy Film",
-    "rating": 7
-  },
-  {
-    "title": "Rocco and His Brothers",
-    "director": "Luchino Visconti",
-    "year": 1960,
-    "country": "Italy-France",
-    "runtime": 180,
-    "genre": "Family Drama, Urban Drama",
-    "rating": 7
-  },
-  {
-    "title": "Splendor in the Grass",
-    "director": "Elia Kazan",
-    "year": 1961,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Coming-of-Age, Romantic Drama",
-    "rating": 7
-  },
-  {
-    "title": "Jules et Jim",
-    "director": "François Truffaut",
-    "year": 1962,
-    "country": "France",
-    "runtime": 104,
-    "genre": "Drama, Romance",
-    "rating": 7
-  },
-  {
-    "title": "The Leopard",
-    "director": "Luchino Visconti",
-    "year": 1963,
-    "country": "Italy",
-    "runtime": 205,
-    "genre": "Epic, Family Drama",
-    "rating": 7
-  },
-  {
-    "title": "Red Desert",
-    "director": "Michelangelo Antonioni",
-    "year": 1964,
-    "country": "Italy-France",
-    "runtime": 118,
-    "genre": "Drama, Psychological Drama",
-    "rating": 7
-  },
-  {
-    "title": "Repulsion",
-    "director": "Roman Polanski",
-    "year": 1965,
-    "country": "UK",
-    "runtime": 105,
-    "genre": "Thriller, Psychological Thriller",
-    "rating": 7
-  },
-  {
-    "title": "Hour of the Wolf",
-    "director": "Ingmar Bergman",
-    "year": 1968,
-    "country": "Sweden",
-    "runtime": 88,
-    "genre": "Gothic Film, Psychological Drama",
-    "rating": 7
-  },
-  {
-    "title": "O Bandido da Luz Vermelha",
-    "director": "Rogério Sganzerla",
-    "year": 1968,
-    "country": "Brazil",
-    "runtime": 92,
-    "genre": "Biopic"
-  },
-  {
-    "title": "Fat City",
-    "director": "John Huston",
-    "year": 1972,
-    "country": "USA",
-    "runtime": 100,
-    "genre": "Drama, Sports Drama",
-    "rating": 7
-  },
-  {
-    "title": "Last Tango in Paris",
-    "director": "Bernardo Bertolucci",
-    "year": 1972,
-    "country": "France-Italy",
-    "runtime": 136,
-    "genre": "Psychological Drama, Erotic Drama",
-    "rating": 7
-  },
-  {
-    "title": "Don't Look Now",
-    "director": "Nicolas Roeg",
-    "year": 1973,
-    "country": "UK",
-    "runtime": 110,
-    "genre": "Psychological Thriller, Supernatural Thriller",
-    "rating": 7
-  },
-  {
-    "title": "The Exorcist",
-    "director": "William Friedkin",
-    "year": 1973,
-    "country": "USA",
-    "runtime": 122,
-    "genre": "Horror, Religious Drama",
-    "rating": 7
-  },
-  {
-    "title": "Chinatown",
-    "director": "Roman Polanski",
-    "year": 1974,
-    "country": "USA",
-    "runtime": 131,
-    "genre": "Mystery, Post-Noir (Modern Noir)",
-    "rating": 7
-  },
-  {
-    "title": "Dersu Uzala",
-    "director": "Akira Kurosawa",
-    "year": 1975,
-    "country": "USSR-Japan",
-    "runtime": 144,
-    "genre": "Drama, Adventure Drama",
-    "rating": 7
-  },
-  {
-    "title": "Jaws",
-    "director": "Steven Spielberg",
-    "year": 1975,
-    "country": "USA",
-    "runtime": 124,
-    "genre": "Thriller, Natural Horror",
-    "rating": 7
-  },
-  {
-    "title": "One Flew Over the Cuckoo's Nest",
-    "director": "Milos Forman",
-    "year": 1975,
-    "country": "USA",
-    "runtime": 133,
-    "genre": "Comedy Drama, Psychological Drama",
-    "rating": 7
-  },
-  {
-    "title": "Picnic at Hanging Rock",
-    "director": "Peter Weir",
-    "year": 1975,
-    "country": "Australia",
-    "runtime": 110,
-    "genre": "Mystery, Period Film",
-    "rating": 7
-  },
-  {
-    "title": "The Seasons",
-    "director": "Artavazd Peleshian",
-    "year": 1975,
-    "country": "USSR",
-    "runtime": 29,
-    "genre": "Documentary"
-  },
-  {
-    "title": "In the Realm of the Senses",
-    "director": "Nagisa Oshima",
-    "year": 1976,
-    "country": "Japan-France",
-    "runtime": 109,
-    "genre": "Erotic Drama, Psychological Drama",
-    "rating": 7
-  },
-  {
-    "title": "Rocky",
-    "director": "John G. Avildsen",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Drama, Sports Drama",
-    "rating": 7
-  },
-  {
-    "title": "Halloween",
-    "director": "John Carpenter",
-    "year": 1978,
-    "country": "USA",
-    "runtime": 93,
-    "genre": "Horror, Slasher Film",
-    "rating": 7
-  },
-  {
-    "title": "Being There",
-    "director": "Hal Ashby",
-    "year": 1979,
-    "country": "USA",
-    "runtime": 130,
-    "genre": "Comedy, Satire",
-    "rating": 7
-  },
-  {
-    "title": "The Elephant Man",
-    "director": "David Lynch",
-    "year": 1980,
-    "country": "USA",
-    "runtime": 125,
-    "genre": "Biography, Medical Drama",
-    "rating": 7
-  },
-  {
-    "title": "The Right Stuff",
-    "director": "Philip Kaufman",
-    "year": 1983,
-    "country": "USA",
-    "runtime": 193,
-    "genre": "Drama, Docudrama",
-    "rating": 7
-  },
-  {
-    "title": "Ghostbusters",
-    "director": "Ivan Reitman",
-    "year": 1984,
-    "country": "USA",
-    "runtime": 107,
-    "genre": "Fantasy, Sci-Fi Comedy",
-    "rating": 7
-  },
-  {
-    "title": "This is Spinal Tap",
-    "director": "Rob Reiner",
-    "year": 1984,
-    "country": "USA",
-    "runtime": 82,
-    "genre": "Mockumentary, Showbiz Comedy",
-    "rating": 7
-  },
-  {
-    "title": "The Breakfast Club",
-    "director": "John Hughes",
-    "year": 1985,
-    "country": "USA",
-    "runtime": 97,
-    "genre": "Comedy Drama, Teen Movie",
-    "rating": 7
-  },
-  {
-    "title": "Come and See",
-    "director": "Elem Klimov",
-    "year": 1985,
-    "country": "USSR",
-    "runtime": 136,
-    "genre": "War Drama, Coming-of-Age",
-    "rating": 7
-  },
-  {
-    "title": "A Better Tomorrow",
-    "director": "John Woo",
-    "year": 1986,
-    "country": "Hong Kong",
-    "runtime": 95,
-    "genre": "Crime, Action Thriller",
-    "rating": 7
-  },
-  {
-    "title": "Down by Law",
-    "director": "Jim Jarmusch",
-    "year": 1986,
-    "country": "USA",
-    "runtime": 107,
-    "genre": "Comedy, Buddy Film",
-    "rating": 7
-  },
-  {
-    "title": "Wings of Desire",
-    "director": "Wim Wenders",
-    "year": 1987,
-    "country": "West Germany-France",
-    "runtime": 130,
-    "genre": "Fantasy, Romantic Fantasy",
-    "rating": 7
-  },
-  {
-    "title": "Grave of the Fireflies",
-    "director": "Isao Takahata",
-    "year": 1988,
-    "country": "Japan",
-    "runtime": 93,
-    "genre": "Anime, War Drama",
-    "rating": 7
-  },
-  {
-    "title": "Days of Being Wild",
-    "director": "Wong Kar-wai",
-    "year": 1990,
-    "country": "Hong Kong",
-    "runtime": 94,
-    "genre": "Drama, Ensemble Film",
-    "rating": 7
-  },
-  {
-    "title": "Abraham's Valley",
-    "director": "Manoel de Oliveira",
-    "year": 1993,
-    "country": "Portugal-France-Switzerland",
-    "runtime": 187,
-    "genre": "Psychological Drama"
-  },
-  {
-    "title": "Léon",
-    "director": "Luc Besson",
-    "year": 1994,
-    "country": "France",
-    "runtime": 119,
-    "genre": "Action Thriller, Coming-of-Age",
-    "rating": 7
-  },
-  {
-    "title": "The Shawshank Redemption",
-    "director": "Frank Darabont",
-    "year": 1994,
-    "country": "USA",
-    "runtime": 142,
-    "genre": "Drama, Prison Film",
-    "rating": 7
-  },
-  {
-    "title": "Vive L'Amour",
-    "director": "Tsai Ming-liang",
-    "year": 1994,
-    "country": "Taiwan",
-    "runtime": 118,
-    "genre": "Drama, Urban Drama"
-  },
-  {
-    "title": "Dead Man",
-    "director": "Jim Jarmusch",
-    "year": 1995,
-    "country": "USA-Germany",
-    "runtime": 121,
-    "genre": "Hybrid Western, Psychological Western",
-    "rating": 7
-  },
-  {
-    "title": "Underground",
-    "director": "Emir Kusturica",
-    "year": 1995,
-    "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
-    "runtime": 192,
-    "genre": "Comedy Drama, Political Satire",
-    "rating": 7
-  },
-  {
-    "title": "The River",
-    "director": "Tsai Ming-liang",
-    "year": 1997,
-    "country": "Taiwan",
-    "runtime": 115,
-    "genre": "Drama, Family Drama",
-    "image": "river1997.jpg"
-  },
-  {
-    "title": "All About My Mother",
-    "director": "Pedro Almodóvar",
-    "year": 1999,
-    "country": "Spain-France",
-    "runtime": 101,
-    "genre": "Comedy Drama, Ensemble Film",
-    "rating": 7
-  },
-  {
-    "title": "American Beauty",
-    "director": "Sam Mendes",
-    "year": 1999,
-    "country": "USA",
-    "runtime": 121,
-    "genre": "Comedy Drama, Family Drama",
-    "rating": 7
-  },
-  {
-    "title": "Dancer in the Dark",
-    "director": "Lars von Trier",
-    "year": 2000,
-    "country": "Denmark-France-Sweden-Italy-Germany-Norway-Netherlands-Iceland-Finland-UK-USA",
-    "runtime": 140,
-    "genre": "Musical Drama, Melodrama",
-    "rating": 7
-  },
-  {
-    "title": "The Lord of the Rings: The Fellowship of the Ring",
-    "director": "Peter Jackson",
-    "year": 2001,
-    "country": "USA-New Zealand",
-    "runtime": 178,
-    "genre": "Epic, Fantasy Adventure",
-    "rating": 7
-  },
-  {
-    "title": "The Lord of the Rings: The Return of the King",
-    "director": "Peter Jackson",
-    "year": 2003,
-    "country": "New Zealand-USA",
-    "runtime": 201,
-    "genre": "Epic, Fantasy",
-    "rating": 7
-  },
-  {
-    "title": "Memories of Murder",
-    "director": "Bong Joon-ho",
-    "year": 2003,
-    "country": "South Korea",
-    "runtime": 132,
-    "genre": "Crime, Police Drama",
-    "rating": 7
-  },
-  {
-    "title": "Million Dollar Baby",
-    "director": "Clint Eastwood",
-    "year": 2004,
-    "country": "USA",
-    "runtime": 137,
-    "genre": "Sports Drama, Melodrama",
-    "rating": 7
-  },
-  {
-    "title": "Brokeback Mountain",
-    "director": "Ang Lee",
-    "year": 2005,
-    "country": "USA-Canada",
-    "runtime": 134,
-    "genre": "Romantic Drama, Modern Western",
-    "rating": 7
-  },
-  {
-    "title": "Zodiac",
-    "director": "David Fincher",
-    "year": 2007,
-    "country": "USA",
-    "runtime": 158,
-    "genre": "Mystery, Police Detective Film",
-    "rating": 7
-  },
-  {
-    "title": "A Prophet",
-    "director": "Jacques Audiard",
-    "year": 2009,
-    "country": "France-Italy",
-    "runtime": 155,
-    "genre": "Drama, Prison Film"
-  },
-  {
-    "title": "Avatar",
-    "director": "James Cameron",
-    "year": 2009,
-    "country": "USA-UK",
-    "runtime": 161,
-    "genre": "Science Fiction, Sci-Fi Action",
-    "rating": 7
-  },
-  {
-    "title": "The Social Network",
-    "director": "David Fincher",
-    "year": 2010,
-    "country": "USA",
-    "runtime": 120,
-    "genre": "Drama, Biopic",
-    "rating": 7
-  },
-  {
-    "title": "Once Upon a Time in Anatolia",
-    "director": "Nuri Bilge Ceylan",
-    "year": 2011,
-    "country": "Turkey-Bosnia and Herzergovina",
-    "runtime": 150,
-    "genre": "Crime Drama, Psychological Drama",
-    "rating": 7
-  },
-
-
-  {
-    "title": "Frankenstein",
-    "director": "James Whale",
-    "year": 1931,
-    "country": "USA",
-    "runtime": 70,
-    "genre": "Horror, Monster Film"
-  },
-  {
-    "title": "King Kong",
-    "director": "Merian C. Cooper & Ernest B. Schoedsack",
-    "year": 1933,
-    "country": "USA",
-    "runtime": 103,
-    "genre": "Adventure, Monster Film",
-    "rating": 6
-  },
-  {
-    "title": "The Rules of the Game",
-    "director": "Jean Renoir",
-    "year": 1939,
-    "country": "France",
-    "runtime": 113,
-    "genre": "Comedy Drama, Ensemble Film",
-    "rating": 5
-  },
-  {
-    "title": "Stagecoach",
-    "director": "John Ford",
-    "year": 1939,
-    "country": "USA",
-    "runtime": 96,
-    "genre": "Western, Traditional Western",
-    "rating": 4
-  },
-  {
-    "title": "Fantasia",
-    "director": "Various Directors",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 120,
-    "genre": "Animated Musical, Children's Fantasy"
-  },
-  {
-    "title": "The Grapes of Wrath",
-    "director": "John Ford",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 129,
-    "genre": "Rural Drama, Americana",
-    "rating": 6
-  },
-  {
-    "title": "The Shop Around the Corner",
-    "director": "Ernst Lubitsch",
-    "year": 1940,
-    "country": "USA",
-    "runtime": 97,
-    "genre": "Comedy, Romance",
-    "rating": 5
-  },
-  {
-    "title": "Sullivan's Travels",
-    "director": "Preston Sturges",
-    "year": 1941,
-    "country": "USA",
-    "runtime": 91,
-    "genre": "Comedy, Satire",
-    "rating": 5
-  },
-  {
-    "title": "Bambi",
-    "director": "David Hand",
-    "year": 1942,
-    "country": "USA",
-    "runtime": 69,
-    "genre": "Children's Fantasy, Animated Musical"
-  },
-  {
-    "title": "Cat People",
-    "director": "Jacques Tourneur",
-    "year": 1942,
-    "country": "USA",
-    "runtime": 73,
-    "genre": "Horror, Supernatural Thriller",
-    "rating": 5
-  },
-  {
-    "title": "I Walked with a Zombie",
-    "director": "Jacques Tourneur",
-    "year": 1943,
-    "country": "USA",
-    "runtime": 69,
-    "genre": "Horror, Supernatural Horror",
-    "rating": 6
-  },
-  {
-    "title": "Meet Me in St. Louis",
-    "director": "Vincente Minnelli",
-    "year": 1944,
-    "country": "USA",
-    "runtime": 113,
-    "genre": "Musical, Family Drama",
-    "rating": 3
-  },
-  {
-    "title": "Gilda",
-    "director": "Charles Vidor",
-    "year": 1946,
-    "country": "USA",
-    "runtime": 110,
-    "genre": "Film Noir, Romantic Mystery"
-  },
-  {
-    "title": "My Darling Clementine",
-    "director": "John Ford",
-    "year": 1946,
-    "country": "USA",
-    "runtime": 97,
-    "genre": "Western, Traditional Western",
-    "rating": 6
-  },
-  {
-    "title": "Odd Man Out",
-    "director": "Carol Reed",
-    "year": 1947,
-    "country": "UK",
-    "runtime": 115,
-    "genre": "Drama, Crime",
-    "rating": 4
-  },
-  {
-    "title": "La Terra trema",
-    "director": "Luchino Visconti",
-    "year": 1948,
-    "country": "Italy",
-    "runtime": 160,
-    "genre": "La Terra trema",
-    "rating": 6
-  },
-
-  {
-    "title": "Red River",
-    "director": "Howard Hawks",
-    "year": 1948,
-    "country": "USA",
-    "runtime": 133,
-    "genre": "Western, Epic Western",
-    "rating": 6
-  },
-  {
-    "title": "They Live by Night",
-    "director": "Nicholas Ray",
-    "year": 1948,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Crime Drama, Film Noir",
-    "rating": 6
-  },
-
-  {
-    "title": "The African Queen",
-    "director": "John Huston",
-    "year": 1951,
-    "country": "USA",
-    "runtime": 105,
-    "genre": "Romance, Adventure",
-    "rating": 6
-  },
-  {
-    "title": "An American in Paris",
-    "director": "Vincente Minnelli",
-    "year": 1951,
-    "country": "USA",
-    "runtime": 115,
-    "genre": "Musical, Romance",
-    "rating": 6
-  },
-  {
-    "title": "High Noon",
-    "director": "Fred Zinnemann",
-    "year": 1952,
-    "country": "USA",
-    "runtime": 84,
-    "genre": "Western, Psychological Western",
-    "rating": 5
-  },
-  {
-    "title": "Roman Holiday",
-    "director": "William Wyler",
-    "year": 1953,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Romance, Comedy",
-    "rating": 6
-  },
-  {
-    "title": "Shane",
-    "director": "George Stevens",
-    "year": 1953,
-    "country": "USA",
-    "runtime": 118,
-    "genre": "Western, Psychological Western",
-    "rating": 3
-  },
-  {
-    "title": "A Star is Born",
-    "director": "George Cukor",
-    "year": 1954,
-    "country": "USA",
-    "runtime": 154,
-    "genre": "Musical, Showbiz Drama"
-  },
-  {
-    "title": "Voyage in Italy",
-    "director": "Roberto Rossellini",
-    "year": 1954,
-    "country": "Italy",
-    "runtime": 97,
-    "genre": "Marriage Drama, Psychological Drama",
-    "rating": 5
-  },
-  {
-    "title": "East of Eden",
-    "director": "Elia Kazan",
+    "title": "The Ladykillers",
+    "director": "Alexander Mackendrick",
     "year": 1955,
-    "country": "USA",
-    "runtime": 115,
-    "genre": "Family Drama, Rural Drama",
-    "rating": 6
-  },
-  {
-    "title": "Kiss Me Deadly",
-    "director": "Robert Aldrich",
-    "year": 1955,
-    "country": "USA",
-    "runtime": 106,
-    "genre": "Thriller, Film Noir",
-    "rating": 5
+    "country": "UK",
+    "runtime": 90,
+    "genre": "Crime, Black Comedy",
+    "rating": 8
   },
   {
     "title": "The Night of the Hunter",
@@ -5095,6 +2330,31 @@ const lists = [ // Nosferatu
     "rating": 6
   },
   {
+    "title": "A Man Escaped",
+    "director": "Robert Bresson",
+    "year": 1956,
+    "country": "France",
+    "runtime": 102,
+    "genre": "Drama, Prison Film"
+  },
+  {
+    "title": "Aparajito",
+    "director": "Satyajit Ray",
+    "year": 1956,
+    "country": "India",
+    "runtime": 108,
+    "genre": "Drama, Coming-of-Age"
+  },
+  {
+    "title": "Bigger Than Life",
+    "director": "Nicholas Ray",
+    "year": 1956,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Psychological Drama, Family Drama",
+    "rating": 8
+  },
+  {
     "title": "Forbidden Planet",
     "director": "Fred M. Wilcox",
     "year": 1956,
@@ -5102,6 +2362,141 @@ const lists = [ // Nosferatu
     "runtime": 98,
     "genre": "Science Fiction, Space Adventure",
     "rating": 5
+  },
+  {
+    "title": "Invasion of the Body Snatchers",
+    "director": "Don Siegel",
+    "year": 1956,
+    "country": "USA",
+    "runtime": 80,
+    "genre": "Science Fiction, Alien Invasion Film"
+  },
+  {
+    "title": "Street of Shame",
+    "director": "Kenji Mizoguchi",
+    "year": 1956,
+    "country": "Japan",
+    "runtime": 96,
+    "genre": "Melodrama, Urban Drama"
+  },
+  {
+    "title": "The Killing",
+    "director": "Stanley Kubrick",
+    "year": 1956,
+    "country": "USA",
+    "runtime": 85,
+    "genre": "Crime Thriller, Film Noir",
+    "rating": 8
+  },
+  {
+    "title": "The Red Balloon",
+    "director": "Albert Lamorisse",
+    "year": 1956,
+    "country": "France",
+    "runtime": 34,
+    "genre": "Children's/Family, Family-Oriented Adventure"
+  },
+  {
+    "title": "The Searchers",
+    "director": "John Ford",
+    "year": 1956,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Western, Revisionist Western"
+  },
+  {
+    "title": "The Ten Commandments",
+    "director": "Cecil B. DeMille",
+    "year": 1956,
+    "country": "USA",
+    "runtime": 220,
+    "genre": "Religious Epic, Hagiography",
+    "rating": 9
+  },
+  {
+    "title": "Written on the Wind",
+    "director": "Douglas Sirk",
+    "year": 1956,
+    "country": "USA",
+    "runtime": 99,
+    "genre": "Melodrama, Family Drama"
+  },
+  {
+    "title": "12 Angry Men",
+    "director": "Sidney Lumet",
+    "year": 1957,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Drama, Courtroom Drama",
+    "rating": 9
+  },
+  {
+    "title": "An Affair to Remember",
+    "director": "Leo McCarey",
+    "year": 1957,
+    "country": "USA",
+    "runtime": 115,
+    "genre": "Romance, Melodrama",
+    "rating": 8
+  },
+  {
+    "title": "Il Grido",
+    "director": "Michelangelo Antonioni",
+    "year": 1957,
+    "country": "Italy",
+    "runtime": 111,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "Mother India",
+    "director": "Mehboob Khan",
+    "year": 1957,
+    "country": "India",
+    "runtime": 172,
+    "genre": "Epic, Melodrama"
+  },
+  {
+    "title": "Night of the Demon",
+    "director": "Jacques Tourneur",
+    "year": 1957,
+    "country": "UK",
+    "runtime": 82,
+    "genre": "Occult Horror, Gothic Film",
+    "rating": 8
+  },
+  {
+    "title": "Nights of Cabiria",
+    "director": "Federico Fellini",
+    "year": 1957,
+    "country": "Italy-France",
+    "runtime": 110,
+    "genre": "Melodrama, Tragi-comedy",
+    "rating": 9
+  },
+  {
+    "title": "Paths of Glory",
+    "director": "Stanley Kubrick",
+    "year": 1957,
+    "country": "USA",
+    "runtime": 86,
+    "genre": "Anti-War Film, War Drama"
+  },
+  {
+    "title": "Pyaasa",
+    "director": "Guru Dutt",
+    "year": 1957,
+    "country": "India",
+    "runtime": 146,
+    "genre": "Drama, Romance"
+  },
+  {
+    "title": "Sweet Smell of Success",
+    "director": "Alexander Mackendrick",
+    "year": 1957,
+    "country": "USA",
+    "runtime": 96,
+    "genre": "Drama, Media Satire",
+    "rating": 9
   },
   {
     "title": "The Bridge on the River Kwai",
@@ -5113,1038 +2508,13 @@ const lists = [ // Nosferatu
     "rating": 6
   },
   {
-    "title": "Ben-Hur",
-    "director": "William Wyler",
-    "year": 1959,
-    "country": "USA",
-    "runtime": 212,
-    "genre": "Religious Epic, Sword-and-Sandal",
-    "rating": 6
-  },
-  {
-    "title": "Shoot the Piano Player",
-    "director": "François Truffaut",
-    "year": 1960,
-    "country": "France",
-    "runtime": 92,
-    "genre": "Crime Drama, Post-Noir (Modern Noir)",
-    "rating": 6
-  },
-  {
-    "title": "The Hustler",
-    "director": "Robert Rossen",
-    "year": 1961,
-    "country": "USA",
-    "runtime": 135,
-    "genre": "Drama, Sports Drama",
-    "rating": 6
-  },
-  {
-    "title": "Knife in the Water",
-    "director": "Roman Polanski",
-    "year": 1962,
-    "country": "Poland",
-    "runtime": 94,
-    "genre": "Psychological Drama, Marriage Drama",
-    "rating": 6
-  },
-  {
-    "title": "The Manchurian Candidate",
-    "director": "John Frankenheimer",
-    "year": 1962,
-    "country": "USA",
-    "runtime": 126,
-    "genre": "Political Thriller, Paranoid Thriller"
-  },
-  {
-    "title": "To Kill a Mockingbird",
-    "director": "Robert Mulligan",
-    "year": 1962,
-    "country": "USA",
-    "runtime": 129,
-    "genre": "Courtroom Drama, Childhood Drama",
-    "rating": 6
-  },
-
-  {
-    "title": "The Great Escape",
-    "director": "John Sturges",
-    "year": 1963,
-    "country": "USA",
-    "runtime": 168,
-    "genre": "Escape Film, War Adventure",
-    "rating": 6
-  },
-  {
-    "title": "The Nutty Professor",
-    "director": "Jerry Lewis",
-    "year": 1963,
-    "country": "USA",
-    "runtime": 107,
-    "genre": "Comedy, Satire",
-    "rating": 6
-  },
-  {
-    "title": "Black God, White Devil",
-    "director": "Glauber Rocha",
-    "year": 1964,
-    "country": "Brazil",
-    "runtime": 110,
-    "genre": "Road Movie, Crime Drama",
-    "rating": 2
-  },
-  {
-    "title": "Mary Poppins",
-    "director": "Robert Stevenson",
-    "year": 1964,
-    "country": "USA",
-    "runtime": 139,
-    "genre": "Musical, Children's Fantasy",
-    "rating": 6
-  },
-  {
-    "title": "The Battle of Algiers",
-    "director": "Gillo Pontecorvo",
-    "year": 1966,
-    "country": "Italy-Algeria",
-    "runtime": 123,
-    "genre": "Docudrama, Political Drama",
-    "rating": 5
-  },
-  {
-    "title": "Cool Hand Luke",
-    "director": "Stuart Rosenberg",
-    "year": 1967,
-    "country": "USA",
-    "runtime": 126,
-    "genre": "Drama, Prison Film",
-    "rating": 5
-  },
-  {
-    "title": "Point Blank",
-    "director": "John Boorman",
-    "year": 1967,
-    "country": "USA",
-    "runtime": 92,
-    "genre": "Crime, Thriller",
-    "rating": 6
-  },
-  {
-    "title": "The Producers",
-    "director": "Mel Brooks",
-    "year": 1968,
-    "country": "USA",
-    "runtime": 88,
-    "genre": "Showbiz Comedy, Farce",
-    "rating": 5
-  },
-  {
-    "title": "Army of Shadows",
-    "director": "Jean-Pierre Melville",
-    "year": 1969,
-    "country": "France-Italy",
-    "runtime": 140,
-    "genre": "Resistance Film, War Drama"
-  },
-  {
-    "title": "Midnight Cowboy",
-    "director": "John Schlesinger",
-    "year": 1969,
-    "country": "USA",
-    "runtime": 113,
-    "genre": "Urban Drama, Buddy Film",
-    "rating": 6
-  },
-  {
-    "title": "Satyricon",
-    "director": "Federico Fellini",
-    "year": 1969,
-    "country": "Italy",
-    "runtime": 129,
-    "genre": "Drama, Period Film",
-    "rating": 6
-  },
-  {
-    "title": "The Conformist",
-    "director": "Bernardo Bertolucci",
-    "year": 1970,
-    "country": "Italy-France-West Germany",
-    "runtime": 107,
-    "genre": "Psychological Drama, Political Drama"
-  },
-  {
-    "title": "M*A*S*H",
-    "director": "Robert Altman",
-    "year": 1970,
-    "country": "USA",
-    "runtime": 116,
-    "genre": "Military Comedy, Satire"
-  },
-  {
-    "title": "Dirty Harry",
-    "director": "Don Siegel",
-    "year": 1971,
-    "country": "USA",
-    "runtime": 102,
-    "genre": "Crime, Action Thriller"
-  },
-  {
-    "title": "The French Connection",
-    "director": "William Friedkin",
-    "year": 1971,
-    "country": "USA",
-    "runtime": 104,
-    "genre": "Crime, Action Thriller",
-    "rating": 3
-  },
-
-  {
-    "title": "Cabaret",
-    "director": "Bob Fosse",
-    "year": 1972,
-    "country": "USA",
-    "runtime": 128,
-    "genre": "Musical, Drama",
-    "rating": 6
-  },
-  {
-    "title": "Fellini's Roma",
-    "director": "Federico Fellini",
-    "year": 1972,
-    "country": "Italy",
-    "runtime": 128,
-    "genre": "Satire, Ensemble Film",
-    "rating": 6
-  },
-  {
-    "title": "American Graffiti",
-    "director": "George Lucas",
-    "year": 1973,
-    "country": "USA",
-    "runtime": 110,
-    "genre": "Comedy Drama, Teen Movie",
-    "rating": 6
-  },
-  {
-    "title": "Enter the Dragon",
-    "director": "Robert Clouse",
-    "year": 1973,
-    "country": "USA-Hong Kong",
-    "runtime": 97,
-    "genre": "Action, Martial Arts",
-    "rating": 5
-  },
-  {
-    "title": "Bring Me the Head of Alfredo Garcia",
-    "director": "Sam Peckinpah",
-    "year": 1974,
-    "country": "USA",
-    "runtime": 112,
-    "genre": "Black Comedy, Action Thriller",
-    "rating": 5
-  },
-  {
-    "title": "The Texas Chainsaw Massacre",
-    "director": "Tobe Hooper",
-    "year": 1974,
-    "country": "USA",
-    "runtime": 83,
-    "genre": "Horror, Slasher Film"
-  },
-  {
-    "title": "Young Frankenstein",
-    "director": "Mel Brooks",
-    "year": 1974,
-    "country": "USA",
-    "runtime": 105,
-    "genre": "Parody/Spoof, Horror Comedy",
-    "rating": 5
-  },
-  {
-    "title": "Dog Day Afternoon",
-    "director": "Sidney Lumet",
-    "year": 1975,
-    "country": "USA",
-    "runtime": 125,
-    "genre": "Crime, Urban Drama",
-    "rating": 6
-  },
-  {
-    "title": "All the President's Men",
-    "director": "Alan J. Pakula",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 138,
-    "genre": "Political Drama, Paranoid Thriller"
-  },
-  {
-    "title": "Fellini's Casanova",
-    "director": "Federico Fellini",
-    "year": 1976,
-    "country": "Italy",
-    "runtime": 158,
-    "genre": "Comedy Drama, Period Film"
-  },
-  {
-    "title": "The Outlaw Josey Wales",
-    "director": "Clint Eastwood",
-    "year": 1976,
-    "country": "USA",
-    "runtime": 135,
-    "genre": "Western, Outlaw (Gunfighter) Film",
-    "rating": 4
-  },
-  {
-    "title": "Saturday Night Fever",
-    "director": "John Badham",
-    "year": 1977,
-    "country": "USA",
-    "runtime": 119,
-    "genre": "Dance Film, Musical Drama",
-    "rating": 5
-  },
-  {
-    "title": "The Deer Hunter",
-    "director": "Michael Cimino",
-    "year": 1978,
-    "country": "USA",
-    "runtime": 183,
-    "genre": "Ensemble Film, War Drama",
-    "rating": 5
-  },
-  {
-    "title": "Airplane!",
-    "director": "Jim Abrahams, David Zucker & Jerry Zucker",
-    "year": 1980,
-    "country": "USA",
-    "runtime": 86,
-    "genre": "Anarchic Comedy, Parody/Spoof",
-    "rating": 6
-  },
-  {
-    "title": "The Blues Brothers",
-    "director": "John Landis",
-    "year": 1980,
-    "country": "USA",
-    "runtime": 130,
-    "genre": "Action Comedy, Rock Musical",
-    "rating": 5
-  },
-  {
-    "title": "Das Boot",
-    "director": "Wolfgang Petersen",
-    "year": 1981,
-    "country": "West Germany",
-    "runtime": 149,
-    "genre": "War Drama, Sea Adventure",
-    "rating": 6
-  },
-  {
-    "title": "Mad Max 2",
-    "director": "George Miller",
-    "year": 1981,
-    "country": "Australia",
-    "runtime": 94,
-    "genre": "Action, Science Fiction",
-    "rating": 6
-  },
-  {
-    "title": "Tootsie",
-    "director": "Sydney Pollack",
-    "year": 1982,
-    "country": "USA",
-    "runtime": 116,
-    "genre": "Showbiz Comedy, Romantic Comedy",
-    "rating": 6
-  },
-  {
-    "title": "Ferris Bueller's Day Off",
-    "director": "John Hughes",
-    "year": 1986,
-    "country": "USA",
-    "runtime": 103,
-    "genre": "Comedy, Teen Movie",
-    "rating": 6
-  },
-  {
-    "title": "Stand by Me",
-    "director": "Rob Reiner",
-    "year": 1986,
-    "country": "USA",
-    "runtime": 87,
-    "genre": "Drama, Coming-of-Age",
-    "rating": 6
-  },
-  {
-    "title": "The Last Emperor",
-    "director": "Bernardo Bertolucci",
-    "year": 1987,
-    "country": "China-Italy-UK-France",
-    "runtime": 160,
-    "genre": "Historical Film, Biography"
-  },
-  {
-    "title": "The Princess Bride",
-    "director": "Rob Reiner",
-    "year": 1987,
-    "country": "USA",
-    "runtime": 98,
-    "genre": "Adventure Comedy, Fairy Tale",
-    "rating": 5
-  },
-  {
-    "title": "When Harry Met Sally...",
-    "director": "Rob Reiner",
-    "year": 1989,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Romance, Comedy",
-    "rating": 6
-  },
-  {
-    "title": "Wild at Heart",
-    "director": "David Lynch",
-    "year": 1990,
-    "country": "USA",
-    "runtime": 127,
-    "genre": "Road Movie, Black Comedy",
-    "rating": 2
-  },
-  {
-    "title": "The Bridges of Madison County",
-    "director": "Clint Eastwood",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 135,
-    "genre": "Romance, Drama",
-    "rating": 5
-  },
-  {
-    "title": "La Haine",
-    "director": "Mathieu Kassovitz",
-    "year": 1995,
-    "country": "France",
-    "runtime": 93,
-    "genre": "Urban Drama, Message Movie"
-  },
-  {
-    "title": "Toy Story",
-    "director": "John Lasseter",
-    "year": 1995,
-    "country": "USA",
-    "runtime": 80,
-    "genre": "Fantasy Comedy, Animation"
-  },
-  {
-    "title": "Boogie Nights",
-    "director": "Paul Thomas Anderson",
-    "year": 1997,
-    "country": "USA",
-    "runtime": 155,
-    "genre": "Comedy Drama, Ensemble Film"
-  },
-  {
-    "title": "L.A. Confidential",
-    "director": "Curtis Hanson",
-    "year": 1997,
-    "country": "USA",
-    "runtime": 137,
-    "genre": "Crime, Mystery"
-  },    
-  {
-    "title": "Titanic",
-    "director": "James Cameron",
-    "year": 1997,
-    "country": "USA",
-    "runtime": 194,
-    "genre": "Romantic Epic, Disaster Film"
-  },
-  {
-    "title": "Central Station",
-    "director": "Walter Salles",
-    "year": 1998,
-    "country": "Brazil-France-Spain-Japan",
-    "runtime": 110,
-    "genre": "Drama, Road Movie"
-  },
-  {
-    "title": "Saving Private Ryan",
-    "director": "Steven Spielberg",
-    "year": 1998,
-    "country": "USA",
-    "runtime": 169,
-    "genre": "War, Combat Film",
-    "rating": 6
-  },
-  {
-    "title": "Fight Club",
-    "director": "David Fincher",
-    "year": 1999,
-    "country": "USA-Germany",
-    "runtime": 139,
-    "genre": "Satire, Psychological Drama"
-  },
-  {
-    "title": "Magnolia",
-    "director": "Paul Thomas Anderson",
-    "year": 1999,
-    "country": "USA",
-    "runtime": 188,
-    "genre": "Drama, Ensemble Film"
-  },
-  {
-    "title": "The Straight Story",
-    "director": "David Lynch",
-    "year": 1999,
-    "country": "USA-France-UK",
-    "runtime": 111,
-    "genre": "Americana, Road Movie",
-    "rating": 6
-  },
-  {
-    "title": "Crouching Tiger, Hidden Dragon",
-    "director": "Ang Lee",
-    "year": 2000,
-    "country": "Taiwan-Hong Kong-USA-China",
-    "runtime": 120,
-    "genre": "Martial Arts, Romantic Adventure"
-  },
-  {
-    "title": "Moulin Rouge!",
-    "director": "Baz Luhrmann",
-    "year": 2001,
-    "country": "USA-Australia",
-    "runtime": 126,
-    "genre": "Musical, Romance"
-  },
-  {
-    "title": "Punch-Drunk Love",
-    "director": "Paul Thomas Anderson",
-    "year": 2002,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Comedy Drama, Romantic Comedy"
-  },
-  {
-    "title": "Lost in Translation",
-    "director": "Sofia Coppola",
-    "year": 2003,
-    "country": "USA-Japan",
-    "runtime": 102,
-    "genre": "Comedy, Drama"
-  },
-  {
-    "title": "The Lives of Others",
-    "director": "Florian Henckel von Donnersmarck",
-    "year": 2006,
-    "country": "Germany",
-    "runtime": 138,
-    "genre": "Political Thriller, Period Film"
-  },
-  {
-    "title": "Hunger",
-    "director": "Steve McQueen",
-    "year": 2008,
-    "country": "UK-Ireland",
-    "runtime": 96,
-    "genre": "Prison Film, Political Drama"
-  },
-  {
-    "title": "Let the Right One In",
-    "director": "Tomas Alfredson",
-    "year": 2008,
-    "country": "Sweden-Norway",
-    "runtime": 114,
-    "genre": "Horror, Drama"
-  },
-  {
-    "title": "WALL-E",
-    "director": "Andrew Stanton",
-    "year": 2008,
-    "country": "USA",
-    "runtime": 98,
-    "genre": "Sci-Fi Adventure, Animation"
-  },
-
-  {
-    "title": "La Chienne",
-    "director": "Jean Renoir",
-    "year": 1931,
-    "country": "France",
-    "runtime": 95,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
-    "title": "Le Million",
-    "director": "René Clair",
-    "year": 1931,
-    "country": "France",
-    "runtime": 85,
-    "genre": "Musical Comedy, Chase Movie"
-  },
-  {
-    "title": "Limite",
-    "director": "Mario Peixoto",
-    "year": 1931,
-    "country": "Brazil",
-    "runtime": 114,
-    "genre": "Avant-garde/Experimental, Surrealist Film"
-  },
-  {
-    "title": "Freaks",
-    "director": "Tod Browning",
-    "year": 1932,
-    "country": "USA",
-    "runtime": 64,
-    "genre": "Melodrama, Psychological Thriller"
-  },
-  {
-    "title": "La Nuit du carrefour",
-    "director": "Jean Renoir",
-    "year": 1932,
-    "country": "France",
-    "runtime": 70,
-    "genre": "Police Detective Film, Crime Drama"
-  },
-  {
-    "title": "Love Me Tonight",
-    "director": "Rouben Mamoulian",
-    "year": 1932,
-    "country": "USA",
-    "runtime": 96,
-    "genre": "Comedy, Musical Romance"
-  },
-  {
-    "title": "Vampyr",
-    "director": "Carl Theodor Dreyer",
-    "year": 1932,
-    "country": "Germany-France",
-    "runtime": 73,
-    "genre": "Horror, Gothic Film"
-  },
-  {
-    "title": "42nd Street",
-    "director": "Lloyd Bacon",
-    "year": 1933,
-    "country": "USA",
-    "runtime": 89,
-    "genre": "Backstage Musical, Musical Comedy"
-  },
-  {
-    "title": "Zero for Conduct",
-    "director": "Jean Vigo",
-    "year": 1933,
-    "country": "France",
-    "runtime": 41,
-    "genre": "Coming-of-Age, Childhood Drama"
-  },
-  {
-    "title": "It's a Gift",
-    "director": "Norman Z. McLeod",
-    "year": 1934,
-    "country": "USA",
-    "runtime": 73,
-    "genre": "Comedy, Screwball Comedy"
-  },
-  {
-    "title": "Man of Aran",
-    "director": "Robert Flaherty",
-    "year": 1934,
-    "country": "UK",
-    "runtime": 77,
-    "genre": "Anthropology, Documentary"
-  },
-  {
-    "title": "By the Bluest of Seas",
-    "director": "Boris Barnet",
-    "year": 1936,
-    "country": "USSR",
-    "runtime": 71,
-    "genre": "Comedy, Romantic Comedy"
-  },
-  {
-    "title": "The Crime of Monsieur Lange",
-    "director": "Jean Renoir",
-    "year": 1936,
-    "country": "France",
-    "runtime": 90,
-    "genre": "Drama, Crime Drama"
-  },
-  {
-    "title": "Partie de campagne",
-    "director": "Jean Renoir",
-    "year": 1936,
-    "country": "France",
-    "runtime": 40,
-    "genre": "Comedy Drama, Romance"
-  },
-  {
-    "title": "The Awful Truth",
-    "director": "Leo McCarey",
-    "year": 1937,
-    "country": "USA",
-    "runtime": 92,
-    "genre": "Romantic Comedy, Screwball Comedy"
-  },
-  {
-    "title": "Humanity and Paper Balloons",
-    "director": "Sadao Yamanaka",
-    "year": 1937,
-    "country": "Japan",
-    "runtime": 86,
-    "genre": "Drama"
-  },
-  {
-    "title": "Make Way for Tomorrow",
-    "director": "Leo McCarey",
-    "year": 1937,
-    "country": "USA",
-    "runtime": 92,
-    "genre": "Family Drama, Marriage Drama"
-  },
-  {
-    "title": "Pépé le Moko",
-    "director": "Julien Duvivier",
-    "year": 1937,
-    "country": "France",
-    "runtime": 94,
-    "genre": "Romantic Drama, Gangster Film"
-  },
-  {
-    "title": "Street Angel",
-    "director": "Yuan Muzhi",
-    "year": 1937,
-    "country": "China",
-    "runtime": 91,
-    "genre": "Drama, Comedy"
-  },
-  {
-    "title": "La Bête humaine",
-    "director": "Jean Renoir",
-    "year": 1938,
-    "country": "France",
-    "runtime": 99,
-    "genre": "Crime Drama, Psychological Drama"
-  },
-  {
-    "title": "Olympia",
-    "director": "Leni Riefenstahl",
-    "year": 1938,
-    "country": "Germany",
-    "runtime": 220,
-    "genre": "Sports, Documentary"
-  },
-  {
-    "title": "Port of Shadows",
-    "director": "Marcel Carné",
-    "year": 1938,
-    "country": "France",
-    "runtime": 91,
-    "genre": "Romantic Drama, Crime Drama"
-  },
-  {
-    "title": "Le Jour se lève",
-    "director": "Marcel Carné",
-    "year": 1939,
-    "country": "France",
-    "runtime": 93,
-    "genre": "Crime Drama, Romantic Drama"
-  },
-  {
-    "title": "The Thief of Bagdad",
-    "director": "Michael Powell, Ludwig Berger & Tim Whelan",
-    "year": 1940,
-    "country": "UK",
-    "runtime": 106,
-    "genre": "Fantasy, Costume Adventure"
-  },
-  {
-    "title": "Hellzapoppin'",
-    "director": "H.C. Potter",
-    "year": 1941,
-    "country": "USA",
-    "runtime": 84,
-    "genre": "Anarchic Comedy, Backstage Musical"
-  },
-  {
-    "title": "Listen to Britain",
-    "director": "Humphrey Jennings",
-    "year": 1942,
-    "country": "UK",
-    "runtime": 20,
-    "genre": "Culture & Society, Documentary"
-  },
-  {
-    "title": "Fires Were Started",
-    "director": "Humphrey Jennings",
-    "year": 1943,
-    "country": "UK",
-    "runtime": 80,
-    "genre": "Military & War, Documentary"
-  },
-  {
-    "title": "The Life and Death of Colonel Blimp",
-    "director": "Michael Powell & Emeric Pressburger",
-    "year": 1943,
-    "country": "UK",
-    "runtime": 163,
-    "genre": "Drama, Period Film"
-  },
-  {
-    "title": "Meshes of the Afternoon",
-    "director": "Maya Deren & Alexander Hammid",
-    "year": 1943,
-    "country": "USA",
-    "runtime": 15,
-    "genre": "Avant-garde-Experimental, Surrealist Film"
-  },
-  {
-    "title": "A Canterbury Tale",
-    "director": "Michael Powell & Emeric Pressburger",
-    "year": 1944,
-    "country": "UK",
-    "runtime": 124,
-    "genre": "Comedy Drama, Road Movie"
-  },
-  {
-    "title": "I Know Where I'm Going!",
-    "director": "Michael Powell & Emeric Pressburger",
-    "year": 1945,
-    "country": "UK",
-    "runtime": 91,
-    "genre": "Drama, Romance"
-  },
-  {
-    "title": "They Were Expendable",
-    "director": "John Ford",
-    "year": 1945,
-    "country": "USA",
-    "runtime": 135,
-    "genre": "War Drama, Combat Film"
-  },
-  {
-    "title": "A Matter of Life and Death",
-    "director": "Michael Powell & Emeric Pressburger",
-    "year": 1946,
-    "country": "UK",
-    "runtime": 104,
-    "genre": "Romantic Fantasy, Heaven-Can-Wait Fantasy"
-  },
-  {
-    "title": "Duel in the Sun",
-    "director": "King Vidor",
-    "year": 1946,
-    "country": "USA",
-    "runtime": 130,
-    "genre": "Western, Melodrama"
-  },
-  {
-    "title": "Paisan",
-    "director": "Roberto Rossellini",
-    "year": 1946,
-    "country": "Italy",
-    "runtime": 120,
-    "genre": "Drama, War Drama"
-  },
-  {
-    "title": "Germany, Year Zero",
-    "director": "Roberto Rossellini",
-    "year": 1948,
-    "country": "Italy-West Germany",
-    "runtime": 74,
-    "genre": "War Drama, Childhood Drama"
-  },
-  {
-    "title": "Spring in a Small Town",
-    "director": "Fei Mu",
-    "year": 1948,
-    "country": "China",
-    "runtime": 85,
-    "genre": "Drama, Romantic Drama"
-  },
-  {
-    "title": "Le Sang des bêtes",
-    "director": "Georges Franju",
-    "year": 1949,
-    "country": "France",
-    "runtime": 20,
-    "genre": "Culture & Society, Documentary"
-  },
-  {
-    "title": "The Reckless Moment",
-    "director": "Max Ophüls",
-    "year": 1949,
-    "country": "USA",
-    "runtime": 82,
-    "genre": "Crime Drama, Film Noir"
-  },
-  {
-    "title": "The Flowers of St. Francis",
-    "director": "Roberto Rossellini",
-    "year": 1950,
-    "country": "Italy",
-    "runtime": 83,
-    "genre": "Religious Drama, Biography"
-  },
-  {
-    "title": "Stromboli",
-    "director": "Roberto Rossellini",
-    "year": 1950,
-    "country": "Italy",
-    "runtime": 107,
-    "genre": "Melodrama, Marriage Drama"
-  },
-  {
-    "title": "Un Chant d'amour",
-    "director": "Jean Genet",
-    "year": 1950,
-    "country": "France",
-    "runtime": 26,
-    "genre": "Avant-garde-Experimental, Surrealist Film"
-  },
-  {
-    "title": "Miracle in Milan",
-    "director": "Vittorio De Sica",
-    "year": 1951,
-    "country": "Italy",
-    "runtime": 95,
-    "genre": "Fantasy Comedy, Satire"
-  },
-  {
-    "title": "The Thing from Another World",
-    "director": "Christian Nyby & Howard Hawks",
-    "year": 1951,
-    "country": "USA",
-    "runtime": 87,
-    "genre": "Science Fiction, Monster Film"
-  },
-  {
-    "title": "Europa '51",
-    "director": "Roberto Rossellini",
-    "year": 1952,
-    "country": "Italy",
-    "runtime": 113,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
-    "title": "The Golden Coach",
-    "director": "Jean Renoir",
-    "year": 1952,
-    "country": "Italy-France",
-    "runtime": 100,
-    "genre": "Costume Adventure, Romantic Adventure"
-  },
-  {
-    "title": "Le Plaisir",
-    "director": "Max Ophüls",
-    "year": 1952,
-    "country": "France",
-    "runtime": 97,
-    "genre": "Romance, Drama"
-  },
-  {
-    "title": "The Life of Oharu",
-    "director": "Kenji Mizoguchi",
-    "year": 1952,
-    "country": "Japan",
-    "runtime": 146,
-    "genre": "Drama, Period Film"
-  },
-  {
-    "title": "The Lusty Men",
-    "director": "Nicholas Ray",
-    "year": 1952,
-    "country": "USA",
-    "runtime": 113,
-    "genre": "Drama, Modern Western"
-  },
-  {
-    "title": "Anatahan",
-    "director": "Josef von Sternberg",
-    "year": 1953,
-    "country": "Japan",
-    "runtime": 90,
-    "genre": "Drama, Adventure"
-  },
-  {
-    "title": "Mr. Hulot's Holiday",
-    "director": "Jacques Tati",
-    "year": 1953,
-    "country": "France",
-    "runtime": 86,
-    "genre": "Comedy, Slapstick"
-  },
-  {
-    "title": "The Sun Shines Bright",
-    "director": "John Ford",
-    "year": 1953,
-    "country": "USA",
-    "runtime": 90,
-    "genre": "Drama, Americana"
-  },
-  {
-    "title": "Chikamatsu monogatari",
-    "director": "Kenji Mizoguchi",
-    "year": 1954,
-    "country": "Japan",
-    "runtime": 100,
-    "genre": "Melodrama, Romantic Drama"
-  },
-  {
-    "title": "Floating Clouds",
-    "director": "Mikio Naruse",
-    "year": 1955,
-    "country": "Japan",
-    "runtime": 123,
-    "genre": "Drama, Urban Drama"
-  },
-  {
-    "title": "Les Maîtres fous",
-    "director": "Jean Rouch",
-    "year": 1955,
-    "country": "France",
-    "runtime": 36,
-    "genre": "Culture & Society, Documentary"
-  },
-  {
-    "title": "Moonfleet",
-    "director": "Fritz Lang",
-    "year": 1955,
-    "country": "USA",
-    "runtime": 89,
-    "genre": "Costume Adventure, Swashbuckler"
-  },
-  {
-    "title": "Pather Panchali",
-    "director": "Satyajit Ray",
-    "year": 1955,
-    "country": "India",
-    "runtime": 112,
-    "genre": "Rural Drama, Family Drama"
-  },
-  {
-    "title": "The Red Balloon",
-    "director": "Albert Lamorisse",
-    "year": 1956,
-    "country": "France",
-    "runtime": 34,
-    "genre": "Children's/Family, Family-Oriented Adventure"
-  },
-  {
-    "title": "Street of Shame",
-    "director": "Kenji Mizoguchi",
-    "year": 1956,
-    "country": "Japan",
-    "runtime": 96,
-    "genre": "Melodrama, Urban Drama"
-  },
-  {
-    "title": "Il Grido",
-    "director": "Michelangelo Antonioni",
+    "title": "The Cranes Are Flying",
+    "director": "Mikhail Kalatozov",
     "year": 1957,
-    "country": "Italy",
-    "runtime": 111,
-    "genre": "Drama, Psychological Drama"
+    "country": "USSR",
+    "runtime": 94,
+    "genre": "Melodrama, Romantic Drama",
+    "rating": 9
   },
   {
     "title": "The Incredible Shrinking Man",
@@ -6155,20 +2525,28 @@ const lists = [ // Nosferatu
     "genre": "Science Fiction, Psychological Sci-Fi"
   },
   {
-    "title": "Mother India",
-    "director": "Mehboob Khan",
+    "title": "The Seventh Seal",
+    "director": "Ingmar Bergman",
     "year": 1957,
-    "country": "India",
-    "runtime": 172,
-    "genre": "Epic, Melodrama"
+    "country": "Sweden",
+    "runtime": 96,
+    "genre": "Fantasy, Psychological Drama"
   },
   {
-    "title": "Pyaasa",
-    "director": "Guru Dutt",
+    "title": "Throne of Blood",
+    "director": "Akira Kurosawa",
     "year": 1957,
-    "country": "India",
-    "runtime": 146,
-    "genre": "Drama, Romance"
+    "country": "Japan",
+    "runtime": 108,
+    "genre": "Drama, Samurai Film"
+  },
+  {
+    "title": "Wild Strawberries",
+    "director": "Ingmar Bergman",
+    "year": 1957,
+    "country": "Sweden",
+    "runtime": 90,
+    "genre": "Drama, Psychological Drama"
   },
   {
     "title": "Ashes and Diamonds",
@@ -6195,6 +2573,14 @@ const lists = [ // Nosferatu
     "genre": "Costume Horror, Gothic Film"
   },
   {
+    "title": "Elevator to the Gallows",
+    "director": "Louis Malle",
+    "year": 1958,
+    "country": "France",
+    "runtime": 92,
+    "genre": "Romance, Crime Thriller"
+  },
+  {
     "title": "Man of the West",
     "director": "Anthony Mann",
     "year": 1958,
@@ -6219,14 +2605,6 @@ const lists = [ // Nosferatu
     "genre": "Satire, Domestic Comedy"
   },
   {
-    "title": "The Music Room",
-    "director": "Satyajit Ray",
-    "year": 1958,
-    "country": "India",
-    "runtime": 95,
-    "genre": "Drama, Psychological Drama"
-  },
-  {
     "title": "Nazarín",
     "director": "Luis Buñuel",
     "year": 1958,
@@ -6243,12 +2621,55 @@ const lists = [ // Nosferatu
     "genre": "Drama, Americana"
   },
   {
+    "title": "The Music Room",
+    "director": "Satyajit Ray",
+    "year": 1958,
+    "country": "India",
+    "runtime": 95,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
     "title": "The Tiger of Eschnapur",
     "director": "Fritz Lang",
     "year": 1958,
     "country": "West Germany-France-Italy",
     "runtime": 101,
     "genre": "Adventure Drama, Romantic Drama"
+  },
+  {
+    "title": "Touch of Evil",
+    "director": "Orson Welles",
+    "year": 1958,
+    "country": "USA",
+    "runtime": 108,
+    "genre": "Crime, Film Noir"
+  },
+  {
+    "title": "Vertigo",
+    "director": "Alfred Hitchcock",
+    "year": 1958,
+    "country": "USA",
+    "runtime": 128,
+    "genre": "Romantic Mystery, Psychological Thriller",
+    "rating": 9
+  },
+  {
+    "title": "Anatomy of a Murder",
+    "director": "Otto Preminger",
+    "year": 1959,
+    "country": "USA",
+    "runtime": 160,
+    "genre": "Drama, Courtroom Drama",
+    "rating": 9
+  },
+  {
+    "title": "Ben-Hur",
+    "director": "William Wyler",
+    "year": 1959,
+    "country": "USA",
+    "runtime": 212,
+    "genre": "Religious Epic, Sword-and-Sandal",
+    "rating": 6
   },
   {
     "title": "Black Orpheus",
@@ -6267,12 +2688,62 @@ const lists = [ // Nosferatu
     "genre": "Drama, Reunion Film"
   },
   {
+    "title": "Good Morning",
+    "director": "Yasujiro Ozu",
+    "year": 1959,
+    "country": "Japan",
+    "runtime": 94,
+    "genre": "Domestic Comedy, Family Drama"
+  },
+  {
+    "title": "Hiroshima mon amour",
+    "director": "Alain Resnais",
+    "year": 1959,
+    "country": "France-Japan",
+    "runtime": 91,
+    "genre": "Psychological Drama, Romantic Drama"
+  },
+  {
+    "title": "Imitation of Life",
+    "director": "Douglas Sirk",
+    "year": 1959,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Melodrama, Family Drama"
+  },
+  {
     "title": "Kaagaz Ke Phool",
     "director": "Guru Dutt",
     "year": 1959,
     "country": "India",
     "runtime": 148,
     "genre": "Romance, Drama"
+  },
+  {
+    "title": "North by Northwest",
+    "director": "Alfred Hitchcock",
+    "year": 1959,
+    "country": "USA",
+    "runtime": 136,
+    "genre": "Thriller, Chase Movie"
+  },
+  {
+    "title": "Pickpocket",
+    "director": "Robert Bresson",
+    "year": 1959,
+    "country": "France",
+    "runtime": 75,
+    "genre": "Crime Drama, Psychological Drama",
+    "rating": 9
+  },
+  {
+    "title": "Rio Bravo",
+    "director": "Howard Hawks",
+    "year": 1959,
+    "country": "USA",
+    "runtime": 141,
+    "genre": "Western, Buddy Film",
+    "rating": 7
   },
   {
     "title": "Shadows",
@@ -6283,12 +2754,139 @@ const lists = [ // Nosferatu
     "genre": "Drama, Ensemble Film"
   },
   {
+    "title": "Some Like it Hot",
+    "director": "Billy Wilder",
+    "year": 1959,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Comedy, Farce"
+  },
+  {
+    "title": "The 400 Blows",
+    "director": "François Truffaut",
+    "year": 1959,
+    "country": "France",
+    "runtime": 99,
+    "genre": "Childhood Drama, Coming-of-Age"
+  },
+  {
     "title": "The World of Apu",
     "director": "Satyajit Ray",
     "year": 1959,
     "country": "India",
     "runtime": 103,
     "genre": "Drama, Family Drama"
+  },
+  {
+    "title": "Breathless",
+    "director": "Jean-Luc Godard",
+    "year": 1960,
+    "country": "France",
+    "runtime": 89,
+    "genre": "Crime Drama, Urban Drama"
+  },
+  {
+    "title": "Eyes Without a Face",
+    "director": "Georges Franju",
+    "year": 1960,
+    "country": "France-Italy",
+    "runtime": 88,
+    "genre": "Horror, Gothic Film",
+    "rating": 9
+  },
+  {
+    "title": "L'Avventura",
+    "director": "Michelangelo Antonioni",
+    "year": 1960,
+    "country": "Italy-France",
+    "runtime": 145,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "La Dolce vita",
+    "director": "Federico Fellini",
+    "year": 1960,
+    "country": "Italy",
+    "runtime": 175,
+    "genre": "Comedy Drama, Media Satire",
+    "rating": 10
+  },
+  {
+    "title": "Le Trou",
+    "director": "Jacques Becker",
+    "year": 1960,
+    "country": "France-Italy",
+    "runtime": 140,
+    "genre": "Prison Film, Crime Drama"
+  },
+  {
+    "title": "Peeping Tom",
+    "director": "Michael Powell",
+    "year": 1960,
+    "country": "UK",
+    "runtime": 109,
+    "genre": "Thriller, Psychological Thriller"
+  },
+  {
+    "title": "Psycho",
+    "director": "Alfred Hitchcock",
+    "year": 1960,
+    "country": "USA",
+    "runtime": 109,
+    "genre": "Thriller, Psychological Thriller",
+    "rating": 10
+  },
+  {
+    "title": "Rocco and His Brothers",
+    "director": "Luchino Visconti",
+    "year": 1960,
+    "country": "Italy-France",
+    "runtime": 180,
+    "genre": "Family Drama, Urban Drama",
+    "rating": 7
+  },
+  {
+    "title": "Saturday Night and Sunday Morning",
+    "director": "Karel Reisz",
+    "year": 1960,
+    "country": "UK",
+    "runtime": 89,
+    "genre": "Drama, Urban Drama"
+  },
+  {
+    "title": "Shoot the Piano Player",
+    "director": "François Truffaut",
+    "year": 1960,
+    "country": "France",
+    "runtime": 92,
+    "genre": "Crime Drama, Post-Noir (Modern Noir)",
+    "rating": 6
+  },
+  {
+    "title": "Spartacus",
+    "director": "Stanley Kubrick",
+    "year": 1960,
+    "country": "USA",
+    "runtime": 184,
+    "genre": "Sword-and-Sandal, Historical Epic",
+    "rating": 10
+  },
+  {
+    "title": "Strangers When We Meet",
+    "director": "Richard Quine",
+    "year": 1960,
+    "country": "USA",
+    "runtime": 117,
+    "genre": "Drama, Melodrama"
+  },
+  {
+    "title": "The Apartment",
+    "director": "Billy Wilder",
+    "year": 1960,
+    "country": "USA",
+    "runtime": 125,
+    "genre": "Comedy Drama, Workplace Comedy",
+    "rating": 10
   },
   {
     "title": "The Cloud-Capped Star",
@@ -6307,20 +2905,13 @@ const lists = [ // Nosferatu
     "genre": "Rural Drama"
   },
   {
-    "title": "Saturday Night and Sunday Morning",
-    "director": "Karel Reisz",
+    "title": "The Virgin Spring",
+    "director": "Ingmar Bergman",
     "year": 1960,
-    "country": "UK",
-    "runtime": 89,
-    "genre": "Drama, Urban Drama"
-  },
-  {
-    "title": "Strangers When We Meet",
-    "director": "Richard Quine",
-    "year": 1960,
-    "country": "USA",
-    "runtime": 117,
-    "genre": "Drama, Melodrama"
+    "country": "Sweden",
+    "runtime": 88,
+    "genre": "Drama, Period Film",
+    "rating": 9
   },
   {
     "title": "Accattone",
@@ -6331,20 +2922,21 @@ const lists = [ // Nosferatu
     "genre": "Urban Drama, Psychological Drama"
   },
   {
+    "title": "Breakfast at Tiffany's",
+    "director": "Blake Edwards",
+    "year": 1961,
+    "country": "USA",
+    "runtime": 115,
+    "genre": "Comedy Drama, Romantic Comedy",
+    "rating": 9
+  },
+  {
     "title": "Chronicle of a Summer",
     "director": "Jean Rouch & Edgar Morin",
     "year": 1961,
     "country": "France",
     "runtime": 85,
     "genre": "Culture & Society, Documentary"
-  },
-  {
-    "title": "The End of Summer",
-    "director": "Yasujiro Ozu",
-    "year": 1961,
-    "country": "Japan",
-    "runtime": 103,
-    "genre": "Drama, Family Drama"
   },
   {
     "title": "Il Posto",
@@ -6355,12 +2947,21 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
-    "title": "The Ladies Man",
-    "director": "Jerry Lewis",
+    "title": "La Notte",
+    "director": "Michelangelo Antonioni",
     "year": 1961,
-    "country": "USA",
-    "runtime": 95,
-    "genre": "Comedy, Slapstick"
+    "country": "Italy-France",
+    "runtime": 120,
+    "genre": "Psychological Drama, Marriage Drama"
+  },
+  {
+    "title": "Last Year at Marienbad",
+    "director": "Alain Resnais",
+    "year": 1961,
+    "country": "France-Italy",
+    "runtime": 94,
+    "genre": "Avant-garde-Experimental, Psychological Drama",
+    "rating": 9
   },
   {
     "title": "Lola",
@@ -6379,6 +2980,92 @@ const lists = [ // Nosferatu
     "genre": "Comedy"
   },
   {
+    "title": "Splendor in the Grass",
+    "director": "Elia Kazan",
+    "year": 1961,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Coming-of-Age, Romantic Drama",
+    "rating": 7
+  },
+  {
+    "title": "The End of Summer",
+    "director": "Yasujiro Ozu",
+    "year": 1961,
+    "country": "Japan",
+    "runtime": 103,
+    "genre": "Drama, Family Drama"
+  },
+  {
+    "title": "The Hustler",
+    "director": "Robert Rossen",
+    "year": 1961,
+    "country": "USA",
+    "runtime": 135,
+    "genre": "Drama, Sports Drama",
+    "rating": 6
+  },
+  {
+    "title": "The Innocents",
+    "director": "Jack Clayton",
+    "year": 1961,
+    "country": "UK",
+    "runtime": 100,
+    "genre": "Horror, Supernatural Thriller",
+    "rating": 9
+  },
+  {
+    "title": "The Ladies Man",
+    "director": "Jerry Lewis",
+    "year": 1961,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Comedy, Slapstick"
+  },
+  {
+    "title": "The Misfits",
+    "director": "John Huston",
+    "year": 1961,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Drama, Modern Western",
+    "rating": 8
+  },
+  {
+    "title": "Viridiana",
+    "director": "Luis Buñuel",
+    "year": 1961,
+    "country": "Spain",
+    "runtime": 90,
+    "genre": "Comedy Drama, Satire"
+  },
+  {
+    "title": "West Side Story",
+    "director": "Robert Wise",
+    "year": 1961,
+    "country": "USA",
+    "runtime": 151,
+    "genre": "Musical Romance, Juvenile Delinquency Film",
+    "rating": 9
+  },
+  {
+    "title": "Yojimbo",
+    "director": "Akira Kurosawa",
+    "year": 1961,
+    "country": "Japan",
+    "runtime": 110,
+    "genre": "Adventure, Samurai Film",
+    "rating": 9
+  },
+  {
+    "title": "An Autumn Afternoon",
+    "director": "Yasujiro Ozu",
+    "year": 1962,
+    "country": "Japan",
+    "runtime": 115,
+    "genre": "Family Drama, Romantic Drama"
+  },
+  {
     "title": "Carnival of Souls",
     "director": "Herk Harvey",
     "year": 1962,
@@ -6387,12 +3074,92 @@ const lists = [ // Nosferatu
     "genre": "Horror, Gothic Film"
   },
   {
-    "title": "The Loneliness of the Long Distance Runner",
-    "director": "Tony Richardson",
+    "title": "Cléo from 5 to 7",
+    "director": "Agnès Varda",
+    "year": 1962,
+    "country": "France",
+    "runtime": 90,
+    "genre": "Drama, Psychological Drama",
+    "rating": 10
+  },
+  {
+    "title": "Harakiri",
+    "director": "Masaki Kobayashi",
+    "year": 1962,
+    "country": "Japan",
+    "runtime": 133,
+    "genre": "Drama, Samurai Film",
+    "rating": 9
+  },
+  {
+    "title": "Hatari!",
+    "director": "Howard Hawks",
+    "year": 1962,
+    "country": "USA",
+    "runtime": 159,
+    "genre": "Adventure, Comedy",
+    "rating": 8
+  },
+  {
+    "title": "Ivan's Childhood",
+    "director": "Andrei Tarkovsky",
+    "year": 1962,
+    "country": "USSR",
+    "runtime": 94,
+    "genre": "War, Childhood Drama"
+  },
+  {
+    "title": "Jules et Jim",
+    "director": "François Truffaut",
+    "year": 1962,
+    "country": "France",
+    "runtime": 104,
+    "genre": "Drama, Romance",
+    "rating": 7
+  },
+  {
+    "title": "Knife in the Water",
+    "director": "Roman Polanski",
+    "year": 1962,
+    "country": "Poland",
+    "runtime": 94,
+    "genre": "Psychological Drama, Marriage Drama",
+    "rating": 6
+  },
+  {
+    "title": "L'Eclisse",
+    "director": "Michelangelo Antonioni",
+    "year": 1962,
+    "country": "Italy-France",
+    "runtime": 126,
+    "genre": "Psychological Drama, Urban Drama"
+  },
+  {
+    "title": "La Jetée",
+    "director": "Chris Marker",
+    "year": 1962,
+    "country": "France",
+    "runtime": 27,
+    "genre": "Science Fiction, Avant-garde-Experimental",
+    "rating": 9
+  },
+  {
+    "title": "Lawrence of Arabia",
+    "director": "David Lean",
     "year": 1962,
     "country": "UK",
-    "runtime": 103,
-    "genre": "Psychological Drama, Sports Drama"
+    "runtime": 216,
+    "genre": "Epic, British Empire Film",
+    "rating": 9
+  },
+  {
+    "title": "Lolita",
+    "director": "Stanley Kubrick",
+    "year": 1962,
+    "country": "UK",
+    "runtime": 152,
+    "genre": "Black Comedy, Psychological Drama",
+    "rating": 8
   },
   {
     "title": "Ride the High Country",
@@ -6411,12 +3178,80 @@ const lists = [ // Nosferatu
     "genre": "Crime, Political Drama"
   },
   {
+    "title": "The Exterminating Angel",
+    "director": "Luis Buñuel",
+    "year": 1962,
+    "country": "Mexico",
+    "runtime": 95,
+    "genre": "Comedy Drama, Satire"
+  },
+  {
+    "title": "The Loneliness of the Long Distance Runner",
+    "director": "Tony Richardson",
+    "year": 1962,
+    "country": "UK",
+    "runtime": 103,
+    "genre": "Psychological Drama, Sports Drama"
+  },
+  {
+    "title": "The Man Who Shot Liberty Valance",
+    "director": "John Ford",
+    "year": 1962,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Western, Outlaw (Gunfighter) Film",
+    "rating": 8
+  },
+  {
+    "title": "The Manchurian Candidate",
+    "director": "John Frankenheimer",
+    "year": 1962,
+    "country": "USA",
+    "runtime": 126,
+    "genre": "Political Thriller, Paranoid Thriller"
+  },
+  {
     "title": "The Trial",
     "director": "Orson Welles",
     "year": 1962,
     "country": "France-West Germany-Italy",
     "runtime": 118,
     "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "director": "Robert Mulligan",
+    "year": 1962,
+    "country": "USA",
+    "runtime": 129,
+    "genre": "Courtroom Drama, Childhood Drama",
+    "rating": 6
+  },
+  {
+    "title": "Vivre sa vie",
+    "director": "Jean-Luc Godard",
+    "year": 1962,
+    "country": "France",
+    "runtime": 85,
+    "genre": "Psychological Drama, Urban Drama"
+  },
+  {
+    "title": "Winter Light",
+    "director": "Ingmar Bergman",
+    "year": 1962,
+    "country": "Sweden",
+    "runtime": 80,
+    "genre": "Psychological Drama, Religious Drama",
+    "rating": 9
+  },
+  {
+    "title": "8½",
+    "director": "Federico Fellini",
+    "year": 1963,
+    "country": "Italy",
+    "runtime": 135,
+    "genre": "Satire, Psychological Drama",
+    "rating": 10
   },
   {
     "title": "America, America",
@@ -6435,6 +3270,14 @@ const lists = [ // Nosferatu
     "genre": "Drama, Rural Drama"
   },
   {
+    "title": "Contempt",
+    "director": "Jean-Luc Godard",
+    "year": 1963,
+    "country": "France-Italy",
+    "runtime": 103,
+    "genre": "Showbiz Drama, Satire"
+  },
+  {
     "title": "El Verdugo",
     "director": "Luis García Berlanga",
     "year": 1963,
@@ -6451,12 +3294,13 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Horror"
   },
   {
-    "title": "The House is Black",
-    "director": "Forugh Farrokhzad",
+    "title": "High and Low",
+    "director": "Akira Kurosawa",
     "year": 1963,
-    "country": "Iran",
-    "runtime": 20,
-    "genre": "Illnesses & Disabilities, Documentary"
+    "country": "Japan",
+    "runtime": 142,
+    "genre": "Drama, Post-Noir (Modern Noir)",
+    "rating": 10
   },
   {
     "title": "Muriel",
@@ -6475,6 +3319,59 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Surrealist Film"
   },
   {
+    "title": "Shock Corridor",
+    "director": "Samuel Fuller",
+    "year": 1963,
+    "country": "USA",
+    "runtime": 101,
+    "genre": "Drama, Psychological Drama",
+    "rating": 9
+  },
+  {
+    "title": "The Birds",
+    "director": "Alfred Hitchcock",
+    "year": 1963,
+    "country": "USA",
+    "runtime": 120,
+    "genre": "Horror, Natural Horror",
+    "rating": 8
+  },
+  {
+    "title": "The Great Escape",
+    "director": "John Sturges",
+    "year": 1963,
+    "country": "USA",
+    "runtime": 168,
+    "genre": "Escape Film, War Adventure",
+    "rating": 6
+  },
+  {
+    "title": "The House is Black",
+    "director": "Forugh Farrokhzad",
+    "year": 1963,
+    "country": "Iran",
+    "runtime": 20,
+    "genre": "Illnesses & Disabilities, Documentary"
+  },
+  {
+    "title": "The Leopard",
+    "director": "Luchino Visconti",
+    "year": 1963,
+    "country": "Italy",
+    "runtime": 205,
+    "genre": "Epic, Family Drama",
+    "rating": 7
+  },
+  {
+    "title": "The Nutty Professor",
+    "director": "Jerry Lewis",
+    "year": 1963,
+    "country": "USA",
+    "runtime": 107,
+    "genre": "Comedy, Satire",
+    "rating": 6
+  },
+  {
     "title": "The Servant",
     "director": "Joseph Losey",
     "year": 1963,
@@ -6483,12 +3380,38 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
+    "title": "The Silence",
+    "director": "Ingmar Bergman",
+    "year": 1963,
+    "country": "Sweden",
+    "runtime": 96,
+    "genre": "Psychological Drama, Family Drama",
+    "rating": 9
+  },
+  {
     "title": "A Hard Day's Night",
     "director": "Richard Lester",
     "year": 1964,
     "country": "UK",
     "runtime": 85,
     "genre": "Rock Musical, Anarchic Comedy"
+  },
+  {
+    "title": "Band of Outsiders",
+    "director": "Jean-Luc Godard",
+    "year": 1964,
+    "country": "France",
+    "runtime": 97,
+    "genre": "Drama, Crime Drama"
+  },
+  {
+    "title": "Black God, White Devil",
+    "director": "Glauber Rocha",
+    "year": 1964,
+    "country": "Brazil",
+    "runtime": 110,
+    "genre": "Road Movie, Crime Drama",
+    "rating": 2
   },
   {
     "title": "Charulata",
@@ -6507,20 +3430,21 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Abstract Film"
   },
   {
+    "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+    "director": "Stanley Kubrick",
+    "year": 1964,
+    "country": "UK-USA",
+    "runtime": 93,
+    "genre": "Black Comedy, Anti-War Film",
+    "rating": 9
+  },
+  {
     "title": "Gertrud",
     "director": "Carl Theodor Dreyer",
     "year": 1964,
     "country": "Denmark",
     "runtime": 116,
     "genre": "Psychological Drama, Marriage Drama"
-  },
-  {
-    "title": "The Gospel According to St. Matthew",
-    "director": "Pier Paolo Pasolini",
-    "year": 1964,
-    "country": "Italy-France",
-    "runtime": 135,
-    "genre": "Hagiography, Religious Drama"
   },
   {
     "title": "I Am Cuba",
@@ -6539,12 +3463,47 @@ const lists = [ // Nosferatu
     "genre": "Fantasy, Costume Horror"
   },
   {
+    "title": "Marnie",
+    "director": "Alfred Hitchcock",
+    "year": 1964,
+    "country": "USA",
+    "runtime": 130,
+    "genre": "Romantic Mystery, Psychological Thriller",
+    "rating": 9
+  },
+  {
+    "title": "Mary Poppins",
+    "director": "Robert Stevenson",
+    "year": 1964,
+    "country": "USA",
+    "runtime": 139,
+    "genre": "Musical, Children's Fantasy",
+    "rating": 6
+  },
+  {
+    "title": "Red Desert",
+    "director": "Michelangelo Antonioni",
+    "year": 1964,
+    "country": "Italy-France",
+    "runtime": 118,
+    "genre": "Drama, Psychological Drama",
+    "rating": 7
+  },
+  {
     "title": "Shadows of Our Forgotten Ancestors",
     "director": "Sergei Parajanov",
     "year": 1964,
     "country": "USSR",
     "runtime": 97,
     "genre": "Drama, Period Film"
+  },
+  {
+    "title": "The Gospel According to St. Matthew",
+    "director": "Pier Paolo Pasolini",
+    "year": 1964,
+    "country": "Italy-France",
+    "runtime": 135,
+    "genre": "Hagiography, Religious Drama"
   },
   {
     "title": "The Umbrellas of Cherbourg",
@@ -6555,12 +3514,37 @@ const lists = [ // Nosferatu
     "genre": "Musical, Romance"
   },
   {
+    "title": "Woman in the Dunes",
+    "director": "Hiroshi Teshigahara",
+    "year": 1964,
+    "country": "Japan",
+    "runtime": 127,
+    "genre": "Avant-garde-Experimental, Psychological Drama"
+  },
+  {
+    "title": "Alphaville",
+    "director": "Jean-Luc Godard",
+    "year": 1965,
+    "country": "France",
+    "runtime": 95,
+    "genre": "Psychological Sci-Fi, Tech Noir"
+  },
+  {
     "title": "Chimes at Midnight",
     "director": "Orson Welles",
     "year": 1965,
     "country": "France-Spain-Switzerland",
     "runtime": 115,
     "genre": "Drama, Tragi-comedy"
+  },
+  {
+    "title": "Doctor Zhivago",
+    "director": "David Lean",
+    "year": 1965,
+    "country": "USA",
+    "runtime": 197,
+    "genre": "Romantic Epic, Period Film",
+    "rating": 8
   },
   {
     "title": "Faster, Pussycat! Kill! Kill!",
@@ -6595,12 +3579,39 @@ const lists = [ // Nosferatu
     "genre": "Comedy Drama, Satire"
   },
   {
+    "title": "Pierrot le fou",
+    "director": "Jean-Luc Godard",
+    "year": 1965,
+    "country": "France-Italy",
+    "runtime": 110,
+    "genre": "Road Movie, Romantic Drama",
+    "rating": 8
+  },
+  {
     "title": "Red Beard",
     "director": "Akira Kurosawa",
     "year": 1965,
     "country": "Japan",
     "runtime": 185,
     "genre": "Period Film, Medical Drama"
+  },
+  {
+    "title": "Repulsion",
+    "director": "Roman Polanski",
+    "year": 1965,
+    "country": "UK",
+    "runtime": 105,
+    "genre": "Thriller, Psychological Thriller",
+    "rating": 7
+  },
+  {
+    "title": "Simon of the Desert",
+    "director": "Luis Buñuel",
+    "year": 1965,
+    "country": "Mexico",
+    "runtime": 43,
+    "genre": "Satire, Religious Comedy",
+    "rating": 8
   },
   {
     "title": "Subarnarekha",
@@ -6611,12 +3622,45 @@ const lists = [ // Nosferatu
     "genre": "Drama"
   },
   {
+    "title": "The Sound of Music",
+    "director": "Robert Wise",
+    "year": 1965,
+    "country": "USA",
+    "runtime": 174,
+    "genre": "Musical, Drama",
+    "rating": 8
+  },
+  {
+    "title": "Andrei Rublev",
+    "director": "Andrei Tarkovsky",
+    "year": 1966,
+    "country": "USSR",
+    "runtime": 185,
+    "genre": "Historical Film, Biography"
+  },
+  {
+    "title": "Au hasard Balthazar",
+    "director": "Robert Bresson",
+    "year": 1966,
+    "country": "France",
+    "runtime": 95,
+    "genre": "Rural Drama, Animal Picture"
+  },
+  {
     "title": "Black Girl",
     "director": "Ousmane Sembene",
     "year": 1966,
     "country": "Senegal-France",
     "runtime": 65,
     "genre": "Drama, Social Problem Film"
+  },
+  {
+    "title": "Blow-Up",
+    "director": "Michelangelo Antonioni",
+    "year": 1966,
+    "country": "Italy-UK",
+    "runtime": 111,
+    "genre": "Mystery, Psychological Thriller"
   },
   {
     "title": "Chelsea Girls",
@@ -6643,6 +3687,72 @@ const lists = [ // Nosferatu
     "genre": "Comedy Thriller, Black Comedy"
   },
   {
+    "title": "Daisies",
+    "director": "Vera Chytilová",
+    "year": 1966,
+    "country": "Czechoslovakia",
+    "runtime": 76,
+    "genre": "Avant-garde-Experimental, Satire",
+    "rating": 8
+  },
+  {
+    "title": "Masculin Feminin",
+    "director": "Jean-Luc Godard",
+    "year": 1966,
+    "country": "France-Sweden",
+    "runtime": 103,
+    "genre": "Urban Drama, Ensemble Film"
+  },
+  {
+    "title": "Persona",
+    "director": "Ingmar Bergman",
+    "year": 1966,
+    "country": "Sweden",
+    "runtime": 83,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "Second Breath",
+    "director": "Jean-Pierre Melville",
+    "year": 1966,
+    "country": "France",
+    "runtime": 144,
+    "genre": "Crime Thriller, Caper"
+  },
+  {
+    "title": "Seven Women",
+    "director": "John Ford",
+    "year": 1966,
+    "country": "USA",
+    "runtime": 87,
+    "genre": "Drama, Period Film"
+  },
+  {
+    "title": "The Battle of Algiers",
+    "director": "Gillo Pontecorvo",
+    "year": 1966,
+    "country": "Italy-Algeria",
+    "runtime": 123,
+    "genre": "Docudrama, Political Drama",
+    "rating": 5
+  },
+  {
+    "title": "The Good, the Bad and the Ugly",
+    "director": "Sergio Leone",
+    "year": 1966,
+    "country": "Italy-Spain",
+    "runtime": 161,
+    "genre": "Spaghetti Western, Outlaw (Gunfighter) Film"
+  },
+  {
+    "title": "The Hawks and the Sparrows",
+    "director": "Pier Paolo Pasolini",
+    "year": 1966,
+    "country": "Italy",
+    "runtime": 91,
+    "genre": "Comedy, Satire"
+  },
+  {
     "title": "The Rise to Power of Louis XIV",
     "director": "Roberto Rossellini",
     "year": 1966,
@@ -6659,36 +3769,40 @@ const lists = [ // Nosferatu
     "genre": "Political Drama, Period Film"
   },
   {
-    "title": "Second Breath",
-    "director": "Jean-Pierre Melville",
-    "year": 1966,
-    "country": "France",
-    "runtime": 144,
-    "genre": "Crime Thriller, Caper"
-  },
-  {
-    "title": "The Hawks and the Sparrows",
-    "director": "Pier Paolo Pasolini",
-    "year": 1966,
-    "country": "Italy",
-    "runtime": 91,
-    "genre": "Comedy, Satire"
-  },
-  {
-    "title": "Masculin Feminin",
+    "title": "Two or Three Things I Know About Her",
     "director": "Jean-Luc Godard",
     "year": 1966,
-    "country": "France-Sweden",
-    "runtime": 103,
-    "genre": "Urban Drama, Ensemble Film"
+    "country": "France",
+    "runtime": 87,
+    "genre": "Essay Film, Urban Drama"
   },
   {
-    "title": "Seven Women",
-    "director": "John Ford",
+    "title": "Who's Afraid of Virginia Woolf?",
+    "director": "Mike Nichols",
     "year": 1966,
     "country": "USA",
-    "runtime": 87,
-    "genre": "Drama, Period Film"
+    "runtime": 129,
+    "genre": "Marriage Drama, Psychological Drama",
+    "image": "whosafraidofvirginiawoolf",
+    "rating": 10
+  },
+  {
+    "title": "Belle de jour",
+    "director": "Luis Buñuel",
+    "year": 1967,
+    "country": "France-Italy",
+    "runtime": 100,
+    "genre": "Satire, Psychological Drama",
+    "rating": 9
+  },
+  {
+    "title": "Bonnie and Clyde",
+    "director": "Arthur Penn",
+    "year": 1967,
+    "country": "USA",
+    "runtime": 111,
+    "genre": "Gangster Film, Crime Drama",
+    "rating": 8
   },
   {
     "title": "Branded to Kill",
@@ -6699,6 +3813,15 @@ const lists = [ // Nosferatu
     "genre": "Gangster Film, Crime Thriller"
   },
   {
+    "title": "Cool Hand Luke",
+    "director": "Stuart Rosenberg",
+    "year": 1967,
+    "country": "USA",
+    "runtime": 126,
+    "genre": "Drama, Prison Film",
+    "rating": 5
+  },
+  {
     "title": "Don't Look Back",
     "director": "D.A. Pennebaker",
     "year": 1967,
@@ -6707,12 +3830,12 @@ const lists = [ // Nosferatu
     "genre": "Music, Documentary"
   },
   {
-    "title": "The Firemen's Ball",
-    "director": "Milos Forman",
+    "title": "Le Samouraï",
+    "director": "Jean-Pierre Melville",
     "year": 1967,
-    "country": "Czechoslovakia",
-    "runtime": 73,
-    "genre": "Comedy, Satire"
+    "country": "France",
+    "runtime": 95,
+    "genre": "Crime Thriller, Post-Noir (Modern Noir)"
   },
   {
     "title": "Marketa Lazarová",
@@ -6721,6 +3844,31 @@ const lists = [ // Nosferatu
     "country": "Czechoslovakia",
     "runtime": 162,
     "genre": "Epic, Historical Film"
+  },
+  {
+    "title": "Mouchette",
+    "director": "Robert Bresson",
+    "year": 1967,
+    "country": "France",
+    "runtime": 80,
+    "genre": "Drama, Childhood Drama"
+  },
+  {
+    "title": "Playtime",
+    "director": "Jacques Tati",
+    "year": 1967,
+    "country": "France",
+    "runtime": 108,
+    "genre": "Satire, Urban Comedy"
+  },
+  {
+    "title": "Point Blank",
+    "director": "John Boorman",
+    "year": 1967,
+    "country": "USA",
+    "runtime": 92,
+    "genre": "Crime, Thriller",
+    "rating": 6
   },
   {
     "title": "Portrait of Jason",
@@ -6739,6 +3887,31 @@ const lists = [ // Nosferatu
     "genre": "Drama, Political Drama"
   },
   {
+    "title": "The Firemen's Ball",
+    "director": "Milos Forman",
+    "year": 1967,
+    "country": "Czechoslovakia",
+    "runtime": 73,
+    "genre": "Comedy, Satire"
+  },
+  {
+    "title": "The Graduate",
+    "director": "Mike Nichols",
+    "year": 1967,
+    "country": "USA",
+    "runtime": 105,
+    "genre": "Comedy, Coming-of-Age",
+    "rating": 10
+  },
+  {
+    "title": "The Young Girls of Rochefort",
+    "director": "Jacques Demy",
+    "year": 1967,
+    "country": "France",
+    "runtime": 124,
+    "genre": "Romance, Musical"
+  },
+  {
     "title": "Titicut Follies",
     "director": "Frederick Wiseman",
     "year": 1967,
@@ -6755,20 +3928,20 @@ const lists = [ // Nosferatu
     "genre": "Abstract Film"
   },
   {
-    "title": "The Young Girls of Rochefort",
-    "director": "Jacques Demy",
+    "title": "Week-End",
+    "director": "Jean-Luc Godard",
     "year": 1967,
-    "country": "France",
-    "runtime": 124,
-    "genre": "Romance, Musical"
+    "country": "France-Italy",
+    "runtime": 103,
+    "genre": "Avant-garde-Experimental, Satire"
   },
   {
-    "title": "The Chronicle of Anna Magdalena Bach",
-    "director": "Jean-Marie Straub",
+    "title": "2001: A Space Odyssey",
+    "director": "Stanley Kubrick",
     "year": 1968,
-    "country": "West Germany-Italy",
-    "runtime": 94,
-    "genre": "Drama, Biopic"
+    "country": "UK-USA",
+    "runtime": 139,
+    "genre": "Psychological Sci-Fi, Space Adventure"
   },
   {
     "title": "Faces",
@@ -6779,12 +3952,13 @@ const lists = [ // Nosferatu
     "genre": "Marriage Drama, Psychological Drama"
   },
   {
-    "title": "The Hour of the Furnaces",
-    "director": "Fernando E. Solanas & Octavio Getino",
+    "title": "Hour of the Wolf",
+    "director": "Ingmar Bergman",
     "year": 1968,
-    "country": "Argentina",
-    "runtime": 260,
-    "genre": "Politics & Government, Documentary"
+    "country": "Sweden",
+    "runtime": 88,
+    "genre": "Gothic Film, Psychological Drama",
+    "rating": 7
   },
   {
     "title": "If....",
@@ -6819,12 +3993,38 @@ const lists = [ // Nosferatu
     "genre": "Psychological Drama, Political Drama"
   },
   {
-    "title": "The Party",
-    "director": "Blake Edwards",
+    "title": "Night of the Living Dead",
+    "director": "George A. Romero",
     "year": 1968,
     "country": "USA",
-    "runtime": 99,
-    "genre": "Comedy, Slapstick"
+    "runtime": 96,
+    "genre": "Horror, Creature Film",
+    "rating": 9
+  },
+  {
+    "title": "O Bandido da Luz Vermelha",
+    "director": "Rogério Sganzerla",
+    "year": 1968,
+    "country": "Brazil",
+    "runtime": 92,
+    "genre": "Biopic"
+  },
+  {
+    "title": "Once Upon a Time in the West",
+    "director": "Sergio Leone",
+    "year": 1968,
+    "country": "Italy-USA",
+    "runtime": 165,
+    "genre": "Epic Western, Spaghetti Western",
+    "rating": 10
+  },
+  {
+    "title": "Rosemary's Baby",
+    "director": "Roman Polanski",
+    "year": 1968,
+    "country": "USA",
+    "runtime": 136,
+    "genre": "Occult Horror, Psychological Thriller"
   },
   {
     "title": "Teorema",
@@ -6833,6 +4033,132 @@ const lists = [ // Nosferatu
     "country": "Italy",
     "runtime": 98,
     "genre": "Drama, Religious Drama"
+  },
+  {
+    "title": "The Chronicle of Anna Magdalena Bach",
+    "director": "Jean-Marie Straub",
+    "year": 1968,
+    "country": "West Germany-Italy",
+    "runtime": 94,
+    "genre": "Drama, Biopic"
+  },
+  {
+    "title": "The Hour of the Furnaces",
+    "director": "Fernando E. Solanas & Octavio Getino",
+    "year": 1968,
+    "country": "Argentina",
+    "runtime": 260,
+    "genre": "Politics & Government, Documentary"
+  },
+  {
+    "title": "The Party",
+    "director": "Blake Edwards",
+    "year": 1968,
+    "country": "USA",
+    "runtime": 99,
+    "genre": "Comedy, Slapstick"
+  },
+  {
+    "title": "The Producers",
+    "director": "Mel Brooks",
+    "year": 1968,
+    "country": "USA",
+    "runtime": 88,
+    "genre": "Showbiz Comedy, Farce",
+    "rating": 5
+  },
+  {
+    "title": "Antonio das Mortes",
+    "director": "Glauber Rocha",
+    "year": 1969,
+    "country": "Brazil",
+    "runtime": 95,
+    "genre": "Adventure Drama, Political Drama"
+  },
+  {
+    "title": "Army of Shadows",
+    "director": "Jean-Pierre Melville",
+    "year": 1969,
+    "country": "France-Italy",
+    "runtime": 140,
+    "genre": "Resistance Film, War Drama"
+  },
+  {
+    "title": "Butch Cassidy and the Sundance Kid",
+    "director": "George Roy Hill",
+    "year": 1969,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Western, Buddy Film",
+    "rating": 8
+  },
+  {
+    "title": "Diaries, Notes and Sketches",
+    "director": "Jonas Mekas",
+    "year": 1969,
+    "country": "USA",
+    "runtime": 177,
+    "genre": "Avant-garde/Experimental"
+  },
+  {
+    "title": "Easy Rider",
+    "director": "Dennis Hopper",
+    "year": 1969,
+    "country": "USA",
+    "runtime": 94,
+    "genre": "Road Movie, Biker Film",
+    "rating": 9
+  },
+  {
+    "title": "Kes",
+    "director": "Ken Loach",
+    "year": 1969,
+    "country": "UK",
+    "runtime": 113,
+    "genre": "Coming-of-Age, Family Drama",
+    "rating": 10
+  },
+  {
+    "title": "Macunaima",
+    "director": "Joaquim Pedro de Andrade",
+    "year": 1969,
+    "country": "Brazil",
+    "runtime": 110,
+    "genre": "Comedy, Satire"
+  },
+  {
+    "title": "Midnight Cowboy",
+    "director": "John Schlesinger",
+    "year": 1969,
+    "country": "USA",
+    "runtime": 113,
+    "genre": "Urban Drama, Buddy Film",
+    "rating": 6
+  },
+  {
+    "title": "My Night at Maud's",
+    "director": "Eric Rohmer",
+    "year": 1969,
+    "country": "France",
+    "runtime": 105,
+    "genre": "Comedy of Manners, Romantic Drama"
+  },
+  {
+    "title": "Salesman",
+    "director": "Albert Maysles, David Maysles & Charlotte Zwerin",
+    "year": 1969,
+    "country": "USA",
+    "runtime": 85,
+    "genre": "Culture & Society, Documentary"
+  },
+  {
+    "title": "Satyricon",
+    "director": "Federico Fellini",
+    "year": 1969,
+    "country": "Italy",
+    "runtime": 129,
+    "genre": "Drama, Period Film",
+    "rating": 6
   },
   {
     "title": "The Colour of Pomegranates",
@@ -6851,28 +4177,21 @@ const lists = [ // Nosferatu
     "genre": "Political Drama, Family Drama"
   },
   {
-    "title": "Diaries, Notes and Sketches",
-    "director": "Jonas Mekas",
+    "title": "The Sorrow and the Pity",
+    "director": "Marcel Ophüls",
     "year": 1969,
-    "country": "USA",
-    "runtime": 177,
-    "genre": "Avant-garde/Experimental"
+    "country": "France-Switzerland-Germany",
+    "runtime": 260,
+    "genre": "Military & War, Documentary"
   },
   {
-    "title": "Macunaima",
-    "director": "Joaquim Pedro de Andrade",
-    "year": 1969,
-    "country": "Brazil",
-    "runtime": 110,
-    "genre": "Comedy, Satire"
-  },
-  {
-    "title": "Salesman",
-    "director": "Albert Maysles, David Maysles & Charlotte Zwerin",
+    "title": "The Wild Bunch",
+    "director": "Sam Peckinpah",
     "year": 1969,
     "country": "USA",
-    "runtime": 85,
-    "genre": "Culture & Society, Documentary"
+    "runtime": 144,
+    "genre": "Revisionist Western, Outlaw (Gunfighter) Film",
+    "rating": 8
   },
   {
     "title": "Z",
@@ -6881,6 +4200,14 @@ const lists = [ // Nosferatu
     "country": "France",
     "runtime": 127,
     "genre": "Thriller, Political Thriller"
+  },
+  {
+    "title": "Claire's Knee",
+    "director": "Eric Rohmer",
+    "year": 1970,
+    "country": "France",
+    "runtime": 105,
+    "genre": "Comedy Drama, Comedy of Manners"
   },
   {
     "title": "Deep End",
@@ -6915,14 +4242,6 @@ const lists = [ // Nosferatu
     "genre": "Music, Documentary"
   },
   {
-    "title": "The Hart of London",
-    "director": "Jack Chambers",
-    "year": 1970,
-    "country": "Canada",
-    "runtime": 80,
-    "genre": "Avant-garde-Experimental"
-  },
-  {
     "title": "Husbands",
     "director": "John Cassavetes",
     "year": 1970,
@@ -6939,12 +4258,45 @@ const lists = [ // Nosferatu
     "genre": "Thriller, Psychological Thriller"
   },
   {
+    "title": "M*A*S*H",
+    "director": "Robert Altman",
+    "year": 1970,
+    "country": "USA",
+    "runtime": 116,
+    "genre": "Military Comedy, Satire"
+  },
+  {
     "title": "Performance",
     "director": "Nicolas Roeg & Donald Cammell",
     "year": 1970,
     "country": "UK",
     "runtime": 105,
     "genre": "Psychological Drama, Satire"
+  },
+  {
+    "title": "The Conformist",
+    "director": "Bernardo Bertolucci",
+    "year": 1970,
+    "country": "Italy-France-West Germany",
+    "runtime": 107,
+    "genre": "Psychological Drama, Political Drama"
+  },
+  {
+    "title": "The Hart of London",
+    "director": "Jack Chambers",
+    "year": 1970,
+    "country": "Canada",
+    "runtime": 80,
+    "genre": "Avant-garde-Experimental"
+  },
+  {
+    "title": "The Private Life of Sherlock Holmes",
+    "director": "Billy Wilder",
+    "year": 1970,
+    "country": "USA",
+    "runtime": 125,
+    "genre": "Romantic Adventure, Comedy Thriller",
+    "rating": 8
   },
   {
     "title": "The Red Circle",
@@ -6955,6 +4307,22 @@ const lists = [ // Nosferatu
     "genre": "Crime Thriller, Post-Noir (Modern Noir)"
   },
   {
+    "title": "The Wild Child",
+    "director": "François Truffaut",
+    "year": 1970,
+    "country": "France",
+    "runtime": 85,
+    "genre": "Period Film, Childhood Drama"
+  },
+  {
+    "title": "Tristana",
+    "director": "Luis Buñuel",
+    "year": 1970,
+    "country": "Spain-Italy-France",
+    "runtime": 98,
+    "genre": "Psychological Drama, Satire"
+  },
+  {
     "title": "Wanda",
     "director": "Barbara Loden",
     "year": 1970,
@@ -6963,12 +4331,21 @@ const lists = [ // Nosferatu
     "genre": "Drama, Road Movie"
   },
   {
-    "title": "The Wild Child",
-    "director": "François Truffaut",
+    "title": "Zabriskie Point",
+    "director": "Michelangelo Antonioni",
     "year": 1970,
-    "country": "France",
-    "runtime": 85,
-    "genre": "Period Film, Childhood Drama"
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Drama, Road Movie"
+  },
+  {
+    "title": "A Clockwork Orange",
+    "director": "Stanley Kubrick",
+    "year": 1971,
+    "country": "UK",
+    "runtime": 137,
+    "genre": "Satire, Psychological Sci-Fi",
+    "rating": 10
   },
   {
     "title": "A Touch of Zen",
@@ -6979,12 +4356,30 @@ const lists = [ // Nosferatu
     "genre": "Martial Arts, Drama"
   },
   {
-    "title": "The Devils",
-    "director": "Ken Russell",
+    "title": "Death in Venice",
+    "director": "Luchino Visconti",
     "year": 1971,
-    "country": "UK",
-    "runtime": 109,
-    "genre": "Historical Film, Religious Drama"
+    "country": "Italy",
+    "runtime": 130,
+    "genre": "Drama, Period Film",
+    "rating": 8
+  },
+  {
+    "title": "Dirty Harry",
+    "director": "Don Siegel",
+    "year": 1971,
+    "country": "USA",
+    "runtime": 102,
+    "genre": "Crime, Action Thriller"
+  },
+  {
+    "title": "Duel",
+    "director": "Steven Spielberg",
+    "year": 1971,
+    "country": "USA",
+    "runtime": 90,
+    "genre": "Thriller, Road Movie",
+    "rating": 8
   },
   {
     "title": "Fata Morgana",
@@ -7003,12 +4398,13 @@ const lists = [ // Nosferatu
     "genre": "Crime Thriller, Gangster Film"
   },
   {
-    "title": "The Go-Between",
-    "director": "Joseph Losey",
+    "title": "Harold and Maude",
+    "director": "Hal Ashby",
     "year": 1971,
-    "country": "UK",
-    "runtime": 116,
-    "genre": "Romantic Drama, Period Film"
+    "country": "USA",
+    "runtime": 91,
+    "genre": "Black Comedy, Coming-of-Age",
+    "rating": 9
   },
   {
     "title": "La Région centrale",
@@ -7019,12 +4415,53 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Drama"
   },
   {
+    "title": "McCabe & Mrs. Miller",
+    "director": "Robert Altman",
+    "year": 1971,
+    "country": "USA",
+    "runtime": 121,
+    "genre": "Drama, Revisionist Western"
+  },
+  {
     "title": "Out 1, noli me tangere",
     "director": "Jacques Rivette",
     "year": 1971,
     "country": "France",
     "runtime": 729,
     "genre": "Drama, Comedy"
+  },
+  {
+    "title": "The Devils",
+    "director": "Ken Russell",
+    "year": 1971,
+    "country": "UK",
+    "runtime": 109,
+    "genre": "Historical Film, Religious Drama"
+  },
+  {
+    "title": "The French Connection",
+    "director": "William Friedkin",
+    "year": 1971,
+    "country": "USA",
+    "runtime": 104,
+    "genre": "Crime, Action Thriller",
+    "rating": 3
+  },
+  {
+    "title": "The Go-Between",
+    "director": "Joseph Losey",
+    "year": 1971,
+    "country": "UK",
+    "runtime": 116,
+    "genre": "Romantic Drama, Period Film"
+  },
+  {
+    "title": "The Last Picture Show",
+    "director": "Peter Bogdanovich",
+    "year": 1971,
+    "country": "USA",
+    "runtime": 118,
+    "genre": "Drama, Coming-of-Age"
   },
   {
     "title": "Two English Girls",
@@ -7035,12 +4472,12 @@ const lists = [ // Nosferatu
     "genre": "Romantic Drama, Period Film"
   },
   {
-    "title": "Walkabout",
-    "director": "Nicolas Roeg",
+    "title": "Two-Lane Blacktop",
+    "director": "Monte Hellman",
     "year": 1971,
-    "country": "Australia",
-    "runtime": 95,
-    "genre": "Adventure, Drama"
+    "country": "USA",
+    "runtime": 101,
+    "genre": "Drama, Road Movie"
   },
   {
     "title": "W.R.: Mysteries of the Organism",
@@ -7051,12 +4488,74 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Sex Comedy"
   },
   {
-    "title": "The Bitter Tears of Petra von Kant",
-    "director": "Rainer Werner Fassbinder",
+    "title": "Walkabout",
+    "director": "Nicolas Roeg",
+    "year": 1971,
+    "country": "Australia",
+    "runtime": 95,
+    "genre": "Adventure, Drama"
+  },
+  {
+    "title": "Aguirre: The Wrath of God",
+    "director": "Werner Herzog",
     "year": 1972,
     "country": "West Germany",
-    "runtime": 124,
-    "genre": "Drama, Melodrama"
+    "runtime": 94,
+    "genre": "Adventure Drama, Jungle Film"
+  },
+  {
+    "title": "Cabaret",
+    "director": "Bob Fosse",
+    "year": 1972,
+    "country": "USA",
+    "runtime": 128,
+    "genre": "Musical, Drama",
+    "rating": 6
+  },
+  {
+    "title": "Cries and Whispers",
+    "director": "Ingmar Bergman",
+    "year": 1972,
+    "country": "Sweden",
+    "runtime": 106,
+    "genre": "Drama, Family Drama",
+    "rating": 8
+  },
+  {
+    "title": "Deliverance",
+    "director": "John Boorman",
+    "year": 1972,
+    "country": "USA",
+    "runtime": 109,
+    "genre": "Drama, Adventure Drama",
+    "rating": 8
+  },
+  {
+    "title": "Fat City",
+    "director": "John Huston",
+    "year": 1972,
+    "country": "USA",
+    "runtime": 100,
+    "genre": "Drama, Sports Drama",
+    "rating": 7
+  },
+  {
+    "title": "Fellini's Roma",
+    "director": "Federico Fellini",
+    "year": 1972,
+    "country": "Italy",
+    "runtime": 128,
+    "genre": "Satire, Ensemble Film",
+    "rating": 6
+  },
+  {
+    "title": "Last Tango in Paris",
+    "director": "Bernardo Bertolucci",
+    "year": 1972,
+    "country": "France-Italy",
+    "runtime": 136,
+    "genre": "Psychological Drama, Erotic Drama",
+    "rating": 7
   },
   {
     "title": "Pink Flamingos",
@@ -7067,6 +4566,67 @@ const lists = [ // Nosferatu
     "genre": "Comedy, Trash Film"
   },
   {
+    "title": "Solaris",
+    "director": "Andrei Tarkovsky",
+    "year": 1972,
+    "country": "USSR",
+    "runtime": 165,
+    "genre": "Science Fiction, Psychological Sci-Fi"
+  },
+  {
+    "title": "The Bitter Tears of Petra von Kant",
+    "director": "Rainer Werner Fassbinder",
+    "year": 1972,
+    "country": "West Germany",
+    "runtime": 124,
+    "genre": "Drama, Melodrama"
+  },
+  {
+    "title": "The Discreet Charm of the Bourgeoisie",
+    "director": "Luis Buñuel",
+    "year": 1972,
+    "country": "France",
+    "runtime": 100,
+    "genre": "Satire, Black Comedy",
+    "rating": 8
+  },
+  {
+    "title": "The Godfather",
+    "director": "Francis Ford Coppola",
+    "year": 1972,
+    "country": "USA",
+    "runtime": 175,
+    "genre": "Gangster Film, Crime Drama",
+    "rating": 10
+  },
+  {
+    "title": "Amarcord",
+    "director": "Federico Fellini",
+    "year": 1973,
+    "country": "Italy",
+    "runtime": 127,
+    "genre": "Comedy Drama, Ensemble Film",
+    "rating": 9
+  },
+  {
+    "title": "American Graffiti",
+    "director": "George Lucas",
+    "year": 1973,
+    "country": "USA",
+    "runtime": 110,
+    "genre": "Comedy Drama, Teen Movie",
+    "rating": 6
+  },
+  {
+    "title": "Badlands",
+    "director": "Terrence Malick",
+    "year": 1973,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Crime Drama, Americana",
+    "rating": 8
+  },
+  {
     "title": "Day for Night",
     "director": "François Truffaut",
     "year": 1973,
@@ -7075,12 +4635,31 @@ const lists = [ // Nosferatu
     "genre": "Comedy Drama, Showbiz Drama"
   },
   {
-    "title": "The Last Detail",
-    "director": "Hal Ashby",
+    "title": "Don't Look Now",
+    "director": "Nicolas Roeg",
     "year": 1973,
-    "country": "USA",
-    "runtime": 105,
-    "genre": "Comedy Drama, Road Movie"
+    "country": "UK",
+    "runtime": 110,
+    "genre": "Psychological Thriller, Supernatural Thriller",
+    "rating": 7
+  },
+  {
+    "title": "Enter the Dragon",
+    "director": "Robert Clouse",
+    "year": 1973,
+    "country": "USA-Hong Kong",
+    "runtime": 97,
+    "genre": "Action, Martial Arts",
+    "rating": 5
+  },
+  {
+    "title": "F for Fake",
+    "director": "Orson Welles",
+    "year": 1973,
+    "country": "France-Iran-West Germany",
+    "runtime": 85,
+    "genre": "Avant-garde-Experimental, Essay Film",
+    "rating": 10
   },
   {
     "title": "Ludwig",
@@ -7091,12 +4670,13 @@ const lists = [ // Nosferatu
     "genre": "Historical Film, Biography"
   },
   {
-    "title": "The Mother and the Whore",
-    "director": "Jean Eustache",
+    "title": "Mean Streets",
+    "director": "Martin Scorsese",
     "year": 1973,
-    "country": "France",
-    "runtime": 210,
-    "genre": "Psychological Drama, Urban Drama"
+    "country": "USA",
+    "runtime": 110,
+    "genre": "Crime, Urban Drama",
+    "rating": 10
   },
   {
     "title": "O Lucky Man!",
@@ -7107,12 +4687,125 @@ const lists = [ // Nosferatu
     "genre": "Comedy, Satire"
   },
   {
+    "title": "Paper Moon",
+    "director": "Peter Bogdanovich",
+    "year": 1973,
+    "country": "USA",
+    "runtime": 102,
+    "genre": "Comedy Drama, Road Movie",
+    "rating": 10
+  },
+  {
+    "title": "Pat Garrett and Billy the Kid",
+    "director": "Sam Peckinpah",
+    "year": 1973,
+    "country": "USA",
+    "runtime": 122,
+    "genre": "Revisionist Western, Outlaw (Gunfighter) Film",
+    "rating": 9
+  },
+  {
+    "title": "Scenes from a Marriage",
+    "director": "Ingmar Bergman",
+    "year": 1973,
+    "country": "Sweden",
+    "runtime": 168,
+    "genre": "Drama, Marriage Drama"
+  },
+  {
+    "title": "The Exorcist",
+    "director": "William Friedkin",
+    "year": 1973,
+    "country": "USA",
+    "runtime": 122,
+    "genre": "Horror, Religious Drama",
+    "rating": 7
+  },
+  {
+    "title": "The Holy Mountain",
+    "director": "Alejandro Jodorowsky",
+    "year": 1973,
+    "country": "Mexico-USA",
+    "runtime": 114,
+    "genre": "Avant-garde-Experimental, Surrealist Film",
+    "rating": 9
+  },
+  {
+    "title": "The Last Detail",
+    "director": "Hal Ashby",
+    "year": 1973,
+    "country": "USA",
+    "runtime": 105,
+    "genre": "Comedy Drama, Road Movie"
+  },
+  {
+    "title": "The Long Goodbye",
+    "director": "Robert Altman",
+    "year": 1973,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Mystery, Post-Noir (Modern Noir)",
+    "rating": 10
+  },
+  {
+    "title": "The Mother and the Whore",
+    "director": "Jean Eustache",
+    "year": 1973,
+    "country": "France",
+    "runtime": 210,
+    "genre": "Psychological Drama, Urban Drama"
+  },
+  {
+    "title": "The Spirit of the Beehive",
+    "director": "Victor Erice",
+    "year": 1973,
+    "country": "Spain",
+    "runtime": 95,
+    "genre": "Drama, Childhood Drama",
+    "rating": 9
+  },
+  {
+    "title": "The Wicker Man",
+    "director": "Robin Hardy",
+    "year": 1973,
+    "country": "UK",
+    "runtime": 103,
+    "genre": "Occult Horror, Police Detective Film",
+    "rating": 10
+  },
+  {
     "title": "Touki Bouki",
     "director": "Djibril Diop Mambéty",
     "year": 1973,
     "country": "Senegal",
     "runtime": 85,
     "genre": "Drama, Road Movie"
+  },
+  {
+    "title": "A Woman Under the Influence",
+    "director": "John Cassavetes",
+    "year": 1974,
+    "country": "USA",
+    "runtime": 155,
+    "genre": "Marriage Drama, Psychological Drama"
+  },
+  {
+    "title": "Ali: Fear Eats the Soul",
+    "director": "Rainer Werner Fassbinder",
+    "year": 1974,
+    "country": "West Germany",
+    "runtime": 94,
+    "genre": "Melodrama, Psychological Drama",
+    "rating": 9
+  },
+  {
+    "title": "Alice in the Cities",
+    "director": "Wim Wenders",
+    "year": 1974,
+    "country": "West Germany",
+    "runtime": 110,
+    "genre": "Drama, Road Movie",
+    "rating": 9
   },
   {
     "title": "Arabian Nights",
@@ -7123,12 +4816,30 @@ const lists = [ // Nosferatu
     "genre": "Adventure, Romantic Fantasy"
   },
   {
+    "title": "Bring Me the Head of Alfredo Garcia",
+    "director": "Sam Peckinpah",
+    "year": 1974,
+    "country": "USA",
+    "runtime": 112,
+    "genre": "Black Comedy, Action Thriller",
+    "rating": 5
+  },
+  {
     "title": "Celine and Julie Go Boating",
     "director": "Jacques Rivette",
     "year": 1974,
     "country": "France",
     "runtime": 192,
     "genre": "Avant-garde-Experimental, Surrealist Film"
+  },
+  {
+    "title": "Chinatown",
+    "director": "Roman Polanski",
+    "year": 1974,
+    "country": "USA",
+    "runtime": 131,
+    "genre": "Mystery, Post-Noir (Modern Noir)",
+    "rating": 7
   },
   {
     "title": "Edvard Munch",
@@ -7147,6 +4858,14 @@ const lists = [ // Nosferatu
     "genre": "Comedy, Trash Film"
   },
   {
+    "title": "Lancelot du Lac",
+    "director": "Robert Bresson",
+    "year": 1974,
+    "country": "France-Italy",
+    "runtime": 84,
+    "genre": "Drama, Period Film"
+  },
+  {
     "title": "My Little Loves",
     "director": "Jean Eustache",
     "year": 1974,
@@ -7155,12 +4874,97 @@ const lists = [ // Nosferatu
     "genre": "Drama"
   },
   {
+    "title": "The Conversation",
+    "director": "Francis Ford Coppola",
+    "year": 1974,
+    "country": "USA",
+    "runtime": 113,
+    "genre": "Thriller, Paranoid Thriller"
+  },
+  {
+    "title": "The Enigma of Kaspar Hauser",
+    "director": "Werner Herzog",
+    "year": 1974,
+    "country": "West Germany",
+    "runtime": 110,
+    "genre": "Psychological Drama, Biography"
+  },
+  {
+    "title": "The Godfather Part II",
+    "director": "Francis Ford Coppola",
+    "year": 1974,
+    "country": "USA",
+    "runtime": 200,
+    "genre": "Gangster Film, Crime Drama",
+    "rating": 9
+  },
+  {
+    "title": "The Phantom of Liberty",
+    "director": "Luis Buñuel",
+    "year": 1974,
+    "country": "France",
+    "runtime": 104,
+    "genre": "Satire, Black Comedy"
+  },
+  {
+    "title": "The Texas Chainsaw Massacre",
+    "director": "Tobe Hooper",
+    "year": 1974,
+    "country": "USA",
+    "runtime": 83,
+    "genre": "Horror, Slasher Film"
+  },
+  {
     "title": "We All Loved Each Other So Much",
     "director": "Ettore Scola",
     "year": 1974,
     "country": "Italy",
     "runtime": 124,
     "genre": "Comedy Drama, Romantic Drama"
+  },
+  {
+    "title": "Young Frankenstein",
+    "director": "Mel Brooks",
+    "year": 1974,
+    "country": "USA",
+    "runtime": 105,
+    "genre": "Parody/Spoof, Horror Comedy",
+    "rating": 5
+  },
+  {
+    "title": "Barry Lyndon",
+    "director": "Stanley Kubrick",
+    "year": 1975,
+    "country": "UK",
+    "runtime": 183,
+    "genre": "Drama, Period Film"
+  },
+  {
+    "title": "Deep Red",
+    "director": "Dario Argento",
+    "year": 1975,
+    "country": "Italy",
+    "runtime": 98,
+    "genre": "Thriller, Giallo",
+    "rating": 10
+  },
+  {
+    "title": "Dersu Uzala",
+    "director": "Akira Kurosawa",
+    "year": 1975,
+    "country": "USSR-Japan",
+    "runtime": 144,
+    "genre": "Drama, Adventure Drama",
+    "rating": 7
+  },
+  {
+    "title": "Dog Day Afternoon",
+    "director": "Sidney Lumet",
+    "year": 1975,
+    "country": "USA",
+    "runtime": 125,
+    "genre": "Crime, Urban Drama",
+    "rating": 6
   },
   {
     "title": "Grey Gardens",
@@ -7187,6 +4991,40 @@ const lists = [ // Nosferatu
     "genre": "Drama"
   },
   {
+    "title": "Jaws",
+    "director": "Steven Spielberg",
+    "year": 1975,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Thriller, Natural Horror",
+    "rating": 7
+  },
+  {
+    "title": "Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles",
+    "director": "Chantal Akerman",
+    "year": 1975,
+    "country": "Belgium-France",
+    "runtime": 201,
+    "genre": "Avant-garde-Experimental, Feminist Film"
+  },
+  {
+    "title": "Monty Python and the Holy Grail",
+    "director": "Terry Gilliam",
+    "year": 1975,
+    "country": "UK",
+    "runtime": 90,
+    "genre": "Anarchic Comedy, Parody/Spoof",
+    "rating": 9
+  },
+  {
+    "title": "Nashville",
+    "director": "Robert Altman",
+    "year": 1975,
+    "country": "USA",
+    "runtime": 159,
+    "genre": "Ensemble Film, Media Satire"
+  },
+  {
     "title": "Numéro deux",
     "director": "Jean-Luc Godard",
     "year": 1975,
@@ -7195,12 +5033,72 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Essay Film"
   },
   {
+    "title": "One Flew Over the Cuckoo's Nest",
+    "director": "Milos Forman",
+    "year": 1975,
+    "country": "USA",
+    "runtime": 133,
+    "genre": "Comedy Drama, Psychological Drama",
+    "rating": 7
+  },
+  {
+    "title": "Picnic at Hanging Rock",
+    "director": "Peter Weir",
+    "year": 1975,
+    "country": "Australia",
+    "runtime": 110,
+    "genre": "Mystery, Period Film",
+    "rating": 7
+  },
+  {
+    "title": "Salò, or the 120 Days of Sodom",
+    "director": "Pier Paolo Pasolini",
+    "year": 1975,
+    "country": "Italy",
+    "runtime": 117,
+    "genre": "Drama, Sex Horror"
+  },
+  {
     "title": "Sholay",
     "director": "Ramesh Sippy",
     "year": 1975,
     "country": "India",
     "runtime": 162,
     "genre": "Action, Adventure Drama"
+  },
+  {
+    "title": "The Man Who Would Be King",
+    "director": "John Huston",
+    "year": 1975,
+    "country": "USA",
+    "runtime": 129,
+    "genre": "Adventure, British Empire Film",
+    "rating": 9
+  },
+  {
+    "title": "The Mirror",
+    "director": "Andrei Tarkovsky",
+    "year": 1975,
+    "country": "USSR",
+    "runtime": 108,
+    "genre": "Avant-garde-Experimental, Essay Film",
+    "rating": 9
+  },
+  {
+    "title": "The Passenger",
+    "director": "Michelangelo Antonioni",
+    "year": 1975,
+    "country": "Italy",
+    "runtime": 119,
+    "genre": "Road Movie, Psychological Drama"
+  },
+  {
+    "title": "The Seasons",
+    "director": "Artavazd Peleshian",
+    "year": 1975,
+    "country": "USSR",
+    "runtime": 29,
+    "genre": "Documentary"
   },
   {
     "title": "The Travelling Players",
@@ -7227,12 +5125,29 @@ const lists = [ // Nosferatu
     "genre": "Political Drama, Family Drama"
   },
   {
-    "title": "The Ascent",
-    "director": "Larisa Shepitko",
+    "title": "All the President's Men",
+    "director": "Alan J. Pakula",
     "year": 1976,
-    "country": "USSR",
-    "runtime": 111,
-    "genre": "War Drama, Resistance Film"
+    "country": "USA",
+    "runtime": 138,
+    "genre": "Political Drama, Paranoid Thriller"
+  },
+  {
+    "title": "Assault on Precinct 13",
+    "director": "John Carpenter",
+    "year": 1976,
+    "country": "USA",
+    "runtime": 90,
+    "genre": "Action Thriller, Police Drama",
+    "rating": 8
+  },
+  {
+    "title": "Carrie",
+    "director": "Brian De Palma",
+    "year": 1976,
+    "country": "USA",
+    "runtime": 97,
+    "genre": "Horror, Supernatural Thriller"
   },
   {
     "title": "Cría cuervos",
@@ -7243,12 +5158,29 @@ const lists = [ // Nosferatu
     "genre": "Childhood Drama, Family Drama"
   },
   {
+    "title": "Fellini's Casanova",
+    "director": "Federico Fellini",
+    "year": 1976,
+    "country": "Italy",
+    "runtime": 158,
+    "genre": "Comedy Drama, Period Film"
+  },
+  {
     "title": "Harlan County, U.S.A.",
     "director": "Barbara Kopple",
     "year": 1976,
     "country": "USA",
     "runtime": 103,
     "genre": "Social Issues, Documentary"
+  },
+  {
+    "title": "In the Realm of the Senses",
+    "director": "Nagisa Oshima",
+    "year": 1976,
+    "country": "Japan-France",
+    "runtime": 109,
+    "genre": "Erotic Drama, Psychological Drama",
+    "rating": 7
   },
   {
     "title": "Kings of the Road",
@@ -7259,12 +5191,72 @@ const lists = [ // Nosferatu
     "genre": "Drama, Road Movie"
   },
   {
+    "title": "Network",
+    "director": "Sidney Lumet",
+    "year": 1976,
+    "country": "USA",
+    "runtime": 121,
+    "genre": "Comedy Drama, Media Satire",
+    "rating": 8
+  },
+  {
     "title": "News from Home",
     "director": "Chantal Akerman",
     "year": 1976,
     "country": "France-Belgium-West Germany",
     "runtime": 85,
     "genre": "Avant-garde/Experimental, Urban Drama"
+  },
+  {
+    "title": "Rocky",
+    "director": "John G. Avildsen",
+    "year": 1976,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Drama, Sports Drama",
+    "rating": 7
+  },
+  {
+    "title": "Taxi Driver",
+    "director": "Martin Scorsese",
+    "year": 1976,
+    "country": "USA",
+    "runtime": 113,
+    "genre": "Psychological Drama, Urban Drama"
+  },
+  {
+    "title": "The Ascent",
+    "director": "Larisa Shepitko",
+    "year": 1976,
+    "country": "USSR",
+    "runtime": 111,
+    "genre": "War Drama, Resistance Film"
+  },
+  {
+    "title": "The Killing of a Chinese Bookie",
+    "director": "John Cassavetes",
+    "year": 1976,
+    "country": "USA",
+    "runtime": 109,
+    "genre": "Crime, Drama"
+  },
+  {
+    "title": "The Outlaw Josey Wales",
+    "director": "Clint Eastwood",
+    "year": 1976,
+    "country": "USA",
+    "runtime": 135,
+    "genre": "Western, Outlaw (Gunfighter) Film",
+    "rating": 4
+  },
+  {
+    "title": "The Tenant",
+    "director": "Roman Polanski",
+    "year": 1976,
+    "country": "France-USA",
+    "runtime": 125,
+    "genre": "Thriller, Black Comedy",
+    "rating": 8
   },
   {
     "title": "3 Women",
@@ -7275,12 +5267,31 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
-    "title": "The Devil, Probably",
-    "director": "Robert Bresson",
+    "title": "Annie Hall",
+    "director": "Woody Allen",
     "year": 1977,
-    "country": "France",
-    "runtime": 95,
-    "genre": "Drama, Psychological Drama"
+    "country": "USA",
+    "runtime": 94,
+    "genre": "Romantic Comedy, Urban Comedy",
+    "rating": 9
+  },
+  {
+    "title": "Close Encounters of the Third Kind",
+    "director": "Steven Spielberg",
+    "year": 1977,
+    "country": "USA",
+    "runtime": 135,
+    "genre": "Science Fiction, Adventure Drama",
+    "rating": 9
+  },
+  {
+    "title": "Eraserhead",
+    "director": "David Lynch",
+    "year": 1977,
+    "country": "USA",
+    "runtime": 85,
+    "genre": "Avant-garde-Experimental, Surrealist Film",
+    "rating": 10
   },
   {
     "title": "Hitler: A Film from Germany",
@@ -7323,6 +5334,76 @@ const lists = [ // Nosferatu
     "genre": "Drama, Ensemble Film"
   },
   {
+    "title": "Saturday Night Fever",
+    "director": "John Badham",
+    "year": 1977,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Dance Film, Musical Drama",
+    "rating": 5
+  },
+  {
+    "title": "Star Wars",
+    "director": "George Lucas",
+    "year": 1977,
+    "country": "USA",
+    "runtime": 121,
+    "genre": "Science Fiction, Space Adventure",
+    "rating": 8
+  },
+  {
+    "title": "Suspiria",
+    "director": "Dario Argento",
+    "year": 1977,
+    "country": "Italy",
+    "runtime": 92,
+    "genre": "Horror, Gothic Film",
+    "rating": 10
+  },
+  {
+    "title": "That Obscure Object of Desire",
+    "director": "Luis Buñuel",
+    "year": 1977,
+    "country": "France-Spain",
+    "runtime": 103,
+    "genre": "Black Comedy, Satire"
+  },
+  {
+    "title": "The Devil, Probably",
+    "director": "Robert Bresson",
+    "year": 1977,
+    "country": "France",
+    "runtime": 95,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "Dawn of the Dead",
+    "director": "George A. Romero",
+    "year": 1978,
+    "country": "USA",
+    "runtime": 126,
+    "genre": "Horror, Creature Film",
+    "rating": 8
+  },
+  {
+    "title": "Days of Heaven",
+    "director": "Terrence Malick",
+    "year": 1978,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Rural Drama, Romantic Drama",
+    "rating": 8
+  },
+  {
+    "title": "Halloween",
+    "director": "John Carpenter",
+    "year": 1978,
+    "country": "USA",
+    "runtime": 93,
+    "genre": "Horror, Slasher Film",
+    "rating": 7
+  },
+  {
     "title": "In a Year with 13 Moons",
     "director": "Rainer Werner Fassbinder",
     "year": 1978,
@@ -7339,12 +5420,30 @@ const lists = [ // Nosferatu
     "genre": "Gross-Out Comedy, Anarchic Comedy"
   },
   {
+    "title": "The Deer Hunter",
+    "director": "Michael Cimino",
+    "year": 1978,
+    "country": "USA",
+    "runtime": 183,
+    "genre": "Ensemble Film, War Drama",
+    "rating": 5
+  },
+  {
     "title": "The Tree of Wooden Clogs",
     "director": "Ermanno Olmi",
     "year": 1978,
     "country": "Italy",
     "runtime": 185,
     "genre": "Rural Drama, Family Drama"
+  },
+  {
+    "title": "Alien",
+    "director": "Ridley Scott",
+    "year": 1979,
+    "country": "USA",
+    "runtime": 117,
+    "genre": "Horror, Science Fiction",
+    "rating": 9
   },
   {
     "title": "All That Jazz",
@@ -7355,6 +5454,15 @@ const lists = [ // Nosferatu
     "genre": "Musical, Showbiz Drama"
   },
   {
+    "title": "Apocalypse Now",
+    "director": "Francis Ford Coppola",
+    "year": 1979,
+    "country": "USA",
+    "runtime": 150,
+    "genre": "Anti-War Film, Jungle Film",
+    "rating": 9
+  },
+  {
     "title": "Arrebato",
     "director": "Iván Zulueta",
     "year": 1979,
@@ -7363,12 +5471,54 @@ const lists = [ // Nosferatu
     "genre": "Drama, Horror"
   },
   {
+    "title": "Being There",
+    "director": "Hal Ashby",
+    "year": 1979,
+    "country": "USA",
+    "runtime": 130,
+    "genre": "Comedy, Satire",
+    "rating": 7
+  },
+  {
+    "title": "Manhattan",
+    "director": "Woody Allen",
+    "year": 1979,
+    "country": "USA",
+    "runtime": 96,
+    "genre": "Urban Comedy, Romantic Comedy"
+  },
+  {
+    "title": "Monty Python's Life of Brian",
+    "director": "Terry Jones",
+    "year": 1979,
+    "country": "UK",
+    "runtime": 93,
+    "genre": "Parody/Spoof, Religious Comedy",
+    "rating": 9
+  },
+  {
+    "title": "Stalker",
+    "director": "Andrei Tarkovsky",
+    "year": 1979,
+    "country": "USSR",
+    "runtime": 160,
+    "genre": "Science Fiction, Psychological Sci-Fi"
+  },
+  {
     "title": "Tale of Tales",
     "director": "Yuriy Norshteyn",
     "year": 1979,
     "country": "USSR",
     "runtime": 29,
     "genre": "Avant-garde-Experimental, Animation"
+  },
+  {
+    "title": "The Marriage of Maria Braun",
+    "director": "Rainer Werner Fassbinder",
+    "year": 1979,
+    "country": "West Germany",
+    "runtime": 120,
+    "genre": "War Drama, Melodrama"
   },
   {
     "title": "The Tin Drum",
@@ -7387,12 +5537,13 @@ const lists = [ // Nosferatu
     "genre": "Crime, Psychological Drama"
   },
   {
-    "title": "The Age of the Earth",
-    "director": "Glauber Rocha",
+    "title": "Airplane!",
+    "director": "Jim Abrahams, David Zucker & Jerry Zucker",
     "year": 1980,
-    "country": "Brazil",
-    "runtime": 158,
-    "genre": "Religious Epic, Political Drama"
+    "country": "USA",
+    "runtime": 86,
+    "genre": "Anarchic Comedy, Parody/Spoof",
+    "rating": 6
   },
   {
     "title": "Bad Timing",
@@ -7427,12 +5578,29 @@ const lists = [ // Nosferatu
     "genre": "Epic Western, Revisionist Western"
   },
   {
+    "title": "Kagemusha",
+    "director": "Akira Kurosawa",
+    "year": 1980,
+    "country": "Japan",
+    "runtime": 159,
+    "genre": "Historical Epic, Samurai Film",
+    "rating": 9
+  },
+  {
     "title": "Mon oncle d'Amérique",
     "director": "Alain Resnais",
     "year": 1980,
     "country": "France",
     "runtime": 123,
     "genre": "Comedy Drama, Satire"
+  },
+  {
+    "title": "Raging Bull",
+    "director": "Martin Scorsese",
+    "year": 1980,
+    "country": "USA",
+    "runtime": 128,
+    "genre": "Biography, Sports Drama"
   },
   {
     "title": "Sauve qui peut (la vie)",
@@ -7443,6 +5611,120 @@ const lists = [ // Nosferatu
     "genre": "Psychological Drama, Urban Drama"
   },
   {
+    "title": "The Age of the Earth",
+    "director": "Glauber Rocha",
+    "year": 1980,
+    "country": "Brazil",
+    "runtime": 158,
+    "genre": "Religious Epic, Political Drama"
+  },
+  {
+    "title": "The Blues Brothers",
+    "director": "John Landis",
+    "year": 1980,
+    "country": "USA",
+    "runtime": 130,
+    "genre": "Action Comedy, Rock Musical",
+    "rating": 5
+  },
+  {
+    "title": "The Elephant Man",
+    "director": "David Lynch",
+    "year": 1980,
+    "country": "USA",
+    "runtime": 125,
+    "genre": "Biography, Medical Drama",
+    "rating": 7
+  },
+  {
+    "title": "The Empire Strikes Back",
+    "director": "Irvin Kershner",
+    "year": 1980,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Science Fiction, Space Adventure",
+    "rating": 9
+  },
+  {
+    "title": "The Shining",
+    "director": "Stanley Kubrick",
+    "year": 1980,
+    "country": "USA",
+    "runtime": 142,
+    "genre": "Horror, Haunted House Film",
+    "rating": 9
+  },
+  {
+    "title": "An American Werewolf in London",
+    "director": "John Landis",
+    "year": 1981,
+    "country": "USA",
+    "runtime": 97,
+    "genre": "Horror Comedy, Creature Film",
+    "rating": 8
+  },
+  {
+    "title": "Blow Out",
+    "director": "Brian De Palma",
+    "year": 1981,
+    "country": "USA",
+    "runtime": 107,
+    "genre": "Political Thriller, Paranoid Thriller"
+  },
+  {
+    "title": "Das Boot",
+    "director": "Wolfgang Petersen",
+    "year": 1981,
+    "country": "West Germany",
+    "runtime": 149,
+    "genre": "War Drama, Sea Adventure",
+    "rating": 6
+  },
+  {
+    "title": "Excalibur",
+    "director": "John Boorman",
+    "year": 1981,
+    "country": "UK",
+    "runtime": 140,
+    "genre": "Sword-and-Sorcery, Mythological Fantasy",
+    "rating": 8
+  },
+  {
+    "title": "Mad Max 2",
+    "director": "George Miller",
+    "year": 1981,
+    "country": "Australia",
+    "runtime": 94,
+    "genre": "Action, Science Fiction",
+    "rating": 6
+  },
+  {
+    "title": "Possession",
+    "director": "Andrzej Zulawski",
+    "year": 1981,
+    "country": "France-West Germany",
+    "runtime": 127,
+    "genre": "Marriage Drama, Supernatural Horror"
+  },
+  {
+    "title": "Raiders of the Lost Ark",
+    "director": "Steven Spielberg",
+    "year": 1981,
+    "country": "USA",
+    "runtime": 115,
+    "genre": "Adventure, Action",
+    "rating": 8
+  },
+  {
+    "title": "Reds",
+    "director": "Warren Beatty",
+    "year": 1981,
+    "country": "USA",
+    "runtime": 200,
+    "genre": "Epic, Historical Film",
+    "rating": 10
+  },
+  {
     "title": "The Woman Next Door",
     "director": "François Truffaut",
     "year": 1981,
@@ -7451,12 +5733,83 @@ const lists = [ // Nosferatu
     "genre": "Romantic Drama, Psychological Drama"
   },
   {
+    "title": "Blade Runner",
+    "director": "Ridley Scott",
+    "year": 1982,
+    "country": "USA",
+    "runtime": 118,
+    "genre": "Science Fiction, Tech Noir",
+    "rating": 9
+  },
+  {
+    "title": "E.T. The Extra-Terrestrial",
+    "director": "Steven Spielberg",
+    "year": 1982,
+    "country": "USA",
+    "runtime": 115,
+    "genre": "Science Fiction, Children's Fantasy",
+    "rating": 9
+  },
+  {
+    "title": "Fanny and Alexander",
+    "director": "Ingmar Bergman",
+    "year": 1982,
+    "country": "Sweden",
+    "runtime": 189,
+    "genre": "Family Drama, Childhood Drama",
+    "rating": 10
+  },
+  {
+    "title": "Fitzcarraldo",
+    "director": "Werner Herzog",
+    "year": 1982,
+    "country": "West Germany",
+    "runtime": 157,
+    "genre": "Adventure Drama, Jungle Film"
+  },
+  {
+    "title": "Koyaanisqatsi",
+    "director": "Godfrey Reggio",
+    "year": 1982,
+    "country": "USA",
+    "runtime": 87,
+    "genre": "Essay Film, Documentary",
+    "rating": 10
+  },
+  {
     "title": "Passion",
     "director": "Jean-Luc Godard",
     "year": 1982,
     "country": "France-Switzerland",
     "runtime": 87,
     "genre": "Psychological Drama, Showbiz Drama"
+  },
+  {
+    "title": "The Thing",
+    "director": "John Carpenter",
+    "year": 1982,
+    "country": "USA",
+    "runtime": 108,
+    "genre": "Science Fiction, Horror",
+    "rating": 10
+  },
+  {
+    "title": "Tootsie",
+    "director": "Sydney Pollack",
+    "year": 1982,
+    "country": "USA",
+    "runtime": 116,
+    "genre": "Showbiz Comedy, Romantic Comedy",
+    "rating": 6
+  },
+  {
+    "title": "Veronika Voss",
+    "director": "Rainer Werner Fassbinder",
+    "year": 1982,
+    "country": "West Germany",
+    "runtime": 105,
+    "genre": "Drama, Psychological Drama",
+    "rating": 9
   },
   {
     "title": "Yol",
@@ -7473,14 +5826,6 @@ const lists = [ // Nosferatu
     "country": "France",
     "runtime": 102,
     "genre": "Drama, Coming-of-Age"
-  },
-  {
-    "title": "The Ballad of Narayama",
-    "director": "Shohei Imamura",
-    "year": 1983,
-    "country": "Japan",
-    "runtime": 130,
-    "genre": "Rural Drama, Family Drama"
   },
   {
     "title": "Diary",
@@ -7523,6 +5868,56 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
+    "title": "Sans soleil",
+    "director": "Chris Marker",
+    "year": 1983,
+    "country": "France",
+    "runtime": 100,
+    "genre": "Avant-garde-Experimental, Documentary"
+  },
+  {
+    "title": "Scarface",
+    "director": "Brian De Palma",
+    "year": 1983,
+    "country": "USA",
+    "runtime": 170,
+    "genre": "Crime Thriller, Gangster Film",
+    "rating": 9
+  },
+  {
+    "title": "The Ballad of Narayama",
+    "director": "Shohei Imamura",
+    "year": 1983,
+    "country": "Japan",
+    "runtime": 130,
+    "genre": "Rural Drama, Family Drama"
+  },
+  {
+    "title": "The King of Comedy",
+    "director": "Martin Scorsese",
+    "year": 1983,
+    "country": "USA",
+    "runtime": 109,
+    "genre": "Showbiz Comedy, Black Comedy"
+  },
+  {
+    "title": "The Right Stuff",
+    "director": "Philip Kaufman",
+    "year": 1983,
+    "country": "USA",
+    "runtime": 193,
+    "genre": "Drama, Docudrama",
+    "rating": 7
+  },
+  {
+    "title": "Videodrome",
+    "director": "David Cronenberg",
+    "year": 1983,
+    "country": "Canada",
+    "runtime": 90,
+    "genre": "Media Satire, Sci-Fi Horror"
+  },
+  {
     "title": "Zelig",
     "director": "Woody Allen",
     "year": 1983,
@@ -7531,12 +5926,83 @@ const lists = [ // Nosferatu
     "genre": "Mockumentary, Fantasy Comedy"
   },
   {
+    "title": "Amadeus",
+    "director": "Milos Forman",
+    "year": 1984,
+    "country": "USA",
+    "runtime": 158,
+    "genre": "Musical Drama, Biography",
+    "rating": 8
+  },
+  {
+    "title": "Blood Simple",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1984,
+    "country": "USA",
+    "runtime": 97,
+    "genre": "Post-Noir (Modern Noir), Crime Thriller",
+    "rating": 9
+  },
+  {
+    "title": "Ghostbusters",
+    "director": "Ivan Reitman",
+    "year": 1984,
+    "country": "USA",
+    "runtime": 107,
+    "genre": "Fantasy, Sci-Fi Comedy",
+    "rating": 7
+  },
+  {
+    "title": "Love Streams",
+    "director": "John Cassavetes",
+    "year": 1984,
+    "country": "USA",
+    "runtime": 141,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "Once Upon a Time in America",
+    "director": "Sergio Leone",
+    "year": 1984,
+    "country": "Italy-USA",
+    "runtime": 229,
+    "genre": "Crime, Gangster Film",
+    "rating": 8
+  },
+  {
+    "title": "Paris, Texas",
+    "director": "Wim Wenders",
+    "year": 1984,
+    "country": "USA",
+    "runtime": 150,
+    "genre": "Drama, Road Movie",
+    "rating": 9
+  },
+  {
     "title": "Stranger Than Paradise",
     "director": "Jim Jarmusch",
     "year": 1984,
     "country": "USA",
     "runtime": 90,
     "genre": "Comedy, Road Movie"
+  },
+  {
+    "title": "The Terminator",
+    "director": "James Cameron",
+    "year": 1984,
+    "country": "USA",
+    "runtime": 107,
+    "genre": "Science Fiction, Action",
+    "rating": 9
+  },
+  {
+    "title": "This is Spinal Tap",
+    "director": "Rob Reiner",
+    "year": 1984,
+    "country": "USA",
+    "runtime": 82,
+    "genre": "Mockumentary, Showbiz Comedy",
+    "rating": 7
   },
   {
     "title": "Twenty Years Later",
@@ -7555,6 +6021,33 @@ const lists = [ // Nosferatu
     "genre": "Family Drama, Rural Drama"
   },
   {
+    "title": "Back to the Future",
+    "director": "Robert Zemeckis",
+    "year": 1985,
+    "country": "USA",
+    "runtime": 116,
+    "genre": "Teen Movie, Sci-Fi Comedy",
+    "rating": 9
+  },
+  {
+    "title": "Brazil",
+    "director": "Terry Gilliam",
+    "year": 1985,
+    "country": "UK",
+    "runtime": 131,
+    "genre": "Science Fiction, Satire",
+    "rating": 8
+  },
+  {
+    "title": "Come and See",
+    "director": "Elem Klimov",
+    "year": 1985,
+    "country": "USSR",
+    "runtime": 136,
+    "genre": "War Drama, Coming-of-Age",
+    "rating": 7
+  },
+  {
     "title": "My Friend Ivan Lapshin",
     "director": "Aleksey German",
     "year": 1985,
@@ -7571,12 +6064,48 @@ const lists = [ // Nosferatu
     "genre": "Coming-of-Age, Childhood Drama"
   },
   {
+    "title": "Ran",
+    "director": "Akira Kurosawa",
+    "year": 1985,
+    "country": "France-Japan",
+    "runtime": 161,
+    "genre": "Historical Epic, Samurai Film",
+    "rating": 10
+  },
+  {
     "title": "Shoah",
     "director": "Claude Lanzmann",
     "year": 1985,
     "country": "France",
     "runtime": 566,
     "genre": "Military & War, Documentary"
+  },
+  {
+    "title": "Taipei Story",
+    "director": "Edward Yang",
+    "year": 1985,
+    "country": "Taiwan",
+    "runtime": 119,
+    "genre": "Romantic Drama, Psychological Drama",
+    "rating": 9
+  },
+  {
+    "title": "The Breakfast Club",
+    "director": "John Hughes",
+    "year": 1985,
+    "country": "USA",
+    "runtime": 97,
+    "genre": "Comedy Drama, Teen Movie",
+    "rating": 7
+  },
+  {
+    "title": "The Purple Rose of Cairo",
+    "director": "Woody Allen",
+    "year": 1985,
+    "country": "USA",
+    "runtime": 82,
+    "genre": "Comedy, Romantic Fantasy",
+    "rating": 9
   },
   {
     "title": "The Time to Live and the Time to Die",
@@ -7595,12 +6124,92 @@ const lists = [ // Nosferatu
     "genre": "Drama, Road Movie"
   },
   {
+    "title": "A Better Tomorrow",
+    "director": "John Woo",
+    "year": 1986,
+    "country": "Hong Kong",
+    "runtime": 95,
+    "genre": "Crime, Action Thriller",
+    "rating": 7
+  },
+  {
+    "title": "Aliens",
+    "director": "James Cameron",
+    "year": 1986,
+    "country": "USA",
+    "runtime": 137,
+    "genre": "Horror, Sci-Fi Action",
+    "rating": 9
+  },
+  {
+    "title": "Blue Velvet",
+    "director": "David Lynch",
+    "year": 1986,
+    "country": "USA",
+    "runtime": 120,
+    "genre": "Mystery, Crime Thriller",
+    "rating": 8
+  },
+  {
+    "title": "Down by Law",
+    "director": "Jim Jarmusch",
+    "year": 1986,
+    "country": "USA",
+    "runtime": 107,
+    "genre": "Comedy, Buddy Film",
+    "rating": 7
+  },
+  {
+    "title": "Ferris Bueller's Day Off",
+    "director": "John Hughes",
+    "year": 1986,
+    "country": "USA",
+    "runtime": 103,
+    "genre": "Comedy, Teen Movie",
+    "rating": 6
+  },
+  {
+    "title": "Hannah and Her Sisters",
+    "director": "Woody Allen",
+    "year": 1986,
+    "country": "USA",
+    "runtime": 106,
+    "genre": "Comedy Drama, Ensemble Film",
+    "rating": 9
+  },
+  {
+    "title": "Stand by Me",
+    "director": "Rob Reiner",
+    "year": 1986,
+    "country": "USA",
+    "runtime": 87,
+    "genre": "Drama, Coming-of-Age",
+    "rating": 6
+  },
+  {
+    "title": "The Fly",
+    "director": "David Cronenberg",
+    "year": 1986,
+    "country": "USA",
+    "runtime": 100,
+    "genre": "Science Fiction, Horror"
+  },
+  {
     "title": "The Green Ray",
     "director": "Eric Rohmer",
     "year": 1986,
     "country": "France",
     "runtime": 96,
     "genre": "Romantic Drama, Urban Drama"
+  },
+  {
+    "title": "The Sacrifice",
+    "director": "Andrei Tarkovsky",
+    "year": 1986,
+    "country": "France-Sweden",
+    "runtime": 145,
+    "genre": "Psychological Drama, Religious Drama",
+    "rating": 9
   },
   {
     "title": "A Short Film About Killing",
@@ -7611,20 +6220,21 @@ const lists = [ // Nosferatu
     "genre": "Drama, Crime"
   },
   {
+    "title": "Au revoir les enfants",
+    "director": "Louis Malle",
+    "year": 1987,
+    "country": "France",
+    "runtime": 103,
+    "genre": "War Drama, Childhood Drama",
+    "rating": 10
+  },
+  {
     "title": "Broadcast News",
     "director": "James L. Brooks",
     "year": 1987,
     "country": "USA",
     "runtime": 133,
     "genre": "Workplace Comedy, Media Satire"
-  },
-  {
-    "title": "The Dead",
-    "director": "John Huston",
-    "year": 1987,
-    "country": "USA",
-    "runtime": 83,
-    "genre": "Drama, Period Film"
   },
   {
     "title": "Dust in the Wind",
@@ -7635,12 +6245,22 @@ const lists = [ // Nosferatu
     "genre": "Drama, Coming-of-Age"
   },
   {
-    "title": "The Emperor's Naked Army Marches On",
-    "director": "Kazuo Hara",
+    "title": "Evil Dead II",
+    "director": "Sam Raimi",
     "year": 1987,
-    "country": "Japan",
-    "runtime": 123,
-    "genre": "History, Documentary"
+    "country": "USA",
+    "runtime": 85,
+    "genre": "Horror, Horror Comedy",
+    "rating": 9
+  },
+  {
+    "title": "Full Metal Jacket",
+    "director": "Stanley Kubrick",
+    "year": 1987,
+    "country": "USA",
+    "runtime": 116,
+    "genre": "Anti-War Film, War Drama",
+    "rating": 8
   },
   {
     "title": "Near Dark",
@@ -7651,12 +6271,81 @@ const lists = [ // Nosferatu
     "genre": "Horror, Hybrid Western"
   },
   {
+    "title": "Raising Arizona",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1987,
+    "country": "USA",
+    "runtime": 92,
+    "genre": "Crime Comedy, Domestic Comedy",
+    "rating": 8
+  },
+  {
     "title": "Red Sorghum",
     "director": "Zhang Yimou",
     "year": 1987,
     "country": "China",
     "runtime": 91,
     "genre": "Rural Drama, Marriage Drama"
+  },
+  {
+    "title": "Robocop",
+    "director": "Paul Verhoeven",
+    "year": 1987,
+    "country": "USA",
+    "runtime": 103,
+    "genre": "Action, Science Fiction",
+    "rating": 9
+  },
+  {
+    "title": "The Dead",
+    "director": "John Huston",
+    "year": 1987,
+    "country": "USA",
+    "runtime": 83,
+    "genre": "Drama, Period Film"
+  },
+  {
+    "title": "The Emperor's Naked Army Marches On",
+    "director": "Kazuo Hara",
+    "year": 1987,
+    "country": "Japan",
+    "runtime": 123,
+    "genre": "History, Documentary"
+  },
+  {
+    "title": "The Last Emperor",
+    "director": "Bernardo Bertolucci",
+    "year": 1987,
+    "country": "China-Italy-UK-France",
+    "runtime": 160,
+    "genre": "Historical Film, Biography"
+  },
+  {
+    "title": "The Princess Bride",
+    "director": "Rob Reiner",
+    "year": 1987,
+    "country": "USA",
+    "runtime": 98,
+    "genre": "Adventure Comedy, Fairy Tale",
+    "rating": 5
+  },
+  {
+    "title": "Where is the Friend's Home?",
+    "director": "Abbas Kiarostami",
+    "year": 1987,
+    "country": "Iran",
+    "runtime": 85,
+    "genre": "Drama, Childhood Drama",
+    "image": "whereisthefriendshome"
+  },
+  {
+    "title": "Wings of Desire",
+    "director": "Wim Wenders",
+    "year": 1987,
+    "country": "West Germany-France",
+    "runtime": 130,
+    "genre": "Fantasy, Romantic Fantasy",
+    "rating": 7
   },
   {
     "title": "Withnail & I",
@@ -7683,6 +6372,32 @@ const lists = [ // Nosferatu
     "genre": "Culture & Society, Documentary"
   },
   {
+    "title": "Akira",
+    "director": "Katsuhiro Otomo",
+    "year": 1988,
+    "country": "Japan",
+    "runtime": 124,
+    "genre": "Science Fiction, Anime",
+    "rating": 8
+  },
+  {
+    "title": "Cinema Paradiso",
+    "director": "Giuseppe Tornatore",
+    "year": 1988,
+    "country": "Italy-France",
+    "runtime": 123,
+    "genre": "Drama, Coming-of-Age",
+    "rating": 10
+  },
+  {
+    "title": "Dead Ringers",
+    "director": "David Cronenberg",
+    "year": 1988,
+    "country": "Canada",
+    "runtime": 115,
+    "genre": "Drama, Psychological Thriller"
+  },
+  {
     "title": "Dekalog",
     "director": "Krzysztof Kieslowski",
     "year": 1988,
@@ -7691,12 +6406,30 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
+    "title": "Die Hard",
+    "director": "John McTiernan",
+    "year": 1988,
+    "country": "USA",
+    "runtime": 131,
+    "genre": "Action, Action Thriller",
+    "rating": 8
+  },
+  {
     "title": "Distant Voices, Still Lives",
     "director": "Terence Davies",
     "year": 1988,
     "country": "UK",
     "runtime": 85,
     "genre": "Family Drama, Biography"
+  },
+  {
+    "title": "Grave of the Fireflies",
+    "director": "Isao Takahata",
+    "year": 1988,
+    "country": "Japan",
+    "runtime": 93,
+    "genre": "Anime, War Drama",
+    "rating": 7
   },
   {
     "title": "Hôtel Terminus",
@@ -7715,12 +6448,48 @@ const lists = [ // Nosferatu
     "genre": "Road Movie, Childhood Drama"
   },
   {
+    "title": "My Neighbour Totoro",
+    "director": "Hayao Miyazaki",
+    "year": 1988,
+    "country": "Japan",
+    "runtime": 86,
+    "genre": "Children's Fantasy, Animation",
+    "rating": 10
+  },
+  {
+    "title": "The Last Temptation of Christ",
+    "director": "Martin Scorsese",
+    "year": 1988,
+    "country": "USA",
+    "runtime": 164,
+    "genre": "Religious Drama, Hagiography",
+    "rating": 8
+  },
+  {
     "title": "The Thin Blue Line",
     "director": "Errol Morris",
     "year": 1988,
     "country": "USA",
     "runtime": 96,
     "genre": "Law & Crime, Documentary"
+  },
+  {
+    "title": "They Live",
+    "director": "John Carpenter",
+    "year": 1988,
+    "country": "USA",
+    "runtime": 93,
+    "genre": "Alien Film, Sci-Fi Action",
+    "rating": 8
+  },
+  {
+    "title": "Women on the Verge of a Nervous Breakdown",
+    "director": "Pedro Almodóvar",
+    "year": 1988,
+    "country": "Spain",
+    "runtime": 88,
+    "genre": "Comedy, Farce",
+    "rating": 10
   },
   {
     "title": "A City of Sadness",
@@ -7731,12 +6500,39 @@ const lists = [ // Nosferatu
     "genre": "Family Drama, Period Film"
   },
   {
+    "title": "Crimes and Misdemeanors",
+    "director": "Woody Allen",
+    "year": 1989,
+    "country": "USA",
+    "runtime": 104,
+    "genre": "Comedy Drama, Ensemble Film",
+    "rating": 9
+  },
+  {
+    "title": "Do the Right Thing",
+    "director": "Spike Lee",
+    "year": 1989,
+    "country": "USA",
+    "runtime": 120,
+    "genre": "Urban Drama, Ensemble Film",
+    "rating": 9
+  },
+  {
     "title": "The Cook, The Thief, His Wife & Her Lover",
     "director": "Peter Greenaway",
     "year": 1989,
     "country": "UK-France",
     "runtime": 120,
     "genre": "Black Comedy, Satire"
+  },
+  {
+    "title": "The Killer",
+    "director": "John Woo",
+    "year": 1989,
+    "country": "Hong Kong",
+    "runtime": 110,
+    "genre": "Crime, Action Thriller",
+    "rating": 8
   },
   {
     "title": "Time of the Gypsies",
@@ -7747,12 +6543,71 @@ const lists = [ // Nosferatu
     "genre": "Comedy Drama, Coming-of-Age"
   },
   {
+    "title": "When Harry Met Sally...",
+    "director": "Rob Reiner",
+    "year": 1989,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Romance, Comedy",
+    "rating": 6
+  },
+  {
     "title": "An Angel at My Table",
     "director": "Jane Campion",
     "year": 1990,
     "country": "New Zealand-Australia-UK-USA",
     "runtime": 158,
     "genre": "Biography, Psychological Drama"
+  },
+  {
+    "title": "Close-Up",
+    "director": "Abbas Kiarostami",
+    "year": 1990,
+    "country": "Iran",
+    "runtime": 98,
+    "genre": "Docudrama, Courtroom Drama"
+  },
+  {
+    "title": "Days of Being Wild",
+    "director": "Wong Kar-wai",
+    "year": 1990,
+    "country": "Hong Kong",
+    "runtime": 94,
+    "genre": "Drama, Ensemble Film",
+    "rating": 7
+  },
+  {
+    "title": "Edward Scissorhands",
+    "director": "Tim Burton",
+    "year": 1990,
+    "country": "USA",
+    "runtime": 100,
+    "genre": "Fantasy Comedy, Romance",
+    "rating": 9
+  },
+  {
+    "title": "Goodfellas",
+    "director": "Martin Scorsese",
+    "year": 1990,
+    "country": "USA",
+    "runtime": 146,
+    "genre": "Gangster Film, Crime Drama"
+  },
+  {
+    "title": "Miller's Crossing",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1990,
+    "country": "USA",
+    "runtime": 115,
+    "genre": "Crime, Gangster Film"
+  },
+  {
+    "title": "Nouvelle vague",
+    "director": "Jean-Luc Godard",
+    "year": 1990,
+    "country": "France-Switzerland",
+    "runtime": 88,
+    "genre": "Avant-garde-Experimental, Fantasy"
   },
   {
     "title": "The Match Factory Girl",
@@ -7763,12 +6618,31 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
-    "title": "Nouvelle vague",
-    "director": "Jean-Luc Godard",
+    "title": "Wild at Heart",
+    "director": "David Lynch",
     "year": 1990,
-    "country": "France-Switzerland",
-    "runtime": 88,
-    "genre": "Avant-garde-Experimental, Fantasy"
+    "country": "USA",
+    "runtime": 127,
+    "genre": "Road Movie, Black Comedy",
+    "rating": 2
+  },
+  {
+    "title": "A Brighter Summer Day",
+    "director": "Edward Yang",
+    "year": 1991,
+    "country": "Taiwan",
+    "runtime": 237,
+    "genre": "Drama, Coming-of-Age",
+    "rating": 9
+  },
+  {
+    "title": "Barton Fink",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1991,
+    "country": "USA",
+    "runtime": 117,
+    "genre": "Comedy Drama, Black Comedy",
+    "rating": 9
   },
   {
     "title": "JFK",
@@ -7787,12 +6661,73 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
+    "title": "Les Amants du Pont-Neuf",
+    "director": "Leos Carax",
+    "year": 1991,
+    "country": "France",
+    "runtime": 126,
+    "genre": "Romantic Drama, Urban Drama"
+  },
+  {
+    "title": "My Own Private Idaho",
+    "director": "Gus Van Sant",
+    "year": 1991,
+    "country": "USA",
+    "runtime": 102,
+    "genre": "Drama, Buddy Film",
+    "rating": 8
+  },
+  {
     "title": "Point Break",
     "director": "Kathryn Bigelow",
     "year": 1991,
     "country": "USA-Japan",
     "runtime": 122,
     "genre": "Action, Thriller"
+  },
+  {
+    "title": "Raise the Red Lantern",
+    "director": "Zhang Yimou",
+    "year": 1991,
+    "country": "Hong Kong",
+    "runtime": 125,
+    "genre": "Period Film, Marriage Drama",
+    "rating": 8
+  },
+  {
+    "title": "Terminator 2: Judgment Day",
+    "director": "James Cameron",
+    "year": 1991,
+    "country": "USA",
+    "runtime": 136,
+    "genre": "Science Fiction, Sci-Fi Action",
+    "rating": 8
+  },
+  {
+    "title": "The Double Life of Veronique",
+    "director": "Krzysztof Kieslowski",
+    "year": 1991,
+    "country": "France",
+    "runtime": 97,
+    "genre": "Romantic Drama, Psychological Drama"
+  },
+  {
+    "title": "The Silence of the Lambs",
+    "director": "Jonathan Demme",
+    "year": 1991,
+    "country": "USA",
+    "runtime": 118,
+    "genre": "Psychological Drama, Family Drama",
+    "rating": 9
+  },
+  {
+    "title": "Thelma & Louise",
+    "director": "Ridley Scott",
+    "year": 1991,
+    "country": "USA",
+    "runtime": 128,
+    "genre": "Road Movie, Buddy Film",
+    "rating": 9
   },
   {
     "title": "Van Gogh",
@@ -7811,6 +6746,14 @@ const lists = [ // Nosferatu
     "genre": "Drama, Docudrama"
   },
   {
+    "title": "Bad Lieutenant",
+    "director": "Abel Ferrara",
+    "year": 1992,
+    "country": "USA",
+    "runtime": 98,
+    "genre": "Police Drama, Crime Drama"
+  },
+  {
     "title": "Lessons of Darkness",
     "director": "Werner Herzog",
     "year": 1992,
@@ -7819,20 +6762,29 @@ const lists = [ // Nosferatu
     "genre": "Social History, Documentary"
   },
   {
-    "title": "The Long Day Closes",
-    "director": "Terence Davies",
-    "year": 1992,
-    "country": "UK",
-    "runtime": 83,
-    "genre": "Coming-of-Age, Family Drama"
-  },
-  {
     "title": "Orlando",
     "director": "Sally Potter",
     "year": 1992,
     "country": "UK-Russia-France-Italy-Netherlands",
     "runtime": 94,
     "genre": "Drama, Fantasy"
+  },
+  {
+    "title": "Reservoir Dogs",
+    "director": "Quentin Tarantino",
+    "year": 1992,
+    "country": "USA",
+    "runtime": 99,
+    "genre": "Crime Thriller, Gangster Film",
+    "rating": 9
+  },
+  {
+    "title": "The Long Day Closes",
+    "director": "Terence Davies",
+    "year": 1992,
+    "country": "UK",
+    "runtime": 83,
+    "genre": "Coming-of-Age, Family Drama"
   },
   {
     "title": "The Quince Tree Sun",
@@ -7851,12 +6803,21 @@ const lists = [ // Nosferatu
     "genre": "Mystery, Surrealist Film"
   },
   {
-    "title": "The Age of Innocence",
-    "director": "Martin Scorsese",
-    "year": 1993,
+    "title": "Unforgiven",
+    "director": "Clint Eastwood",
+    "year": 1992,
     "country": "USA",
-    "runtime": 133,
-    "genre": "Period Film, Romantic Drama"
+    "runtime": 127,
+    "genre": "Western, Outlaw (Gunfighter) Film",
+    "rating": 8
+  },
+  {
+    "title": "Abraham's Valley",
+    "director": "Manoel de Oliveira",
+    "year": 1993,
+    "country": "Portugal-France-Switzerland",
+    "runtime": 187,
+    "genre": "Psychological Drama"
   },
   {
     "title": "Blue",
@@ -7867,12 +6828,30 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde/Experimental, Gay & Lesbian Film"
   },
   {
+    "title": "Carlito's Way",
+    "director": "Brian De Palma",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 144,
+    "genre": "Crime Drama, Gangster Film",
+    "rating": 8
+  },
+  {
     "title": "D'est",
     "director": "Chantal Akerman",
     "year": 1993,
     "country": "Belgium-France-Portugal",
     "runtime": 107,
     "genre": "Culture & Society, Documentary"
+  },
+  {
+    "title": "Dazed and Confused",
+    "director": "Richard Linklater",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 94,
+    "genre": "Comedy Drama, Coming-of-Age",
+    "rating": 9
   },
   {
     "title": "Farewell, My Concubine",
@@ -7883,12 +6862,73 @@ const lists = [ // Nosferatu
     "genre": "Drama, Romantic Epic"
   },
   {
+    "title": "Groundhog Day",
+    "director": "Harold Ramis",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 103,
+    "genre": "Fantasy Comedy, Romantic Comedy",
+    "rating": 9
+  },
+  {
+    "title": "Jurassic Park",
+    "director": "Steven Spielberg",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 126,
+    "genre": "Prehistoric Fantasy, Sci-Fi Action",
+    "rating": 9
+  },
+  {
+    "title": "Naked",
+    "director": "Mike Leigh",
+    "year": 1993,
+    "country": "UK",
+    "runtime": 126,
+    "genre": "Urban Drama, Social Problem Film",
+    "rating": 10
+  },
+  {
+    "title": "Schindler's List",
+    "director": "Steven Spielberg",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 195,
+    "genre": "War Drama, Biography",
+    "rating": 8
+  },
+  {
+    "title": "Short Cuts",
+    "director": "Robert Altman",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 189,
+    "genre": "Ensemble Film, Urban Drama"
+  },
+  {
+    "title": "The Age of Innocence",
+    "director": "Martin Scorsese",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 133,
+    "genre": "Period Film, Romantic Drama"
+  },
+  {
     "title": "The Last Bolshevik",
     "director": "Chris Marker",
     "year": 1993,
     "country": "France-Finland",
     "runtime": 120,
     "genre": "Essay Film, Documentary"
+  },
+  {
+    "title": "The Nightmare Before Christmas",
+    "director": "Henry Selick",
+    "year": 1993,
+    "country": "USA",
+    "runtime": 76,
+    "genre": "Fantasy, Animated Musical",
+    "rating": 9
   },
   {
     "title": "The Piano",
@@ -7907,12 +6947,13 @@ const lists = [ // Nosferatu
     "genre": "Biography, Drama"
   },
   {
-    "title": "Short Cuts",
-    "director": "Robert Altman",
+    "title": "Three Colours: Blue",
+    "director": "Krzysztof Kieslowski",
     "year": 1993,
-    "country": "USA",
-    "runtime": 189,
-    "genre": "Ensemble Film, Urban Drama"
+    "country": "France-Poland-Switzerland",
+    "runtime": 100,
+    "genre": "Psychological Drama, Romantic Drama",
+    "rating": 9
   },
   {
     "title": "Burnt by the Sun",
@@ -7931,12 +6972,48 @@ const lists = [ // Nosferatu
     "genre": "Comedy, Satire"
   },
   {
+    "title": "Chungking Express",
+    "director": "Wong Kar-wai",
+    "year": 1994,
+    "country": "Hong Kong",
+    "runtime": 104,
+    "genre": "Urban Drama, Romantic Drama",
+    "rating": 9
+  },
+  {
+    "title": "Crumb",
+    "director": "Terry Zwigoff",
+    "year": 1994,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Documentary, Biography",
+    "rating": 10
+  },
+  {
+    "title": "Ed Wood",
+    "director": "Tim Burton",
+    "year": 1994,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Comedy Drama, Biography",
+    "rating": 10
+  },
+  {
     "title": "Exotica",
     "director": "Atom Egoyan",
     "year": 1994,
     "country": "Canada",
     "runtime": 104,
     "genre": "Psychological Drama, Ensemble Film"
+  },
+  {
+    "title": "Forrest Gump",
+    "director": "Robert Zemeckis",
+    "year": 1994,
+    "country": "USA",
+    "runtime": 142,
+    "genre": "Comedy Drama, Americana",
+    "rating": 8
   },
   {
     "title": "Hoop Dreams",
@@ -7947,12 +7024,47 @@ const lists = [ // Nosferatu
     "genre": "Sports, Documentary"
   },
   {
+    "title": "Léon",
+    "director": "Luc Besson",
+    "year": 1994,
+    "country": "France",
+    "runtime": 119,
+    "genre": "Action Thriller, Coming-of-Age",
+    "rating": 7
+  },
+  {
+    "title": "Pulp Fiction",
+    "director": "Quentin Tarantino",
+    "year": 1994,
+    "country": "USA",
+    "runtime": 154,
+    "genre": "Crime Comedy, Ensemble Film"
+  },
+  {
     "title": "Sátántangó",
     "director": "Béla Tarr",
     "year": 1994,
     "country": "Hungary-Germany-Switzerland",
     "runtime": 450,
     "genre": "Drama, Ensemble Film"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "director": "Frank Darabont",
+    "year": 1994,
+    "country": "USA",
+    "runtime": 142,
+    "genre": "Drama, Prison Film",
+    "rating": 7
+  },
+  {
+    "title": "Three Colours: Red",
+    "director": "Krzysztof Kieslowski",
+    "year": 1994,
+    "country": "France-Switzerland-Poland",
+    "runtime": 99,
+    "genre": "Psychological Drama, Romantic Drama",
+    "rating": 8
   },
   {
     "title": "Through the Olive Trees",
@@ -7971,12 +7083,116 @@ const lists = [ // Nosferatu
     "genre": "Family Drama, Political Drama"
   },
   {
+    "title": "Vive L'Amour",
+    "director": "Tsai Ming-liang",
+    "year": 1994,
+    "country": "Taiwan",
+    "runtime": 118,
+    "genre": "Drama, Urban Drama"
+  },
+  {
     "title": "Babe",
     "director": "Chris Noonan",
     "year": 1995,
     "country": "Australia",
     "runtime": 94,
     "genre": "Animal Picture, Children's Fantasy"
+  },
+  {
+    "title": "Before Sunrise",
+    "director": "Richard Linklater",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 101,
+    "genre": "Romance, Comedy Drama",
+    "rating": 9
+  },
+  {
+    "title": "Casino",
+    "director": "Martin Scorsese",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 182,
+    "genre": "Gangster Film, Crime Drama"
+  },
+  {
+    "title": "Dead Man",
+    "director": "Jim Jarmusch",
+    "year": 1995,
+    "country": "USA-Germany",
+    "runtime": 121,
+    "genre": "Hybrid Western, Psychological Western",
+    "rating": 7
+  },
+  {
+    "title": "Heat",
+    "director": "Michael Mann",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 174,
+    "genre": "Crime, Thriller",
+    "rating": 8
+  },
+  {
+    "title": "La Haine",
+    "director": "Mathieu Kassovitz",
+    "year": 1995,
+    "country": "France",
+    "runtime": 93,
+    "genre": "Urban Drama, Message Movie"
+  },
+  {
+    "title": "Safe",
+    "director": "Todd Haynes",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 119,
+    "genre": "Medical Drama, Psychological Drama",
+    "rating": 9
+  },
+  {
+    "title": "Se7en",
+    "director": "David Fincher",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 127,
+    "genre": "Police Detective Film, Crime Thriller",
+    "rating": 8
+  },
+  {
+    "title": "The Bridges of Madison County",
+    "director": "Clint Eastwood",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 135,
+    "genre": "Romance, Drama",
+    "rating": 5
+  },
+  {
+    "title": "The Usual Suspects",
+    "director": "Bryan Singer",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 105,
+    "genre": "Crime, Thriller",
+    "rating": 8
+  },
+  {
+    "title": "Toy Story",
+    "director": "John Lasseter",
+    "year": 1995,
+    "country": "USA",
+    "runtime": 80,
+    "genre": "Fantasy Comedy, Animation"
+  },
+  {
+    "title": "Underground",
+    "director": "Emir Kusturica",
+    "year": 1995,
+    "country": "Yugoslavia-France-Germany-Bulgaria-Czech Republic-Hungary",
+    "runtime": 192,
+    "genre": "Comedy Drama, Political Satire",
+    "rating": 7
   },
   {
     "title": "A Moment of Innocence",
@@ -8003,12 +7219,47 @@ const lists = [ // Nosferatu
     "genre": "Erotic Drama, Psychological Drama"
   },
   {
+    "title": "Fargo",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1996,
+    "country": "USA",
+    "runtime": 98,
+    "genre": "Crime, Black Comedy",
+    "rating": 10
+  },
+  {
     "title": "Secrets & Lies",
     "director": "Mike Leigh",
     "year": 1996,
     "country": "UK",
     "runtime": 142,
     "genre": "Drama, Family Drama"
+  },
+  {
+    "title": "Trainspotting",
+    "director": "Danny Boyle",
+    "year": 1996,
+    "country": "UK",
+    "runtime": 95,
+    "genre": "Comedy Drama, Addiction Drama",
+    "rating": 9
+  },
+  {
+    "title": "Boogie Nights",
+    "director": "Paul Thomas Anderson",
+    "year": 1997,
+    "country": "USA",
+    "runtime": 155,
+    "genre": "Comedy Drama, Ensemble Film"
+  },
+  {
+    "title": "Funny Games",
+    "director": "Michael Haneke",
+    "year": 1997,
+    "country": "Austria",
+    "runtime": 108,
+    "genre": "Crime Thriller, Psychological Thriller",
+    "rating": 8
   },
   {
     "title": "Gummo",
@@ -8019,12 +7270,37 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Teen Movie"
   },
   {
+    "title": "Hana-bi",
+    "director": "Takeshi Kitano",
+    "year": 1997,
+    "country": "Japan",
+    "runtime": 103,
+    "genre": "Crime Drama, Road Movie",
+    "rating": 9
+  },
+  {
     "title": "Happy Together",
     "director": "Wong Kar-wai",
     "year": 1997,
     "country": "Hong Kong",
     "runtime": 97,
     "genre": "Romance, Drama"
+  },
+  {
+    "title": "L.A. Confidential",
+    "director": "Curtis Hanson",
+    "year": 1997,
+    "country": "USA",
+    "runtime": 137,
+    "genre": "Crime, Mystery"
+  },
+  {
+    "title": "Lost Highway",
+    "director": "David Lynch",
+    "year": 1997,
+    "country": "USA-France",
+    "runtime": 134,
+    "genre": "Mystery, Surrealist Film"
   },
   {
     "title": "Mother and Son",
@@ -8035,12 +7311,22 @@ const lists = [ // Nosferatu
     "genre": "Family Drama, Psychological Drama"
   },
   {
-    "title": "The Sweet Hereafter",
-    "director": "Atom Egoyan",
+    "title": "Princess Mononoke",
+    "director": "Hayao Miyazaki",
     "year": 1997,
-    "country": "Canada",
-    "runtime": 112,
-    "genre": "Drama, Ensemble Film"
+    "country": "Japan",
+    "runtime": 134,
+    "genre": "Anime, Fantasy Adventure",
+    "rating": 10
+  },
+  {
+    "title": "Starship Troopers",
+    "director": "Paul Verhoeven",
+    "year": 1997,
+    "country": "USA",
+    "runtime": 129,
+    "genre": "Sci-Fi Action, Political Satire",
+    "rating": 9
   },
   {
     "title": "Taste of Cherry",
@@ -8051,12 +7337,54 @@ const lists = [ // Nosferatu
     "genre": "Drama, Road Movie"
   },
   {
+    "title": "The River",
+    "director": "Tsai Ming-liang",
+    "year": 1997,
+    "country": "Taiwan",
+    "runtime": 115,
+    "genre": "Drama, Family Drama",
+    "image": "river1997.jpg"
+  },
+  {
+    "title": "The Sweet Hereafter",
+    "director": "Atom Egoyan",
+    "year": 1997,
+    "country": "Canada",
+    "runtime": 112,
+    "genre": "Drama, Ensemble Film"
+  },
+  {
+    "title": "Titanic",
+    "director": "James Cameron",
+    "year": 1997,
+    "country": "USA",
+    "runtime": 194,
+    "genre": "Romantic Epic, Disaster Film"
+  },
+  {
     "title": "After Life",
     "director": "Hirokazu Koreeda",
     "year": 1998,
     "country": "Japan",
     "runtime": 118,
     "genre": "Fantasy, Psychological Drama"
+  },
+  {
+    "title": "Central Station",
+    "director": "Walter Salles",
+    "year": 1998,
+    "country": "Brazil-France-Spain-Japan",
+    "runtime": 110,
+    "genre": "Drama, Road Movie"
+  },
+  {
+    "title": "Festen",
+    "director": "Thomas Vinterberg",
+    "year": 1998,
+    "country": "Denmark",
+    "runtime": 105,
+    "genre": "Ensemble Film, Family Drama",
+    "rating": 9
   },
   {
     "title": "Flowers of Shanghai",
@@ -8075,12 +7403,66 @@ const lists = [ // Nosferatu
     "genre": "Essay Film, Documentary"
   },
   {
+    "title": "Rushmore",
+    "director": "Wes Anderson",
+    "year": 1998,
+    "country": "USA",
+    "runtime": 93,
+    "genre": "Comedy Drama, Coming-of-Age",
+    "rating": 9
+  },
+  {
+    "title": "Saving Private Ryan",
+    "director": "Steven Spielberg",
+    "year": 1998,
+    "country": "USA",
+    "runtime": 169,
+    "genre": "War, Combat Film",
+    "rating": 6
+  },
+  {
+    "title": "The Big Lebowski",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 1998,
+    "country": "USA-UK",
+    "runtime": 113,
+    "genre": "Crime Comedy, Screwball Comedy",
+    "rating": 10
+  },
+  {
     "title": "The Idiots",
     "director": "Lars von Trier",
     "year": 1998,
     "country": "Denmark-Spain-Sweden-France-Netherlands-Italy",
     "runtime": 117,
     "genre": "Comedy Drama, Satire"
+  },
+  {
+    "title": "The Thin Red Line",
+    "director": "Terrence Malick",
+    "year": 1998,
+    "country": "USA",
+    "runtime": 170,
+    "genre": "War Drama, Ensemble Film",
+    "rating": 8
+  },
+  {
+    "title": "All About My Mother",
+    "director": "Pedro Almodóvar",
+    "year": 1999,
+    "country": "Spain-France",
+    "runtime": 101,
+    "genre": "Comedy Drama, Ensemble Film",
+    "rating": 7
+  },
+  {
+    "title": "American Beauty",
+    "director": "Sam Mendes",
+    "year": 1999,
+    "country": "USA",
+    "runtime": 121,
+    "genre": "Comedy Drama, Family Drama",
+    "rating": 7
   },
   {
     "title": "Audition",
@@ -8099,12 +7481,44 @@ const lists = [ // Nosferatu
     "genre": "Drama, Psychological Drama"
   },
   {
+    "title": "Eyes Wide Shut",
+    "director": "Stanley Kubrick",
+    "year": 1999,
+    "country": "USA-UK",
+    "runtime": 159,
+    "genre": "Marriage Drama, Psychological Drama"
+  },
+  {
+    "title": "Fight Club",
+    "director": "David Fincher",
+    "year": 1999,
+    "country": "USA-Germany",
+    "runtime": 139,
+    "genre": "Satire, Psychological Drama"
+  },
+  {
     "title": "L'Humanité",
     "director": "Bruno Dumont",
     "year": 1999,
     "country": "France",
     "runtime": 141,
     "genre": "Psychological Drama, Police Detective Film"
+  },
+  {
+    "title": "Magnolia",
+    "director": "Paul Thomas Anderson",
+    "year": 1999,
+    "country": "USA",
+    "runtime": 188,
+    "genre": "Drama, Ensemble Film"
+  },
+  {
+    "title": "Rosetta",
+    "director": "Jean-Pierre Dardenne & Luc Dardenne",
+    "year": 1999,
+    "country": "Belgium-France",
+    "runtime": 94,
+    "genre": "Drama, Coming-of-Age"
   },
   {
     "title": "Sicilia!",
@@ -8115,12 +7529,22 @@ const lists = [ // Nosferatu
     "genre": "Family Drama, Political Drama"
   },
   {
-    "title": "Topsy-Turvy",
-    "director": "Mike Leigh",
+    "title": "The Matrix",
+    "director": "Lana Wachowski & Lilly Wachowski",
     "year": 1999,
-    "country": "UK-USA",
-    "runtime": 160,
-    "genre": "Comedy Drama, Musical Drama"
+    "country": "USA-Australia",
+    "runtime": 136,
+    "genre": "Science Fiction, Sci-Fi Action",
+    "rating": 8
+  },
+  {
+    "title": "The Straight Story",
+    "director": "David Lynch",
+    "year": 1999,
+    "country": "USA-France-UK",
+    "runtime": 111,
+    "genre": "Americana, Road Movie",
+    "rating": 6
   },
   {
     "title": "The Wind Will Carry Us",
@@ -8131,6 +7555,23 @@ const lists = [ // Nosferatu
     "genre": "Drama, Rural Drama"
   },
   {
+    "title": "Topsy-Turvy",
+    "director": "Mike Leigh",
+    "year": 1999,
+    "country": "UK-USA",
+    "runtime": 160,
+    "genre": "Comedy Drama, Musical Drama"
+  },
+  {
+    "title": "Amores perros",
+    "director": "Alejandro González Iñárritu",
+    "year": 2000,
+    "country": "Mexico",
+    "runtime": 153,
+    "genre": "Ensemble Film, Urban Drama",
+    "rating": 9
+  },
+  {
     "title": "As I Was Moving Ahead Occasionally I Saw Brief Glimpses of Beauty",
     "director": "Jonas Mekas",
     "year": 2000,
@@ -8139,12 +7580,37 @@ const lists = [ // Nosferatu
     "genre": "Biography, Documentary"
   },
   {
-    "title": "The Gleaners & I",
-    "director": "Agnès Varda",
+    "title": "Code Unknown",
+    "director": "Michael Haneke",
     "year": 2000,
-    "country": "France",
-    "runtime": 82,
-    "genre": "Culture & Society, Documentary"
+    "country": "France-Germany-Romania",
+    "runtime": 116,
+    "genre": "Ensemble Film, Urban Drama"
+  },
+  {
+    "title": "Crouching Tiger, Hidden Dragon",
+    "director": "Ang Lee",
+    "year": 2000,
+    "country": "Taiwan-Hong Kong-USA-China",
+    "runtime": 120,
+    "genre": "Martial Arts, Romantic Adventure"
+  },
+  {
+    "title": "Dancer in the Dark",
+    "director": "Lars von Trier",
+    "year": 2000,
+    "country": "Denmark-France-Sweden-Italy-Germany-Norway-Netherlands-Iceland-Finland-UK-USA",
+    "runtime": 140,
+    "genre": "Musical Drama, Melodrama",
+    "rating": 7
+  },
+  {
+    "title": "In the Mood for Love",
+    "director": "Wong Kar-wai",
+    "year": 2000,
+    "country": "Hong Kong-France",
+    "runtime": 97,
+    "genre": "Melodrama, Romantic Drama"
   },
   {
     "title": "In Vanda's Room",
@@ -8155,6 +7621,15 @@ const lists = [ // Nosferatu
     "genre": "Drama"
   },
   {
+    "title": "Memento",
+    "director": "Christopher Nolan",
+    "year": 2000,
+    "country": "USA",
+    "runtime": 113,
+    "genre": "Mystery, Crime Thriller",
+    "rating": 8
+  },
+  {
     "title": "Platform",
     "director": "Jia Zhangke",
     "year": 2000,
@@ -8163,12 +7638,62 @@ const lists = [ // Nosferatu
     "genre": "Comedy Drama, Ensemble Film"
   },
   {
+    "title": "Requiem for a Dream",
+    "director": "Darren Aronofsky",
+    "year": 2000,
+    "country": "USA",
+    "runtime": 100,
+    "genre": "Addiction Drama, Psychological Drama",
+    "rating": 10
+  },
+  {
+    "title": "Songs from the Second Floor",
+    "director": "Roy Andersson",
+    "year": 2000,
+    "country": "Sweden-France-Denmark-Norway-Germany",
+    "runtime": 98,
+    "genre": "Surrealist Film, Black Comedy"
+  },
+  {
+    "title": "The Gleaners & I",
+    "director": "Agnès Varda",
+    "year": 2000,
+    "country": "France",
+    "runtime": 82,
+    "genre": "Culture & Society, Documentary"
+  },
+  {
     "title": "Werckmeister Harmonies",
     "director": "Béla Tarr",
     "year": 2000,
     "country": "Hungary-Germany-France-Switzerland-Italy",
     "runtime": 145,
     "genre": "Horror, Psychological Drama"
+  },
+  {
+    "title": "Yi yi",
+    "director": "Edward Yang",
+    "year": 2000,
+    "country": "Taiwan-Japan",
+    "runtime": 173,
+    "genre": "Ensemble Film, Family Drama"
+  },
+  {
+    "title": "A.I. Artificial Intelligence",
+    "director": "Steven Spielberg",
+    "year": 2001,
+    "country": "USA",
+    "runtime": 145,
+    "genre": "Science Fiction, Psychological Drama"
+  },
+  {
+    "title": "Amélie",
+    "director": "Jean-Pierre Jeunet",
+    "year": 2001,
+    "country": "France-Germany",
+    "runtime": 122,
+    "genre": "Romance, Comedy",
+    "rating": 10
   },
   {
     "title": "In Praise of Love",
@@ -8187,12 +7712,88 @@ const lists = [ // Nosferatu
     "genre": "Drama"
   },
   {
+    "title": "Millennium Mambo",
+    "director": "Hou Hsiao-hsien",
+    "year": 2001,
+    "country": "Taiwan-France",
+    "runtime": 119,
+    "genre": "Urban Drama, Coming-of-Age"
+  },
+  {
+    "title": "Moulin Rouge!",
+    "director": "Baz Luhrmann",
+    "year": 2001,
+    "country": "USA-Australia",
+    "runtime": 126,
+    "genre": "Musical, Romance"
+  },
+  {
+    "title": "Mulholland Dr.",
+    "director": "David Lynch",
+    "year": 2001,
+    "country": "France-US",
+    "runtime": 147,
+    "genre": "Mystery, Psychological Thriller"
+  },
+  {
+    "title": "Spirited Away",
+    "director": "Hayao Miyazaki",
+    "year": 2001,
+    "country": "Japan",
+    "runtime": 124,
+    "genre": "Fantasy Adventure, Anime",
+    "rating": 10
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "director": "Peter Jackson",
+    "year": 2001,
+    "country": "USA-New Zealand",
+    "runtime": 178,
+    "genre": "Epic, Fantasy Adventure",
+    "rating": 7
+  },
+  {
+    "title": "The Piano Teacher",
+    "director": "Michael Haneke",
+    "year": 2001,
+    "country": "Austria-France-Germany",
+    "runtime": 130,
+    "genre": "Psychological Drama, Erotic Drama"
+  },
+  {
+    "title": "The Royal Tenenbaums",
+    "director": "Wes Anderson",
+    "year": 2001,
+    "country": "USA",
+    "runtime": 109,
+    "genre": "Comedy Drama, Comedy of Manners",
+    "rating": 8
+  },
+  {
+    "title": "Y tu mamá también",
+    "director": "Alfonso Cuarón",
+    "year": 2001,
+    "country": "Mexico",
+    "runtime": 105,
+    "genre": "Coming-of-Age, Road Movie",
+    "rating": 10
+  },
+  {
     "title": "Blissfully Yours",
     "director": "Apichatpong Weerasethakul",
     "year": 2002,
     "country": "Thailand-France",
     "runtime": 125,
     "genre": "Avant-garde-Experimental, Drama"
+  },
+  {
+    "title": "City of God",
+    "director": "Fernando Meirelles & Kátia Lund",
+    "year": 2002,
+    "country": "Brazil-Germany-France",
+    "runtime": 129,
+    "genre": "Crime Drama, Coming-of-Age"
   },
   {
     "title": "Distant",
@@ -8211,6 +7812,14 @@ const lists = [ // Nosferatu
     "genre": "Crime, Drama"
   },
   {
+    "title": "Punch-Drunk Love",
+    "director": "Paul Thomas Anderson",
+    "year": 2002,
+    "country": "USA",
+    "runtime": 95,
+    "genre": "Comedy Drama, Romantic Comedy"
+  },
+  {
     "title": "Russian Ark",
     "director": "Aleksandr Sokurov",
     "year": 2002,
@@ -8219,12 +7828,13 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Essay Film"
   },
   {
-    "title": "The Son",
-    "director": "Jean-Pierre Dardenne & Luc Dardenne",
+    "title": "Talk to Her",
+    "director": "Pedro Almodóvar",
     "year": 2002,
-    "country": "Belgium-France",
-    "runtime": 103,
-    "genre": "Drama, Social Problem Film"
+    "country": "Spain",
+    "runtime": 112,
+    "genre": "Melodrama, Romantic Drama",
+    "rating": 9
   },
   {
     "title": "Ten",
@@ -8235,12 +7845,98 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Urban Drama"
   },
   {
+    "title": "The Son",
+    "director": "Jean-Pierre Dardenne & Luc Dardenne",
+    "year": 2002,
+    "country": "Belgium-France",
+    "runtime": 103,
+    "genre": "Drama, Social Problem Film"
+  },
+  {
+    "title": "Dogville",
+    "director": "Lars von Trier",
+    "year": 2003,
+    "country": "Denmark-Sweden-France-UK-Germany-Finland-Italy-Netherlands-Norway",
+    "runtime": 177,
+    "genre": "Drama, Avant-garde-Experimental",
+    "rating": 10
+  },
+  {
+    "title": "Elephant",
+    "director": "Gus Van Sant",
+    "year": 2003,
+    "country": "USA",
+    "runtime": 81,
+    "genre": "Drama, Ensemble Film"
+  },
+  {
     "title": "Goodbye, Dragon Inn",
     "director": "Tsai Ming-liang",
     "year": 2003,
     "country": "Taiwan",
     "runtime": 82,
     "genre": "Showbiz Drama, Comedy Drama"
+  },
+  {
+    "title": "Kill Bill Vol. 1",
+    "director": "Quentin Tarantino",
+    "year": 2003,
+    "country": "USA",
+    "runtime": 111,
+    "genre": "Action Thriller, Martial Arts",
+    "rating": 10
+  },
+  {
+    "title": "Lost in Translation",
+    "director": "Sofia Coppola",
+    "year": 2003,
+    "country": "USA-Japan",
+    "runtime": 102,
+    "genre": "Comedy, Drama"
+  },
+  {
+    "title": "Memories of Murder",
+    "director": "Bong Joon-ho",
+    "year": 2003,
+    "country": "South Korea",
+    "runtime": 132,
+    "genre": "Crime, Police Drama",
+    "rating": 7
+  },
+  {
+    "title": "Oldboy",
+    "director": "Park Chan-wook",
+    "year": 2003,
+    "country": "South Korea",
+    "runtime": 120,
+    "genre": "Thriller, Psychological Drama"
+  },
+  {
+    "title": "Saraband",
+    "director": "Ingmar Bergman",
+    "year": 2003,
+    "country": "Sweden-Denmark-Norway-Italy-Finland-Germany-Austria",
+    "runtime": 120,
+    "genre": "Psychological Drama, Family Drama",
+    "rating": 8
+  },
+  {
+    "title": "Spring, Summer, Autumn, Winter... and Spring",
+    "director": "Kim Ki-duk",
+    "year": 2003,
+    "country": "South Korea-Germany",
+    "runtime": 103,
+    "genre": "Psychological Drama, Religious Drama",
+    "rating": 10
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "director": "Peter Jackson",
+    "year": 2003,
+    "country": "New Zealand-USA",
+    "runtime": 201,
+    "genre": "Epic, Fantasy",
+    "rating": 7
   },
   {
     "title": "The Return",
@@ -8259,12 +7955,38 @@ const lists = [ // Nosferatu
     "genre": "Culture & Society, Documentary"
   },
   {
-    "title": "The Intruder",
-    "director": "Claire Denis",
+    "title": "2046",
+    "director": "Wong Kar-wai",
     "year": 2004,
-    "country": "France-Korea",
-    "runtime": 130,
-    "genre": "Drama, Psychological Drama"
+    "country": "Hong Kong-China-France-Italy-Germany",
+    "runtime": 129,
+    "genre": "Romance, Science Fiction"
+  },
+  {
+    "title": "Before Sunset",
+    "director": "Richard Linklater",
+    "year": 2004,
+    "country": "USA",
+    "runtime": 80,
+    "genre": "Romance, Comedy Drama",
+    "rating": 9
+  },
+  {
+    "title": "Eternal Sunshine of the Spotless Mind",
+    "director": "Michel Gondry",
+    "year": 2004,
+    "country": "USA",
+    "runtime": 108,
+    "genre": "Comedy Drama, Romantic Fantasy"
+  },
+  {
+    "title": "Million Dollar Baby",
+    "director": "Clint Eastwood",
+    "year": 2004,
+    "country": "USA",
+    "runtime": 137,
+    "genre": "Sports Drama, Melodrama",
+    "rating": 7
   },
   {
     "title": "Sideways",
@@ -8275,12 +7997,46 @@ const lists = [ // Nosferatu
     "genre": "Comedy Drama, Buddy Film"
   },
   {
-    "title": "The Death of Mr. Lazarescu",
-    "director": "Cristi Puiu",
+    "title": "The Intruder",
+    "director": "Claire Denis",
+    "year": 2004,
+    "country": "France-Korea",
+    "runtime": 130,
+    "genre": "Drama, Psychological Drama"
+  },
+  {
+    "title": "Tropical Malady",
+    "director": "Apichatpong Weerasethakul",
+    "year": 2004,
+    "country": "France-Thailand-Germany-Italy-Switzerland",
+    "runtime": 118,
+    "genre": "Avant-garde-Experimental, Adventure Drama"
+  },
+  {
+    "title": "A History of Violence",
+    "director": "David Cronenberg",
     "year": 2005,
-    "country": "Romania",
-    "runtime": 154,
-    "genre": "Drama, Medical Drama"
+    "country": "USA-Germany",
+    "runtime": 96,
+    "genre": "Crime Thriller, Psychological Thriller",
+    "rating": 9
+  },
+  {
+    "title": "Brokeback Mountain",
+    "director": "Ang Lee",
+    "year": 2005,
+    "country": "USA-Canada",
+    "runtime": 134,
+    "genre": "Romantic Drama, Modern Western",
+    "rating": 7
+  },
+  {
+    "title": "Caché",
+    "director": "Michael Haneke",
+    "year": 2005,
+    "country": "France-Austria-Germany-Italy",
+    "runtime": 117,
+    "genre": "Drama, Psychological Thriller"
   },
   {
     "title": "Grizzly Man",
@@ -8291,6 +8047,14 @@ const lists = [ // Nosferatu
     "genre": "Nature, Documentary"
   },
   {
+    "title": "The Death of Mr. Lazarescu",
+    "director": "Cristi Puiu",
+    "year": 2005,
+    "country": "Romania",
+    "runtime": 154,
+    "genre": "Drama, Medical Drama"
+  },
+  {
     "title": "The New World",
     "director": "Terrence Malick",
     "year": 2005,
@@ -8299,12 +8063,39 @@ const lists = [ // Nosferatu
     "genre": "Historical Film, Romantic Drama"
   },
   {
+    "title": "Children of Men",
+    "director": "Alfonso Cuarón",
+    "year": 2006,
+    "country": "USA-UK",
+    "runtime": 109,
+    "genre": "Psychological Sci-Fi, Action Thriller",
+    "rating": 9
+  },
+  {
     "title": "Colossal Youth",
     "director": "Pedro Costa",
     "year": 2006,
     "country": "Portugal-France-Switzerland",
     "runtime": 155,
     "genre": "Drama, Slice of Life"
+  },
+  {
+    "title": "Inland Empire",
+    "director": "David Lynch",
+    "year": 2006,
+    "country": "USA-France-Poland",
+    "runtime": 180,
+    "genre": "Avant-garde-Experimental, Mystery",
+    "rating": 9
+  },
+  {
+    "title": "Pan's Labyrinth",
+    "director": "Guillermo del Toro",
+    "year": 2006,
+    "country": "Spain-Mexico-USA",
+    "runtime": 120,
+    "genre": "Fantasy, Fairy Tales & Legends",
+    "rating": 10
   },
   {
     "title": "Still Life",
@@ -8323,12 +8114,38 @@ const lists = [ // Nosferatu
     "genre": "Drama, Ensemble Film"
   },
   {
+    "title": "The Host",
+    "director": "Bong Joon-ho",
+    "year": 2006,
+    "country": "South Korea-Japan",
+    "runtime": 119,
+    "genre": "Sci-Fi Horror, Monster Film",
+    "rating": 9
+  },
+  {
+    "title": "The Lives of Others",
+    "director": "Florian Henckel von Donnersmarck",
+    "year": 2006,
+    "country": "Germany",
+    "runtime": 138,
+    "genre": "Political Thriller, Period Film"
+  },
+  {
     "title": "4 Months, 3 Weeks and 2 Days",
     "director": "Cristian Mungiu",
     "year": 2007,
     "country": "Romania-Netherlands-France-Germany",
     "runtime": 113,
     "genre": "Drama, Slice of Life"
+  },
+  {
+    "title": "No Country for Old Men",
+    "director": "Joel Coen & Ethan Coen",
+    "year": 2007,
+    "country": "USA",
+    "runtime": 122,
+    "genre": "Thriller, Crime Thriller",
+    "rating": 8
   },
   {
     "title": "Silent Light",
@@ -8339,12 +8156,114 @@ const lists = [ // Nosferatu
     "genre": "Psychological Drama, Rural Drama"
   },
   {
+    "title": "There Will Be Blood",
+    "director": "Paul Thomas Anderson",
+    "year": 2007,
+    "country": "USA",
+    "runtime": 158,
+    "genre": "Family Drama, Period Film",
+    "rating": 9
+  },
+  {
+    "title": "Zodiac",
+    "director": "David Fincher",
+    "year": 2007,
+    "country": "USA",
+    "runtime": 158,
+    "genre": "Mystery, Police Detective Film",
+    "rating": 7
+  },
+  {
+    "title": "Hunger",
+    "director": "Steve McQueen",
+    "year": 2008,
+    "country": "UK-Ireland",
+    "runtime": 96,
+    "genre": "Prison Film, Political Drama"
+  },
+  {
+    "title": "Let the Right One In",
+    "director": "Tomas Alfredson",
+    "year": 2008,
+    "country": "Sweden-Norway",
+    "runtime": 114,
+    "genre": "Horror, Drama"
+  },
+  {
+    "title": "Synecdoche, New York",
+    "director": "Charlie Kaufman",
+    "year": 2008,
+    "country": "USA",
+    "runtime": 124,
+    "genre": "Psychological Drama, Showbiz Drama"
+  },
+  {
+    "title": "The Dark Knight",
+    "director": "Christopher Nolan",
+    "year": 2008,
+    "country": "USA-UK",
+    "runtime": 152,
+    "genre": "Crime Drama, Comic-Book Superhero Film",
+    "rating": 8
+  },
+  {
     "title": "The Headless Woman",
     "director": "Lucrecia Martel",
     "year": 2008,
     "country": "Argentina-Spain-France-Italy",
     "runtime": 87,
     "genre": "Thriller, Psychological Thriller"
+  },
+  {
+    "title": "WALL-E",
+    "director": "Andrew Stanton",
+    "year": 2008,
+    "country": "USA",
+    "runtime": 98,
+    "genre": "Sci-Fi Adventure, Animation"
+  },
+  {
+    "title": "A Prophet",
+    "director": "Jacques Audiard",
+    "year": 2009,
+    "country": "France-Italy",
+    "runtime": 155,
+    "genre": "Drama, Prison Film"
+  },
+  {
+    "title": "Avatar",
+    "director": "James Cameron",
+    "year": 2009,
+    "country": "USA-UK",
+    "runtime": 161,
+    "genre": "Science Fiction, Sci-Fi Action",
+    "rating": 7
+  },
+  {
+    "title": "Inglourious Basterds",
+    "director": "Quentin Tarantino",
+    "year": 2009,
+    "country": "USA-Germany",
+    "runtime": 153,
+    "genre": "War Adventure",
+    "rating": 10
+  },
+  {
+    "title": "The White Ribbon",
+    "director": "Michael Haneke",
+    "year": 2009,
+    "country": "Germany-Austria-France-Italy",
+    "runtime": 144,
+    "genre": "Drama, Period Film"
+  },
+  {
+    "title": "Certified Copy",
+    "director": "Abbas Kiarostami",
+    "year": 2010,
+    "country": "France-Italy-Belgium-Iran",
+    "runtime": 106,
+    "genre": "Drama, Slice of Life",
+    "rating": 9
   },
   {
     "title": "Nostalgia for the Light",
@@ -8355,12 +8274,46 @@ const lists = [ // Nosferatu
     "genre": "Social History, Documentary"
   },
   {
+    "title": "The Social Network",
+    "director": "David Fincher",
+    "year": 2010,
+    "country": "USA",
+    "runtime": 120,
+    "genre": "Drama, Biopic",
+    "rating": 7
+  },
+  {
     "title": "Uncle Boonmee Who Can Recall His Past Lives",
     "director": "Apichatpong Weerasethakul",
     "year": 2010,
     "country": "Thailand-UK-France-Germany-Spain-Netherlands",
     "runtime": 113,
     "genre": "Avant-garde-Experimental, Fantasy Drama"
+  },
+  {
+    "title": "A Separation",
+    "director": "Asghar Farhadi",
+    "year": 2011,
+    "country": "Iran",
+    "runtime": 123,
+    "genre": "Drama, Ensemble Film"
+  },
+  {
+    "title": "Melancholia",
+    "director": "Lars von Trier",
+    "year": 2011,
+    "country": "Denmark-Sweden-France-Germany",
+    "runtime": 136,
+    "genre": "Science Fiction, Psychological Sci-Fi"
+  },
+  {
+    "title": "Once Upon a Time in Anatolia",
+    "director": "Nuri Bilge Ceylan",
+    "year": 2011,
+    "country": "Turkey-Bosnia and Herzergovina",
+    "runtime": 150,
+    "genre": "Crime Drama, Psychological Drama",
+    "rating": 7
   },
   {
     "title": "The Tree of Life",
@@ -8371,12 +8324,12 @@ const lists = [ // Nosferatu
     "genre": "Drama, Family Drama"
   },
   {
-    "title": "The Act of Killing",
-    "director": "Joshua Oppenheimer",
-    "year": 2012,
-    "country": "Denmark-Norway-UK-Finland",
-    "runtime": 115,
-    "genre": "Social History, Documentary"
+    "title": "The Turin Horse",
+    "director": "Béla Tarr",
+    "year": 2011,
+    "country": "Hungary-France-Germany-Switzerland-USA",
+    "runtime": 146,
+    "genre": "Drama, Slice of Life"
   },
   {
     "title": "Amour",
@@ -8395,6 +8348,14 @@ const lists = [ // Nosferatu
     "genre": "Avant-garde-Experimental, Fantasy"
   },
   {
+    "title": "The Act of Killing",
+    "director": "Joshua Oppenheimer",
+    "year": 2012,
+    "country": "Denmark-Norway-UK-Finland",
+    "runtime": 115,
+    "genre": "Social History, Documentary"
+  },
+  {
     "title": "The Master",
     "director": "Paul Thomas Anderson",
     "year": 2012,
@@ -8409,6 +8370,23 @@ const lists = [ // Nosferatu
     "country": "UK-USA-Switzerland",
     "runtime": 108,
     "genre": "Science Fiction, Psychological Sci-Fi"
+  },
+  {
+    "title": "Boyhood",
+    "director": "Richard Linklater",
+    "year": 2014,
+    "country": "USA",
+    "runtime": 165,
+    "genre": "Childhood Drama, Coming-of-Age"
+  },
+  {
+    "title": "Mad Max: Fury Road",
+    "director": "George Miller",
+    "year": 2015,
+    "country": "Australia-USA",
+    "runtime": 120,
+    "genre": "Action Thriller, Road Movie",
+    "rating": 8
   },
   {
     "title": "Toni Erdmann",
