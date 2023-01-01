@@ -271,7 +271,7 @@ const Games = {
         "difficulty": 2.5
       },
       {
-        "title": "Aladdin",
+        "title": "Aladdin", // * 
         "src": "Aladdin.jpg",
         "rating": 3.5,
         "difficulty": 2.5
@@ -285,7 +285,7 @@ const Games = {
       {
         "title": "Mighty Morphin Power Rangers: The Movie",
         "src": "Mighty Morphin Power Rangers: The Movie.jpg",
-        "rating": 3.5,
+        "rating": 3.5, // *
         "difficulty": 2
       },
       {

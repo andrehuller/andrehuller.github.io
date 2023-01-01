@@ -9,7 +9,7 @@ Vue.component('indicator', {
             {{ value }}
           </p>
         </v-card-text>
-        
+
         <v-avatar class="ma-5" size="48" :color="color">
           <v-icon dark>{{ icon }}</v-icon>
         </v-avatar>
@@ -58,7 +58,6 @@ const Chartjs = {
           ></v-autocomplete>
         </v-col>
       </v-row>
-
       <v-row>
         <v-col cols="12" lg="3">
           <indicator
@@ -108,7 +107,6 @@ const Chartjs = {
             </div>
           </v-card>
         </v-col>
-
         <v-col cols="12" lg="12">
           <v-card outlined>
             <div>
@@ -139,7 +137,6 @@ const Chartjs = {
               :headers="headers"
               :items="listFilm"
               :search="search"
-
             ></v-data-table>
           </v-card>
         </v-col>

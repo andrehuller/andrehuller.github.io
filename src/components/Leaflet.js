@@ -275,34 +275,76 @@ const Leaflet = {
       document.getElementById("educacao").addEventListener("change", function () {
         geojson.setStyle(styleEducacao)
       })
+      /*
+      L.geoJSON(nucleos)
+        .addTo(this.map)
+      */
 
-      var union = turf.union(
-        cities.features.find(city => "Adrianópolis".localeCompare(city.properties.name) == 0),
-        cities.features.find(city => "Agudos do Sul".localeCompare(city.properties.name) == 0)
-      )
-      union = turf.union(union,
-        cities.features.find(city => "Bocaiúva do Sul".localeCompare(city.properties.name) == 0)
-      )
-      union = turf.union(union,
-        cities.features.find(city => "Cerro Azul".localeCompare(city.properties.name) == 0)
-      )
-      union = turf.union(union,
-        cities.features.find(city => "Tunas do Paraná".localeCompare(city.properties.name) == 0)
-      )
-      L.geoJSON(union)
-      	.addTo(this.map)
-      	
-      var municipios = {
-        'Abatiá': {
-          nucleo: 'Cornélio Procópio'
-        },
-        'Adrianópolis': {
-          nucleo: 'Curitiba'
-        },
-        'Agudos do Sul': {
-          nucleo: 'Curitiba'
+      /*
+      var nucleos = {
+        "APUCARANA": null,
+        "CAMPO MOURÃO": null,
+        "CASCAVEL": null,
+        "CIANORTE": null,
+        "CORNÉLIO PROCÓPIO": null,
+        "CURITIBA": null,
+        "DOIS VIZINHOS": null,
+        "FRANCISCO BELTRÃO": null,
+        "GUARAPUAVA": null,
+        "IRATI": null,
+        "IVAIPORÃ": null,
+        "JACAREZINHO": null,
+        "LARANJEIRAS DO SUL": null,
+        "LONDRINA": null,
+        "MARINGÁ": null,
+        "PARANAGUÁ": null,
+        "PARANAVAÍ": null,
+        "PATO BRANCO": null,
+        "PITANGA": null,
+        "PONTA GROSSA": null,
+        // "SEDE": null,
+        "TOLEDO": null,
+        "UMUARAMA": null,
+        "UNIÃO DA VITÓRIA": null
+      }
+      var keys = Object.keys(municipios)
+      for (var i = 0; i < keys.length; i++) {
+        var municipio = keys[i]
+        var nucleo = municipios[municipio].nucleo
+        var geometria = cities.features.find(city => municipio.localeCompare(_.deburr(city.properties.name.toUpperCase())) == 0)
+        // console.log(municipio)
+        // console.log(nucleo)
+        if (geometria) {
+          if (nucleos[nucleo]) {
+            nucleos[nucleo] = turf.union(nucleos[nucleo], geometria)
+          } else {
+            nucleos[nucleo] = geometria
+          }
+        } else {
+          console.log(municipio)
         }
       }
+      var polygons = []
+      keys = Object.keys(nucleos)
+      for (var i = 0; i < keys.length; i++) {
+        console.log(nucleos[keys[i]])
+        polygons.push(turf.polygon(nucleos[keys[i]].geometry.coordinates, {name: keys[i]}))
+        L.geoJSON(nucleos[keys[i]])
+          .addTo(this.map)
+      }
+      console.log(turf.featureCollection(polygons))
+      */
+      
+      /*
+        Munhoz de Mello -> Munhoz de Melo (Google pode estar com o nome do município errado)
+        Santa Cruz do Monte Castelo -> Santa Cruz de Monte Castelo
+        Rancho Alegre do Oeste -> Rancho Alegre d'Oeste
+        Diamante do Oeste -> Diamante d'Oeste
+        São Jorge do Oeste -> São Jorge d'Oeste
+        Itapejara do Oeste -> Itapejara d'Oeste
+        Bela Vista do Caroba -> Bela Vista da Caroba
+        Pérola do Oeste -> Pérola d'Oeste
+      */
        	
     })
   },
