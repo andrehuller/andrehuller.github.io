@@ -47,3 +47,4 @@ const Unsplash = {
     images: locations
   })
 }
+

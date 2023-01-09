@@ -111,7 +111,7 @@ const YouTube = {
           return true
         }
         for (var i = 0; i < array.length; i++) {
-          if (item[property].localeCompare(array[i]) == 0) {
+          if (item[property] && item[property].localeCompare(array[i]) == 0) {
             return true
           }
         }
@@ -258,3 +258,4 @@ const YouTube = {
     ]
   })
 }
+

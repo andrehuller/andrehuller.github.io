@@ -9,7 +9,7 @@ const Games = {
         @update:page="$vuetify.goTo(0)"
       >
         <template v-slot:header>
-          <v-container fluid px-0>
+          <v-container fluid px-0 pt-0>
             <v-row>
               <v-col cols="12" lg="9">
               </v-col>
@@ -39,6 +39,7 @@ const Games = {
 
                 <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">
                   {{ item.title }}
+                  <!--
                   <v-spacer></v-spacer>
                   <v-menu left offset-y>
                     <template v-slot:activator="{ on }">
@@ -55,6 +56,7 @@ const Games = {
                       </v-list-item>
                     </v-list>
                   </v-menu>
+                  -->
                 </v-card-title>
                 <v-card-subtitle v-if="item.developer">
                   {{ item.developer }} / {{ item.year }}
@@ -299,6 +301,12 @@ const Games = {
         "src": "The Mask.jpg",
         "rating": 3,
         "difficulty": 3.5
+      },
+      {
+        "title": "Alien vs. Predator", // Generic Beat 'em up, Long and Tedious
+        "src": "Alien vs. Predator.jpg",
+        "rating": 2,
+        "difficulty": 2.5
       },
       {
         "title": "The Lion King", // Played in Normal

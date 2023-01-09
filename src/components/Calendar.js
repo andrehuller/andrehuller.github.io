@@ -24,10 +24,7 @@ const Calendar = {
           max-width="350px"
           offset-x
         >
-          <v-card
-            color="grey lighten-4"
-            flat
-          >
+          <v-card flat>
             <v-toolbar
               :color="selectedEvent.color"
               dark

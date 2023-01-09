@@ -153,8 +153,6 @@ const Leaflet = {
         this._div.innerHTML += createOption('populacao', 'População no último censo [2010]', true)
         this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Trabalho e Rendimento</b></p>'
         this._div.innerHTML += createOption('salario', 'Salário médio mensal dos trabalhadores formais')
-        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Educação</b></p>'
-        this._div.innerHTML += createOption('educacao', 'Taxa de escolarização de 6 a 14 anos de idade')
         
       	return this._div
       }
@@ -168,8 +166,6 @@ const Leaflet = {
           tooltip += props.populacao.toLocaleString('pt-BR') + ' pessoas'
         else if (document.getElementById("salario").checked)
           tooltip += props.salario.toLocaleString('pt-BR') + ' salários mínimos'
-        else if (document.getElementById("educacao").checked)
-          tooltip += props.educacao + '%'
 
         return tooltip
       }
@@ -187,10 +183,11 @@ const Leaflet = {
         if (!L.Browser.opera && !L.Browser.edge) {
           layer.bringToFront()
         }
-
+        /*
         var tooltip = createTooltip(layer)
         
         layer.setTooltipContent(tooltip)
+        */
       }
       
       function resetHighlight(e) {
@@ -228,7 +225,6 @@ const Leaflet = {
 
           cities.features[i].properties.populacao = populacao[name].value
           cities.features[i].properties.salario = salario[name].value
-          cities.features[i].properties.educacao = educacao[name].value
       }
       
       function createStyleFunction (propertyName, high, medium, low) {
@@ -259,26 +255,58 @@ const Leaflet = {
 
       var stylePopulacao = createStyleFunction("populacao", 18040, 9085, 5046)
       var styleSalario = createStyleFunction("salario", 2.2, 2.1, 1.9)
-      var styleEducacao = createStyleFunction("educacao", 98.7, 98.1, 97.2)
-      
+
       geojson = L.geoJSON(cities, {
         style: stylePopulacao,
         onEachFeature, onEachFeature
       }).addTo(this.map)
-      
+
       document.getElementById("populacao").addEventListener("change", function () {
         geojson.setStyle(stylePopulacao)
       })
       document.getElementById("salario").addEventListener("change", function () {
         geojson.setStyle(styleSalario)
       })
-      document.getElementById("educacao").addEventListener("change", function () {
-        geojson.setStyle(styleEducacao)
-      })
-      /*
-      L.geoJSON(nucleos)
-        .addTo(this.map)
-      */
+      
+      L.geoJSON(nucleos, {
+        style: function (feature) {
+          var fillColor = '#d9d9d9'
+          switch (Math.round(Math.random() * 100) % 4) {
+            case 3:
+              fillColor = '#2b8cbe'
+              break
+            case 2:
+              fillColor = '#7bccc4'
+              break
+            case 1:
+              fillColor = '#bae4bc'
+              break
+            case 0:
+              fillColor = '#f0f9e8'
+              break
+          }
+          return {
+            fillColor: fillColor,
+            color: "#ffffff",
+            weight: 1,
+            fillOpacity: 0.7
+          }
+        },
+        onEachFeature: function (feature, layer) {
+          layer.on({
+            mouseover: highlightFeature,
+            mouseout: resetHighlight,
+            click: zoomToFeature
+          })
+          /*
+          var tooltip = createTooltip(layer)
+          
+          layer.bindTooltip(tooltip, {
+            sticky: true
+          })
+          */
+        }
+      }).addTo(this.map)
 
       /*
       var nucleos = {

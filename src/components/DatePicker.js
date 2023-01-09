@@ -61,7 +61,7 @@ const DatePicker = {
     <v-container fluid>
       <v-row>
         <v-col cols="12" lg="12">
-        <v-card flat tile class="grey lighten-5">
+        <v-card outlined>
           <v-container fluid>
             <v-row>
               <v-col cols="12" lg="3">
