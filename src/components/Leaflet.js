@@ -37,9 +37,6 @@ const Leaflet = {
       }
     ]
 */
-    options: [
-      'Salário médio mensal dos trabalhadores formais'
-    ]
   }),
   beforeRouteEnter (to, from, next) {
     next(vm => {
@@ -53,7 +50,6 @@ const Leaflet = {
       
       L.esri.basemapLayer('Gray').addTo(this.map)
       
-      /*
       this.layers = L.control.layers({
         'Gray': L.esri.basemapLayer('Gray').addTo(this.map),
         'Imagery': L.esri.basemapLayer('Imagery'),
@@ -61,8 +57,9 @@ const Leaflet = {
         'OpenStreetMap': L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         })
+      }, null, {
+        collapsed: false
       }).addTo(this.map)
-      */
 
       L.control.defaultExtent()
         .addTo(this.map)
@@ -136,7 +133,7 @@ const Leaflet = {
       
       info.addTo(this.map)
       */
-
+  /*
       var info = L.control()
       function createOption (id, text, checked) {
         return '<div style="margin-bottom: 4px;">'
@@ -151,21 +148,17 @@ const Leaflet = {
 
         this._div.innerHTML = '<p style="margin-bottom: 4px;"><b>População</b></p>'
         this._div.innerHTML += createOption('populacao', 'População no último censo [2010]', true)
-        this._div.innerHTML += '<p style="margin-bottom: 4px;"><b>Trabalho e Rendimento</b></p>'
-        this._div.innerHTML += createOption('salario', 'Salário médio mensal dos trabalhadores formais')
         
       	return this._div
       }
       info.addTo(this.map)
+      */
 
       function createTooltip (layer) {
         var props = layer.feature.properties
 
         var tooltip = '<b>' + props.name + '</b>' + ': '
-        if (document.getElementById("populacao").checked)
-          tooltip += props.populacao.toLocaleString('pt-BR') + ' pessoas'
-        else if (document.getElementById("salario").checked)
-          tooltip += props.salario.toLocaleString('pt-BR') + ' salários mínimos'
+        tooltip += props.populacao.toLocaleString('pt-BR') + ' pessoas'
 
         return tooltip
       }
@@ -223,8 +216,7 @@ const Leaflet = {
       for (var i = 0; i < cities.features.length; i++) {
       	var name = cities.features[i].properties.name
 
-          cities.features[i].properties.populacao = populacao[name].value
-          cities.features[i].properties.salario = salario[name].value
+        cities.features[i].properties.populacao = populacao[name].value
       }
       
       function createStyleFunction (propertyName, high, medium, low) {
@@ -254,21 +246,15 @@ const Leaflet = {
       }
 
       var stylePopulacao = createStyleFunction("populacao", 18040, 9085, 5046)
-      var styleSalario = createStyleFunction("salario", 2.2, 2.1, 1.9)
 
       geojson = L.geoJSON(cities, {
         style: stylePopulacao,
         onEachFeature, onEachFeature
       }).addTo(this.map)
-
-      document.getElementById("populacao").addEventListener("change", function () {
-        geojson.setStyle(stylePopulacao)
-      })
-      document.getElementById("salario").addEventListener("change", function () {
-        geojson.setStyle(styleSalario)
-      })
       
-      L.geoJSON(nucleos, {
+      this.layers.addOverlay(geojson, "Municípios")
+      
+      var layerNucleos = L.geoJSON(nucleos, {
         style: function (feature) {
           var fillColor = '#d9d9d9'
           switch (Math.round(Math.random() * 100) % 4) {
@@ -306,7 +292,9 @@ const Leaflet = {
           })
           */
         }
-      }).addTo(this.map)
+      })
+      
+      this.layers.addOverlay(layerNucleos, "Núcleos")
 
       /*
       var nucleos = {

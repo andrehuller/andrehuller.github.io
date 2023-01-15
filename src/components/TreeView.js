@@ -1,7 +1,7 @@
 const TreeView = {
   template: `
     <v-container fluid>
-      <v-card>
+      <v-card outlined>
         <v-card-title>
           Choose a location
         </v-card-title>

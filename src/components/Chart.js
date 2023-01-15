@@ -58,6 +58,7 @@ const Chartjs = {
           ></v-autocomplete>
         </v-col>
       </v-row>
+      
       <v-row>
         <v-col cols="12" lg="3">
           <indicator
@@ -94,40 +95,41 @@ const Chartjs = {
         
         <v-col cols="12" lg="12">
           <v-card outlined>
-            <div>
-              <canvas id="chartDirector" style="height: 450px; max-height: 450px"></canvas>
-            </div>
+            <v-card-text style="height: 450px" class="pt-0">
+              <canvas id="chartDirector"></canvas>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="12" lg="12">
+          <v-card outlined>
+            <v-card-text style="height: 450px" class="pt-0">
+              <canvas id="chartCountry"></canvas>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col cols="12" lg="12">
+          <v-card outlined>
+            <v-card-text style="height: 450px" class="pt-0 pb-0">
+              <canvas id="chartGenre"></canvas>
+            </v-card-text>
           </v-card>
         </v-col>
         
         <v-col cols="12" lg="12">
           <v-card outlined>
-            <div>
-              <canvas id="chartYear" height="60px"></canvas>
-            </div>
-          </v-card>
-        </v-col>
-        <v-col cols="12" lg="12">
-          <v-card outlined>
-            <div>
-              <canvas id="chartCountry" style="height: 450px; max-height: 450px"></canvas>
-            </div>
+            <v-card-text style="height: 300px" class="pt-0">
+              <canvas id="chartYear"></canvas>
+            </v-card-text>
           </v-card>
         </v-col>
         
         <v-col cols="12" lg="12">
           <v-card outlined>
-            <div>
+            <v-card-text class="pt-0 pb-1">
               <canvas id="chartRuntime" height="60px"></canvas>
-            </div>
-          </v-card>
-        </v-col>
-        
-        <v-col cols="12" lg="12">
-          <v-card outlined>
-            <div>
-              <canvas id="chartGenre" style="height: 450px; max-height: 450px"></canvas>
-            </div>
+            </v-card-text>
           </v-card>
         </v-col>
         
@@ -247,7 +249,7 @@ const Chartjs = {
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.director.localeCompare(b.director) : ((a.amount < b.amount) ? 1 : -1))
-      values = values.slice(0, 60)
+      values = values.slice(0, 50)
       
       var labels = []
       var data = []
@@ -268,13 +270,15 @@ const Chartjs = {
               labels: labels,
               datasets: [
                 {
-                  label: "Director",
+                  label: "# of films",
                   backgroundColor: this.backgroundColor, // '#0868ac', '#f87979',
                   data: data
                 }
               ]
             },
             options: {
+              // indexAxis: 'y',
+              maintainAspectRatio: false,
               plugins: {
                 legend: {
                   display: false
@@ -338,7 +342,7 @@ const Chartjs = {
               labels: labels,
               datasets: [
                 {
-                  label: "Year",
+                  label: "# of films",
                   data: data,
                   backgroundColor: this.backgroundColor,
                   borderColor: this.backgroundColor,
@@ -349,6 +353,7 @@ const Chartjs = {
               ]
             },
             options: {
+              maintainAspectRatio: false,
               plugins: {
                 legend: {
                   display: false,
@@ -401,6 +406,7 @@ const Chartjs = {
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.country.localeCompare(b.country) : ((a.amount < b.amount) ? 1 : -1))
+      values = values.slice(0, 50)
       
       var labels = []
       var data = []
@@ -421,13 +427,15 @@ const Chartjs = {
               labels: labels,
               datasets: [
                 {
-                  label: "Country",
+                  label: "# of films",
                   data: data,
                   backgroundColor: this.backgroundColor
                 }
               ]
             },
             options: {
+              // indexAxis: 'y',
+              maintainAspectRatio: false,
               plugins: {
                 legend: {
                   display: false,
@@ -439,8 +447,6 @@ const Chartjs = {
               },
               scales: {
                 y: {
-                  // beginAtZero: true,
-                  display: true,
                   type: 'logarithmic'
                 }
               },
@@ -494,7 +500,7 @@ const Chartjs = {
             labels: labels,
             datasets: [
               {
-                label: "Runtime",
+                label: "# of films",
                 backgroundColor: this.backgroundColor,
                 data: data
                 // stepped: true
@@ -544,7 +550,7 @@ const Chartjs = {
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.genre.localeCompare(b.genre) : ((a.amount < b.amount) ? 1 : -1))
-      values = values.splice(0, 60)
+      values = values.slice(0, 50)
       
       var labels = []
       var data = []
@@ -556,19 +562,6 @@ const Chartjs = {
       }
 
       if (this.chartGenre) {
-        if (labels.length < 10) {
-          this.chartGenre.config.type = 'doughnut'
-          this.chartGenre.options.scales = null
-        } else {
-          this.chartGenre.config.type = 'bar'
-          this.chartGenre.options.scales = {
-            y: {
-              display: true,
-              type: 'logarithmic'
-            }
-          }
-        }
-         
         this.chartGenre.data.labels = labels
         this.chartGenre.data.datasets[0].data = data
         this.chartGenre.update()
@@ -580,13 +573,15 @@ const Chartjs = {
               labels: labels,
               datasets: [
                 {
-                  label: "Genre",
+                  label: "# of films",
                   data: data,
                   backgroundColor: this.backgroundColor,
                 }
               ]
             },
             options: {
+              // indexAxis: 'y',
+              maintainAspectRatio: false,
               plugins: {
                 legend: {
                   display: false
@@ -598,8 +593,6 @@ const Chartjs = {
               },
               scales: {
                 y: {
-                  // beginAtZero: true,
-                  display: true,
                   type: 'logarithmic'
                 }
               }

@@ -51,16 +51,18 @@ function decodePolyline (encodedPolyline, includeElevation) {
 
 const ORS = {
   template: `
-    <v-container fluid pa-0>
-      <v-row no-gutters>
-        <v-col cols="12" lg="9">
-          <div id="map" style="width: 100%; height: calc(100vh - 64px); z-index: 0;"></div>
+    <v-container fluid>
+      <v-row>
+        <v-col cols="12" lg="8">
+          <v-card outlined>
+            <div id="map" style="width: 100%; height: calc(100vh - 64px - 24px); z-index: 0;"></div>
+          </v-card>
         </v-col>
-        <v-col cols="12" lg="3">
+        <v-col cols="12" lg="4">
           <v-container pa-0>
             <v-row>
               <v-col cols="12">
-                <v-card tile outlined>
+                <v-card outlined>
                   <v-card-title>
                     Jobs
                   </v-card-title>
@@ -73,7 +75,7 @@ const ORS = {
                 </v-card>
               </v-col>
               <v-col cols="12">
-                <v-card tile outlined>
+                <v-card outlined>
                   <v-card-title>
                     Vehicles
                   </v-card-title>
@@ -108,12 +110,14 @@ const ORS = {
   },
   data: () => ({
     headers: [
-      { text: 'Longitude', value: 'location[0]' },
-      { text: 'Latitude', value: 'location[1]' }
+      { text: 'Id', value: 'id', width: '30%' },
+      { text: 'Longitude', value: 'location[0]', width: '35%' },
+      { text: 'Latitude', value: 'location[1]', width: '35%' }
     ],
     headersVehicles: [
-      { text: 'Longitude', value: 'start[0]' },
-      { text: 'Latitude', value: 'start[1]' }
+      { text: 'Id', value: 'id', width: '30%' },
+      { text: 'Longitude', value: 'start[0]', width: '35%' },
+      { text: 'Latitude', value: 'start[1]', width: '35%' }
     ],
     jobs: [],
     vehicles: []
