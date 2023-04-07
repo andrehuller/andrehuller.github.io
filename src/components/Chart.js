@@ -94,42 +94,26 @@ const Chartjs = {
         </v-col>
         
         <v-col cols="12" lg="12">
-          <v-card outlined>
-            <v-card-text style="height: 450px" class="pt-0">
-              <canvas id="chartDirector"></canvas>
-            </v-card-text>
+          <v-card outlined style="height: 450px" class="px-3">
+            <canvas id="chartDirector"></canvas>
           </v-card>
         </v-col>
 
         <v-col cols="12" lg="12">
-          <v-card outlined>
-            <v-card-text style="height: 450px" class="pt-0">
-              <canvas id="chartCountry"></canvas>
-            </v-card-text>
+          <v-card outlined style="height: 300px" class="px-3">
+            <canvas id="chartYear"></canvas>
+          </v-card>
+        </v-col>
+        
+        <v-col cols="12" lg="12">
+          <v-card outlined style="height: 450px" class="px-3">
+            <canvas id="chartCountry"></canvas>
           </v-card>
         </v-col>
 
         <v-col cols="12" lg="12">
-          <v-card outlined>
-            <v-card-text style="height: 450px" class="pt-0 pb-0">
-              <canvas id="chartGenre"></canvas>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        
-        <v-col cols="12" lg="12">
-          <v-card outlined>
-            <v-card-text style="height: 300px" class="pt-0">
-              <canvas id="chartYear"></canvas>
-            </v-card-text>
-          </v-card>
-        </v-col>
-        
-        <v-col cols="12" lg="12">
-          <v-card outlined>
-            <v-card-text class="pt-0 pb-1">
-              <canvas id="chartRuntime" height="60px"></canvas>
-            </v-card-text>
+          <v-card outlined style="height: 450px" class="px-3">
+            <canvas id="chartGenre"></canvas>
           </v-card>
         </v-col>
         
@@ -150,7 +134,6 @@ const Chartjs = {
     chartDirector: null,
     chartYear: null,
     chartCountry: null,
-    chartRuntime: null,
     chartGenre: null,
     director: null,
     directors: [],
@@ -163,32 +146,27 @@ const Chartjs = {
       {
         text: 'Title',
         value: 'title',
-        width: '16.67%'
+        width: '20%'
       },
       {
         text: 'Director',
         value: 'director',
-        width: '16.67%'
+        width: '20%'
       },
       {
         text: 'Year',
         value: 'year',
-        width: '16.67%'
-      },
-      {
-        text: 'Runtime',
-        value: 'runtime',
-        width: '16.67%'
+        width: '20%'
       },
       {
         text: 'Country',
         value: 'country',
-        width: '16.67%'
+        width: '20%'
       },
       {
         text: 'Genre',
         value: 'genre',
-        width: '16.67%'
+        width: '20%'
       }
     ],
     items: []
@@ -212,7 +190,6 @@ const Chartjs = {
       this.updateYear(newList)
       
       this.updateCountry(newList)
-      this.updateRuntime(newList)
       this.updateGenre(newList)
     }
   },
@@ -249,7 +226,7 @@ const Chartjs = {
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.director.localeCompare(b.director) : ((a.amount < b.amount) ? 1 : -1))
-      values = values.slice(0, 50)
+      values = values.slice(0, 60)
       
       var labels = []
       var data = []
@@ -406,7 +383,7 @@ const Chartjs = {
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.country.localeCompare(b.country) : ((a.amount < b.amount) ? 1 : -1))
-      values = values.slice(0, 50)
+      values = values.slice(0, 60)
       
       var labels = []
       var data = []
@@ -466,61 +443,6 @@ const Chartjs = {
         )
       }
     },
-    updateRuntime (items) {
-      var runtimeSet = {}
-      
-      for (var i = 0; i < items.length; i++) {
-        var runtime = items[i].runtime
-        if (runtime) {
-          runtimeSet[runtime] = runtimeSet[runtime] ? runtimeSet[runtime] + 1 : 1
-        }
-      }
-      
-      var runtimes = Object.keys(runtimeSet)      
-
-      var labels = []
-      var data = []
-
-      for (var i = 0; i < runtimes.length; i++) {
-        var runtime = runtimes[i]
-        
-        labels.push(runtime)
-        data.push(runtimeSet[runtime])
-      }
-      
-      if (this.chartRuntime) {
-        this.chartRuntime.data.labels = labels
-        this.chartRuntime.data.datasets[0].data = data
-        this.chartRuntime.update()
-      } else {
-        this.chartRuntime = new Chart(
-          document.getElementById('chartRuntime'), {
-          type: 'bar',
-          data: {
-            labels: labels,
-            datasets: [
-              {
-                label: "# of films",
-                backgroundColor: this.backgroundColor,
-                data: data
-                // stepped: true
-              }
-            ]
-          },
-          options: {
-            plugins: {
-              legend: {
-                display: false
-              },
-              title: {
-                display: true,
-                text: "Runtime"
-              }
-            }
-          }
-        })
-      }
-    },
     updateGenre (items) {
       var genres = {}
       
@@ -550,7 +472,7 @@ const Chartjs = {
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.genre.localeCompare(b.genre) : ((a.amount < b.amount) ? 1 : -1))
-      values = values.slice(0, 50)
+      values = values.slice(0, 60)
       
       var labels = []
       var data = []
