@@ -718,12 +718,6 @@ const categories = [
         "subtitle": "Beyond Doom",
         "href": "https://www.zdoom.org",
         "src": "assets/screenshots/ZDoom.png"
-      },
-      {
-        "title": "ZSNES",
-        "subtitle": "SNES games emulator",
-        "href": "https://zsnes.com/",
-        "src": "assets/screenshots/ZSNES.png"
       }
     ]
   },

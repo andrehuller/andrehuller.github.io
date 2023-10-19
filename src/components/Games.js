@@ -1,6 +1,150 @@
 const Games = {
   template: `
     <v-container fluid>
+      <v-container fluid>
+      <v-row>
+      <v-col>
+      <v-img
+        src="assets/ps4/Mass Effect.jpg"
+        width="281.5"
+        height="400"
+      ></v-img>
+      </v-col>
+      <v-col>
+      <v-img
+        src="assets/ps4/Mass Effect 2.jpg"
+        width="281.5"
+        height="400"
+      ></v-img>
+      </v-col>
+      <v-col>
+      <v-img
+        src="assets/ps4/Mass Effect 3.jpg"
+        width="281.5"
+        height="400"
+      ></v-img>
+      </v-col>
+      <v-col>
+      <v-img
+        src="assets/ps4/Mass Effect Andromeda.jpg"
+        width="281.5"
+        height="400"
+      ></v-img>
+      </v-col>
+      </v-row>
+        <v-row>
+          <v-col>
+            <v-img
+              src="assets/ps4/Ion Fury.png"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Horizon Zero Dawn.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Sonic Mania.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Doom.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Resident Evil.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Claire Redfield.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Jill Valentine.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Resident Evil 3.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Titanfall 2.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Injustice Gods Among Us.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Rise of the Tomb Raider.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/God of War III.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Uncharted Drake's Fortune.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Uncharted 2.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+          <v-col>
+            <v-img
+              src="assets/ps4/Shadow of the Colossus.jpg"
+              width="480"
+              height="270"
+            ></v-img>
+          </v-col>
+        </v-row>
+        <!--
+              width="640"
+              height="360"
+        -->
+
+      </v-container>
       <v-data-iterator
         :items="games"
         :items-per-page="20"
@@ -25,17 +169,17 @@ const Games = {
         </template>
         <template v-slot:default="props">
           <v-row>
-            <v-col sm="12" md="6" lg="3"
+            <v-col sm="12" md="6" :lg="item.ps4 ? 2 : 3"
               v-for="item in props.items"
               :key="item.title"
             >
               <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
                 <v-img
                   :src="'assets/games/' + item.src"
-                  height="275px"
-                  max-height="275px"
+                  :height="item.ps4 ? '300px' : '275px'"
+                  :max-height="item.ps4 ? '300px' : '275px'"
                   style="border-radius: 8px"
-                ></v-img>
+                ></v-img><!-- max-height: 275 -->
 
                 <v-card-title style="overflow-wrap: anywhere; word-wrap: break-word; word-break: normal; hyphens: auto;">
                   {{ item.name }}

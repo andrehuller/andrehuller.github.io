@@ -179,14 +179,6 @@ const listGames = [
     "difficulty": 4
   }, // Return of the Jedi - Some of the bosses are really terrible
   {
-    "name": "Yoshi's Island",
-    "developer": "Nintendo",
-    "year": "1995",
-    "src": "Yoshi's Island.jpg",
-    "rating": 4,
-    "difficulty": 2.5
-  },
-  {
     "name": "Aladdin", // * 
     "developer": "Capcom",
     "year": 1993,
@@ -213,6 +205,14 @@ const listGames = [
     "developer": "Konami",
     "src": "Super Castlevania IV.jpg",
     "rating": 3.5,
+    "difficulty": 2.5
+  },
+  {
+    "name": "Yoshi's Island",
+    "developer": "Nintendo",
+    "year": "1995",
+    "src": "Yoshi's Island.jpg",
+    "rating": 4,
     "difficulty": 2.5
   },
   {
