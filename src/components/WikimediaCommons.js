@@ -2,44 +2,6 @@ const WikimediaCommons = {
   template: `
     <v-container fluid>
       <v-row>
-        <v-col cols="12" lg="3">
-          <v-img src="https://i.ibb.co/M5ncRPN/The-Searchers-1956.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img src="https://i.ibb.co/THgTqch/Written-on-the-Wind-1956.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img src="https://i.ibb.co/JHVjL3g/A-Face-in-the-Crowd-1957.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img src="https://i.ibb.co/MCcCvwG/The-7th-Voyage-of-Sinbad-1958.jpg"></v-img>
-        </v-col>
-        
-        <v-col cols="12" lg="3">
-          <v-img height="560" src="https://i.ibb.co/s60bbQX/Imitation-of-Life-1959.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img height="560" src="https://i.ibb.co/BLhnPz5/North-by-Northwest-1959.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img height="560" src="https://i.ibb.co/3FR5QkQ/Rio-Bravo-1959.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img height="560" src="https://i.ibb.co/xfMcK31/The-Apartment-1960.jpg"></v-img>
-        </v-col>
-        
-        <v-col cols="12" lg="3">
-          <v-img height="560" src="https://i.ibb.co/1bwNh1H/Psycho-1960.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img height="560" src="https://i.ibb.co/82cbvNG/One-Two-Three-1961.jpg"></v-img>
-        </v-col>
-        <v-col cols="12" lg="3">
-          <v-img height="560" src="https://i.ibb.co/F3c3zBw/West-Side-Story-1961.jpg"></v-img>
-        </v-col>
-      </v-row>
-      
-      <v-row>
         <v-col
           v-for="item in items"
           :key="item.name"
@@ -64,23 +26,29 @@ const WikimediaCommons = {
   data: () => ({
     items: [
       {
-        href: 'https://i.ibb.co/q7gMy15/The-39-Steps-1935.jpg'
+        href: 'https://i.ibb.co/q7gMy15/The-39-Steps-1935.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:The_39_Steps_(1935)_-_poster.jpg">Fox Film Corp.</a>, Public domain, via Wikimedia Commons'
       },
       {
         name: 'Mutiny on the Bounty (1935)',
-        href: 'https://i.ibb.co/M9rX3Wz/Mutiny-on-the-Bounty-1935.jpg'
+        href: 'https://i.ibb.co/M9rX3Wz/Mutiny-on-the-Bounty-1935.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Mutiny_on_the_Bounty_poster.jpg">MGM</a>, Public domain, via Wikimedia Commons'
       },
       {
-        href: 'https://i.ibb.co/N7bzrxg/The-Adventures-of-Robin-Hood-1938.jpg'
+        href: 'https://i.ibb.co/N7bzrxg/The-Adventures-of-Robin-Hood-1938.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:The_Adventures_of_Robin_Hood_(1938_poster).jpg">English:  Illustrator unknown. Distributed by Warner Bros.</a>, Public domain, via Wikimedia Commons'
       },
       {
-        href: 'https://i.ibb.co/vj7rxLy/Mr-Smith-Goes-to-Washington-1939.jpg'
+        href: 'https://i.ibb.co/vj7rxLy/Mr-Smith-Goes-to-Washington-1939.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Mr._Smith_Goes_to_Washington_(1939_poster).jpg">English:  Illustrator unknown; work-for-hire on behalf of Columbia Pictures.</a>, Public domain, via Wikimedia Commons'
       },
       {
-        href: 'https://i.ibb.co/J35v8zv/His-Girl-Friday-1940.jpg'
+        href: 'https://i.ibb.co/J35v8zv/His-Girl-Friday-1940.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:His_Girl_Friday_(1940_poster).jpg">English:  &quot;Copyrighted by Columbia Pictures Corp, New York, N. Y. 1939&quot;</a>, Public domain, via Wikimedia Commons'
       },
       {
-        href: 'https://i.ibb.co/mTvXWP0/Rebecca-1940.jpg'
+        href: 'https://i.ibb.co/mTvXWP0/Rebecca-1940.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Rebecca_(1939_poster).jpeg">English:  &quot;© 1939 by United Artists Corporation.&quot;</a>, Public domain, via Wikimedia Commons'
       },
       {
         href: 'https://i.ibb.co/9HmWvKv/The-Maltese-Falcon-1941.jpg',
@@ -116,6 +84,10 @@ const WikimediaCommons = {
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:Edward_G._Robinson_and_Joan_Bennett_in_%27Scarlet_Street%27,_1946.jpg">Universal Studios</a>, Public domain, via Wikimedia Commons'
       },
       {
+        href: 'https://i.ibb.co/y5rTqxr/Notorious-1946.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Notorious_(1946_film_poster).jpg">English:  &quot;Copyright 1946 RKO Radio Pictures Inc.&quot;</a>, Public domain, via Wikimedia Commons'
+      },
+      {
         // name: 'The Treasure of the Sierra Madre (1947)',
         href: 'https://i.ibb.co/Wxknc7V/The-Treasure-of-the-Sierra-Madre-1947.jpg',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:The_Treasure_of_the_Sierra_Madre_(1947_poster).jpg">English:  &quot;Copyright 1947 Warner Bros. Pictures Distributing Corporation.&quot;</a>, Public domain, via Wikimedia Commons'
@@ -135,6 +107,10 @@ const WikimediaCommons = {
       {
         href: 'https://i.ibb.co/L8Bx2yw/All-About-Eve-1950.jpg',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:All_About_Eve_(1950_poster_-_retouch).jpg">English:  &quot;Copyright 1950 By Twentieth Century-Fox Film Corp.&quot;</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/z7zQkMY/Panic-in-the-Streets-1950.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Panic_in_the_Streets_(1950).jpg">20th Century Fox</a>, Public domain, via Wikimedia Commons'
       },
       {
         href: 'https://i.ibb.co/KLKJHKy/Sunset-Boulevard-1950.jpg',
@@ -167,6 +143,54 @@ const WikimediaCommons = {
       {
         href: 'https://i.ibb.co/9tXTg2X/Invasion-of-the-Body-Snatchers-1956.jpg',
         attribution: '<a href="https://commons.wikimedia.org/wiki/File:Invasion_of_the_Body_Snatchers_(1956_poster).jpg">English:  Distributed by Allied Artists Pictures Corporation</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/M5ncRPN/The-Searchers-1956.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:SearchersPoster-BillGold.jpg">Bill Gold</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/THgTqch/Written-on-the-Wind-1956.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:WrittenOnTheWind2.jpg">Reynold Brown</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/JHVjL3g/A-Face-in-the-Crowd-1957.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:A_Face_in_the_Crowd_(1957_poster).jpg">English:  &quot;Copyright 1957 Warner Bros. Pictures Distributing Corporation&quot;</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/MCcCvwG/The-7th-Voyage-of-Sinbad-1958.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:The_7th_Voyage_of_Sinbad_(1958_poster).jpeg">English:  &quot;Copyright © 1958 Columbia Pictures Corporation.&quot;</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/s60bbQX/Imitation-of-Life-1959.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Imitation_of_Life_1959_poster.jpg">Reynold Brown</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/BLhnPz5/North-by-Northwest-1959.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Northbynorthwest1.jpg">Copyrighted by Loew&#039;s, Incorporated. Incorporates artwork by Saul Bass</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/3FR5QkQ/Rio-Bravo-1959.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Rio_Bravo_(1959_poster).jpg">English:  &quot;Copyright 1959 Warner Bros. Pictures Distributing Company.&quot;</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/sQjB6rF/Some-Like-It-Hot-1959.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Some_Like_It_Hot_(1959_poster).jpg">English:  Designed by Macario Gómez Quibus. &quot;Copyright 1959 – United Artists Corp.&quot;.</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/xfMcK31/The-Apartment-1960.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:The_Apartment_(1960_poster).jpg">English:  &quot;Copyright © 1960 – United Artists Corporation&quot;.</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/1bwNh1H/Psycho-1960.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:Psycho_(1960)_theatrical_poster_(retouched).jpg">English:  Designed by Macario Gómez Quibus. &quot;© Shamley Productions, Inc.&quot;</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/82cbvNG/One-Two-Three-1961.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:One_two_three43.jpg">Saul Bass</a>, Public domain, via Wikimedia Commons'
+      },
+      {
+        href: 'https://i.ibb.co/F3c3zBw/West-Side-Story-1961.jpg',
+        attribution: '<a href="https://commons.wikimedia.org/wiki/File:West_Side_Story_1961_film_poster.jpg">English:  Designed by Joe Caroff. &quot;Copyright © 1961 United Artists Corporation.&quot;</a>, Public domain, via Wikimedia Commons'
       }
     ]
   })

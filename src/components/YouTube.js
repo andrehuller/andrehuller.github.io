@@ -219,7 +219,7 @@ const YouTube = {
         "id": "6SfPf-_OavY",
         "title": "IF",
         "subtitle": "Rudyard Kipling",
-        "channel": "Joe Rogan Experience",
+        "channel": null,
         "src": "assets/ytimg/6SfPf-_OavY.webp"
       },
       {
