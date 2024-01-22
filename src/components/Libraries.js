@@ -82,10 +82,6 @@ const Libraries = {
     </v-container>
   `,
   data: () => ({
-    headers: [
-      { text: 'Nome', value: 'title', width: '25%' },
-      { text: 'Descrição', value: 'subtitle', width: '75%' }
-    ],
     categories: null
   }),
   computed: {

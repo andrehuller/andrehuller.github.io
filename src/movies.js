@@ -213,7 +213,7 @@ const lists = [
     "year": 1926,
     "country": "USA",
     "runtime": 74,
-    "genre": "Buster Keaton & Clyde Bruckman"
+    "genre": "Comedy, Adventure"
   },
   {
     "title": "Berlin: Symphony of a Great City",
@@ -397,8 +397,7 @@ const lists = [
     "year": 1931,
     "country": "USA",
     "runtime": 86,
-    "genre": "Comedy Drama, Romance",
-    "rating": 8
+    "genre": "Comedy Drama, Romance"
   },
   {
     "title": "Frankenstein",
@@ -486,8 +485,7 @@ const lists = [
     "year": 1932,
     "country": "Spain",
     "runtime": 28,
-    "genre": "Culture & Society, Documentary",
-    "rating": 8
+    "genre": "Culture & Society, Documentary"
   },
   {
     "title": "Love Me Tonight",
@@ -504,8 +502,7 @@ const lists = [
     "country": "USA",
     "runtime": 90,
     "genre": "Gangster Film, Crime Drama",
-    "image": "scarface1932",
-    "rating": 8
+    "image": "scarface1932"
   },
   {
     "title": "Trouble in Paradise",
@@ -553,8 +550,7 @@ const lists = [
     "year": 1933,
     "country": "USA",
     "runtime": 103,
-    "genre": "Adventure, Monster Film",
-    "rating": 6
+    "genre": "Adventure, Monster Film"
   },
   {
     "title": "Outskirts",
@@ -570,8 +566,7 @@ const lists = [
     "year": 1933,
     "country": "Germany",
     "runtime": 120,
-    "genre": "Master Criminal Film, Police Detective Film",
-    "rating": 7
+    "genre": "Master Criminal Film, Police Detective Film"
   },
   {
     "title": "Zero for Conduct",
@@ -587,8 +582,7 @@ const lists = [
     "year": 1934,
     "country": "USA",
     "runtime": 105,
-    "genre": "Romantic Comedy, Screwball Comedy",
-    "rating": 9
+    "genre": "Romantic Comedy, Screwball Comedy"
   },
   {
     "title": "It's a Gift",
@@ -604,8 +598,7 @@ const lists = [
     "year": 1934,
     "country": "France",
     "runtime": 89,
-    "genre": "Romantic Drama, Marriage Drama",
-    "rating": 8
+    "genre": "Romantic Drama, Marriage Drama"
   },
   {
     "title": "Man of Aran",
@@ -629,8 +622,7 @@ const lists = [
     "year": 1935,
     "country": "USA",
     "runtime": 92,
-    "genre": "Anarchic Comedy, Farce",
-    "rating": 9
+    "genre": "Anarchic Comedy, Farce"
   },
   {
     "title": "Bride of Frankenstein",
@@ -678,8 +670,7 @@ const lists = [
     "year": 1936,
     "country": "USA",
     "runtime": 89,
-    "genre": "Comedy, Satire",
-    "rating": 8
+    "genre": "Comedy, Satire"
   },
   {
     "title": "Partie de campagne",
@@ -847,8 +838,7 @@ const lists = [
     "year": 1939,
     "country": "USA",
     "runtime": 110,
-    "genre": "Romantic Comedy, Sophisticated Comedy",
-    "rating": 7
+    "genre": "Romantic Comedy, Sophisticated Comedy"
   },
   {
     "title": "Only Angels Have Wings",
@@ -864,8 +854,7 @@ const lists = [
     "year": 1939,
     "country": "USA",
     "runtime": 96,
-    "genre": "Western, Traditional Western",
-    "rating": 4
+    "genre": "Western, Traditional Western"
   },
   {
     "title": "The Rules of the Game",
@@ -873,8 +862,7 @@ const lists = [
     "year": 1939,
     "country": "France",
     "runtime": 113,
-    "genre": "Comedy Drama, Ensemble Film",
-    "rating": 5
+    "genre": "Comedy Drama, Ensemble Film"
   },
   {
     "title": "The Story of the Last Chrysanthemums",
@@ -882,8 +870,7 @@ const lists = [
     "year": 1939,
     "country": "Japan",
     "runtime": 143,
-    "genre": "Period Film, Romantic Drama",
-    "rating": 8
+    "genre": "Period Film, Romantic Drama"
   },
   {
     "title": "The Wizard of Oz",
@@ -891,8 +878,7 @@ const lists = [
     "year": 1939,
     "country": "USA",
     "runtime": 101,
-    "genre": "Children's/Family, Musical Fantasy",
-    "rating": 8
+    "genre": "Children's/Family, Musical Fantasy"
   },
   {
     "title": "Young Mr. Lincoln",
@@ -900,8 +886,7 @@ const lists = [
     "year": 1939,
     "country": "USA",
     "runtime": 100,
-    "genre": "Historical Film, Biography",
-    "rating": 7
+    "genre": "Historical Film, Biography"
   },
   {
     "title": "Fantasia",
@@ -925,8 +910,7 @@ const lists = [
     "year": 1940,
     "country": "USA",
     "runtime": 88,
-    "genre": "Children's Fantasy, Animated Musical",
-    "rating": 9
+    "genre": "Children's Fantasy, Animated Musical"
   },
   {
     "title": "Rebecca",
@@ -942,8 +926,7 @@ const lists = [
     "year": 1940,
     "country": "USA",
     "runtime": 129,
-    "genre": "Rural Drama, Americana",
-    "rating": 6
+    "genre": "Rural Drama, Americana"
   },
   {
     "title": "The Great Dictator",
@@ -1463,7 +1446,7 @@ const lists = [
     "year": 1948,
     "country": "Italy",
     "runtime": 160,
-    "genre": "La Terra trema",
+    "genre": "Drama",
     "rating": 6
   },
   {
