@@ -9,7 +9,7 @@ const Portfolio = {
           v-for="project in projects"
           :key="project.title"
         >
-          <v-card :href="project.href" color="indigo" variant="outlined">
+          <v-card :href="project.href" color="grey-lighten-1" variant="outlined">
             <v-list>
               <v-list-item
                 :title="project.title"
@@ -37,7 +37,7 @@ const Portfolio = {
           v-for="reference in references"
           :key="reference.title"
         >
-          <v-card :href="reference.href" color="indigo" variant="outlined">
+          <v-card :href="reference.href" color="grey-lighten-1" variant="outlined">
             <v-list>
               <v-list-item
                 :title="reference.title"
