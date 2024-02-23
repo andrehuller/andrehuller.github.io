@@ -36,6 +36,7 @@
     <script src="./src/components2/Chart.js"></script>
     <script src="./src/components2/Libraries.js"></script>
     <script src="./src/components2/Git.js"></script>
+    <script src="./src/components2/Portfolio.js"></script>
 
     <script src="./src/components2/Wikimedia.js"></script>
   </head>
@@ -138,19 +139,20 @@
               </template>
             </v-list-item>
           </v-list>
-          <v-divider></v-divider>
-          <v-list density="compact" nav>
-            <v-list-item title="Portfolio" to="/portfolio">
-              <template v-slot:prepend>
-                <v-icon icon="mdi-view-grid"></v-icon>
-              </template>
-            </v-list-item>
-          </v-list>
 -->
           <v-list density="compact" nav>
             <v-list-item title="Git" to="/git">
               <template v-slot:prepend>
                 <v-icon icon="mdi-git"></v-icon>
+              </template>
+            </v-list-item>
+          </v-list>
+
+          <v-divider></v-divider>
+          <v-list density="compact" nav>
+            <v-list-item title="Portfolio" to="/portfolio">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-view-grid"></v-icon>
               </template>
             </v-list-item>
           </v-list>
@@ -176,6 +178,7 @@ const routes = [
   { path: '/', component: Libraries },
   { path: '/chartjs', component: Chartjs },
   { path: '/git', component: Git },
+  { path: '/portfolio', component: Portfolio },
   { path: '/wikimedia', component: Wikimedia }
 ]
 
