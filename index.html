@@ -24,20 +24,26 @@
     
     <link href="https://cdn.jsdelivr.net/npm/vuetify@3.4.9/dist/vuetify.min.css" rel="stylesheet">
     
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.2.2/dist/axios.min.js"></script>
+    
     <!-- Chart.js -->
     <script src=" https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js "></script>
     
     <!-- Leaflet -->
     <link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.css" rel="stylesheet">
-    <!--
     <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" rel="stylesheet">
-    -->
+    
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet.defaultextent@0.0.3/dist/leaflet.defaultextent.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/leaflet-lasso@2.2.12/dist/leaflet-lasso.umd.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/esri-leaflet@3.0.9/dist/esri-leaflet.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/esri-leaflet@3.0.9/dist/esri-leaflet.js"></script>
+    
+    <!-- Turf.js -->
+    <script src='https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js'></script>
     
     <!-- Data -->
     <script src="./src/libraries.js"></script>
@@ -45,7 +51,10 @@
     <script src="./src/wikimedia.js"></script>
     <script src="./src/geojson.js"></script>
     
-    <script src="./assets/json/populacao.json"></script>  
+    <script src="./assets/json/populacao.json"></script>
+
+    <script src="./assets/json/randomPoints.json"></script>
+    <script src="./assets/json/busStations.json"></script>
     
     <script src="./assets/json/municipios.js"></script>
     <script src="./assets/json/nucleos.js"></script>
@@ -53,6 +62,9 @@
     <!-- Components -->
     <script src="./src/components2/Chart.js"></script>
     <script src="./src/components2/Leaflet.js"></script>
+    <script src="./src/components2/Turf.js"></script>
+    <script src="./src/components2/ORS.js"></script>
+    
     <script src="./src/components2/Libraries.js"></script>
     <script src="./src/components2/Git.js"></script>
     <script src="./src/components2/Portfolio.js"></script>
@@ -100,10 +112,7 @@
                 <v-icon icon="mdi-map"></v-icon>
               </template>
             </v-list-item>
-            
-            <!--
-            
-            <v-list-item title="Turf.js" to="/turfjs">
+            <v-list-item title="Turf.js" to="/turf">
               <template v-slot:prepend>
                 <v-icon icon="mdi-map-marker-plus"></v-icon>
               </template>
@@ -112,8 +121,7 @@
               <template v-slot:prepend>
                 <v-icon icon="mdi-road-variant"></v-icon>
               </template>
-            </v-list-item>
-            -->
+            </v-list-item>            
           </v-list>
           <v-divider></v-divider>
           <v-list density="compact" nav>
@@ -207,6 +215,8 @@ const routes = [
   { path: '/', component: Libraries },
   { path: '/chartjs', component: Chartjs },
   { path: '/leaflet', component: Leaflet },
+  { path: '/turf', component: Turf },
+  { path: '/openrouteservice', component: ORS },
   { path: '/git', component: Git },
   { path: '/portfolio', component: Portfolio },
   { path: '/wikimedia', component: Wikimedia }
