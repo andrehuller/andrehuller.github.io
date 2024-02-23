@@ -70,17 +70,6 @@
         app
       >
         <v-list dense nav>
-          <!--
-          <v-list-item to="/movies">
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              <v-list-item-title>Home</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-          -->
-
           <v-list-item to="/">
             <v-list-item-icon>
               <v-icon>mdi-vuetify</v-icon>
@@ -316,7 +305,6 @@
   <script src="./src/games.js"></script>  
   <script src="./src/libraries.js"></script>
   <script src="./src/locations.js"></script>
-  <script src="./src/movies.js"></script>
   <script src="./src/geojson.js"></script>
   
   <script src="./assets/json/populacao.json"></script>  
@@ -344,7 +332,6 @@
   
   <script src="./src/components/Games.js"></script>
   
-  <script src="./src/components/Movies.js"></script>
   <script src="./src/components/YouTube.js"></script>
 
   <script>
@@ -384,7 +371,6 @@
     }
 
     const routes = [
-      { path: '/movies', component: Movies },
       { path: '/', component: Libraries },
       { path: '/leaflet', component: Leaflet },
       { path: '/turf', component: Turf },
