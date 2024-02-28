@@ -20,9 +20,14 @@
     <script src="https://cdn.jsdelivr.net/npm/vue-router@4.2.5/dist/vue-router.global.min.js"></script>
     
     <!-- Vuetify -->
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.4.9/dist/vuetify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@3.5.6/dist/vuetify.min.js"></script>
     
-    <link href="https://cdn.jsdelivr.net/npm/vuetify@3.4.9/dist/vuetify.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@3.5.6/dist/vuetify.min.css" rel="stylesheet">
+    
+    <!-- Vue-The-Mask -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/vue-the-mask@0.11.1/dist/vue-the-mask.min.js"></script>
+    -->
     
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.2.2/dist/axios.min.js"></script>
@@ -42,11 +47,15 @@
     <script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/esri-leaflet@3.0.9/dist/esri-leaflet.js"></script>
     
+    <!-- Lodash -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    
     <!-- Turf.js -->
     <script src='https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js'></script>
     
     <!-- Data -->
     <script src="./src/libraries.js"></script>
+    <script src="./src/locations.js"></script>
     <script src="./src/movies.js"></script>
     <script src="./src/wikimedia.js"></script>
     <script src="./src/geojson.js"></script>
@@ -66,9 +75,21 @@
     <script src="./src/components2/ORS.js"></script>
     
     <script src="./src/components2/Libraries.js"></script>
+    
+    <!--
+    <script src="./src/components2/Calendar.js"></script>
+    -->
+    <script src="./src/components2/DatePicker.js"></script>
+    <!--
+    <script src="./src/components2/TreeView.js"></script>
+    -->
+    
     <script src="./src/components2/Git.js"></script>
+    <script src="./src/components2/YouTube.js"></script>
+    
     <script src="./src/components2/Portfolio.js"></script>
 
+    <script src="./src/components2/Unsplash.js"></script>
     <script src="./src/components2/Wikimedia.js"></script>
   </head>
   <body>
@@ -123,15 +144,8 @@
               </template>
             </v-list-item>            
           </v-list>
+          
           <v-divider></v-divider>
-          <v-list density="compact" nav>
-            <v-list-item title="Wikimedia Commons" to="/wikimedia">
-              <template v-slot:prepend>
-                <v-icon icon="mdi-image"></v-icon>
-              </template>
-            </v-list-item>
-          </v-list>
-<!--
           
           <v-list density="compact" nav>
             <v-list-item title="Unsplash" to="/unsplash">
@@ -145,25 +159,33 @@
               </template>
             </v-list-item>
           </v-list>
+          
           <v-divider></v-divider>
+          
           <v-list density="compact" nav>
+            <!--
             <v-list-item title="Calendar" to="/calendar">
               <template v-slot:prepend>
                 <v-icon icon="mdi-calendar"></v-icon>
               </template>
             </v-list-item>
+            -->
             <v-list-item title="Date Picker" to="/datepicker">
               <template v-slot:prepend>
                 <v-icon icon="mdi-calendar"></v-icon>
               </template>
             </v-list-item>
+            <!--
             <v-list-item title="Tree View" to="/treeview">
               <template v-slot:prepend>
                 <v-icon icon="mdi-file-tree"></v-icon>
               </template>
             </v-list-item>
+            -->
           </v-list>
+          
           <v-divider></v-divider>
+          
           <v-list density="compact" nav>
             <v-list-item title="Git" to="/git">
               <template v-slot:prepend>
@@ -173,14 +195,6 @@
             <v-list-item title="YouTube" to="/youtube">
               <template v-slot:prepend>
                 <v-icon icon="mdi-youtube"></v-icon>
-              </template>
-            </v-list-item>
-          </v-list>
--->
-          <v-list density="compact" nav>
-            <v-list-item title="Git" to="/git">
-              <template v-slot:prepend>
-                <v-icon icon="mdi-git"></v-icon>
               </template>
             </v-list-item>
           </v-list>
@@ -217,8 +231,13 @@ const routes = [
   { path: '/leaflet', component: Leaflet },
   { path: '/turf', component: Turf },
   { path: '/openrouteservice', component: ORS },
+  // { path: '/calendar', component: Calendar },
+  { path: '/datepicker', component: DatePicker },
+  // { path: '/treeview', component: TreeView },
   { path: '/git', component: Git },
+  { path: '/youtube', component: YouTube },
   { path: '/portfolio', component: Portfolio },
+  { path: '/unsplash', component: Unsplash },
   { path: '/wikimedia', component: Wikimedia }
 ]
 
@@ -251,6 +270,64 @@ app.component('indicator', {
       </div>
     </v-card>
   `
+})
+
+app.component('date-picker', {
+  props: ['label'],
+  data: () => ({
+    date: null,
+    dateFmt: null,
+    menu: false
+  }),
+  template: `
+    <v-menu
+      ref="menu"
+      v-model="menu"
+      :close-on-content-click="false"
+      max-width="290px"
+      min-width="290px"
+      offset-y
+      transition="scale-transition"
+    >
+      <template v-slot:activator="{ on }">
+        <v-text-field
+          v-model="dateFmt"
+          v-mask="'##/##/####'"
+          v-on="on"
+          @blur="date = parseDate(dateFmt)"
+          :label="label"
+          prepend-inner-icon="mdi-calendar"
+          clearable hide-details outlined
+        ></v-text-field>
+      </template>
+      <v-date-picker
+        v-model="date"
+        @input="menu = false"
+        no-title
+      ></v-date-picker>
+    </v-menu>
+  `,
+  created: function () {
+    this.date = new Date().toISOString().substr(0, 10)
+    this.dateFmt = this.formatDate(this.date)
+  },
+  watch: {
+    date: function (val) {
+      this.dateFmt = this.formatDate(this.date)
+    }
+  },
+  methods: {
+    formatDate: function (date) {
+      if (!date) return null
+      const [year, month, day] = date.split('-')
+      return `${day}/${month}/${year}`
+    },
+    parseDate: function (date) {
+      if (!date) return null
+      const [day, month, year] = date.split('/')
+      return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
+    }
+  }
 })
 
 app.mount('#app')
