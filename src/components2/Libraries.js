@@ -31,6 +31,7 @@ const Libraries = {
                           :src="item.src"
                           height="198px"
                           style="border-radius: 8px"
+                          cover
                         ></v-img>
                         <!-- style="border-top-left-radius: 4px; border-top-right-radius: 4px;" -->
                       </a>

@@ -27,6 +27,8 @@
     <!-- Vue-The-Mask -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/vue-the-mask@0.11.1/dist/vue-the-mask.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/v-mask@2.3.0/dist/v-mask.min.js"></script>
     -->
     
     <!-- Axios -->
@@ -97,7 +99,9 @@
       <v-app>
         <v-app-bar title="GitHub.io" color="#084081">
           <template v-slot:prepend>
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
+            <v-app-bar-nav-icon
+              @click.stop="drawer = !drawer"
+            ></v-app-bar-nav-icon>
           </template>
           <template v-slot:append>
             <v-btn
@@ -111,7 +115,8 @@
             <v-btn icon="mdi-dots-vertical"></v-btn>
           </template>
         </v-app-bar>
-        <v-navigation-drawer>
+        
+        <v-navigation-drawer v-model="drawer">
 
           <v-list density="compact" nav>
             <v-list-item title="Libraries" to="/">
@@ -248,9 +253,17 @@ const router = VueRouter.createRouter({
 
 const vuetify = createVuetify()
 
-const app = createApp()
+const app = createApp({
+  data: () => ({
+    drawer: true
+  })
+})
+
 app.use(router)
 app.use(vuetify)
+
+//app.use(VueMask.VueMaskPlugin)
+//app.directive('mask', VueMask.VueMaskDirective)
 
 app.component('indicator', {
   props: ['text', 'value', 'icon', 'color'],
@@ -297,6 +310,7 @@ app.component('date-picker', {
           @blur="date = parseDate(dateFmt)"
           :label="label"
           prepend-inner-icon="mdi-calendar"
+          density="comfortable"
           clearable hide-details outlined
         ></v-text-field>
       </template>

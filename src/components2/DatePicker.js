@@ -18,30 +18,38 @@ const DatePicker = {
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
+                  v-model="phone"
                   v-mask="['(##) ####-####', '(##) #####-####']"
                   label="Phone"
                   prepend-inner-icon="mdi-phone"
+                  density="comfortable"
                   outlined clearable hide-details
                 ></v-text-field>
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
+                  v-model="cpf"
                   v-mask="'###.###.###-##'"
                   label="CPF"
+                  density="comfortable"
                   outlined clearable hide-details
                 ></v-text-field>
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
+                  v-model="cnpj"
                   v-mask="'##.###.###/####-##'"
                   label="CNPJ"
+                  density="comfortable"
                   outlined clearable hide-details
                 ></v-text-field>
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
+                  v-model="cep"
                   v-mask="'#####-###'"
                   label="CEP"
+                  density="comfortable"
                   outlined clearable hide-details
                 ></v-text-field>
               </v-col>
@@ -58,5 +66,11 @@ const DatePicker = {
         </v-col>
       </v-row>
     </v-container>
-  `
+  `,
+  data: () => ({
+    phone: null,
+    cpf: null,
+    cnpj: null,
+    cep: null
+  })
 }
