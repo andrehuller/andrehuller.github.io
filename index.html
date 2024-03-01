@@ -93,10 +93,12 @@
 
     <script src="./src/components2/Unsplash.js"></script>
     <script src="./src/components2/Wikimedia.js"></script>
+
+    <script src="./src/components2/GamesPS4.js"></script>
   </head>
   <body>
     <div id="app">
-      <v-app>
+      <v-app><!--  :style="{background: $vuetify.theme.themes.light.background}" -->
         <v-app-bar title="GitHub.io" color="#084081">
           <template v-slot:prepend>
             <v-app-bar-nav-icon
@@ -214,7 +216,7 @@
           </v-list>
         </v-navigation-drawer>
         
-        <v-main color="grey lighten-5">
+        <v-main class="red">
           <router-view v-slot="{ Component }">
             <keep-alive>
               <component :is="Component" />
@@ -243,7 +245,9 @@ const routes = [
   { path: '/youtube', component: YouTube },
   { path: '/portfolio', component: Portfolio },
   { path: '/unsplash', component: Unsplash },
-  { path: '/wikimedia', component: Wikimedia }
+  { path: '/wikimedia', component: Wikimedia },
+  
+  { path: '/gamesps4', component: GamesPS4 }
 ]
 
 const router = VueRouter.createRouter({
@@ -251,7 +255,15 @@ const router = VueRouter.createRouter({
   routes: routes
 })
 
-const vuetify = createVuetify()
+const vuetify = createVuetify({
+  theme: {
+    themes: {
+      light: {
+        background: '#FAFAFA'
+      }
+    }
+  }
+})
 
 const app = createApp({
   data: () => ({
@@ -311,7 +323,8 @@ app.component('date-picker', {
           :label="label"
           prepend-inner-icon="mdi-calendar"
           density="comfortable"
-          clearable hide-details outlined
+          variant="outlined"
+          clearable hide-details
         ></v-text-field>
       </template>
       <v-date-picker

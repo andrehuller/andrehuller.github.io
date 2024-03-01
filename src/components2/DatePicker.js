@@ -3,7 +3,7 @@ const DatePicker = {
     <v-container fluid>
       <v-row>
         <v-col cols="12" lg="12">
-        <v-card outlined>
+        <v-card variant="outlined">
           <v-container fluid>
             <v-row>
               <v-col cols="12" lg="3">
@@ -23,7 +23,8 @@ const DatePicker = {
                   label="Phone"
                   prepend-inner-icon="mdi-phone"
                   density="comfortable"
-                  outlined clearable hide-details
+                  variant="outlined"
+                  clearable hide-details
                 ></v-text-field>
               </v-col>
               <v-col cols="12" lg="3">
@@ -32,7 +33,8 @@ const DatePicker = {
                   v-mask="'###.###.###-##'"
                   label="CPF"
                   density="comfortable"
-                  outlined clearable hide-details
+                  variant="outlined"
+                  clearable hide-details
                 ></v-text-field>
               </v-col>
               <v-col cols="12" lg="3">
@@ -41,7 +43,8 @@ const DatePicker = {
                   v-mask="'##.###.###/####-##'"
                   label="CNPJ"
                   density="comfortable"
-                  outlined clearable hide-details
+                  variant="outlined"
+                  clearable hide-details
                 ></v-text-field>
               </v-col>
               <v-col cols="12" lg="3">
@@ -50,7 +53,8 @@ const DatePicker = {
                   v-mask="'#####-###'"
                   label="CEP"
                   density="comfortable"
-                  outlined clearable hide-details
+                  variant="outlined"
+                  clearable hide-details
                 ></v-text-field>
               </v-col>
             </v-row>

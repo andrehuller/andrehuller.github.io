@@ -4,6 +4,7 @@ const YouTube = {
       :items="filteredItems"
       :items-per-page="12"
       :search="search"
+      :page="page"
     >
       <template v-slot:header>
         <v-container fluid pb-0>
@@ -46,8 +47,8 @@ const YouTube = {
         <v-container fluid>
           <v-row>
             <v-col
-              v-for="item in items"
-              :key="item.raw.id"
+              v-for="(item, i) in items"
+              :key="i"
               cols="12" lg="3"
             >
               <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
@@ -69,6 +70,31 @@ const YouTube = {
             </v-col>
           </v-row>
         </v-container>
+      </template>
+      <template v-slot:footer="{ page, pageCount, prevPage, nextPage }">
+        <div class="d-flex align-center justify-center pa-4">
+          <v-btn
+            :disabled="page === 1"
+            icon="mdi-arrow-left"
+            density="comfortable"
+            variant="tonal"
+            rounded
+            @click="prevPage"
+          ></v-btn>
+
+          <div class="mx-2 text-caption">
+            Page {{ page }} of {{ pageCount }}
+          </div>
+
+          <v-btn
+            :disabled="page >= pageCount"
+            icon="mdi-arrow-right"
+            density="comfortable"
+            variant="tonal"
+            rounded
+            @click="nextPage"
+          ></v-btn>
+        </div>
       </template>
     </v-data-iterator>
   `,
@@ -105,6 +131,7 @@ const YouTube = {
     guest: null,
     guests: ['Alan Watts', 'Ben Shapiro', 'Bill Burr', 'Jordan Peterson'],
     search: null,
+    page: 1,
     people: [
       { name: 'Aisling Bea', categories: ['Comedian'] },
       { name: 'Alfred Hitchcock', categories: ['Film Director'] },

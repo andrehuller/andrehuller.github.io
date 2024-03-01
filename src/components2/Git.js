@@ -3,7 +3,7 @@ const Git = {
     <v-container fluid>
       <v-row>
         <v-col lg="6" cols="12">
-          <v-card color="indigo" variant="outlined">
+          <v-card variant="outlined">
             <v-card-text>
               <p class="mb-4"><v-kbd>git clone https://github.com/andrehuller/andrehuller.github.io</v-kbd></p>
               <v-divider class="pb-4"></v-divider>
@@ -43,7 +43,7 @@ const Git = {
           </v-card>
         </v-col>
         <v-col lg="6" cols="12">
-          <v-card color="indigo" variant="outlined">
+          <v-card variant="outlined">
             <v-card-text>
               <p class="mb-4"><b>git push using personal access token</b></p>
               <p class="mb-4"><v-kbd>
