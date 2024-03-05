@@ -1,6 +1,6 @@
 const GamesPS4 = {
   template: `
-    <v-container>
+    <v-container fluid>
       <v-row>
         <v-col lg="3">
           <v-card>

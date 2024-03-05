@@ -9,6 +9,7 @@ const Chartjs = {
             :items="directors"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
+            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -20,6 +21,7 @@ const Chartjs = {
             :items="years"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
+            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -31,6 +33,7 @@ const Chartjs = {
             :items="countries"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
+            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -42,6 +45,7 @@ const Chartjs = {
             :items="genres"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
+            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -138,6 +142,7 @@ const Chartjs = {
         width: '20%'
       }
     ],
+    backgroundColor: null, // '#f87979'
     director: null,
     directors: [],
     year: null,
