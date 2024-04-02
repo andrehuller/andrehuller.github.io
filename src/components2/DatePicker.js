@@ -19,43 +19,41 @@ const DatePicker = {
               <v-col cols="12" lg="3">
                 <v-text-field
                   v-model="phone"
-                  v-mask="['(##) ####-####', '(##) #####-####']"
                   label="Phone"
                   prepend-inner-icon="mdi-phone"
                   density="comfortable"
                   variant="outlined"
                   clearable hide-details
-                ></v-text-field>
+                ></v-text-field><!-- v-mask="['(##) ####-####', '(##) #####-####']" -->
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
                   v-model="cpf"
-                  v-mask="'###.###.###-##'"
                   label="CPF"
                   density="comfortable"
                   variant="outlined"
                   clearable hide-details
-                ></v-text-field>
+                ></v-text-field><!-- v-mask="'###.###.###-##'" -->
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
                   v-model="cnpj"
-                  v-mask="'##.###.###/####-##'"
+                  v-maska="{ mask: '#-#' }"
                   label="CNPJ"
                   density="comfortable"
                   variant="outlined"
                   clearable hide-details
-                ></v-text-field>
+                ></v-text-field><!-- v-mask="'##.###.###/####-##'" -->
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
-                  v-model="cep"
-                  v-mask="'#####-###'"
+                  v-maska
+                  data-maska="###"
                   label="CEP"
                   density="comfortable"
                   variant="outlined"
                   clearable hide-details
-                ></v-text-field>
+                ></v-text-field><!-- v-model="cep" v-mask="'#####-###'" -->
               </v-col>
             </v-row>
           </v-container>

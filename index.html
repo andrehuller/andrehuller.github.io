@@ -27,9 +27,9 @@
     <!-- Vue-The-Mask -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/vue-the-mask@0.11.1/dist/vue-the-mask.min.js"></script>
-    
     <script src="https://cdn.jsdelivr.net/npm/v-mask@2.3.0/dist/v-mask.min.js"></script>
     -->
+    <script src="https://cdn.jsdelivr.net/npm/maska@2.1.11/dist/maska.umd.min.js"></script>
     
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.2.2/dist/axios.min.js"></script>
@@ -97,6 +97,8 @@
     <script src="./src/components2/Wikimedia.js"></script>
 
     <script src="./src/components2/GamesPS4.js"></script>
+    <!-- Twitter -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
   </head>
   <body>
     <div id="app">
@@ -274,8 +276,13 @@ const app = createApp({
 app.use(router)
 app.use(vuetify)
 
-//app.use(VueMask.VueMaskPlugin)
-//app.directive('mask', VueMask.VueMaskDirective)
+// app.use(Maska)
+new Maska.MaskInput("[data-maska]")
+app.directive('maska', Maska.vMaska)
+
+    
+// app.use(VueMask.VueMaskPlugin)
+// app.directive('mask', VueMask.VueMaskDirective)
 
 app.component('indicator', {
   props: ['text', 'value', 'icon', 'color'],
@@ -314,18 +321,17 @@ app.component('date-picker', {
       offset-y
       transition="scale-transition"
     >
-      <template v-slot:activator="{ on }">
+      <template v-slot:activator="{ props }">
         <v-text-field
           v-model="dateFmt"
-          v-mask="'##/##/####'"
-          v-on="on"
+          v-bind="props"
           @blur="date = parseDate(dateFmt)"
           :label="label"
           prepend-inner-icon="mdi-calendar"
           density="comfortable"
           variant="outlined"
           clearable hide-details
-        ></v-text-field>
+        ></v-text-field><!-- v-mask="'##/##/####'" -->
       </template>
       <v-date-picker
         v-model="date"
