@@ -1,7 +1,6 @@
 const GamesPS4 = {
   template: `
     <v-container fluid>
-
       <v-row>
         <v-col lg="3">
           <v-card>
@@ -309,6 +308,16 @@ const GamesPS4 = {
         <v-col lg="3">
           <v-card>
             <v-img src="assets/gamesps4/The Transylvania Adventure of Simon Quest.jpg"></v-img>
+          </v-card>
+        </v-col>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Mouse.jpg"></v-img>
+          </v-card>
+        </v-col>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Phantom Fury.jpg"></v-img>
           </v-card>
         </v-col>
       </v-row>
