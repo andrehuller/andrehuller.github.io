@@ -10,6 +10,11 @@ const GamesPS4 = {
         </v-col>
         <v-col lg="3">
           <v-card>
+            <v-img src="assets/gamesps4/Hollow Knight.jpg"></v-img>
+          </v-card>
+        </v-col>
+        <v-col lg="3">
+          <v-card>
             <v-img src="assets/gamesps4/Sonic Mania.jpg"></v-img>
           </v-card>
         </v-col>
@@ -234,11 +239,6 @@ const GamesPS4 = {
       <v-row>
         <v-col lg="3">
           <v-card>
-            <v-img src="assets/gamesps4/Hollow Knight.jpg"></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
             <v-img src="assets/gamesps4/Blasphemous.jpg"></v-img>
           </v-card>
         </v-col>
@@ -281,7 +281,36 @@ const GamesPS4 = {
 
       <!-- Wishlist -->
       <v-row>
+        <v-col lg="12">
+          <v-card>
+            <v-card-title>
+              These look interesting
+            </v-card-title>
+          </v-card>
+        </v-col>
+      </v-row>
 
+      <v-row>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Mullet Mad Jack.jpg"></v-img>
+          </v-card>
+        </v-col>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Berserk Boy.jpg"></v-img>
+          </v-card>
+        </v-col>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Iron Meat.jpg"></v-img>
+          </v-card>
+        </v-col>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/The Transylvania Adventure of Simon Quest.jpg"></v-img>
+          </v-card>
+        </v-col>
       </v-row>
 
       <!-- AI Recommendations -->
