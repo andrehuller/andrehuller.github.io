@@ -2,6 +2,159 @@ const GameStudios = {
   template: `
     <v-container fluid>
       <v-row>
+        <v-col lg="6">
+          <v-card>
+            <v-card-title>
+              Studio MDHR
+            </v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Cuphead.jpg" height="176.55" cover></v-img>
+                    <v-card-text>
+                      <b>Cuphead (2017)</b>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Cuphead - The Delicious Last Course.jpg" height="176.55" cover></v-img>
+                    <v-card-text>
+                      <b>Cuphead - The Delicious Last Course (2022)</b>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card>
+            <v-card-title>
+              Team Cherry
+            </v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Hollow Knight.jpg" height="176.55" cover></v-img>
+                    <v-card-text>
+                      <b>Hollow Knight (2017)</b>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Hollow Knight Silksong.jpg" height="176.55" cover></v-img>
+                   <v-card-text>
+                      <b>Hollow Knight: Silksong</b>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card>
+            <v-card-title>Christian Whitehead</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Sonic Mania.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Sonic Mania (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Freedom Planet 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Freedom Planet 2 (2022)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+
+        <v-col lg="6">
+          <v-card>
+            <v-card-title>Voidpoint, LLC</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Ion Fury.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Ion Fury (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Ion Fury Aftershock.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Ion Fury: Aftershock (2023)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card>
+            <v-card-title>
+              Playtonic
+            </v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Yooka-Laylee.jpg" height="176.55" cover></v-img>
+                    <v-card-text>
+                      <b>Yooka-Laylee (2017)</b>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Yooka-Laylee and the Impossible Lair.jpg" height="176.55" cover></v-img>
+                    <v-card-text>
+                      <b>Yooka-Laylee and the Impossible Lair (2019)</b>
+                    </v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card>
+            <v-card-title>
+              The Game Kitchen
+            </v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Blasphemous.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Blasphemous (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Blasphemous 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Blasphemous 2 (2023)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
         <v-col lg="12">
           <v-card>
             <v-card-title>
@@ -121,136 +274,6 @@ const GameStudios = {
 
         <v-col lg="6">
           <v-card>
-            <v-card-title>
-              Studio MDHR
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Cuphead.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Cuphead</b>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Cuphead - The Delicious Last Course.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Cuphead - The Delicious Last Course</b>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card>
-            <v-card-title>
-              Team Cherry
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Hollow Knight.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Hollow Knight</b>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Hollow Knight Silksong.jpg" height="176.55" cover></v-img>
-                   <v-card-text>
-                      <b>Hollow Knight: Silksong</b>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card>
-            <v-card-title>Voidpoint, LLC</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Ion Fury.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Ion Fury (2019)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Ion Fury Aftershock.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Ion Fury: Aftershock (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card>
-            <v-card-title>
-              The Game Kitchen
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Blasphemous.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blasphemous (2019)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Blasphemous 2.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blasphemous 2 (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card>
-            <v-card-title>
-              Playtonic
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Yooka-Laylee.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Yooka-Laylee</b>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="6">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Yooka-Laylee and the Impossible Lair.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Yooka-Laylee and the Impossible Lair</b>
-                    </v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card>
             <v-card-title>Larian Studios</v-card-title>
             <v-card-text>
               <v-row>
@@ -273,19 +296,19 @@ const GameStudios = {
 
         <v-col lg="6">
           <v-card>
-            <v-card-title>FromSoftware Inc.</v-card-title>
+            <v-card-title>id Software</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="6">
                   <v-card>
-                    <v-img src="assets/gamesps4/Elden Ring.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>ELDEN RING (2022)</b></v-card-text>
+                    <v-img src="assets/gamesps4/Doom.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>DOOM (2016)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="6">
                   <v-card>
-                    <v-img src="assets/gamesps4/Armored Core VI.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>ARMORED CORE™ VI FIRES OF RUBICON™ (2023)</b></v-card-text>
+                    <v-img src="assets/gamesps4/Doom Eternal.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>DOOM Eternal (2020)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -309,6 +332,28 @@ const GameStudios = {
                   <v-card>
                     <v-img src="assets/gamesps4/BioShock Infinite.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>BioShock Infinite (2013)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card>
+            <v-card-title>FromSoftware Inc.</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Elden Ring.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>ELDEN RING (2022)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Armored Core VI.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>ARMORED CORE™ VI FIRES OF RUBICON™ (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -505,27 +550,77 @@ const GameStudios = {
       </v-row>
 
       <v-row>
-        <v-col lg="12">
+        <v-col lg="9">
           <v-card>
             <v-card-title>Rocksteady Studios</v-card-title>
             <v-card-text>
               <v-row>
-                <v-col lg="3">
+                <v-col lg="4">
                   <v-card>
                     <v-img src="assets/gamesps4/Batman Arkham Asylum.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Batman: Arkham Asylum (2010)</b></v-card-text>
                   </v-card>
                 </v-col>
-                <v-col lg="3">
+                <v-col lg="4">
                   <v-card>
                     <v-img src="assets/gamesps4/Batman Arkham City.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Batman: Arkham City (2012)</b></v-card-text>
                   </v-card>
                 </v-col>
-                <v-col lg="3">
+                <v-col lg="4">
                   <v-card>
                     <!-- Batman: Arkham Knight -->
                     <v-img src="assets/gamesps4/Batman Arkham Knight.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Batman: Arkham Knight (2015)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card>
+            <v-card-title>Naughty Dog LLC</v-card-title>
+            <v-card-text>
+              <v-row>
+                <!-- The Last of Us™ Part I -->
+                <v-col lg="12">
+                  <v-card>
+                    <v-img src="assets/gamesps4/The Last of Us.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>The Last of Us (2013)</b></v-card-text>
+
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+      </v-row>
+
+      <v-row>
+        <v-col lg="12">
+          <v-card>
+            <v-card-title>Crystal Dynamics</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="3">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Tomb Raider.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Tomb Raider (2013)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Rise of the Tomb Raider.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Rise of the Tomb Raider (2016)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Shadow of the Tomb Raider.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Shadow of the Tomb Raider (2018)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -535,19 +630,6 @@ const GameStudios = {
       </v-row>
 
       <v-row>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Sonic Mania.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Doom.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
         <v-col lg="3">
           <v-card>
             <v-img src="assets/gamesps4/Titanfall 2.jpg" height="176.55" cover></v-img>
@@ -599,6 +681,12 @@ const GameStudios = {
         </v-col>
         <v-col lg="3">
           <v-card>
+            <v-img src="assets/gamesps4/Resident Evil 4 (2005).jpg" height="176.55" cover></v-img>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card>
             <v-img src="assets/gamesps4/Resident Evil 2.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
@@ -607,6 +695,12 @@ const GameStudios = {
             <v-img src="assets/gamesps4/Resident Evil 3.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Resident Evil 4 (2023).jpg" height="176.55" cover></v-img>
+          </v-card>
+        </v-col>
+
       </v-row>
 
       <v-row>
@@ -635,16 +729,6 @@ const GameStudios = {
         </v-col>
       </v-row>
 
-      <v-row>
-
-      
-        <!-- The Last of Us™ Part I -->
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/The Last of Us.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-      </v-row>
 
       <!-- Franchises -->
 
@@ -676,24 +760,6 @@ const GameStudios = {
       </v-row>
 
       <v-row>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Tomb Raider.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Rise of the Tomb Raider.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Shadow of the Tomb Raider.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <v-row>
         <v-col lg="12">
         </v-col>
       </v-row>
@@ -710,12 +776,6 @@ const GameStudios = {
       </v-row>
 
       <v-row>
-
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Doom Eternal.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
 
         <!-- NieR:Automata -->
         <v-col lg="3">
@@ -848,18 +908,6 @@ const GameStudios = {
           <!-- Tomb Raider: Underworld -->
           <v-card>
             <v-img src="assets/gamesps4/Tomb Raider Underworld.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-
-        <!-- Christian Whitehead -->
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Sonic Origins.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Freedom Planet 2.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
       </v-row>
