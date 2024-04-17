@@ -96,9 +96,9 @@
     <script src="./src/components2/Unsplash.js"></script>
     <script src="./src/components2/Wikimedia.js"></script>
 
-    <script src="./src/components2/GamesPS4.js"></script>
-    <script src="./src/components2/GameStudios.js"></script>
+    <script src="./src/components2/IndieGames.js"></script>
     <script src="./src/components2/MainstreamGames.js"></script>
+    <script src="./src/components2/StagingArea.js"></script>
     
     <!-- Twitter -->
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
@@ -106,7 +106,7 @@
   <body>
     <div id="app">
       <v-app><!--  :style="{background: $vuetify.theme.themes.light.background}" -->
-        <v-app-bar title="GitHub.io" color="#084081">
+        <v-app-bar title="GitHub.io" color="blue-grey-darken-1"><!-- color="#084081" -->
           <template v-slot:prepend>
             <v-app-bar-nav-icon
               @click.stop="drawer = !drawer"
@@ -219,6 +219,20 @@
               </template>
             </v-list-item>
           </v-list>
+          
+          <v-divider></v-divider>
+          <v-list density="compact" nav>
+            <v-list-item title="Indie Games" to="/indiegames">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-sony-playstation"></v-icon>
+              </template>
+            </v-list-item>
+            <v-list-item title="Mainstream Games" to="/mainstreamgames">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-sony-playstation"></v-icon>
+              </template>
+            </v-list-item>
+          </v-list>
         </v-navigation-drawer>
         
         <v-main class="red">
@@ -252,8 +266,8 @@ const routes = [
   { path: '/unsplash', component: Unsplash },
   { path: '/wikimedia', component: Wikimedia },
   
-  { path: '/gamesps4', component: GamesPS4 },
-  { path: '/gamestudios', component: GameStudios },
+  { path: '/stagingarea', component: StagingArea },
+  { path: '/indiegames', component: IndieGames },
   { path: '/mainstreamgames', component: MainstreamGames },
 ]
 

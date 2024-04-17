@@ -2,63 +2,93 @@ const MainstreamGames = {
   template: `
     <v-container fluid>
       <v-row>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Resident Evil.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Resident Evil 0.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Resident Evil 4 (2005).jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
+        <v-col lg="12">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Resident Evil</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Resident Evil.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil (2015)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Resident Evil 0.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil 0 (2016)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Resident Evil 4 (2005).jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil 4 (2005)</b></v-card-text>
+                  </v-card>
+                </v-col>
 
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Resident Evil 2.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Resident Evil 3.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Resident Evil 4 (2023).jpg" height="176.55" cover></v-img>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Resident Evil 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil 2 (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Resident Evil 3.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil 3 (2020)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Resident Evil 4 (2023).jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil 4 (2023)</b></v-card-text>
+
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
 
       <v-row>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Saints Row 2.jpg" height="176.55" cover></v-img>
+        <v-col lg="12">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Volition</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Saints Row 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Saints Row 2 (2009)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Saints Row The Third.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Saints Row: The Third (2011)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Saints Row IV Re-Elected.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Saints Row IV: Re-Elected (2013)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Saints Row Gat Out of Hell.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Saints Row: Gat Out of Hell (2015)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
           </v-card>
         </v-col>
-        <!-- Saints Row: The Third -->
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Saints Row The Third.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <!-- Saints Row IV: Re-Elected -->
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Saints Row IV Re-Elected.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <!-- Saints Row: Gat Out of Hell -->
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Saints Row Gat Out of Hell.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
+      </v-row>
+
+      <v-row>
+
       </v-row>
 
       <v-row>
@@ -255,22 +285,44 @@ const MainstreamGames = {
         </v-col>
       </v-row>
 
-
       <v-row>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Rockstar Games</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Grand Theft Auto V.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Grand Theft Auto V (2015)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Red Dead Redemption 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Red Dead Redemption 2 (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
         <v-col lg="6">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>2K</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/BioShock.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>BioShock (2007)</b></v-card-text>
                   </v-card>
                 </v-col>
 
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/BioShock Infinite.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>BioShock Infinite (2013)</b></v-card-text>
                   </v-card>
@@ -286,34 +338,15 @@ const MainstreamGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Elden Ring.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>ELDEN RING (2022)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Armored Core VI.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>ARMORED CORE™ VI FIRES OF RUBICON™ (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <v-row>
-
-        <v-col lg="3">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>CAPCOM Co., Ltd.</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="12">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Dragon's Dogma 2.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Dragon's Dogma 2 (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -327,13 +360,13 @@ const MainstreamGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Baldur's Gate 3.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Baldur's Gate 3 (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Divinity.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Divinity: Original Sin - Enhanced Edition (2015)</b></v-card-text>
                   </v-card>
@@ -344,14 +377,14 @@ const MainstreamGames = {
         </v-col>
 
         <v-col lg="3">
-          <v-card>
-            <v-card-title>Rockstar North</v-card-title>
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>CAPCOM Co., Ltd.</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Grand Theft Auto V.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Grand Theft Auto V (2015)</b></v-card-text>
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Dragon's Dogma 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Dragon's Dogma 2 (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
