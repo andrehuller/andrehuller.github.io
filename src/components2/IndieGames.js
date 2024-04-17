@@ -278,54 +278,53 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/STAR WARS Dark Forces Remaster.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>STAR WARS™: Dark Forces Remaster (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Turok 3 Shadow of Oblivion Remastered.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Turok 3: Shadow of Oblivion Remastered (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Rise of the Triad Ludicrous Edition.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Rise of the Triad: Ludicrous Edition (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/System Shock.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>System Shock (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/PowerSlave Exhumed.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>PowerSlave Exhumed (2022)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Blood Fresh Supply.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Blood™ Fresh Supply (2019)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Turok 2 Seeds of Evil.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Turok 2: Seeds of Evil (2017)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Turok.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Turok (2015)</b></v-card-text>
                   </v-card>
                 </v-col>
-                
               </v-row>
             </v-card-text>
           </v-card>
@@ -337,25 +336,25 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Bastion.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Bastion (2011)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Transistor.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Transistor (2014)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Pyre.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Pyre (2017)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Hades.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Hades (2020)</b></v-card-text>
                   </v-card>
@@ -370,31 +369,30 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Celeste.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Celeste (2018)</b></v-card-text>
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Dead Cells.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Dead Cells (2018)</b></v-card-text>
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Ori and the Blind Forest.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Ori and the Blind Forest (2015)</b></v-card-text>
                   </v-card>
                 </v-col>
 
                 <v-col lg="3">
-                  <!-- Shovel Knight: Treasure Trove -->
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Shovel Knight Treasure Trove.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Shovel Knight: Treasure Trove (2015)</b></v-card-text>
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Celeste.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Celeste (2018)</b></v-card-text>
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Dead Cells.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Dead Cells (2018)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -408,28 +406,28 @@ const IndieGames = {
               <v-row>
 
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Axiom Verge.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Axiom Verge (2015)</b></v-card-text>
                   </v-card>
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Berserk Boy.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Berserk Boy (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Mouse.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Mouse (2025)</b></v-card-text>
                   </v-card>
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Mullet Mad Jack.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>MULLET MAD JACK</b></v-card-text>
                   </v-card>
@@ -445,13 +443,19 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Heretic Shadow of the Serpent Riders.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Heretic: Shadow of the Serpent Riders (1994)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Hexen Beyond Heretic.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Hexen: Beyond Heretic (1995)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Shadow Warrior.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Shadow Warrior Classic (1997)</b></v-card-text>
                   </v-card>
@@ -460,9 +464,53 @@ const IndieGames = {
             </v-card-text>
           </v-card>
         </v-col>
+
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Warhammer Franchise</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Warhammer 40,000 Boltgun.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Warhammer 40,000: Boltgun (2023)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="9">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>New Blood Interactive</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="4">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/DUSK.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>DUSK (2018)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="4">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/AMID EVIL.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>AMID EVIL (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="4">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/ULTRAKILL.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>ULTRAKILL (2020)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
       </v-row>
-
-
     </v-container>
   `
 }

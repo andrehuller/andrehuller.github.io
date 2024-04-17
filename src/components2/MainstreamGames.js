@@ -217,7 +217,7 @@ const MainstreamGames = {
             </v-card-text>
           </v-card>
         </v-col>
-      
+
         <v-col lg="6">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>Guerrilla</v-card-title>
@@ -226,13 +226,13 @@ const MainstreamGames = {
                 <v-col lg="6">
                   <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Horizon Zero Dawn.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Horizon Zero Dawn™ Complete Edition (2020)</b></v-card-text>
+                    <v-card-text><b>Horizon Zero Dawn (2020)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="6">
                   <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Horizon Forbidden West.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Horizon Forbidden West™ Complete Edition (2024)</b></v-card-text>
+                    <v-card-text><b>Horizon Forbidden West (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
