@@ -152,6 +152,11 @@ const StagingArea = {
             <v-img src="assets/gamesps4/Painkiller Black Edition.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/screenshots/Fandom Pulse.png" height="176.55" cover></v-img>
+          </v-card>
+        </v-col>
       </v-row>
 
 

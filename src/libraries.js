@@ -718,7 +718,60 @@ const categories = [
         "subtitle": "Beyond Doom",
         "href": "https://www.zdoom.org",
         "src": "assets/screenshots/ZDoom.png"
+      },
+      {
+        "title": "Bounding Into Comics",
+        "subtitle": "Bounding Into Comics is a website that covers comic books, movies, TV, video games, and more.",
+        "href": "https://boundingintocomics.com",
+        "src": "assets/screenshots/Bounding Into Comics.png"
+      },
+      {
+        "title": "Fandom Pulse",
+        "href": "https://fandompulse.com/",
+        "src": "assets/screenshots/Fandom Pulse.png"
+      },
+      {
+        title: "That Park Place",
+        subtitle: "That Park Place is an intentionally-independent and opinionated news site covering most topics that should be fun.",
+        href: "https://thatparkplace.com/",
+        src: "assets/screenshots/That Park Place.png"
+      },
+      {
+        title: "Clownfish TV",
+        subtitle: "Clownfish TV is an independent, opinionated pop culture news site. We strive to be apolitical, balanced and based, and are fans who cover media for other fans.",
+        href: "https://clownfishtv.com",
+        src: "assets/screenshots/Clownfish TV.png"
+      },
+      {
+        title: "Geeks + Gamers",
+        subtitle: "Geeks + Gamers is a website for geek and gamer culture, covering movies, anime, television, sports, comics, and video games.",
+        href: "https://www.geeksandgamers.com",
+        src: "assets/screenshots/Geeks + Gamers.png"
+      },
+      {
+        title: "Ghost of the Badlands",
+        subtitle: "A masked phantom wanders the Arizona badlands during the 1890's distributing justice!",
+        href: "https://www.indiegogo.com/projects/ghost-of-the-badlands#/",
+        src: "assets/screenshots/Ghost of the Badlands.png"
+      },
+      {
+        "title": "DuckDuckGo",
+        "subtitle": "Privacy, simplified.",
+        "href": "https://duckduckgo.com/",
+        "src": "assets/screenshots/DuckDuckGo.png"
+      },
+      {
+        title: "Substack",
+        subtitle: "The home for great culture.",
+        href: "https://substack.com/home",
+        src: "assets/screenshots/Substack.png"
+      },
+
+      /*,
+      {
+        https://arkhavencomics.com/
       }
+      */
     ]
   },
   {
