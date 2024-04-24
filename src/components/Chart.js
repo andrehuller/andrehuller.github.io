@@ -1,42 +1,17 @@
-Vue.component('indicator', {
-  props: ['text', 'value', 'icon', 'color'],
-  template: `
-    <v-card outlined>
-      <div class="d-flex flex-no-wrap justify-space-between">
-        <v-card-text>
-          <div>{{ text }}</div>
-          <p class="text-h4 text--primary mb-0">
-            {{ value }}
-          </p>
-        </v-card-text>
-
-        <v-avatar class="ma-5" size="48" :color="color">
-          <v-icon dark>{{ icon }}</v-icon>
-        </v-avatar>
-      </div>
-    </v-card>
-  `
-})
-
 const Chartjs = {
   template: `
     <v-container fluid>
-      <v-row class="grey lighten-1">
-        <v-col cols="12" lg="3">
-          <v-text-field
-            v-model="search"
-            label="Search"
-            prepend-inner-icon="mdi-magnify"
-            flat clearable solo hide-details
-          ></v-text-field>
-        </v-col>
+      <v-row>
         <v-col cols="12" lg="3">
           <v-autocomplete
             v-model="director"
             label="Director"
             :items="directors"
             prepend-inner-icon="mdi-magnify"
-            flat clearable solo hide-details
+            density="comfortable"
+            variant="outlined"
+            @update:modelValue="updateItems"
+            clearable hide-details
           ></v-autocomplete>
         </v-col>
         <v-col cols="12" lg="3">
@@ -45,7 +20,10 @@ const Chartjs = {
             label="Year"
             :items="years"
             prepend-inner-icon="mdi-magnify"
-            flat clearable solo hide-details
+            density="comfortable"
+            variant="outlined"
+            @update:modelValue="updateItems"
+            clearable hide-details
           ></v-autocomplete>
         </v-col>
         <v-col cols="12" lg="3">
@@ -54,17 +32,30 @@ const Chartjs = {
             label="Country"
             :items="countries"
             prepend-inner-icon="mdi-magnify"
-            flat clearable solo hide-details
+            density="comfortable"
+            variant="outlined"
+            @update:modelValue="updateItems"
+            clearable hide-details
+          ></v-autocomplete>
+        </v-col>
+        <v-col cols="12" lg="3">
+          <v-autocomplete
+            v-model="genre"
+            label="Genre"
+            :items="genres"
+            prepend-inner-icon="mdi-magnify"
+            density="comfortable"
+            variant="outlined"
+            @update:modelValue="updateItems"
+            clearable hide-details
           ></v-autocomplete>
         </v-col>
       </v-row>
-      
       <v-row>
         <v-col cols="12" lg="3">
           <indicator
             text="FILMS"
-            :value="listFilm.length"
-            :color="backgroundColor"
+            :value="items.length"
             icon="mdi-filmstrip"
           ></indicator>
         </v-col>
@@ -92,130 +83,146 @@ const Chartjs = {
             icon="mdi-earth"
           ></indicator>
         </v-col>
-        
+      </v-row>
+      <v-row>
         <v-col cols="12" lg="12">
-          <v-card outlined style="height: 450px" class="px-3">
+          <v-card variant="outlined" style="height: 450px" class="px-3">
             <canvas id="chartDirector"></canvas>
           </v-card>
         </v-col>
-
         <v-col cols="12" lg="12">
-          <v-card outlined style="height: 300px" class="px-3">
+          <v-card variant="outlined" style="height: 300px" class="px-3">
             <canvas id="chartYear"></canvas>
           </v-card>
         </v-col>
-        
         <v-col cols="12" lg="12">
-          <v-card outlined style="height: 450px" class="px-3">
+          <v-card variant="outlined" style="height: 450px" class="px-3">
             <canvas id="chartCountry"></canvas>
           </v-card>
         </v-col>
-
         <v-col cols="12" lg="12">
-          <v-card outlined style="height: 450px" class="px-3">
+          <v-card variant="outlined" style="height: 450px" class="px-3">
             <canvas id="chartGenre"></canvas>
           </v-card>
         </v-col>
-        
         <v-col cols="12" lg="12">
-          <v-card outlined>
-            <v-data-table
-              :headers="headers"
-              :items="listFilm"
-              :search="search"
-            ></v-data-table>
+          <v-card variant="outlined">
+            <v-data-table :items="items" :headers="headers" density="comfortable"></v-data-table>
           </v-card>
         </v-col>
       </v-row>
     </v-container>
   `,
   data: () => ({
-    backgroundColor: 'rgba(43, 140, 190, 0.5)', // 'rgba(8, 104, 172, 0.6)',
-    chartDirector: null,
-    chartYear: null,
-    chartCountry: null,
-    chartGenre: null,
+    items: lists,
+    headers: [
+      {
+        title: 'Title',
+        key: 'title',
+        width: '20%'
+      },
+      {
+        title: 'Director',
+        key: 'director',
+        width: '20%'
+      },
+      {
+        title: 'Year',
+        key: 'year',
+        width: '20%'
+      },
+      {
+        title: 'Country',
+        key: 'country',
+        width: '20%'
+      },
+      {
+        title: 'Genre',
+        key: 'genre',
+        width: '20%'
+      }
+    ],
+    backgroundColor: null, // '#f87979'
     director: null,
     directors: [],
     year: null,
     years: [],
     country: null,
     countries: [],
-    search: null,
-    headers: [
-      {
-        text: 'Title',
-        value: 'title',
-        width: '20%'
-      },
-      {
-        text: 'Director',
-        value: 'director',
-        width: '20%'
-      },
-      {
-        text: 'Year',
-        value: 'year',
-        width: '20%'
-      },
-      {
-        text: 'Country',
-        value: 'country',
-        width: '20%'
-      },
-      {
-        text: 'Genre',
-        value: 'genre',
-        width: '20%'
-      }
-    ],
-    items: []
+    genre: null,
+    genres: []
   }),
-  computed: {
-    listFilm () {
-      var filtered = []
-      for (var i = 0; i < this.items.length; i++) {
-        if ((!this.director || this.items[i].director.indexOf(this.director) != -1)
-          && (!this.year || this.items[i].year == this.year)
-          && (!this.country || this.items[i].country.split("-").indexOf(this.country) != -1)) {
-          filtered.push(this.items[i])
-        }
-      }
-      return filtered
-    }
-  },
-  watch: {
-    listFilm (newList, oldList) {
-      this.updateDirector(newList)
-      this.updateYear(newList)
-      
-      this.updateCountry(newList)
-      this.updateGenre(newList)
-    }
-  },
-  mounted: function () {
-    this.items = lists
+  mounted () {
+    this.createCharts()
   },
   methods: {
-    updateDirector: function (items) {
-      var directorSet = {}
+    updateItems () {
+      this.items = []
+      for (var i = 0; i < lists.length; i++) {
+        if ((!this.director || this.director.localeCompare(lists[i].director) == 0)
+          && (!this.year || this.year.localeCompare(lists[i].year) == 0)
+          && (!this.country || lists[i].country.indexOf(this.country) != -1)
+          && (!this.genre || lists[i].genre.indexOf(this.genre) != -1)) {
+          this.items.push(lists[i])
+        }
+      }
       
-      for (var i = 0; i < items.length; i++) {
-        var director = items[i].director
-        if (director) {
-          if (director.indexOf("&") == -1) {
-            directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
-          } else {
-            var array = director.replaceAll(',', '&').split("&")
-            for (var k = 0; k < array.length; k++) {
-              var c = array[k].trim()
-              directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
-            }
+      this.createCharts()
+    },
+    createCharts () {
+      var director = null
+      var year = null
+      var country = null
+      var genre = null
+      
+      var directorSet = {}
+      var yearSet = {}
+      var countrySet = {}
+      var genreSet = {}
+
+      for (var i = 0; i < this.items.length; i++) {
+        director = this.items[i].director
+        year = this.items[i].year
+        country = this.items[i].country
+        genre = this.items[i].genre
+        
+        if (director.indexOf("&") == -1) {
+          directorSet[director] = directorSet[director] ? directorSet[director] + 1 : 1
+        } else {
+          var array = director.replaceAll(',', '&').split("&")
+          for (var k = 0; k < array.length; k++) {
+            var c = array[k].trim()
+            directorSet[c] = directorSet[c] ? directorSet[c] + 1 : 1
+          }
+        }
+        
+        yearSet[year] = yearSet[year] ? yearSet[year] + 1 : 1
+        
+        if (country.indexOf("-") == -1) {
+          countrySet[country] = countrySet[country] ? countrySet[country] + 1 : 1
+        } else {
+          var array = country.split("-")
+          for (var k = 0; k < array.length; k++) {
+            var c = array[k]
+            countrySet[c] = countrySet[c] ? countrySet[c] + 1 : 1
+          }
+        }
+        
+        if (genre.indexOf(",") == -1) {
+          genreSet[genre] = genreSet[genre] ? genreSet[genre] + 1: 1
+        } else {
+          var array = genre.split(",")
+          for (var k = 0; k < array.length; k++) {
+            var c = array[k].trim()
+            genreSet[c] = genreSet[c] ? genreSet[c] + 1 : 1
           }
         }
       }
       
       this.directors = Object.keys(directorSet).sort()
+      this.years = Object.keys(yearSet).sort()
+      this.countries = Object.keys(countrySet).sort()
+      this.genres = Object.keys(genreSet).sort()
 
       var keys = Object.keys(directorSet)
       var values = [];
@@ -280,28 +287,9 @@ const Chartjs = {
           }
         )
       }
-    },
-    updateYear: function (items) {
-      var yearSet = {}
-      var minYear = Infinity
-      var maxYear = 0
-      for (var i = 0; i < items.length; i++) {
-        var year = items[i].year
-        if (year < minYear)
-          minYear = year
-        if (year > maxYear)
-          maxYear = year
-        yearSet[year] = yearSet[year] ? yearSet[year] + 1 : 1
-      }
-      /*
-      for (var i = minYear; i <= maxYear; i++) {
-        if (!yearSet[i])
-          yearSet[i] = 0
-      }
-      */
-      this.years = Object.keys(yearSet).sort()
-      var labels = []
-      var data = []
+
+      labels = []
+      data = []
       for (var i = 0; i < this.years.length; i++) {
         labels.push(this.years[i])
         data.push(yearSet[this.years[i]])
@@ -340,6 +328,13 @@ const Chartjs = {
                   text: "Year"
                 }
               },
+              /*
+              scales: {
+                yAxes: {
+                  beginAtZero: true
+                }
+              },
+              */
               onClick: (e) => {
                 const points = this.chartYear.getElementsAtEventForMode(e, 'nearest', { intersect: true }, true);
                
@@ -355,31 +350,13 @@ const Chartjs = {
           }
         );
       }
-    },
-    updateCountry: function (items) {
-      var countrySet = {}
-      for (var i = 0; i < items.length; i++) {
-        var country = items[i].country
-        if (country) {
-          if (country.indexOf("-") == -1) {
-            countrySet[country] = countrySet[country] ? countrySet[country] + 1 : 1
-          } else {
-            var array = country.split("-")
-            for (var k = 0; k < array.length; k++) {
-              var c = array[k]
-              countrySet[c] = countrySet[c] ? countrySet[c] + 1 : 1
-            }
-          }
-        }
-      }
-      this.countries = Object.keys(countrySet).sort()
-      
-      var keys = Object.keys(countrySet)
+
+      /* Country */
       var values = []
-      for (var i = 0; i < keys.length; i++) {
+      for (var i = 0; i < this.countries.length; i++) {
         values.push({
-          country: keys[i],
-          amount: countrySet[keys[i]]
+          country: this.countries[i],
+          amount: countrySet[this.countries[i]]
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.country.localeCompare(b.country) : ((a.amount < b.amount) ? 1 : -1))
@@ -442,33 +419,12 @@ const Chartjs = {
           }
         )
       }
-    },
-    updateGenre (items) {
-      var genres = {}
-      
-      for (var i = 0; i < items.length; i++) {
-        var genre = items[i].genre
-        if (genre) {
-          if (genre.indexOf(", ") == -1) {
-            genres[genre] = genres[genre] ? genres[genre] + 1 : 1
-          } else {
-            var array = genre.split(", ")
-            for (var k = 0; k < array.length; k++) {
-              var c = array[k].trim()
-              genres[c] = genres[c] ? genres[c] + 1 : 1
-            }
-          }
-        }
-      }
-      
-      this.genres = Object.keys(genres)
-      
-      keys = Object.keys(genres)
+      /* */
       var values = []
-      for (var i = 0; i < keys.length; i++) {
+      for (var i = 0; i < this.genres.length; i++) {
         values.push({
-          genre: keys[i],
-          amount: genres[keys[i]]
+          genre: this.genres[i],
+          amount: genreSet[this.genres[i]]
         })
       }
       values = values.sort((a, b) => (a.amount == b.amount) ? a.genre.localeCompare(b.genre) : ((a.amount < b.amount) ? 1 : -1))
@@ -522,10 +478,6 @@ const Chartjs = {
           }
         )
       }
-    },
-    createCharts: function () {
-      // Chart.defaults.font.weight = 'bold';
-      // Chart.defaults.color = 'white'
     }
   }
 }

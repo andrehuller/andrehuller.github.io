@@ -2,23 +2,27 @@ const Portfolio = {
   template: `
     <v-container fluid>
       <v-row>
+        <v-col cols="12">
+          <strong>Projects</strong>
+        </v-col>
         <v-col cols="12" lg="4"
           v-for="project in projects"
           :key="project.title"
         >
-          <v-card outlined :href="project.href">
+          <v-card :href="project.href" color="grey-lighten-1" variant="outlined">
             <v-list>
-              <v-list-item>
-                <v-list-item-avatar class="indigo darken-1">
-                  <v-icon dark>{{ project.icon }}</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ project.title }}</v-list-item-title>
-                  <v-list-item-subtitle>{{ project.subtitle }}</v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action>
+              <v-list-item
+                :title="project.title"
+                :subtitle="project.subtitle"
+              >
+                <template v-slot:prepend>
+                  <v-avatar color="indigo">
+                    <v-icon :icon="project.icon" color="white"></v-icon>
+                  </v-avatar>
+                </template>
+                <template v-slot:append>
                   <v-icon>mdi-arrow-right</v-icon>
-                </v-list-item-action>
+                </template>
               </v-list-item>
             </v-list>
           </v-card>
@@ -33,25 +37,25 @@ const Portfolio = {
           v-for="reference in references"
           :key="reference.title"
         >
-          <v-card outlined :href="reference.href">
+          <v-card :href="reference.href" color="grey-lighten-1" variant="outlined">
             <v-list>
-              <v-list-item>
-                <v-list-item-avatar class="indigo darken-1">
-                  <v-icon dark>{{ reference.icon }}</v-icon>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title>{{ reference.title }}</v-list-item-title>
-                  <v-list-item-subtitle>{{ reference.subtitle }}</v-list-item-subtitle>
-                </v-list-item-content>
-                <v-list-item-action>
+              <v-list-item
+                :title="reference.title"
+                :subtitle="reference.subtitle"
+              >
+                <template v-slot:prepend>
+                  <v-avatar color="indigo">
+                    <v-icon :icon="reference.icon" color="white"></v-icon>
+                  </v-avatar>
+                </template>
+                <template v-slot:append>
                   <v-icon>mdi-arrow-right</v-icon>
-                </v-list-item-action>
+                </template>
               </v-list-item>
             </v-list>
           </v-card>
         </v-col>
       </v-row>
-
     </v-container>
   `,
   data: () => ({
@@ -75,28 +79,6 @@ const Portfolio = {
         subtitle: 'http://der.mapas.pr.gov.br'
       }
       /*
-      {
-        title: 'geodc',
-        subtitle: 'CEDC',
-        href: 'http://geojsapitre.pr.gov.br/geodc/#/',
-        screenshot: 'assets/screenshots/geodc.png',
-        homolog: 'http://geojsapitre.pr.gov.br/geodc/#/'
-      },
-      {
-        title: 'geodc/editor-area-atencao',
-        subtitle: 'CEDC',
-        href: 'http://geojsapitre.pr.gov.br/editor/#/',
-        screenshot: 'assets/screenshots/editor-area-atencao.png',
-        homolog: 'http://geojsapitre.pr.gov.br/editor/#/'
-      },
-      {
-        title: 'geoder',
-        subtitle: 'DER',
-        href: 'http://der.mapas.pr.gov.br',
-        screenshot: 'assets/screenshots/geoder.png',
-        homolog: 'http://geojsapitre.pr.gov.br/geoder/#/',
-        prod: 'http://der.mapas.pr.gov.br'
-      },
       {
         title: 'geoidr',
         subtitle: 'IDR',

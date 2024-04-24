@@ -4,6 +4,7 @@ const YouTube = {
       :items="filteredItems"
       :items-per-page="12"
       :search="search"
+      :page="page"
     >
       <template v-slot:header>
         <v-container fluid pb-0>
@@ -14,7 +15,7 @@ const YouTube = {
                 label="Guest"
                 :items="guests"
                 prepend-inner-icon="mdi-magnify"
-                flat solo-inverted
+                flat variant="outlined" density="comfortable"
                 multiple chips deletable-chips
                 clearable hide-details
               ></v-autocomplete>
@@ -25,7 +26,7 @@ const YouTube = {
                 label="Channel"
                 :items="channels"
                 prepend-inner-icon="mdi-magnify"
-                flat solo-inverted
+                flat variant="outlined" density="comfortable"
                 multiple chips deletable-chips
                 clearable hide-details
               ></v-autocomplete>
@@ -35,38 +36,65 @@ const YouTube = {
                 v-model="search"
                 label="Search"
                 prepend-inner-icon="mdi-magnify"
-                flat solo-inverted clearable hide-details
+                flat variant="outlined" density="comfortable"
+                clearable hide-details
               ></v-text-field>                  
             </v-col>
           </v-row>
         </v-container>
       </template>
-      <template v-slot:default="props">
+      <template v-slot:default="{ items }">
         <v-container fluid>
           <v-row>
             <v-col
-              v-for="item in props.items"
-              :key="item.id"
+              v-for="(item, i) in items"
+              :key="i"
               cols="12" lg="3"
             >
               <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
-                <a :href="'https://youtu.be/' + item.id" target="_blank">
+                <a :href="'https://youtu.be/' + item.raw.id" target="_blank">
                   <v-img
-                    :src="item.src"
+                    :src="item.raw.src"
                     style="background: black; border-radius: 8px;"
                     height="225px"
                     max-height="225px"
+                    cover
                   ></v-img>
                   <!--
-                  :src="'https://i.ytimg.com/vi_webp/' + item.id + '/hqdefault.webp'"
+                  :src="'https://i.ytimg.com/vi_webp/' + item.raw.id + '/hqdefault.webp'"
                   -->
                 </a>
-                <v-card-title>{{ item.subtitle }}</v-card-title>
-                <v-card-subtitle>{{ item.title }}</v-card-subtitle>
+                <v-card-title>{{ item.raw.subtitle }}</v-card-title>
+                <v-card-subtitle>{{ item.raw.title }}</v-card-subtitle>
               </v-card>
             </v-col>
           </v-row>
         </v-container>
+      </template>
+      <template v-slot:footer="{ page, pageCount, prevPage, nextPage }">
+        <div class="d-flex align-center justify-center pa-4">
+          <v-btn
+            :disabled="page === 1"
+            icon="mdi-arrow-left"
+            density="comfortable"
+            variant="tonal"
+            rounded
+            @click="prevPage"
+          ></v-btn>
+
+          <div class="mx-2 text-caption">
+            Page {{ page }} of {{ pageCount }}
+          </div>
+
+          <v-btn
+            :disabled="page >= pageCount"
+            icon="mdi-arrow-right"
+            density="comfortable"
+            variant="tonal"
+            rounded
+            @click="nextPage"
+          ></v-btn>
+        </div>
       </template>
     </v-data-iterator>
   `,
@@ -103,6 +131,7 @@ const YouTube = {
     guest: null,
     guests: ['Alan Watts', 'Ben Shapiro', 'Bill Burr', 'Jordan Peterson'],
     search: null,
+    page: 1,
     people: [
       { name: 'Aisling Bea', categories: ['Comedian'] },
       { name: 'Alfred Hitchcock', categories: ['Film Director'] },

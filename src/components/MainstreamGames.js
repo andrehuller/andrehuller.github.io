@@ -42,7 +42,6 @@ const MainstreamGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Resident Evil 4 (2023).jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Resident Evil 4 (2023)</b></v-card-text>
-
                   </v-card>
                 </v-col>
               </v-row>
@@ -126,7 +125,6 @@ const MainstreamGames = {
             <v-card-title>Naughty Dog LLC</v-card-title>
             <v-card-text>
               <v-row>
-                <!-- The Last of Us™ Part I -->
                 <v-col lg="12">
                   <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/The Last of Us.jpg" height="176.55" cover></v-img>
@@ -137,6 +135,44 @@ const MainstreamGames = {
             </v-card-text>
           </v-card>
         </v-col>
+
+        <v-col lg="9">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>BioWare</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="4">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Mass Effect Legendary Edition.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Mass Effect Legendary Edition (2021)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <!--
+                <v-col lg="4">
+                  <v-card color="yellow-lighten-5">
+                    <v-img src="assets/gamesps4/Mass Effect Andromeda.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Mass Effect Andromeda (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                -->
+                <v-col lg="4">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Dragon Age Inquisition.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Dragon Age Inquisition (2014)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="4">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/STAR WARS Knights of the Old Republic.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>STAR WARS Knights of the Old Republic (2003)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+
       </v-row>
 
       <v-row>
@@ -242,13 +278,13 @@ const MainstreamGames = {
 
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Square Enix</v-card-title>
+            <v-card-title>Aspyr</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="12">
                   <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/NieR Automata.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>NieR:Automata (2017)</b></v-card-text>
+                    <v-img src="assets/gamesps4/Tomb Raider I-III.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Tomb Raider I-III Remastered (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -274,7 +310,7 @@ const MainstreamGames = {
                   </v-card>
                 </v-col>
                 <v-col lg="4">
-                  <v-card color="blue-grey-lighten-5">
+                  <v-card color="red-lighten-4">
                     <v-img src="assets/gamesps4/Shadow of the Tomb Raider.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Shadow of the Tomb Raider (2018)</b></v-card-text>
                   </v-card>
@@ -392,6 +428,21 @@ const MainstreamGames = {
           </v-card>
         </v-col>
 
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Square Enix</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/NieR Automata.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>NieR:Automata (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
       </v-row>
     </v-container>
   `

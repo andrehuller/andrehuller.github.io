@@ -54,15 +54,15 @@ const ORS = {
     <v-container fluid>
       <v-row>
         <v-col cols="12" lg="8">
-          <v-card outlined>
-            <div id="map" style="width: 100%; height: calc(100vh - 64px - 24px); z-index: 0;"></div>
+          <v-card variant="outlined">
+            <div id="map" style="width: 100%; height: calc(100vh - 64px - 34px); z-index: 0;"></div>
           </v-card>
         </v-col>
         <v-col cols="12" lg="4">
-          <v-container pa-0>
+          <v-container class="pa-0">
             <v-row>
               <v-col cols="12">
-                <v-card outlined>
+                <v-card variant="outlined">
                   <v-card-title>
                     Jobs
                   </v-card-title>
@@ -75,7 +75,7 @@ const ORS = {
                 </v-card>
               </v-col>
               <v-col cols="12">
-                <v-card outlined>
+                <v-card variant="outlined">
                   <v-card-title>
                     Vehicles
                   </v-card-title>
@@ -110,14 +110,14 @@ const ORS = {
   },
   data: () => ({
     headers: [
-      { text: 'Id', value: 'id', width: '30%' },
-      { text: 'Longitude', value: 'location[0]', width: '35%' },
-      { text: 'Latitude', value: 'location[1]', width: '35%' }
+      { title: 'Id', key: 'id', width: '30%' },
+      { title: 'Longitude', key: 'location[0]', width: '35%' },
+      { title: 'Latitude', key: 'location[1]', width: '35%' }
     ],
     headersVehicles: [
-      { text: 'Id', value: 'id', width: '30%' },
-      { text: 'Longitude', value: 'start[0]', width: '35%' },
-      { text: 'Latitude', value: 'start[1]', width: '35%' }
+      { title: 'Id', key: 'id', width: '30%' },
+      { title: 'Longitude', key: 'start[0]', width: '35%' },
+      { title: 'Latitude', key: 'start[1]', width: '35%' }
     ],
     jobs: [],
     vehicles: []

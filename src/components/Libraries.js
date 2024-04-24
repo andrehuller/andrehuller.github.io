@@ -1,95 +1,60 @@
 const Libraries = {
   template: `
-    <v-container fluid class="pa-0">
-      <!--
-      <v-toolbar color="grey lighten-4" class="mb-4" rounded>
-        <v-container class="pa-0">
-          <v-row>
-            <v-col cols="12" lg="3">
-              <v-autocomplete
-                label="Category"
-                prepend-inner-icon="mdi-magnify"
-                flat solo-inverted hide-details
-              ></v-autocomplete>
-            </v-col>
-            <v-col cols="12" lg="6">
-            </v-col>
-            <v-col cols="12" lg="3">
-              <v-text-field
-                label="Search"
-                prepend-inner-icon="mdi-magnify"
-                flat solo-inverted hide-details
-              ></v-text-field>
-            </v-col>
-          </v-row>
-        </v-container> 
-      </v-toolbar>
-      -->
-      <v-tabs fixed-tabs>
+    <v-container class="pa-0" fluid>
+      <v-tabs v-model="tab" fixed-tabs>
         <v-tab
           v-for="category in categories"
-          :key="category.name"
-          style="background-color: #FAFAFA"
-        >
-          {{ category.name }}
-        </v-tab>
-        <v-tab-item
+          :value="category.name"
+        >{{ category.name }}</v-tab>
+      </v-tabs>
+
+      <v-window v-model="tab">
+        <v-window-item
           v-for="category in categories"
-          :key="category.name"
-        ><!-- overflow-y: auto; max-height: 856px; -->
+          :value="category.name"
+        >
           <v-data-iterator
             :items="category.items"
-            :items-per-page="40"
-            :search="search"
-            :footer-props="{'items-per-page-options':[20, 40, 80, -1]}"
-            @update:page="$vuetify.goTo(0)"
-            class="grey lighten-5"
           >
-            <template v-slot:default="props">
-              <v-container fluid class="grey lighten-5">
-                <v-row>
-                  <v-col sm="12" md="6" lg="3"
-                    v-for="library in props.items"
-                    :key="library.title"
+            <template v-slot:default="{ items }">
+              <v-container class="pa-2" fluid>
+                <v-row dense>
+                  <v-col
+                    v-for="item in category.items"
+                    :key="item.title"
+                    cols="auto"
+                    md="3"
+                    class="pa-3 d-flex flex-column"
                   >
-                    <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
-                      <a :href="library.href" target="_blank">
-                        <v-img
-                          :src="library.src"
-                          height="198px"
-                          style="border-radius: 8px"
-                        ></v-img>
-                        <!-- style="border-top-left-radius: 4px; border-top-right-radius: 4px;" -->
-                      </a>
+                    <v-card :href="item.href" class="elevation-5 fill-height">
+                      <!-- <a :href="item.href" target="_blank"></a> -->
+                      <v-img
+                        :src="item.src"
+                        height="198px"
+                        cover
+                      ></v-img>
+                      <v-divider></v-divider>
+                      <!-- style="border-radius: 8px" -->
                       <v-card-title>
-                        {{ library.title }}
-                        <v-spacer></v-spacer>
-                        <v-icon v-if="library.highlight" color="indigo">
-                          mdi-alert-circle-outline
-                        </v-icon>
+                        {{ item.title }}
                       </v-card-title>
                       <v-card-text>
-                        {{ library.subtitle }}
+                        {{ item.subtitle }}
                       </v-card-text>
                     </v-card>
+
                   </v-col>
                 </v-row>
               </v-container>
             </template>
           </v-data-iterator>
-        </v-tab-item>
-      </v-tabs>
+        </v-window-item>
+      </v-window>
+
     </v-container>
   `,
   data: () => ({
-    categories: null
-  }),
-  computed: {
-    search () {
-      return this.$store.state.search
-    }
-  },
-  mounted () {
-    this.categories = categories
-  }
+    categories: categories,
+    tab: null
+  })
 }

@@ -1,6 +1,6 @@
 const Leaflet = {
   template: `
-    <v-container fluid pa-0>
+    <v-container fluid class="pa-0">
       <v-row no-gutters>
         <v-col>
           <div id="map" style="width: 100%; height: calc(100vh - 64px); z-index: 0;"></div>

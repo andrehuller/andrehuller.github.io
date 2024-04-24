@@ -720,15 +720,52 @@ const categories = [
         "src": "assets/screenshots/ZDoom.png"
       },
       {
+        "title": "DEI Detected",
+        "subtitle": "Forced DEI is becoming unbearable on games. It's time to push back. Vote with your wallet!",
+        "href": "https://deidetected.com/",
+        "src": "assets/screenshots/DEI Detected.png"
+      },
+      {
+        "title": "Retroware",
+        "subtitle": "We're all about modern retro games.",
+        "href": "https://retroware.com/",
+        "src": "assets/screenshots/Retroware.png"
+      },
+      {
+        "title": "FreakZone Games",
+        "subtitle": "UK-based gamedev. Spectacular Sparky, AVGN, Knight Terrors & more.",
+        "href": "https://freakzonegames.com/",
+        "src": "assets/screenshots/FreakZone Games.png"
+      },
+      {
+        "title": "Rippaverse",
+        "subtitle": "Rippaverse Comics is the product of a comic book guy that still believes the magic of the culture.",
+        "href": "https://rippaverse.com/",
+        "src": "assets/screenshots/Rippaverse.png"
+      },
+      {
         "title": "Bounding Into Comics",
         "subtitle": "Bounding Into Comics is a website that covers comic books, movies, TV, video games, and more.",
         "href": "https://boundingintocomics.com",
         "src": "assets/screenshots/Bounding Into Comics.png"
       },
       {
+        "title": "Cosmic Book News",
+        "subtitle": "Cosmic Book News is a website that covers news, reviews, and commentary related to comic books, movies, television, video games, and other forms of popular culture.",
+        "href": "https://cosmicbook.news/",
+        "src": "assets/screenshots/Cosmic Book News.png"
+      },
+      {
         "title": "Fandom Pulse",
+        "subtitle": "Fandom Pulse is a publication that covers comics, video games, and other entertainment topics.",
         "href": "https://fandompulse.com/",
         "src": "assets/screenshots/Fandom Pulse.png"
+      },
+      {
+        "title": "Niche Gamer",
+        "subtitle": "Video Game News, Community, Videos, & Reviews",
+        "href": "https://nichegamer.com",
+        "src": "assets/screenshots/Niche Gamer.png"
       },
       {
         title: "That Park Place",
@@ -749,16 +786,22 @@ const categories = [
         src: "assets/screenshots/Geeks + Gamers.png"
       },
       {
-        title: "Ghost of the Badlands",
-        subtitle: "A masked phantom wanders the Arizona badlands during the 1890's distributing justice!",
-        href: "https://www.indiegogo.com/projects/ghost-of-the-badlands#/",
-        src: "assets/screenshots/Ghost of the Badlands.png"
-      },
-      {
         "title": "DuckDuckGo",
         "subtitle": "Privacy, simplified.",
         "href": "https://duckduckgo.com/",
         "src": "assets/screenshots/DuckDuckGo.png"
+      },
+      {
+        "title": "Startpage",
+        "subtitle": "Private Search Engine. No Tracking. No Search History.",
+        "href": "https://www.startpage.com/",
+        "src": "assets/screenshots/Startpage.png"
+      },
+      {
+        "title": "Ecosia",
+        "subtitle": "The search engine that plants trees.",
+        "href": "https://www.ecosia.org/",
+        "src": "assets/screenshots/Ecosia.png"
       },
       {
         title: "Substack",
@@ -801,18 +844,29 @@ const categories = [
         "href": "https://materialdesignicons.com",
         "src": "assets/libraries/Material Design Icons.png",
         "highlight": true
+      }
+    ]
+  },
+  {
+    "name": "Campaigns",
+    "items": [
+      {
+        "title": "Ghost of the Badlands",
+        "subtitle": "A masked phantom wanders the Arizona badlands during the 1890's distributing justice!",
+        "href": "https://www.indiegogo.com/projects/ghost-of-the-badlands#/",
+        "src": "assets/screenshots/Ghost of the Badlands.png"
       },
       {
-        "title": "Material Icons",
-        "subtitle": "Material icons are delightful, beautifully crafted symbols for common actions and items",
-        "href": "https://material.io/resources/icons/?style=baseline",
-        "src": "assets/libraries/Material Icons.png",
+        "title": "ISOM #1 Campaign",
+        "subtitle": "Rippaverse Campaign",
+        "href": "https://rippaverse.com/store/isom-1-campaign/isom-1-campaign/",
+        "src": "assets/screenshots/ISOM 1.png"
       },
       {
-        "title": "Octicons",
-        "subtitle": "Your project. GitHub's icons.",
-        "href": "https://octicons.github.com/",
-        "src": "assets/libraries/Octicons.png",
+        "title": "ISOM #2 Campaign",
+        "subtitle": "Rippaverse Campaign",
+        "href": "https://rippaverse.com/store/isom-2-campaign/isom-2-campaign/",
+        "src": "assets/screenshots/ISOM 2.png"
       }
     ]
   }

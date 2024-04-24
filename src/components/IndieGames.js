@@ -414,8 +414,42 @@ const IndieGames = {
 
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Rain World.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Rain World (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Gravity Circuit.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
+                    <!-- developer: "Domesticated Ant Games" -->
+                    <!-- publisher: "PID Games" -->
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Vernal Edge.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Vernal Edge (2023)</b></v-card-text>
+                    <!-- developer: Hello Penguin Team LLC -->
+                    <!-- publisher: "PID Games" -->
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Berserk Boy.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Berserk Boy (2024)</b></v-card-text>
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Lords of Exile.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Lords of Exile (2024)</b></v-card-text>
+                    <!-- developer: Squidbit Works -->
+                    <!-- publisher: PID Games, PixelHeart -->
                   </v-card>
                 </v-col>
 

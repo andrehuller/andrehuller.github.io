@@ -15,6 +15,7 @@ const Unsplash = {
               :src="image.src"
               height="335"
               style="border-radius: 8px"
+              cover
             ></v-img>
             <!--
             <v-list>

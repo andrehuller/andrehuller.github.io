@@ -49,11 +49,7 @@ const StagingArea = {
             <v-img src="assets/gamesps4/Planescape Torment.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Knights of the Old Republic.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
+
         <v-col lg="3">
           <v-card>
             <v-img src="assets/gamesps4/Prey.jpg" height="176.55" cover></v-img>
@@ -94,16 +90,6 @@ const StagingArea = {
 
       <v-row>
         <v-col lg="3">
-          <v-card >
-            <v-img src="assets/gamesps4/Mass Effect Legendary Edition.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Tomb Raider I-III.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
           <v-card>
             <!-- Serious Sam HD: The First Encounter -->
             <v-img src="assets/gamesps4/Serious Sam HD The First Encounter.jpg" height="176.55" cover></v-img>
@@ -137,6 +123,13 @@ const StagingArea = {
 
         <v-col lg="3">
           <v-card>
+            <v-img src="assets/gamesps4/Beyond Good and Evil.jpg" height="176.55" cover></v-img>
+            <v-card-text><b>Beyond Good and Evil (2003)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card>
             <v-img src="assets/gamesps4/Turbo Overkill.jpg" height="176.55" cover></v-img>
             <v-card-text><b>Turbo Overkill (2023)</b></v-card-text>
           </v-card>
@@ -147,18 +140,13 @@ const StagingArea = {
             <v-img src="assets/gamesps4/Evil West.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
+
         <v-col lg="3">
           <v-card>
             <v-img src="assets/gamesps4/Painkiller Black Edition.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/screenshots/Fandom Pulse.png" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
       </v-row>
-
 
       <!-- Inglorious Rex creator Shane Davis, Godlike and Graveyard Shift creator Jon Malin, and Cyberfrog creator Ethan Van Sciver -->
       <!-- https://comicsgate.org/ -->
