@@ -25,6 +25,12 @@ const MainstreamGames = {
                     <v-card-text><b>Resident Evil 4 (2005)</b></v-card-text>
                   </v-card>
                 </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Resident Evil 7 Biohazard.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil 7 Biohazard (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
 
                 <v-col lg="3">
                   <v-card color="blue-grey-lighten-5">
@@ -428,15 +434,21 @@ const MainstreamGames = {
           </v-card>
         </v-col>
 
-        <v-col lg="3">
+        <v-col lg="6">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>Square Enix</v-card-title>
             <v-card-text>
               <v-row>
-                <v-col lg="12">
+                <v-col lg="6">
                   <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/NieR Automata.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>NieR:Automata (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/FINAL FANTASY IX.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>FINAL FANTASY IX (2000)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
