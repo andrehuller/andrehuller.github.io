@@ -111,7 +111,7 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-4">
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Yooka-Laylee.jpg" height="176.55" cover></v-img>
                     <v-card-text>
                       <b>Yooka-Laylee (2017)</b>
@@ -184,6 +184,12 @@ const IndieGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Iron Meat.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Iron Meat (2024)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Toxic Crusaders.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Toxic Crusaders (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
@@ -265,64 +271,6 @@ const IndieGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Broken Age.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Broken Age (2014)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="12">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>Nightdive Studios</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/STAR WARS Dark Forces Remaster.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>STAR WARS™: Dark Forces Remaster (2024)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Turok 3 Shadow of Oblivion Remastered.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Turok 3: Shadow of Oblivion Remastered (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Rise of the Triad Ludicrous Edition.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Rise of the Triad: Ludicrous Edition (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/System Shock.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>System Shock (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/PowerSlave Exhumed.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>PowerSlave Exhumed (2022)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Blood Fresh Supply.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blood™ Fresh Supply (2019)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Turok 2 Seeds of Evil.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Turok 2: Seeds of Evil (2017)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Turok.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Turok (2015)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -421,10 +369,24 @@ const IndieGames = {
 
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/The Messenger (2018).jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>The Messenger (2018)</b></v-card-text>
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Gravity Circuit.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
                     <!-- developer: "Domesticated Ant Games" -->
                     <!-- publisher: "PID Games" -->
+                  </v-card>
+                </v-col>
+
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Sea of Stars.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Sea of Stars (2023)</v-card-text>
                   </v-card>
                 </v-col>
 
@@ -472,71 +434,15 @@ const IndieGames = {
           </v-card>
         </v-col>
 
-        <v-col lg="12">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-text>
-              <v-row>
-                <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Heretic Shadow of the Serpent Riders.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Heretic: Shadow of the Serpent Riders (1994)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Hexen Beyond Heretic.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Hexen: Beyond Heretic (1995)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Shadow Warrior.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Shadow Warrior Classic (1997)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Warhammer Franchise</v-card-title>
+            <v-card-title>SouthPAW Games</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="12">
                   <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Warhammer 40,000 Boltgun.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Warhammer 40,000: Boltgun (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="9">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>New Blood Interactive</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="4">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/DUSK.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>DUSK (2018)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="4">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/AMID EVIL.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>AMID EVIL (2019)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="4">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/ULTRAKILL.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>ULTRAKILL (2020)</b></v-card-text>
+                    <v-img src="assets/gamesps4/Skul The Hero Slayer.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Skul: The Hero Slayer (2021)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>

@@ -32,11 +32,7 @@ const StagingArea = {
             <v-img src="assets/gamesps4/Death Stranding.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Abzû.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
+
         <!-- HELLGATE: London -->
         <v-col lg="3">
           <v-card>
@@ -52,23 +48,11 @@ const StagingArea = {
 
         <v-col lg="3">
           <v-card>
-            <v-img src="assets/gamesps4/Prey.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
             <v-img src="assets/gamesps4/Legacy of Kain.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
 
         <!-- GManLives Suggestions -->
-
-        <!-- F.E.A.R. 2: Project Origin -->
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/FEAR 2 Project Origin.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
 
         <!-- Tomb Raider Series -->
         <v-col lg="3">
@@ -80,28 +64,8 @@ const StagingArea = {
 
       </v-row>
 
-      <v-row>
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Quake II.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-      </v-row>
 
-      <v-row>
-        <v-col lg="3">
-          <v-card>
-            <!-- Serious Sam HD: The First Encounter -->
-            <v-img src="assets/gamesps4/Serious Sam HD The First Encounter.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
-            <!-- Serious Sam HD: The Second Encounter -->
-            <v-img src="assets/gamesps4/Serious Sam HD The Second Encounter.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>        
-      </v-row>
+
 
       <!-- Wishlist -->
       <v-row>
@@ -125,25 +89,6 @@ const StagingArea = {
           <v-card>
             <v-img src="assets/gamesps4/Beyond Good and Evil.jpg" height="176.55" cover></v-img>
             <v-card-text><b>Beyond Good and Evil (2003)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Turbo Overkill.jpg" height="176.55" cover></v-img>
-            <v-card-text><b>Turbo Overkill (2023)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Evil West.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-
-        <v-col lg="3">
-          <v-card>
-            <v-img src="assets/gamesps4/Painkiller Black Edition.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
       </v-row>

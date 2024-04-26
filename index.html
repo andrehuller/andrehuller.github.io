@@ -94,8 +94,10 @@
     <script src="./src/components/Unsplash.js"></script>
     <script src="./src/components/Wikimedia.js"></script>
 
+    <script src="./src/components/FPSGames.js"></script>
     <script src="./src/components/IndieGames.js"></script>
     <script src="./src/components/MainstreamGames.js"></script>
+    
     <script src="./src/components/StagingArea.js"></script>
     
     <!-- Twitter -->
@@ -220,6 +222,11 @@
           
           <v-divider></v-divider>
           <v-list density="compact" nav>
+            <v-list-item title="FPS Games" to="/fpsgames">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-sony-playstation"></v-icon>
+              </template>
+            </v-list-item>
             <v-list-item title="Indie Games" to="/indiegames">
               <template v-slot:prepend>
                 <v-icon icon="mdi-sony-playstation"></v-icon>
@@ -265,6 +272,8 @@ const routes = [
   { path: '/wikimedia', component: Wikimedia },
   
   { path: '/stagingarea', component: StagingArea },
+  
+  { path: '/fpsgames', component: FPSGames },
   { path: '/indiegames', component: IndieGames },
   { path: '/mainstreamgames', component: MainstreamGames },
 ]
@@ -296,7 +305,6 @@ app.use(vuetify)
 // app.use(Maska)
 new Maska.MaskInput("[data-maska]")
 app.directive('maska', Maska.vMaska)
-
     
 // app.use(VueMask.VueMaskPlugin)
 // app.directive('mask', VueMask.VueMaskDirective)
