@@ -679,11 +679,6 @@ const categories = [
         "src": "assets/resources/Airflow.png"
       },
       {
-        "title": "Here",
-        "href": "https://www.here.com/",
-        "src": "assets/screenshots/here.jpg"
-      },
-      {
         "title": "kepler.gl",
         "subtitle": "Make an impact with your location data",
         "href": "https://kepler.gl/",
@@ -726,24 +721,6 @@ const categories = [
         "src": "assets/screenshots/DEI Detected.png"
       },
       {
-        "title": "Retroware",
-        "subtitle": "We're all about modern retro games.",
-        "href": "https://retroware.com/",
-        "src": "assets/screenshots/Retroware.png"
-      },
-      {
-        "title": "FreakZone Games",
-        "subtitle": "UK-based gamedev. Spectacular Sparky, AVGN, Knight Terrors & more.",
-        "href": "https://freakzonegames.com/",
-        "src": "assets/screenshots/FreakZone Games.png"
-      },
-      {
-        "title": "Rippaverse",
-        "subtitle": "Rippaverse Comics is the product of a comic book guy that still believes the magic of the culture.",
-        "href": "https://rippaverse.com/",
-        "src": "assets/screenshots/Rippaverse.png"
-      },
-      {
         "title": "DuckDuckGo",
         "subtitle": "Privacy, simplified.",
         "href": "https://duckduckgo.com/",
@@ -762,10 +739,10 @@ const categories = [
         "src": "assets/screenshots/Ecosia.png"
       },
       {
-        title: "Substack",
-        subtitle: "The home for great culture.",
-        href: "https://substack.com/home",
-        src: "assets/screenshots/Substack.png"
+        "title": "Substack",
+        "subtitle": "The home for great culture.",
+        "href": "https://substack.com/home",
+        "src": "assets/screenshots/Substack.png"
       },
 
       /*,
@@ -778,18 +755,6 @@ const categories = [
   {
     "name": "Icons",
     "items": [
-      {
-        "title": "Font Awesome",
-        "subtitle": "the web's most popular icon set and toolkit",
-        "href": "https://fontawesome.com/",
-        "src": "assets/libraries/Font Awesome.png"
-      },
-      {
-        "title": "Ionicons",
-        "subtitle": "Beautifully crafted open source icons",
-        "href": "https://ionicons.com/",
-        "src": "assets/libraries/Ionicons.png"
-      },
       {
         "title": "Material Design",
         "subtitle": "Build beautiful products, faster.",
@@ -841,6 +806,47 @@ const categories = [
     ]
   },
   {
+    "name": "Companies",
+    "items": [
+      {
+        "title": "GOG",
+        "subtitle": "GOG.com offers over 5500 deals on games for Windows, Mac and Linux, with no DRM and free goodies.",
+        "href": "https://www.gog.com",
+        "src": "assets/screenshots/GOG.png"
+      },
+      {
+        "title": "Retroware",
+        "subtitle": "We're all about modern retro games.",
+        "href": "https://retroware.com/",
+        "src": "assets/screenshots/Retroware.png"
+      },
+      {
+        "title": "FreakZone Games",
+        "subtitle": "UK-based gamedev. Spectacular Sparky, AVGN, Knight Terrors & more.",
+        "href": "https://freakzonegames.com/",
+        "src": "assets/screenshots/FreakZone Games.png"
+      },
+      {
+        "title": "WayForward",
+        "subtitle": "WayForward has become one of the biggest independent developers in the video game industry and home to some of the finest talent in the business.",
+        "href": "https://wayforward.com",
+        "src": "assets/screenshots/WayForward.png"
+      },
+      {
+        "title": "Rippaverse",
+        "subtitle": "Rippaverse Comics is the product of a comic book guy that still believes the magic of the culture.",
+        "href": "https://rippaverse.com/",
+        "src": "assets/screenshots/Rippaverse.png"
+      },
+      {
+        "title": "Skybound",
+        "subtitle": "Skybound Entertainment is a multimedia company that produces and publishes comics, games, and other content.",
+        "href": "https://www.skybound.com/",
+        "src": "assets/screenshots/Skybound.png"
+      }
+    ]
+  },
+  {
     "name": "Publications",
     "items": [
       {
@@ -850,10 +856,10 @@ const categories = [
         "src": "assets/screenshots/Bounding Into Comics.png"
       },
       {
-        title: "Clownfish TV",
-        subtitle: "Clownfish TV is an independent, opinionated pop culture news site. We strive to be apolitical, balanced and based, and are fans who cover media for other fans.",
-        href: "https://clownfishtv.com",
-        src: "assets/screenshots/Clownfish TV.png"
+        "title": "Clownfish TV",
+        "subtitle": "Clownfish TV is an independent, opinionated pop culture news site. We strive to be apolitical, balanced and based, and are fans who cover media for other fans.",
+        "href": "https://clownfishtv.com",
+        "src": "assets/screenshots/Clownfish TV.png"
       },
       {
         "title": "Cosmic Book News",
@@ -868,10 +874,10 @@ const categories = [
         "src": "assets/screenshots/Fandom Pulse.png"
       },
       {
-        title: "Geeks + Gamers",
-        subtitle: "Geeks + Gamers is a website for geek and gamer culture, covering movies, anime, television, sports, comics, and video games.",
-        href: "https://www.geeksandgamers.com",
-        src: "assets/screenshots/Geeks + Gamers.png"
+        "title": "Geeks + Gamers",
+        "subtitle": "Geeks + Gamers is a website for geek and gamer culture, covering movies, anime, television, sports, comics, and video games.",
+        "href": "https://www.geeksandgamers.com",
+        "src": "assets/screenshots/Geeks + Gamers.png"
       },
       {
         "title": "Niche Gamer",
@@ -880,10 +886,10 @@ const categories = [
         "src": "assets/screenshots/Niche Gamer.png"
       },
       {
-        title: "That Park Place",
-        subtitle: "That Park Place is an intentionally-independent and opinionated news site covering most topics that should be fun.",
-        href: "https://thatparkplace.com/",
-        src: "assets/screenshots/That Park Place.png"
+        "title": "That Park Place",
+        "subtitle": "That Park Place is an intentionally-independent and opinionated news site covering most topics that should be fun.",
+        "href": "https://thatparkplace.com/",
+        "src": "assets/screenshots/That Park Place.png"
       }
     ]
   }

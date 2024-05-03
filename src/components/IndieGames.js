@@ -80,7 +80,6 @@ const IndieGames = {
           </v-card>
         </v-col>
 
-
         <v-col lg="6">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>Voidpoint, LLC</v-card-title>
@@ -325,13 +324,6 @@ const IndieGames = {
 
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Shovel Knight Treasure Trove.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Shovel Knight: Treasure Trove (2015)</b></v-card-text>
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Celeste.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Celeste (2018)</b></v-card-text>
                   </v-card>
@@ -355,22 +347,8 @@ const IndieGames = {
 
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Axiom Verge.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Axiom Verge (2015)</b></v-card-text>
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Rain World.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Rain World (2017)</b></v-card-text>
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/The Messenger (2018).jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>The Messenger (2018)</b></v-card-text>
                   </v-card>
                 </v-col>
 
@@ -380,13 +358,6 @@ const IndieGames = {
                     <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
                     <!-- developer: "Domesticated Ant Games" -->
                     <!-- publisher: "PID Games" -->
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Sea of Stars.jpg" height="176.55" cover></v-img>
-                    <v-card-text>Sea of Stars (2023)</v-card-text>
                   </v-card>
                 </v-col>
 
@@ -434,6 +405,193 @@ const IndieGames = {
           </v-card>
         </v-col>
 
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Sabotage Studio</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Sea of Stars.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Sea of Stars (2023)</v-card-text>
+                  </v-card>
+                </v-col>
+
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/The Messenger (2018).jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>The Messenger (2018)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Yacht Club Games</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Shovel Knight Treasure Trove.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Shovel Knight: Treasure Trove (2015)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Cyber Shadow.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Cyber Shadow (2021)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>WayForward</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/River City Girls.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>River City Girls (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Shantae Half-Genie Hero.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Shantae: Half-Genie Hero (2016)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>DotEmu</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Teenage Mutant Ninja Turtles Shredder's Revenge.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Teenage Mutant Ninja Turtles: Shredder's Revenge (2022)</v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Streets of Rage 4.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Streets of Rage 4 (2020)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Inti Creates</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Blaster Master Zero.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Blaster Master Zero (2019)</v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Mighty Gunvolt.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Mighty Gunvolt (2015)</v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Lizardcube</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Wonder Boy The Dragon's Trap.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Wonder Boy: The Dragon's Trap (2017)</v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Stoic Studio</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/The Banner Saga.jpg" height="176.55" cover></v-img>
+                    <v-card-text>The Banner Saga (2014)</v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Thomas Happ Games LLC</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Axiom Verge.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Axiom Verge (2015)</v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Axiom Verge 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Axiom Verge 2 (2022)</v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Nicalis, Inc.</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/The Binding of Isaac Rebirth.jpg" height="176.55" cover></v-img>
+                    <v-card-text>The Binding of Isaac: Rebirth (2014)</v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Cave Story+.jpg" height="176.55" cover></v-img>
+                    <v-card-text>Cave Story+ (2011)</v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>SouthPAW Games</v-card-title>
@@ -449,7 +607,6 @@ const IndieGames = {
             </v-card-text>
           </v-card>
         </v-col>
-
       </v-row>
     </v-container>
   `

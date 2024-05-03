@@ -246,13 +246,13 @@ const FPSGames = {
 
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Warhammer Franchise</v-card-title>
+            <v-card-title>Trigger Happy Interactive</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="12">
                   <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Warhammer 40,000 Boltgun.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Warhammer 40,000: Boltgun (2023)</b></v-card-text>
+                    <v-img src="assets/gamesps4/Turbo Overkill.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Turbo Overkill (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -288,21 +288,6 @@ const FPSGames = {
           </v-card>
         </v-col>
 
-        <v-col lg="3">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>Trigger Happy Interactive</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="12">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Turbo Overkill.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Turbo Overkill (2023)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
 
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
@@ -320,6 +305,21 @@ const FPSGames = {
           </v-card>
         </v-col>
 
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title><del>Warhammer Franchise</del></v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Warhammer 40,000 Boltgun.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Warhammer 40,000: Boltgun (2023)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
       </v-row>
     </v-container>
   `

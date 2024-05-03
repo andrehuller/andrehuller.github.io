@@ -300,7 +300,7 @@ const MainstreamGames = {
 
         <v-col lg="9">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Crystal Dynamics</v-card-title>
+            <v-card-title><del>Crystal Dynamics</del></v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="4">
@@ -418,22 +418,6 @@ const MainstreamGames = {
           </v-card>
         </v-col>
 
-        <v-col lg="3">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>CAPCOM Co., Ltd.</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="12">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Dragon's Dogma 2.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Dragon's Dogma 2 (2024)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
         <v-col lg="6">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>Square Enix</v-card-title>
@@ -451,6 +435,29 @@ const MainstreamGames = {
                     <v-card-text><b>FINAL FANTASY IX (2000)</b></v-card-text>
                   </v-card>
                 </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>CAPCOM Co., Ltd.</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Dragon's Dogma 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Dragon's Dogma 2 (2024)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Dead Rising 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Dead Rising 2 (2010)</b></v-card-text>
+                  </v-card>
+                </v-col>
+
               </v-row>
             </v-card-text>
           </v-card>
