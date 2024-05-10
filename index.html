@@ -388,6 +388,18 @@ app.component('date-picker', {
   }
 })
 
+app.component('game-card', {
+  props: ['title', 'year', 'src', 'active'],
+  template: `
+    <v-card :color="active == 'true' ? 'blue-grey-lighten-5' : 'blue-grey-darken-1'">
+      <v-img :src="'assets/gamesps4/' + src + '.jpg'" height="176.55" cover></v-img>
+      <v-card-text>
+        <b>{{ title }} ({{ year }})</b>
+      </v-card-text>
+    </v-card>
+  `
+})
+
 app.mount('#app')
 
   </script>

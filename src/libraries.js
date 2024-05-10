@@ -558,13 +558,6 @@ const categories = [
         "src": "assets/libraries/Element.png"
       },
       {
-        "title": "Keen-UI",
-        "subtitle": "Keen UI is a lightweight Vue.js UI library with a simple API",
-        "href": "https://josephuspaye.github.io/Keen-UI",
-        "src": "assets/libraries/Keen-UI.png"
-      },
-
-      {
         "title": "Materialize",
         "subtitle": "A modern responsive front-end framework based on Material Design",
         "href": "https://materializecss.com/",
@@ -575,24 +568,6 @@ const categories = [
         "subtitle": "Based on the Vue 2.0 elegant Material Design UI component library",
         "href": "https://muse-ui.org/#/en-US",
         "src": "assets/libraries/Muse-UI.png"
-      },
-      {
-        "title": "Polythene",
-        "subtitle": "Material Design component library for Mithril and React.",
-        "href": "https://github.com/ArthurClemens/Polythene",
-        "src": "assets/libraries/Polythene.png"
-      },
-
-      {
-        "title": "Semantic UI",
-        "subtitle": "User Interface is the language of the web",
-        "href": "https://semantic-ui.com/",
-        "src": "assets/libraries/Semantic UI.png"
-      },
-      {
-        "title": "UIkit",
-        "href": "https://getuikit.com/",
-        "src": "assets/libraries/UIkit.png"
       }
     ]
   },
@@ -655,12 +630,6 @@ const categories = [
         "src": "assets/libraries/Vue Material.png"
       },
       {
-        "title": "Vuecidity",
-        "subtitle": "Component Library for Vue.JS",
-        "href": "https://vuecidity.wemakesites.net/",
-        "src": "assets/libraries/Vuecidity.png"
-      },
-      {
         "title": "Vuetify",
         "subtitle": "Material Design Component Framework",
         "href": "https://vuetifyjs.com/en/",
@@ -677,18 +646,6 @@ const categories = [
         "subtitle": "Programmatically author, schedule and monitor workflows.",
         "href": "https://airflow.apache.org/",
         "src": "assets/resources/Airflow.png"
-      },
-      {
-        "title": "kepler.gl",
-        "subtitle": "Make an impact with your location data",
-        "href": "https://kepler.gl/",
-        "src": "assets/libraries/kepler.png",
-        "group": "Other"
-      },
-      {
-        "title": "OneZoom Tree of Life Explorer",
-        "href": "https://www.onezoom.org/",
-        "src": "assets/screenshots/onezoom.png"
       },
       {
       	"title": "Proton Mail",
@@ -715,12 +672,6 @@ const categories = [
         "src": "assets/screenshots/ZDoom.png"
       },
       {
-        "title": "DEI Detected",
-        "subtitle": "Forced DEI is becoming unbearable on games. It's time to push back. Vote with your wallet!",
-        "href": "https://deidetected.com/",
-        "src": "assets/screenshots/DEI Detected.png"
-      },
-      {
         "title": "DuckDuckGo",
         "subtitle": "Privacy, simplified.",
         "href": "https://duckduckgo.com/",
@@ -731,12 +682,6 @@ const categories = [
         "subtitle": "Private Search Engine. No Tracking. No Search History.",
         "href": "https://www.startpage.com/",
         "src": "assets/screenshots/Startpage.png"
-      },
-      {
-        "title": "Ecosia",
-        "subtitle": "The search engine that plants trees.",
-        "href": "https://www.ecosia.org/",
-        "src": "assets/screenshots/Ecosia.png"
       },
       {
         "title": "Substack",
@@ -750,24 +695,6 @@ const categories = [
         https://arkhavencomics.com/
       }
       */
-    ]
-  },
-  {
-    "name": "Icons",
-    "items": [
-      {
-        "title": "Material Design",
-        "subtitle": "Build beautiful products, faster.",
-        "href": "https://material.io/",
-        "src": "assets/screenshots/material.png"
-      },
-      {
-        "title": "Material Design Icons",
-        "subtitle": "Community-led Iconography",
-        "href": "https://materialdesignicons.com",
-        "src": "assets/libraries/Material Design Icons.png",
-        "highlight": true
-      }
     ]
   },
   {
@@ -812,43 +739,67 @@ const categories = [
         "title": "GOG",
         "subtitle": "GOG.com offers over 5500 deals on games for Windows, Mac and Linux, with no DRM and free goodies.",
         "href": "https://www.gog.com",
-        "src": "assets/screenshots/GOG.png"
+        "src": "https://i.ibb.co/fSvBbLf/GOG.png"
       },
       {
         "title": "Retroware",
         "subtitle": "We're all about modern retro games.",
         "href": "https://retroware.com/",
-        "src": "assets/screenshots/Retroware.png"
+        "src": "https://i.ibb.co/kxNFPDh/Retroware.png"
       },
       {
         "title": "FreakZone Games",
         "subtitle": "UK-based gamedev. Spectacular Sparky, AVGN, Knight Terrors & more.",
         "href": "https://freakzonegames.com/",
-        "src": "assets/screenshots/FreakZone Games.png"
+        "src": "https://i.ibb.co/tHBr4Kq/Freak-Zone-Games.png"
       },
       {
         "title": "WayForward",
         "subtitle": "WayForward has become one of the biggest independent developers in the video game industry and home to some of the finest talent in the business.",
         "href": "https://wayforward.com",
-        "src": "assets/screenshots/WayForward.png"
+        "src": "https://i.ibb.co/vJrw88p/Way-Forward.png"
       },
       {
         "title": "Rippaverse",
         "subtitle": "Rippaverse Comics is the product of a comic book guy that still believes the magic of the culture.",
         "href": "https://rippaverse.com/",
-        "src": "assets/screenshots/Rippaverse.png"
+        "src": "https://i.ibb.co/XV1QPwB/Rippaverse.png"
       },
       {
         "title": "Skybound",
         "subtitle": "Skybound Entertainment is a multimedia company that produces and publishes comics, games, and other content.",
         "href": "https://www.skybound.com/",
         "src": "assets/screenshots/Skybound.png"
+      },
+      {
+        "title": "Hundred Star",
+        "subtitle": "",
+        "href": "https://hundredstar.games/",
+        "src": "assets/screenshots/Hundred Star.png"
       }
     ]
   },
   {
     "name": "Publications",
     "items": [
+      {
+        "title": "Abigail Shrier",
+        "subtitle": "Independent Journalist",
+        "href": "https://www.abigailshrier.com/",
+        "src": "https://i.ibb.co/NVf7Gx5/Abigail-Shrier.png"
+      },
+      {
+        "title": "Joe Rogan",
+        "subtitle": "Host of The Joe Rogan Experience Podcast",
+        "href": "https://www.joerogan.com/",
+        src: "https://i.ibb.co/nfzY2Cn/Joe-Rogan.png"
+      },
+      {
+        "title": "Jordan Peterson",
+        "subtitle": "Author, psychologist, online educator, and Professor Emeritus at the University of Toronto",
+        "href": "https://www.jordanbpeterson.com/",
+        "src": "https://i.ibb.co/FYLY0vw/Jordan-Peterson.png"
+      },
       {
         "title": "Bounding Into Comics",
         "subtitle": "Bounding Into Comics is a website that covers comic books, movies, TV, video games, and more.",
@@ -890,6 +841,36 @@ const categories = [
         "subtitle": "That Park Place is an intentionally-independent and opinionated news site covering most topics that should be fun.",
         "href": "https://thatparkplace.com/",
         "src": "assets/screenshots/That Park Place.png"
+      },
+      {
+        "title": "Film Industry Watch",
+        "subtitle": "Denormalizing Nepotism & Misconduct in the Film Industry",
+        "href": "https://filmindustrywatch.org/",
+        "src": "assets/screenshots/Film Industry Watch.png"
+      },
+      {
+        "title": "Film Threat",
+        "subtitle": "Film Threat is a website that covers indie film news, reviews, interviews, festivals and how-tos.",
+        "href": "https://filmthreat.com/",
+        "src": "assets/screenshots/Film Threat.png"
+      },
+      {
+        "title": "Film Threat - The D-Files",
+        "subtitle": "",
+        "href": "https://filmthreat.com/tag/the-d-files/",
+        "src": "assets/screenshots/Film Threat - The D-Files.png"
+      },
+      {
+        "title": "DEI Detected",
+        "subtitle": "Forced DEI is becoming unbearable on games. It's time to push back. Vote with your wallet!",
+        "href": "https://deidetected.com/",
+        "src": "https://i.ibb.co/ncsg8sd/DEI-Detected.png"
+      },
+      {
+        "title": "Zero Punctuation",
+        "subtitle": "Zero Punctuation is a series of video game reviews created by English comedy writer and video game journalist Ben \"Yahtzee\" Croshaw.",
+        "href": "https://www.escapistmagazine.com/category/zero-punctuation/",
+        "src": "https://i.ibb.co/DKQ0RBk/Zero-Punctuation.png"
       }
     ]
   }

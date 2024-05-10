@@ -10,12 +10,7 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Cuphead.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Cuphead (2017)</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card title="Cuphead" year="2017" src="Cuphead" active="true"></game-card>
                 </v-col>
                 <v-col lg="6">
                   <v-card color="blue-grey-darken-1">
@@ -38,12 +33,7 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Hollow Knight.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Hollow Knight (2017)</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card title="Hollow Knight" year="2017" src="Hollow Knight" active="true"></game-card>
                 </v-col>
                 <v-col lg="6">
                   <v-card color="blue-grey-darken-1">
@@ -500,16 +490,10 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Blaster Master Zero.jpg" height="176.55" cover></v-img>
-                    <v-card-text>Blaster Master Zero (2019)</v-card-text>
-                  </v-card>
+                  <game-card title="Blaster Master Zero" year="2019" src="Blaster Master Zero" active="false"></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Mighty Gunvolt.jpg" height="176.55" cover></v-img>
-                    <v-card-text>Mighty Gunvolt (2015)</v-card-text>
-                  </v-card>
+                  <game-card title="Mighty Gunvolt" year="2015" src="Mighty Gunvolt" active="false"></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -522,10 +506,7 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Wonder Boy The Dragon's Trap.jpg" height="176.55" cover></v-img>
-                    <v-card-text>Wonder Boy: The Dragon's Trap (2017)</v-card-text>
-                  </v-card>
+                  <game-card title="Wonder Boy: The Dragon's Trap" year="2017" src="Wonder Boy The Dragon's Trap" active="false"></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -538,10 +519,7 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/The Banner Saga.jpg" height="176.55" cover></v-img>
-                    <v-card-text>The Banner Saga (2014)</v-card-text>
-                  </v-card>
+                  <game-card title="The Banner Saga" year="2014" src="The Banner Saga" active="false"></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -554,10 +532,7 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Axiom Verge.jpg" height="176.55" cover></v-img>
-                    <v-card-text>Axiom Verge (2015)</v-card-text>
-                  </v-card>
+                  <game-card title="Axiom Verge" year="2015" src="Axiom Verge" active="false"></game-card>
                 </v-col>
                 <v-col lg="6">
                   <v-card color="blue-grey-darken-1">
