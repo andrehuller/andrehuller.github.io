@@ -535,10 +535,7 @@ const IndieGames = {
                   <game-card title="Axiom Verge" year="2015" src="Axiom Verge" active="false"></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Axiom Verge 2.jpg" height="176.55" cover></v-img>
-                    <v-card-text>Axiom Verge 2 (2022)</v-card-text>
-                  </v-card>
+                  <game-card title="Axiom Verge 2" year="2022" src="Axiom Verge 2" active="false"></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -551,16 +548,10 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/The Binding of Isaac Rebirth.jpg" height="176.55" cover></v-img>
-                    <v-card-text>The Binding of Isaac: Rebirth (2014)</v-card-text>
-                  </v-card>
+                  <game-card title="The Binding of Isaac Rebirth" year="2014" src="The Binding of Isaac Rebirth" active="false"></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Cave Story+.jpg" height="176.55" cover></v-img>
-                    <v-card-text>Cave Story+ (2011)</v-card-text>
-                  </v-card>
+                  <game-card title="Cave Story+" year="2011" src="Cave Story+" active="false"></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -573,15 +564,19 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Skul The Hero Slayer.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Skul: The Hero Slayer (2021)</b></v-card-text>
-                  </v-card>
+                  <game-card title="Skul: The Hero Slayer" year="2021" src="Skul The Hero Slayer" active="false"></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
+
+<!--
+COCOON
+LIMBO (2011)
+INSIDE (2016)
+-->
+
       </v-row>
     </v-container>
   `

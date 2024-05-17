@@ -177,7 +177,21 @@ const MainstreamGames = {
             </v-card-text>
           </v-card>
         </v-col>
-
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Tango Gameworks</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/The Evil Within 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>The Evil Within 2 (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
 
       </v-row>
 
@@ -335,7 +349,7 @@ const MainstreamGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Grand Theft Auto V.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Grand Theft Auto V (2015)</b></v-card-text>
                   </v-card>
@@ -344,6 +358,28 @@ const MainstreamGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Red Dead Redemption 2.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Red Dead Redemption 2 (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Square Enix</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/NieR Automata.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>NieR:Automata (2017)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/FINAL FANTASY IX.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>FINAL FANTASY IX (2000)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -411,28 +447,6 @@ const MainstreamGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Divinity.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Divinity: Original Sin - Enhanced Edition (2015)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>Square Enix</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/NieR Automata.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>NieR:Automata (2017)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/FINAL FANTASY IX.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>FINAL FANTASY IX (2000)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>

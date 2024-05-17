@@ -5,11 +5,6 @@ const StagingArea = {
 
         <v-col lg="3">
           <v-card>
-            <v-img src="assets/gamesps4/Evil West.jpg" height="176.55" cover></v-img>
-          </v-card>
-        </v-col>
-        <v-col lg="3">
-          <v-card>
             <v-img src="assets/gamesps4/Painkiller Black Edition.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
@@ -61,11 +56,7 @@ const StagingArea = {
             <v-img src="assets/gamesps4/Tomb Raider Underworld.jpg" height="176.55" cover></v-img>
           </v-card>
         </v-col>
-
       </v-row>
-
-
-
 
       <!-- Wishlist -->
       <v-row>
@@ -89,6 +80,37 @@ const StagingArea = {
           <v-card>
             <v-img src="assets/gamesps4/Beyond Good and Evil.jpg" height="176.55" cover></v-img>
             <v-card-text><b>Beyond Good and Evil (2003)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+      </v-row>
+
+      <v-row>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Outlaws.jpg" height="216" cover></v-img>
+            <v-card-text><b>Outlaws (1997)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Railroad Tycoon II.jpg" height="216" cover></v-img>
+            <v-card-text><b>Railroad Tycoon II (1998)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Desperados Wanted Dead or Alive.jpg" height="216" cover></v-img>
+            <v-card-text><b>Desperados: Wanted Dead or Alive (2001)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Prince of Persia The Sands of Time.jpg" height="216" cover></v-img>
+            <v-card-text><b>Prince of Persia: The Sands of Time (2003)</b></v-card-text>
           </v-card>
         </v-col>
       </v-row>

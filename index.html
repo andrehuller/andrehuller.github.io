@@ -54,9 +54,6 @@
     <!-- Lodash -->
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     
-    <!-- Turf.js -->
-    <script src='https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js'></script>
-    
     <!-- Data -->
     <script src="./src/libraries.js"></script>
     <script src="./src/locations.js"></script>
@@ -75,7 +72,6 @@
     <!-- Components -->
     <script src="./src/components/Chart.js"></script>
     <script src="./src/components/Leaflet.js"></script>
-    <script src="./src/components/Turf.js"></script>
     <script src="./src/components/ORS.js"></script>
     
     <script src="./src/components/Libraries.js"></script>
@@ -145,11 +141,7 @@
                 <v-icon icon="mdi-map"></v-icon>
               </template>
             </v-list-item>
-            <v-list-item title="Turf.js" to="/turf">
-              <template v-slot:prepend>
-                <v-icon icon="mdi-map-marker-plus"></v-icon>
-              </template>
-            </v-list-item>
+            
             <v-list-item title="OpenRouteService" to="/openrouteservice">
               <template v-slot:prepend>
                 <v-icon icon="mdi-road-variant"></v-icon>
@@ -260,7 +252,6 @@ const routes = [
   { path: '/', component: Libraries },
   { path: '/chartjs', component: Chartjs },
   { path: '/leaflet', component: Leaflet },
-  { path: '/turf', component: Turf },
   { path: '/openrouteservice', component: ORS },
   // { path: '/calendar', component: Calendar },
   { path: '/datepicker', component: DatePicker },

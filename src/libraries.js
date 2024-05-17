@@ -18,27 +18,6 @@ const categories = [
         "highlight": true
       },
       {
-        "title": "React",
-        "subtitle": "A JavaScript library for building user interfaces",
-        "href": "https://reactjs.org/",
-        "release": "29/05/2013",
-        "src": "assets/frameworks/React.png"
-      },
-      {
-        "title": "Ionic",
-        "subtitle": "One codebase. Any platform.",
-        "href": "https://ionicframework.com/",
-        "release": "2013",
-        "src": "assets/libraries/Ionic.png"
-      },
-      {
-        "title": "Meteor",
-        "subtitle": "Meteor is an open source platform for web, mobile, and desktop",
-        "href": "https://www.meteor.com/",
-        "release": "20/01/2012",
-        "src": "assets/frameworks/Meteor.png"
-      },
-      {
         "title": "Ember",
         "subtitle": "A framework for ambitious web developers",
         "href": "https://emberjs.com/",
@@ -60,25 +39,11 @@ const categories = [
         "release": "20/10/2010"
       },
       {
-        "title": "Backbone.js",
-        "subtitle": "Give your JS App some Backbone with Models, Views, Collections, and Events",
-        "href": "https://backbonejs.org/",
-        "release": "13/10/2010",
-        "src": "assets/frameworks/Backbone.png"
-      },
-      {
         "title": "Knockout",
         "subtitle": "Simplify dynamic JavaScript UIs with the Model-View-View-Model (MVVM) pattern",
         "href": "https://knockoutjs.com/",
         "release": "05/07/2010",
         "src": "assets/frameworks/Knockout.png"
-      },
-      {
-        "title": "jQuery",
-        "subtitle": "write less, do more.",
-        "href": "https://jquery.com/",
-        "release": "01/2006",
-        "src": "assets/frameworks/jQuery.png"
       },
       {
         "title": "Dojo",
@@ -88,25 +53,11 @@ const categories = [
         "release": "03/2005 ?"
       },
       {
-        "title": "Prototype",
-        "subtitle": "A foundation for ambitious web user interfaces",
-        "href": "http://prototypejs.org/",
-        "release": "02/2005",
-        "src": "assets/frameworks/Prototype.png"
-      },
-
-      {
         "title": "Framework7",
         "subtitle": "Full featured framework for building iOS, Android & Desktop apps",
         "href": "https://framework7.io/",
         "release": "v3.0.0 Jul 05, 2018",
         "src": "assets/libraries/Framework7.png"
-      },
-      {
-        "title": "Mithril",
-        "subtitle": "Mithril is a modern client-side JavaScript framework for building Single Page Applications",
-        "href": "https://mithril.js.org/",
-        "src": "assets/frameworks/Mithril.png"
       }
     ]
   },
@@ -129,15 +80,6 @@ const categories = [
         "src": "assets/libraries/Babel.png",
         "highlight": true
       },
-      {
-        "title": "ESLint",
-        "subtitle": "The pluggable linting utility for JavaScript and JSX",
-        "href": "https://eslint.org/",
-        "group": "Tools",
-        "highlight": true,
-        "src": "assets/libraries/ESLint.png"
-      },
-    
       {
         "title": "Bootstrap",
         "subtitle": "The most popular HTML, CSS, and JS library in the world",
@@ -249,30 +191,6 @@ const categories = [
         "src": "assets/libraries/NativeScript.png",
         "group": "Mobile"
       },
-
-      {
-        "title": "React Native",
-        "subtitle": "Learn once, write anywhere",
-        "href": "https://facebook.github.io/react-native/",
-        "src": "assets/libraries/React Native.png",
-        "group": "Mobile"
-      },
-
-      {
-        "title": "Papa Parse",
-        "subtitle": "The powerful, in-browser CSV parser for big boys and girls",
-        "href": "https://www.papaparse.com/",
-        "src": "assets/libraries/Papa Parse.png",
-        "group": "Parser"
-      },
-
-      {
-        "title": "RequireJS",
-        "subtitle": "RequireJS is a JavaScript file and module loader",
-        "href": "https://requirejs.org/",
-        "src": "assets/libraries/RequireJS.png",
-        "group": "Tools"
-      },
       {
         "title": "Rollup",
         "subtitle": "Rollup is a module bundler for JavaScript",
@@ -288,7 +206,6 @@ const categories = [
         "group": "Tools"
       },
 
-
       {
         "title": "Underscore",
         "subtitle": "JavaScript's utility _ belt",
@@ -303,21 +220,6 @@ const categories = [
         "src": "assets/libraries/Axios.png",
         "group": "Library",
         "highlight": true
-      },
-    
-      {
-        "title": "Firebase",
-        "subtitle": "Firebase is a platform developed by Google for creating mobile and web applications.",
-        "href": "https://firebase.google.com/",
-        "src": "assets/libraries/Firebase.png",
-        "group": "Other"
-      },
-      {
-        "title": "Flutter",
-        "subtitle": "Beautiful native apps in record time",
-        "href": "https://flutter.dev/",
-        "src": "assets/libraries/Flutter.png",
-        "group": "Other"
       }
     ]
   },
@@ -355,13 +257,6 @@ const categories = [
       },
 
       {
-        "title": "vue-svg-map",
-        "href": "https://victorcazanave.github.io/vue-svg-map/",
-        "src": "assets/libraries/vue-svg-map.png",
-        "group": "Charts"
-      },
-
-      {
         "title": "date-fns",
         "subtitle": "Modern JavaScript date utility library",
         "href": "https://date-fns.org/",
@@ -369,38 +264,11 @@ const categories = [
         "src": "assets/libraries/date-fns.png"
       },
       {
-        "title": "Moment",
-        "subtitle": "Parse, validate, manipulate, and display dates and times in JavaScript.",
-        "href": "https://momentjs.com/",
-        "src": "assets/libraries/Moment.png",
-        "group": "Date"
-      },
-      {
         "title": "Numeral.js",
         "subtitle": "A javascript library for formatting and manipulating numbers",
         "href": "http://numeraljs.com/",
         "src": "assets/libraries/Numeral.png",
         "group": "Number"
-      },
-      {
-        "title": "Voca",
-        "subtitle": "The JavaScript string library",
-        "href": "https://vocajs.com/",
-        "src": "assets/libraries/Voca.png",
-        "group": "String"
-      },
-      {
-        "title": "Handlebars",
-        "subtitle": "Minimal templating on steriods",
-        "href": "https://handlebarsjs.com/",
-        "src": "assets/libraries/Handlebars.png",
-        "group": "Template"
-      },
-      {
-        "title": "Mustache",
-        "href": "https://mustache.github.io/",
-        "src": "assets/libraries/Mustache.png",
-        "group": "Template"
       }
     ]
   },
@@ -484,90 +352,11 @@ const categories = [
         "group": "Database",
         "src": "assets/libraries/pgRouting.png"
       },
-
-      {
-        "title": "GeoServer",
-        "subtitle": "GeoServer is an open source server for sharing geospatial data.",
-        "href": "https://geoserver.org",
-        "group": "Map",
-        "highlight": true,
-        "src": "assets/libraries/GeoServer.png"
-      },
-      {
-        "title": "GeoNetwork",
-        "subtitle": "manage spatially referenced resources",
-        "href": "https://www.geonetwork-opensource.org/",
-        "src": "assets/libraries/GeoNetwork.png"
-      },
-      {
-        "title": "GeoNode [Demo]",
-        "href": "https://master.demo.geonode.org/",
-        "src": "assets/libraries/GeoNode [demo].png"
-      },
-
-      {
-        "title": "Batch geocoder for journalists",
-        "subtitle": "Locations to coordinates at rocket speed",
-        "href": "https://geocode.localfocus.nl/",
-        "src": "assets/libraries/geocode.localfocus.png"
-      },
-
       {
         "title": "Openrouteservice",
         "subtitle": "Openpoiservice allows you to find places of interest around or within given geographic coordinates.",
         "href": "https://openrouteservice.org/",
         "src": "assets/libraries/openrouteservice.png"
-      }
-    ]
-  },
-  {
-    "name": "UI Library",
-    "items": [
-      {
-        "title": "Angular Material",
-        "subtitle": "Material Design components for Angular",
-        "href": "https://material.angular.io/",
-        "highlight": true,
-        "src": "assets/libraries/Angular Material.png"
-      },
-    
-      {
-        "title": "Material-UI",
-        "subtitle": "A popular React UI framework",
-        "href": "https://mui.com/",
-        "highlight": true,
-        "src": "assets/libraries/MUI.png"
-      },
-      {
-        "title": "Ant Design",
-        "subtitle": "A design system for enterprise-level products. Create an efficient and enjoyable work experience.",
-        "href": "https://ant.design/",
-        "src": "assets/libraries/Ant Design.png"
-      },
-      {
-        "title": "Quasar",
-        "subtitle": "Build high-performance VueJS user interfaces in record time",
-        "href": "https://quasar.dev/",
-        "src": "assets/libraries/Quasar.png"
-      },
-
-      {
-        "title": "Element",
-        "subtitle": "A Desktop UI Library",
-        "href": "https://element.eleme.io/#/en-US",
-        "src": "assets/libraries/Element.png"
-      },
-      {
-        "title": "Materialize",
-        "subtitle": "A modern responsive front-end framework based on Material Design",
-        "href": "https://materializecss.com/",
-        "src": "assets/libraries/Materialize.png"
-      },
-      {
-        "title": "Muse-UI",
-        "subtitle": "Based on the Vue 2.0 elegant Material Design UI component library",
-        "href": "https://muse-ui.org/#/en-US",
-        "src": "assets/libraries/Muse-UI.png"
       }
     ]
   },
@@ -610,12 +399,6 @@ const categories = [
         "subtitle": "Quickly integrate Bootstrap v4 components with Vue.js",
         "href": "https://bootstrap-vue.org/",
         "src": "assets/libraries/BootstrapVue.png"
-      },
-      {
-        "title": "Buefy",
-        "subtitle": "Lightweight UI components for Vue.js based on Bulma",
-        "href": "https://buefy.org/",
-        "src": "assets/libraries/Buefy.png"
       },
       {
         "title": "PrimeVue",
@@ -754,6 +537,12 @@ const categories = [
         "src": "https://i.ibb.co/tHBr4Kq/Freak-Zone-Games.png"
       },
       {
+        "title": "DotEmu",
+        "subtitle": "develops and publishes retro-inspired games",
+        "href": "https://www.dotemu.com/",
+        "src": "https://i.ibb.co/M7YrBz3/Dotemu.png"
+      },
+      {
         "title": "WayForward",
         "subtitle": "WayForward has become one of the biggest independent developers in the video game industry and home to some of the finest talent in the business.",
         "href": "https://wayforward.com",
@@ -773,7 +562,7 @@ const categories = [
       },
       {
         "title": "Hundred Star",
-        "subtitle": "",
+        "subtitle": "100 People * AAA Games * London",
         "href": "https://hundredstar.games/",
         "src": "assets/screenshots/Hundred Star.png"
       }
@@ -850,13 +639,13 @@ const categories = [
       },
       {
         "title": "Film Threat",
-        "subtitle": "Film Threat is a website that covers indie film news, reviews, interviews, festivals and how-tos.",
+        "subtitle": "Your Independent Movie Guide",
         "href": "https://filmthreat.com/",
         "src": "assets/screenshots/Film Threat.png"
       },
       {
         "title": "Film Threat - The D-Files",
-        "subtitle": "",
+        "subtitle": "DISNEY'S DEATH WISH",
         "href": "https://filmthreat.com/tag/the-d-files/",
         "src": "assets/screenshots/Film Threat - The D-Files.png"
       },
@@ -865,6 +654,12 @@ const categories = [
         "subtitle": "Forced DEI is becoming unbearable on games. It's time to push back. Vote with your wallet!",
         "href": "https://deidetected.com/",
         "src": "https://i.ibb.co/ncsg8sd/DEI-Detected.png"
+      },
+      {
+        "title": "The Free Press",
+        "subtitle": "FOR FREE PEOPLE",
+        "href": "https://www.thefp.com/",
+        "src": "assets/screenshots/The Free Press.png"
       },
       {
         "title": "Zero Punctuation",

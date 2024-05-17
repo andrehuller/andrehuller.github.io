@@ -22,9 +22,9 @@ const Libraries = {
                   <v-col
                     v-for="item in category.items"
                     :key="item.title"
-                    cols="auto"
-                    md="3"
-                    class="pa-3 d-flex flex-column"
+                    cols="12"
+                    lg="3" md="4" sm="6"
+                    class="pa-2 d-flex flex-column"
                   >
                     <v-card :href="item.href" class="elevation-5 fill-height">
                       <!-- <a :href="item.href" target="_blank"></a> -->

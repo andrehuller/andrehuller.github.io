@@ -71,22 +71,33 @@ const FPSGames = {
           </v-card>
         </v-col>
 
-        </v-col>
-        <v-col lg="6">
+        <v-col lg="12">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>Valve</v-card-title>
             <v-card-text>
               <v-row>
-                <v-col lg="6">
+                <v-col lg="3">
                   <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Half-Life.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Half-Life (1998)</b></v-card-text>
                   </v-card>
                 </v-col>
-                <v-col lg="6">
+                <v-col lg="3">
                   <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Half-Life 2.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Half-Life 2 (2004)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Portal.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Portal (2007)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Portal 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Portal 2 (2011)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -157,7 +168,6 @@ const FPSGames = {
                 </v-col>
               </v-row>
             </v-card-text>
-          </v-card>
           </v-card>
         </v-col>
 
@@ -269,25 +279,27 @@ const FPSGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/DUSK.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>DUSK (2018)</b></v-card-text>
+                    <!-- Developer: David Szymanski	-->
                   </v-card>
                 </v-col>
                 <v-col lg="4">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/AMID EVIL.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>AMID EVIL (2019)</b></v-card-text>
+                    <!-- Developer: Indefatigable -->
                   </v-card>
                 </v-col>
                 <v-col lg="4">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/ULTRAKILL.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>ULTRAKILL (2020)</b></v-card-text>
+                    <!-- Developer: Arsi "Hakita" Patala -->
                   </v-card>
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
-
 
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
@@ -298,6 +310,54 @@ const FPSGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/BPM Bullets Per Minute.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>BPM: Bullets Per Minute (2020)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Jasozz Games</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card>
+                    <v-img src="assets/gamesps4/CULTIC.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>CULTIC (2022)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Flying Wild Hog</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Evil West.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Evil West (2022)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Trepang Studios</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Trepang2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Trepang2 (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
