@@ -185,35 +185,6 @@ const categories = [
         "group": "Languages"
       },
       {
-        "title": "NativeScript",
-        "subtitle": "Create Native iOS and Android Apps with JavaScript",
-        "href": "https://www.nativescript.org/",
-        "src": "assets/libraries/NativeScript.png",
-        "group": "Mobile"
-      },
-      {
-        "title": "Rollup",
-        "subtitle": "Rollup is a module bundler for JavaScript",
-        "href": "https://rollupjs.org/guide/en/",
-        "src": "assets/libraries/Rollup.png",
-        "group": "Tools"
-      },
-      {
-        "title": "Webpack",
-        "subtitle": "Webpack is an open-source JavaScript module bundler",
-        "href": "https://webpack.js.org/",
-        "src": "assets/libraries/webpack.png",
-        "group": "Tools"
-      },
-
-      {
-        "title": "Underscore",
-        "subtitle": "JavaScript's utility _ belt",
-        "href": "https://underscorejs.org/",
-        "src": "assets/libraries/Underscore.png",
-        "group": "Utilities"
-      },
-      {
         "title": "axios",
         "subtitle": "Promise based HTTP client for the browser and node.js",
         "href": "https://axios-http.com/",

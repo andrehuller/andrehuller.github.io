@@ -319,22 +319,6 @@ const FPSGames = {
 
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Jasozz Games</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/CULTIC.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>CULTIC (2022)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="3">
-          <v-card color="blue-grey-lighten-4">
             <v-card-title>Flying Wild Hog</v-card-title>
             <v-card-text>
               <v-row>

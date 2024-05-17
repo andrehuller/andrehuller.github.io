@@ -115,6 +115,36 @@ const StagingArea = {
         </v-col>
       </v-row>
 
+      <v-row>
+        <v-col lg="9">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Amanita Design</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="4">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Machinarium.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Machinarium (2009)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="4">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Botanicula.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Botanicula (2012)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="4">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Samorost 1.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Samorost 1 (2021)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
       <!-- Inglorious Rex creator Shane Davis, Godlike and Graveyard Shift creator Jon Malin, and Cyberfrog creator Ethan Van Sciver -->
       <!-- https://comicsgate.org/ -->
 
