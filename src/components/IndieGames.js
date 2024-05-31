@@ -324,15 +324,6 @@ const IndieGames = {
 
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Vernal Edge.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Vernal Edge (2023)</b></v-card-text>
-                    <!-- developer: Hello Penguin Team LLC -->
-                    <!-- publisher: "PID Games" -->
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Berserk Boy.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Berserk Boy (2024)</b></v-card-text>
                   </v-card>
@@ -785,7 +776,6 @@ const IndieGames = {
             </v-card-text>
           </v-card>
         </v-col>
-
 
 <!--
 LIMBO (2011)

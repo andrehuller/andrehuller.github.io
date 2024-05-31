@@ -140,7 +140,20 @@ const StagingArea = {
                   </v-card>
                 </v-col>
               </v-row>
+
+
             </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col lg="3">
+          <v-card>
+            <v-img src="assets/gamesps4/Vernal Edge.jpg" height="176.55" cover></v-img>
+            <v-card-text><b>Vernal Edge (2023)</b></v-card-text>
+            <!-- developer: Hello Penguin Team LLC -->
+            <!-- publisher: "PID Games" -->
           </v-card>
         </v-col>
       </v-row>

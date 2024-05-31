@@ -14,8 +14,7 @@ const categories = [
         "subtitle": "The Progressive JavaScript Framework",
         "href": "https://vuejs.org",
         "src": "assets/frameworks/Vue.png",
-        "release": "02/2014",
-        "highlight": true
+        "release": "02/2014"
       },
       {
         "title": "Ember",
@@ -68,44 +67,25 @@ const categories = [
         "title": "Standard.js",
         "subtitle": "JavaScript Standard Style",
         "href": "https://standardjs.com/",
-        "group": "Formatting",
-        "src": "assets/libraries/Standard.png",
-        "highlight": true
+        "src": "assets/libraries/Standard.png"
       },
       {
         "title": "Babel",
         "subtitle": "Babel is a JavaScript compiler",
         "href": "https://babeljs.io/",
-        "group": "Tools",
-        "src": "assets/libraries/Babel.png",
-        "highlight": true
+        "src": "assets/libraries/Babel.png"
       },
       {
         "title": "Bootstrap",
         "subtitle": "The most popular HTML, CSS, and JS library in the world",
         "href": "https://getbootstrap.com/",
-        "group": "Library",
         "src": "assets/libraries/Bootstrap.png"
-      },
-    
-    
-    
-      {
-        "title": "GitLab",
-        "subtitle": "GitLab named a Leader in Cloud-Native CI",
-        "version": "11.11.8",
-        "href": "https://about.gitlab.com/",
-        "group": "Software",
-        "highlight": true,
-        "src": "assets/libraries/GitLab.png"
       },
     
       {
         "title": "Lodash",
         "subtitle": "A modern JavaScript utility library delivering modularity, performance & extras",
         "href": "https://lodash.com/",
-        "group": "Utilities",
-        "highlight": true,
         "src": "assets/libraries/Lodash.png"
       },
 
@@ -115,82 +95,48 @@ const categories = [
         "src": "assets/libraries/OpenJS Foundation.png"
       },
       {
-        "title": "The Linux Foundation",
-        "href": "https://www.linuxfoundation.org/",
-        "group": "Foundations",
-        "src": "assets/libraries/Linux Foundation.png"
-      },
-
-      {
         "title": "Node.js",
         "subtitle": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine",
         "href": "https://nodejs.org/en/",
-        "group": "Software",
-        "src": "assets/libraries/Node.png",
-        "highlight": true
+        "src": "assets/libraries/Node.png"
       },
       {
         "title": "npm",
         "subtitle": "npm is a package manager for the JavaScript programming language",
         "href": "https://www.npmjs.com/",
-        "src": "assets/libraries/npm.png",
-        "group": "Software",
-        "highlight": true
+        "src": "assets/libraries/npm.png"
       },
       {
         "title": "pgAdmin",
         "subtitle": "administration and development platform for PostgreSQL",
         "href": "https://www.pgadmin.org/",
-        "src": "assets/libraries/pgAdmin.png",
-        "group": "Database",
-        "highlight": true
+        "src": "assets/libraries/pgAdmin.png"
       },
 
       {
         "title": "PostgreSQL",
         "subtitle": "The World's Most Advanced Open Source Relational Database",
         "href": "https://www.postgresql.org",
-        "src": "assets/libraries/PostgreSQL.png",
-        "group": "Database",
-        "highlight": true
+        "src": "assets/libraries/PostgreSQL.png"
       },
 
-      {
-        "title": "apiDoc",
-        "subtitle": "Inline Documentation for RESTful web APIs",
-        "href": "http://apidocjs.com/",
-        "src": "assets/libraries/apiDoc.png",
-        "group": "Documentation"
-      },
-      {
-        "title": "JSDoc",
-        "subtitle": "API documentation generator for JavaScript",
-        "href": "https://jsdoc.app/",
-        "src": "assets/libraries/JSDoc.png",
-        "group": "Documentation",
-        "highlight": true
-      },
       {
         "title": "Sass",
         "subtitle": "Syntactically Awesome Style Sheets",
         "href": "https://sass-lang.com/",
-        "src": "assets/libraries/Sass.png",
-        "group": "Languages"
+        "src": "assets/libraries/Sass.png"
       },
       {
         "title": "TypeScript",
         "subtitle": "Typed JavaScript at Any Scale",
         "href": "https://www.typescriptlang.org/",
-        "src": "assets/libraries/TypeScript.png",
-        "group": "Languages"
+        "src": "assets/libraries/TypeScript.png"
       },
       {
         "title": "axios",
         "subtitle": "Promise based HTTP client for the browser and node.js",
         "href": "https://axios-http.com/",
-        "src": "assets/libraries/Axios.png",
-        "group": "Library",
-        "highlight": true
+        "src": "assets/libraries/Axios.png"
       }
     ]
   },
@@ -201,29 +147,24 @@ const categories = [
         "title": "Chart.js",
         "subtitle": "Simple yet flexible JavaScript charting for designers & developers",
         "href": "https://www.chartjs.org/",
-        "group": "Charts",
-        "highlight": true,
         "src": "assets/libraries/Chart.js.png"
       },
       {
         "title": "ApexCharts.js",
         "subtitle": "Modern & Interactive Open-source Charts",
         "href": "https://apexcharts.com/",
-        "group": "Charts",
         "src": "assets/libraries/ApexCharts.png"
       },
       {
         "title": "D3.js",
         "subtitle": "Data-Driven Documents",
         "href": "https://d3js.org/",
-        "group": "Data",
         "src": "assets/libraries/D3.js.png"
       },
       {
         "title": "DataTables",
         "subtitle": "Table plug-in for jQuery",
         "href": "https://datatables.net/",
-        "group": "Data",
         "src": "assets/libraries/DataTables.png"
       },
 
@@ -231,15 +172,13 @@ const categories = [
         "title": "date-fns",
         "subtitle": "Modern JavaScript date utility library",
         "href": "https://date-fns.org/",
-        "group": "Date",
         "src": "assets/libraries/date-fns.png"
       },
       {
         "title": "Numeral.js",
         "subtitle": "A javascript library for formatting and manipulating numbers",
         "href": "http://numeraljs.com/",
-        "src": "assets/libraries/Numeral.png",
-        "group": "Number"
+        "src": "assets/libraries/Numeral.png"
       }
     ]
   },
@@ -250,38 +189,19 @@ const categories = [
         "title": "Leaflet",
         "subtitle": "mobile-friendly interactive maps",
         "href": "https://leafletjs.com/",
-        "group": "Map",
-        "src": "assets/libraries/Leaflet.png",
-        "highlight": true
+        "src": "assets/libraries/Leaflet.png"
       },
       {
         "title": "Leaflet Geoman",
         "subtitle": "Geometry editing tools.",
         "href": "https://geoman.io/leaflet-geoman",
-        "src": "assets/libraries/Leaflet-Geoman.png",
-        "install": "npm i @geoman-io/leaflet-geoman-free",
-        "highlight": true
+        "src": "assets/libraries/Leaflet-Geoman.png"
       },
       {
         "title": "Leaflet markercluster",
         "href": "http://leaflet.github.io/Leaflet.markercluster/",
-        "src": "assets/libraries/Leaflet markercluster.png",
-        "highlight": true
+        "src": "assets/libraries/Leaflet markercluster.png"
       },
-      {
-        "title": "Turf.js",
-        "subtitle": "Advanced geospatial analysis for browsers and Node.js",
-        "href": "https://turfjs.org/",
-        "src": "assets/libraries/Turf.png"
-      },
-      {
-        "title": "OpenLayers",
-        "subtitle": "A high-performance, feature-packed library for all your mapping needs",
-        "href": "https://openlayers.org/",
-        "group": "Map",
-        "src": "assets/libraries/OpenLayers.png"
-      },
-
       {
         "title": "ColorBrewer",
         "subtitle": "Color Advice for Maps",
@@ -293,35 +213,11 @@ const categories = [
         "href": "https://mapicons.mapsmarker.com/",
         "src": "assets/libraries/Map Icons.png"
       },
-
-      {
-        "title": "Pelias",
-        "subtitle": "A modular, open-source search engine for our world.",
-        "href": "https://www.pelias.io/",
-        "src": "assets/libraries/Pelias Geocoder.png"
-      },
-
       {
         "title": "VROOM",
         "subtitle": "Vehicle Routing Open-source Optimization Machine",
         "href": "http://vroom-project.org/",
         "src": "assets/libraries/VROOM.png"
-      },
-
-      {
-        "title": "PostGIS",
-        "subtitle": "Spatial and Geographic Objects for PostgreSQL",
-        "href": "https://postgis.net/",
-        "group": "Map",
-        "highlight": true,
-        "src": "assets/libraries/PostGIS.png"
-      },
-      {
-        "title": "pgRouting",
-        "subtitle": "Open Source Routing Library",
-        "href": "https://pgrouting.org",
-        "group": "Database",
-        "src": "assets/libraries/pgRouting.png"
       },
       {
         "title": "Openrouteservice",
@@ -338,32 +234,19 @@ const categories = [
         "title": "Vue CLI",
         "subtitle": "Standard Tooling for Vue.js Development",
         "href": "https://cli.vuejs.org/",
-        "src": "assets/libraries/Vue CLI.png",
-        "group": "Vue",
-        "highlight": true
+        "src": "assets/libraries/Vue CLI.png"
       },
       {
         "title": "Vue Router",
         "subtitle": "Vue Router is the official router for Vue.js",
         "href": "https://router.vuejs.org/",
-        "src": "assets/libraries/Vue Router.png",
-        "group": "Vue",
-        "highlight": true
+        "src": "assets/libraries/Vue Router.png"
       },
       {
         "title": "Vuex",
         "subtitle": "Vuex is a state management pattern + library for Vue.js applications",
         "href": "https://vuex.vuejs.org/",
-        "src": "assets/libraries/Vuex.png",
-        "group": "Vue",
-        "highlight": true
-      },
-      {
-        "title": "NativeScript-Vue",
-        "subtitle": "Truly native apps using Vue.js and NativeScript",
-        "href": "https://nativescript-vue.org/",
-        "src": "assets/libraries/NativeScript-Vue.png",
-        "group": "Mobile"
+        "src": "assets/libraries/Vuex.png"
       },
       {
         "title": "BootstrapVue",
@@ -378,16 +261,9 @@ const categories = [
         "src": "assets/libraries/PrimeVUE.png"
       },
       {
-        "title": "Vue Material",
-        "subtitle": "Material Design for Vue.js",
-        "href": "https://vuematerial.io/",
-        "src": "assets/libraries/Vue Material.png"
-      },
-      {
         "title": "Vuetify",
         "subtitle": "Material Design Component Framework",
         "href": "https://vuetifyjs.com/en/",
-        "highlight": true,
         "src": "assets/libraries/Vuetify.png"
       }
     ]
