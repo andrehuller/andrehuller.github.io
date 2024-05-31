@@ -269,6 +269,40 @@ const IndieGames = {
 
         <v-col lg="12">
           <v-card color="blue-grey-lighten-4">
+            <v-card-title>JoyMasher</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Oniken Unstoppable Edition.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Oniken: Unstoppable Edition (2014)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Odallus The Dark Call.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Odallus: The Dark Call (2015)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Blazing Chrome.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Blazing Chrome (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Vengeful Guardian Moonrider.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Vengeful Guardian: Moonrider (2023)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="12">
+          <v-card color="blue-grey-lighten-4">
             <v-card-title>Supergiant Games</v-card-title>
             <v-card-text>
               <v-row>
@@ -340,15 +374,15 @@ const IndieGames = {
 
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Mouse.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Mouse (2025)</b></v-card-text>
+                    <v-img src="assets/gamesps4/Mullet Mad Jack.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>MULLET MAD JACK (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
 
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Mullet Mad Jack.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>MULLET MAD JACK</b></v-card-text>
+                    <v-img src="assets/gamesps4/Mouse.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Mouse (2025)</b></v-card-text>
                   </v-card>
                 </v-col>
 
@@ -356,7 +390,6 @@ const IndieGames = {
             </v-card-text>
           </v-card>
         </v-col>
-
 
         <v-col lg="6">
           <v-card color="blue-grey-lighten-4">
@@ -776,6 +809,26 @@ const IndieGames = {
             </v-card-text>
           </v-card>
         </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>NWO Wars Team</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card>
+                    <v-img src="assets/gamesps4/Alex Jones NWO Wars.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Alex Jones: NWO Wars (2024)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+NEOWIZ
+Lies of P (2023)
+
 
 <!--
 LIMBO (2011)

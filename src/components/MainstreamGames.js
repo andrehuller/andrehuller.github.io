@@ -471,11 +471,28 @@ const MainstreamGames = {
                     <v-card-text><b>Dead Rising 2 (2010)</b></v-card-text>
                   </v-card>
                 </v-col>
-
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>NEOWIZ</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Lies of P.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Lies of P (2023)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+
       </v-row>
     </v-container>
   `
