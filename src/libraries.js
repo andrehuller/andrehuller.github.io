@@ -88,12 +88,6 @@ const categories = [
         "href": "https://lodash.com/",
         "src": "assets/libraries/Lodash.png"
       },
-
-      {
-        "title": "OpenJS Foundation",
-        "href": "https://openjsf.org/",
-        "src": "assets/libraries/OpenJS Foundation.png"
-      },
       {
         "title": "Node.js",
         "subtitle": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine",
@@ -118,13 +112,6 @@ const categories = [
         "subtitle": "The World's Most Advanced Open Source Relational Database",
         "href": "https://www.postgresql.org",
         "src": "assets/libraries/PostgreSQL.png"
-      },
-
-      {
-        "title": "Sass",
-        "subtitle": "Syntactically Awesome Style Sheets",
-        "href": "https://sass-lang.com/",
-        "src": "assets/libraries/Sass.png"
       },
       {
         "title": "TypeScript",

@@ -11,6 +11,7 @@ const IndieGames = {
               <v-row>
                 <v-col lg="6">
                   <game-card title="Cuphead" year="2017" src="Cuphead" active="true"></game-card>
+                  <!-- https://nichegamer.com/reviews/cuphead-review/ 10 -->
                 </v-col>
                 <v-col lg="6">
                   <v-card color="blue-grey-darken-1">
@@ -58,6 +59,7 @@ const IndieGames = {
                     <v-img src="assets/gamesps4/Sonic Mania.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Sonic Mania (2017)</b></v-card-text>
                   </v-card>
+                  <!-- https://nichegamer.com/reviews/sonic-mania-review/ 9 -->
                 </v-col>
                 <v-col lg="6">
                   <v-card color="blue-grey-darken-1">
@@ -199,6 +201,7 @@ const IndieGames = {
                     <v-img src="assets/gamesps4/Spectacular Sparky.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Spectacular Sparky (2021)</b></v-card-text>
                   </v-card>
+                  <!-- https://nichegamer.com/reviews/spectacular-sparky-review/ 8 -->
                 </v-col>
 
               </v-row>
@@ -289,6 +292,7 @@ const IndieGames = {
                     <v-img src="assets/gamesps4/Blazing Chrome.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Blazing Chrome (2019)</b></v-card-text>
                   </v-card>
+                  <!-- https://nichegamer.com/reviews/blazing-chrome-review/ 8.5 -->
                 </v-col>
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
@@ -353,6 +357,8 @@ const IndieGames = {
                     <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
                     <!-- developer: "Domesticated Ant Games" -->
                     <!-- publisher: "PID Games" -->
+
+                    <!-- https://nichegamer.com/reviews/gravity-circuit-review/ 9.5 -->
                   </v-card>
                 </v-col>
 
@@ -413,22 +419,29 @@ const IndieGames = {
           </v-card>
         </v-col>
 
-        <v-col lg="6">
+        <v-col lg="9">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>Maddy Makes Games Inc.</v-card-title>
             <v-card-text>
               <v-row>
-                <v-col lg="6">
+                <v-col lg="4">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/TowerFall Ascension.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>TowerFall Ascension (2014)</b></v-card-text>
                   </v-card>
                 </v-col>
-                <v-col lg="6">
+                <v-col lg="4">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Celeste.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Celeste (2018)</b></v-card-text>
                   </v-card>
+                </v-col>
+                <v-col lg="4">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Earthblade.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Earthblade (Coming soon)</b></v-card-text>
+                  </v-card>
+                  <!-- developer/publisher: Extremely OK Games, Ltd. -->
                 </v-col>
               </v-row>
             </v-card-text>
@@ -489,6 +502,7 @@ const IndieGames = {
                     <v-img src="assets/gamesps4/Dead Cells.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Dead Cells (2018)</b></v-card-text>
                   </v-card>
+                  <!-- https://nichegamer.com/reviews/dead-cells-review/ 8.5 -->
                 </v-col>
 
                 <v-col lg="6">
@@ -519,6 +533,7 @@ const IndieGames = {
                     <v-card-text><b>Sea of Stars (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
+                <!-- https://nichegamer.com/reviews/sea-of-stars-review/ -->
               </v-row>
             </v-card-text>
           </v-card>
@@ -563,6 +578,7 @@ const IndieGames = {
                     <v-img src="assets/gamesps4/Cyber Shadow.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Cyber Shadow (2021)</b></v-card-text>
                   </v-card>
+                  <!-- https://nichegamer.com/reviews/cyber-shadow-review/ 8 -->
                 </v-col>
               </v-row>
             </v-card-text>
@@ -812,6 +828,22 @@ const IndieGames = {
 
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
+            <v-card-title>ThinkingStars</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <v-card>
+                    <v-img src="assets/gamesps4/ANNO Mutationem.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>ANNO: Mutationem (2022)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
             <v-card-title>NWO Wars Team</v-card-title>
             <v-card-text>
               <v-row>
@@ -825,10 +857,6 @@ const IndieGames = {
             </v-card-text>
           </v-card>
         </v-col>
-
-NEOWIZ
-Lies of P (2023)
-
 
 <!--
 LIMBO (2011)

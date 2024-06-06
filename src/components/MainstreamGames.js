@@ -27,6 +27,12 @@ const MainstreamGames = {
                 </v-col>
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Resident Evil 5.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Resident Evil 5 (2009)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="3">
+                  <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Resident Evil 7 Biohazard.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Resident Evil 7 Biohazard (2017)</b></v-card-text>
                   </v-card>
@@ -136,6 +142,8 @@ const MainstreamGames = {
                     <v-img src="assets/gamesps4/The Last of Us.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>The Last of Us (2013)</b></v-card-text>
                   </v-card>
+
+                  <!-- https://nichegamer.com/reviews/the-last-of-us-remastered-review/ 9 -->
                 </v-col>
               </v-row>
             </v-card-text>
@@ -240,7 +248,7 @@ const MainstreamGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card color="blue-grey-darken-1">
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Wolfenstein The New Order.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Wolfenstein: The New Order (2014)</b></v-card-text>
                   </v-card>
