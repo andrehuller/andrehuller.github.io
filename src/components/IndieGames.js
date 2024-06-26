@@ -154,7 +154,7 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Eagle Island Twist.jpg"  height="176.55" cover></v-img>
                     <v-card-text><b>Eagle Island Twist (2019)</b></v-card-text>
                   </v-card>
@@ -197,7 +197,7 @@ const IndieGames = {
                   </v-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Spectacular Sparky.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Spectacular Sparky (2021)</b></v-card-text>
                   </v-card>
