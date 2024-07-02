@@ -99,13 +99,9 @@ const MainstreamGames = {
       </v-row>
 
       <v-row>
-
-      </v-row>
-
-      <v-row>
         <v-col lg="9">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Rocksteady Studios</v-card-title>
+            <v-card-title><del>Rocksteady Studios</del></v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="4">

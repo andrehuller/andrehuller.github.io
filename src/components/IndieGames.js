@@ -96,6 +96,30 @@ const IndieGames = {
 
         <v-col lg="6">
           <v-card color="blue-grey-lighten-4">
+            <v-card-title>Motion Twin</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-lighten-5">
+                    <v-img src="assets/gamesps4/Dead Cells.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Dead Cells (2018)</b></v-card-text>
+                  </v-card>
+                  <!-- https://nichegamer.com/reviews/dead-cells-review/ 8.5 -->
+                </v-col>
+
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Windblown.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Windblown (2024)</b></v-card-text>
+                  </v-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
             <v-card-title>
               Playtonic
             </v-card-title>
@@ -115,30 +139,6 @@ const IndieGames = {
                     <v-card-text>
                       <b>Yooka-Laylee and the Impossible Lair (2019)</b>
                     </v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>
-              The Game Kitchen
-            </v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Blasphemous.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blasphemous (2019)</b></v-card-text>
-                  </v-card>
-                </v-col>
-                <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Blasphemous 2.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blasphemous 2 (2023)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -382,6 +382,7 @@ const IndieGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Mullet Mad Jack.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>MULLET MAD JACK (2024)</b></v-card-text>
+                    <!-- https://nichegamer.com/reviews/mullet-madjack-review/ 10 -->
                   </v-card>
                 </v-col>
 
@@ -392,6 +393,30 @@ const IndieGames = {
                   </v-card>
                 </v-col>
 
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="6">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>
+              The Game Kitchen
+            </v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Blasphemous.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Blasphemous (2019)</b></v-card-text>
+                  </v-card>
+                </v-col>
+                <v-col lg="6">
+                  <v-card color="blue-grey-darken-1">
+                    <v-img src="assets/gamesps4/Blasphemous 2.jpg" height="176.55" cover></v-img>
+                    <v-card-text><b>Blasphemous 2 (2023)</b></v-card-text>
+                  </v-card>
+                </v-col>
               </v-row>
             </v-card-text>
           </v-card>
@@ -485,30 +510,6 @@ const IndieGames = {
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Solar Ash.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Solar Ash (2022)</b></v-card-text>
-                  </v-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="6">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>Motion Twin</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Dead Cells.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Dead Cells (2018)</b></v-card-text>
-                  </v-card>
-                  <!-- https://nichegamer.com/reviews/dead-cells-review/ 8.5 -->
-                </v-col>
-
-                <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Windblown.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Windblown (2024)</b></v-card-text>
                   </v-card>
                 </v-col>
               </v-row>

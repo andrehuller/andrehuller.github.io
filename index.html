@@ -93,6 +93,7 @@
     <script src="./src/components/FPSGames.js"></script>
     <script src="./src/components/IndieGames.js"></script>
     <script src="./src/components/MainstreamGames.js"></script>
+    <script src="./src/components/PersonalRecommendations.js"></script>
     
     <script src="./src/components/StagingArea.js"></script>
     
@@ -231,7 +232,6 @@
             </v-list-item>
           </v-list>
         </v-navigation-drawer>
-        
         <v-main class="red">
           <router-view v-slot="{ Component }">
             <keep-alive>
@@ -267,6 +267,7 @@ const routes = [
   { path: '/fpsgames', component: FPSGames },
   { path: '/indiegames', component: IndieGames },
   { path: '/mainstreamgames', component: MainstreamGames },
+  { path: '/personalrecommendations', component: PersonalRecommendations }
 ]
 
 const router = VueRouter.createRouter({
