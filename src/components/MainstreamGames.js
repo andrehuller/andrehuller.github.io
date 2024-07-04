@@ -65,7 +65,7 @@ const MainstreamGames = {
       <v-row>
         <v-col lg="12">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Volition</v-card-title>
+            <v-card-title><del>Volition</del></v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="3">

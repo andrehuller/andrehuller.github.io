@@ -381,13 +381,46 @@ app.component('date-picker', {
 })
 
 app.component('game-card', {
-  props: ['title', 'year', 'src', 'active'],
+  props: ['title', 'year', 'src', 'active', 'goghref', 'nichegamerhref', 'nichegamercaption', 'steam'],
   template: `
-    <v-card :color="active == 'true' ? 'blue-grey-lighten-5' : 'blue-grey-darken-1'">
+    <v-card color="blue-grey-lighten-5"><!-- :color="active == 'true' ? 'blue-grey-lighten-5' : 'blue-grey-darken-1'" -->
       <v-img :src="'assets/gamesps4/' + src + '.jpg'" height="176.55" cover></v-img>
       <v-card-text>
-        <b>{{ title }} ({{ year }})</b>
+        <b>{{ title }}<template v-if="year"> ({{ year }})</template></b>
+        <template v-if="active == 'true'">
+          &nbsp;<v-icon size="x-small">mdi-star</v-icon>
+        </template>
       </v-card-text>
+      <v-card-actions v-if="nichegamerhref">
+        <v-btn
+          :href="nichegamerhref"
+          append-icon="mdi-chevron-right"
+          color="red-lighten-2"
+          :text="nichegamercaption"
+          variant="outlined"
+          block
+        ></v-btn>
+      </v-card-actions>
+      <v-card-actions v-if="goghref">
+        <v-btn
+          :href="goghref"
+          append-icon="mdi-chevron-right"
+          color="red-lighten-2"
+          text="Purchase"
+          variant="outlined"
+          block
+        ></v-btn>
+      </v-card-actions>
+      <v-card-actions v-if="steam">
+        <v-btn
+          :href="steam"
+          append-icon="mdi-chevron-right"
+          color="red-lighten-2"
+          text="Steam"
+          variant="outlined"
+          block
+        ></v-btn>
+      </v-card-actions>
     </v-card>
   `
 })

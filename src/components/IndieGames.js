@@ -10,16 +10,22 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <game-card title="Cuphead" year="2017" src="Cuphead" active="true"></game-card>
+                  <game-card
+                    title="Cuphead"
+                    year="2017"
+                    src="Cuphead"
+                    active="true"
+                    goghref="https://www.gog.com/en/game/cuphead"
+                  ></game-card>
                   <!-- https://nichegamer.com/reviews/cuphead-review/ 10 -->
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Cuphead - The Delicious Last Course.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Cuphead - The Delicious Last Course (2022)</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Cuphead - The Delicious Last Course"
+                    year="2022"
+                    src="Cuphead - The Delicious Last Course"
+                    goghref="https://www.gog.com/en/game/cuphead_the_delicious_last_course"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -34,15 +40,20 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <game-card title="Hollow Knight" year="2017" src="Hollow Knight" active="true"></game-card>
+                  <game-card
+                    title="Hollow Knight"
+                    year="2017"
+                    src="Hollow Knight"
+                    active="true"
+                    goghref="https://www.gog.com/en/game/hollow_knight"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Hollow Knight Silksong.jpg" height="176.55" cover></v-img>
-                   <v-card-text>
-                      <b>Hollow Knight: Silksong</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Hollow Knight: Silksong"
+                    src="Hollow Knight Silksong"
+                    goghref="https://www.gog.com/en/game/hollow_knight_silksong"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -50,22 +61,27 @@ const IndieGames = {
         </v-col>
 
         <v-col lg="6">
-          <v-card color="blue-grey-lighten-4">
+          <v-card class="fill-height" color="blue-grey-lighten-4">
             <v-card-title>Christian Whitehead</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Sonic Mania.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Sonic Mania (2017)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Sonic Mania"
+                    year="2017"
+                    src="Sonic Mania"
+                    active="true"
+                    steam="https://store.steampowered.com/app/584400/Sonic_Mania/"
+                  ></game-card>
                   <!-- https://nichegamer.com/reviews/sonic-mania-review/ 9 -->
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Freedom Planet 2.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Freedom Planet 2 (2022)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Freedom Planet 2"
+                    year="2022"
+                    src="Freedom Planet 2"
+                    steam="https://store.steampowered.com/app/595500/Freedom_Planet_2/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -78,16 +94,21 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Ion Fury.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Ion Fury (2019)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Ion Fury"
+                    year="2019"
+                    src="Ion Fury"
+                    active="true"
+                    goghref="https://www.gog.com/en/game/ion_fury"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Ion Fury Aftershock.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Ion Fury: Aftershock (2023)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Ion Fury: Aftershock"
+                    year="2023"
+                    src="Ion Fury Aftershock"
+                    goghref="https://www.gog.com/en/game/ion_fury_aftershock"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -95,23 +116,27 @@ const IndieGames = {
         </v-col>
 
         <v-col lg="6">
-          <v-card color="blue-grey-lighten-4">
+          <v-card class="fill-height" color="blue-grey-lighten-4">
             <v-card-title>Motion Twin</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Dead Cells.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Dead Cells (2018)</b></v-card-text>
-                  </v-card>
-                  <!-- https://nichegamer.com/reviews/dead-cells-review/ 8.5 -->
+                  <game-card
+                    title="Dead Cells"
+                    year="2018"
+                    src="Dead Cells"
+                    goghref="https://www.gog.com/en/game/dead_cells"
+                  ></game-card>
+                  <!-- https://nichegamer.com/reviews/dead-cells-review/ 8.5 -->                  
                 </v-col>
 
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Windblown.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Windblown (2024)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Windblown"
+                    year="2024"
+                    src="Windblown"
+                    steam="https://store.steampowered.com/app/1911610/Windblown/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -126,20 +151,20 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Yooka-Laylee.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Yooka-Laylee (2017)</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Yooka-Laylee"
+                    year="2017"
+                    src="Yooka-Laylee"
+                    goghref="https://www.gog.com/en/game/yookalaylee"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Yooka-Laylee and the Impossible Lair.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Yooka-Laylee and the Impossible Lair (2019)</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Yooka-Laylee and the Impossible Lair"
+                    year="2019"
+                    src="Yooka-Laylee and the Impossible Lair"
+                    goghref="https://www.gog.com/en/game/yookalaylee_and_the_impossible_lair"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -154,56 +179,74 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Eagle Island Twist.jpg"  height="176.55" cover></v-img>
-                    <v-card-text><b>Eagle Island Twist (2019)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Eagle Island Twist"
+                    year="2019"
+                    src="Eagle Island Twist"
+                    active="true"
+                    goghref="https://www.gog.com/en/game/eagle_island"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Angry Video Game Nerd I & II Deluxe.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Angry Video Game Nerd I & II Deluxe (2020)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Angry Video Game Nerd I & II Deluxe"
+                    year="2020"
+                    src="Angry Video Game Nerd I & II Deluxe"
+                    active="true"
+                    goghref="https://www.gog.com/en/game/angry_video_game_nerd_i_ii_deluxe"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Prison City.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Prison City (2023)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Prison City"
+                    year="2023"
+                    src="Prison City"
+                    active="true"
+                    goghref="https://www.gog.com/en/game/prison_city"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Iron Meat.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Iron Meat (2024)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Iron Meat"
+                    year="2024"
+                    src="Iron Meat"
+                    steam="https://store.steampowered.com/app/1157740/Iron_Meat/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Toxic Crusaders.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Toxic Crusaders (2024)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Toxic Crusaders"
+                    year="2024"
+                    src="Toxic Crusaders"
+                    steam="https://store.steampowered.com/app/2303850/Toxic_Crusaders/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/The Transylvania Adventure of Simon Quest.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>The Transylvania Adventure of Simon Quest (2025)</b></v-card-text>
-                  </v-card>
-                </v-col>
-
-                <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Knight Terrors.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Knight Terrors (2017)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="The Transylvania Adventure of Simon Quest"
+                    year="2025"
+                    src="The Transylvania Adventure of Simon Quest"
+                    steam="https://store.steampowered.com/app/2749920/The_Transylvania_Adventure_of_Simon_Quest/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Spectacular Sparky.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Spectacular Sparky (2021)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Knight Terrors"
+                    year="2017"
+                    src="Knight Terrors"
+                    steam="https://store.steampowered.com/app/732770/Knight_Terrors/"
+                  ></game-card>
+                </v-col>
+                <v-col lg="3">
+                  <game-card
+                    title="Spectacular Sparky"
+                    year="2021"
+                    src="Spectacular Sparky"
+                    active="true"
+                    goghref="https://www.gog.com/en/game/spectacular_sparky"
+                  ></game-card>
                   <!-- https://nichegamer.com/reviews/spectacular-sparky-review/ 8 -->
                 </v-col>
-
               </v-row>
             </v-card-text>
           </v-card>
@@ -217,53 +260,52 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Day of the Tentacle.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Day of the Tentacle (1993)</b>
-                    </v-card-text>
-                    <!-- 1993 -->
-                  </v-card>
+                  <game-card
+                    title="Day of the Tentacle"
+                    year="1993"
+                    src="Day of the Tentacle"
+                    goghref="https://www.gog.com/en/game/day_of_the_tentacle_remastered"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Full Throttle.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Full Throttle (1995)</b>
-                    </v-card-text>
-                    <!-- 1995 -->
-                  </v-card>
+                  <game-card
+                    title="Full Throttle"
+                    year="1995"
+                    src="Full Throttle"
+                    goghref="https://www.gog.com/en/game/full_throttle_remastered"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Grim Fandango.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Grim Fandango (1998)</b>
-                    </v-card-text>
-                    <!-- 1998 -->
-                  </v-card>
+                  <game-card
+                    title="Grim Fandango"
+                    year="1998"
+                    src="Grim Fandango"
+                    goghref="https://www.gog.com/en/game/grim_fandango_remastered"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Psychonauts.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Psychonauts (2005)</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Psychonauts"
+                    year="2005"
+                    src="Psychonauts"
+                    goghref="https://www.gog.com/en/game/psychonauts"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Brutal Legend.jpg" height="176.55" cover></v-img>
-                    <v-card-text>
-                      <b>Brutal Legend (2013)</b>
-                    </v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Brutal Legend"
+                    year="2013"
+                    src="Brutal Legend"
+                    goghref="https://www.gog.com/en/game/brutal_legend"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Broken Age.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Broken Age (2014)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Broken Age"
+                    year="2014"
+                    src="Broken Age"
+                    goghref="https://www.gog.com/en/game/broken_age"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -276,93 +318,40 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Oniken Unstoppable Edition.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Oniken: Unstoppable Edition (2014)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/oniken"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                  </v-card>
+                  <game-card
+                    title="Oniken: Unstoppable Edition"
+                    year="2014"
+                    src="Oniken Unstoppable Edition"
+                    goghref="https://www.gog.com/en/game/oniken"
+                  ></game-card>
                 </v-col>
-
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Odallus The Dark Call.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Odallus: The Dark Call (2015)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/odallus_the_dark_call"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                  </v-card>
+                  <game-card
+                    title="Odallus: The Dark Call"
+                    year="2015"
+                    src="Odallus The Dark Call"
+                    goghref="https://www.gog.com/en/game/odallus_the_dark_call"
+                  ></game-card>
                 </v-col>
-
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Blazing Chrome.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Blazing Chrome (2019)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://nichegamer.com/reviews/blazing-chrome-review/"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Niche Gamer - 8.5/10"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/blazing_chrome"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                  </v-card>
-                  <!-- https://nichegamer.com/reviews/blazing-chrome-review/ 8.5 -->
-
+                  <game-card
+                    title="Blazing Chrome"
+                    year="2019"
+                    src="Blazing Chrome"
+                    goghref="https://www.gog.com/en/game/blazing_chrome"
+                    nichegamerhref="https://nichegamer.com/reviews/blazing-chrome-review/"
+                    nichegamercaption="Niche Gamer - 8.5/10"
+                  ></game-card>
                 </v-col>
-
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Vengeful Guardian Moonrider.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Vengeful Guardian: Moonrider (2023)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://nichegamer.com/reviews/vengeful-guardian-moonrider/"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Niche Gamer - 10/10"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/vengeful_guardian_moonrider"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                  </v-card>
+                  <game-card
+                    title="Vengeful Guardian: Moonrider"
+                    year="2023"
+                    src="Vengeful Guardian Moonrider"
+                    goghref="https://www.gog.com/en/game/vengeful_guardian_moonrider"
+                    nichegamerhref="https://nichegamer.com/reviews/vengeful-guardian-moonrider/"
+                    nichegamercaption="Niche Gamer - 10/10"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -375,79 +364,39 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Bastion.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Bastion (2011)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/bastion"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                  </v-card>
+                  <game-card
+                    title="Bastion"
+                    year="2011"
+                    src="Bastion"
+                    goghref="https://www.gog.com/en/game/bastion"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Transistor.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Transistor (2014)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://nichegamer.com/reviews/transistor-review/"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Niche Gamer Review"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/transistor"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-
-                  </v-card>
+                  <game-card
+                    title="Transistor"
+                    year="2014"
+                    src="Transistor"
+                    goghref="https://www.gog.com/en/game/transistor"
+                    nichegamerhref="https://nichegamer.com/reviews/transistor-review/"
+                    nichegamercaption="Niche Gamer Review"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Pyre.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Pyre (2017)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/pyre"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                  </v-card>
+                  <game-card
+                    title="Pyre"
+                    year="2017"
+                    src="Pyre"
+                    goghref="https://www.gog.com/en/game/pyre"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Hades.jpg" height="176.55" cover></v-img>
-                    <v-card-title>Hades (2020)</v-card-title>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://nichegamer.com/reviews/hades-review/"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Niche Gamer - 9/10"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-                  </v-card>
+                  <game-card
+                    title="Hades"
+                    year="2020"
+                    src="Hades"
+                    nichegamerhref="https://nichegamer.com/reviews/hades-review/"
+                    nichegamercaption="Niche Gamer - 9/10"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -458,54 +407,66 @@ const IndieGames = {
           <v-card color="blue-grey-lighten-4">
             <v-card-text>
               <v-row>
-
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Rain World.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Rain World (2017)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Rain World"
+                    year="2017"
+                    src="Rain World"
+                    goghref="https://www.gog.com/en/game/rain_world"
+                  ></game-card>
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Gravity Circuit.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
-                    <!-- developer: "Domesticated Ant Games" -->
-                    <!-- publisher: "PID Games" -->
-
-                    <!-- https://nichegamer.com/reviews/gravity-circuit-review/ 9.5 -->
-                  </v-card>
+                  <game-card
+                    title="Gravity Circuit"
+                    year="2023"
+                    src="Gravity Circuit"
+                    goghref="https://www.gog.com/en/game/gravity_circuit"
+                    nichegamerhref="https://nichegamer.com/reviews/gravity-circuit-review/"
+                    nichegamercaption="Niche Gamer - 9.5/10"
+                  ></game-card>
+                  <!-- developer: "Domesticated Ant Games" -->
+                  <!-- publisher: "PID Games" -->
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Berserk Boy.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Berserk Boy (2024)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Berserk Boy"
+                    year="2024"
+                    src="Berserk Boy"
+                    steam="https://store.steampowered.com/app/1561340/Berserk_Boy/"
+                  ></game-card>
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Lords of Exile.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Lords of Exile (2024)</b></v-card-text>
-                    <!-- developer: Squidbit Works -->
-                    <!-- publisher: PID Games, PixelHeart -->
-                  </v-card>
+                  <game-card
+                    title="Lords of Exile"
+                    year="2024"
+                    src="Lords of Exile"
+                    steam="https://store.steampowered.com/app/1329360/Lords_of_Exile/"
+                  ></game-card>
+                  <!-- developer: Squidbit Works -->
+                  <!-- publisher: PID Games, PixelHeart -->
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Mullet Mad Jack.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>MULLET MAD JACK (2024)</b></v-card-text>
-                    <!-- https://nichegamer.com/reviews/mullet-madjack-review/ 10 -->
-                  </v-card>
+                  <game-card
+                    title="MULLET MADJACK"
+                    year="2024"
+                    src="Mullet Mad Jack"
+                    steam="https://store.steampowered.com/app/2111190/MULLET_MADJACK/"
+                    nichegamerhref="https://nichegamer.com/reviews/mullet-madjack-review/"
+                    nichegamercaption="Niche Gamer - 10/10"
+                  ></game-card>
                 </v-col>
 
                 <v-col lg="3">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Mouse.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Mouse (2025)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Mouse"
+                    year="2025"
+                    src="Mouse"
+                    steam="https://store.steampowered.com/app/2416450/MOUSE/"
+                  ></game-card>
                 </v-col>
 
               </v-row>
@@ -521,16 +482,29 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
+                  <v-card color="blue-grey-lighten-5">
                     <v-img src="assets/gamesps4/Blasphemous.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>Blasphemous (2019)</b></v-card-text>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/blasphemous"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
+
                   </v-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Blasphemous 2.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blasphemous 2 (2023)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Blasphemous 2"
+                    year="2023"
+                    src="Blasphemous 2"
+                    goghref="https://www.gog.com/en/game/blasphemous_2"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -543,16 +517,20 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Ori and the Blind Forest.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Ori and the Blind Forest (2015)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Ori and the Blind Forest"
+                    year="2015"
+                    src="Ori and the Blind Forest"
+                    goghref="https://www.gog.com/en/game/ori_and_the_blind_forest_definitive_edition"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Ori and the Will of the Wisps.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Ori and the Will of the Wisps (2020)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Ori and the Will of the Wisps"
+                    year="2020"
+                    src="Ori and the Will of the Wisps"
+                    steam="https://store.steampowered.com/app/1057090/Ori_and_the_Will_of_the_Wisps/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -565,22 +543,27 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="4">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/TowerFall Ascension.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>TowerFall Ascension (2014)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="TowerFall Ascension"
+                    year="2014"
+                    src="TowerFall Ascension"
+                    goghref="https://www.gog.com/en/game/towerfall_ascension"
+                  ></game-card>
                 </v-col>
                 <v-col lg="4">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Celeste.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Celeste (2018)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Celeste"
+                    year="2018"
+                    src="Celeste"
+                    steam="https://store.steampowered.com/app/504230/Celeste/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="4">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Earthblade.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Earthblade (Coming soon)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Earthblade"
+                    src="Earthblade"
+                    steam="https://store.steampowered.com/app/2239640/Earthblade/"
+                  ></game-card>
                   <!-- developer/publisher: Extremely OK Games, Ltd. -->
                 </v-col>
               </v-row>
@@ -589,21 +572,25 @@ const IndieGames = {
         </v-col>
 
         <v-col lg="6">
-          <v-card color="blue-grey-lighten-4">
+          <v-card class="fill-height" color="blue-grey-lighten-4">
             <v-card-title>DotEmu</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Teenage Mutant Ninja Turtles Shredder's Revenge.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>TMNT: Shredder's Revenge (2022)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="TMNT: Shredder's Revenge"
+                    year="2022"
+                    src="Teenage Mutant Ninja Turtles Shredder's Revenge"
+                    steam="https://store.steampowered.com/app/1361510/Teenage_Mutant_Ninja_Turtles_Shredders_Revenge/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Streets of Rage 4.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Streets of Rage 4 (2020)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Streets of Rage 4"
+                    year="2020"
+                    src="Streets of Rage 4"
+                    goghref="https://www.gog.com/en/game/streets_of_rage_4"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -616,16 +603,20 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Hyper Light Drifter.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Hyper Light Drifter (2016)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Hyper Light Drifter"
+                    year="2016"
+                    src="Hyper Light Drifter"
+                    goghref="https://www.gog.com/en/game/hyper_light_drifter"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Solar Ash.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Solar Ash (2022)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Solar Ash"
+                    year="2022"
+                    src="Solar Ash"
+                    steam="https://store.steampowered.com/app/1867530/Solar_Ash/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -638,18 +629,22 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/The Messenger (2018).jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>The Messenger (2018)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="The Messenger"
+                    year="2018"
+                    src="The Messenger (2018)"
+                    goghref="https://www.gog.com/en/game/the_messenger"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Sea of Stars.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Sea of Stars (2023)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Sea of Stars"
+                    year="2023"
+                    src="Sea of Stars"
+                    steam="https://store.steampowered.com/app/1244090/Sea_of_Stars/"
+                  ></game-card>
+                  <!-- https://nichegamer.com/reviews/sea-of-stars-review/ -->
                 </v-col>
-                <!-- https://nichegamer.com/reviews/sea-of-stars-review/ -->
               </v-row>
             </v-card-text>
           </v-card>
@@ -661,16 +656,20 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Shantae Half-Genie Hero.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Shantae: Half-Genie Hero (2016)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Shantae: Half-Genie Hero"
+                    year="2016"
+                    src="Shantae Half-Genie Hero"
+                    goghref="https://www.gog.com/en/game/shantae_halfgenie_hero_ultimate_edition"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/River City Girls.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>River City Girls (2019)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="River City Girls"
+                    year="2019"
+                    src="River City Girls"
+                    goghref="https://www.gog.com/en/game/river_city_girls"
+                  ></game-card>
                 </v-col>
 
               </v-row>
@@ -684,16 +683,20 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Shovel Knight Treasure Trove.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Shovel Knight: Treasure Trove (2015)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Shovel Knight: Treasure Trove"
+                    year="2015"
+                    src="Shovel Knight Treasure Trove"
+                    goghref="https://www.gog.com/en/game/shovel_knight"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <v-card color="blue-grey-darken-1">
-                    <v-img src="assets/gamesps4/Cyber Shadow.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Cyber Shadow (2021)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Cyber Shadow"
+                    year="2021"
+                    src="Cyber Shadow"
+                    goghref="https://www.gog.com/en/game/cyber_shadow"
+                  ></game-card>
                   <!-- https://nichegamer.com/reviews/cyber-shadow-review/ 8 -->
                 </v-col>
               </v-row>
@@ -702,7 +705,7 @@ const IndieGames = {
         </v-col>
 
         <v-col lg="6">
-          <v-card color="blue-grey-lighten-4">
+          <v-card class="fill-height" color="blue-grey-lighten-4">
             <v-card-title>Inti Creates</v-card-title>
             <v-card-text>
               <v-row>
