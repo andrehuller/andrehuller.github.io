@@ -710,10 +710,22 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <game-card title="Blaster Master Zero" year="2019" src="Blaster Master Zero" active="false"></game-card>
+                  <game-card
+                    title="Blaster Master Zero"
+                    year="2019"
+                    src="Blaster Master Zero"
+                    active="false"
+                    steam="https://store.steampowered.com/app/1034900/Blaster_Master_Zero/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <game-card title="Mighty Gunvolt" year="2015" src="Mighty Gunvolt" active="false"></game-card>
+                  <game-card
+                    title="Mighty Gunvolt"
+                    year="2015"
+                    src="Mighty Gunvolt"
+                    active="false"
+                    steam="https://store.steampowered.com/app/394600/Mighty_Gunvolt/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -726,7 +738,12 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <game-card title="Wonder Boy: The Dragon's Trap" year="2017" src="Wonder Boy The Dragon's Trap" active="false"></game-card>
+                  <game-card
+                    title="Wonder Boy: The Dragon's Trap"
+                    year="2017"
+                    src="Wonder Boy The Dragon's Trap"
+                    goghref="https://www.gog.com/en/game/wonder_boy_the_dragons_trap"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -739,7 +756,12 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <game-card title="The Banner Saga" year="2014" src="The Banner Saga" active="false"></game-card>
+                  <game-card
+                    title="The Banner Saga"
+                    year="2014"
+                    src="The Banner Saga"
+                    steam="https://store.steampowered.com/app/237990/The_Banner_Saga/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -752,10 +774,20 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <game-card title="Axiom Verge" year="2015" src="Axiom Verge" active="false"></game-card>
+                  <game-card
+                    title="Axiom Verge"
+                    year="2015"
+                    src="Axiom Verge"
+                    steam="https://store.steampowered.com/app/332200/Axiom_Verge/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <game-card title="Axiom Verge 2" year="2022" src="Axiom Verge 2" active="false"></game-card>
+                  <game-card
+                    title="Axiom Verge 2"
+                    year="2022"
+                    src="Axiom Verge 2"
+                    steam="https://store.steampowered.com/app/946030/Axiom_Verge_2/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -768,10 +800,21 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <game-card title="The Binding of Isaac Rebirth" year="2014" src="The Binding of Isaac Rebirth" active="false"></game-card>
+                  <game-card
+                    title="The Binding of Isaac Rebirth"
+                    year="2014"
+                    src="The Binding of Isaac Rebirth"
+                    goghref="https://www.gog.com/en/game/the_binding_of_isaac_rebirth"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
-                  <game-card title="Cave Story+" year="2011" src="Cave Story+" active="false"></game-card>
+                  <game-card
+                    title="Cave Story+"
+                    year="2011"
+                    src="Cave Story+"
+                    goghref="https://www.gog.com/en/game/cave_story"
+                  ></game-card>
+
                 </v-col>
               </v-row>
             </v-card-text>
@@ -787,10 +830,12 @@ const IndieGames = {
 <!-- FTL: Faster Than Light -->
 
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Into the Breach.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Into the Breach (2018)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Into the Breach"
+                    year="2018"
+                    src="Into the Breach"
+                    goghref="https://www.gog.com/en/game/into_the_breach"
+                  ></game-card>
                 </v-col>
               </v-row>
 
@@ -804,10 +849,12 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/CULTIC.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>CULTIC (2022)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="CULTIC"
+                    year="2022"
+                    src="CULTIC"
+                    steam="https://store.steampowered.com/app/1684930/CULTIC/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -820,10 +867,12 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Kena Bridge of Spirits.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Kena: Bridge of Spirits (2022)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Kena: Bridge of Spirits"
+                    year="2022"
+                    src="Kena Bridge of Spirits"
+                    steam="https://store.steampowered.com/app/1954200/Kena_Bridge_of_Spirits/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -836,10 +885,12 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/COCOON.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>COCOON (2023)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="COCOON"
+                    year="2023"
+                    src="COCOON"
+                    steam="https://store.steampowered.com/app/1497440/COCOON/"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -852,28 +903,33 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="3">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Hotline Miami.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Hotline Miami (2012)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Hotline Miami"
+                    year="2012"
+                    src="Hotline Miami"
+                    steam="https://store.steampowered.com/app/219150/Hotline_Miami/"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Enter the Gungeon.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Enter the Gungeon (2016)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Enter the Gungeon"
+                    year="2016"
+                    src="Enter the Gungeon"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Katana ZERO.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Katana ZERO (2019)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Katana ZERO"
+                    year="2019"
+                    src="Katana ZERO"
+                  ></game-card>
                 </v-col>
                 <v-col lg="3">
-                  <v-card>
-                    <v-img src="assets/gamesps4/CARRION.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>CARRION (2020)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="CARRION"
+                    year="2020"
+                    src="CARRION"
+                  ></game-card>
                 </v-col>
 
               </v-row>
