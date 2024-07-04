@@ -278,26 +278,90 @@ const IndieGames = {
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Oniken Unstoppable Edition.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Oniken: Unstoppable Edition (2014)</b></v-card-text>
+                    <v-card-title>Oniken: Unstoppable Edition (2014)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/oniken"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
                   </v-card>
                 </v-col>
+
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Odallus The Dark Call.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Odallus: The Dark Call (2015)</b></v-card-text>
+                    <v-card-title>Odallus: The Dark Call (2015)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/odallus_the_dark_call"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
                   </v-card>
                 </v-col>
+
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Blazing Chrome.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blazing Chrome (2019)</b></v-card-text>
+                    <v-card-title>Blazing Chrome (2019)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://nichegamer.com/reviews/blazing-chrome-review/"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Niche Gamer - 8.5/10"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/blazing_chrome"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
                   </v-card>
                   <!-- https://nichegamer.com/reviews/blazing-chrome-review/ 8.5 -->
+
                 </v-col>
+
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Vengeful Guardian Moonrider.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Vengeful Guardian: Moonrider (2023)</b></v-card-text>
+                    <v-card-title>Vengeful Guardian: Moonrider (2023)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://nichegamer.com/reviews/vengeful-guardian-moonrider/"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Niche Gamer - 10/10"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/vengeful_guardian_moonrider"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
                   </v-card>
                 </v-col>
               </v-row>
@@ -313,25 +377,76 @@ const IndieGames = {
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Bastion.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Bastion (2011)</b></v-card-text>
+                    <v-card-title>Bastion (2011)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/bastion"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Transistor.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Transistor (2014)</b></v-card-text>
+                    <v-card-title>Transistor (2014)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://nichegamer.com/reviews/transistor-review/"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Niche Gamer Review"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/transistor"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
+
                   </v-card>
                 </v-col>
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Pyre.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Pyre (2017)</b></v-card-text>
+                    <v-card-title>Pyre (2017)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://www.gog.com/en/game/pyre"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Purchase"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
                   </v-card>
                 </v-col>
                 <v-col lg="3">
                   <v-card color="blue-grey-darken-1">
                     <v-img src="assets/gamesps4/Hades.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Hades (2020)</b></v-card-text>
+                    <v-card-title>Hades (2020)</v-card-title>
+                    <v-card-actions>
+                      <v-btn
+                        href="https://nichegamer.com/reviews/hades-review/"
+                        append-icon="mdi-chevron-right"
+                        color="red-lighten-2"
+                        text="Niche Gamer - 9/10"
+                        variant="outlined"
+                        block
+                      ></v-btn>
+                    </v-card-actions>
                   </v-card>
                 </v-col>
               </v-row>
