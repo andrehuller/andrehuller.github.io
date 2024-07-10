@@ -125,6 +125,7 @@ const IndieGames = {
                     title="Dead Cells"
                     year="2018"
                     src="Dead Cells"
+                    active="true"
                     goghref="https://www.gog.com/en/game/dead_cells"
                   ></game-card>
                   <!-- https://nichegamer.com/reviews/dead-cells-review/ 8.5 -->                  
@@ -155,6 +156,7 @@ const IndieGames = {
                     title="Yooka-Laylee"
                     year="2017"
                     src="Yooka-Laylee"
+                    active="true"
                     goghref="https://www.gog.com/en/game/yookalaylee"
                   ></game-card>
                 </v-col>
@@ -163,6 +165,7 @@ const IndieGames = {
                     title="Yooka-Laylee and the Impossible Lair"
                     year="2019"
                     src="Yooka-Laylee and the Impossible Lair"
+                    active="true"
                     goghref="https://www.gog.com/en/game/yookalaylee_and_the_impossible_lair"
                   ></game-card>
                 </v-col>
@@ -264,6 +267,7 @@ const IndieGames = {
                     title="Day of the Tentacle"
                     year="1993"
                     src="Day of the Tentacle"
+                    active="true"
                     goghref="https://www.gog.com/en/game/day_of_the_tentacle_remastered"
                   ></game-card>
                 </v-col>
@@ -272,6 +276,7 @@ const IndieGames = {
                     title="Full Throttle"
                     year="1995"
                     src="Full Throttle"
+                    active="true"
                     goghref="https://www.gog.com/en/game/full_throttle_remastered"
                   ></game-card>
                 </v-col>
@@ -907,6 +912,7 @@ const IndieGames = {
                     title="Hotline Miami"
                     year="2012"
                     src="Hotline Miami"
+                    goghref="https://www.gog.com/en/game/hotline_miami"
                     steam="https://store.steampowered.com/app/219150/Hotline_Miami/"
                   ></game-card>
                 </v-col>
@@ -915,6 +921,7 @@ const IndieGames = {
                     title="Enter the Gungeon"
                     year="2016"
                     src="Enter the Gungeon"
+                    goghref="https://www.gog.com/en/game/enter_the_gungeon"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -922,6 +929,7 @@ const IndieGames = {
                     title="Katana ZERO"
                     year="2019"
                     src="Katana ZERO"
+                    goghref="https://www.gog.com/en/game/katana_zero"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -929,6 +937,7 @@ const IndieGames = {
                     title="CARRION"
                     year="2020"
                     src="CARRION"
+                    goghref="https://www.gog.com/en/game/carrion"
                   ></game-card>
                 </v-col>
 
@@ -943,10 +952,12 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/TUNIC.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>TUNIC (2022)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="TUNIC"
+                    year="2022"
+                    src="TUNIC"
+                    goghref="https://www.gog.com/en/game/tunic"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -959,10 +970,12 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Bloodstained Ritual of the Night.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Bloodstained: Ritual of the Night (2019)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Bloodstained: Ritual of the Night"
+                    year="2019"
+                    src="Bloodstained Ritual of the Night"
+                    goghref="https://www.gog.com/en/game/bloodstained_ritual_of_the_night"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -975,10 +988,11 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/BlazBlue Entropy Effect.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>BlazBlue Entropy Effect (2024)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="BlazBlue Entropy Effect"
+                    year="2024"
+                    src="BlazBlue Entropy Effect"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -991,10 +1005,10 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Never Grave The Witch and The Curse.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Never Grave: The Witch and The Curse</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Never Grave: The Witch and The Curse"
+                    src="Never Grave The Witch and The Curse"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -1007,10 +1021,11 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/ANNO Mutationem.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>ANNO: Mutationem (2022)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="ANNO: Mutationem"
+                    year="2022"
+                    src="ANNO Mutationem"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
@@ -1023,10 +1038,11 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="12">
-                  <v-card>
-                    <v-img src="assets/gamesps4/Alex Jones NWO Wars.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Alex Jones: NWO Wars (2024)</b></v-card-text>
-                  </v-card>
+                  <game-card
+                    title="Alex Jones: NWO Wars"
+                    year="2024"
+                    src="Alex Jones NWO Wars"
+                  ></game-card>
                 </v-col>
               </v-row>
             </v-card-text>
