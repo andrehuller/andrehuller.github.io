@@ -210,6 +210,7 @@ const MainstreamGames = {
                     <v-img src="assets/gamesps4/Doom.jpg" height="176.55" cover></v-img>
                     <v-card-text><b>DOOM (2016)</b></v-card-text>
                   </v-card>
+                  <!-- https://www.giantbomb.com/reviews/doom-review/1900-745/ -->
                 </v-col>
                 <v-col lg="6">
                   <v-card color="blue-grey-darken-1">

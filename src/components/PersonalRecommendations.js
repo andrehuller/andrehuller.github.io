@@ -35,10 +35,25 @@ const PersonalRecommendations = {
           </v-card>
         </v-col>
         <v-col lg="3">
-          <v-card color="blue-grey-lighten-5">
-            <v-img src="assets/gamesps4/Prison City.jpg" height="176.55" cover></v-img>
-            <v-card-text><b>Prison City (2023)</b></v-card-text>
-          </v-card>
+          <game-card
+            title="Prison City"
+            year="2023"
+            src="Prison City"
+            active="true"
+            gog="https://www.gog.com/en/game/prison_city"
+          ></game-card>
+          <!-- https://nichegamer.com/reviews/prison-city-review/ 7/10 -->
+        </v-col>
+        <v-col lg="3">
+          <game-card
+            title="Blazing Chrome"
+            year="2019"
+            src="Blazing Chrome"
+            active="true"
+            gog="https://www.gog.com/en/game/blazing_chrome"
+            nichegamerhref="https://nichegamer.com/reviews/blazing-chrome-review/"
+            nichegamercaption="Niche Gamer - 8.5/10"
+          ></game-card>
         </v-col>
         <v-col lg="3">
           <v-card color="blue-grey-lighten-5">

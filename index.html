@@ -94,6 +94,7 @@
     <script src="./src/components/IndieGames.js"></script>
     <script src="./src/components/MainstreamGames.js"></script>
     <script src="./src/components/PersonalRecommendations.js"></script>
+    <script src="./src/components/OwnerEstimations.js"></script>
     
     <script src="./src/components/StagingArea.js"></script>
     
@@ -116,7 +117,21 @@
             >
               <v-icon>mdi-github</v-icon>
             </v-btn>
-            <v-btn icon="mdi-dots-vertical"></v-btn>
+            <v-menu>
+              <template v-slot:activator="{ props }">
+                <v-btn icon="mdi-dots-vertical" v-bind="props"></v-btn>
+              </template>
+              <v-list>
+                <v-list-item to="/">
+                  <template v-slot:prepend>
+                    <v-icon>mdi-logout</v-icon>
+                  </template>
+                  <v-list-item-title>Logout</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu>
+            
+            
           </template>
         </v-app-bar>
         
@@ -267,6 +282,7 @@ const routes = [
   { path: '/fpsgames', component: FPSGames },
   { path: '/indiegames', component: IndieGames },
   { path: '/mainstreamgames', component: MainstreamGames },
+  { path: '/ownerestimations', component: OwnerEstimations },
   { path: '/personalrecommendations', component: PersonalRecommendations }
 ]
 
@@ -373,6 +389,7 @@ app.component('date-picker', {
       return `${day}/${month}/${year}`
     },
     parseDate: function (date) {
+      console.log('parseDate: ' + date)
       if (!date) return null
       const [day, month, year] = date.split('/')
       return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
@@ -381,9 +398,9 @@ app.component('date-picker', {
 })
 
 app.component('game-card', {
-  props: ['title', 'year', 'src', 'active', 'goghref', 'nichegamerhref', 'nichegamercaption', 'steam'],
+  props: ['title', 'year', 'src', 'active', 'gog', 'nichegamerhref', 'nichegamercaption', 'steam'],
   template: `
-    <v-card color="blue-grey-lighten-5"><!-- :color="active == 'true' ? 'blue-grey-lighten-5' : 'blue-grey-darken-1'" -->
+    <v-card><!-- :color="active == 'true' ? 'blue-grey-lighten-5' : 'blue-grey-darken-1'" -->
       <v-img :src="'assets/gamesps4/' + src + '.jpg'" height="176.55" cover></v-img>
       <v-card-text>
         <b>{{ title }}<template v-if="year"> ({{ year }})</template></b>
@@ -401,9 +418,9 @@ app.component('game-card', {
           block
         ></v-btn>
       </v-card-actions>
-      <v-card-actions v-if="goghref">
+      <v-card-actions v-if="gog">
         <v-btn
-          :href="goghref"
+          :href="gog"
           append-icon="mdi-chevron-right"
           color="red-lighten-2"
           text="GOG"

@@ -38,12 +38,13 @@ const DatePicker = {
               <v-col cols="12" lg="3">
                 <v-text-field
                   v-model="cnpj"
-                  v-maska="{ mask: '#-#' }"
                   label="CNPJ"
                   density="comfortable"
                   variant="outlined"
                   clearable hide-details
-                ></v-text-field><!-- v-mask="'##.###.###/####-##'" -->
+                  :model-value="cnpj ? maskCnpj.masked(cnpj) : null"
+                  @update:model-value="value => cnpj = maskCnpj.unmasked(value)"
+                ></v-text-field><!-- v-maska="{ mask: '#-#' }" v-mask="'##.###.###/####-##'" -->
               </v-col>
               <v-col cols="12" lg="3">
                 <v-text-field
@@ -73,6 +74,8 @@ const DatePicker = {
     phone: null,
     cpf: null,
     cnpj: null,
-    cep: null
+    cep: null,
+    maskCnpj: new Maska.Mask({ mask: '##.###.###/####-##' })
   })
+  
 }

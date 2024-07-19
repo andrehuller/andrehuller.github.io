@@ -26,7 +26,7 @@ const Libraries = {
                     lg="3" md="4" sm="6"
                     class="pa-2 d-flex flex-column"
                   >
-                    <v-card :href="item.href" class="elevation-5 fill-height">
+                    <v-card :href="item.href" class="fill-height">
                       <!-- <a :href="item.href" target="_blank"></a> -->
                       <v-img
                         :src="item.src"

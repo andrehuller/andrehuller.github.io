@@ -15,16 +15,17 @@ const IndieGames = {
                     year="2017"
                     src="Cuphead"
                     active="true"
-                    goghref="https://www.gog.com/en/game/cuphead"
+                    gog="https://www.gog.com/en/game/cuphead"
                   ></game-card>
                   <!-- https://nichegamer.com/reviews/cuphead-review/ 10 -->
+                  <!-- https://www.giantbomb.com/reviews/cuphead-review/1900-771/ -->
                 </v-col>
                 <v-col lg="6">
                   <game-card
                     title="Cuphead - The Delicious Last Course"
                     year="2022"
                     src="Cuphead - The Delicious Last Course"
-                    goghref="https://www.gog.com/en/game/cuphead_the_delicious_last_course"
+                    gog="https://www.gog.com/en/game/cuphead_the_delicious_last_course"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -45,14 +46,14 @@ const IndieGames = {
                     year="2017"
                     src="Hollow Knight"
                     active="true"
-                    goghref="https://www.gog.com/en/game/hollow_knight"
+                    gog="https://www.gog.com/en/game/hollow_knight"
                   ></game-card>
                 </v-col>
                 <v-col lg="6">
                   <game-card
                     title="Hollow Knight: Silksong"
                     src="Hollow Knight Silksong"
-                    goghref="https://www.gog.com/en/game/hollow_knight_silksong"
+                    gog="https://www.gog.com/en/game/hollow_knight_silksong"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -99,15 +100,16 @@ const IndieGames = {
                     year="2019"
                     src="Ion Fury"
                     active="true"
-                    goghref="https://www.gog.com/en/game/ion_fury"
+                    gog="https://www.gog.com/en/game/ion_fury"
                   ></game-card>
+                  <!-- https://nichegamer.com/reviews/ion-fury-review/ 9/10 -->
                 </v-col>
                 <v-col lg="6">
                   <game-card
                     title="Ion Fury: Aftershock"
                     year="2023"
                     src="Ion Fury Aftershock"
-                    goghref="https://www.gog.com/en/game/ion_fury_aftershock"
+                    gog="https://www.gog.com/en/game/ion_fury_aftershock"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -126,7 +128,7 @@ const IndieGames = {
                     year="2018"
                     src="Dead Cells"
                     active="true"
-                    goghref="https://www.gog.com/en/game/dead_cells"
+                    gog="https://www.gog.com/en/game/dead_cells"
                   ></game-card>
                   <!-- https://nichegamer.com/reviews/dead-cells-review/ 8.5 -->                  
                 </v-col>
@@ -157,7 +159,7 @@ const IndieGames = {
                     year="2017"
                     src="Yooka-Laylee"
                     active="true"
-                    goghref="https://www.gog.com/en/game/yookalaylee"
+                    gog="https://www.gog.com/en/game/yookalaylee"
                   ></game-card>
                 </v-col>
                 <v-col lg="6">
@@ -166,7 +168,7 @@ const IndieGames = {
                     year="2019"
                     src="Yooka-Laylee and the Impossible Lair"
                     active="true"
-                    goghref="https://www.gog.com/en/game/yookalaylee_and_the_impossible_lair"
+                    gog="https://www.gog.com/en/game/yookalaylee_and_the_impossible_lair"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -187,7 +189,7 @@ const IndieGames = {
                     year="2019"
                     src="Eagle Island Twist"
                     active="true"
-                    goghref="https://www.gog.com/en/game/eagle_island"
+                    gog="https://www.gog.com/en/game/eagle_island"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -196,8 +198,9 @@ const IndieGames = {
                     year="2020"
                     src="Angry Video Game Nerd I & II Deluxe"
                     active="true"
-                    goghref="https://www.gog.com/en/game/angry_video_game_nerd_i_ii_deluxe"
+                    gog="https://www.gog.com/en/game/angry_video_game_nerd_i_ii_deluxe"
                   ></game-card>
+                  <!-- https://nichegamer.com/reviews/angry-video-game-nerd-1-2-deluxe-review/ 6/10 -->
                 </v-col>
                 <v-col lg="3">
                   <game-card
@@ -205,8 +208,9 @@ const IndieGames = {
                     year="2023"
                     src="Prison City"
                     active="true"
-                    goghref="https://www.gog.com/en/game/prison_city"
+                    gog="https://www.gog.com/en/game/prison_city"
                   ></game-card>
+                  <!-- https://nichegamer.com/reviews/prison-city-review/ 7/10 -->
                 </v-col>
                 <v-col lg="3">
                   <game-card
@@ -246,7 +250,7 @@ const IndieGames = {
                     year="2021"
                     src="Spectacular Sparky"
                     active="true"
-                    goghref="https://www.gog.com/en/game/spectacular_sparky"
+                    gog="https://www.gog.com/en/game/spectacular_sparky"
                   ></game-card>
                   <!-- https://nichegamer.com/reviews/spectacular-sparky-review/ 8 -->
                 </v-col>
@@ -268,7 +272,7 @@ const IndieGames = {
                     year="1993"
                     src="Day of the Tentacle"
                     active="true"
-                    goghref="https://www.gog.com/en/game/day_of_the_tentacle_remastered"
+                    gog="https://www.gog.com/en/game/day_of_the_tentacle_remastered"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -277,7 +281,7 @@ const IndieGames = {
                     year="1995"
                     src="Full Throttle"
                     active="true"
-                    goghref="https://www.gog.com/en/game/full_throttle_remastered"
+                    gog="https://www.gog.com/en/game/full_throttle_remastered"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -285,7 +289,7 @@ const IndieGames = {
                     title="Grim Fandango"
                     year="1998"
                     src="Grim Fandango"
-                    goghref="https://www.gog.com/en/game/grim_fandango_remastered"
+                    gog="https://www.gog.com/en/game/grim_fandango_remastered"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -293,7 +297,7 @@ const IndieGames = {
                     title="Psychonauts"
                     year="2005"
                     src="Psychonauts"
-                    goghref="https://www.gog.com/en/game/psychonauts"
+                    gog="https://www.gog.com/en/game/psychonauts"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -301,7 +305,7 @@ const IndieGames = {
                     title="Brutal Legend"
                     year="2013"
                     src="Brutal Legend"
-                    goghref="https://www.gog.com/en/game/brutal_legend"
+                    gog="https://www.gog.com/en/game/brutal_legend"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -309,7 +313,7 @@ const IndieGames = {
                     title="Broken Age"
                     year="2014"
                     src="Broken Age"
-                    goghref="https://www.gog.com/en/game/broken_age"
+                    gog="https://www.gog.com/en/game/broken_age"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -327,7 +331,7 @@ const IndieGames = {
                     title="Oniken: Unstoppable Edition"
                     year="2014"
                     src="Oniken Unstoppable Edition"
-                    goghref="https://www.gog.com/en/game/oniken"
+                    gog="https://www.gog.com/en/game/oniken"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -335,7 +339,7 @@ const IndieGames = {
                     title="Odallus: The Dark Call"
                     year="2015"
                     src="Odallus The Dark Call"
-                    goghref="https://www.gog.com/en/game/odallus_the_dark_call"
+                    gog="https://www.gog.com/en/game/odallus_the_dark_call"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -343,7 +347,8 @@ const IndieGames = {
                     title="Blazing Chrome"
                     year="2019"
                     src="Blazing Chrome"
-                    goghref="https://www.gog.com/en/game/blazing_chrome"
+                    active="true"
+                    gog="https://www.gog.com/en/game/blazing_chrome"
                     nichegamerhref="https://nichegamer.com/reviews/blazing-chrome-review/"
                     nichegamercaption="Niche Gamer - 8.5/10"
                   ></game-card>
@@ -353,7 +358,7 @@ const IndieGames = {
                     title="Vengeful Guardian: Moonrider"
                     year="2023"
                     src="Vengeful Guardian Moonrider"
-                    goghref="https://www.gog.com/en/game/vengeful_guardian_moonrider"
+                    gog="https://www.gog.com/en/game/vengeful_guardian_moonrider"
                     nichegamerhref="https://nichegamer.com/reviews/vengeful-guardian-moonrider/"
                     nichegamercaption="Niche Gamer - 10/10"
                   ></game-card>
@@ -373,15 +378,17 @@ const IndieGames = {
                     title="Bastion"
                     year="2011"
                     src="Bastion"
-                    goghref="https://www.gog.com/en/game/bastion"
+                    active="true"
+                    gog="https://www.gog.com/en/game/bastion"
                   ></game-card>
+                  <!-- Owner Estimations: ~3.16 M by VG Insights, 17/07/2024 -->
                 </v-col>
                 <v-col lg="3">
                   <game-card
                     title="Transistor"
                     year="2014"
                     src="Transistor"
-                    goghref="https://www.gog.com/en/game/transistor"
+                    gog="https://www.gog.com/en/game/transistor"
                     nichegamerhref="https://nichegamer.com/reviews/transistor-review/"
                     nichegamercaption="Niche Gamer Review"
                   ></game-card>
@@ -391,7 +398,7 @@ const IndieGames = {
                     title="Pyre"
                     year="2017"
                     src="Pyre"
-                    goghref="https://www.gog.com/en/game/pyre"
+                    gog="https://www.gog.com/en/game/pyre"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -417,7 +424,7 @@ const IndieGames = {
                     title="Rain World"
                     year="2017"
                     src="Rain World"
-                    goghref="https://www.gog.com/en/game/rain_world"
+                    gog="https://www.gog.com/en/game/rain_world"
                   ></game-card>
                 </v-col>
 
@@ -426,7 +433,7 @@ const IndieGames = {
                     title="Gravity Circuit"
                     year="2023"
                     src="Gravity Circuit"
-                    goghref="https://www.gog.com/en/game/gravity_circuit"
+                    gog="https://www.gog.com/en/game/gravity_circuit"
                     nichegamerhref="https://nichegamer.com/reviews/gravity-circuit-review/"
                     nichegamercaption="Niche Gamer - 9.5/10"
                   ></game-card>
@@ -487,28 +494,19 @@ const IndieGames = {
             <v-card-text>
               <v-row>
                 <v-col lg="6">
-                  <v-card color="blue-grey-lighten-5">
-                    <v-img src="assets/gamesps4/Blasphemous.jpg" height="176.55" cover></v-img>
-                    <v-card-text><b>Blasphemous (2019)</b></v-card-text>
-                    <v-card-actions>
-                      <v-btn
-                        href="https://www.gog.com/en/game/blasphemous"
-                        append-icon="mdi-chevron-right"
-                        color="red-lighten-2"
-                        text="Purchase"
-                        variant="outlined"
-                        block
-                      ></v-btn>
-                    </v-card-actions>
-
-                  </v-card>
+                  <game-card
+                    title="Blasphemous"
+                    year="2019"
+                    src="Blasphemous"
+                    gog="https://www.gog.com/en/game/blasphemous"
+                  ></game-card>
                 </v-col>
                 <v-col lg="6">
                   <game-card
                     title="Blasphemous 2"
                     year="2023"
                     src="Blasphemous 2"
-                    goghref="https://www.gog.com/en/game/blasphemous_2"
+                    gog="https://www.gog.com/en/game/blasphemous_2"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -526,7 +524,7 @@ const IndieGames = {
                     title="Ori and the Blind Forest"
                     year="2015"
                     src="Ori and the Blind Forest"
-                    goghref="https://www.gog.com/en/game/ori_and_the_blind_forest_definitive_edition"
+                    gog="https://www.gog.com/en/game/ori_and_the_blind_forest_definitive_edition"
                   ></game-card>
                 </v-col>
                 <v-col lg="6">
@@ -552,7 +550,7 @@ const IndieGames = {
                     title="TowerFall Ascension"
                     year="2014"
                     src="TowerFall Ascension"
-                    goghref="https://www.gog.com/en/game/towerfall_ascension"
+                    gog="https://www.gog.com/en/game/towerfall_ascension"
                   ></game-card>
                 </v-col>
                 <v-col lg="4">
@@ -594,7 +592,7 @@ const IndieGames = {
                     title="Streets of Rage 4"
                     year="2020"
                     src="Streets of Rage 4"
-                    goghref="https://www.gog.com/en/game/streets_of_rage_4"
+                    gog="https://www.gog.com/en/game/streets_of_rage_4"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -612,7 +610,7 @@ const IndieGames = {
                     title="Hyper Light Drifter"
                     year="2016"
                     src="Hyper Light Drifter"
-                    goghref="https://www.gog.com/en/game/hyper_light_drifter"
+                    gog="https://www.gog.com/en/game/hyper_light_drifter"
                   ></game-card>
                 </v-col>
                 <v-col lg="6">
@@ -638,7 +636,7 @@ const IndieGames = {
                     title="The Messenger"
                     year="2018"
                     src="The Messenger (2018)"
-                    goghref="https://www.gog.com/en/game/the_messenger"
+                    gog="https://www.gog.com/en/game/the_messenger"
                   ></game-card>
                 </v-col>
                 <v-col lg="6">
@@ -665,7 +663,7 @@ const IndieGames = {
                     title="Shantae: Half-Genie Hero"
                     year="2016"
                     src="Shantae Half-Genie Hero"
-                    goghref="https://www.gog.com/en/game/shantae_halfgenie_hero_ultimate_edition"
+                    gog="https://www.gog.com/en/game/shantae_halfgenie_hero_ultimate_edition"
                   ></game-card>
                 </v-col>
                 <v-col lg="6">
@@ -673,7 +671,7 @@ const IndieGames = {
                     title="River City Girls"
                     year="2019"
                     src="River City Girls"
-                    goghref="https://www.gog.com/en/game/river_city_girls"
+                    gog="https://www.gog.com/en/game/river_city_girls"
                   ></game-card>
                 </v-col>
 
@@ -692,15 +690,16 @@ const IndieGames = {
                     title="Shovel Knight: Treasure Trove"
                     year="2015"
                     src="Shovel Knight Treasure Trove"
-                    goghref="https://www.gog.com/en/game/shovel_knight"
+                    gog="https://www.gog.com/en/game/shovel_knight"
                   ></game-card>
+                  <!-- https://www.giantbomb.com/reviews/shovel-knight-review/1900-645/ -->
                 </v-col>
                 <v-col lg="6">
                   <game-card
                     title="Cyber Shadow"
                     year="2021"
                     src="Cyber Shadow"
-                    goghref="https://www.gog.com/en/game/cyber_shadow"
+                    gog="https://www.gog.com/en/game/cyber_shadow"
                   ></game-card>
                   <!-- https://nichegamer.com/reviews/cyber-shadow-review/ 8 -->
                 </v-col>
@@ -739,33 +738,51 @@ const IndieGames = {
 
         <v-col lg="3">
           <v-card color="blue-grey-lighten-4">
-            <v-card-title>Lizardcube</v-card-title>
+            <v-card-title>ArtPlay</v-card-title>
             <v-card-text>
               <v-row>
                 <v-col lg="12">
                   <game-card
-                    title="Wonder Boy: The Dragon's Trap"
-                    year="2017"
-                    src="Wonder Boy The Dragon's Trap"
-                    goghref="https://www.gog.com/en/game/wonder_boy_the_dragons_trap"
+                    title="Bloodstained: Ritual of the Night"
+                    year="2019"
+                    src="Bloodstained Ritual of the Night"
+                    gog="https://www.gog.com/en/game/bloodstained_ritual_of_the_night"
                   ></game-card>
+                  <!-- https://nichegamer.com/reviews/bloodstained-ritual-of-the-night-review/ 9/10 -->
                 </v-col>
               </v-row>
             </v-card-text>
           </v-card>
         </v-col>
 
-        <v-col lg="3">
+        <v-col lg="9">
           <v-card color="blue-grey-lighten-4">
             <v-card-title>Stoic Studio</v-card-title>
             <v-card-text>
               <v-row>
-                <v-col lg="12">
+                <v-col lg="4">
                   <game-card
                     title="The Banner Saga"
                     year="2014"
                     src="The Banner Saga"
                     steam="https://store.steampowered.com/app/237990/The_Banner_Saga/"
+                  ></game-card>
+                  <!-- https://www.giantbomb.com/reviews/the-banner-saga-review/1900-620/ -->
+                </v-col>
+                <v-col lg="4">
+                  <game-card
+                    title="The Banner Saga 2"
+                    year="2016"
+                    src="The Banner Saga 2"
+                    steam="https://store.steampowered.com/app/281640/The_Banner_Saga_2/"
+                  ></game-card>
+                </v-col>
+                <v-col lg="4">
+                  <game-card
+                    title="The Banner Saga 3"
+                    year="2018"
+                    src="The Banner Saga 3"
+                    steam="https://store.steampowered.com/app/485460/The_Banner_Saga_3/"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -809,7 +826,7 @@ const IndieGames = {
                     title="The Binding of Isaac Rebirth"
                     year="2014"
                     src="The Binding of Isaac Rebirth"
-                    goghref="https://www.gog.com/en/game/the_binding_of_isaac_rebirth"
+                    gog="https://www.gog.com/en/game/the_binding_of_isaac_rebirth"
                   ></game-card>
                 </v-col>
                 <v-col lg="6">
@@ -817,7 +834,7 @@ const IndieGames = {
                     title="Cave Story+"
                     year="2011"
                     src="Cave Story+"
-                    goghref="https://www.gog.com/en/game/cave_story"
+                    gog="https://www.gog.com/en/game/cave_story"
                   ></game-card>
 
                 </v-col>
@@ -839,7 +856,7 @@ const IndieGames = {
                     title="Into the Breach"
                     year="2018"
                     src="Into the Breach"
-                    goghref="https://www.gog.com/en/game/into_the_breach"
+                    gog="https://www.gog.com/en/game/into_the_breach"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -912,7 +929,7 @@ const IndieGames = {
                     title="Hotline Miami"
                     year="2012"
                     src="Hotline Miami"
-                    goghref="https://www.gog.com/en/game/hotline_miami"
+                    gog="https://www.gog.com/en/game/hotline_miami"
                     steam="https://store.steampowered.com/app/219150/Hotline_Miami/"
                   ></game-card>
                 </v-col>
@@ -921,7 +938,7 @@ const IndieGames = {
                     title="Enter the Gungeon"
                     year="2016"
                     src="Enter the Gungeon"
-                    goghref="https://www.gog.com/en/game/enter_the_gungeon"
+                    gog="https://www.gog.com/en/game/enter_the_gungeon"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -929,7 +946,7 @@ const IndieGames = {
                     title="Katana ZERO"
                     year="2019"
                     src="Katana ZERO"
-                    goghref="https://www.gog.com/en/game/katana_zero"
+                    gog="https://www.gog.com/en/game/katana_zero"
                   ></game-card>
                 </v-col>
                 <v-col lg="3">
@@ -937,7 +954,7 @@ const IndieGames = {
                     title="CARRION"
                     year="2020"
                     src="CARRION"
-                    goghref="https://www.gog.com/en/game/carrion"
+                    gog="https://www.gog.com/en/game/carrion"
                   ></game-card>
                 </v-col>
 
@@ -956,25 +973,7 @@ const IndieGames = {
                     title="TUNIC"
                     year="2022"
                     src="TUNIC"
-                    goghref="https://www.gog.com/en/game/tunic"
-                  ></game-card>
-                </v-col>
-              </v-row>
-            </v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="3">
-          <v-card color="blue-grey-lighten-4">
-            <v-card-title>ArtPlay</v-card-title>
-            <v-card-text>
-              <v-row>
-                <v-col lg="12">
-                  <game-card
-                    title="Bloodstained: Ritual of the Night"
-                    year="2019"
-                    src="Bloodstained Ritual of the Night"
-                    goghref="https://www.gog.com/en/game/bloodstained_ritual_of_the_night"
+                    gog="https://www.gog.com/en/game/tunic"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -992,6 +991,7 @@ const IndieGames = {
                     title="BlazBlue Entropy Effect"
                     year="2024"
                     src="BlazBlue Entropy Effect"
+                    steam="https://store.steampowered.com/app/2273430/BlazBlue_Entropy_Effect/"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -1008,6 +1008,7 @@ const IndieGames = {
                   <game-card
                     title="Never Grave: The Witch and The Curse"
                     src="Never Grave The Witch and The Curse"
+                    steam="https://store.steampowered.com/app/2395770/Never_Grave_The_Witch_and_The_Curse/"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -1025,6 +1026,7 @@ const IndieGames = {
                     title="ANNO: Mutationem"
                     year="2022"
                     src="ANNO Mutationem"
+                    steam="https://store.steampowered.com/app/1368030/ANNO_Mutationem/"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -1042,6 +1044,7 @@ const IndieGames = {
                     title="Alex Jones: NWO Wars"
                     year="2024"
                     src="Alex Jones NWO Wars"
+                    steam="https://store.steampowered.com/app/2487350/Alex_Jones_NWO_Wars/"
                   ></game-card>
                 </v-col>
               </v-row>
@@ -1049,6 +1052,23 @@ const IndieGames = {
           </v-card>
         </v-col>
 
+        <v-col lg="3">
+          <v-card color="blue-grey-lighten-4">
+            <v-card-title>Lizardcube</v-card-title>
+            <v-card-text>
+              <v-row>
+                <v-col lg="12">
+                  <game-card
+                    title="Wonder Boy: The Dragon's Trap"
+                    year="2017"
+                    src="Wonder Boy The Dragon's Trap"
+                    gog="https://www.gog.com/en/game/wonder_boy_the_dragons_trap"
+                  ></game-card>
+                </v-col>
+              </v-row>
+            </v-card-text>
+          </v-card>
+        </v-col>
 <!--
 LIMBO (2011)
 INSIDE (2016)
