@@ -259,12 +259,6 @@ const categories = [
     "name": "Others",
     "items": [
       {
-        "title": "Airflow",
-        "subtitle": "Programmatically author, schedule and monitor workflows.",
-        "href": "https://airflow.apache.org/",
-        "src": "assets/resources/Airflow.png"
-      },
-      {
       	"title": "Proton Mail",
       	"subtitle": "Secure email that protects your privacy",
       	"href": "https://proton.me/mail",
@@ -365,6 +359,12 @@ const categories = [
         "src": "docs/assets/images/Retroware.png"
       },
       {
+        "title": "JoyMasher",
+        "subtitle": "We know retro.",
+        "href": "https://joymasher.com/",
+        "src": "docs/assets/images/JoyMasher.png"
+      },
+      {
         "title": "FreakZone Games",
         "subtitle": "UK-based gamedev. Spectacular Sparky, AVGN, Knight Terrors & more.",
         "href": "https://freakzonegames.com/",
@@ -409,19 +409,19 @@ const categories = [
         "title": "Abigail Shrier",
         "subtitle": "Independent Journalist",
         "href": "https://www.abigailshrier.com/",
-        "src": "https://i.ibb.co/NVf7Gx5/Abigail-Shrier.png"
+        "src": "docs/assets/images/Abigail Shrier.png"
       },
       {
         "title": "Joe Rogan",
         "subtitle": "Host of The Joe Rogan Experience Podcast",
         "href": "https://www.joerogan.com/",
-        src: "https://i.ibb.co/nfzY2Cn/Joe-Rogan.png"
+        src: "docs/assets/images/Joe Rogan.png"
       },
       {
         "title": "Jordan Peterson",
         "subtitle": "Author, psychologist, online educator, and Professor Emeritus at the University of Toronto",
         "href": "https://www.jordanbpeterson.com/",
-        "src": "https://i.ibb.co/FYLY0vw/Jordan-Peterson.png"
+        "src": "docs/assets/images/Jordan Peterson.png"
       },
       {
         "title": "Bounding Into Comics",
@@ -487,7 +487,7 @@ const categories = [
         "title": "DEI Detected",
         "subtitle": "Forced DEI is becoming unbearable on games. It's time to push back. Vote with your wallet!",
         "href": "https://deidetected.com/",
-        "src": "https://i.ibb.co/ncsg8sd/DEI-Detected.png"
+        "src": "docs/assets/images/DEI Detected.png"
       },
       {
         "title": "The Free Press",
@@ -499,7 +499,7 @@ const categories = [
         "title": "Zero Punctuation",
         "subtitle": "Zero Punctuation is a series of video game reviews created by English comedy writer and video game journalist Ben \"Yahtzee\" Croshaw.",
         "href": "https://www.escapistmagazine.com/category/zero-punctuation/",
-        "src": "https://i.ibb.co/DKQ0RBk/Zero-Punctuation.png"
+        "src": "docs/assets/images/Zero Punctuation.png"
       }
     ]
   }
