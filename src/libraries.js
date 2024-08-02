@@ -76,13 +76,6 @@ const categories = [
         "src": "assets/libraries/Babel.png"
       },
       {
-        "title": "Bootstrap",
-        "subtitle": "The most popular HTML, CSS, and JS library in the world",
-        "href": "https://getbootstrap.com/",
-        "src": "assets/libraries/Bootstrap.png"
-      },
-    
-      {
         "title": "Lodash",
         "subtitle": "A modern JavaScript utility library delivering modularity, performance & extras",
         "href": "https://lodash.com/",
@@ -236,12 +229,6 @@ const categories = [
         "src": "assets/libraries/Vuex.png"
       },
       {
-        "title": "BootstrapVue",
-        "subtitle": "Quickly integrate Bootstrap v4 components with Vue.js",
-        "href": "https://bootstrap-vue.org/",
-        "src": "assets/libraries/BootstrapVue.png"
-      },
-      {
         "title": "PrimeVue",
         "subtitle": "The Most Complete UI Framework for VUE",
         "href": "https://primefaces.org/primevue/#/",
@@ -347,6 +334,16 @@ const categories = [
     "name": "Companies",
     "items": [
       {
+        "title": "Studio MDHR",
+        "href": "http://studiomdhr.com/",
+        "src": "docs/assets/images/Studio MDHR.png"
+      },
+      {
+        "title": "Team Cherry",
+        "href": "https://www.teamcherry.com.au/",
+        "src": "docs/assets/images/Team Cherry.png"
+      },
+      {
         "title": "GOG",
         "subtitle": "GOG.com offers over 5500 deals on games for Windows, Mac and Linux, with no DRM and free goodies.",
         "href": "https://www.gog.com",
@@ -363,6 +360,11 @@ const categories = [
         "subtitle": "We know retro.",
         "href": "https://joymasher.com/",
         "src": "docs/assets/images/JoyMasher.png"
+      },
+      {
+        "title": "Motion Twin",
+        "href": "https://motiontwin.com/",
+        "src": "docs/assets/images/Motion Twin.png"
       },
       {
         "title": "FreakZone Games",
