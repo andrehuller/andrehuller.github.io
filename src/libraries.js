@@ -356,49 +356,49 @@ const categories = [
         "title": "GOG",
         "subtitle": "GOG.com offers over 5500 deals on games for Windows, Mac and Linux, with no DRM and free goodies.",
         "href": "https://www.gog.com",
-        "src": "https://i.ibb.co/fSvBbLf/GOG.png"
+        "src": "docs/assets/images/GOG.png"
       },
       {
         "title": "Retroware",
         "subtitle": "We're all about modern retro games.",
         "href": "https://retroware.com/",
-        "src": "https://i.ibb.co/kxNFPDh/Retroware.png"
+        "src": "docs/assets/images/Retroware.png"
       },
       {
         "title": "FreakZone Games",
         "subtitle": "UK-based gamedev. Spectacular Sparky, AVGN, Knight Terrors & more.",
         "href": "https://freakzonegames.com/",
-        "src": "https://i.ibb.co/tHBr4Kq/Freak-Zone-Games.png"
+        "src": "docs/assets/images/FreakZone Games.png"
       },
       {
         "title": "DotEmu",
         "subtitle": "develops and publishes retro-inspired games",
         "href": "https://www.dotemu.com/",
-        "src": "https://i.ibb.co/M7YrBz3/Dotemu.png"
+        "src": "docs/assets/images/Dotemu.png"
       },
       {
         "title": "WayForward",
         "subtitle": "WayForward has become one of the biggest independent developers in the video game industry and home to some of the finest talent in the business.",
         "href": "https://wayforward.com",
-        "src": "https://i.ibb.co/vJrw88p/Way-Forward.png"
+        "src": "docs/assets/images/WayForward.png"
       },
       {
         "title": "Rippaverse",
         "subtitle": "Rippaverse Comics is the product of a comic book guy that still believes the magic of the culture.",
         "href": "https://rippaverse.com/",
-        "src": "https://i.ibb.co/XV1QPwB/Rippaverse.png"
+        "src": "docs/assets/images/Rippaverse.png"
       },
       {
         "title": "Skybound",
         "subtitle": "Skybound Entertainment is a multimedia company that produces and publishes comics, games, and other content.",
         "href": "https://www.skybound.com/",
-        "src": "assets/screenshots/Skybound.png"
+        "src": "docs/assets/images/Skybound.png"
       },
       {
         "title": "Hundred Star",
         "subtitle": "100 People * AAA Games * London",
         "href": "https://hundredstar.games/",
-        "src": "assets/screenshots/Hundred Star.png"
+        "src": "docs/assets/images/Hundred Star.png"
       }
     ]
   },
