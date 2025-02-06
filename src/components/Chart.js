@@ -107,7 +107,7 @@ const Chartjs = {
         </v-col>
         <v-col cols="12" lg="12">
           <v-card variant="outlined">
-            <v-data-table :items="items" :headers="headers" density="comfortable"></v-data-table>
+            <v-data-table :items="items" :headers="headers" density="compact"></v-data-table>
           </v-card>
         </v-col>
       </v-row>
