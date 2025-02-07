@@ -23,8 +23,16 @@ const Posters = {
   data: () => ({
     items: [
       {
+        href: './assets/posters/The 7th Voyage of Sinbad (1958).jpg',
+        title: 'The 7th Voyage of Sinbad (1958)'
+      },
+      {
         href: './assets/posters/Flash Gordon (1980).jpg',
         title: 'Flash Gordon (1980)'
+      },
+      {
+        href: './assets/posters/Clash of the Titans (1981).jpg',
+        title: 'Clash of the Titans (1981)'
       },
       {
         href: './assets/posters/Excalibur (1981).jpg',
