@@ -11,7 +11,7 @@ const Posters = {
             <div>
               <v-img v-if="item.href" height="495" :src="item.href"></v-img>
             </div>
-            <v-card-title>
+            <v-card-title align="center">
               {{ item.title }}
             </v-card-title>
           </v-card>
@@ -23,6 +23,14 @@ const Posters = {
   data: () => ({
     items: [
       {
+        href: './assets/posters/Flash Gordon (1980).jpg',
+        title: 'Flash Gordon (1980)'
+      },
+      {
+        href: './assets/posters/Excalibur (1981).jpg',
+        title: 'Excalibur (1981)'
+      },
+      {
         href: './assets/posters/Conan the Barbarian (1982).jpg',
         title: 'Conan the Barbarian (1982)'
       },
@@ -30,7 +38,6 @@ const Posters = {
         href: './assets/posters/Predator (1987).jpg',
         title: 'Predator (1987)'
       }
-
     ]
   })
 }
