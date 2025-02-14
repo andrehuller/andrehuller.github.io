@@ -45,6 +45,14 @@ const Posters = {
       {
         href: './assets/posters/Predator (1987).jpg',
         title: 'Predator (1987)'
+      },
+      {
+        href: './assets/posters/Army of Darkness (1992).jpg',
+        title: 'Army of Darkness (1992)'
+      },
+      {
+        href: './assets/posters/Shaun of the Dead (2004).jpg',
+        title: 'Shaun of the Dead (2004)'
       }
     ]
   })
