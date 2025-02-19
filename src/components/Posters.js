@@ -75,6 +75,14 @@ const Posters = {
         title: 'Predator (1987)'
       },
       {
+        href: './assets/posters/RoboCop (1987).jpg',
+        title: 'RoboCop (1987)'
+      },
+      {
+        href: './assets/posters/Total Recall (1990).jpg',
+        title: 'Total Recall (1990)'
+      },
+      {
         href: './assets/posters/Army of Darkness (1992).jpg',
         title: 'Army of Darkness (1992)'
       },
