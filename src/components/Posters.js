@@ -23,6 +23,14 @@ const Posters = {
   data: () => ({
     items: [
       {
+        href: './assets/posters/Captain Blood (1935).jpg',
+        title: 'Captain Blood (1935)'
+      },
+      {
+        href: './assets/posters/The Sea Hawk (1940).jpg',
+        title: 'The Sea Hawk (1940)'
+      },
+      {
         href: './assets/posters/The 7th Voyage of Sinbad (1958).jpg',
         title: 'The 7th Voyage of Sinbad (1958)'
       },
