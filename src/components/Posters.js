@@ -39,16 +39,20 @@ const Posters = {
         title: 'Night of the Living Dead (1968)'
       },
       {
+        href: './assets/posters/Dawn of the Dead (1978).jpg',
+        title: 'Dawn of the Dead (1978)'
+      },
+      {
+        href: './assets/posters/Day of the Dead (1985).jpg',
+        title: 'Day of the Dead (1985)'
+      },
+      {
         href: './assets/posters/Live and Let Die (1973).jpg',
         title: 'Live and Let Die (1973)'
       },
       {
         href: './assets/posters/The Gauntlet (1977).jpg',
         title: 'The Gauntlet (1977)'
-      },
-      {
-        href: './assets/posters/Dawn of the Dead (1978).jpg',
-        title: 'Dawn of the Dead (1978)'
       },
       {
         href: './assets/posters/Flash Gordon (1980).jpg',
@@ -66,6 +70,12 @@ const Posters = {
         href: './assets/posters/Conan the Barbarian (1982).jpg',
         title: 'Conan the Barbarian (1982)'
       },
+
+      {
+        href: './assets/posters/The Thing (1982).jpg',
+        title: 'The Thing (1982)'
+      },
+
       {
         href: './assets/posters/Tron (1982).jpg',
         title: 'Tron (1982)'
@@ -74,14 +84,29 @@ const Posters = {
         href: './assets/posters/WarGames (1983).jpg',
         title: 'WarGames (1983)'
       },
+
       {
         href: './assets/posters/The Terminator (1984).jpg',
         title: 'The Terminator (1984)'
       },
       {
+        href: './assets/posters/Aliens (1986).jpg',
+        title: 'Aliens (1986)'
+      },
+      {
+        href: './assets/posters/Highlander (1986).jpg',
+        title: 'Highlander (1986)'
+      },
+
+      {
         href: './assets/posters/Predator (1987).jpg',
         title: 'Predator (1987)'
       },
+      {
+        href: './assets/posters/Die Hard (1988).jpg',
+        title: 'Die Hard (1988)'
+      },
+
       {
         href: './assets/posters/RoboCop (1987).jpg',
         title: 'RoboCop (1987)'
@@ -91,12 +116,17 @@ const Posters = {
         title: 'Total Recall (1990)'
       },
       {
-        href: './assets/posters/Army of Darkness (1992).jpg',
-        title: 'Army of Darkness (1992)'
-      },
-      {
         href: './assets/posters/Starship Troopers (1997).jpg',
         title: 'Starship Troopers (1997)'
+      },
+
+      {
+        href: './assets/posters/Evil Dead II (1987).jpg',
+        title: 'Evil Dead II (1987)'
+      },
+      {
+        href: './assets/posters/Army of Darkness (1992).jpg',
+        title: 'Army of Darkness (1992)'
       },
       {
         href: './assets/posters/Shaun of the Dead (2004).jpg',
@@ -107,8 +137,16 @@ const Posters = {
         title: 'Red Cliff (2008)'
       },
       {
+        href: './assets/posters/Red Cliff II (2009).jpg',
+        title: 'Red Cliff II (2009)'
+      },
+      {
         href: './assets/posters/Bãhubali The Beginning (2015).jpg',
         title: 'Bãhubali: The Beginning (2015)'
+      },
+      {
+        href: './assets/posters/Bãhubali 2 The Conclusion (2017).jpg',
+        title: 'Bãhubali 2: The Conclusion (2017)'
       }
     ]
   })
