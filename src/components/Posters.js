@@ -27,12 +27,29 @@ const Posters = {
         title: 'Captain Blood (1935)'
       },
       {
+        href: './assets/posters/The Adventures of Robin Hood (1938).jpg',
+        title: 'The Adventures of Robin Hood (1938)'
+      },
+
+      {
         href: './assets/posters/The Sea Hawk (1940).jpg',
         title: 'The Sea Hawk (1940)'
       },
       {
         href: './assets/posters/The 7th Voyage of Sinbad (1958).jpg',
         title: 'The 7th Voyage of Sinbad (1958)'
+      },
+      {
+        href: './assets/posters/Sinbad and the Eye of the Tiger (1977).jpg',
+        title: 'Sinbad and the Eye of the Tiger (1977)'
+      },
+      {
+        href: './assets/posters/Clash of the Titans (1981).jpg',
+        title: 'Clash of the Titans (1981)'
+      },
+      {
+        href: './assets/posters/Jason and the Argonauts (1963).jpg',
+        title: 'Jason and the Argonauts (1963)'
       },
       {
         href: './assets/posters/Night of the Living Dead (1968).jpg',
@@ -55,12 +72,12 @@ const Posters = {
         title: 'The Gauntlet (1977)'
       },
       {
-        href: './assets/posters/Flash Gordon (1980).jpg',
-        title: 'Flash Gordon (1980)'
+        href: './assets/posters/Dracula (1979).jpg',
+        title: 'Dracula (1979)'
       },
       {
-        href: './assets/posters/Clash of the Titans (1981).jpg',
-        title: 'Clash of the Titans (1981)'
+        href: './assets/posters/Flash Gordon (1980).jpg',
+        title: 'Flash Gordon (1980)'
       },
       {
         href: './assets/posters/Excalibur (1981).jpg',
