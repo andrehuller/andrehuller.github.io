@@ -12,9 +12,37 @@ const Posters = {
     </v-tabs>
 
     <v-tabs-window v-model="tab">
+
     <v-tabs-window-item value="1930">
+
     <v-container fluid>
       <v-row>
+        <v-col cols="6">
+          <v-card variant="outlined" class="fill-height d-flex flex-column">
+            <v-card-title>
+              Ernst Lubitsch
+            </v-card-title>
+              <v-container fluid class="pt-0">
+                <v-row>
+        <v-col
+          v-for="item in itemsEL"
+          :key="item.name"
+          lg="4"
+        >
+          <v-card class="fill-height d-flex flex-column" flat tile>
+            <div>
+              <v-img v-if="item.href" height="325" :src="item.href"></v-img><!-- height="495" -->
+            </div>
+            <v-card-text align="center">
+              {{ item.title }}
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+    </v-container>
+          </v-card>
+        </v-col>
+
         <v-col cols="6">
           <v-card variant="outlined">
             <v-card-title>
@@ -40,6 +68,7 @@ const Posters = {
     </v-container>
           </v-card>
         </v-col>
+
       </v-row>
     </v-container>
     </v-tabs-window-item>
@@ -598,6 +627,20 @@ const Posters = {
   `,
   data: () => ({
     tab: null,
+    itemsEL: [
+      {
+        href: './assets/posters/Trouble in Paradise (1932).jpg',
+        title: 'Trouble in Paradise (1932)'
+      },
+      {
+        href: './assets/posters/To Be or Not to Be (1942).jpg',
+        title: 'To Be or Not to Be (1942)'
+      },
+      {
+        href: './assets/posters/Heaven Can Wait (1943).jpg',
+        title: 'Heaven Can Wait (1943)'
+      }
+    ],
     items0: [
       {
         href: './assets/posters/Captain Blood (1935).jpg',
