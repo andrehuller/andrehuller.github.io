@@ -26,6 +26,8 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.bitmapbureau.com/games/terminator-2d-no-fate -->
+
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
@@ -38,7 +40,7 @@ const Games = {
         <!-- https://simonquest.com/press -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Transylvania Adventure of Simon Quest.jpg"  cover></v-img>
+            <v-img src="assets/games/The Transylvania Adventure of Simon Quest.jpg" height="256" cover></v-img>
             <v-card-text><b>The Transylvania Adventure of Simon Quest (2025)</b></v-card-text>
           </v-card>
         </v-col>
