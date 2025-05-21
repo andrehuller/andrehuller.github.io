@@ -97,7 +97,7 @@
     <script src="./src/components/PersonalRecommendations.js"></script>
     <script src="./src/components/OwnerEstimations.js"></script>
     
-    <script src="./src/components/StagingArea.js"></script>
+    <script src="./src/components/Games.js"></script>
     
     <script src="./src/components/Bookmarks.js"></script>
     
@@ -220,6 +220,11 @@
                 <v-icon icon="mdi-youtube"></v-icon>
               </template>
             </v-list-item>
+            <v-list-item title="Games" to="/games">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-gamepad"></v-icon>
+              </template>
+            </v-list-item>
           </v-list>
 
           <v-divider></v-divider>
@@ -283,7 +288,7 @@ const routes = [
   { path: '/wikimedia', component: Wikimedia },
   { path: '/posters', component: Posters },
   
-  { path: '/stagingarea', component: StagingArea },
+  { path: '/games', component: Games },
   
   { path: '/fpsgames', component: FPSGames },
   { path: '/indiegames', component: IndieGames },
