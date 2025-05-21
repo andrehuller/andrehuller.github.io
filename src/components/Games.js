@@ -10,6 +10,14 @@ const Games = {
           </v-card>
         </v-col>
 
+	<!-- https://prisoncitygame.com/press -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Prison City.jpg" height="190" cover></v-img>
+            <v-card-text><b>Prison City (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -35,9 +43,6 @@ const Games = {
           </v-card>
         </v-col>
       </v-row>
-
-      <!-- Inglorious Rex creator Shane Davis, Godlike and Graveyard Shift creator Jon Malin, and Cyberfrog creator Ethan Van Sciver -->
-      <!-- https://comicsgate.org/ -->
     </v-container>
   `
 }
