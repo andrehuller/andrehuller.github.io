@@ -10,6 +10,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Battle Axe.png" height="190" cover></v-img>
+            <v-card-text><b>Battle Axe (2021)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
