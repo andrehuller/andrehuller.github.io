@@ -5,7 +5,7 @@ const Games = {
 	<!-- https://eagleislandgame.com/press -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Eagle Island Twist.jpg" height="190" cover></v-img>
+            <v-img src="assets/games/Eagle Island Twist.png" height="190" cover></v-img>
             <v-card-text><b>Eagle Island Twist (2019)</b></v-card-text>
           </v-card>
         </v-col>
@@ -13,7 +13,7 @@ const Games = {
 	<!-- https://prisoncitygame.com/press -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Prison City.jpg" height="190" cover></v-img>
+            <v-img src="assets/games/Prison City.png" height="190" cover></v-img>
             <v-card-text><b>Prison City (2023)</b></v-card-text>
           </v-card>
         </v-col>
@@ -26,7 +26,7 @@ const Games = {
           </v-card>
         </v-col>
 
-        <!-- https://www.bitmapbureau.com/games/terminator-2d-no-fate -->
+
 
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -40,10 +40,27 @@ const Games = {
         <!-- https://simonquest.com/press -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Transylvania Adventure of Simon Quest.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/The Transylvania Adventure of Simon Quest.png" height="256" cover></v-img>
             <v-card-text><b>The Transylvania Adventure of Simon Quest (2025)</b></v-card-text>
           </v-card>
         </v-col>
+
+        <!-- https://www.bitmapbureau.com/games/terminator-2d-no-fate -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Terminator 2D No Fate.jpg" height="256" cover></v-img>
+            <v-card-text><b>Terminator 2D: NO FATE (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.playstation.com/es-ar/games/robocop-rogue-city/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/RoboCop Rogue City.jpg" height="256" cover></v-img>
+            <v-card-text><b>RoboCop: Rogue City (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+        
       </v-row>
     </v-container>
   `
