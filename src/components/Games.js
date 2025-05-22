@@ -26,8 +26,6 @@ const Games = {
           </v-card>
         </v-col>
 
-
-
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
@@ -37,6 +35,48 @@ const Games = {
       </v-row>
 
       <v-row>
+        <!-- https://www.mobygames.com/game/40541/x-men-origins-wolverine-uncaged-edition/promo/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/X-Men Origins Wolverine.jpg" height="256" cover></v-img>
+            <v-card-text><b>X-Men Origins: Wolverine (2009)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/batman-arkham-origins/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Batman Arkham Origins.jpg" height="256" cover></v-img>
+            <v-card-text><b>Batman: Arkham Origins (2013)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/injustice-2/presskit -->
+        <!--
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Injustice 2.jpg" height="256" cover></v-img>
+            <v-card-text><b>Injustice 2 (2017)</b></v-card-text>
+          </v-card>
+        </v-col>
+        -->
+
+        <!-- https://www.playstation.com/es-ar/games/robocop-rogue-city/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/RoboCop Rogue City.jpg" height="256" cover></v-img>
+            <v-card-text><b>RoboCop: Rogue City (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.terminals.io/games/captain-blood -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Captain Blood.jpg" height="256" cover></v-img>
+            <v-card-text><b>Captain Blood (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://simonquest.com/press -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -50,14 +90,6 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Terminator 2D No Fate.jpg" height="256" cover></v-img>
             <v-card-text><b>Terminator 2D: NO FATE (2025)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.playstation.com/es-ar/games/robocop-rogue-city/ -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/RoboCop Rogue City.jpg" height="256" cover></v-img>
-            <v-card-text><b>RoboCop: Rogue City (2023)</b></v-card-text>
           </v-card>
         </v-col>
         
