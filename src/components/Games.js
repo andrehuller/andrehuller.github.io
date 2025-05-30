@@ -18,6 +18,34 @@ const Games = {
           </v-card>
         </v-col>
 
+	<!-- https://ironmeat.com/press -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Iron Meat.png" height="190" cover></v-img>
+            <v-card-text><b>Iron Meat (2024)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Neon Inferno.png" height="190" cover></v-img>
+            <v-card-text>
+              <b>Neon Inferno (2025)</b>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://joymasher.com/blazing-chrome/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Blazing Chrome.jpg" height="190" cover></v-img>
+            <v-card-text>
+              <b>Blazing Chrome (2019)</b>
+            </v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -32,7 +60,16 @@ const Games = {
             <v-card-text><b>Soulstice (2022)</b></v-card-text>
           </v-card>
         </v-col>
+
+        <!-- https://www.playsidestudios.com/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Mouse PI.jpg" height="190" cover></v-img>
+            <v-card-text><b>Mouse PI (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
       </v-row>
+
 
       <v-row>
         <!-- https://www.mobygames.com/game/40541/x-men-origins-wolverine-uncaged-edition/promo/ -->
