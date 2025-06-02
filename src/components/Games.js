@@ -114,6 +114,27 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/clair-obscur-expedition-33 -->
+
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Clair Obscur.png" height="256" cover></v-img>
+            <v-card-text><b>Clair Obscur: Expedition 33 (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.scheduleonegame.com/presskit/schedule-one/index.html -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Schedule I.png" height="256" cover></v-img>
+            <v-card-text><b>Schedule I (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
+
+      <v-row>
         <!-- https://simonquest.com/press -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -129,7 +150,6 @@ const Games = {
             <v-card-text><b>Terminator 2D: NO FATE (2025)</b></v-card-text>
           </v-card>
         </v-col>
-        
       </v-row>
     </v-container>
   `
