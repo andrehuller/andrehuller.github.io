@@ -10,6 +10,15 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://avgngame.com/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/AVGN.png" height="190" cover></v-img>
+            <v-card-text><b>Angry Video Game Nerd I & II Deluxe (2020)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+
 	<!-- https://prisoncitygame.com/press -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -26,13 +35,11 @@ const Games = {
           </v-card>
         </v-col>
 
-	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
+        <!-- https://www.igdb.com/games/sonic-mania/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Neon Inferno.png" height="190" cover></v-img>
-            <v-card-text>
-              <b>Neon Inferno (2025)</b>
-            </v-card-text>
+            <v-img src="assets/games/Sonic Mania.png" height="190" cover></v-img>
+            <v-card-text><b>Sonic Mania (2017)</b></v-card-text>
           </v-card>
         </v-col>
 
@@ -60,7 +67,11 @@ const Games = {
             <v-card-text><b>Soulstice (2022)</b></v-card-text>
           </v-card>
         </v-col>
+      </v-row>
 
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
+
+      <v-row>
         <!-- https://www.playsidestudios.com/ -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -68,8 +79,17 @@ const Games = {
             <v-card-text><b>Mouse PI (2025)</b></v-card-text>
           </v-card>
         </v-col>
-      </v-row>
 
+	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Neon Inferno.png" height="190" cover></v-img>
+            <v-card-text>
+              <b>Neon Inferno (2025)</b>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
 
       <v-row>
         <!-- https://www.mobygames.com/game/40541/x-men-origins-wolverine-uncaged-edition/promo/ -->
@@ -87,6 +107,8 @@ const Games = {
             <v-card-text><b>Batman: Arkham Origins (2013)</b></v-card-text>
           </v-card>
         </v-col>
+
+
 
         <!-- https://www.igdb.com/games/injustice-2/presskit -->
         <!--
