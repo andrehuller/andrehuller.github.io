@@ -67,7 +67,6 @@ const Games = {
           </v-card>
         </v-col>
 
-
         <!-- https://www.igdb.com/games/blasphemous/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -105,6 +104,15 @@ const Games = {
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
 
       <v-row>
+
+        <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
+            <v-card-text><b>Hollow Knight: Silksong (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.playsidestudios.com/ -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -133,6 +141,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/dead-rising-2/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Dead Rising 2.jpg" height="256" cover></v-img>
+            <v-card-text><b>Dead Rising 2 (2010)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/batman-arkham-origins/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -141,7 +157,13 @@ const Games = {
           </v-card>
         </v-col>
 
-
+        <!-- https://www.igdb.com/games/resident-evil-0/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Resident Evil 0.jpg" height="256" cover></v-img>
+            <v-card-text><b>Resident Evil 0 (2016)</b></v-card-text>
+          </v-card>
+        </v-col>
 
         <!-- https://www.igdb.com/games/injustice-2/presskit -->
         <!--
