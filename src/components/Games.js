@@ -35,6 +35,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- http://www.studiomdhr.com/press/#images -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Cuphead.png" height="190" cover></v-img>
+            <v-card-text><b>Cuphead (2017)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.teamcherry.com.au/games -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -50,6 +58,15 @@ const Games = {
             <v-card-text><b>Sonic Mania (2017)</b></v-card-text>
           </v-card>
         </v-col>
+
+        <!-- https://www.igdb.com/games/54844/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Ion Fury.png" height="190" cover></v-img>
+            <v-card-text><b>Ion Fury (2019)</b></v-card-text>
+          </v-card>
+        </v-col>
+
 
         <!-- https://www.igdb.com/games/blasphemous/presskit -->
         <v-col lg="3">
