@@ -35,11 +35,27 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.teamcherry.com.au/games -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Hollow Knight.png" height="190" cover></v-img>
+            <v-card-text><b>Hollow Knight (2017)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/sonic-mania/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Sonic Mania.png" height="190" cover></v-img>
             <v-card-text><b>Sonic Mania (2017)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/blasphemous/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Blasphemous.png" height="190" cover></v-img>
+            <v-card-text><b>Blasphemous (2019)</b></v-card-text>
           </v-card>
         </v-col>
 
