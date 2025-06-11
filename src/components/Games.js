@@ -221,6 +221,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- http://emberheartgames.com/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Wizordum.png" height="256" cover></v-img>
+            <v-card-text><b>Wizordum (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.bitmapbureau.com/games/terminator-2d-no-fate -->
         <!--
         <v-col lg="4">
