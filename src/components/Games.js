@@ -221,6 +221,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- Trailer Thumbnail -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/AVGN 8bit.png" height="256" cover></v-img>
+            <v-card-text><b>AVGN 8bit (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- http://emberheartgames.com/ -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
