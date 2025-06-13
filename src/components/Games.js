@@ -266,7 +266,7 @@ const Games = {
         <!-- https://gamerant.com/robocop-rogue-city-every-character-from-movies/ -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/RoboCop Rogue City Portrait.jpg" cover></v-img>
+            <v-img src="assets/portraits/Rogue City.jpg" cover></v-img>
             <v-card-text><b>RoboCop: Rogue City (2023)</b></v-card-text>
           </v-card>
         </v-col>
