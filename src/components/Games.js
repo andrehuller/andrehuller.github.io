@@ -188,12 +188,14 @@ const Games = {
         -->
 
         <!-- https://www.playstation.com/es-ar/games/robocop-rogue-city/ -->
+        <!--
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/RoboCop Rogue City.jpg" height="256" cover></v-img>
             <v-card-text><b>RoboCop: Rogue City (2023)</b></v-card-text>
           </v-card>
         </v-col>
+        -->
 
         <!-- https://www.terminals.io/games/captain-blood -->
         <v-col lg="4">
@@ -261,6 +263,14 @@ const Games = {
       </v-row>
 
       <v-row>
+        <!-- https://gamerant.com/robocop-rogue-city-every-character-from-movies/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/RoboCop Rogue City Portrait.jpg" cover></v-img>
+            <v-card-text><b>RoboCop: Rogue City (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Terminator 2D.png"  cover></v-img>
