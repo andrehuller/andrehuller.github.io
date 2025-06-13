@@ -85,6 +85,17 @@ const Games = {
           </v-card>
         </v-col>
 
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
+            <v-card-text><b>Soulstice (2022)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Wishlist</h2>
+
+      <v-row>
         <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -93,10 +104,11 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/gravity-circuit/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
-            <v-card-text><b>Soulstice (2022)</b></v-card-text>
+            <v-img src="assets/games/Gravity Circuit.jpg" height="190" cover></v-img>
+            <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
           </v-card>
         </v-col>
       </v-row>
