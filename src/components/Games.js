@@ -209,7 +209,7 @@ const Games = {
 
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Clair Obscur.png" height="256" cover></v-img>
+            <v-img src="assets/games/Clair Obscur Expedition 33.jpg" height="256" cover></v-img>
             <v-card-text><b>Clair Obscur: Expedition 33 (2025)</b></v-card-text>
           </v-card>
         </v-col>
