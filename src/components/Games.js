@@ -169,6 +169,13 @@ const Games = {
           </v-card>
         </v-col>
 
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/The Banner Saga.png" height="256" cover></v-img>
+            <v-card-text><b>The Banner Saga (2014)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/resident-evil-0/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -206,7 +213,6 @@ const Games = {
         </v-col>
 
         <!-- https://www.igdb.com/games/clair-obscur-expedition-33 -->
-
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Clair Obscur Expedition 33.jpg" height="256" cover></v-img>
