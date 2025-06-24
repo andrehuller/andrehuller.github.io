@@ -169,6 +169,7 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/the-banner-saga/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/The Banner Saga.png" height="256" cover></v-img>
