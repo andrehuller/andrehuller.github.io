@@ -18,7 +18,6 @@ const Games = {
           </v-card>
         </v-col>
 
-
 	<!-- https://prisoncitygame.com/press -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -93,6 +92,26 @@ const Games = {
         </v-col>
       </v-row>
 
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Sabotage Studio</h2>
+
+      <v-row>
+        <!-- https://sabotagestudio.com/presskits/the-messenger/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/The Messenger.png.webp" height="256" cover></v-img>
+            <v-card-text><b>The Messenger (2018)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://sabotagestudio.com/presskits/sea-of-stars/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Sea of Stars.png.webp" height="256" cover></v-img>
+            <v-card-text><b>Sea of Stars (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Wishlist</h2>
 
       <v-row>
@@ -116,7 +135,6 @@ const Games = {
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
 
       <v-row>
-
         <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column" title="Hollow Knight: Silksong (2025)">
@@ -134,6 +152,9 @@ const Games = {
 	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column" title="Neon Inferno (2025)">
+            <template v-slot:append>
+              <v-chip>October 2nd</v-chip>
+            </template>
             <v-img src="assets/games/Neon Inferno.png" height="190" cover></v-img>
           </v-card>
         </v-col>
@@ -191,6 +212,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/the-last-faith/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/The Last Faith.jpg" height="256" cover></v-img>
+            <v-card-text><b>The Last Faith (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/injustice-2/presskit -->
         <!--
         <v-col lg="4">
@@ -235,11 +264,11 @@ const Games = {
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/the-last-faith/presskit -->
+        <!-- https://presskit.taintedgrail.com/ -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Last Faith.jpg" height="256" cover></v-img>
-            <v-card-text><b>The Last Faith (2023)</b></v-card-text>
+            <v-img src="assets/games/Tainted Grail.jpg" height="256" cover></v-img>
+            <v-card-text><b>Tainted Grail: The Fall of Avalon (2025)</b></v-card-text>
           </v-card>
         </v-col>
 
