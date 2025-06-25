@@ -119,27 +119,33 @@ const Games = {
 
         <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
         <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
+          <v-card class="fill-height d-flex flex-column" title="Hollow Knight: Silksong (2025)">
             <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
-            <v-card-text><b>Hollow Knight: Silksong (2025)</b></v-card-text>
           </v-card>
         </v-col>
 
         <!-- https://www.playsidestudios.com/ -->
         <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
+          <v-card class="fill-height d-flex flex-column" title="Mouse PI (2025)">
             <v-img src="assets/games/Mouse PI.jpg" height="190" cover></v-img>
-            <v-card-text><b>Mouse PI (2025)</b></v-card-text>
           </v-card>
         </v-col>
 
 	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
         <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
+          <v-card class="fill-height d-flex flex-column" title="Neon Inferno (2025)">
             <v-img src="assets/games/Neon Inferno.png" height="190" cover></v-img>
-            <v-card-text>
-              <b>Neon Inferno (2025)</b>
-            </v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://playtoxiccrusaders.com/press -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column" title="Toxic Crusaders">
+            <template v-slot:append>
+              <v-chip>Q3 2025</v-chip>
+            </template>
+
+            <v-img src="assets/games/Toxic Crusaders.png" height="190" cover></v-img>
           </v-card>
         </v-col>
       </v-row>
