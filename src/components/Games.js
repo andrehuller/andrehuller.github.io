@@ -248,6 +248,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/black-myth-wukong/presskit#images -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Black Myth.png" height="256" cover></v-img>
+            <v-card-text><b>Black Myth: Wukong (2024)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/clair-obscur-expedition-33 -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -276,7 +284,7 @@ const Games = {
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/The Blood of Dawnwalker.png" height="256" cover></v-img>
-            <v-card-text><b>The Blood of Dawnwalker</b></v-card-text>
+            <v-card-text><b>The Blood of Dawnwalker (2026)</b></v-card-text>
           </v-card>
         </v-col>
       </v-row>
