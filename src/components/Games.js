@@ -130,6 +130,14 @@ const Games = {
             <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
           </v-card>
         </v-col>
+
+        <!-- https://www.igdb.com/games/sonic-origins/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Sonic Origins.jpg" height="190" cover></v-img>
+            <v-card-text><b>Sonic Origins (2022)</b></v-card-text>
+          </v-card>
+        </v-col>
       </v-row>
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
@@ -355,11 +363,22 @@ const Games = {
               <b>Terminator 2D: NO FATE (2025)</b>
               September 5, 2025
             </v-card-text>
-
           </v-card>
         </v-col>
-
       </v-row>
+
+      <v-row>
+        <v-col lg="4">
+          <!-- https://www.igdb.com/games/sonic-mania -->
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Sonic Mania Poster.png"></v-img>
+            <v-card-text >
+              <b>Sonic Mania</b>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
     </v-container>
   `
 }
