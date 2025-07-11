@@ -234,7 +234,7 @@ const Games = {
         <!-- https://www.igdb.com/games/the-last-faith/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Last Faith.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/The Last Faith.png" height="256" cover></v-img>
             <v-card-text><b>The Last Faith (2023)</b></v-card-text>
           </v-card>
         </v-col>
@@ -378,7 +378,6 @@ const Games = {
           </v-card>
         </v-col>
       </v-row>
-
     </v-container>
   `
 }
