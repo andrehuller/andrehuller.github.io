@@ -87,25 +87,34 @@ const Games = {
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
       <v-row>
         <!-- screen: https://www.igdb.com/games/54844/presskit -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Ion Fury.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/Ion Fury.png" height="190" cover></v-img>
             <v-card-text><b>Ion Fury (2019)</b></v-card-text>
           </v-card>
         </v-col>
 
         <!-- https://3drealms.com/press/ -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Cultic.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/Cultic.jpg" height="190" cover></v-img>
             <v-card-text><b>Cultic (2022)</b></v-card-text>
           </v-card>
         </v-col>
 
-        <!-- https://3drealms.com/press/ -->
-        <v-col lg="4">
+        <!-- https://www.igdb.com/games/ion-fury-aftershock/presskit -->
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Wrath Aeon of Ruin.png" height="256" cover></v-img>
+            <v-img src="assets/games/Ion Fury Aftershock.png" height="190" cover></v-img>
+            <v-card-text><b>Ion Fury: Aftershock (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+
+        <!-- https://3drealms.com/press/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Wrath Aeon of Ruin.png" height="190" cover></v-img>
             <v-card-text><b>Wrath: Aeon of Ruin (2024)</b></v-card-text>
           </v-card>
         </v-col>
@@ -212,6 +221,19 @@ const Games = {
               <v-card-title>Toxic Crusaders</v-card-title>
               <template v-slot:append>
                 <v-chip>Q3 2025</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://tributegames.com/presskit/sheet.php?p=Marvel%20Cosmic%20Invasion -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Cosmic Invasion.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>MARVEL Cosmic Invasion</v-card-title>
+              <template v-slot:append>
+                <v-chip>2025</v-chip>
               </template>
             </v-card-item>
           </v-card>
