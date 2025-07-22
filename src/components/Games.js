@@ -58,14 +58,6 @@ const Games = {
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/54844/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Ion Fury.png" height="190" cover></v-img>
-            <v-card-text><b>Ion Fury (2019)</b></v-card-text>
-          </v-card>
-        </v-col>
-
         <!-- https://www.igdb.com/games/blasphemous/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -88,6 +80,33 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
             <v-card-text><b>Soulstice (2022)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
+      <v-row>
+        <!-- screen: https://www.igdb.com/games/54844/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Ion Fury.jpg" height="256" cover></v-img>
+            <v-card-text><b>Ion Fury (2019)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://3drealms.com/press/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Cultic.jpg" height="256" cover></v-img>
+            <v-card-text><b>Cultic (2022)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://3drealms.com/press/ -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Wrath Aeon of Ruin.png" height="256" cover></v-img>
+            <v-card-text><b>Wrath: Aeon of Ruin (2024)</b></v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -120,6 +139,15 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Battle Axe.png" height="190" cover></v-img>
             <v-card-text><b>Battle Axe (2021)</b></v-card-text>
+          </v-card>
+        </v-col>
+        <!-- Purchased -->
+
+        <!-- https://tributegames.com/presskit/sheet.php?p=SteelAssault -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Steel Assault.png" height="190" cover></v-img>
+            <v-card-text><b>Steel Assault (2021)</b></v-card-text>
           </v-card>
         </v-col>
 
@@ -231,7 +259,7 @@ const Games = {
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/the-last-faith/presskit -->
+        <!-- https://www.thelastfaithgame.com/ Kit de Imprensa -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/The Last Faith.png" height="256" cover></v-img>
@@ -373,7 +401,7 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Sonic Mania Poster.png"></v-img>
             <v-card-text >
-              <b>Sonic Mania</b>
+              <b>Sonic Mania (2017)</b>
             </v-card-text>
           </v-card>
         </v-col>
