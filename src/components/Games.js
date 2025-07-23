@@ -84,6 +84,49 @@ const Games = {
         </v-col>
       </v-row>
 
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Dotemu</h2>
+      <v-row>
+        <!-- https://www.dotemu.com/PressKit/project/Games/TeenageMutantNinjaTurtlesShreddersRevenge -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/TMNTSR.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Shredder’s Revenge</v-card-title>
+              <v-card-subtitle>Teenage Mutant Ninja Turtles</v-card-subtitle>
+              <template v-slot:append>
+                <v-chip>2022</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://tributegames.com/presskit/sheet.php?p=Marvel%20Cosmic%20Invasion -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Cosmic Invasion.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>MARVEL Cosmic Invasion</v-card-title>
+              <template v-slot:append>
+                <v-chip>2025</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.dotemu.com/PressKit/project/Games/NinjaGaidenRagebound#images -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Ninja Gaiden Ragebound.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Ninja Gaiden: Ragebound</v-card-title>
+              <template v-slot:append>
+                <v-chip>July 31, 2025</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
       <v-row>
         <!-- screen: https://www.igdb.com/games/54844/presskit -->
@@ -221,19 +264,6 @@ const Games = {
               <v-card-title>Toxic Crusaders</v-card-title>
               <template v-slot:append>
                 <v-chip>Q3 2025</v-chip>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://tributegames.com/presskit/sheet.php?p=Marvel%20Cosmic%20Invasion -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Cosmic Invasion.png" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>MARVEL Cosmic Invasion</v-card-title>
-              <template v-slot:append>
-                <v-chip>2025</v-chip>
               </template>
             </v-card-item>
           </v-card>
