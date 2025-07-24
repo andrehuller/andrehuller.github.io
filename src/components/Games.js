@@ -87,26 +87,33 @@ const Games = {
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Sabotage Studio</h2>
       <v-row>
         <!-- https://sabotagestudio.com/presskits/the-messenger/ -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/sabotage/The Messenger.png.webp" height="256" cover></v-img>
+            <v-img src="assets/games/sabotage/screen/The Messenger.png" height="190" cover></v-img>
             <v-card-text><b>The Messenger (2018)</b></v-card-text>
           </v-card>
         </v-col>
 
-        <!-- https://sabotagestudio.com/presskits/sea-of-stars/ -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/sabotage/Sea of Stars.png.webp" height="256" cover></v-img>
+            <v-img src="assets/games/sabotage/screen/Picnic Panic.png" height="190" cover></v-img>
+            <v-card-text><b>Picnic Panic (2019)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://sabotagestudio.com/presskits/sea-of-stars/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/sabotage/screen/Sea of Stars.png" height="190" cover></v-img>
             <v-card-text><b>Sea of Stars (2023)</b></v-card-text>
           </v-card>
         </v-col>
 
         <!-- https://sabotagestudio.com/presskits/sea-of-stars-throes-of-the-watchmaker/ -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/sabotage/Sea of Stars Throes of the Watchmaker.png" height="256" cover></v-img>
-            <v-card-text><b>Sea of Stars: Throes of the Watchmaker (2025)</b></v-card-text>
+            <v-img src="assets/games/sabotage/screen/Throes of the Watchmaker.png" height="190" cover></v-img>
+            <v-card-text><b>Throes of the Watchmaker (2025)</b></v-card-text>
           </v-card>
         </v-col>
       </v-row>
