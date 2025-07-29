@@ -82,6 +82,22 @@ const Games = {
             <v-card-text><b>Soulstice (2022)</b></v-card-text>
           </v-card>
         </v-col>
+
+        <!-- https://berserkboygames.com/games-berserk-boy -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Berserk Boy.png" height="190" cover></v-img>
+            <v-card-text><b>Berserk Boy (2024)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Spectacular Sparky.jpg" height="190" cover></v-img>
+            <v-card-text><b>Spectacular Sparky (2021)</b></v-card-text>
+          </v-card>
+        </v-col>
+
       </v-row>
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Sabotage Studio</h2>

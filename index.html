@@ -81,6 +81,7 @@
     <script src="./src/components/TreeView.js"></script>
     -->
     <script src="./src/components/DatePicker.js"></script>
+    <script src="./src/components/SQLFormatter.js"></script>
     
     <script src="./src/components/Git.js"></script>
     <script src="./src/components/YouTube.js"></script>
@@ -198,6 +199,11 @@
                 <v-icon icon="mdi-calendar"></v-icon>
               </template>
             </v-list-item>
+            <v-list-item title="SQL Formatter" to="/sqlformatter">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-calendar"></v-icon>
+              </template>
+            </v-list-item>
             <!--
             <v-list-item title="Tree View" to="/treeview">
               <template v-slot:prepend>
@@ -280,6 +286,7 @@ const routes = [
   { path: '/openrouteservice', component: ORS },
   // { path: '/calendar', component: Calendar },
   { path: '/datepicker', component: DatePicker },
+  { path: '/sqlformatter', component: SQLFormatter },
   // { path: '/treeview', component: TreeView },
   { path: '/git', component: Git },
   { path: '/youtube', component: YouTube },
