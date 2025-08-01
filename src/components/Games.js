@@ -1,39 +1,283 @@
 const Games = {
   template: `
     <v-container fluid>
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Retroware</h2>
       <v-row>
 	<!-- https://eagleislandgame.com/press -->
-        <v-col lg="3">
+        <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Eagle Island Twist.png" height="190" cover></v-img>
-            <v-card-text><b>Eagle Island Twist (2019)</b></v-card-text>
+            <v-img src="assets/games/Eagle Island Twist.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Eagle Island Twist</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
         <!-- https://avgngame.com/ -->
-        <v-col lg="3">
+        <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/AVGN.png" height="190" cover></v-img>
-            <v-card-text><b>Angry Video Game Nerd I & II Deluxe (2020)</b></v-card-text>
+            <v-img src="assets/games/AVGN.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Angry Video Game Nerd I & II Deluxe</v-card-title>
+              <v-card-subtitle>2020</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
 	<!-- https://prisoncitygame.com/press -->
-        <v-col lg="3">
+        <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Prison City.png" height="190" cover></v-img>
-            <v-card-text><b>Prison City (2023)</b></v-card-text>
+            <v-img src="assets/games/Prison City.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Prison City</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
 	<!-- https://ironmeat.com/press -->
-        <v-col lg="3">
+        <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Iron Meat.png" height="190" cover></v-img>
-            <v-card-text><b>Iron Meat (2024)</b></v-card-text>
+            <v-img src="assets/games/Iron Meat.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Iron Meat</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
+        <!-- Trailer Thumbnail -->
+        <!-- https://simonquest.com/press -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Simon Quest.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>The Transylvania Adventure of Simon Quest</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- Trailer Thumbnail -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/AVGN 8bit.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title><b>AVGN 8bit</b></v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Neon Inferno.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Neon Inferno</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-chip>October 2nd</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://playtoxiccrusaders.com/press -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Toxic Crusaders.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Toxic Crusaders</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-chip>December 4th</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">DotEmu</h2>
+      <v-row>
+        <!-- https://www.dotemu.com/PressKit/project/Games/TeenageMutantNinjaTurtlesShreddersRevenge -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/TMNTSR.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Shredder’s Revenge</v-card-title>
+              <v-card-subtitle>Teenage Mutant Ninja Turtles</v-card-subtitle>
+              <template v-slot:append>
+                <v-chip>2022</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://tributegames.com/presskit/sheet.php?p=Marvel%20Cosmic%20Invasion -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Cosmic Invasion.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>MARVEL Cosmic Invasion</v-card-title>
+              <template v-slot:append>
+                <v-chip>2025</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.dotemu.com/PressKit/project/Games/NinjaGaidenRagebound#images -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Ninja Gaiden Ragebound.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Ninja Gaiden: Ragebound</v-card-title>
+              <template v-slot:append>
+                <v-chip>July 31, 2025</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Microids</h2>
+      <v-row>
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Syberia Remastered.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Syberia: Remastered (Q4 2025)</v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/amerzone-the-explorers-legacy--1/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Amerzone.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Amerzone: The Explorer's Legacy (2025)</v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Syberia The World Before.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Syberia: The World Before (2022)</v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!--
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Asterix & Obelix Slap Them All.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Asterix & Obelix: Slap Them All! (2021)</v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+        -->
+
+        <!-- https://www.igdb.com/games/asterix-and-obelix-xxl-2/presskit -->
+        <!--
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Astérix & Obélix XXL 2.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Astérix & Obélix XXL 2 (2018)</v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+        -->
+
+        <!--
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/The Smurfs - Dreams.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>The Smurfs - Dreams (2024)</v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+        -->
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
+      <v-row>
+        <!-- screen: https://www.igdb.com/games/54844/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Ion Fury.png" height="190" cover></v-img>
+            <v-card-text><b>Ion Fury (2019)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://3drealms.com/press/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Cultic.jpg" height="190" cover></v-img>
+            <v-card-text><b>Cultic (2022)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/ion-fury-aftershock/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Ion Fury Aftershock.png" height="190" cover></v-img>
+            <v-card-text><b>Ion Fury: Aftershock (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://3drealms.com/press/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Wrath Aeon of Ruin.png" height="190" cover></v-img>
+            <v-card-text><b>Wrath: Aeon of Ruin (2024)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Sabotage Studio</h2>
+      <v-row>
+        <!-- https://sabotagestudio.com/presskits/the-messenger/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/sabotage/screen/The Messenger.png" height="190" cover></v-img>
+            <v-card-text><b>The Messenger (2018)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/sabotage/screen/Picnic Panic.png" height="190" cover></v-img>
+            <v-card-text><b>Picnic Panic (2019)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://sabotagestudio.com/presskits/sea-of-stars/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/sabotage/screen/Sea of Stars.png" height="190" cover></v-img>
+            <v-card-text><b>Sea of Stars (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://sabotagestudio.com/presskits/sea-of-stars-throes-of-the-watchmaker/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/sabotage/screen/Throes of the Watchmaker.png" height="190" cover></v-img>
+            <v-card-text><b>Throes of the Watchmaker (2025)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Wishlist</h2>
+      <v-row>
         <!-- http://www.studiomdhr.com/press/#images -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -98,124 +342,6 @@ const Games = {
           </v-card>
         </v-col>
 
-      </v-row>
-
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Sabotage Studio</h2>
-      <v-row>
-        <!-- https://sabotagestudio.com/presskits/the-messenger/ -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/sabotage/screen/The Messenger.png" height="190" cover></v-img>
-            <v-card-text><b>The Messenger (2018)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/sabotage/screen/Picnic Panic.png" height="190" cover></v-img>
-            <v-card-text><b>Picnic Panic (2019)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <!-- https://sabotagestudio.com/presskits/sea-of-stars/ -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/sabotage/screen/Sea of Stars.png" height="190" cover></v-img>
-            <v-card-text><b>Sea of Stars (2023)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <!-- https://sabotagestudio.com/presskits/sea-of-stars-throes-of-the-watchmaker/ -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/sabotage/screen/Throes of the Watchmaker.png" height="190" cover></v-img>
-            <v-card-text><b>Throes of the Watchmaker (2025)</b></v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Dotemu</h2>
-      <v-row>
-        <!-- https://www.dotemu.com/PressKit/project/Games/TeenageMutantNinjaTurtlesShreddersRevenge -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/TMNTSR.png" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Shredder’s Revenge</v-card-title>
-              <v-card-subtitle>Teenage Mutant Ninja Turtles</v-card-subtitle>
-              <template v-slot:append>
-                <v-chip>2022</v-chip>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://tributegames.com/presskit/sheet.php?p=Marvel%20Cosmic%20Invasion -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Cosmic Invasion.png" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>MARVEL Cosmic Invasion</v-card-title>
-              <template v-slot:append>
-                <v-chip>2025</v-chip>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.dotemu.com/PressKit/project/Games/NinjaGaidenRagebound#images -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Ninja Gaiden Ragebound.png" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Ninja Gaiden: Ragebound</v-card-title>
-              <template v-slot:append>
-                <v-chip>July 31, 2025</v-chip>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
-      <v-row>
-        <!-- screen: https://www.igdb.com/games/54844/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Ion Fury.png" height="190" cover></v-img>
-            <v-card-text><b>Ion Fury (2019)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <!-- https://3drealms.com/press/ -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Cultic.jpg" height="190" cover></v-img>
-            <v-card-text><b>Cultic (2022)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/ion-fury-aftershock/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Ion Fury Aftershock.png" height="190" cover></v-img>
-            <v-card-text><b>Ion Fury: Aftershock (2023)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-
-        <!-- https://3drealms.com/press/ -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Wrath Aeon of Ruin.png" height="190" cover></v-img>
-            <v-card-text><b>Wrath: Aeon of Ruin (2024)</b></v-card-text>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Wishlist</h2>
-
-      <v-row>
         <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -269,32 +395,6 @@ const Games = {
             <v-img src="assets/games/Mouse PI.jpg" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>Mouse PI (2025)</v-card-title>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Neon Inferno.png" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Neon Inferno (2025)</v-card-title>
-              <template v-slot:append>
-                <v-chip>October 2nd</v-chip>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://playtoxiccrusaders.com/press -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Toxic Crusaders.png" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Toxic Crusaders</v-card-title>
-              <template v-slot:append>
-                <v-chip>Q3 2025</v-chip>
-              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -421,31 +521,6 @@ const Games = {
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
 
       <v-row>
-        <!-- Trailer Thumbnail -->
-        <!-- https://simonquest.com/press -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Simon Quest.png" height="256" cover></v-img>
-            <v-card-text><b>The Transylvania Adventure of Simon Quest (2025)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <!-- Trailer Thumbnail -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/AVGN 8bit.png" height="256" cover></v-img>
-            <v-card-text><b>AVGN 8bit (2025)</b></v-card-text>
-          </v-card>
-        </v-col>
-
-        <!-- http://emberheartgames.com/ -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Wizordum.png" height="256" cover></v-img>
-            <v-card-text><b>Wizordum (2025)</b></v-card-text>
-          </v-card>
-        </v-col>
-
         <!-- https://www.bitmapbureau.com/games/terminator-2d-no-fate -->
         <!--
         <v-col lg="4">
@@ -485,6 +560,14 @@ const Games = {
             <v-card-text >
               <b>Sonic Mania (2017)</b>
             </v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- http://emberheartgames.com/ -->
+        <v-col lg="4">
+          <v-card>
+            <v-img src="assets/games/Wizordum.png" height="330" cover></v-img>
+            <v-card-text><b>Wizordum (2025)</b></v-card-text>
           </v-card>
         </v-col>
       </v-row>

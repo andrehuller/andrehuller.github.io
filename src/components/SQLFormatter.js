@@ -44,7 +44,7 @@ const SQLFormatter = {
     transformText: function () {
       const lines = this.inputText.split('\n')
       this.outputText = lines
-        .map(line => `sql.append(" ${line}");`)
+        .map(line => `sql.append(" ${line.trim()}");`)
         .join('\n')
     },
     transformToSQL: function () {
