@@ -122,7 +122,7 @@ const Games = {
             <v-card-item>
               <v-card-title>MARVEL Cosmic Invasion</v-card-title>
               <template v-slot:append>
-                <v-chip>2025</v-chip>
+                <v-chip>Q4 2025</v-chip>
               </template>
             </v-card-item>
           </v-card>
@@ -136,6 +136,45 @@ const Games = {
               <v-card-title>Ninja Gaiden: Ragebound</v-card-title>
               <template v-slot:append>
                 <v-chip>July 31, 2025</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/shinobi-art-of-vengeance -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Shinobi Art of Vengeance.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Shinobi: Art of Vengeance</v-card-title>
+              <template v-slot:append>
+                <v-chip>Aug 29, 2025</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/streets-of-rage-4/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Streets of Rage 4.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Streets of Rage 4</v-card-title>
+              <template v-slot:append>
+                <v-chip>2020</v-chip>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.dotemu.com/PressKit/project/Games/Absolum -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Absolum.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Absolum</v-card-title>
+              <template v-slot:append>
+                <v-chip>2025</v-chip>
               </template>
             </v-card-item>
           </v-card>
@@ -276,7 +315,7 @@ const Games = {
         </v-col>
       </v-row>
 
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Wishlist</h2>
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Others</h2>
       <v-row>
         <!-- http://www.studiomdhr.com/press/#images -->
         <v-col lg="3">
@@ -327,6 +366,14 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/gravity-circuit/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Gravity Circuit.jpg" height="190" cover></v-img>
+            <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
+          </v-card>
+        </v-col>
+
         <!-- https://berserkboygames.com/games-berserk-boy -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -359,14 +406,6 @@ const Games = {
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/gravity-circuit/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Gravity Circuit.jpg" height="190" cover></v-img>
-            <v-card-text><b>Gravity Circuit (2023)</b></v-card-text>
-          </v-card>
-        </v-col>
-
         <!-- https://www.igdb.com/games/sonic-origins/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -375,8 +414,6 @@ const Games = {
           </v-card>
         </v-col>
       </v-row>
-
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
 
       <v-row>
         <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
@@ -517,8 +554,6 @@ const Games = {
           </v-card>
         </v-col>
       </v-row>
-
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Upcoming</h2>
 
       <v-row>
         <!-- https://www.bitmapbureau.com/games/terminator-2d-no-fate -->
