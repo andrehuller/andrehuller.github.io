@@ -246,6 +246,19 @@ const Games = {
         -->
       </v-row>
 
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Nightdive Studios</h2>
+      <v-row>
+        <!-- https://www.igdb.com/games/turok--1/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Turok Remastered.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title><b>Turok Remastered (2015)</b></v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
       <v-row>
         <!-- screen: https://www.igdb.com/games/54844/presskit -->
