@@ -257,6 +257,26 @@ const Games = {
             </v-card-item>
           </v-card>
         </v-col>
+
+        <!-- https://www.igdb.com/games/powerslave-exhumed/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/PowerSlave Exhumed.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title><b>PowerSlave: Exhumed (2022)</b></v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/quake-ii--1/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Quake II.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title><b>Quake II (2023)</b></v-card-title>
+            </v-card-item>
+          </v-card>
+        </v-col>
       </v-row>
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
