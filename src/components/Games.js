@@ -369,7 +369,7 @@ const Games = {
         <!-- https://www.igdb.com/games/sonic-mania/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Sonic Mania.png" height="190" cover></v-img>
+            <v-img src="assets/games/screenshots/Sonic Mania.jpg" height="190" cover></v-img>
             <v-card-text><b>Sonic Mania (2017)</b></v-card-text>
           </v-card>
         </v-col>
@@ -584,6 +584,24 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/The Blood of Dawnwalker.png" height="256" cover></v-img>
             <v-card-text><b>The Blood of Dawnwalker (2026)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <!-- https://www.igdb.com/games/star-wars-shadows-of-the-empire/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Shadows of the Empire.jpg" height="256" cover></v-img>
+            <v-card-text><b>Shadows of the Empire (1997)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/star-wars-episode-i-racer/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Star Wars Racer.jpg" height="256" cover></v-img>
+            <v-card-text><b>Star Wars Racer (1999)</b></v-card-text>
           </v-card>
         </v-col>
       </v-row>
