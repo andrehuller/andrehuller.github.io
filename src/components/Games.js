@@ -277,7 +277,42 @@ const Games = {
             </v-card-item>
           </v-card>
         </v-col>
+        <v-col lg="12">
+          <v-card>
+            <v-card-text>
+If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or Hexen: Deathkings of the Dark Citadel, you'll receive Heretic + Hexen for free.
+            </v-card-text>
+          </v-card>
+        </v-col>
       </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Bitmap Bureau</h2>
+      <v-row>
+        <!-- https://www.igdb.com/games/final-vendetta/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Final Vendetta.jpg" height="256" cover></v-img>
+            <v-card-text><b>Final Vendetta (2022)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Battle Axe.png" height="256" cover></v-img>
+            <v-card-text><b>Battle Axe (2021)</b></v-card-text>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/xeno-crisis/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Xeno Crisis.png" height="256" cover></v-img>
+            <v-card-text><b>Xeno Crisis (2019)</b></v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
+
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">3D Realms</h2>
       <v-row>
@@ -422,13 +457,6 @@ const Games = {
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Battle Axe.png" height="190" cover></v-img>
-            <v-card-text><b>Battle Axe (2021)</b></v-card-text>
-          </v-card>
-        </v-col>
         <!-- Purchased -->
 
         <!-- https://tributegames.com/presskit/sheet.php?p=SteelAssault -->
