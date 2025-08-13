@@ -10,6 +10,9 @@ const Games = {
             <v-card-item>
               <v-card-title>Eagle Island Twist</v-card-title>
               <v-card-subtitle>2019</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -104,6 +107,95 @@ const Games = {
                 <v-chip>December 4th</v-chip>
               </template>
             </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Nightdive Studios</h2>
+      <v-row>
+        <!-- https://www.igdb.com/games/sin-gold/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/SiN Gold.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>SiN Gold (1998)</v-card-title>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/turok--1/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Turok Remastered.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Turok Remastered (2015)</v-card-title>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/blood-fresh-supply/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Blood Fresh Supply.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Blood: Fresh Supply (2019)</v-card-title>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+
+        <!-- https://www.igdb.com/games/doom-64--1/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Doom 64.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Doom 64 (2020)</v-card-title>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/powerslave-exhumed/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/PowerSlave Exhumed.png" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>PowerSlave: Exhumed (2022)</v-card-title>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/quake-ii--1/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Quake II.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Quake II (2023)</v-card-title>
+              <template v-slot:append>
+                <v-avatar color="#ffd700" size="small"><v-icon color="white">mdi-star</v-icon></v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+        <v-col lg="12">
+          <v-card>
+            <v-card-text>
+If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or Hexen: Deathkings of the Dark Citadel, you'll receive Heretic + Hexen for free.
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -253,52 +345,6 @@ const Games = {
           </v-card>
         </v-col>
         -->
-      </v-row>
-
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Nightdive Studios</h2>
-      <v-row>
-        <!-- https://www.igdb.com/games/turok--1/presskit -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Turok Remastered.png" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Turok Remastered (2015)</v-card-title>
-              <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/powerslave-exhumed/presskit -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/PowerSlave Exhumed.png" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>PowerSlave: Exhumed (2022)</v-card-title>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/quake-ii--1/presskit -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Quake II.jpg" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Quake II (2023)</v-card-title>
-              <template v-slot:append>
-                <v-avatar color="#ffd700" size="small"><v-icon color="white">mdi-star</v-icon></v-avatar>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-        <v-col lg="12">
-          <v-card>
-            <v-card-text>
-If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or Hexen: Deathkings of the Dark Citadel, you'll receive Heretic + Hexen for free.
-            </v-card-text>
-          </v-card>
-        </v-col>
       </v-row>
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Bitmap Bureau</h2>
