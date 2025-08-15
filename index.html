@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
     
     <!-- Material Design Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.x/css/materialdesignicons.min.css" rel="stylesheet">
     
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@3.5.13/dist/vue.global.min.js"></script>
@@ -101,9 +101,76 @@
     <script src="./src/components/Games.js"></script>
     
     <script src="./src/components/Bookmarks.js"></script>
-    
-    <!-- Twitter -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+<style>
+.rating-icons {
+  display: flex;
+  gap: 12px;
+}
+
+/* Platinum — bright icy grey with blue tint */
+.platinum-avatar {
+  background: linear-gradient(145deg, #f5f5f5, #dcdcdc, #c0c0c0);
+  box-shadow: 0 0 8px rgba(180, 200, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platinum-avatar .v-icon {
+  color: #e5e4e2;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.9));
+}
+
+/* Gold — rich yellow with warm highlights */
+.gold-avatar {
+  background: linear-gradient(145deg, #ffd700, #e6c200, #ffec8b);
+/*  box-shadow: 0 0 8px rgba(255, 220, 100, 0.6); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gold-avatar .v-icon {
+  color: #ffdf00;
+  filter: drop-shadow(0 0 2px rgba(255,255,200,0.8));
+}
+
+/* Silver — darker cool grey */
+.silver-avatar {
+  background: linear-gradient(145deg, #c0c0c0, #a9a9a9, #dcdcdc);
+/*  box-shadow: 0 0 8px rgba(180, 180, 180, 0.6); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.silver-avatar .v-icon {
+  color: #c0c0c0;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.7));
+}
+
+/* Bronze — warm reddish-brown metallic */
+.bronze-avatar {
+  background: linear-gradient(145deg, #cd7f32, #b87333, #e3a857);
+/*  box-shadow: 0 0 8px rgba(255, 180, 100, 0.5); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bronze-avatar .v-icon {
+  color: #cd7f32;
+  filter: drop-shadow(0 0 2px rgba(255,230,200,0.6));
+}
+
+/* Diamond — icy blue sparkle */
+.diamond-avatar {
+  background: linear-gradient(145deg, #b9f2ff, #8ed6e6, #d1f7ff);
+/*  box-shadow: 0 0 8px rgba(150, 240, 255, 0.7); */
+}
+.diamond-avatar .v-icon {
+  color: #b9f2ff;
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.9));
+}
+
+</style>
   </head>
   <body>
     <div id="app">
