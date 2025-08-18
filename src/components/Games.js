@@ -25,7 +25,9 @@ const Games = {
               <v-card-title>Angry Video Game Nerd I & II Deluxe</v-card-title>
               <v-card-subtitle>2020</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#ffd700" size="small"><v-icon color="white">mdi-star</v-icon></v-avatar>
+                <v-avatar size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -39,7 +41,9 @@ const Games = {
               <v-card-title>Prison City</v-card-title>
               <v-card-subtitle>2023</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#ffd700" size="small"><v-icon color="white">mdi-star</v-icon></v-avatar>
+                <v-avatar size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -53,7 +57,9 @@ const Games = {
               <v-card-title>Iron Meat</v-card-title>
               <v-card-subtitle>2024</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#ffd700" size="small"><v-icon color="white">mdi-star</v-icon></v-avatar>
+                <v-avatar size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -118,7 +124,8 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/SiN Gold.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>SiN Gold (1998)</v-card-title>
+              <v-card-title>SiN Gold</v-card-title>
+              <v-card-subtitle>1998</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
               </template>
@@ -131,9 +138,12 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Turok Remastered.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Turok Remastered (2015)</v-card-title>
+              <v-card-title>Turok Remastered</v-card-title>
+              <v-card-subtitle>2015</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+                <v-avatar size="small" class="diamond-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -144,7 +154,8 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Blood Fresh Supply.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Blood: Fresh Supply (2019)</v-card-title>
+              <v-card-title>Blood: Fresh Supply</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
               </template>
@@ -158,7 +169,8 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Doom 64.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Doom 64 (2020)</v-card-title>
+              <v-card-title>Doom 64</v-card-title>
+              <v-card-subtitle>2020</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
               </template>
@@ -171,7 +183,8 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/PowerSlave Exhumed.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>PowerSlave: Exhumed (2022)</v-card-title>
+              <v-card-title>PowerSlave: Exhumed</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
               </template>
@@ -184,9 +197,12 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Quake II.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Quake II (2023)</v-card-title>
+              <v-card-title>Quake II</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#ffd700" size="small"><v-icon color="white">mdi-star</v-icon></v-avatar>
+                <v-avatar size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -288,7 +304,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Syberia Remastered.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Syberia: Remastered (Q4 2025)</v-card-title>
+              <v-card-title>Syberia: Remastered</v-card-title>
+              <v-card-subtitle>Q4 2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -298,7 +315,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Amerzone.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Amerzone: The Explorer's Legacy (2025)</v-card-title>
+              <v-card-title>Amerzone: The Explorer's Legacy</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -307,7 +325,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Syberia The World Before.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Syberia: The World Before (2022)</v-card-title>
+              <v-card-title>Syberia: The World Before</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -354,7 +373,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Final Vendetta.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Final Vendetta (2022)</v-card-title>
+              <v-card-title>Final Vendetta</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -364,7 +384,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Battle Axe.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Battle Axe (2021)</v-card-title>
+              <v-card-title>Battle Axe</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
               </template>
@@ -377,7 +398,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Xeno Crisis.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Xeno Crisis (2019)</v-card-title>
+              <v-card-title>Xeno Crisis</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -391,9 +413,10 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Ion Fury.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Ion Fury (2019)</v-card-title>
+              <v-card-title>Ion Fury</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#B9F2FF" size="small">
+                <v-avatar size="small" class="diamond-avatar">
                   <v-icon color="white">mdi-star</v-icon>
                 </v-avatar>
               </template>
@@ -406,7 +429,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Cultic.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Cultic (2022)</v-card-title>
+              <v-card-title>Cultic</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -416,9 +440,12 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Ion Fury Aftershock.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Ion Fury: Aftershock (2023)</v-card-title>
+              <v-card-title>Ion Fury: Aftershock</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -429,7 +456,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Wrath Aeon of Ruin.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Wrath: Aeon of Ruin (2024)</v-card-title>
+              <v-card-title>Wrath: Aeon of Ruin</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
               </template>
@@ -444,14 +472,25 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/sabotage/screen/The Messenger.png" height="190" cover></v-img>
-            <v-card-text><b>The Messenger (2018)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>The Messenger</v-card-title>
+              <v-card-subtitle>2018</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
           </v-card>
         </v-col>
 
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/sabotage/screen/Picnic Panic.png" height="190" cover></v-img>
-            <v-card-text><b>Picnic Panic (2019)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>Picnic Panic</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
@@ -459,7 +498,10 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/sabotage/screen/Sea of Stars.png" height="190" cover></v-img>
-            <v-card-text><b>Sea of Stars (2023)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>Sea of Stars</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
@@ -467,7 +509,10 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/sabotage/screen/Throes of the Watchmaker.png" height="190" cover></v-img>
-            <v-card-text><b>Throes of the Watchmaker (2025)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>Throes of the Watchmaker</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
       </v-row>
@@ -479,7 +524,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Cuphead.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Cuphead (2017)</v-card-title>
+              <v-card-title>Cuphead</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar size="small" class="diamond-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -494,7 +540,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Hollow Knight.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Hollow Knight (2017)</v-card-title>
+              <v-card-title>Hollow Knight</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#E5E4E2" size="small" class="diamond-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -509,7 +556,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/screenshots/Sonic Mania.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Sonic Mania (2017)</v-card-title>
+              <v-card-title>Sonic Mania</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#E5E4E2" size="small" class="diamond-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -524,7 +572,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Blasphemous.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Blasphemous (2019)</v-card-title>
+              <v-card-title>Blasphemous</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#ffd700" size="small" class="gold-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -539,7 +588,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Blazing Chrome.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Blazing Chrome (2019)</v-card-title>
+              <v-card-title>Blazing Chrome</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#E5E4E2" size="small" class="diamond-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -553,7 +603,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Soulstice (2022)</v-card-title>
+              <v-card-title>Soulstice</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#ffd700" size="small" class="gold-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -568,7 +619,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Gravity Circuit.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Gravity Circuit (2023)</v-card-title>
+              <v-card-title>Gravity Circuit</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#ffd700" size="small" class="gold-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -583,7 +635,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Berserk Boy.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Berserk Boy (2024)</v-card-title>
+              <v-card-title>Berserk Boy</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#c0c0c0" size="small" class="silver-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -597,7 +650,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Spectacular Sparky.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Spectacular Sparky (2021)</v-card-title>
+              <v-card-title>Spectacular Sparky</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#c0c0c0" size="small" class="silver-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -614,7 +668,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Steel Assault.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Steel Assault (2021)</v-card-title>
+              <v-card-title>Steel Assault</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -624,7 +679,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Sonic Origins.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Sonic Origins (2022)</v-card-title>
+              <v-card-title>Sonic Origins</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -634,7 +690,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Hollow Knight: Silksong (2025)</v-card-title>
+              <v-card-title>Hollow Knight: Silksong</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -644,7 +701,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Mouse PI.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Mouse PI (2025)</v-card-title>
+              <v-card-title>Mouse PI</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -656,7 +714,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/X-Men Origins Wolverine.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>X-Men Origins: Wolverine (2009)</v-card-title>
+              <v-card-title>X-Men Origins: Wolverine</v-card-title>
+              <v-card-subtitle>2009</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -666,7 +725,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Dead Rising 2.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Dead Rising 2 (2010)</v-card-title>
+              <v-card-title>Dead Rising 2</v-card-title>
+              <v-card-subtitle>2010</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#ffd700" size="small" class="gold-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -681,7 +741,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Batman Arkham Origins.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Batman: Arkham Origins (2013)</v-card-title>
+              <v-card-title>Batman: Arkham Origins</v-card-title>
+              <v-card-subtitle>2013</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -691,7 +752,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/The Banner Saga.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>The Banner Saga (2014)</v-card-title>
+              <v-card-title>The Banner Saga</v-card-title>
+              <v-card-subtitle>2014</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -701,7 +763,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Resident Evil 0.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Resident Evil 0 (2016)</v-card-title>
+              <v-card-title>Resident Evil 0</v-card-title>
+              <v-card-subtitle>2016</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#ffd700" size="small" class="gold-avatar">
                   <v-icon color="white">mdi-star</v-icon>
@@ -716,7 +779,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/The Last Faith.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>The Last Faith (2023)</v-card-title>
+              <v-card-title>The Last Faith</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -746,7 +810,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Captain Blood.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Captain Blood (2025)</v-card-title>
+              <v-card-title>Captain Blood</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -756,7 +821,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Black Myth.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Black Myth: Wukong (2024)</v-card-title>
+              <v-card-title>Black Myth: Wukong</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -766,7 +832,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Clair Obscur Expedition 33.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Clair Obscur: Expedition 33 (2025)</v-card-title>
+              <v-card-title>Clair Obscur: Expedition 33</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -776,7 +843,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Schedule I.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Schedule I (2025)</v-card-title>
+              <v-card-title>Schedule I</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -786,7 +854,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Tainted Grail.jpg" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Tainted Grail: The Fall of Avalon (2025)</v-card-title>
+              <v-card-title>Tainted Grail: The Fall of Avalon</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -796,7 +865,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/The Blood of Dawnwalker.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>The Blood of Dawnwalker (2026)</v-card-title>
+              <v-card-title>The Blood of Dawnwalker</v-card-title>
+              <v-card-subtitle>2026</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
