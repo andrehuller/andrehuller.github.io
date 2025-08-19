@@ -149,6 +149,23 @@ const Games = {
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/turok-2-seeds-of-evil/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Turok 2.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Turok 2: Seeds of Evil</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+            <!-- <v-card-text>Remaster of Turok 2: Seeds of Evil (1998)</v-card-text> -->
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/blood-fresh-supply/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -157,7 +174,9 @@ const Games = {
               <v-card-title>Blood: Fresh Supply</v-card-title>
               <v-card-subtitle>2019</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -368,17 +387,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Bitmap Bureau</h2>
       <v-row>
-        <!-- https://www.igdb.com/games/final-vendetta/presskit -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Final Vendetta.jpg" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Final Vendetta</v-card-title>
-              <v-card-subtitle>2022</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
         <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -387,7 +395,9 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
               <v-card-title>Battle Axe</v-card-title>
               <v-card-subtitle>2021</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -516,6 +526,32 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
       </v-row>
+
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Rare</h2>
+      <v-row>
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Perfect Dark Zero.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Perfect Dark Zero</v-card-title>
+              <v-card-subtitle>2005</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/perfect-dark/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Perfect Dark.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Perfect Dark</v-card-title>
+              <v-card-subtitle>2000</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
+
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Others</h2>
       <v-row>
@@ -674,17 +710,48 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/sonic-origins/presskit -->
+        <!-- https://www.igdb.com/games/forgive-me-father/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Sonic Origins.jpg" height="190" cover></v-img>
+            <v-img src="assets/games/Forgive Me Father.png" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Sonic Origins</v-card-title>
-              <v-card-subtitle>2022</v-card-subtitle>
+              <v-card-title>Forgive Me Father</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/252445/presskit -->
+        <!-- release date: 14/05/2024 -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Mullet Madjack.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Mullet Madjack</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/forgive-me-father-2/presskit -->
+        <!-- release date: 23/10/2024 -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Forgive Me Father 2.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Forgive Me Father 2</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
         <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -692,6 +759,11 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Hollow Knight: Silksong</v-card-title>
               <v-card-subtitle>2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -703,6 +775,33 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Mouse PI</v-card-title>
               <v-card-subtitle>2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/sonic-origins/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Sonic Origins.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Sonic Origins</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/full-throttle-remastered/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Full Throttle Remastered.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Full Throttle Remastered</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -877,7 +976,10 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Shadows of the Empire.jpg" height="256" cover></v-img>
-            <v-card-text><b>Shadows of the Empire (1997)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>Shadows of the Empire</v-card-title>
+              <v-card-subtitle>1997</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
@@ -885,21 +987,12 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Star Wars Racer.jpg" height="256" cover></v-img>
-            <v-card-text><b>Star Wars Racer (1999)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>Star Wars Racer</v-card-title>
+              <v-card-subtitle>1999</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
-      </v-row>
-
-      <v-row>
-        <!-- https://www.bitmapbureau.com/games/terminator-2d-no-fate -->
-        <!--
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Terminator 2D No Fate.jpg" height="256" cover></v-img>
-            <v-card-text><b>Terminator 2D: NO FATE (2025)</b></v-card-text>
-          </v-card>
-        </v-col>
-        -->
       </v-row>
 
       <v-row>
@@ -907,17 +1000,20 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/portraits/Rogue City.jpg" cover></v-img>
-            <v-card-text><b>RoboCop: Rogue City (2023)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>RoboCop: Rogue City</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Terminator 2D.png"  cover></v-img>
-            <v-card-text >
-              <b>Terminator 2D: NO FATE (2025)</b>
-              September 5, 2025
-            </v-card-text>
+            <v-card-item>
+              <v-card-title>Terminator 2D: NO FATE</v-card-title>
+              <v-card-subtitle>September 5, 2025</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
       </v-row>
@@ -927,9 +1023,10 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           <!-- https://www.igdb.com/games/sonic-mania -->
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Sonic Mania Poster.png"></v-img>
-            <v-card-text >
-              <b>Sonic Mania (2017)</b>
-            </v-card-text>
+            <v-card-item>
+              <v-card-title>Sonic Mania</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
 
@@ -937,7 +1034,10 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="4">
           <v-card>
             <v-img src="assets/games/Wizordum.png" height="330" cover></v-img>
-            <v-card-text><b>Wizordum (2025)</b></v-card-text>
+            <v-card-item>
+              <v-card-title>Wizordum</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
           </v-card>
         </v-col>
       </v-row>
