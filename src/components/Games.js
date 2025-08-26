@@ -3,7 +3,7 @@ const Games = {
     <v-container fluid>
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Retroware</h2>
       <v-row>
-	<!-- https://eagleislandgame.com/press -->
+        <!-- https://eagleislandgame.com/press -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Eagle Island Twist.png" height="256" cover></v-img>
@@ -25,7 +25,7 @@ const Games = {
               <v-card-title>Angry Video Game Nerd I & II Deluxe</v-card-title>
               <v-card-subtitle>2020</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar size="small" class="gold-avatar">
+                <v-avatar size="small" class="diamond-avatar">
                   <v-icon color="white">mdi-star</v-icon>
                 </v-avatar>
               </template>
@@ -33,7 +33,7 @@ const Games = {
           </v-card>
         </v-col>
 
-	<!-- https://prisoncitygame.com/press -->
+        <!-- https://prisoncitygame.com/press -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Prison City.png" height="256" cover></v-img>
@@ -49,7 +49,7 @@ const Games = {
           </v-card>
         </v-col>
 
-	<!-- https://ironmeat.com/press -->
+        <!-- https://ironmeat.com/press -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Iron Meat.png" height="256" cover></v-img>
@@ -88,7 +88,7 @@ const Games = {
           </v-card>
         </v-col>
 
-	<!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
+        <!-- https://impress.games/press-kit/zenovia-interactive/neon-inferno -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Neon Inferno.png" height="256" cover></v-img>
@@ -205,7 +205,9 @@ const Games = {
               <v-card-title>PowerSlave: Exhumed</v-card-title>
               <v-card-subtitle>2022</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -226,6 +228,40 @@ const Games = {
             </v-card-item>
           </v-card>
         </v-col>
+
+        <!-- https://www.gogdb.org/product/1801749856 -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Star Wars Dark Forces Remaster.webp" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>STAR WARS™: Dark Forces Remaster</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.gogdb.org/product/1536913668 -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Outlaws + Handful of Missions Remaster.webp" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Outlaws + Handful of Missions: Remaster</v-card-title>
+              <v-card-subtitle>November 20, 2025 </v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+        
+
         <v-col lg="12">
           <v-card>
             <v-card-text>
@@ -538,17 +574,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             </v-card-item>
           </v-card>
         </v-col>
-
-        <!-- https://www.igdb.com/games/perfect-dark/presskit -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Perfect Dark.jpg" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Perfect Dark</v-card-title>
-              <v-card-subtitle>2000</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
       </v-row>
 
 
@@ -758,7 +783,7 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>Hollow Knight: Silksong</v-card-title>
-              <v-card-subtitle>2025</v-card-subtitle>
+              <v-card-subtitle>September 4th, 2025</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar size="small">
                   <v-icon>mdi-progress-clock</v-icon>
