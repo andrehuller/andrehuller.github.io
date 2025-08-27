@@ -559,7 +559,14 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         </v-col>
       </v-row>
 
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Rare</h2>
+      <v-row>
+        <v-col lg="4">
+          <h2>Rare</h2>
+        </v-col>
+        <v-col lg="4">
+          <h2>Inti Creates</h2>
+        </v-col>
+      </v-row>
       <v-row>
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -567,6 +574,17 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Perfect Dark Zero</v-card-title>
               <v-card-subtitle>2005</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/blaster-master-zero/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Blaster Master Zero.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Blaster Master Zero</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
