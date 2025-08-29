@@ -82,8 +82,13 @@ const Games = {
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/AVGN 8bit.png" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>AVGN 8bit</v-card-title>
-              <v-card-subtitle>2025</v-card-subtitle>
+              <v-card-title>AVGN 8-bit</v-card-title>
+              <v-card-subtitle>October 23, 2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -247,7 +252,13 @@ const Games = {
             <v-card-item>
               <v-card-title>Outlaws + Handful of Missions: Remaster</v-card-title>
               <v-card-subtitle>November 20, 2025 </v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
+            
           </v-card>
         </v-col>
 
@@ -879,6 +890,22 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/resident-evil-0/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Resident Evil 0.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Resident Evil 0</v-card-title>
+              <v-card-subtitle>2016</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#ffd700" size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/batman-arkham-origins/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -897,22 +924,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>The Banner Saga</v-card-title>
               <v-card-subtitle>2014</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/resident-evil-0/presskit -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Resident Evil 0.jpg" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Resident Evil 0</v-card-title>
-              <v-card-subtitle>2016</v-card-subtitle>
-              <template v-slot:append>
-                <v-avatar color="#ffd700" size="small" class="gold-avatar">
-                  <v-icon color="white">mdi-star</v-icon>
-                </v-avatar>
-              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -955,6 +966,18 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Captain Blood</v-card-title>
               <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/alice-madness-returns/presskit -->
+        <!-- Remaster of American McGee's Alice (2000) -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Alice Madness Returns.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Alice: Madness Returns</v-card-title>
+              <v-card-subtitle>2011</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
