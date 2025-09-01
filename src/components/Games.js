@@ -570,6 +570,31 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         </v-col>
       </v-row>
 
+      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Yacht Club Games</h2>
+      <v-row>
+        <!-- https://www.gogdb.org/product/1207664823 -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Shovel Knight Treasure Trove.webp" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Shovel Knight: Treasure Trove</v-card-title>
+              <v-card-subtitle>2014</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.gogdb.org/product/1089614850 -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Cyber Shadow.webp" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Cyber Shadow</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
       <v-row>
         <v-col lg="4">
           <h2>Rare</h2>
