@@ -99,6 +99,7 @@
     <script src="./src/components/OwnerEstimations.js"></script>
     
     <script src="./src/components/Games.js"></script>
+    <script src="./src/components/PressKit.js"></script>
     
     <script src="./src/components/Bookmarks.js"></script>
 
@@ -298,6 +299,11 @@
                 <v-icon icon="mdi-gamepad"></v-icon>
               </template>
             </v-list-item>
+            <v-list-item title="Press Kit" to="/presskit">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-folder"></v-icon>
+              </template>
+            </v-list-item>
           </v-list>
 
           <v-divider></v-divider>
@@ -363,6 +369,7 @@ const routes = [
   { path: '/posters', component: Posters },
   
   { path: '/games', component: Games },
+  { path: '/presskit', component: PressKit },
   
   { path: '/fpsgames', component: FPSGames },
   { path: '/indiegames', component: IndieGames },

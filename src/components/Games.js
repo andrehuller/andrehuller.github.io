@@ -99,9 +99,11 @@ const Games = {
             <v-img src="assets/games/Neon Inferno.png" height="256" cover></v-img>
             <v-card-item>
               <v-card-title>Neon Inferno</v-card-title>
-              <v-card-subtitle>2025</v-card-subtitle>
+              <v-card-subtitle>October 2nd, 2025</v-card-subtitle>
               <template v-slot:append>
-                <v-chip>October 2nd</v-chip>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -113,9 +115,11 @@ const Games = {
             <v-img src="assets/games/Toxic Crusaders.png" height="256" cover></v-img>
             <v-card-item>
               <v-card-title>Toxic Crusaders</v-card-title>
-              <v-card-subtitle>2025</v-card-subtitle>
+              <v-card-subtitle>December 4th, 2025</v-card-subtitle>
               <template v-slot:append>
-                <v-chip>December 4th</v-chip>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -570,7 +574,16 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         </v-col>
       </v-row>
 
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Yacht Club Games</h2>
+      <v-row>
+        <v-col lg="4">
+          <h2>Yacht Club Games</h2>
+        </v-col>
+        <v-col lg="4">
+        </v-col>
+        <v-col lg="4">
+          <h2>New Blood Interactive</h2>
+        </v-col>
+      </v-row>
       <v-row>
         <!-- https://www.gogdb.org/product/1207664823 -->
         <v-col lg="4">
@@ -579,6 +592,11 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Shovel Knight: Treasure Trove</v-card-title>
               <v-card-subtitle>2014</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -590,6 +608,17 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Cyber Shadow</v-card-title>
               <v-card-subtitle>2021</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.gogdb.org/product/2023945788 -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Amid Evil.webp" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Amid Evil</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
@@ -1105,6 +1134,27 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Terminator 2D: NO FATE</v-card-title>
               <v-card-subtitle>September 5, 2025</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/presskit/COTG1.jpg"  cover></v-img>
+            <v-card-item>
+              <v-card-title>Creation of the Gods</v-card-title>
+              <v-card-subtitle></v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://wellgousa.com/films/creation-gods-ii-demon-force -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/presskit/COTG2.jpg"  cover></v-img>
+            <v-card-item>
+              <v-card-title>Creation of the Gods II: Demon Force</v-card-title>
+              <v-card-subtitle>January 29, 2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
