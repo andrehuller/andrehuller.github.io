@@ -99,7 +99,7 @@ const Games = {
             <v-img src="assets/games/Neon Inferno.png" height="256" cover></v-img>
             <v-card-item>
               <v-card-title>Neon Inferno</v-card-title>
-              <v-card-subtitle>October 2nd, 2025</v-card-subtitle>
+              <v-card-subtitle>November 20th, 2025</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar size="small">
                   <v-icon>mdi-progress-clock</v-icon>
@@ -593,8 +593,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
               <v-card-title>Shovel Knight: Treasure Trove</v-card-title>
               <v-card-subtitle>2014</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0">
-                  <v-icon color="white">mdi-cart</v-icon>
+                <v-avatar color="#ffd700" size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
                 </v-avatar>
               </template>
             </v-card-item>
@@ -755,21 +755,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Soulstice</v-card-title>
-              <v-card-subtitle>2022</v-card-subtitle>
-              <template v-slot:append>
-                <v-avatar color="#ffd700" size="small" class="gold-avatar">
-                  <v-icon color="white">mdi-star</v-icon>
-                </v-avatar>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
         <!-- https://www.igdb.com/games/gravity-circuit/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -817,6 +802,21 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Soulstice</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#ffd700" size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/252445/presskit -->
         <!-- release date: 14/05/2024 -->
         <v-col lg="3">
@@ -836,98 +836,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
       </v-row>
 
       <v-row>
-        <!-- https://tributegames.com/presskit/sheet.php?p=SteelAssault -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Steel Assault.png" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Steel Assault</v-card-title>
-              <v-card-subtitle>2021</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/forgive-me-father/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Forgive Me Father.png" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Forgive Me Father</v-card-title>
-              <v-card-subtitle>2021</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/forgive-me-father-2/presskit -->
-        <!-- release date: 23/10/2024 -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Forgive Me Father 2.jpg" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Forgive Me Father 2</v-card-title>
-              <v-card-subtitle>2024</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Hollow Knight: Silksong</v-card-title>
-              <v-card-subtitle>September 4th, 2025</v-card-subtitle>
-              <template v-slot:append>
-                <v-avatar size="small">
-                  <v-icon>mdi-progress-clock</v-icon>
-                </v-avatar>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.playsidestudios.com/ -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Mouse PI.jpg" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Mouse PI</v-card-title>
-              <v-card-subtitle>2025</v-card-subtitle>
-              <template v-slot:append>
-                <v-avatar size="small">
-                  <v-icon>mdi-progress-clock</v-icon>
-                </v-avatar>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/sonic-origins/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Sonic Origins.jpg" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Sonic Origins</v-card-title>
-              <v-card-subtitle>2022</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-      </v-row>
-
-      <v-row>
-        <!-- https://www.mobygames.com/game/40541/x-men-origins-wolverine-uncaged-edition/promo/ -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/X-Men Origins Wolverine.jpg" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>X-Men Origins: Wolverine</v-card-title>
-              <v-card-subtitle>2009</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
         <!-- https://www.igdb.com/games/dead-rising-2/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -971,28 +879,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/the-banner-saga/presskit -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Banner Saga.png" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>The Banner Saga</v-card-title>
-              <v-card-subtitle>2014</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.thelastfaithgame.com/ Kit de Imprensa -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Last Faith.png" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>The Last Faith</v-card-title>
-              <v-card-subtitle>2023</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
         <!-- https://www.igdb.com/games/injustice-2/presskit -->
         <!--
         <v-col lg="4">
@@ -1012,23 +898,25 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
         -->
+      </v-row>
 
-        <!-- https://www.terminals.io/games/captain-blood -->
-        <v-col lg="4">
+      <v-row>
+        <!-- https://www.mobygames.com/game/40541/x-men-origins-wolverine-uncaged-edition/promo/ -->
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Captain Blood.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/X-Men Origins Wolverine.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Captain Blood</v-card-title>
-              <v-card-subtitle>2025</v-card-subtitle>
+              <v-card-title>X-Men Origins: Wolverine</v-card-title>
+              <v-card-subtitle>2009</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
 
         <!-- https://www.igdb.com/games/alice-madness-returns/presskit -->
         <!-- Remaster of American McGee's Alice (2000) -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Alice Madness Returns.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/Alice Madness Returns.jpg" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>Alice: Madness Returns</v-card-title>
               <v-card-subtitle>2011</v-card-subtitle>
@@ -1036,10 +924,65 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/black-myth-wukong/presskit#images -->
-        <v-col lg="4">
+        <!-- https://www.igdb.com/games/the-banner-saga/presskit -->
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Black Myth.png" height="256" cover></v-img>
+            <v-img src="assets/games/The Banner Saga.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>The Banner Saga</v-card-title>
+              <v-card-subtitle>2014</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/forgive-me-father/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Forgive Me Father.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Forgive Me Father</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://tributegames.com/presskit/sheet.php?p=SteelAssault -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Steel Assault.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Steel Assault</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/sonic-origins/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Sonic Origins.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Sonic Origins</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.thelastfaithgame.com/ Kit de Imprensa -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/The Last Faith.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>The Last Faith</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/black-myth-wukong/presskit#images -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Black Myth.png" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>Black Myth: Wukong</v-card-title>
               <v-card-subtitle>2024</v-card-subtitle>
@@ -1047,10 +990,33 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/clair-obscur-expedition-33 -->
-        <v-col lg="4">
+        <!-- https://www.igdb.com/games/forgive-me-father-2/presskit -->
+        <!-- release date: 23/10/2024 -->
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Clair Obscur Expedition 33.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/Forgive Me Father 2.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Forgive Me Father 2</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.terminals.io/games/captain-blood -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Captain Blood.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Captain Blood</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/clair-obscur-expedition-33 -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Clair Obscur Expedition 33.jpg" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>Clair Obscur: Expedition 33</v-card-title>
               <v-card-subtitle>2025</v-card-subtitle>
@@ -1058,10 +1024,42 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.scheduleonegame.com/presskit/schedule-one/index.html -->
-        <v-col lg="4">
+        <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Schedule I.png" height="256" cover></v-img>
+            <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Hollow Knight: Silksong</v-card-title>
+              <v-card-subtitle>September 4th, 2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.playsidestudios.com/ -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Mouse PI.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Mouse PI</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.scheduleonegame.com/presskit/schedule-one/index.html -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Schedule I.png" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>Schedule I</v-card-title>
               <v-card-subtitle>2025</v-card-subtitle>
@@ -1070,9 +1068,9 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         </v-col>
 
         <!-- https://presskit.taintedgrail.com/ -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Tainted Grail.jpg" height="256" cover></v-img>
+            <v-img src="assets/games/Tainted Grail.jpg" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>Tainted Grail: The Fall of Avalon</v-card-title>
               <v-card-subtitle>2025</v-card-subtitle>
@@ -1081,9 +1079,9 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         </v-col>
 
         <!-- https://www.igdb.com/games/the-blood-of-dawnwalker/presskit -->
-        <v-col lg="4">
+        <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Blood of Dawnwalker.png" height="256" cover></v-img>
+            <v-img src="assets/games/The Blood of Dawnwalker.png" height="190" cover></v-img>
             <v-card-item>
               <v-card-title>The Blood of Dawnwalker</v-card-title>
               <v-card-subtitle>2026</v-card-subtitle>
@@ -1134,27 +1132,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Terminator 2D: NO FATE</v-card-title>
               <v-card-subtitle>September 5, 2025</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/presskit/COTG1.jpg"  cover></v-img>
-            <v-card-item>
-              <v-card-title>Creation of the Gods</v-card-title>
-              <v-card-subtitle></v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://wellgousa.com/films/creation-gods-ii-demon-force -->
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/presskit/COTG2.jpg"  cover></v-img>
-            <v-card-item>
-              <v-card-title>Creation of the Gods II: Demon Force</v-card-title>
-              <v-card-subtitle>January 29, 2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>
