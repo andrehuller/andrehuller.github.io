@@ -11,7 +11,9 @@ const Games = {
               <v-card-title>Eagle Island Twist</v-card-title>
               <v-card-subtitle>2019</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0"><v-icon color="white">mdi-cart</v-icon></v-avatar>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
               </template>
             </v-card-item>
           </v-card>
@@ -457,6 +459,11 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Xeno Crisis</v-card-title>
               <v-card-subtitle>2019</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -638,6 +645,17 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-img src="assets/games/Perfect Dark Zero.jpg" height="256" cover></v-img>
             <v-card-item>
               <v-card-title>Perfect Dark Zero</v-card-title>
+              <v-card-subtitle>2005</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/mega-man-zero-4/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Mega Man Zero 4.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Mega Man Zero 4</v-card-title>
               <v-card-subtitle>2005</v-card-subtitle>
             </v-card-item>
           </v-card>
@@ -931,6 +949,11 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>The Banner Saga</v-card-title>
               <v-card-subtitle>2014</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -942,6 +965,11 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Forgive Me Father</v-card-title>
               <v-card-subtitle>2021</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
