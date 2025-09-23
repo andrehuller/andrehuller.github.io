@@ -22,6 +22,17 @@ const PressKit = {
             </v-card-item>
           </v-card>
         </v-col>
+
+        <!-- https://www.filmibeat.com/kannada/movies/mahavatar-narsimha/photos.html#1415002 -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/Mahavatar Narsimha.webp" cover></v-img>
+            <v-card-item>
+              <v-card-title>Mahavatar Narsimha</v-card-title>
+              <v-card-subtitle>2024</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
       </v-row>
     </v-container>
   `
