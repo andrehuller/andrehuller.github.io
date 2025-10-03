@@ -51,7 +51,7 @@ const YouTube = {
               :key="i"
               cols="12" lg="3"
             >
-              <v-card class="fill-height d-flex flex-column grey lighten-5" flat tile>
+              <v-card class="fill-height d-flex flex-column" color="grey-lighten-5" flat tile>
                 <a :href="'https://youtu.be/' + item.raw.id" target="_blank">
                   <v-img
                     :src="item.raw.src"

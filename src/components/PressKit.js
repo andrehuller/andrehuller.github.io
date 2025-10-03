@@ -24,6 +24,7 @@ const PressKit = {
         </v-col>
 
         <!-- https://www.filmibeat.com/kannada/movies/mahavatar-narsimha/photos.html#1415002 -->
+        <!-- https://www.hombalefilms.com/ -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/Mahavatar Narsimha.webp" cover></v-img>

@@ -46,8 +46,13 @@ const Leaflet = {
   mounted () {
     this.$nextTick(() => {
       // this.map = L.map('map').setView([25, 0], 2)
-      this.map = L.map('map').setView([-24.618588, -51.316993], 8)
+      // this.map = L.map('map').setView([-24.618588, -51.316993], 8)
       
+      var corner1 = L.latLng(-22.5158262864, -48.0230667596)
+      var corner2 = L.latLng(-26.7168085625, -54.6186341398)
+      var bounds = L.latLngBounds(corner1, corner2)
+      this.map = L.map('map').fitBounds(bounds)
+
       L.esri.basemapLayer('Gray').addTo(this.map)
       
       this.layers = L.control.layers({

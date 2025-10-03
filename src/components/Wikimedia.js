@@ -7,7 +7,7 @@ const Wikimedia = {
           :key="item.name"
           :lg="item.size ? 6 : 3"
         >
-          <v-card class="fill-height d-flex flex-column" flat tile>
+          <v-card class="fill-height d-flex flex-column" color="grey-lighten-5"  flat tile>
             <div>
               <v-img v-if="item.href" height="560" :src="item.href"></v-img>
               <v-img v-else height="475" :src="'assets/wikimedia/' + item.name + '.jpg'"

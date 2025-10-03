@@ -583,6 +583,60 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
 
       <v-row>
         <v-col lg="4">
+          <h2>Playtonic</h2>
+        </v-col>
+        <v-col lg="4">
+        </v-col>
+        <v-col lg="4">
+          <h2>Rare</h2>
+        </v-col>
+      </v-row>
+      <v-row>
+        <!-- https://www.igdb.com/games/yooka-laylee/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Yooka-Laylee.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Yooka-Laylee</v-card-title>
+              <v-card-subtitle>2017</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#ffd700" size="small" class="silver-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/yooka-laylee-and-the-impossible-lair/presskit -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Yooka-Laylee and the Impossible Lair.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Yooka-Laylee and the Impossible Lair</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#ffd700" size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Perfect Dark Zero.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Perfect Dark Zero</v-card-title>
+              <v-card-subtitle>2005</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
+        <v-col lg="4">
           <h2>Yacht Club Games</h2>
         </v-col>
         <v-col lg="4">
@@ -633,23 +687,10 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
 
       <v-row>
         <v-col lg="4">
-          <h2>Rare</h2>
-        </v-col>
-        <v-col lg="4">
           <h2>Inti Creates</h2>
         </v-col>
       </v-row>
       <v-row>
-        <v-col lg="4">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Perfect Dark Zero.jpg" height="256" cover></v-img>
-            <v-card-item>
-              <v-card-title>Perfect Dark Zero</v-card-title>
-              <v-card-subtitle>2005</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
         <!-- https://www.igdb.com/games/mega-man-zero-4/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -835,6 +876,38 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/the-banner-saga/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/The Banner Saga.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>The Banner Saga</v-card-title>
+              <v-card-subtitle>2014</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/forgive-me-father/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Forgive Me Father.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Forgive Me Father</v-card-title>
+              <v-card-subtitle>2021</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/252445/presskit -->
         <!-- release date: 14/05/2024 -->
         <v-col lg="3">
@@ -843,6 +916,22 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Mullet Madjack</v-card-title>
               <v-card-subtitle>2024</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Hollow Knight: Silksong</v-card-title>
+              <v-card-subtitle>September 4th, 2025</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0">
                   <v-icon color="white">mdi-cart</v-icon>
@@ -942,38 +1031,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.igdb.com/games/the-banner-saga/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/The Banner Saga.png" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>The Banner Saga</v-card-title>
-              <v-card-subtitle>2014</v-card-subtitle>
-              <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0">
-                  <v-icon color="white">mdi-cart</v-icon>
-                </v-avatar>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/forgive-me-father/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Forgive Me Father.png" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Forgive Me Father</v-card-title>
-              <v-card-subtitle>2021</v-card-subtitle>
-              <template v-slot:append>
-                <v-avatar color="#84ad00" size="small" rounded="0">
-                  <v-icon color="white">mdi-cart</v-icon>
-                </v-avatar>
-              </template>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
         <!-- https://tributegames.com/presskit/sheet.php?p=SteelAssault -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -1048,22 +1105,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Clair Obscur: Expedition 33</v-card-title>
               <v-card-subtitle>2025</v-card-subtitle>
-            </v-card-item>
-          </v-card>
-        </v-col>
-
-        <!-- https://www.igdb.com/games/hollow-knight-silksong/presskit -->
-        <v-col lg="3">
-          <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Hollow Knight Silksong.jpg" height="190" cover></v-img>
-            <v-card-item>
-              <v-card-title>Hollow Knight: Silksong</v-card-title>
-              <v-card-subtitle>September 4th, 2025</v-card-subtitle>
-              <template v-slot:append>
-                <v-avatar size="small">
-                  <v-icon>mdi-progress-clock</v-icon>
-                </v-avatar>
-              </template>
             </v-card-item>
           </v-card>
         </v-col>
