@@ -639,12 +639,8 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="4">
           <h2>Yacht Club Games</h2>
         </v-col>
-        <v-col lg="4">
-        </v-col>
-        <v-col lg="4">
-          <h2>New Blood Interactive</h2>
-        </v-col>
       </v-row>
+
       <v-row>
         <!-- https://www.gogdb.org/product/1207664823 -->
         <v-col lg="4">
@@ -662,7 +658,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.gogdb.org/product/1089614850 -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Cyber Shadow.webp" height="256" cover></v-img>
@@ -673,13 +668,17 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-        <!-- https://www.gogdb.org/product/2023945788 -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Amid Evil.webp" height="256" cover></v-img>
+            <v-img src="assets/games/Mina the Hollower.webp" height="256" cover></v-img>
             <v-card-item>
-              <v-card-title>Amid Evil</v-card-title>
-              <v-card-subtitle>2019</v-card-subtitle>
+              <v-card-title>Mina the Hollower</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small">
+                  <v-icon>mdi-progress-clock</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
@@ -689,7 +688,13 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         <v-col lg="4">
           <h2>Inti Creates</h2>
         </v-col>
+        <v-col lg="4">
+        </v-col>
+        <v-col lg="4">
+          <h2>New Blood Interactive</h2>
+        </v-col>
       </v-row>
+
       <v-row>
         <!-- https://www.igdb.com/games/mega-man-zero-4/presskit -->
         <v-col lg="4">
@@ -712,9 +717,18 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             </v-card-item>
           </v-card>
         </v-col>
+
+        <!-- https://www.gogdb.org/product/2023945788 -->
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Amid Evil.webp" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Amid Evil</v-card-title>
+              <v-card-subtitle>2019</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
       </v-row>
-
-
 
       <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Others</h2>
       <v-row>
@@ -1200,7 +1214,7 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-img src="assets/games/Terminator 2D.png"  cover></v-img>
             <v-card-item>
               <v-card-title>Terminator 2D: NO FATE</v-card-title>
-              <v-card-subtitle>September 5, 2025</v-card-subtitle>
+              <v-card-subtitle>November 26, 2025</v-card-subtitle>
             </v-card-item>
           </v-card>
         </v-col>

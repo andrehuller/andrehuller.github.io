@@ -1,251 +1,229 @@
 const OwnerEstimations = {
   template: `
-    <v-container>
-      <v-card variant="outlined"><!-- class="px-3" -->
-        <v-card-title>
-          Owner Estimations
-        </v-card-title>
-        <v-card-text style="height: 800px">
-          <canvas id="chartOwnerEstimations"></canvas>
-        </v-card-text>
-      </v-card>
+    <v-container fluid>
+      <v-row>
+        <v-col cols="12">
+          <v-card variant="outlined"><!-- class="px-3" -->
+            <v-card-title>
+              Owner Estimations
+            </v-card-title>
+            <v-card-text style="height: 800px">
+              <canvas id="chartOwnerEstimations"></canvas>
+            </v-card-text>
+          </v-card>
+        </v-col>
+      </v-row>
     </v-container>
   `,
   mounted () {
     var estimations = [ // updated: 19/07/2024
       {
-        label: 'Hades',
-        value: 7940000,
-        playTracker: 5350000
+        label: 'Hollow Knight',
+        value: 7950000
       },
       {
-        label: 'Hollow Knight',
-        value: 6280000,
-        playTracker: 6940000
+        label: 'Hades',
+        value: 7860000
+      },
+      {
+        label: 'Vampire Survivors',
+        value: 7620000
+      },
+      {
+        label: 'Hollow Knight: Silksong',
+        value: 7150000
       },
       {
         label: 'Cuphead',
-        value: 4840000,
-        playTracker: 4380000
+        value: 5490000
       },
       {
         label: 'Hotline Miami',
-        value: 4290000,
-        playTracker: 9210000
+        value: 4780000
       },
       {
         label: 'Ori and the Will of the Wisps',
-        value: 3860000,
-        playTracker: 2270000
+        value: 4190000
       },
       {
         label: 'Enter the Gungeon',
-        value: 3730000,
-        playTracker: 4200000
+        value: 3970000
       },
       {
         label: 'Bastion',
-        value: 3160000,
-        playTracker: 6930000
-      },
-      {
-        label: 'Dead Cells',
-        value: 2300000,
-        playTracker: 3520000
-      },
-      {
-        label: 'Katana ZERO',
-        value: 1860000,
-        playTracker: 2440000
-      },
-      {
-        label: 'Ori and the Blind Forest',
-        value: 1860000,
-        playTracker: 4890000
-      },
-      {
-        label: 'Transistor',
-        value: 1860000
-      },
-      {
-        label: 'Celeste',
-        value: 1770000
-      },
-      {
-        label: 'Blasphemous',
-        value: 1470000
+        value: 3200000
       },
       {
         label: 'Hades II',
-        value: 1330000
+        value: 2520000
+      },
+      {
+        label: 'Dead Cells',
+        value: 2470000
+      },
+      {
+        label: 'Celeste',
+        value: 2210000
+      },
+      {
+        label: 'Katana ZERO',
+        value: 2040000
+      },
+      {
+        label: 'Ori and the Blind Forest',
+        value: 1950000
+      },
+      {
+        label: 'Blasphemous',
+        value: 1920000
+      },
+      {
+        label: 'Megabonk',
+        value: 1860000
       },
       {
         label: 'Bloodstained: Ritual of the Night',
-        value: 1240000
+        value: 1330000
       },
       {
         label: 'The Banner Saga',
-        value: 986600
-      },
-      {
-        label: 'Hyper Light Drifter',
-        value: 911800
-      },
-      {
-        label: 'Shovel Knight: Treasure Trove',
-        value: 778800
-      },
-      {
-        label: 'CARRION',
-        value: 717500
+        value: 1000000
       },
       {
         label: 'Rain World',
-        value: 672200
+        value: 939300
+      },
+      {
+        label: 'Shovel Knight: Treasure Trove',
+        value: 793300
       },
       {
         label: 'Sonic Mania',
-        value: 447700
+        value: 483800
       },
       {
         label: 'TUNIC',
-        value: 366800
-      },
-      {
-        label: 'Pyre',
-        value: 357800
-      },
-      {
-        label: 'Yooka-Laylee',
-        value: 305500
-      },
-      {
-        label: 'Sea of Stars',
-        value: 302100
+        value: 480700
       },
       {
         label: 'Blasphemous 2',
-        value: 299600
+        value: 469900
+      },
+      {
+        label: 'Sea of Stars',
+        value: 403100
+      },
+      {
+        label: 'Yooka-Laylee',
+        value: 321100
       },
       {
         label: 'Axiom Verge',
-        value: 272700
+        value: 292800
       },
       {
         label: 'The Messenger',
-        value: 255400
-      },
-      {
-        label: 'The Banner Saga 2',
-        value: 228300
-      },
-      {
-        label: 'Ion Fury',
-        value: 207500
-      },
-      {
-        label: 'CULTIC',
-        value: 181200
-      },
-      {
-        label: 'COCOON',
-        value: 171900
-      },
-      {
-        label: 'Angry Video Game Nerd Adventures',
-        value: 156900
-      },
-      {
-        label: 'River City Girls',
-        value: 120000
+        value: 290900
       },
       {
         label: 'Mullet Mad Jack',
-        value: 114300
+        value: 246300
+      },
+      {
+        label: 'The Banner Saga 2',
+        value: 232500
+      },
+      {
+        label: 'CULTIC',
+        value: 220900
+      },
+      {
+        label: 'Ion Fury',
+        value: 213800
+      },
+      {
+        label: 'Angry Video Game Nerd Adventures',
+        value: 157000
+      },
+      {
+        label: 'River City Girls',
+        value: 131800
+      },
+      {
+        label: 'The Last Faith',
+        value: 128900
       },
       {
         label: 'The Banner Saga 3',
-        value: 99100
-      },
-      {
-        label: 'Oniken',
-        value: 89900
-      },
-      {
-        label: 'Odallus: The Dark Call',
-        value: 89300
-      },
-      {
-        label: 'Wonder Boy: The Dragon\'s Trap',
-        value: 85900
-      },
-      {
-        label: 'Gravity Circuit',
-        value: 62400
-      },
-      {
-        label: 'Blazing Chrome',
-        value: 60200
+        value: 107000
       },
       {
         label: 'Shantae: Half-Genie Hero',
-        value: 50100
+        value: 98500
       },
       {
-        label: 'Freedom Planet 2',
-        value: 43300
+        label: 'Gravity Circuit',
+        value: 95200
+      },
+      {
+        label: 'Oniken',
+        value: 91000
+      },
+      {
+        label: 'Odallus: The Dark Call',
+        value: 90900
+      },
+      {
+        label: 'Blazing Chrome',
+        value: 68100
       },
       {
         label: 'Yooka-Laylee and the Impossible Lair',
-        value: 42400
+        value: 48700
       },
       {
         label: 'Cyber Shadow',
-        value: 40600
+        value: 43500
       },
       {
         label: 'Angry Video Game Nerd II: ASSimilation',
-        value: 30400
+        value: 30800
       },
       {
-        label: 'Solar Ash',
-        value: 30300
-      },
-      {
-        label: 'Angry Video Game Nerd I & II Deluxe',
-        value: 18300
+        label: "Iron Meat",
+        value: 28300
       },
       {
         label: 'Axiom Verge 2',
-        value: 16400
+        value: 25200
       },
       {
-        label: 'Contra: Operation Galuga',
-        value: 13900
+        label: 'Angry Video Game Nerd I & II Deluxe',
+        value: 21800
       },
       {
         label: 'Vengeful Guardian: Moonrider',
-        value: 11600
+        value: 14100
       },
       {
         label: 'Berserk Boy',
-        value: 7000
+        value: 11100
       },
       {
-        label: 'Eagle Island',
-        value: 5400
-      },
-      {
-        label: 'Spectacular Sparky',
-        value: 4300
+        label: 'Eagle Island Twist',
+        value: 5500
       },
       {
         label: 'Lords of Exile',
-        value: 3200
+        value: 5300
+      },
+      {
+        label: 'Spectacular Sparky',
+        value: 4900
       },
       {
         label: 'Prison City',
-        value: 3200
+        value: 4800
       }
     ]
     
@@ -272,10 +250,6 @@ const OwnerEstimations = {
               label: "Owner Estimations",
               backgroundColor: this.backgroundColor, // '#0868ac', '#f87979',
               data: data
-            },
-            {
-              label: 'PlayTracker',
-              data: playTracker
             }
           ]
         },
@@ -293,7 +267,7 @@ const OwnerEstimations = {
           },
           scales: {
             y: {
-              type: 'logarithmic'
+              // type: 'logarithmic'
             }
           }
         }

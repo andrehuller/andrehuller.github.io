@@ -432,24 +432,6 @@ const categories = [
         "src": "assets/screenshots/Bounding Into Comics.png"
       },
       {
-        "title": "Clownfish TV",
-        "subtitle": "Clownfish TV is an independent, opinionated pop culture news site. We strive to be apolitical, balanced and based, and are fans who cover media for other fans.",
-        "href": "https://clownfishtv.com",
-        "src": "assets/screenshots/Clownfish TV.png"
-      },
-      {
-        "title": "Cosmic Book News",
-        "subtitle": "Cosmic Book News is a website that covers news, reviews, and commentary related to comic books, movies, television, video games, and other forms of popular culture.",
-        "href": "https://cosmicbook.news/",
-        "src": "assets/screenshots/Cosmic Book News.png"
-      },
-      {
-        "title": "Fandom Pulse",
-        "subtitle": "Fandom Pulse is a publication that covers comics, video games, and other entertainment topics.",
-        "href": "https://fandompulse.com/",
-        "src": "assets/screenshots/Fandom Pulse.png"
-      },
-      {
         "title": "Geeks + Gamers",
         "subtitle": "Geeks + Gamers is a website for geek and gamer culture, covering movies, anime, television, sports, comics, and video games.",
         "href": "https://www.geeksandgamers.com",
@@ -460,12 +442,6 @@ const categories = [
         "subtitle": "Video Game News, Community, Videos, & Reviews",
         "href": "https://nichegamer.com",
         "src": "assets/screenshots/Niche Gamer.png"
-      },
-      {
-        "title": "That Park Place",
-        "subtitle": "That Park Place is an intentionally-independent and opinionated news site covering most topics that should be fun.",
-        "href": "https://thatparkplace.com/",
-        "src": "assets/screenshots/That Park Place.png"
       },
       {
         "title": "Film Industry Watch",
