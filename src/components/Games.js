@@ -1150,6 +1150,18 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
+
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Megabonk.png" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Megabonk</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+
         <!-- https://presskit.taintedgrail.com/ -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -1205,6 +1217,11 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>RoboCop: Rogue City</v-card-title>
               <v-card-subtitle>2023</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>
