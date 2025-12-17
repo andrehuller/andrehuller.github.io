@@ -828,6 +828,21 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Soulstice</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#ffd700" size="small" class="gold-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
         <!-- https://www.igdb.com/games/gravity-circuit/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -875,21 +890,24 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
+        <!-- https://www.igdb.com/games/36402/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
-            <v-img src="assets/games/Soulstice.jpg" height="190" cover></v-img>
+            <v-img src="assets/games/Shantae Risky's Revenge.jpg" height="190" cover></v-img>
             <v-card-item>
-              <v-card-title>Soulstice</v-card-title>
-              <v-card-subtitle>2022</v-card-subtitle>
+              <v-card-title>Shantae: Risky's Revenge</v-card-title>
+              <v-card-subtitle>2014</v-card-subtitle>
               <template v-slot:append>
-                <v-avatar color="#ffd700" size="small" class="gold-avatar">
+                <v-avatar color="#c0c0c0" size="small" class="bronze-avatar">
                   <v-icon color="white">mdi-star</v-icon>
                 </v-avatar>
               </template>
             </v-card-item>
           </v-card>
         </v-col>
+      </v-row>
 
+      <v-row>
         <!-- https://www.igdb.com/games/the-banner-saga/presskit -->
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
@@ -1150,7 +1168,6 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
-
         <v-col lg="3">
           <v-card class="fill-height d-flex flex-column">
             <v-img src="assets/games/Megabonk.png" height="190" cover></v-img>
@@ -1161,6 +1178,15 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
           </v-card>
         </v-col>
 
+        <v-col lg="3">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Ball x Pit.jpg" height="190" cover></v-img>
+            <v-card-item>
+              <v-card-title>Ball x Pit</v-card-title>
+              <v-card-subtitle>2025</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
 
         <!-- https://presskit.taintedgrail.com/ -->
         <v-col lg="3">
