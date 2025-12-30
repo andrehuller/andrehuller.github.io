@@ -434,7 +434,17 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
         -->
       </v-row>
 
-      <h2 style="padding-top: 1rem; padding-bottom: 1rem;">Bitmap Bureau</h2>
+      <v-row>
+        <v-col lg="4">
+          <h2>Bitmap Bureau</h2>
+        </v-col>
+        <v-col lg="4">
+        </v-col>
+        <v-col lg="4">
+          <h2>Asylum Square</h2>
+        </v-col>
+      </v-row>
+
       <v-row>
         <!-- https://www.igdb.com/games/battle-axe-special-edition/presskit -->
         <v-col lg="4">
@@ -459,6 +469,20 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Xeno Crisis</v-card-title>
               <v-card-subtitle>2019</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar color="#84ad00" size="small" rounded="0">
+                  <v-icon color="white">mdi-cart</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+        <v-col lg="4">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Tiny Thor.jpg" height="256" cover></v-img>
+            <v-card-item>
+              <v-card-title>Tiny Thor</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
               <template v-slot:append>
                 <v-avatar color="#84ad00" size="small" rounded="0">
                   <v-icon color="white">mdi-cart</v-icon>
