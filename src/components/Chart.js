@@ -9,7 +9,6 @@ const Chartjs = {
             :items="directors"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
-            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -21,7 +20,6 @@ const Chartjs = {
             :items="years"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
-            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -33,7 +31,6 @@ const Chartjs = {
             :items="countries"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
-            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -45,7 +42,6 @@ const Chartjs = {
             :items="genres"
             prepend-inner-icon="mdi-magnify"
             density="comfortable"
-            variant="outlined"
             @update:modelValue="updateItems"
             clearable hide-details
           ></v-autocomplete>
@@ -86,27 +82,27 @@ const Chartjs = {
       </v-row>
       <v-row>
         <v-col cols="12" lg="12">
-          <v-card variant="outlined" style="height: 450px" class="px-3">
+          <v-card style="height: 450px" class="px-3">
             <canvas id="chartDirector"></canvas>
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
-          <v-card variant="outlined" style="height: 300px" class="px-3">
+          <v-card style="height: 300px" class="px-3">
             <canvas id="chartYear"></canvas>
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
-          <v-card variant="outlined" style="height: 450px" class="px-3">
+          <v-card style="height: 450px" class="px-3">
             <canvas id="chartCountry"></canvas>
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
-          <v-card variant="outlined" style="height: 450px" class="px-3">
+          <v-card style="height: 450px" class="px-3">
             <canvas id="chartGenre"></canvas>
           </v-card>
         </v-col>
         <v-col cols="12" lg="12">
-          <v-card variant="outlined">
+          <v-card>
             <v-data-table :items="items" :headers="headers" density="compact"></v-data-table>
           </v-card>
         </v-col>

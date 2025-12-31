@@ -20,18 +20,23 @@ const SQLFormatter = {
                   <v-btn color="primary" @click="transformToSQL">Transform to SQL</v-btn>
                   <v-btn color="primary" @click="convertToList">Convert to List</v-btn>
                 </v-col>
-                <v-col cols="12">
-                  <v-textarea
-                    label="Transformed Output"
-                    v-model="outputText"
-                    rows="10"
-                    readonly
-                    hide-details="auto"
-                    variant="outlined"
-                  />
-                </v-col>
               </v-row>
             </v-container>
+          </v-card>
+        </v-col>
+
+        <v-col cols="12" lg="12">
+          <v-card>
+            <v-card-text>
+              <v-textarea
+                label="Transformed Output"
+                v-model="outputText"
+                rows="10"
+                readonly
+                hide-details="auto"
+                variant="outlined"
+              />
+            </v-card-text>
           </v-card>
         </v-col>
       </v-row>
@@ -68,5 +73,4 @@ const SQLFormatter = {
         .join(', ');
     }
   }
-
 }

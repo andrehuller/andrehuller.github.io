@@ -81,6 +81,7 @@
     <script src="./src/components/TreeView.js"></script>
     -->
     <script src="./src/components/DatePicker.js"></script>
+    <script src="./src/components/NormalDistribution.js"></script>
     <script src="./src/components/SQLFormatter.js"></script>
     
     <script src="./src/components/Git.js"></script>
@@ -176,7 +177,7 @@
   <body>
     <div id="app">
       <v-app><!--  :style="{background: $vuetify.theme.themes.light.background}" -->
-        <v-app-bar title="GitHub.io" color="blue-grey-darken-3"><!-- color="#084081" -->
+        <v-app-bar title="GitHub.io" color="toolbar">
           <template v-slot:prepend>
             <v-app-bar-nav-icon
               @click.stop="drawer = !drawer"
@@ -207,7 +208,7 @@
           </template>
         </v-app-bar>
         
-        <v-navigation-drawer v-model="drawer">
+        <v-navigation-drawer v-model="drawer" color="drawer">
 
           <v-list density="compact" nav>
             <v-list-item title="Libraries" to="/">
@@ -220,6 +221,11 @@
           <v-divider></v-divider>
           <v-list density="compact" nav>
             <v-list-item title="Chart.js" to="/chartjs">
+              <template v-slot:prepend>
+                <v-icon icon="mdi-chart-arc"></v-icon>
+              </template>
+            </v-list-item>
+            <v-list-item title="Normal Distribution" to="/normaldist">
               <template v-slot:prepend>
                 <v-icon icon="mdi-chart-arc"></v-icon>
               </template>
@@ -336,7 +342,7 @@
           </v-list>
           -->
         </v-navigation-drawer>
-        <v-main style="background-color: #FAFAFA">
+        <v-main>
           <router-view v-slot="{ Component }">
             <keep-alive>
               <component :is="Component" />
@@ -355,6 +361,7 @@ const { createRouter } = VueRouter
 const routes = [
   { path: '/', component: Libraries },
   { path: '/chartjs', component: Chartjs },
+  { path: '/normaldist', component: NormalDistribution },
   { path: '/leaflet', component: Leaflet },
   { path: '/openrouteservice', component: ORS },
   // { path: '/calendar', component: Calendar },
@@ -385,9 +392,16 @@ const router = VueRouter.createRouter({
 
 const vuetify = createVuetify({
   theme: {
+    defaultTheme: 'light',
     themes: {
       light: {
-        background: '#FAFAFA'
+        colors: {
+          // primary: '#2563EB',
+          background: '#fafafa',
+          surface: '#FFFFFF',
+          toolbar: '#37474f',
+          drawer: '#FFFFFF'
+        }
       }
     }
   }
@@ -412,7 +426,7 @@ app.directive('maska', Maska.vMaska)
 app.component('indicator', {
   props: ['text', 'value', 'icon', 'color'],
   template: `
-    <v-card variant="outlined">
+    <v-card>
       <div class="d-flex flex-no-wrap justify-space-between">
         <v-card-text>
           <div>{{ text }}</div>
