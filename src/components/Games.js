@@ -1252,6 +1252,35 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
       </v-row>
 
       <v-row>
+        <!-- igdb -->
+        <v-col lg="6">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Vampire Survivors.png" height="225" cover></v-img>
+            <v-card-item>
+              <v-card-title>Vampire Survivors</v-card-title>
+              <v-card-subtitle>2022</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small" class="diamond-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
+              </template>
+            </v-card-item>
+          </v-card>
+        </v-col>
+
+        <!-- igdb -->
+        <v-col lg="6">
+          <v-card class="fill-height d-flex flex-column">
+            <v-img src="assets/games/Death Must Die.jpg" height="225" cover></v-img>
+            <v-card-item>
+              <v-card-title>Death Must Die</v-card-title>
+              <v-card-subtitle>2023</v-card-subtitle>
+            </v-card-item>
+          </v-card>
+        </v-col>
+      </v-row>
+
+      <v-row>
         <!-- https://www.igdb.com/games/star-wars-shadows-of-the-empire/presskit -->
         <v-col lg="4">
           <v-card class="fill-height d-flex flex-column">
@@ -1311,6 +1340,11 @@ If you own Heretic: Shadow of the Serpent Riders, Hexen: Beyond Heretic and/or H
             <v-card-item>
               <v-card-title>Sonic Mania</v-card-title>
               <v-card-subtitle>2017</v-card-subtitle>
+              <template v-slot:append>
+                <v-avatar size="small" class="diamond-avatar">
+                  <v-icon color="white">mdi-star</v-icon>
+                </v-avatar>
+              </template>
             </v-card-item>
           </v-card>
         </v-col>

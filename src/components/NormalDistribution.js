@@ -21,7 +21,7 @@ const NormalDistribution = {
       INPUT DATA
     ------------------------------ */
     const labels = Array.from({ length: 10 }, (_, i) => i + 1);
-    const observed = [41, 71, 80, 127, 153, 219, 358, 406, 391, 298];
+    const observed = [41, 71, 80, 125, 153, 219, 359, 405, 395, 297];
 
     /* -----------------------------
       BASIC STATISTICS
